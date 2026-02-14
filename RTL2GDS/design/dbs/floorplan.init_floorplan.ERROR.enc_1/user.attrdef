@@ -1,0 +1,13 @@
+define_attribute flow_feature_dynamic_view -data_type string -obj_type root -category flow -help_string {single dynamic analysis_view to activate} -default_value {0} -hidden -quiet
+define_attribute flow_feature_hold_views -data_type string -obj_type root -category flow -help_string {list of hold analysis_views to activate} -default_value {0} -hidden -quiet
+define_attribute flow_feature_leakage_view -data_type string -obj_type root -category flow -help_string {single leakage analysis_view to activate} -default_value {0} -hidden -quiet
+define_attribute flow_feature_opt_signoff -data_type string -obj_type root -category flow -help_string {Run opt_signoff during implementation flow} -default_value {0} -hidden -quiet
+define_attribute flow_feature_report_dynamic_ir -data_type string -obj_type root -category flow -help_string {Report dynamic rail analysis} -default_value {0} -hidden -quiet
+define_attribute flow_feature_report_inline -data_type string -obj_type root -category flow -help_string {Run report generation as part of parent flow versus schedule_flow} -default_value {0} -hidden -quiet
+define_attribute flow_feature_report_lec -data_type string -obj_type root -category flow -help_string {Add LEC dofile generation and checks to the flow} -default_value {0} -hidden -quiet
+define_attribute flow_feature_report_pba -data_type string -obj_type root -category flow -help_string {Enable PBA analysis and report generation} -default_value {0} -hidden -quiet
+define_attribute flow_feature_report_static_ir -data_type string -obj_type root -category flow -help_string {Report static rail analysis} -default_value {0} -hidden -quiet
+define_attribute flow_feature_setup_views -data_type string -obj_type root -category flow -help_string {list of setup analysis_views to activate} -default_value {0} -hidden -quiet
+define_attribute flow_report_name -data_type string -obj_type root -category flow -help_string {Name to use during report generation} -quiet
+define_attribute flow_report_prefix -data_type string -obj_type root -category flow -help_string {File prefix to use during report generation} -quiet
+define_attribute flow_spef_directory -data_type string -obj_type root -category flow -help_string {Location of SPEF files written by Quantus} -quiet

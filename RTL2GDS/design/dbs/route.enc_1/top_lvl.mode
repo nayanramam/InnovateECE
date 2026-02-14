@@ -1,0 +1,85 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setDesignMode -bottomRoutingLayer met1 }
+catch { setDesignMode -flowEffort standard }
+catch { setDesignMode -powerEffort none }
+catch { setDesignMode -process 130 }
+catch { setDesignMode -topRoutingLayer met5 }
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -aocv false }
+catch { setAnalysisMode -asyncChecks async }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -cppr both }
+catch { setAnalysisMode -monteCarlo false }
+catch { setAnalysisMode -socv false }
+catch { setAnalysisMode -timingEngine static }
+catch { setAnalysisMode -usefulSkew true }
+catch { setOptMode -opt_view_pruning_hold_views_active_list { tt_v1.8_25C_Nominal_25_func } }
+catch { setOptMode -opt_view_pruning_setup_views_active_list { tt_v1.8_25C_Nominal_25_func } }
+catch { setOptMode -opt_new_inst_prefix route_ }
+catch { setOptMode -opt_view_pruning_hold_views_persistent_list { tt_v1.8_25C_Nominal_25_func} }
+catch { setOptMode -opt_view_pruning_setup_views_persistent_list { tt_v1.8_25C_Nominal_25_func} }
+catch { setOptMode -opt_view_pruning_tdgr_setup_views_persistent_list { tt_v1.8_25C_Nominal_25_func} }
+catch { setOptMode -opt_view_pruning_hold_target_slack_auto_flow 0 }
+catch { setOptMode -opt_drv_margin 0 }
+catch { setOptMode -opt_drv true }
+catch { setOptMode -opt_leakage_to_dynamic_ratio 0.5 }
+catch { setOptMode -opt_multi_bit_flop_name_prefix CDN_MBIT_ }
+catch { setOptMode -opt_multi_bit_flop_name_separator _MB_ }
+catch { setOptMode -opt_resize_flip_flops true }
+catch { setOptMode -opt_preserve_all_sequential false }
+catch { setOptMode -opt_setup_target_slack 0 }
+catch { setPathGroupOptions tdgp_reg2reg_default -effortLevel high }
+catch { setPathGroupOptions tdgp_reg2reg_default -late -slackAdjustment -0 }
+catch { setExtractRCMode  -engine preRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.4 }
+catch {setNanoRouteMode -quiet -route_detail_use_lef_pin_taper_rule true}
+catch {setNanoRouteMode -quiet -extract_rc_model_file "${::IMEX::libVar}/misc/rc_model.bin"}
+catch {setNanoRouteMode -quiet -route_extract_third_party_compatible false}
+catch {setNanoRouteMode -quiet -route_global_exp_timing_driven_std_delay 37.600000}
+catch {setNanoRouteMode -quiet -route_global_exp_timing_driven_use_tif_timing_engine_for_import_design false}
+catch {setNanoRouteMode -quiet -route_exp_design_mode_bottom_routing_layer 1}
+catch {setNanoRouteMode -quiet -route_exp_design_mode_top_routing_layer 5}
+catch {setNanoRouteMode -quiet -route_re_insert_filler_cell_list "FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64"}
+catch {setNanoRouteMode -quiet -route_re_insert_filler_cell_list_from_file false}
+catch {setNanoRouteMode -quiet -timingEngine ".timing_file_3433875_7e1c7c2e-7dbc-4ff9-97fe-edd19d446846.tif.gz"}
+
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setActiveLogicViewMode -keepHighFanoutCriticalInsts false }
+catch { setUsefulSkewMode -opt_skew_eco_route false }
+catch { setDelayCalMode -enable_hier_save_restore_flow false }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -enable_ideal_seq_async_pins false }
+catch { setDelayCalMode -eng_enablePrePlacedFlow false }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setPinAssignMode -pinEditInBatch false }
+catch { setImportMode -config true }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setTieHiLoMode -cell {{TIEHI TIELO}} }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setRouteMode -earlyGlobalExpDoNotInvalidateRCGrid false }
+catch { setRouteMode -earlyGlobalRouteSecondPG false }
+catch { setFillerMode -core {FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64} }
+catch { setFPlanMode -cellsForExtraSites {} }
+catch { setFPlanMode -defaultRowPatternSite {} }
+catch { setFPlanMode -defaultTechSite CoreSite }
+catch { setFPlanMode -disableEolBlockageOnEdges {} }
+catch { setFPlanMode -exp_dcls_region_options {} }
+catch { setFPlanMode -extraRowPattern {} }
+catch { setFPlanMode -extraSites {} }
+catch { setFPlanMode -firstRowSiteIndex 0 }
+catch { setFPlanMode -ignore_check_power_domain_overlap {} }
+catch { setFPlanMode -lastRowSiteIndex -1 }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }
+catch { setFPlanMode -skipViolations {} }
+catch { setFPlanMode -snap_block_cell_grid {} }
+catch { setFPlanMode -snapBlockGrid inst }
+catch { setFinishFPlanMode -activeObj {macro softblkg core} }

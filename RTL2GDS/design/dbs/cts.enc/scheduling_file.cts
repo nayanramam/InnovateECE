@@ -1,0 +1,9 @@
+MacroModel pin u_ctrl_state_reg[0]/CK  200.00ps 200.00ps 200.00ps 200.00ps 0pf tt_v1.8_25C_Nominal_25_func
+MacroModel pin u_ctrl_state_reg[1]/CK  200.00ps 200.00ps 200.00ps 200.00ps 0pf tt_v1.8_25C_Nominal_25_func
+MacroModel pin u_ctrl_r_ptr_reg[0]/CK  95.90ps 95.90ps 95.90ps 95.90ps 0pf tt_v1.8_25C_Nominal_25_func
+MacroModel pin u_ctrl_w_ptr_reg[2]/CK  34.80ps 34.80ps 34.80ps 34.80ps 0pf tt_v1.8_25C_Nominal_25_func
+MacroModel pin u_ctrl_r_ptr_reg[1]/CK  50.00ps 50.00ps 50.00ps 50.00ps 0pf tt_v1.8_25C_Nominal_25_func
+MacroModel pin u_ctrl_w_ptr_reg[1]/CK  23.60ps 23.60ps 23.60ps 23.60ps 0pf tt_v1.8_25C_Nominal_25_func
+MacroModel pin u_ctrl_r_ptr_reg[2]/CK  25.10ps 25.10ps 25.10ps 25.10ps 0pf tt_v1.8_25C_Nominal_25_func
+MacroModel pin u_ctrl_w_ptr_reg[0]/CK  72.00ps 72.00ps 72.00ps 72.00ps 0pf tt_v1.8_25C_Nominal_25_func
+MacroModel pin u_ctrl_r_ptr_reg[3]/CK  11.00ps 11.00ps 11.00ps 11.00ps 0pf tt_v1.8_25C_Nominal_25_func

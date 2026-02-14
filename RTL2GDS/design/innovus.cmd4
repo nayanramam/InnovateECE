@@ -1,0 +1,58 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Oct  9 17:09:28 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+#@(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+#@(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+#@(#)CDS: CPE v25.11-s029
+#@(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+
+read_db dbs/postroute.enc
+gui_select -point {1221.20300 910.06200}
+gui_select -point {-24.09300 563.04900}
+gui_pan -252.57400 -178.92400
+gui_pan 88.01000 470.49000
+gui_pan 23.92100 163.51500
+gui_pan -14.84400 289.69000
+gui_pan -2.19800 -315.81600
+place_connected -attractor blk -level 2
+place_connected -help
+gui_select -point {428.05800 596.15600}
+gui_select -point {428.05800 597.49900}
+gui_pan -352.22500 -10.03700
+gui_pan 259.10700 328.69200
+place_connected -sram blk
+place_connected -sram_A blk
+placeInstance -help
+place_instance
+place_instance -help
+place_inst -help
+place_inst sram_A
+create_route_blockage -help
+create_place_blockage -help
+gui_pan -323.70500 0.77400
+gui_pan -5.08700 341.53400
+gui_pan -0.09300 346.17800
+gui_pan 2.33400 347.21100
+gui_select -point {100.28300 445.87400}
+gui_select -point {100.35900 445.60900}
+gui_select -point {100.44700 445.64000}
+gui_select -point {99.88400 445.58300}
+gui_select -point {100.08000 445.22900}
+gui_select -point {100.11200 445.25500}
+gui_select -point {100.13100 445.23600}
+gui_pan -1.41100 344.71200
+gui_pan 1.59400 346.73000
+gui_pan -14.99300 161.80100
+gui_select -point {173.67100 351.82900}
+place_inst -help
+gui_select -point {-1482.12500 -7293.40200}
+gui_pan 188.33100 306.43300
+gui_select -point {172.23200 220.33500}
+gui_select -point {168.06500 218.66800}

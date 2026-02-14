@@ -1,0 +1,392 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Oct  7 16:58:14 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+#@(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+#@(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+#@(#)CDS: CPE v25.11-s029
+#@(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+
+if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb top_lvl {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 172149} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb top_lvl {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 172149} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb top_lvl {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 };
+#@ (init_flow): cd /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+#@ (init_flow): read_metric -id current /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/floorplan -previous 
+#@ (init_flow): read_flow /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml
+apply {{} {
+    set db [get_db flow_starting_db]
+    set flow [lindex [get_db flow_hier_path] end]
+    set setup_views [get_feature -obj $flow setup_views]
+    set hold_views [get_feature -obj $flow hold_views]
+    set leakage_view [get_feature -obj $flow leakage_view]
+    set dynamic_view [get_feature -obj $flow dynamic_view]
+  
+    if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+      #- use read_db args for DB types and set_analysis_views for TCL
+      if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+        set cmd "set_analysis_view"
+        if {$setup_views ne ""} {
+          append cmd " -setup [list $setup_views]"
+        } else {
+          append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+        }
+        if {$hold_views ne ""} {
+          append cmd " -hold [list $hold_views]"
+        } else {
+          append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+        }
+        if {$leakage_view ne ""} {
+          append cmd " -leakage [list $leakage_view]"
+        } else {
+          if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+            append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+          }
+        }
+        if {$dynamic_view ne ""} {
+          append cmd " -dynamic [list $dynamic_view]"
+        } else {
+          if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+            append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+          }
+        }
+        eval $cmd
+      } elseif {[llength [get_db analysis_views]] == 0} {
+        set cmd "set_flowkit_read_db_args"
+        if {$setup_views ne ""} {
+          append cmd " -setup_views [list $setup_views]"
+        }
+        if {$hold_views ne ""} {
+          append cmd " -hold_views [list $hold_views]"
+        }
+        if {$leakage_view ne ""} {
+          append cmd " -leakage_view [list $leakage_view]"
+        }
+        if {$dynamic_view ne ""} {
+          append cmd " -dynamic_view [list $dynamic_view]"
+        }
+        eval $cmd
+      } else {
+      }
+    }
+  }}
+apply {{} {
+    # Multi host/cpu attributes
+    #-----------------------------------------------------------------------------
+    # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+    # the specified dist script.  This connects the number of CPUs being reserved
+    # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+    # a typical environment variable exported by distribution platforms and is
+    # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+    if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+      set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+    } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+      set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+    } else {
+      set max_cpus 1
+    }
+    switch -glob [get_db program_short_name] {
+      default       {}
+      joules*       -
+      genus*        -
+      innovus*      -
+      tempus*       -
+      voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+    }
+if {[get_feature opt_signoff]} {
+      if {[is_flow -inside flow:opt_signoff]} {
+        set_multi_cpu_usage -verbose -remote_host 1
+        set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+        set_distributed_hosts -local
+      }
+}
+  }}
+#@ (init_flow): cd /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+#@ (init_flow): read_db /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb
+#@ (init_flow): cd /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+#@ (init_flow): read_flow /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml
+#@ (init_flow): cd /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+#@ (init_flow): read_metric -merge -id current /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/floorplan -previous 
+apply {{} {
+    set db [get_db flow_starting_db]
+    set flow [lindex [get_db flow_hier_path] end]
+    set setup_views [get_feature -obj $flow setup_views]
+    set hold_views [get_feature -obj $flow hold_views]
+    set leakage_view [get_feature -obj $flow leakage_view]
+    set dynamic_view [get_feature -obj $flow dynamic_view]
+  
+    if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+      #- use read_db args for DB types and set_analysis_views for TCL
+      if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+        set cmd "set_analysis_view"
+        if {$setup_views ne ""} {
+          append cmd " -setup [list $setup_views]"
+        } else {
+          append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+        }
+        if {$hold_views ne ""} {
+          append cmd " -hold [list $hold_views]"
+        } else {
+          append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+        }
+        if {$leakage_view ne ""} {
+          append cmd " -leakage [list $leakage_view]"
+        } else {
+          if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+            append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+          }
+        }
+        if {$dynamic_view ne ""} {
+          append cmd " -dynamic [list $dynamic_view]"
+        } else {
+          if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+            append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+          }
+        }
+        eval $cmd
+      } elseif {[llength [get_db analysis_views]] == 0} {
+        set cmd "set_flowkit_read_db_args"
+        if {$setup_views ne ""} {
+          append cmd " -setup_views [list $setup_views]"
+        }
+        if {$hold_views ne ""} {
+          append cmd " -hold_views [list $hold_views]"
+        }
+        if {$leakage_view ne ""} {
+          append cmd " -leakage_view [list $leakage_view]"
+        }
+        if {$dynamic_view ne ""} {
+          append cmd " -dynamic_view [list $dynamic_view]"
+        }
+        eval $cmd
+      } else {
+      }
+    }
+  }}
+apply {{} {
+    # Multi host/cpu attributes
+    #-----------------------------------------------------------------------------
+    # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+    # the specified dist script.  This connects the number of CPUs being reserved
+    # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+    # a typical environment variable exported by distribution platforms and is
+    # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+    if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+      set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+    } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+      set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+    } else {
+      set max_cpus 1
+    }
+    switch -glob [get_db program_short_name] {
+      default       {}
+      joules*       -
+      genus*        -
+      innovus*      -
+      tempus*       -
+      voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+    }
+if {[get_feature opt_signoff]} {
+      if {[is_flow -inside flow:opt_signoff]} {
+        set_multi_cpu_usage -verbose -remote_host 1
+        set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+        set_distributed_hosts -local
+      }
+}
+  }}
+#@ (flow_step:block_start)  2:   #- extend flow report name based on context
+#@ (flow_step:block_start)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                           :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                           :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                           :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                           :     set_db flow_report_name [get_db flow_branch]
+#@                           :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                           :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                           :   } else {
+#@                           :   }
+#@ (flow_step:block_start) 22:   #- Create report dir (if necessary)
+#@ (flow_step:block_start) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+set_db flow_write_db_common false
+#@ (run_flow): pop_snapshot_stack
+#@ (flow_step:init_innovus_yaml)  2:   #- extend flow report name based on context
+#@ (flow_step:init_innovus_yaml)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                                 :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                                 :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                                 :     }
+#@                                 :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                                 :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                                 :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                                 :     }
+#@                                 :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                                 :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                                 :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                                 :     }
+#@                                 :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                                 :     set_db flow_report_name [get_db flow_branch]
+#@                                 :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                                 :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                                 :   } else {
+#@                                 :   }
+#@ (flow_step:init_innovus_yaml) 22:   #- Create report dir (if necessary)
+#@ (flow_step:init_innovus_yaml) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+if {[get_feature report_lec]} {...}
+set_db design_process_node 130
+set_db design_top_routing_layer met5
+set_db design_bottom_routing_layer met1
+set_db design_flow_effort standard
+set_db design_power_effort none
+set_db timing_analysis_cppr           both
+set_db timing_analysis_type           ocv
+set_db timing_analysis_aocv 0
+set_db timing_analysis_socv 0
+if {[get_feature report_pba]} {...}
+if {[is_flow -after route.block_finish]} {...}
+set_db add_tieoffs_cells {TIEHI TIELO}
+set_db opt_new_inst_prefix            "[get_db flow_report_name]_"
+set_db opt_leakage_to_dynamic_ratio 0.5
+set_db cts_target_skew auto
+set_db cts_target_max_transition_time_top 100
+set_db cts_target_max_transition_time_trunk 100
+set_db cts_target_max_transition_time_leaf 100
+set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
+set_db cts_inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+set_db cts_clock_gating_cells ICGX1
+set_db cts_logic_cells {CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+set_db add_fillers_cells {FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+set_db finish_floorplan_active_objs   [list macro soft_blockage core]
+#@ (run_flow): pop_snapshot_stack
+#@ (flow_step:init_floorplan)  2:   #- extend flow report name based on context
+#@ (flow_step:init_floorplan)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                              :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                              :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                              :     }
+#@                              :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                              :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                              :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                              :     }
+#@                              :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                              :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                              :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                              :     }
+#@                              :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                              :     set_db flow_report_name [get_db flow_branch]
+#@                              :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                              :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                              :   } else {
+#@                              :   }
+#@ (flow_step:init_floorplan) 22:   #- Create report dir (if necessary)
+#@ (flow_step:init_floorplan) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+#@ source ./scripts/floorplan.tcl
+#@ Begin verbose source ./scripts/floorplan.tcl (pre)
+set sitesx 0.46  ;
+set sitesy 4.14  ;
+puts "RUNNING FLOORPLAN.TCL"
+set_db floorplan_snap_block_grid inst
+create_floorplan -core_size [expr {$sitesx*2100}] [expr {$sitesy*300}] 30 30 30 30
+init_core_rows
+set dx [get_db designs .bbox.dx]  ;
+set dy [get_db designs .bbox.dy]  ;
+#@ source ./scripts/add_power.tcl
+#@ Begin verbose source ./scripts/add_power.tcl (pre)
+connect_global_net VDD -type pg_pin -pin_base_name vccd1
+connect_global_net VSS -type pg_pin -pin_base_name vssd1
+connect_global_net VDD -type pg_pin -pin_base_name VDD
+connect_global_net VSS -type pg_pin -pin_base_name VSS
+connect_global_net VDD -type tie_hi -all
+connect_global_net VSS -type tie_lo -all
+set mem_blocks [get_db [get_db insts *sram*] .name]
+foreach i $mem_blocks {
+    puts $i
+    connect_global_net VDD -type pgpin -pin vccd1 -sinst $i -override
+    connect_global_net VSS -type pgpin -pin vssd1 -sinst $i -override
+}
+add_rings -nets {VDD VSS} -layer {top met5 bottom met5 left met4 right met4} -width {top 4.8 bottom 4.8 left 4.8 right 4.8} -spacing {top 4.8 bottom 4.8 left 4.8 right 4.8} -offset {top 2 bottom 2 left 2 right 2} -center 0 -threshold 0.4 -jog_distance 0.4 -snap_wire_center_to_grid none
+route_special -connect { core_pin } -block_pin_target { nearest_target } -core_pin_target { first_after_row_end } -core_pin_layer { met1 } -block_pin_layer_range { met3 met4 } -delete_existing_routes -nets { VDD VSS }
+add_stripes -nets {VDD VSS} -layer met5 -direction horizontal -width 3 -spacing 20 -set_to_set_distance 50 -start_from bottom -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit met5 -pad_core_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met5 -block_ring_bottom_layer_limit met4 -use_wire_group 0 -snap_wire_center_to_grid none
+add_stripes -nets {VDD VSS} -layer met4 -direction vertical -width 3 -spacing 20 -set_to_set_distance 50 -start_from left -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit met5 -pad_core_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met5 -block_ring_bottom_layer_limit met4 -use_wire_group 0 -snap_wire_center_to_grid none
+#@ End verbose source ./scripts/add_power.tcl
+#@ source ./scripts/add_pins.tcl
+#@ Begin verbose source ./scripts/add_pins.tcl (pre)
+set_partition_pin_status -pins * -status unplaced
+edit_pin -fixed_pin -pin * -pattern fill_optimised -layer {2 3 4 5} -start {10 10} -end {10 10}
+set_db assign_pins_edit_in_batch false
+#@ End verbose source ./scripts/add_pins.tcl
+snap_floorplan -all
+if {0} {...}
+puts "ENDING FLOORPLAN.TCL"
+#@ End verbose source ./scripts/floorplan.tcl
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+if {[join [dict values [get_db init_power_intent_files]]] ne {}} {...}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+if {[llength [get_db current_design .track_patterns]] == 0} {...}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+apply {{} {
+    #- Make sure flow_report_name is reset from any reports executed during the flow
+    set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+    #- Set DB for handoff to Innovus
+    if {[is_flow -inside flow:syn_opt]} {
+      set_db flow_write_db_common true
+    }
+  
+    #- Set value for SPEF output file generation
+    if {[get_db flow_branch] ne ""} {
+      set out_dir [file join [get_db flow_db_directory] [get_db flow_branch]_[get_db flow_report_name]]
+    } else {
+      set out_dir [file join [get_db flow_db_directory] [get_db flow_report_name]]
+    }
+    set_db flow_spef_directory $out_dir
+  
+    #- Store non-default root attributes to metrics
+    catch {report_obj -tcl} flow_root_config
+    if {[dict exists $flow_root_config root:/]} {
+      set flow_root_config [dict get $flow_root_config root:/]
+    } elseif {[dict exists $flow_root_config root:]} {
+      set flow_root_config [dict get $flow_root_config root:]
+    } else {
+    }
+    foreach key [dict keys $flow_root_config] {
+      if {[string length [dict get $flow_root_config $key]] > 200} {
+        dict set flow_root_config $key "\[long value truncated\]"
+      }
+    }
+    set_metric -name flow.root_config -value $flow_root_config
+  }}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): write_db -sdc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/floorplan.enc
+#@ (run_flow): push_snapshot_stack
+set inputstring [get_db flow_starting_db]
+set stepname [lindex $inputstring [expr {[llength stepname]}]]
+set filename [file tail $stepname]
+set rootname [file rootname $filename]
+set outfile "./output/screenshots/${rootname}.gif"
+set dirName "output/screenshots"
+if {![file exists $dirName]} {
+file mkdir $dirName
+puts "Directory '$dirName' created."
+}
+write_to_gif $outfile
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+schedule_flow -flow report_floorplan -include_in_metrics
+#@ (run_flow): pop_snapshot_stack
+exit 0

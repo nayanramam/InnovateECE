@@ -1,0 +1,1112 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:08:21.185745] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+
+Version: 25.11-s095_1, built Tue Aug 12 07:59:05 PDT 2025
+Options: -batch -log /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/syn_map -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/syn_map_1 metrics_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/syn_map_1 run_tag {} db {rc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_generic.db_1 top_lvl {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 3151469} flow {flow flow:flow_current dir . db {rc dbs/syn_generic.db_1 top_lvl {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 3151469} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth} log_prefix /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/syn_map}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/syn_map_1} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_generic.db_1 top_lvl {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
+Date:    Thu Oct 09 16:08:21 2025
+Host:    ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.69.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB) (264007020KB)
+PID:     3204309
+OS:      Red Hat Enterprise Linux 8.10 (Ootpa)
+
+Checking out license: Genus_Synthesis
+[16:08:22.024123] Periodic Lic check successful
+[16:08:22.024144] Feature usage summary:
+[16:08:22.024145] Genus_Synthesis  
+License checkout complete (1 second elapsed).
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (7 seconds elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (19 seconds elapsed).
+
+#@ Processing -execute option
+@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/syn_map_1 metrics_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/syn_map_1 run_tag {} db {rc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_generic.db_1 top_lvl {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 3151469} flow {flow flow:flow_current dir . db {rc dbs/syn_generic.db_1 top_lvl {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 3151469} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth} log_prefix /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/syn_map}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/syn_map_1} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_generic.db_1 top_lvl {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+init_flow summary:
+  Flow script        : 
+  YAML script        : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml
+  Flow               : flow:flow_current
+  From               : synthesis.syn_map.block_start
+  To                 : synthesis.syn_map.schedule_syn_map_report_synth
+  Top directory      : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+  Working directory  : .
+  Starting database  : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_generic.db_1
+  Run tag            : 
+  Branch name        : 
+  Metrics file       : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/syn_map_1
+  Status file        : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/syn_map_1
+reading previous metrics...
+Sourcing flow scripts...
+  Setting attribute of root '/': 'flow_template_type' = stylus
+  Setting attribute of root '/': 'flow_template_version' = 1
+  Setting attribute of root '/': 'flow_template_tools' = genus innovus tempus quantus voltus
+  Setting attribute of root '/': 'flow_template_feature_definition' = flow_express 0 report_inline {} report_defer 0 report_none 0 report_clp 0 report_lec {} use_common_db 0 report_pba {} dft_simple 0 dft_compressor 0 synth_hybrid 0 synth_ispatial 0 synth_placev2 0 opt_early_cts 0 clock_design 0 clock_flexible_htree 0 opt_clock 0 opt_postcts_hold_disable 0 opt_postcts_split 0 route_filler_disable 0 route_track_opt 0 route_secondary_nets 0 opt_postroute_split 0 opt_route 0 opt_signoff {} opt_em 0 opt_eco 0 sta_use_setup_yaml 0 sta_dmmmc 0 sta_glitch 0 sta_eco 0 report_early_static_ir 0 report_early_dynamic_ir 0 report_grid_resistance 0 report_static_ir {} report_dynamic_ir {} report_rampup 0 report_signal_em 0 report_power_em 0 report_power_parallel 0 ff_setup 0
+  Setting attribute of root '/': 'flowtool_metrics_qor_vivid' = reports/qor.html
+  Setting attribute of root '/': 'flow_header_tcl' = 
+  #- extend flow report name based on context
+  if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+    if {![regexp {sta$} [get_db flow_report_name]]} {
+      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+    }
+  } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+    if {![regexp {era$} [get_db flow_report_name]]} {
+      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+    }
+  } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+    if {![regexp {ir$} [get_db flow_report_name]]} {
+      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+    }
+  } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+    set_db flow_report_name [get_db flow_branch]
+  } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+    set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+  } else {
+  }
+
+  #- Create report dir (if necessary)
+  file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+
+  Setting attribute of root '/': 'flow_top' = flow:block
+  Setting attribute of root '/': 'flow_top' = flow_current
+Sourcing flow scripts done.
+Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
+#@ Begin verbose flow_step activate_views
+@flow_step(activate_views)  2:   apply {{} {
+                                   set db [get_db flow_starting_db]
+                                   set flow [lindex [get_db flow_hier_path] end]
+                                   set setup_views [get_feature -obj $flow setup_views]
+                                   set hold_views [get_feature -obj $flow hold_views]
+                                   set leakage_view [get_feature -obj $flow leakage_view]
+                                   set dynamic_view [get_feature -obj $flow dynamic_view]
+                                 
+                                   if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+                                     #- use read_db args for DB types and set_analysis_views for TCL
+                                     if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+                                       set cmd "set_analysis_view"
+                                       if {$setup_views ne ""} {
+                                         append cmd " -setup [list $setup_views]"
+                                       } else {
+                                         append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+                                       }
+                                       if {$hold_views ne ""} {
+                                         append cmd " -hold [list $hold_views]"
+                                       } else {
+                                         append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+                                       }
+                                       if {$leakage_view ne ""} {
+                                         append cmd " -leakage [list $leakage_view]"
+                                       } else {
+                                         if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+                                           append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+                                         }
+                                       }
+                                       if {$dynamic_view ne ""} {
+                                         append cmd " -dynamic [list $dynamic_view]"
+                                       } else {
+                                         if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+                                           append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+                                         }
+                                       }
+                                       eval $cmd
+                                     } elseif {[llength [get_db analysis_views]] == 0} {
+                                       set cmd "set_flowkit_read_db_args"
+                                       if {$setup_views ne ""} {
+                                         append cmd " -setup_views [list $setup_views]"
+                                       }
+                                       if {$hold_views ne ""} {
+                                         append cmd " -hold_views [list $hold_views]"
+                                       }
+                                       if {$leakage_view ne ""} {
+                                         append cmd " -leakage_view [list $leakage_view]"
+                                       }
+                                       if {$dynamic_view ne ""} {
+                                         append cmd " -dynamic_view [list $dynamic_view]"
+                                       }
+                                       eval $cmd
+                                     } else {
+                                     }
+                                   }
+                                 }}
+#@ End verbose flow_step activate_views
+#@ Begin verbose flow_step init_mcpu
+@flow_step(init_mcpu)  2:   apply {{} {
+                              # Multi host/cpu attributes
+                              #-----------------------------------------------------------------------------
+                              # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+                              # the specified dist script.  This connects the number of CPUs being reserved
+                              # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+                              # a typical environment variable exported by distribution platforms and is
+                              # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+                              if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+                                set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+                              } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+                                set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+                              } else {
+                                set max_cpus 1
+                              }
+                              switch -glob [get_db program_short_name] {
+                                default       {}
+                                joules*       -
+                                genus*        -
+                                innovus*      -
+                                tempus*       -
+                                voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+                              }
+                          if {[get_feature opt_signoff]} {
+                                if {[is_flow -inside flow:opt_signoff]} {
+                                  set_multi_cpu_usage -verbose -remote_host 1
+                                  set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+                                  set_distributed_hosts -local
+                                }
+                          }
+                            }}
+set_multi_cpu_usage -local_cpu 1
+#@ End verbose flow_step init_mcpu
+End steps for plugin point Cadence.plugin.flowkit.read_db.pre
+Reading database file '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_generic.db_1'.
+
+  Message Summary for Library both libraries:
+  *******************************************
+  Missing library level attribute. [LBR-516]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 2
+  *******************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'sky130_tt_1.8_25_nldm.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib'.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'ICGX1'
+        : To make the cell usable, change the value of 'dont_use' attribute to false.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is 'library_domain:tt_v1.8_25C'.
+##  Process: 130            (User Set)
+##     Node: (not set)
+##  Check design process and node:
+##  Design tech node is not set.
+
+  According to lef_library, there are total 5 routing layers [ V(2) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'met1' and 'met5' is too large.
+        : Check the consistency of the parameters, and see if you can ignore this message or you're using different LEF file with wrong parameters.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'MINSPACING' for layers 'met2' and 'met5' is too large.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL1 cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL4 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL8 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL16 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL32 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL64 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ANTENNA cannot be found in library.
+This attribute has no effect on the tool operation.
+This attribute has no effect on the tool operation.
+
+  According to qrc_tech_file, there are total 5 routing layers [ V(2) / H(3) ]
+
+
+  According to qrc_tech_file, there are total 5 routing layers [ V(2) / H(3) ]
+
+Warning : Total power has skewed contributions from leakage and dynamic power. [POPT-502]
+        : With 'opt_leakage_to_dynamic_ratio' set to 0.5, the total power of 'NAND2X1' is being computed as:
+	  Total Power = (Leakage Power * 0.5) + (Dynamic Power * (1 - 0.5))
+	  Leakage Power:     0.1139330000 nW
+	  Dynamic Power:  4821.5147780000 nW
+	  Total Power:    2410.8143555000 nW
+	  Leakage Power is contributing 0.00236% to the Total Power.
+        : Dynamic power is typically calculated/specified for some 'active period'. For combination of leakage and dynamic power opt_leakage_to_dynamic_ratio must specify the percentage of overall time for which the design is not in the 'active period' but in 'idle mode', i.e. no dynamic power but only leakage power is consumed. For a reasonable optimization across dynamic and leakage power, leakage contribution is expected to be above 5% and below 95%. A contribution of less than 5% will result in limited leakage optimization and contribution of more than 95% will result in limited dynamic optimization. Adjust 'opt_leakage_to_dynamic_ratio' so that leakage contribution comes to an intermediate value if you intend both optimizations to occur.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   read_db
+Sourcing flow scripts...
+  Setting attribute of root '/': 'flow_template_type' = stylus
+  Setting attribute of root '/': 'flow_template_version' = 1
+  Setting attribute of root '/': 'flow_template_tools' = genus innovus tempus quantus voltus
+  Setting attribute of root '/': 'flow_template_feature_definition' = flow_express 0 report_inline {} report_defer 0 report_none 0 report_clp 0 report_lec {} use_common_db 0 report_pba {} dft_simple 0 dft_compressor 0 synth_hybrid 0 synth_ispatial 0 synth_placev2 0 opt_early_cts 0 clock_design 0 clock_flexible_htree 0 opt_clock 0 opt_postcts_hold_disable 0 opt_postcts_split 0 route_filler_disable 0 route_track_opt 0 route_secondary_nets 0 opt_postroute_split 0 opt_route 0 opt_signoff {} opt_em 0 opt_eco 0 sta_use_setup_yaml 0 sta_dmmmc 0 sta_glitch 0 sta_eco 0 report_early_static_ir 0 report_early_dynamic_ir 0 report_grid_resistance 0 report_static_ir {} report_dynamic_ir {} report_rampup 0 report_signal_em 0 report_power_em 0 report_power_parallel 0 ff_setup 0
+  Setting attribute of root '/': 'flowtool_metrics_qor_vivid' = reports/qor.html
+  Setting attribute of root '/': 'flow_header_tcl' = 
+  #- extend flow report name based on context
+  if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+    if {![regexp {sta$} [get_db flow_report_name]]} {
+      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+    }
+  } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+    if {![regexp {era$} [get_db flow_report_name]]} {
+      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+    }
+  } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+    if {![regexp {ir$} [get_db flow_report_name]]} {
+      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+    }
+  } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+    set_db flow_report_name [get_db flow_branch]
+  } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+    set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+  } else {
+  }
+
+  #- Create report dir (if necessary)
+  file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+
+  Setting attribute of root '/': 'flow_top' = flow:block
+  Setting attribute of root '/': 'flow_top' = flow_current
+Sourcing flow scripts done.
+reading previous metrics...
+Begin steps for plugin point Cadence.plugin.flowkit.read_db.post
+#@ Begin verbose flow_step activate_views
+@flow_step(activate_views)  2:   apply {{} {
+                                   set db [get_db flow_starting_db]
+                                   set flow [lindex [get_db flow_hier_path] end]
+                                   set setup_views [get_feature -obj $flow setup_views]
+                                   set hold_views [get_feature -obj $flow hold_views]
+                                   set leakage_view [get_feature -obj $flow leakage_view]
+                                   set dynamic_view [get_feature -obj $flow dynamic_view]
+                                 
+                                   if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+                                     #- use read_db args for DB types and set_analysis_views for TCL
+                                     if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+                                       set cmd "set_analysis_view"
+                                       if {$setup_views ne ""} {
+                                         append cmd " -setup [list $setup_views]"
+                                       } else {
+                                         append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+                                       }
+                                       if {$hold_views ne ""} {
+                                         append cmd " -hold [list $hold_views]"
+                                       } else {
+                                         append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+                                       }
+                                       if {$leakage_view ne ""} {
+                                         append cmd " -leakage [list $leakage_view]"
+                                       } else {
+                                         if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+                                           append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+                                         }
+                                       }
+                                       if {$dynamic_view ne ""} {
+                                         append cmd " -dynamic [list $dynamic_view]"
+                                       } else {
+                                         if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+                                           append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+                                         }
+                                       }
+                                       eval $cmd
+                                     } elseif {[llength [get_db analysis_views]] == 0} {
+                                       set cmd "set_flowkit_read_db_args"
+                                       if {$setup_views ne ""} {
+                                         append cmd " -setup_views [list $setup_views]"
+                                       }
+                                       if {$hold_views ne ""} {
+                                         append cmd " -hold_views [list $hold_views]"
+                                       }
+                                       if {$leakage_view ne ""} {
+                                         append cmd " -leakage_view [list $leakage_view]"
+                                       }
+                                       if {$dynamic_view ne ""} {
+                                         append cmd " -dynamic_view [list $dynamic_view]"
+                                       }
+                                       eval $cmd
+                                     } else {
+                                     }
+                                   }
+                                 }}
+#@ End verbose flow_step activate_views
+#@ Begin verbose flow_step init_mcpu
+@flow_step(init_mcpu)  2:   apply {{} {
+                              # Multi host/cpu attributes
+                              #-----------------------------------------------------------------------------
+                              # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+                              # the specified dist script.  This connects the number of CPUs being reserved
+                              # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+                              # a typical environment variable exported by distribution platforms and is
+                              # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+                              if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+                                set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+                              } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+                                set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+                              } else {
+                                set max_cpus 1
+                              }
+                              switch -glob [get_db program_short_name] {
+                                default       {}
+                                joules*       -
+                                genus*        -
+                                innovus*      -
+                                tempus*       -
+                                voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+                              }
+                          if {[get_feature opt_signoff]} {
+                                if {[is_flow -inside flow:opt_signoff]} {
+                                  set_multi_cpu_usage -verbose -remote_host 1
+                                  set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+                                  set_distributed_hosts -local
+                                }
+                          }
+                            }}
+set_multi_cpu_usage -local_cpu 1
+#@ End verbose flow_step init_mcpu
+End steps for plugin point Cadence.plugin.flowkit.read_db.post
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   init_flow
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_map
+  Setting attribute of root '/': 'flow_report_name' = syn_map
+#@ Begin verbose flow_step synthesis.syn_map.block_start
+@flow_step(block_start) 2:     set_db flow_write_db_common false
+  Setting attribute of root '/': 'flow_write_db_common' = false
+#@ End verbose flow_step synthesis.syn_map.block_start
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             32             36                                      block_start
+#@ Begin verbose flow_step synthesis.syn_map.init_genus.init_genus_yaml
+@flow_step(init_genus_yaml)  2:   # Timing attributes  [get_db -category tim]
+@flow_step(init_genus_yaml)  3:   #-------------------------------------------------------------------------------
+@flow_step(init_genus_yaml)  4:   set_db ocv_mode                         true
+  Setting attribute of root '/': 'ocv_mode' = true
+@flow_step(init_genus_yaml)  6:   # Routing attributes  [get_db -category route]
+@flow_step(init_genus_yaml)  7:   #-------------------------------------------------------------------------------
+@flow_step(init_genus_yaml)  8:   set_db design_top_routing_layer met5
+  Setting attribute of root '/': 'design_top_routing_layer' = met5
+@flow_step(init_genus_yaml)  9:   set_db design_bottom_routing_layer met1
+  Setting attribute of root '/': 'design_bottom_routing_layer' = met1
+@flow_step(init_genus_yaml) 11:   # Optimization attributes  [get_db -category netlist]
+@flow_step(init_genus_yaml) 12:   #-------------------------------------------------------------------------------
+@flow_step(init_genus_yaml) 13:   set_db design_flow_effort standard
+  Setting attribute of root '/': 'design_flow_effort' = standard
+@flow_step(init_genus_yaml) 14:   set_db design_power_effort none
+  Setting attribute of root '/': 'design_power_effort' = none
+@flow_step(init_genus_yaml) 15:   set_db opt_leakage_to_dynamic_ratio 0.5
+  Setting attribute of root '/': 'opt_leakage_to_dynamic_ratio' = 0.5
+@flow_step(init_genus_yaml) 16:   set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
+  Setting attribute of root '/': 'cts_buffer_cells' = CLKBUFX2 CLKBUFX4 CLKBUFX8
+@flow_step(init_genus_yaml) 17:   set_db cts_inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+  Setting attribute of root '/': 'cts_inverter_cells' = CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8
+@flow_step(init_genus_yaml) 18:   set_db cts_clock_gating_cells ICGX1
+  Setting attribute of root '/': 'cts_clock_gating_cells' = ICGX1
+@flow_step(init_genus_yaml) 19:   set_db cts_logic_cells {CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+  Setting attribute of root '/': 'cts_logic_cells' = CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8
+@flow_step(init_genus_yaml) 21:   # Physical attributes  [get_db -category phys]
+@flow_step(init_genus_yaml) 22:   #-------------------------------------------------------------------------------
+@flow_step(init_genus_yaml) 23:   set_db design_process_node 130
+##  Process: 130            (User Set)
+##     Node: (not set)
+##  Check design process and node:
+##  Design tech node is not set.
+  Setting attribute of root '/': 'design_process_node' = 130
+#@ End verbose flow_step synthesis.syn_map.init_genus.init_genus_yaml
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:              4              4                                      init_genus_yaml
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   init_genus
+#@ Begin verbose flow_step synthesis.syn_map.init_genus.init_genus_user
+@flow_step(init_genus_user)  2:   set_db heartbeat 300
+  Setting attribute of root '/': 'heartbeat' = 300
+@flow_step(init_genus_user)  3:   set_db max_cpus_per_server 16
+  Setting attribute of root '/': 'max_cpus_per_server' = 16
+@flow_step(init_genus_user)  4:   # Timing attributes  [get_db -category tim]
+@flow_step(init_genus_user)  5:   #-----------------------------------------------------------------------------
+@flow_step(init_genus_user)  6:   set_db timing_apply_default_primary_input_assertion true
+  Setting attribute of root '/': 'timing_apply_default_primary_input_assertion' = true
+@flow_step(init_genus_user)  7:   set_db timing_analysis_async_checks     async
+  Setting attribute of root '/': 'timing_analysis_async_checks' = async
+@flow_step(init_genus_user)  9:   # Optimization attributes  [get_db -category netlist]
+@flow_step(init_genus_user) 10:   #-----------------------------------------------------------------------------
+@flow_step(init_genus_user) 12:   # Datapath attributes  [get_db -category dp]
+@flow_step(init_genus_user) 13:   #-----------------------------------------------------------------------------
+@flow_step(init_genus_user) 15:   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
+@flow_step(init_genus_user) 16:   #-----------------------------------------------------------------------------
+#@ End verbose flow_step synthesis.syn_map.init_genus.init_genus_user
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:              3              4                                      init_genus_user
+#@ Begin verbose flow_step synthesis.syn_map.run_syn_map
+@flow_step(run_syn_map) 2:   #- Synthesize to target library gates
+@flow_step(run_syn_map) 3:   syn_map
+#----------------------------------------------------------------------------------------
+# Root attributes for category: opt
+#----------------------------------------------------------------------------------------
+# Feature                           | Attribute                    | Value            
+#----------------------------------------------------------------------------------------
+# Avoid tied inputs                 | avoid_tied_inputs            | false (default)  
+# Allow floating outputs            | opt_allow_floating_outputs   | false (default)  
+# Power optimization effort         | design_power_effort          | none             
+# Do not use qbar sequential pins   | dont_use_qbar_seq_pins       | false (default)  
+#----------------------------------------------------------------------------------------
+
+There is no ndr for this design!
+##Generic Timing Info: typical gate delay  121.6 ps   std_slew:   13.6 ps   std_load:  5.5 fF  for library domain tt_v1.8_25C
+INFO (IMPEXT-7048): Generating auto layer map file.
+
+INFO (IMPEXT-6188): Importing multi-corner technology file(s) for preRoute extraction...
+
+INFO (IMPEXT-5003): /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/../SiliconJackets/cadence_sky130/sky130_release_0.0.4/quantus/extraction/typical/qrcTechFile
+
+INFO (IMPEXT-7048): Generating auto layer map file.
+
+INFO (IMPEXT-6209): Completed (cpu: 1181589.000000 real: 1181589.000000)
+
+Mapping ChipWare ICG instances in top_lvl
+Found 0 unmapped ChipWare ICG instances
+Mapped 0 of 0 ChipWare ICG instances
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.000
+Via Resistance      : 3.955 ohm (from qrc_tech_file)
+Site size           : 4.600 um (from lef [tech+cell])
+
+Warning : This attribute will be obsolete in a next major release. [TUI-32]
+        : attribute: 'number_of_routing_layers', object type: 'root'
+        : Attribute, 'number_of_routing_layers' on root is going to be obsoleted. Use root attribute 'design_top_routing_layer' instead.
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       qrc_tech_file
+------------------------------------------------
+metal1          H         1.00        0.000299  
+metal2          V         1.00        0.000294  
+metal3          H         1.00        0.000348  
+metal4          V         1.00        0.000324  
+metal5          H         1.00        0.000301  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       qrc_tech_file
+-------------------------------------------------
+metal1          H         1.00         0.892857  
+metal2          V         1.00         0.892857  
+metal3          H         1.00         0.156667  
+metal4          V         1.00         0.156667  
+metal5          H         1.00         0.018125  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Warning : Total power has skewed contributions from leakage and dynamic power. [POPT-502]
+        : With 'opt_leakage_to_dynamic_ratio' set to 0.5, the total power of 'NAND2X1' is being computed as:
+	  Total Power = (Leakage Power * 0.5) + (Dynamic Power * (1 - 0.5))
+	  Leakage Power:     0.1139330000 nW
+	  Dynamic Power:  4821.5147780000 nW
+	  Total Power:    2410.8143555000 nW
+	  Leakage Power is contributing 0.00236% to the Total Power.
+Info    : Mapping. [SYNTH-4]
+        : Mapping 'top_lvl' using 'high' effort.
+Mapper: Libraries have:
+	domain tt_v1.8_25C: 88 combo usable cells and 18 sequential usable cells
+PBS_TechMap-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_TechMap-Premap HBO Optimizations - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Premap HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed mapping optimization to kick in.
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.000
+Via Resistance      : 3.955 ohm (from qrc_tech_file)
+Site size           : 4.600 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       qrc_tech_file
+------------------------------------------------
+metal1          H         1.00        0.000299  
+metal2          V         1.00        0.000294  
+metal3          H         1.00        0.000348  
+metal4          V         1.00        0.000324  
+metal5          H         1.00        0.000301  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       qrc_tech_file
+-------------------------------------------------
+metal1          H         1.00         0.892857  
+metal2          V         1.00         0.892857  
+metal3          H         1.00         0.156667  
+metal4          V         1.00         0.156667  
+metal5          H         1.00         0.018125  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Warning : Total power has skewed contributions from leakage and dynamic power. [POPT-502]
+        : With 'opt_leakage_to_dynamic_ratio' set to 0.5, the total power of 'NAND2X1' is being computed as:
+	  Total Power = (Leakage Power * 0.5) + (Dynamic Power * (1 - 0.5))
+	  Leakage Power:     0.1139330000 nW
+	  Dynamic Power:  4821.5147780000 nW
+	  Total Power:    2410.8143555000 nW
+	  Leakage Power is contributing 0.00236% to the Total Power.
+Mapper: Libraries have:
+	domain tt_v1.8_25C: 88 combo usable cells and 18 sequential usable cells
+Multi-threaded constant propagation [1|0] ...
+Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 88 CPUs usable)
+Normal Structuring mode def=cb_oseq
+Normal Structuring mode def=cb_seq
+ 
+Global mapping target info
+==========================
+Cost Group 'core_clock' target slack:  -100 ps
+Target path end-point (Pin: u_ctrl_r_ptr_reg[2]/d)
+
+Multi-threaded Technology Mapping (8 threads per ST process, 8 of 88 CPUs usable)
+Normal Structuring mode def=cb_seq
+Normal Structuring mode def=cb_oseq
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_map               601656     -200 
+            Worst cost_group: core_clock, WNS: -200.0
+            Path: u_ctrl_state_reg[0]/CK --> u_ctrl_w_ptr_reg[6]/SI
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+    core_clock              -100     -200      -7%     1300 
+
+ 
+Global incremental target info
+==============================
+Cost Group 'core_clock' target slack:  -200 ps
+Target path end-point (Pin: u_ctrl_w_ptr_reg[6]/SI (SDFFX4/SI))
+
+Warning : Ungrouping the instance/module as 'false' cannot be set on tool_generated hierarchies. [GLO-61]
+        : The 'false' setting on the 'cb_oseq' tool_generated module is being ignored.
+        : Kindly check the script whether the ungroup_ok is set to false. Alternately it can be set to 'strict_no' to disable ungrouping but this can impact PPA.
+==================================
+Stage : global_incr_map 
+==================================
+  =================
+   Message Summary
+  =================
+---------------------------------------------------------------------------
+|   Id   |  Sev  |Count|                   Message Text                   |
+---------------------------------------------------------------------------
+|GLO-61  |Warning|    1|Ungrouping the instance/module as 'false' cannot  |
+|        |       |     | be set on tool_generated hierarchies.            |
+|        |       |     |Kindly check the script whether the ungroup_ok is |
+|        |       |     | set to false. Alternately it can be set to       |
+|        |       |     | 'strict_no' to disable ungrouping but this can   |
+|        |       |     | impact PPA.                                      |
+|GLO-62  |Info   |  306|On tool_generated instance/module 'strict_no' is  |
+|        |       |     | set.                                             |
+|        |       |     |This shall only be used for special purposes like |
+|        |       |     | formal verification.                             |
+|INVS-99 |Info   |    2|Setting Innovus attribute that is not used by     |
+|        |       |     | Genus.                                           |
+|        |       |     |This attribute exists to allow configuration of   |
+|        |       |     | Innovus from Genus.                              |
+|LBR-40  |Info   |    4|An unsupported construct was detected in this     |
+|        |       |     | library.                                         |
+|        |       |     |Check to see if this construct is really needed   |
+|        |       |     | for synthesis. Many liberty constructs are not   |
+|        |       |     | actually required.                               |
+|LBR-41  |Info   |  128|An output library pin lacks a function attribute. |
+|        |       |     |If the remainder of this library cell's semantic  |
+|        |       |     | checks are successful, it will be considered as a|
+|        |       |     | timing-model                                     |
+|        |       |     | (because one of its outputs does not have a valid|
+|        |       |     | function.                                        |
+|LBR-101 |Warning|    2|Unusable clock gating integrated cell found at the|
+|        |       |     | time of loading libraries. This warning happens  |
+|        |       |     | because a particular library cell is defined as  |
+|        |       |     | 'clock_gating_integrated_cell', but 'dont_use'   |
+|        |       |     | attribute is defined as true in the liberty      |
+|        |       |     | library. To make Genus use this cell for clock   |
+|        |       |     | gating insertion, 'dont_use' attribute should be |
+|        |       |     | set to false.                                    |
+|        |       |     |To make the cell usable, change the value of      |
+|        |       |     | 'dont_use' attribute to false.                   |
+|LBR-109 |Info   |    2|Set default library domain.                       |
+|LBR-162 |Info   |   52|Both 'pos_unate' and 'neg_unate' timing_sense arcs|
+|        |       |     | have been processed.                             |
+|        |       |     |Setting the 'timing_sense' to non_unate.          |
+|LBR-412 |Info   |    4|Created nominal operating condition.              |
+|        |       |     |The nominal operating condition is represented,   |
+|        |       |     | either by the nominal PVT values specified in the|
+|        |       |     | library source                                   |
+|        |       |     | (via nom_process,nom_voltage and nom_temperature |
+|        |       |     | respectively)                                    |
+|        |       |     | , or by the default PVT values (1.0,1.0,1.0).    |
+|LBR-516 |Info   |    2|Missing library level attribute.                  |
+|PA-7    |Info   |    4|Resetting power analysis results.                 |
+|        |       |     |All computed switching activities are removed.    |
+|PHYS-12 |Warning|    4|The variant range of wire parameters is too large.|
+|        |       |     | An example of wire parameters are, a WIDTH for   |
+|        |       |     | layer, PITCH for layer, MINSPACING for layers,   |
+|        |       |     | etc.                                             |
+|        |       |     |Check the consistency of the parameters, and see  |
+|        |       |     | if you can ignore this message or you're using   |
+|        |       |     | different LEF file with wrong parameters.        |
+|PHYS-279|Warning|   16|Physical cell not defined in library.             |
+|        |       |     |Ensure that the proper library files are available|
+|        |       |     | and have been imported.                          |
+|PHYS-752|Info   |    2|Partition Based Synthesis execution skipped.      |
+|POPT-502|Warning|    4|Total power has skewed contributions from leakage |
+|        |       |     | and dynamic power.                               |
+|        |       |     |Dynamic power is typically calculated/specified   |
+|        |       |     | for some 'active period'. For combination of     |
+|        |       |     | leakage and dynamic power                        |
+|        |       |     | opt_leakage_to_dynamic_ratio must specify the    |
+|        |       |     | percentage of overall time for which the design  |
+|        |       |     | is not in the 'active period' but in 'idle mode',|
+|        |       |     | i.e. no dynamic power but only leakage power is  |
+|        |       |     | consumed. For a reasonable optimization across   |
+|        |       |     | dynamic and leakage power, leakage contribution  |
+|        |       |     | is expected to be above 5% and below 95%. A      |
+|        |       |     | contribution of less than 5% will result in      |
+|        |       |     | limited leakage optimization and contribution of |
+|        |       |     | more than 95% will result in limited dynamic     |
+|        |       |     | optimization. Adjust                             |
+|        |       |     | 'opt_leakage_to_dynamic_ratio' so that leakage   |
+|        |       |     | contribution comes to an intermediate value if   |
+|        |       |     | you intend both optimizations to occur.          |
+|SYNTH-4 |Info   |    1|Mapping.                                          |
+|TIM-1000|Info   |    2|Multimode clock gating check is disabled.         |
+|TUI-32  |Warning|    1|This attribute will be obsolete in a next major   |
+|        |       |     | release.                                         |
+|        |       |     |Attribute, 'number_of_routing_layers' on root is  |
+|        |       |     | going to be obsoleted. Use root attribute        |
+|        |       |     | 'design_top_routing_layer' instead.              |
+|TUI-58  |Info   |  235|Removed object.                                   |
+---------------------------------------------------------------------------
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_incr              599842     -186 
+            Worst cost_group: core_clock, WNS: -186.1
+            Path: u_ctrl_state_reg[1]/CK --> u_ctrl_r_ptr_reg[8]/D
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+    core_clock              -200     -186      +1%     1300 
+
+/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/.st_launch_ece-rschsrv.ece.gatech.edu_3204309
+
+State Retention Synthesis Status
+================================
+
+Category                        Flops  Latches   Percentage
+-----------------------------------------------------------
+Total instances                    86      152        100.0
+Excluded from State Retention      86      152        100.0
+    - Will not convert             86      152        100.0
+      - Preserved                   0        0          0.0
+      - Power intent excluded      86      152        100.0
+    - Could not convert             0        0          0.0
+      - Scan type                   0        0          0.0
+      - No suitable cell            0        0          0.0
+State Retention instances           0        0          0.0
+-----------------------------------------------------------
+
+Info    : Relaxed some design requirements on sequential instances to run synthesis successfully. [MAP-32]
+        : One or more of the following design requirements relaxed on 149 sequential instance(s): map_prefer_non_inverted_clock_line.
+        : To see the list of relaxed sequential instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list.
+INFO: skipping constant propagation
+PBS_Techmap-Global Mapping - Elapsed_Time 18, CPU_Time 17.673274999999997
+stamp 'PBS_Techmap-Global Mapping' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:01(00:00:59) |  00:00:17(00:00:18) | 100.0(100.0) |   16:09:22 (Oct09) |  762.2 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Advanced structuring report (syn_map):
+--------------------------------------------------------------------------------------------------
+|                    | Graph                | Opt. Graph           | Result         |            | 
+|--------------------+----------------------+----------------------+----------------+------------|
+| Name       | Tag   | #nodes | #and | #lvl | #nodes | #and | #lvl | Acc | Time     | Netlist ID | 
+--------------------------------------------------------------------------------------------------
+| cb_seq     | CONDE |   1330 |  464 |   70 |   1224 |  358 |   64 | Y   |     1.78 | cb_seq     | 
+--------------------------------------------------------------------------------------------------
+Number of LFLHs filtered from table: 5
+Runtime accepts/rejects/total =     1.78 /     0.74 /     2.52
+Accepts/rejects/total = 1 / 1 / 2
+Sum of reduced nodes/levels = 106 / 6
+--------------------------------------------------------------------------------------------------
+|                    | Graph                | Opt. Graph           | Result         |            | 
+|--------------------+----------------------+----------------------+----------------+------------|
+| Name       | Tag   | #nodes | #and | #lvl | #nodes | #and | #lvl | Acc | Time     | Netlist ID | 
+--------------------------------------------------------------------------------------------------
+| cb_seq     | REIFI |   1300 |  434 |   70 |   1409 |  543 |   11 | N   |     2.83 | cb_seq     | 
+--------------------------------------------------------------------------------------------------
+Number of LFLHs filtered from table: 5
+Runtime accepts/rejects/total =     0.00 /     3.32 /     3.32
+Accepts/rejects/total = 0 / 2 / 2
+Sum of reduced nodes/levels = 0 / 0
+Info    : Wrote formal verification information. [CFM-5]
+        : Wrote 'fv/top_lvl/fv_map.fv.json' for netlist 'fv/top_lvl/fv_map.v.gz'.
+Info    : Existing dofile found. Copied as fv/top_lvl/rtl_to_fv_map.do~.
+Info    : Wrote dofile. [CFM-1]
+        : Dofile is 'fv/top_lvl/rtl_to_fv_map.do'.
+        : RTL names flow is enabled.
+PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 3, CPU_Time 2.0
+stamp 'PBS_TechMap-Datapath Postmap Operations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:01(00:00:59) |  00:00:17(00:00:18) |  89.8( 85.7) |   16:09:22 (Oct09) |  762.2 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:02(00:00:03) |  10.2( 14.3) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 0, CPU_Time -0.042502999999996405
+stamp 'PBS_TechMap-Postmap HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:01(00:00:59) |  00:00:17(00:00:18) |  90.0( 85.7) |   16:09:22 (Oct09) |  762.2 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:02(00:00:03) |  10.2( 14.3) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:00(00:00:00) |  -0.2(  0.0) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+ Doing ConstProp on design:top_lvl ... 
+
+  Decloning clock-gating logic from design:top_lvl
+Clock-Gating declone Status
+===========================
+Total number of Synthesis inserted clock-gating instances before: 0
+Total number of Synthesis inserted clock-gating instances after : 0
+Total number of clock-gating instances before: 0
+Total number of clock-gating instances after : 0
+Time taken by ConstProp Step: 00:00:00
+PBS_TechMap-Postmap Clock Gating - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Postmap Clock Gating' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:01(00:00:59) |  00:00:17(00:00:18) |  90.0( 85.7) |   16:09:22 (Oct09) |  762.2 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:02(00:00:03) |  10.2( 14.3) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:00(00:00:00) |  -0.2(  0.0) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+-------------------------------------------------------------------------------
+ hi_fo_buf                599842     -186     -1599      4633        0        0
+            Worst cost_group: core_clock, WNS: -186.1
+            Path: u_ctrl_state_reg[1]/CK --> u_ctrl_r_ptr_reg[8]/D
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       hi_fo_buf         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - - - DRC Totals - - - -
+                           Total  Weighted      Neg      Max       Max     Max  
+Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
+ init_delay               599842     -186     -1599      4633        0        0
+            Worst cost_group: core_clock, WNS: -186.1
+            Path: u_ctrl_state_reg[1]/CK --> u_ctrl_r_ptr_reg[8]/D
+ incr_delay               600329      -88     -1047      4633        0        0
+            Worst cost_group: core_clock, WNS: -88.1
+            Path: u_ctrl_w_ptr_reg[0]/CK --> u_ctrl_w_ptr_reg[5]/SI
+ incr_delay               600337      -85     -1020      4633        0        0
+            Worst cost_group: core_clock, WNS: -85.4
+            Path: u_ctrl_state_reg[0]/CK --> u_ctrl_w_ptr_reg[5]/SI
+ incr_delay               600348      -73      -942      4633        0        0
+            Worst cost_group: core_clock, WNS: -73.4
+            Path: u_ctrl_state_reg[0]/CK --> u_ctrl_w_ptr_reg[5]/SI
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz        68  (       25 /       25 )  0.10
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st        28  (        0 /        0 )  0.00
+    plc_st_fence        28  (        0 /        0 )  0.00
+        plc_star        28  (        0 /        0 )  0.00
+      plc_laf_st        28  (        0 /        0 )  0.00
+ plc_laf_st_fence        28  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+            fopt        49  (        7 /        8 )  0.10
+   plc_laf_lo_st        30  (        0 /        0 )  0.00
+       plc_lo_st        30  (        0 /        0 )  0.00
+        mb_split        30  (        0 /        0 )  0.00
+
+ 
+Local TNS optimization status
+=============================
+                                   Group   
+                                  Tot Wrst     Total - - - - DRC Totals - - - -
+                           Total  Weighted      Neg      Max       Max     Max  
+Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
+ init_tns                 600348      -73      -942      4633        0        0
+            Worst cost_group: core_clock, WNS: -73.4
+            Path: u_ctrl_state_reg[0]/CK --> u_ctrl_w_ptr_reg[5]/SI
+ incr_tns                 600470      -69      -466      4633        0        0
+            Worst cost_group: core_clock, WNS: -69.3
+            Path: u_ctrl_state_reg[0]/CK --> u_ctrl_w_ptr_reg[8]/SI
+ incr_tns                 600470      -69      -466      4633        0        0
+            Worst cost_group: core_clock, WNS: -69.3
+            Path: u_ctrl_state_reg[0]/CK --> u_ctrl_w_ptr_reg[8]/SI
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       crit_upsz       147  (       32 /       42 )  0.21
+   plc_laf_lo_st       115  (        0 /        0 )  0.00
+       plc_lo_st       115  (        0 /        0 )  0.00
+            fopt       115  (        0 /        0 )  0.01
+       crit_dnsz       179  (       27 /       33 )  0.35
+             dup        88  (        1 /        1 )  0.03
+        setup_dn        87  (        0 /        1 )  0.00
+        mb_split        87  (        0 /        0 )  0.00
+
+PBS_TechMap-Postmap Cleanup - Elapsed_Time 1, CPU_Time 0.9568199999999933
+stamp 'PBS_TechMap-Postmap Cleanup' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:01(00:00:59) |  00:00:17(00:00:18) |  85.8( 81.8) |   16:09:22 (Oct09) |  762.2 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:02(00:00:03) |   9.7( 13.6) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:00(00:00:00) |  -0.2(  0.0) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:03) |  00:00:00(00:00:01) |   4.6(  4.5) |   16:09:26 (Oct09) |  762.2 MB | PBS_TechMap-Postmap Cleanup
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_Techmap-Post_MBCI - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Techmap-Post_MBCI' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:41) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:04 (Oct09) |  780.4 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:01(00:00:59) |  00:00:17(00:00:18) |  85.8( 81.8) |   16:09:22 (Oct09) |  762.2 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:02(00:00:03) |   9.7( 13.6) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:00(00:00:00) |  -0.2(  0.0) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:02) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:25 (Oct09) |  762.2 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:03) |  00:00:00(00:00:01) |   4.6(  4.5) |   16:09:26 (Oct09) |  762.2 MB | PBS_TechMap-Postmap Cleanup
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   16:09:26 (Oct09) |  762.2 MB | PBS_Techmap-Post_MBCI
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+##>=================== Cadence Confidential (Mapping-Logical) ===================
+##>Main Thread Summary:
+##>----------------------------------------------------------------------------------------
+##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
+##>----------------------------------------------------------------------------------------
+##>M:Initial                            0         -         -       916    584186       780
+##>M:Early Clock Gating                 0         -         -         -         -         -
+##>M:Pre Cleanup                        0         -         -       916    584186       780
+##>M:Setup                              0         -         -         -         -         -
+##>M:Launch ST                          0         -         -         -         -         -
+##>M:Design Partition                   0         -         -         -         -         -
+##>M:Create Partition Netlists          0         -         -         -         -         -
+##>M:Init Power                         0         -         -         -         -         -
+##>M:Budgeting                          0         -         -         -         -         -
+##>M:Derenv-DB                          0         -         -         -         -         -
+##>M:Debug Outputs                      0         -         -         -         -         -
+##>M:ST loading                         0         -         -         -         -         -
+##>M:Distributed                        0         -         -         -         -         -
+##>M:Timer                              0         -         -         -         -         -
+##>M:Assembly                           0         -         -         -         -         -
+##>M:DFT                                0         -         -         -         -         -
+##>M:DP Operations                      3         -         -       803    583230       762
+##>M:Const Prop                         0      -186      1599       803    583230       762
+##>M:Cleanup                            1       -69       466       821    583617       762
+##>M:MBCI                               0         -         -       821    583617       762
+##>M:PostGen Opt                        0         -         -         -         -         -
+##>M:Const Gate Removal                 0         -         -         -         -         -
+##>M:Early Clock Gating Cleanup         0         -         -         -         -         -
+##>M:Misc                              18
+##>----------------------------------------------------------------------------------------
+##>Total Elapsed                       22
+##>========================================================================================
+Info    : Relaxed some design requirements on sequential instances to run synthesis successfully. [MAP-32]
+        : One or more of the following design requirements relaxed on 149 sequential instance(s): map_prefer_non_inverted_clock_line.
+Info    : Done mapping. [SYNTH-5]
+        : Done mapping 'top_lvl'.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_map
+#@ End verbose flow_step synthesis.syn_map.run_syn_map
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             29             28                                      run_syn_map
+#@ Begin verbose flow_step synthesis.syn_map.block_finish
+@flow_step(block_finish)  2:   apply {{} {
+                                 #- Make sure flow_report_name is reset from any reports executed during the flow
+                                 set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+                                 #- Set DB for handoff to Innovus
+                                 if {[is_flow -inside flow:syn_opt]} {
+                                   set_db flow_write_db_common true
+                                 }
+                               
+                                 #- Set value for SPEF output file generation
+                                 if {[get_db flow_branch] ne ""} {
+                                   set out_dir [file join [get_db flow_db_directory] [get_db flow_branch]_[get_db flow_report_name]]
+                                 } else {
+                                   set out_dir [file join [get_db flow_db_directory] [get_db flow_report_name]]
+                                 }
+                                 set_db flow_spef_directory $out_dir
+                               
+                                 #- Store non-default root attributes to metrics
+                                 catch {report_obj -tcl} flow_root_config
+                                 if {[dict exists $flow_root_config root:/]} {
+                                   set flow_root_config [dict get $flow_root_config root:/]
+                                 } elseif {[dict exists $flow_root_config root:]} {
+                                   set flow_root_config [dict get $flow_root_config root:]
+                                 } else {
+                                 }
+                                 foreach key [dict keys $flow_root_config] {
+                                   if {[string length [dict get $flow_root_config $key]] > 200} {
+                                     dict set flow_root_config $key "\[long value truncated\]"
+                                   }
+                                 }
+                                 set_metric -name flow.root_config -value $flow_root_config
+                               }}
+  Setting attribute of root '/': 'flow_report_name' = syn_map
+  Setting attribute of root '/': 'flow_spef_directory' = dbs/syn_map
+#@ End verbose flow_step synthesis.syn_map.block_finish
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:              4              3                                      block_finish
+Finished exporting design database to file '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_map.db_1' for 'top_lvl' (command execution time mm:ss cpu = 00:00, real = 00:00).
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   write_db
+#@ Begin verbose flow_step synthesis.syn_map.schedule_syn_map_report_synth
+@flow_step(schedule_syn_map_report_synth) 2:     schedule_flow -flow report_synth -include_in_metrics
+#@ End verbose flow_step synthesis.syn_map.schedule_syn_map_report_synth
+
+Program version = 25.11-s095_1
+Working directory = /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+Databases directory = /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs
+Starting time = Oct 09, 2025 16:08:50
+Ending time = Oct 09, 2025 16:09:38
+
+Run Flow Summary
+---------------------
+
+Steps run:  synthesis.syn_map.block_start synthesis.syn_map.init_genus.init_genus_yaml synthesis.syn_map.init_genus.init_genus_user synthesis.syn_map.run_syn_map synthesis.syn_map.block_finish synthesis.syn_map.schedule_syn_map_report_synth
+
+Step status:
+     synthesis.syn_map.block_start                           success
+     synthesis.syn_map.init_genus.init_genus_yaml            success
+     synthesis.syn_map.init_genus.init_genus_user            success
+     synthesis.syn_map.run_syn_map                           success
+     synthesis.syn_map.block_finish                          success
+     synthesis.syn_map.schedule_syn_map_report_synth         success
+
+ ---------------------------------------------------------------------------------------------------- 
+| Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
+|-------------+------------------+-------------------+-----------------------+-----------------------|
+| syn_generic | 0:02:09          | 0:02:14           |                       |                       |
+| syn_map     | 0:01:12          | 0:01:15           |                       |                       |
+ ---------------------------------------------------------------------------------------------------- 
+
+Lic Summary:
+[16:09:38.348032] Cdslmd servers: ece-winlic
+[16:09:38.872338] Feature usage summary:
+[16:09:38.872339] Genus_Synthesis  
+Normal exit.

@@ -1,0 +1,769 @@
+Flowtool
+Copyright 2025 Cadence Design Systems Inc.  All rights reserved worldwide
+
+Command:   -reset
+Directory: /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+Script:    scripts/flow.yaml
+Version:   25.10-b003_1, built 03/20/2025 14:55 PDT
+Date:      Thu Oct 09 16:04:52 2025
+
+
+flowkit/nfs_lock: Existing lock for file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status has timed out, deleting the lock file
+
+flowkit/nfs_lock: Existing lock for file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics has timed out, deleting the lock file
+Starting scheduled flows at 10-09 16:05:43...
+* flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth
+Waiting for flows to return... (1 running)
+*  flow_current.synthesis.syn_generic  step:block_start  started:10-09 16:06:19  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:block_start  ended:10-09 16:06:20  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:init_elaborate  started:10-09 16:06:23  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:init_elaborate  ended:10-09 16:06:23  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:read_mmmc  started:10-09 16:06:26  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:read_mmmc  ended:10-09 16:06:28  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:read_physical  started:10-09 16:06:31  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:read_physical  ended:10-09 16:06:31  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:read_hdl  started:10-09 16:06:34  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:read_hdl  ended:10-09 16:06:35  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:read_power_intent  started:10-09 16:06:38  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:read_power_intent  ended:10-09 16:06:38  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:run_init_design  started:10-09 16:06:41  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_design  step:run_init_design  ended:10-09 16:06:46  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_genus  step:init_genus_yaml  started:10-09 16:06:49  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_genus  step:init_genus_yaml  ended:10-09 16:06:50  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_genus  step:init_genus_user  started:10-09 16:06:53  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic.init_genus  step:init_genus_user  ended:10-09 16:06:53  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:set_dont_use  started:10-09 16:06:56  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:set_dont_use  ended:10-09 16:06:57  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:commit_power_intent  started:10-09 16:07:00  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:commit_power_intent  ended:10-09 16:07:01  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:run_syn_generic  started:10-09 16:07:04  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:run_syn_generic  ended:10-09 16:07:57  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:block_finish  started:10-09 16:08:00  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:block_finish  ended:10-09 16:08:01  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:schedule_syn_generic_report_synth  started:10-09 16:08:04  log:logs/syn_generic.log1
+*  flow_current.synthesis.syn_generic  step:schedule_syn_generic_report_synth  ended:10-09 16:08:05  log:logs/syn_generic.log1
+  flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth returned successfully
+
+Starting scheduled flows at 10-09 16:08:14...
+* flow_current @ genus: synthesis.syn_map.block_start -> synthesis.syn_map.schedule_syn_map_report_synth
+  report_synth @ genus: report_start -> report_finish
+Waiting for flows to return... (2 running)
+*  flow_current.synthesis.syn_map  step:block_start  started:10-09 16:08:51  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map  step:block_start  ended:10-09 16:08:51  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map.init_genus  step:init_genus_yaml  started:10-09 16:08:55  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map.init_genus  step:init_genus_yaml  ended:10-09 16:08:55  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map.init_genus  step:init_genus_user  started:10-09 16:08:58  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map.init_genus  step:init_genus_user  ended:10-09 16:08:59  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map  step:run_syn_map  started:10-09 16:09:02  log:logs/syn_map.log1
+   report_synth  step:report_start  started:10-09 16:08:58  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_start  ended:10-09 16:08:59  log:logs/syn_generic.report_synth.log1
+   report_synth.init_genus  step:init_genus_yaml  started:10-09 16:09:02  log:logs/syn_generic.report_synth.log1
+   report_synth.init_genus  step:init_genus_yaml  ended:10-09 16:09:03  log:logs/syn_generic.report_synth.log1
+   report_synth.init_genus  step:init_genus_user  started:10-09 16:09:06  log:logs/syn_generic.report_synth.log1
+   report_synth.init_genus  step:init_genus_user  ended:10-09 16:09:07  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_area_genus  started:10-09 16:09:10  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_area_genus  ended:10-09 16:09:13  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_late_summary_genus  started:10-09 16:09:16  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_late_summary_genus  ended:10-09 16:09:18  log:logs/syn_generic.report_synth.log1
+*  flow_current.synthesis.syn_map  step:run_syn_map  ended:10-09 16:09:27  log:logs/syn_map.log1
+   report_synth  step:report_late_paths  started:10-09 16:09:21  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_late_paths  ended:10-09 16:09:22  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_power_genus  started:10-09 16:09:25  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_power_genus  ended:10-09 16:09:27  log:logs/syn_generic.report_synth.log1
+*  flow_current.synthesis.syn_map  step:block_finish  started:10-09 16:09:30  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map  step:block_finish  ended:10-09 16:09:31  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map  step:schedule_syn_map_report_synth  started:10-09 16:09:35  log:logs/syn_map.log1
+*  flow_current.synthesis.syn_map  step:schedule_syn_map_report_synth  ended:10-09 16:09:35  log:logs/syn_map.log1
+   report_synth  step:report_finish  started:10-09 16:09:30  log:logs/syn_generic.report_synth.log1
+   report_synth  step:report_finish  ended:10-09 16:09:31  log:logs/syn_generic.report_synth.log1
+  report_synth @ genus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/syn_generic.report_synth.log1
+    error summary:
+      Severity  ID                  Count  Step                       Where                             Summary
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 2                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 3                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 4                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  report_late_summary_genus line 1  A required object parameter could not be found.
+
+Waiting for flows to return... (1 running)
+  flow_current @ genus: synthesis.syn_map.block_start -> synthesis.syn_map.schedule_syn_map_report_synth returned successfully
+
+Starting scheduled flows at 10-09 16:09:49...
+* flow_current @ genus: synthesis.syn_opt.block_start -> synthesis.syn_opt.schedule_syn_opt_report_synth
+  report_synth @ genus: report_start -> report_finish
+Waiting for flows to return... (2 running)
+   report_synth  step:report_start  started:10-09 16:10:25  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_start  ended:10-09 16:10:25  log:logs/syn_map.report_synth.log1
+   report_synth.init_genus  step:init_genus_yaml  started:10-09 16:10:29  log:logs/syn_map.report_synth.log1
+   report_synth.init_genus  step:init_genus_yaml  ended:10-09 16:10:30  log:logs/syn_map.report_synth.log1
+   report_synth.init_genus  step:init_genus_user  started:10-09 16:10:33  log:logs/syn_map.report_synth.log1
+*  flow_current.synthesis.syn_opt  step:block_start  started:10-09 16:10:33  log:logs/syn_opt.log1
+*  flow_current.synthesis.syn_opt  step:block_start  ended:10-09 16:10:34  log:logs/syn_opt.log1
+*  flow_current.synthesis.syn_opt.init_genus  step:init_genus_yaml  started:10-09 16:10:38  log:logs/syn_opt.log1
+*  flow_current.synthesis.syn_opt.init_genus  step:init_genus_yaml  ended:10-09 16:10:39  log:logs/syn_opt.log1
+*  flow_current.synthesis.syn_opt.init_genus  step:init_genus_user  started:10-09 16:10:42  log:logs/syn_opt.log1
+*  flow_current.synthesis.syn_opt.init_genus  step:init_genus_user  ended:10-09 16:10:43  log:logs/syn_opt.log1
+   report_synth.init_genus  step:init_genus_user  ended:10-09 16:10:33  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_area_genus  started:10-09 16:10:36  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_area_genus  ended:10-09 16:10:39  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_late_summary_genus  started:10-09 16:10:42  log:logs/syn_map.report_synth.log1
+*  flow_current.synthesis.syn_opt  step:run_syn_opt  started:10-09 16:10:46  log:logs/syn_opt.log1
+   report_synth  step:report_late_summary_genus  ended:10-09 16:10:44  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_late_paths  started:10-09 16:10:47  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_late_paths  ended:10-09 16:10:49  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_power_genus  started:10-09 16:10:52  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_power_genus  ended:10-09 16:10:53  log:logs/syn_map.report_synth.log1
+*  flow_current.synthesis.syn_opt  step:run_syn_opt  ended:10-09 16:10:57  log:logs/syn_opt.log1
+*  flow_current.synthesis.syn_opt  step:block_finish  started:10-09 16:11:01  log:logs/syn_opt.log1
+   report_synth  step:report_finish  started:10-09 16:10:56  log:logs/syn_map.report_synth.log1
+   report_synth  step:report_finish  ended:10-09 16:10:57  log:logs/syn_map.report_synth.log1
+  report_synth @ genus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/syn_map.report_synth.log1
+    error summary:
+      Severity  ID                  Count  Step                       Where                             Summary
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 2                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 3                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 4                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  report_late_summary_genus line 1  A required object parameter could not be found.
+
+Waiting for flows to return... (1 running)
+*  flow_current.synthesis.syn_opt  step:block_finish  ended:10-09 16:11:43  log:logs/syn_opt.log1
+*  flow_current.synthesis.syn_opt  step:schedule_syn_opt_report_synth  started:10-09 16:11:46  log:logs/syn_opt.log1
+*  flow_current.synthesis.syn_opt  step:schedule_syn_opt_report_synth  ended:10-09 16:11:47  log:logs/syn_opt.log1
+  flow_current @ genus: synthesis.syn_opt.block_start -> synthesis.syn_opt.schedule_syn_opt_report_synth returned successfully
+
+Starting scheduled flows at 10-09 16:11:57...
+* flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan
+  report_synth @ genus: report_start -> report_finish
+Waiting for flows to return... (2 running)
+   report_synth  step:report_start  started:10-09 16:12:33  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_start  ended:10-09 16:12:34  log:logs/syn_opt.report_synth.log1
+   report_synth.init_genus  step:init_genus_yaml  started:10-09 16:12:37  log:logs/syn_opt.report_synth.log1
+   report_synth.init_genus  step:init_genus_yaml  ended:10-09 16:12:38  log:logs/syn_opt.report_synth.log1
+*  flow_current.implementation.floorplan  step:block_start  started:10-09 16:12:49  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:block_start  ended:10-09 16:12:50  log:logs/floorplan.log1
+   report_synth.init_genus  step:init_genus_user  started:10-09 16:12:41  log:logs/syn_opt.report_synth.log1
+   report_synth.init_genus  step:init_genus_user  ended:10-09 16:12:42  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_area_genus  started:10-09 16:12:46  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_area_genus  ended:10-09 16:12:48  log:logs/syn_opt.report_synth.log1
+*  flow_current.implementation.floorplan.init_innovus  step:init_innovus_yaml  started:10-09 16:12:53  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan.init_innovus  step:init_innovus_yaml  ended:10-09 16:12:55  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan.init_innovus  step:init_innovus_user  started:10-09 16:12:58  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan.init_innovus  step:init_innovus_user  ended:10-09 16:12:59  log:logs/floorplan.log1
+   report_synth  step:report_late_summary_genus  started:10-09 16:12:52  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_late_summary_genus  ended:10-09 16:12:53  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_late_paths  started:10-09 16:12:57  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_late_paths  ended:10-09 16:12:58  log:logs/syn_opt.report_synth.log1
+*  flow_current.implementation.floorplan  step:init_floorplan  started:10-09 16:13:03  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:init_floorplan  ended:10-09 16:13:05  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:commit_power_intent  started:10-09 16:13:09  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:commit_power_intent  ended:10-09 16:13:10  log:logs/floorplan.log1
+   report_synth  step:report_power_genus  started:10-09 16:13:02  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_power_genus  ended:10-09 16:13:03  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_finish  started:10-09 16:13:07  log:logs/syn_opt.report_synth.log1
+   report_synth  step:report_finish  ended:10-09 16:13:07  log:logs/syn_opt.report_synth.log1
+  report_synth @ genus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/syn_opt.report_synth.log1
+    error summary:
+      Severity  ID                  Count  Step                       Where                             Summary
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 2                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 3                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 4                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  report_late_summary_genus line 1  A required object parameter could not be found.
+
+Waiting for flows to return... (1 running)
+*  flow_current.implementation.floorplan  step:add_tracks  started:10-09 16:13:13  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:add_tracks  ended:10-09 16:13:14  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:block_finish  started:10-09 16:13:18  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:block_finish  ended:10-09 16:13:25  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:write_output_screenshot  started:10-09 16:13:28  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:write_output_screenshot  ended:10-09 16:13:29  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:schedule_floorplan_report_floorplan  started:10-09 16:13:33  log:logs/floorplan.log1
+*  flow_current.implementation.floorplan  step:schedule_floorplan_report_floorplan  ended:10-09 16:13:34  log:logs/floorplan.log1
+  flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan returned successfully
+
+Starting scheduled flows at 10-09 16:14:13...
+* flow_current @ innovus: implementation.prects.block_start -> implementation.prects.schedule_prects_report_prects
+  report_floorplan @ innovus: report_start -> report_finish
+Waiting for flows to return... (2 running)
+*  flow_current.implementation.prects  step:block_start  started:10-09 16:15:01  log:logs/prects.log1
+*  flow_current.implementation.prects  step:block_start  ended:10-09 16:15:02  log:logs/prects.log1
+*  flow_current.implementation.prects.init_innovus  step:init_innovus_yaml  started:10-09 16:15:05  log:logs/prects.log1
+*  flow_current.implementation.prects.init_innovus  step:init_innovus_yaml  ended:10-09 16:15:07  log:logs/prects.log1
+   report_floorplan  step:report_start  started:10-09 16:14:59  log:logs/floorplan.report_floorplan.log1
+   report_floorplan  step:report_start  ended:10-09 16:15:00  log:logs/floorplan.report_floorplan.log1
+   report_floorplan.init_innovus  step:init_innovus_yaml  started:10-09 16:15:04  log:logs/floorplan.report_floorplan.log1
+   report_floorplan.init_innovus  step:init_innovus_yaml  ended:10-09 16:15:05  log:logs/floorplan.report_floorplan.log1
+*  flow_current.implementation.prects.init_innovus  step:init_innovus_user  started:10-09 16:15:10  log:logs/prects.log1
+*  flow_current.implementation.prects.init_innovus  step:init_innovus_user  ended:10-09 16:15:11  log:logs/prects.log1
+*  flow_current.implementation.prects  step:add_clock_spec  started:10-09 16:15:15  log:logs/prects.log1
+*  flow_current.implementation.prects  step:add_clock_spec  ended:10-09 16:15:16  log:logs/prects.log1
+   report_floorplan.init_innovus  step:init_innovus_user  started:10-09 16:15:09  log:logs/floorplan.report_floorplan.log1
+   report_floorplan.init_innovus  step:init_innovus_user  ended:10-09 16:15:10  log:logs/floorplan.report_floorplan.log1
+   report_floorplan  step:report_check_design  started:10-09 16:15:13  log:logs/floorplan.report_floorplan.log1
+   report_floorplan  step:report_check_design  ended:10-09 16:15:18  log:logs/floorplan.report_floorplan.log1
+*  flow_current.implementation.prects  step:add_clock_route_types  started:10-09 16:15:20  log:logs/prects.log1
+*  flow_current.implementation.prects  step:add_clock_route_types  ended:10-09 16:15:21  log:logs/prects.log1
+*  flow_current.implementation.prects  step:commit_route_types  started:10-09 16:15:25  log:logs/prects.log1
+*  flow_current.implementation.prects  step:commit_route_types  ended:10-09 16:15:26  log:logs/prects.log1
+   report_floorplan  step:report_area_innovus  started:10-09 16:15:21  log:logs/floorplan.report_floorplan.log1
+   report_floorplan  step:report_area_innovus  ended:10-09 16:15:22  log:logs/floorplan.report_floorplan.log1
+   report_floorplan  step:report_route_drc  started:10-09 16:15:26  log:logs/floorplan.report_floorplan.log1
+   report_floorplan  step:report_route_drc  ended:10-09 16:15:28  log:logs/floorplan.report_floorplan.log1
+*  flow_current.implementation.prects  step:run_place_opt  started:10-09 16:15:29  log:logs/prects.log1
+   report_floorplan  step:report_finish  started:10-09 16:15:31  log:logs/floorplan.report_floorplan.log1
+   report_floorplan  step:report_finish  ended:10-09 16:15:33  log:logs/floorplan.report_floorplan.log1
+  report_floorplan @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/floorplan.report_floorplan.log1
+    error summary:
+      Severity  ID          Count  Step                 Where             Summary
+      ERROR     IMPFP-7016  2      report_check_design  .body_tcl line 2  Instance %s of macro cell %s is not fixed. Please update the place_status to fixed prior to running placement.
+      ERROR     CHKPLC-11   1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+
+Waiting for flows to return... (1 running)
+*  flow_current.implementation.prects  step:run_place_opt  ended:10-09 16:17:08  log:logs/prects.log1
+*  flow_current.implementation.prects  step:block_finish  started:10-09 16:17:12  log:logs/prects.log1
+*  flow_current.implementation.prects  step:block_finish  ended:10-09 16:17:19  log:logs/prects.log1
+*  flow_current.implementation.prects  step:write_output_screenshot  started:10-09 16:17:23  log:logs/prects.log1
+*  flow_current.implementation.prects  step:write_output_screenshot  ended:10-09 16:17:24  log:logs/prects.log1
+*  flow_current.implementation.prects  step:schedule_prects_report_prects  started:10-09 16:17:28  log:logs/prects.log1
+*  flow_current.implementation.prects  step:schedule_prects_report_prects  ended:10-09 16:17:29  log:logs/prects.log1
+  flow_current @ innovus: implementation.prects.block_start -> implementation.prects.schedule_prects_report_prects returned successfully but encountered errors
+    log file:
+      logs/prects.log1
+    error summary:
+      Severity  ID          Count  Step                                 Where             Summary
+      ERROR     IMPSP-9099  2      implementation.prects.run_place_opt  .body_tcl line 3  Scan chains exist in this design but are not defined for %.2f%% flops. Placement and timing QoR can be severely impacted in this case!
+
+Starting scheduled flows at 10-09 16:17:44...
+* flow_current @ innovus: implementation.cts.block_start -> implementation.cts.schedule_cts_report_postcts
+  report_prects @ innovus: report_start -> report_finish
+Waiting for flows to return... (2 running)
+*  flow_current.implementation.cts  step:block_start  started:10-09 16:18:32  log:logs/cts.log1
+*  flow_current.implementation.cts  step:block_start  ended:10-09 16:18:33  log:logs/cts.log1
+*  flow_current.implementation.cts.init_innovus  step:init_innovus_yaml  started:10-09 16:18:37  log:logs/cts.log1
+   report_prects  step:report_start  started:10-09 16:18:33  log:logs/prects.report_prects.log1
+   report_prects  step:report_start  ended:10-09 16:18:35  log:logs/prects.report_prects.log1
+   report_prects.init_innovus  step:init_innovus_yaml  started:10-09 16:18:38  log:logs/prects.report_prects.log1
+*  flow_current.implementation.cts.init_innovus  step:init_innovus_yaml  ended:10-09 16:18:39  log:logs/cts.log1
+*  flow_current.implementation.cts.init_innovus  step:init_innovus_user  started:10-09 16:18:42  log:logs/cts.log1
+*  flow_current.implementation.cts.init_innovus  step:init_innovus_user  ended:10-09 16:18:44  log:logs/cts.log1
+*  flow_current.implementation.cts  step:add_clock_tree  started:10-09 16:18:48  log:logs/cts.log1
+   report_prects.init_innovus  step:init_innovus_yaml  ended:10-09 16:18:40  log:logs/prects.report_prects.log1
+   report_prects.init_innovus  step:init_innovus_user  started:10-09 16:18:44  log:logs/prects.report_prects.log1
+   report_prects.init_innovus  step:init_innovus_user  ended:10-09 16:18:46  log:logs/prects.report_prects.log1
+   report_prects  step:report_check_design  started:10-09 16:18:49  log:logs/prects.report_prects.log1
+   report_prects  step:report_check_design  ended:10-09 16:18:54  log:logs/prects.report_prects.log1
+   report_prects  step:report_area_innovus  started:10-09 16:18:58  log:logs/prects.report_prects.log1
+   report_prects  step:report_area_innovus  ended:10-09 16:19:00  log:logs/prects.report_prects.log1
+   report_prects  step:report_late_summary_innovus  started:10-09 16:19:04  log:logs/prects.report_prects.log1
+   report_prects  step:report_late_summary_innovus  ended:10-09 16:19:08  log:logs/prects.report_prects.log1
+   report_prects  step:report_late_paths  started:10-09 16:19:12  log:logs/prects.report_prects.log1
+   report_prects  step:report_late_paths  ended:10-09 16:19:14  log:logs/prects.report_prects.log1
+   report_prects  step:report_power_innovus  started:10-09 16:19:18  log:logs/prects.report_prects.log1
+   report_prects  step:report_power_innovus  ended:10-09 16:19:20  log:logs/prects.report_prects.log1
+   report_prects  step:report_finish  started:10-09 16:19:24  log:logs/prects.report_prects.log1
+   report_prects  step:report_finish  ended:10-09 16:19:25  log:logs/prects.report_prects.log1
+  report_prects @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/prects.report_prects.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+
+Waiting for flows to return... (1 running)
+*  flow_current.implementation.cts  step:add_clock_tree  ended:10-09 16:20:40  log:logs/cts.log1
+*  flow_current.implementation.cts  step:add_tieoffs  started:10-09 16:20:49  log:logs/cts.log1
+*  flow_current.implementation.cts  step:add_tieoffs  ended:10-09 16:20:51  log:logs/cts.log1
+*  flow_current.implementation.cts  step:block_finish  started:10-09 16:20:55  log:logs/cts.log1
+*  flow_current.implementation.cts  step:block_finish  ended:10-09 16:21:03  log:logs/cts.log1
+*  flow_current.implementation.cts  step:write_output_screenshot  started:10-09 16:21:08  log:logs/cts.log1
+*  flow_current.implementation.cts  step:write_output_screenshot  ended:10-09 16:21:09  log:logs/cts.log1
+*  flow_current.implementation.cts  step:schedule_cts_report_postcts  started:10-09 16:21:14  log:logs/cts.log1
+*  flow_current.implementation.cts  step:schedule_cts_report_postcts  ended:10-09 16:21:14  log:logs/cts.log1
+  flow_current @ innovus: implementation.cts.block_start -> implementation.cts.schedule_cts_report_postcts returned successfully
+
+Starting scheduled flows at 10-09 16:21:56...
+* flow_current @ innovus: implementation.postcts.block_start -> implementation.postcts.schedule_postcts_report_postcts
+  report_postcts @ innovus: report_start -> report_finish
+Waiting for flows to return... (2 running)
+*  flow_current.implementation.postcts  step:block_start  started:10-09 16:22:47  log:logs/postcts.log1
+*  flow_current.implementation.postcts  step:block_start  ended:10-09 16:22:48  log:logs/postcts.log1
+   report_postcts  step:report_start  started:10-09 16:22:48  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_start  ended:10-09 16:22:49  log:logs/cts.report_postcts.log1
+*  flow_current.implementation.postcts.init_innovus  step:init_innovus_yaml  started:10-09 16:22:52  log:logs/postcts.log1
+*  flow_current.implementation.postcts.init_innovus  step:init_innovus_yaml  ended:10-09 16:22:55  log:logs/postcts.log1
+*  flow_current.implementation.postcts.init_innovus  step:init_innovus_user  started:10-09 16:22:59  log:logs/postcts.log1
+*  flow_current.implementation.postcts.init_innovus  step:init_innovus_user  ended:10-09 16:23:01  log:logs/postcts.log1
+   report_postcts.init_innovus  step:init_innovus_yaml  started:10-09 16:22:54  log:logs/cts.report_postcts.log1
+   report_postcts.init_innovus  step:init_innovus_yaml  ended:10-09 16:22:56  log:logs/cts.report_postcts.log1
+   report_postcts.init_innovus  step:init_innovus_user  started:10-09 16:23:00  log:logs/cts.report_postcts.log1
+*  flow_current.implementation.postcts  step:run_opt_postcts_hold  started:10-09 16:23:05  log:logs/postcts.log1
+   report_postcts.init_innovus  step:init_innovus_user  ended:10-09 16:23:02  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_check_design  started:10-09 16:23:06  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_check_design  ended:10-09 16:23:12  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_area_innovus  started:10-09 16:23:16  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_area_innovus  ended:10-09 16:23:18  log:logs/cts.report_postcts.log1
+*  flow_current.implementation.postcts  step:run_opt_postcts_hold  ended:10-09 16:23:23  log:logs/postcts.log1
+*  flow_current.implementation.postcts  step:block_finish  started:10-09 16:23:27  log:logs/postcts.log1
+   report_postcts  step:report_early_summary_innovus  started:10-09 16:23:23  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_early_summary_innovus  ended:10-09 16:23:28  log:logs/cts.report_postcts.log1
+*  flow_current.implementation.postcts  step:block_finish  ended:10-09 16:23:35  log:logs/postcts.log1
+*  flow_current.implementation.postcts  step:write_output_screenshot  started:10-09 16:23:39  log:logs/postcts.log1
+*  flow_current.implementation.postcts  step:write_output_screenshot  ended:10-09 16:23:41  log:logs/postcts.log1
+   report_postcts  step:report_early_paths  started:10-09 16:23:32  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_early_paths  ended:10-09 16:23:34  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_late_summary_innovus  started:10-09 16:23:39  log:logs/cts.report_postcts.log1
+*  flow_current.implementation.postcts  step:schedule_postcts_report_postcts  started:10-09 16:23:46  log:logs/postcts.log1
+*  flow_current.implementation.postcts  step:schedule_postcts_report_postcts  ended:10-09 16:23:47  log:logs/postcts.log1
+   report_postcts  step:report_late_summary_innovus  ended:10-09 16:23:44  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_late_paths  started:10-09 16:23:48  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_late_paths  ended:10-09 16:23:50  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_clock_timing  started:10-09 16:23:55  log:logs/cts.report_postcts.log1
+  flow_current @ innovus: implementation.postcts.block_start -> implementation.postcts.schedule_postcts_report_postcts returned successfully
+
+Starting scheduled flows at 10-09 16:24:01...
+* flow_current @ innovus: implementation.route.block_start -> implementation.route.schedule_route_report_postroute
+  report_postcts @ innovus: report_start -> report_finish
+Waiting for flows to return... (3 running)
+   report_postcts  step:report_clock_timing  ended:10-09 16:23:56  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_power_innovus  started:10-09 16:24:01  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_power_innovus  ended:10-09 16:24:03  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_finish  started:10-09 16:24:08  log:logs/cts.report_postcts.log1
+   report_postcts  step:report_finish  ended:10-09 16:24:09  log:logs/cts.report_postcts.log1
+  report_postcts @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/cts.report_postcts.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+      ERROR     CHKCTS-24    1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+
+Waiting for flows to return... (2 running)
+*  flow_current.implementation.route  step:block_start  started:10-09 16:24:51  log:logs/route.log1
+*  flow_current.implementation.route  step:block_start  ended:10-09 16:24:52  log:logs/route.log1
+   report_postcts  step:report_start  started:10-09 16:24:52  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_start  ended:10-09 16:24:53  log:logs/postcts.report_postcts.log1
+*  flow_current.implementation.route.init_innovus  step:init_innovus_yaml  started:10-09 16:24:56  log:logs/route.log1
+*  flow_current.implementation.route.init_innovus  step:init_innovus_yaml  ended:10-09 16:24:59  log:logs/route.log1
+*  flow_current.implementation.route.init_innovus  step:init_innovus_user  started:10-09 16:25:03  log:logs/route.log1
+*  flow_current.implementation.route.init_innovus  step:init_innovus_user  ended:10-09 16:25:05  log:logs/route.log1
+   report_postcts.init_innovus  step:init_innovus_yaml  started:10-09 16:24:57  log:logs/postcts.report_postcts.log1
+   report_postcts.init_innovus  step:init_innovus_yaml  ended:10-09 16:25:00  log:logs/postcts.report_postcts.log1
+   report_postcts.init_innovus  step:init_innovus_user  started:10-09 16:25:04  log:logs/postcts.report_postcts.log1
+*  flow_current.implementation.route  step:add_fillers  started:10-09 16:25:09  log:logs/route.log1
+*  flow_current.implementation.route  step:add_fillers  ended:10-09 16:25:11  log:logs/route.log1
+*  flow_current.implementation.route  step:run_route  started:10-09 16:25:15  log:logs/route.log1
+   report_postcts.init_innovus  step:init_innovus_user  ended:10-09 16:25:06  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_check_design  started:10-09 16:25:10  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_check_design  ended:10-09 16:25:16  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_area_innovus  started:10-09 16:25:21  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_area_innovus  ended:10-09 16:25:23  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_early_summary_innovus  started:10-09 16:25:27  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_early_summary_innovus  ended:10-09 16:25:33  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_early_paths  started:10-09 16:25:37  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_early_paths  ended:10-09 16:25:39  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_late_summary_innovus  started:10-09 16:25:44  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_late_summary_innovus  ended:10-09 16:25:49  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_late_paths  started:10-09 16:25:54  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_late_paths  ended:10-09 16:25:56  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_clock_timing  started:10-09 16:26:01  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_clock_timing  ended:10-09 16:26:02  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_power_innovus  started:10-09 16:26:07  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_power_innovus  ended:10-09 16:26:09  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_finish  started:10-09 16:26:14  log:logs/postcts.report_postcts.log1
+   report_postcts  step:report_finish  ended:10-09 16:26:16  log:logs/postcts.report_postcts.log1
+  report_postcts @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/postcts.report_postcts.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+      ERROR     CHKCTS-24    1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+
+Waiting for flows to return... (1 running)
+*  flow_current.implementation.route  step:run_route  ended:10-09 16:27:15  log:logs/route.log1
+*  flow_current.implementation.route  step:block_finish  started:10-09 16:27:20  log:logs/route.log1
+*  flow_current.implementation.route  step:block_finish  ended:10-09 16:27:28  log:logs/route.log1
+*  flow_current.implementation.route  step:write_output_screenshot  started:10-09 16:27:32  log:logs/route.log1
+*  flow_current.implementation.route  step:write_output_screenshot  ended:10-09 16:27:34  log:logs/route.log1
+*  flow_current.implementation.route  step:schedule_route_report_postroute  started:10-09 16:27:39  log:logs/route.log1
+*  flow_current.implementation.route  step:schedule_route_report_postroute  ended:10-09 16:27:40  log:logs/route.log1
+  flow_current @ innovus: implementation.route.block_start -> implementation.route.schedule_route_report_postroute returned successfully
+
+Starting scheduled flows at 10-09 16:28:22...
+* flow_current @ innovus: implementation.postroute.block_start -> implementation.postroute.innovus_to_quantus
+  report_postroute @ innovus: report_start -> report_finish
+Waiting for flows to return... (2 running)
+*  flow_current.implementation.postroute  step:block_start  started:10-09 16:29:14  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:block_start  ended:10-09 16:29:16  log:logs/postroute.log1
+   report_postroute  step:report_start  started:10-09 16:29:14  log:logs/route.report_postroute.log1
+   report_postroute  step:report_start  ended:10-09 16:29:16  log:logs/route.report_postroute.log1
+*  flow_current.implementation.postroute.init_innovus  step:init_innovus_yaml  started:10-09 16:29:20  log:logs/postroute.log1
+*  flow_current.implementation.postroute.init_innovus  step:init_innovus_yaml  ended:10-09 16:29:23  log:logs/postroute.log1
+   report_postroute.init_innovus  step:init_innovus_yaml  started:10-09 16:29:21  log:logs/route.report_postroute.log1
+   report_postroute.init_innovus  step:init_innovus_yaml  ended:10-09 16:29:24  log:logs/route.report_postroute.log1
+*  flow_current.implementation.postroute.init_innovus  step:init_innovus_user  started:10-09 16:29:28  log:logs/postroute.log1
+*  flow_current.implementation.postroute.init_innovus  step:init_innovus_user  ended:10-09 16:29:30  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:run_opt_postroute  started:10-09 16:29:35  log:logs/postroute.log1
+   report_postroute.init_innovus  step:init_innovus_user  started:10-09 16:29:28  log:logs/route.report_postroute.log1
+   report_postroute.init_innovus  step:init_innovus_user  ended:10-09 16:29:30  log:logs/route.report_postroute.log1
+   report_postroute  step:report_check_design  started:10-09 16:29:35  log:logs/route.report_postroute.log1
+   report_postroute  step:report_check_design  ended:10-09 16:29:51  log:logs/route.report_postroute.log1
+   report_postroute  step:report_area_innovus  started:10-09 16:29:55  log:logs/route.report_postroute.log1
+   report_postroute  step:report_area_innovus  ended:10-09 16:29:58  log:logs/route.report_postroute.log1
+   report_postroute  step:report_early_summary_innovus  started:10-09 16:30:03  log:logs/route.report_postroute.log1
+   report_postroute  step:report_early_summary_innovus  ended:10-09 16:30:10  log:logs/route.report_postroute.log1
+   report_postroute  step:report_early_paths  started:10-09 16:30:15  log:logs/route.report_postroute.log1
+   report_postroute  step:report_early_paths  ended:10-09 16:30:17  log:logs/route.report_postroute.log1
+   report_postroute  step:report_late_summary_innovus  started:10-09 16:30:22  log:logs/route.report_postroute.log1
+   report_postroute  step:report_late_summary_innovus  ended:10-09 16:30:29  log:logs/route.report_postroute.log1
+   report_postroute  step:report_late_paths  started:10-09 16:30:34  log:logs/route.report_postroute.log1
+   report_postroute  step:report_late_paths  ended:10-09 16:30:36  log:logs/route.report_postroute.log1
+   report_postroute  step:report_clock_timing  started:10-09 16:30:41  log:logs/route.report_postroute.log1
+   report_postroute  step:report_clock_timing  ended:10-09 16:30:43  log:logs/route.report_postroute.log1
+   report_postroute  step:report_power_innovus  started:10-09 16:30:48  log:logs/route.report_postroute.log1
+   report_postroute  step:report_power_innovus  ended:10-09 16:30:51  log:logs/route.report_postroute.log1
+   report_postroute  step:report_route_drc  started:10-09 16:30:56  log:logs/route.report_postroute.log1
+   report_postroute  step:report_route_drc  ended:10-09 16:31:00  log:logs/route.report_postroute.log1
+   report_postroute  step:report_route_density  started:10-09 16:31:06  log:logs/route.report_postroute.log1
+   report_postroute  step:report_route_density  ended:10-09 16:31:08  log:logs/route.report_postroute.log1
+   report_postroute  step:report_finish  started:10-09 16:31:13  log:logs/route.report_postroute.log1
+   report_postroute  step:report_finish  ended:10-09 16:31:15  log:logs/route.report_postroute.log1
+  report_postroute @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/route.report_postroute.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-41    1      report_check_design  .body_tcl line 2  Design has util %.1f% > 100%, placer cannot proceed. The problem may be caused by density screens (softBlockages and partial blockages) or user-specified cell padding. Please correct this problem first.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+      ERROR     CHKCTS-24    1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+
+Waiting for flows to return... (1 running)
+*  flow_current.implementation.postroute  step:run_opt_postroute  ended:10-09 16:32:48  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:remove_blockages_halos  started:10-09 16:32:53  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:remove_blockages_halos  ended:10-09 16:32:55  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:fix_antenna  started:10-09 16:33:00  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:fix_antenna  ended:10-09 16:33:12  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:fix_drc  started:10-09 16:33:17  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:fix_drc  ended:10-09 16:42:44  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:block_finish  started:10-09 16:42:49  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:block_finish  ended:10-09 16:42:57  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:write_output_files  started:10-09 16:43:02  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:write_output_files  ended:10-09 16:43:22  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:write_output_screenshot  started:10-09 16:43:27  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:write_output_screenshot  ended:10-09 16:43:29  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:schedule_postroute_report_postroute  started:10-09 16:43:35  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:schedule_postroute_report_postroute  ended:10-09 16:43:36  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:innovus_to_tempus  started:10-09 16:43:40  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:innovus_to_tempus  ended:10-09 16:43:43  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:innovus_to_quantus  started:10-09 16:43:48  log:logs/postroute.log1
+*  flow_current.implementation.postroute  step:innovus_to_quantus  ended:10-09 16:43:51  log:logs/postroute.log1
+  flow_current @ innovus: implementation.postroute.block_start -> implementation.postroute.innovus_to_quantus returned successfully
+
+Starting scheduled flows at 10-09 16:44:08...
+* report_postroute @ innovus: report_start -> report_finish
+Waiting for flows to return... (1 running)
+*  report_postroute  step:report_start  started:10-09 16:45:00  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_start  ended:10-09 16:45:02  log:logs/postroute.report_postroute.log1
+*  report_postroute.init_innovus  step:init_innovus_yaml  started:10-09 16:45:07  log:logs/postroute.report_postroute.log1
+*  report_postroute.init_innovus  step:init_innovus_yaml  ended:10-09 16:45:10  log:logs/postroute.report_postroute.log1
+*  report_postroute.init_innovus  step:init_innovus_user  started:10-09 16:45:15  log:logs/postroute.report_postroute.log1
+*  report_postroute.init_innovus  step:init_innovus_user  ended:10-09 16:45:17  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_check_design  started:10-09 16:45:22  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_check_design  ended:10-09 16:45:38  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_area_innovus  started:10-09 16:45:43  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_area_innovus  ended:10-09 16:45:46  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_early_summary_innovus  started:10-09 16:45:51  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_early_summary_innovus  ended:10-09 16:45:59  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_early_paths  started:10-09 16:46:04  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_early_paths  ended:10-09 16:46:07  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_late_summary_innovus  started:10-09 16:46:12  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_late_summary_innovus  ended:10-09 16:46:19  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_late_paths  started:10-09 16:46:24  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_late_paths  ended:10-09 16:46:27  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_clock_timing  started:10-09 16:46:32  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_clock_timing  ended:10-09 16:46:34  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_power_innovus  started:10-09 16:46:40  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_power_innovus  ended:10-09 16:46:42  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_route_drc  started:10-09 16:46:48  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_route_drc  ended:10-09 16:46:51  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_route_density  started:10-09 16:46:57  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_route_density  ended:10-09 16:47:00  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_finish  started:10-09 16:47:05  log:logs/postroute.report_postroute.log1
+*  report_postroute  step:report_finish  ended:10-09 16:47:08  log:logs/postroute.report_postroute.log1
+  report_postroute @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/postroute.report_postroute.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-41    1      report_check_design  .body_tcl line 2  Design has util %.1f% > 100%, placer cannot proceed. The problem may be caused by density screens (softBlockages and partial blockages) or user-specified cell padding. Please correct this problem first.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+      ERROR     CHKCTS-24    1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot                | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC  | Wall (s) |
+|-------------------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+------+----------|
+| init_tns_pass_0         |   -0.142 |       -2 |      |      -0.142 |          -2 |         |             |             |               |        3.24 |       |             |      | 0:00:01  |
+| end_setup_fixing        |   -0.142 |       -2 |      |      -0.142 |          -2 |         |             |             |               |        3.24 |       |             |      | 0:00:00  |
+| tns_pass_0              |   -0.213 |       -3 |      |      -0.213 |          -3 |         |             |             |               |        3.34 |       |             |      | 0:00:04  |
+| legalization_0          |   -0.213 |       -3 |      |             |             |         |             |             |               |        3.34 |       |             |      | 0:00:00  |
+| initial_summary         |   -0.346 |       -4 |   21 |      -0.346 |          -4 |      20 |          -0 | 0           |               |        3.13 |       |             |      | 0:00:02  |
+| route_type_refinement   |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| simplify_netlist        |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:01  |
+| excluded_clk_net_fixing |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:01  |
+| drv_fixing              |   -0.345 |       -4 |      |             |             |         |             |             |               |        3.28 |       |             |      | 0:00:02  |
+| global_opt              |   -0.290 |       -4 |      |             |             |         |             |             |               |        3.28 |       |             |      | 0:00:03  |
+| area_reclaiming         |   -0.290 |       -4 |      |             |             |         |             |             |               |        3.05 |       |             |      | 0:00:04  |
+| drv_fixing_2            |   -0.290 |       -4 |   20 |      -0.290 |          -4 |      20 |           0 | 0           |               |        3.12 |       |             |      | 0:00:02  |
+| wns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| tns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| area_reclaiming_2       |   -0.150 |       -3 |      |             |             |         |             |             |               |        3.12 |       |             |      | 0:00:03  |
+| area_reclaiming_3       |   -0.146 |       -2 |      |             |             |         |             |             |               |        3.03 |       |             |      | 0:00:04  |
+| local_wire_reclaim      |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:02  |
+| global_route            |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:01  |
+| route_type_refinement_2 |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| drv_eco_fixing          |   -0.158 |       -2 |      |             |             |         |             |             |               |        3.22 |       |             |      | 0:00:02  |
+| tns_eco_fixing          |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| tns_eco_fixing_2        |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| tns_eco_fixing_3        |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| final_summary           |   -0.143 |       -2 |   19 |      -0.143 |          -2 |      19 |           0 | 0           |               |        3.23 |  1236 |      589406 |      | 0:00:04  |
+| final                   |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| timing_update_0         |   -0.183 |       -3 |      |             |             |         |             |             |               |        3.32 |       |             |      | 0:00:00  |
+| place_design            |          |          |      |             |             |         |             |             |               |        2.30 |   808 |      583556 |      | 0:00:12  |
+| opt_design_prects       |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:04:09  |
+| ccopt_pro               |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| initial_summary_2       |   -0.183 |       -3 |   20 |      -0.183 |          -3 |      20 |          -0 | 0           |               |        3.32 |       |             |      | 0:00:05  |
+| hold_fixing             |   -0.182 |       -5 |      |      -0.182 |          -3 |         |             |             |               |        3.36 |       |             |      | 0:00:05  |
+| route_type_fixing       |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| pre_route_summary       |   -0.182 |       -5 |   39 |      -0.182 |          -3 |      20 |          -0 | 0           |               |        3.36 |       |             |      | 0:00:00  |
+| eco_route               |          |          |      |             |             |         |             |             |               |             |       |             |   61 | 0:05:41  |
+| post_route_summary      |   -0.173 |       -5 |   39 |      -0.173 |          -3 |      20 |          -0 | 0           |               |        3.36 |       |             |      | 0:00:03  |
+| initial_summary_3       |   -0.173 |       -5 |   39 |      -0.173 |          -3 |      20 |             |             |               |             |       |             |      | 0:00:04  |
+| init_wns_pass_0         |   -0.232 |       -3 |      |      -0.193 |          -3 |         |             |             |               |        3.30 |       |             |      | 0:00:00  |
+| wns_pass_0              |   -0.183 |       -3 |      |      -0.183 |          -3 |         |             |             |               |        3.32 |       |             |      | 0:00:03  |
+| incremental_replacement |   -0.604 |       -5 |   27 |      -0.604 |          -5 |      22 |             |             |               |             |       |             |      | 0:00:39  |
+| drv_fixing_3            |   -0.568 |       -5 |   22 |      -0.568 |          -5 |      22 |           0 | 0           |               |        3.31 |       |             |      | 0:00:02  |
+| tns_fixing_2            |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| global_place            |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:10  |
+| InitialState            |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:02  |
+| before merging          |          |          |      |             |             |         |             |             |               |             |       |             |      |          |
+| before clustering       |          |          |      |             |             |         |             |             |               |             |       |             |      |          |
+| after bottom-up phase   |          |          |      |             |             |         |             |             |               |             |       |             |      |          |
+| incrNP_iter_start       |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| init_wns_pass_1         |   -0.154 |       -3 |      |      -0.154 |          -3 |         |             |             |               |        3.19 |       |             |      | 0:00:00  |
+| wns_pass_1              |   -0.150 |       -3 |      |      -0.150 |          -3 |         |             |             |               |        3.20 |       |             |      | 0:00:26  |
+| legalization_1          |   -0.150 |       -3 |      |             |             |         |             |             |               |        3.20 |       |             |      | 0:00:00  |
+| cts                     |    0.036 |        0 |    0 |       0.036 |           0 |       0 |           6 | 32          |          0.04 |        2.84 |  1092 |      586955 |    0 | 0:00:25  |
+| opt_design_postcts      |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:03:06  |
+| power_ecg_insertion     |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:01  |
+| power_ecg_cleanup       |          |          |      |             |             |         |             |             |               |        0.00 |   916 |      584187 |      | 0:00:57  |
+| init_wns_pass_2         |   -0.164 |       -3 |      |      -0.164 |          -3 |         |             |             |               |        3.40 |       |             |      | 0:00:01  |
+| wns_pass_2              |   -0.108 |       -2 |      |      -0.108 |          -2 |         |             |             |               |        3.47 |       |             |      | 0:00:38  |
+| legalization_2          |   -0.108 |       -2 |      |             |             |         |             |             |               |        3.47 |       |             |      | 0:00:00  |
+| init_wns_pass_3         |   -0.108 |       -2 |      |      -0.108 |          -2 |         |             |             |               |        3.47 |       |             |      | 0:00:00  |
+| wns_pass_3              |   -0.104 |       -2 |      |      -0.104 |          -2 |         |             |             |               |        3.47 |       |             |      | 0:00:12  |
+| legalization_3          |   -0.104 |       -2 |      |             |             |         |             |             |               |        3.47 |       |             |      | 0:00:00  |
+| clock_opt_design        |          |          |      |             |             |         |             |             |               |        3.23 |  1236 |      589406 |      | 0:03:35  |
+| read_db                 |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:09  |
+| opt_design_postcts_hold |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:17  |
+| opt_design_postroute    |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:07:14  |
+| place_opt_design        |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:04:23  |
+| elaborate               |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| syn_gen                 |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:58  |
+| syn_map                 |   -0.069 |       -0 |   14 |      -0.069 |          -0 |      14 |          -5 | ff          |          0.04 |        0.00 |   798 |      583396 |      | 0:00:27  |
+| syn_opt                 |    0.000 |        0 |    0 |       0.000 |           0 |       0 |             | ff          |          0.04 |        0.00 |   884 |      584539 |      | 0:00:43  |
+| syn_generic             |   -0.205 |       -3 |   18 |      -0.205 |          -3 |      18 |             | ff          |          0.04 |        0.00 |   916 |      584187 |      | 0:03:10  |
+| floorplan               |          |          |      |             |             |         |             |             |               |       48.65 |   842 |      583640 |      | 0:02:24  |
+| prects                  |    0.003 |        0 |    0 |       0.003 |           0 |       0 |           6 | 32          |          0.04 |        2.72 |  1054 |      586192 |      | 0:04:05  |
+| postcts                 |    0.008 |        0 |    0 |       0.022 |           0 |       0 |           6 | 32          |          0.04 |        2.87 |  1105 |      587089 |      | 0:02:41  |
+| route                   |    0.035 |        0 |    0 |       0.035 |           0 |       0 |          18 | 34          |          0.04 |        2.87 |  1105 |      587089 | 1725 | 0:04:34  |
+| postroute               |    0.035 |        0 |    0 |       0.035 |           0 |       0 |          13 | 33          |          0.04 |        2.94 |  1140 |      587546 | 1255 | 0:16:23  |
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+Error summary:
+  report_synth @ genus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/syn_generic.report_synth.log1
+    error summary:
+      Severity  ID                  Count  Step                       Where                             Summary
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 2                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 3                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 4                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  report_late_summary_genus line 1  A required object parameter could not be found.
+  report_synth @ genus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/syn_map.report_synth.log1
+    error summary:
+      Severity  ID                  Count  Step                       Where                             Summary
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 2                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 3                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 4                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  report_late_summary_genus line 1  A required object parameter could not be found.
+  report_synth @ genus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/syn_opt.report_synth.log1
+    error summary:
+      Severity  ID                  Count  Step                       Where                             Summary
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 2                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 3                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  .body_tcl line 4                  A required object parameter could not be found.
+      ERROR     message:TUI/TUI-61  2      report_late_summary_genus  report_late_summary_genus line 1  A required object parameter could not be found.
+  report_floorplan @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/floorplan.report_floorplan.log1
+    error summary:
+      Severity  ID          Count  Step                 Where             Summary
+      ERROR     IMPFP-7016  2      report_check_design  .body_tcl line 2  Instance %s of macro cell %s is not fixed. Please update the place_status to fixed prior to running placement.
+      ERROR     CHKPLC-11   1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+  flow_current @ innovus: implementation.prects.block_start -> implementation.prects.schedule_prects_report_prects returned successfully but encountered errors
+    log file:
+      logs/prects.log1
+    error summary:
+      Severity  ID          Count  Step                                 Where             Summary
+      ERROR     IMPSP-9099  2      implementation.prects.run_place_opt  .body_tcl line 3  Scan chains exist in this design but are not defined for %.2f%% flops. Placement and timing QoR can be severely impacted in this case!
+  report_prects @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/prects.report_prects.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+  report_postcts @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/cts.report_postcts.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+      ERROR     CHKCTS-24    1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+  report_postcts @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/postcts.report_postcts.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+      ERROR     CHKCTS-24    1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+  report_postroute @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/route.report_postroute.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-41    1      report_check_design  .body_tcl line 2  Design has util %.1f% > 100%, placer cannot proceed. The problem may be caused by density screens (softBlockages and partial blockages) or user-specified cell padding. Please correct this problem first.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+      ERROR     CHKCTS-24    1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+  report_postroute @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/postroute.report_postroute.log1
+    error summary:
+      Severity  ID           Count  Step                 Where             Summary
+      ERROR     IMPFP-7006   202    report_check_design  .body_tcl line 2  Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary.
+      ERROR     IMPFP-10119  2      report_check_design  .body_tcl line 2  %s has been chosen to fit to %s but it's %s NOT fit to grid.
+      ERROR     CHKPLC-41    1      report_check_design  .body_tcl line 2  Design has util %.1f% > 100%, placer cannot proceed. The problem may be caused by density screens (softBlockages and partial blockages) or user-specified cell padding. Please correct this problem first.
+      ERROR     CHKPLC-11    1      report_check_design  .body_tcl line 2  Macro cell <%s> should have a fully covered obstruction.
+      ERROR     CHKCTS-24    1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+
+
+Summary of flow:
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot                | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC  | Wall (s) |
+|-------------------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+------+----------|
+| init_tns_pass_0         |   -0.142 |       -2 |      |      -0.142 |          -2 |         |             |             |               |        3.24 |       |             |      | 0:00:01  |
+| end_setup_fixing        |   -0.142 |       -2 |      |      -0.142 |          -2 |         |             |             |               |        3.24 |       |             |      | 0:00:00  |
+| tns_pass_0              |   -0.213 |       -3 |      |      -0.213 |          -3 |         |             |             |               |        3.34 |       |             |      | 0:00:04  |
+| legalization_0          |   -0.213 |       -3 |      |             |             |         |             |             |               |        3.34 |       |             |      | 0:00:00  |
+| initial_summary         |   -0.346 |       -4 |   21 |      -0.346 |          -4 |      20 |          -0 | 0           |               |        3.13 |       |             |      | 0:00:02  |
+| route_type_refinement   |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| simplify_netlist        |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:01  |
+| excluded_clk_net_fixing |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:01  |
+| drv_fixing              |   -0.345 |       -4 |      |             |             |         |             |             |               |        3.28 |       |             |      | 0:00:02  |
+| global_opt              |   -0.290 |       -4 |      |             |             |         |             |             |               |        3.28 |       |             |      | 0:00:03  |
+| area_reclaiming         |   -0.290 |       -4 |      |             |             |         |             |             |               |        3.05 |       |             |      | 0:00:04  |
+| drv_fixing_2            |   -0.290 |       -4 |   20 |      -0.290 |          -4 |      20 |           0 | 0           |               |        3.12 |       |             |      | 0:00:02  |
+| wns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| tns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| area_reclaiming_2       |   -0.150 |       -3 |      |             |             |         |             |             |               |        3.12 |       |             |      | 0:00:03  |
+| area_reclaiming_3       |   -0.146 |       -2 |      |             |             |         |             |             |               |        3.03 |       |             |      | 0:00:04  |
+| local_wire_reclaim      |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:02  |
+| global_route            |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:01  |
+| route_type_refinement_2 |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| drv_eco_fixing          |   -0.158 |       -2 |      |             |             |         |             |             |               |        3.22 |       |             |      | 0:00:02  |
+| tns_eco_fixing          |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| tns_eco_fixing_2        |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| tns_eco_fixing_3        |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| final_summary           |   -0.143 |       -2 |   19 |      -0.143 |          -2 |      19 |           0 | 0           |               |        3.23 |  1236 |      589406 |      | 0:00:04  |
+| final                   |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| timing_update_0         |   -0.183 |       -3 |      |             |             |         |             |             |               |        3.32 |       |             |      | 0:00:00  |
+| place_design            |          |          |      |             |             |         |             |             |               |        2.30 |   808 |      583556 |      | 0:00:12  |
+| opt_design_prects       |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:04:09  |
+| ccopt_pro               |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| initial_summary_2       |   -0.183 |       -3 |   20 |      -0.183 |          -3 |      20 |          -0 | 0           |               |        3.32 |       |             |      | 0:00:05  |
+| hold_fixing             |   -0.182 |       -5 |      |      -0.182 |          -3 |         |             |             |               |        3.36 |       |             |      | 0:00:05  |
+| route_type_fixing       |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| pre_route_summary       |   -0.182 |       -5 |   39 |      -0.182 |          -3 |      20 |          -0 | 0           |               |        3.36 |       |             |      | 0:00:00  |
+| eco_route               |          |          |      |             |             |         |             |             |               |             |       |             |   61 | 0:05:41  |
+| post_route_summary      |   -0.173 |       -5 |   39 |      -0.173 |          -3 |      20 |          -0 | 0           |               |        3.36 |       |             |      | 0:00:03  |
+| initial_summary_3       |   -0.173 |       -5 |   39 |      -0.173 |          -3 |      20 |             |             |               |             |       |             |      | 0:00:04  |
+| init_wns_pass_0         |   -0.232 |       -3 |      |      -0.193 |          -3 |         |             |             |               |        3.30 |       |             |      | 0:00:00  |
+| wns_pass_0              |   -0.183 |       -3 |      |      -0.183 |          -3 |         |             |             |               |        3.32 |       |             |      | 0:00:03  |
+| incremental_replacement |   -0.604 |       -5 |   27 |      -0.604 |          -5 |      22 |             |             |               |             |       |             |      | 0:00:39  |
+| drv_fixing_3            |   -0.568 |       -5 |   22 |      -0.568 |          -5 |      22 |           0 | 0           |               |        3.31 |       |             |      | 0:00:02  |
+| tns_fixing_2            |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| global_place            |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:10  |
+| InitialState            |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:02  |
+| before merging          |          |          |      |             |             |         |             |             |               |             |       |             |      |          |
+| before clustering       |          |          |      |             |             |         |             |             |               |             |       |             |      |          |
+| after bottom-up phase   |          |          |      |             |             |         |             |             |               |             |       |             |      |          |
+| incrNP_iter_start       |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| init_wns_pass_1         |   -0.154 |       -3 |      |      -0.154 |          -3 |         |             |             |               |        3.19 |       |             |      | 0:00:00  |
+| wns_pass_1              |   -0.150 |       -3 |      |      -0.150 |          -3 |         |             |             |               |        3.20 |       |             |      | 0:00:26  |
+| legalization_1          |   -0.150 |       -3 |      |             |             |         |             |             |               |        3.20 |       |             |      | 0:00:00  |
+| cts                     |    0.036 |        0 |    0 |       0.036 |           0 |       0 |           6 | 32          |          0.04 |        2.84 |  1092 |      586955 |    0 | 0:00:25  |
+| opt_design_postcts      |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:03:06  |
+| power_ecg_insertion     |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:01  |
+| power_ecg_cleanup       |          |          |      |             |             |         |             |             |               |        0.00 |   916 |      584187 |      | 0:00:57  |
+| init_wns_pass_2         |   -0.164 |       -3 |      |      -0.164 |          -3 |         |             |             |               |        3.40 |       |             |      | 0:00:01  |
+| wns_pass_2              |   -0.108 |       -2 |      |      -0.108 |          -2 |         |             |             |               |        3.47 |       |             |      | 0:00:38  |
+| legalization_2          |   -0.108 |       -2 |      |             |             |         |             |             |               |        3.47 |       |             |      | 0:00:00  |
+| init_wns_pass_3         |   -0.108 |       -2 |      |      -0.108 |          -2 |         |             |             |               |        3.47 |       |             |      | 0:00:00  |
+| wns_pass_3              |   -0.104 |       -2 |      |      -0.104 |          -2 |         |             |             |               |        3.47 |       |             |      | 0:00:12  |
+| legalization_3          |   -0.104 |       -2 |      |             |             |         |             |             |               |        3.47 |       |             |      | 0:00:00  |
+| clock_opt_design        |          |          |      |             |             |         |             |             |               |        3.23 |  1236 |      589406 |      | 0:03:35  |
+| read_db                 |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:09  |
+| opt_design_postcts_hold |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:17  |
+| opt_design_postroute    |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:07:14  |
+| place_opt_design        |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:04:23  |
+| elaborate               |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:00  |
+| syn_gen                 |          |          |      |             |             |         |             |             |               |             |       |             |      | 0:00:58  |
+| syn_map                 |   -0.069 |       -0 |   14 |      -0.069 |          -0 |      14 |          -5 | ff          |          0.04 |        0.00 |   798 |      583396 |      | 0:00:27  |
+| syn_opt                 |    0.000 |        0 |    0 |       0.000 |           0 |       0 |             | ff          |          0.04 |        0.00 |   884 |      584539 |      | 0:00:43  |
+| syn_generic             |   -0.205 |       -3 |   18 |      -0.205 |          -3 |      18 |             | ff          |          0.04 |        0.00 |   916 |      584187 |      | 0:03:10  |
+| floorplan               |          |          |      |             |             |         |             |             |               |       48.65 |   842 |      583640 |      | 0:02:24  |
+| prects                  |    0.003 |        0 |    0 |       0.003 |           0 |       0 |           6 | 32          |          0.04 |        2.72 |  1054 |      586192 |      | 0:04:05  |
+| postcts                 |    0.008 |        0 |    0 |       0.022 |           0 |       0 |           6 | 32          |          0.04 |        2.87 |  1105 |      587089 |      | 0:02:41  |
+| route                   |    0.035 |        0 |    0 |       0.035 |           0 |       0 |          18 | 34          |          0.04 |        2.87 |  1105 |      587089 | 1725 | 0:04:34  |
+| postroute               |    0.035 |        0 |    0 |       0.035 |           0 |       0 |          13 | 33          |          0.04 |        2.94 |  1140 |      587546 | 1255 | 0:16:23  |
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+Flow ran to completion

@@ -1,0 +1,2003 @@
+[10/09 16:24:03      0s] 
+[10/09 16:24:03      0s] Cadence Innovus(TM) Implementation System.
+[10/09 16:24:03      0s] Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/09 16:24:03      0s] 
+[10/09 16:24:03      0s] Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+[10/09 16:24:03      0s] Options:	-batch -stylus -log /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/postcts.report_postcts -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 2203dce5-65a6-4206-beca-7b3e022b2dad previous_uuid {} top_dir /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/postcts.report_postcts_1 metrics_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/postcts.report_postcts_1 run_tag {} db {enc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1 top_lvl {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 7 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 3151469} flow {flow flow:report_postcts tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/postcts.enc_1 top_lvl {}} dir ./. branch {} caller_data {group 0 process_branch 7} include_in_metrics 1 parent_uuid 2203dce5-65a6-4206-beca-7b3e022b2dad after {} defer 0 child_of {flow:flow_current flow:implementation flow:postcts}} flow_name flow:report_postcts first_step {tool innovus flow flow:report_postcts canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:postcts}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_postcts canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:postcts}} child_of {flow:flow_current flow:implementation flow:postcts} log_prefix /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/postcts.report_postcts}; run_flow -from {tool innovus flow flow:report_postcts canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:postcts}} -to {tool innovus flow flow:report_postcts canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:postcts}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/postcts.report_postcts_1} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_postcts} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1 top_lvl {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+[10/09 16:24:03      0s] Date:		Thu Oct  9 16:24:03 2025
+[10/09 16:24:03      0s] Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.69.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+[10/09 16:24:03      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[10/09 16:24:03      0s] 
+[10/09 16:24:03      0s] License:
+[10/09 16:24:03      0s] 		[16:24:03.185729] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[10/09 16:24:03      0s] 
+[10/09 16:24:03      0s] 		invs	Innovus Implementation System	25.1	checkout succeeded
+[10/09 16:24:03      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[10/09 16:24:04      0s] **ERROR: (IMPOAX-124):	OpenAccess (OA) shared library installation is older than the one that was used to build this Innovus version. For using the OA installation built and tested with this Innovus version, unset the shell variable OA_HOME. For using 'p010' or higher version of OA, reset OA_HOME to point to that installation.
+[10/09 16:24:04      0s] Type 'man IMPOAX-124' for more detail.
+[10/09 16:24:04      0s] **ERROR: (IMPOAX-332):	Failed to initialize OpenAccess (OA) database. OA related commands cannot be run in this session. Confirm that the OA shared library is installed and OA_HOME is set correctly. Typically the OA_HOME environment variable should not be set.
+[10/09 16:24:04      0s] Type 'man IMPOAX-332' for more detail.
+[10/09 16:24:04      0s] INFO: OA features are disabled in this session.
+[10/09 16:24:19     16s] Memory management switch to non-aggressive memory release mode.
+[10/09 16:24:19     16s] 
+[10/09 16:24:19     16s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[10/09 16:24:19     16s] 
+[10/09 16:24:20     16s] 
+[10/09 16:24:20     16s] 
+[10/09 16:24:23     19s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+[10/09 16:24:28     24s] @(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+[10/09 16:24:28     24s] @(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+[10/09 16:24:28     24s] @(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+[10/09 16:24:28     24s] @(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+[10/09 16:24:28     24s] @(#)CDS: CPE v25.11-s029
+[10/09 16:24:28     24s] @(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+[10/09 16:24:28     24s] @(#)CDS: OA 22.62-p010 Tue Jun 10 08:32:29 2025
+[10/09 16:24:28     24s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[10/09 16:24:28     24s] @(#)CDS: RCDB 11.15.0
+[10/09 16:24:28     24s] @(#)CDS: STYLUS 25.10-b003_1 (03/20/2025 14:55 PDT)
+[10/09 16:24:28     24s] @(#)CDS: IntegrityPlanner-25.11-186 (25.11) (2025-07-16 18:29:01+0800)
+[10/09 16:24:28     24s] @(#)CDS: SYNTHESIS_ENGINE 25.11-s095
+[10/09 16:24:28     24s] @(#)CDS: TCDB v25.10-b001
+[10/09 16:24:28     24s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/innovus_temp_3433904_af1b96d4-409a-4838-a9b9-9df735dafc2b_ece-rschsrv.ece.gatech.edu_dkhalil8_NgGIbk.
+
+[10/09 16:24:28     24s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/innovus_temp_3433904_af1b96d4-409a-4838-a9b9-9df735dafc2b_ece-rschsrv.ece.gatech.edu_dkhalil8_NgGIbk.
+[10/09 16:24:28     24s] 
+[10/09 16:24:28     24s] Change the soft stacksize limit to 0.2%RAM (515 mbytes). Set global soft_stack_size_limit to change the value.
+[10/09 16:24:30     25s] [INFO] Loading Pegasus 24.13 fill procedures
+[10/09 16:24:32     27s] Info: Process UID = 3433904 / af1b96d4-409a-4838-a9b9-9df735dafc2b / ERrlR4XTv7
+[10/09 16:24:36     31s] 
+[10/09 16:24:36     31s] **INFO:  MMMC transition support version v31-84 
+[10/09 16:24:36     31s] 
+[10/09 16:24:36     31s] #@ Processing -execute option
+[10/09 16:24:36     31s] @innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 2203dce5-65a6-4206-beca-7b3e022b2dad previous_uuid {} top_dir /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/postcts.report_postcts_1 metrics_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/postcts.report_postcts_1 run_tag {} db {enc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1 top_lvl {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 7 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 3151469} flow {flow flow:report_postcts tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/postcts.enc_1 top_lvl {}} dir ./. branch {} caller_data {group 0 process_branch 7} include_in_metrics 1 parent_uuid 2203dce5-65a6-4206-beca-7b3e022b2dad after {} defer 0 child_of {flow:flow_current flow:implementation flow:postcts}} flow_name flow:report_postcts first_step {tool innovus flow flow:report_postcts canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:postcts}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_postcts canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:postcts}} child_of {flow:flow_current flow:implementation flow:postcts} log_prefix /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/postcts.report_postcts}; run_flow -from {tool innovus flow flow:report_postcts canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:postcts}} -to {tool innovus flow flow:report_postcts canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:postcts}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/postcts.report_postcts_1} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_postcts} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1 top_lvl {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+[10/09 16:24:36     31s] init_flow summary:
+[10/09 16:24:36     31s]   Flow script        : 
+[10/09 16:24:36     31s]   YAML script        : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml
+[10/09 16:24:36     31s]   Flow               : flow:report_postcts
+[10/09 16:24:36     31s]   From               : report_start
+[10/09 16:24:36     31s]   To                 : report_finish
+[10/09 16:24:36     31s]   Top directory      : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+[10/09 16:24:36     31s]   Working directory  : .
+[10/09 16:24:36     31s]   Starting database  : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1
+[10/09 16:24:36     31s]   Run tag            : 
+[10/09 16:24:36     31s]   Branch name        : 
+[10/09 16:24:36     31s]   Metrics file       : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/postcts.report_postcts_1
+[10/09 16:24:36     31s]   Status file        : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/postcts.report_postcts_1
+[10/09 16:24:36     31s] reading previous metrics...
+[10/09 16:24:37     32s] Sourcing flow scripts...
+[10/09 16:24:37     33s] Sourcing flow scripts done.
+[10/09 16:24:38     33s] Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
+[10/09 16:24:38     33s] #@ Begin verbose flow_step activate_views
+[10/09 16:24:38     33s] @flow 2: apply {{} {
+[10/09 16:24:38     33s]     set db [get_db flow_starting_db]
+[10/09 16:24:38     33s]     set flow [lindex [get_db flow_hier_path] end]
+[10/09 16:24:38     33s]     set setup_views [get_feature -obj $flow setup_views]
+[10/09 16:24:38     33s]     set hold_views [get_feature -obj $flow hold_views]
+[10/09 16:24:38     33s]     set leakage_view [get_feature -obj $flow leakage_view]
+[10/09 16:24:38     33s]     set dynamic_view [get_feature -obj $flow dynamic_view]
+[10/09 16:24:38     33s]   
+[10/09 16:24:38     33s]     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+[10/09 16:24:38     33s]       #- use read_db args for DB types and set_analysis_views for TCL
+[10/09 16:24:38     33s]       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+[10/09 16:24:38     33s]         set cmd "set_analysis_view"
+[10/09 16:24:38     33s]         if {$setup_views ne ""} {
+[10/09 16:24:38     33s]           append cmd " -setup [list $setup_views]"
+[10/09 16:24:38     33s]         } else {
+[10/09 16:24:38     33s]           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+[10/09 16:24:38     33s]         }
+[10/09 16:24:38     33s]         if {$hold_views ne ""} {
+[10/09 16:24:38     33s]           append cmd " -hold [list $hold_views]"
+[10/09 16:24:38     33s]         } else {
+[10/09 16:24:38     33s]           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+[10/09 16:24:38     33s]         }
+[10/09 16:24:38     33s]         if {$leakage_view ne ""} {
+[10/09 16:24:38     33s]           append cmd " -leakage [list $leakage_view]"
+[10/09 16:24:38     33s]         } else {
+[10/09 16:24:38     33s]           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+[10/09 16:24:38     33s]             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+[10/09 16:24:38     33s]           }
+[10/09 16:24:38     33s]         }
+[10/09 16:24:38     33s]         if {$dynamic_view ne ""} {
+[10/09 16:24:38     33s]           append cmd " -dynamic [list $dynamic_view]"
+[10/09 16:24:38     33s]         } else {
+[10/09 16:24:38     33s]           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+[10/09 16:24:38     33s]             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+[10/09 16:24:38     33s]           }
+[10/09 16:24:38     33s]         }
+[10/09 16:24:38     33s]         eval $cmd
+[10/09 16:24:38     33s]       } elseif {[llength [get_db analysis_views]] == 0} {
+[10/09 16:24:38     33s]         set cmd "set_flowkit_read_db_args"
+[10/09 16:24:38     33s]         if {$setup_views ne ""} {
+[10/09 16:24:38     33s]           append cmd " -setup_views [list $setup_views]"
+[10/09 16:24:38     33s]         }
+[10/09 16:24:38     33s]         if {$hold_views ne ""} {
+[10/09 16:24:38     33s]           append cmd " -hold_views [list $hold_views]"
+[10/09 16:24:38     33s]         }
+[10/09 16:24:38     33s]         if {$leakage_view ne ""} {
+[10/09 16:24:38     33s]           append cmd " -leakage_view [list $leakage_view]"
+[10/09 16:24:38     33s]         }
+[10/09 16:24:38     33s]         if {$dynamic_view ne ""} {
+[10/09 16:24:38     33s]           append cmd " -dynamic_view [list $dynamic_view]"
+[10/09 16:24:38     33s]         }
+[10/09 16:24:38     33s]         eval $cmd
+[10/09 16:24:38     33s]       } else {
+[10/09 16:24:38     33s]       }
+[10/09 16:24:38     33s]     }
+[10/09 16:24:38     33s]   }}
+[10/09 16:24:38     33s] #@ End verbose flow_step activate_views
+[10/09 16:24:38     33s] #@ Begin verbose flow_step init_mcpu
+[10/09 16:24:38     33s] @flow 2: apply {{} {
+[10/09 16:24:38     33s]     # Multi host/cpu attributes
+[10/09 16:24:38     33s]     #-----------------------------------------------------------------------------
+[10/09 16:24:38     33s]     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+[10/09 16:24:38     33s]     # the specified dist script.  This connects the number of CPUs being reserved
+[10/09 16:24:38     33s]     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+[10/09 16:24:38     33s]     # a typical environment variable exported by distribution platforms and is
+[10/09 16:24:38     33s]     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+[10/09 16:24:38     33s]     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+[10/09 16:24:38     33s]       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+[10/09 16:24:38     33s]     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+[10/09 16:24:38     33s]       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+[10/09 16:24:38     33s]     } else {
+[10/09 16:24:38     33s]       set max_cpus 1
+[10/09 16:24:38     33s]     }
+[10/09 16:24:38     33s]     switch -glob [get_db program_short_name] {
+[10/09 16:24:38     33s]       default       {}
+[10/09 16:24:38     33s]       joules*       -
+[10/09 16:24:38     33s]       genus*        -
+[10/09 16:24:38     33s]       innovus*      -
+[10/09 16:24:38     33s]       tempus*       -
+[10/09 16:24:38     33s]       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+[10/09 16:24:38     33s]     }
+[10/09 16:24:38     33s] if {[get_feature opt_signoff]} {
+[10/09 16:24:38     33s]       if {[is_flow -inside flow:opt_signoff]} {
+[10/09 16:24:38     33s]         set_multi_cpu_usage -verbose -remote_host 1
+[10/09 16:24:38     33s]         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+[10/09 16:24:38     33s]         set_distributed_hosts -local
+[10/09 16:24:38     33s]       }
+[10/09 16:24:38     33s] }
+[10/09 16:24:38     33s]   }}
+[10/09 16:24:38     33s] set_multi_cpu_usage -local_cpu 1
+[10/09 16:24:38     33s] #@ End verbose flow_step init_mcpu
+[10/09 16:24:38     33s] End steps for plugin point Cadence.plugin.flowkit.read_db.pre
+[10/09 16:24:38     33s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[10/09 16:24:38     33s] #% Begin load design ... (date=10/09 16:24:38, mem=2115.0M)
+[10/09 16:24:39     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:39     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:39     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[10/09 16:24:40     35s] ##  Process: 130           (User Set)               
+[10/09 16:24:40     35s] ##     Node: (not set)                           
+[10/09 16:24:40     35s] 
+[10/09 16:24:40     35s] ##  Check design process and node:  
+[10/09 16:24:40     35s] ##  Design tech node is not set.
+[10/09 16:24:40     35s] 
+[10/09 16:24:40     35s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[10/09 16:24:40     35s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[10/09 16:24:40     35s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[10/09 16:24:40     35s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[10/09 16:24:40     35s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_separate_device_slew_effect_sensitivities' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[10/09 16:24:40     35s] Loading design 'top_lvl' saved by 'Innovus' '25.11-s102_1' on 'Thu Oct 9 16:23:34 2025'.
+[10/09 16:24:40     35s] **ERROR: (IMPOAX-124):	OpenAccess (OA) shared library installation is older than the one that was used to build this Innovus version. For using the OA installation built and tested with this Innovus version, unset the shell variable OA_HOME. For using 'p010' or higher version of OA, reset OA_HOME to point to that installation.
+[10/09 16:24:40     35s] Type 'man IMPOAX-124' for more detail.
+[10/09 16:24:40     35s] **ERROR: (IMPOAX-332):	Failed to initialize OpenAccess (OA) database. OA related commands cannot be run in this session. Confirm that the OA shared library is installed and OA_HOME is set correctly. Typically the OA_HOME environment variable should not be set.
+[10/09 16:24:40     35s] Type 'man IMPOAX-332' for more detail.
+[10/09 16:24:40     36s] Reading tt_v1.8_25C timing library '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
+[10/09 16:24:41     36s] Read 109 cells in library 'sky130_tt_1.8_25' 
+[10/09 16:24:41     36s] Reading tt_v1.8_25C timing library '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
+[10/09 16:24:41     36s] Read 1 cells in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C_lib' 
+[10/09 16:24:41     36s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:01.0, peak res=2191.7M, current mem=2126.5M)
+[10/09 16:24:41     36s] 
+[10/09 16:24:41     36s] Loading LEF file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/libs/lef/sky130_scl_9T.tlef ...
+[10/09 16:24:41     36s] 
+[10/09 16:24:41     36s] Loading LEF file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/libs/lef/sky130_scl_9T.lef ...
+[10/09 16:24:41     36s] Set DBUPerIGU to M2 pitch 460.
+[10/09 16:24:41     36s] 
+[10/09 16:24:41     36s] Loading LEF file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/libs/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef ...
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-200):	Pin 'din0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-200' for more detail.
+[10/09 16:24:41     36s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[10/09 16:24:41     36s] To increase the message display limit, refer to the product command reference manual.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (IMPLF-201):	Pin 'dout0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/09 16:24:41     36s] Type 'man IMPLF-201' for more detail.
+[10/09 16:24:41     36s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[10/09 16:24:41     36s] To increase the message display limit, refer to the product command reference manual.
+[10/09 16:24:41     36s] 
+[10/09 16:24:41     36s] ##  Check design process and node:  
+[10/09 16:24:41     36s] ##  Design tech node is not set.
+[10/09 16:24:41     36s] 
+[10/09 16:24:41     36s] Loading view definition file from /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/viewDefinition.tcl
+[10/09 16:24:41     36s] % Begin Load netlist data ... (date=10/09 16:24:41, mem=2135.3M)
+[10/09 16:24:41     36s] *** Begin netlist parsing (mem=2135.3M) ***
+[10/09 16:24:41     36s] Created 110 new cells from 2 timing libraries.
+[10/09 16:24:41     36s] Reading netlist ...
+[10/09 16:24:41     36s] Backslashed names will retain backslash and a trailing blank character.
+[10/09 16:24:41     36s] Reading verilogBinary netlist '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.v.bin'
+[10/09 16:24:41     36s] 
+[10/09 16:24:41     36s] *** Memory Usage v#1 (Current mem = 2143.430M, initial mem = 965.758M) ***
+[10/09 16:24:41     36s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2143.4M) ***
+[10/09 16:24:41     36s] % End Load netlist data ... (date=10/09 16:24:41, total cpu=0:00:00.1, real=0:00:00.0, peak res=2143.4M, current mem=2143.4M)
+[10/09 16:24:41     36s] Top level cell is top_lvl.
+[10/09 16:24:41     36s] Hooked 110 DB cells to tlib cells.
+[10/09 16:24:41     36s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2145.4M, current mem=2145.4M)
+[10/09 16:24:41     36s] Starting recursive module instantiation check.
+[10/09 16:24:41     36s] No recursion found.
+[10/09 16:24:41     36s] Building hierarchical netlist for Cell top_lvl ...
+[10/09 16:24:41     36s] ***** UseNewTieNetMode *****.
+[10/09 16:24:42     36s] *** Netlist is unique.
+[10/09 16:24:42     36s] Setting Std. cell height to 4140 DBU (smallest netlist inst).
+[10/09 16:24:42     36s] ** info: there are 119 modules.
+[10/09 16:24:42     36s] ** info: there are 1103 stdCell insts.
+[10/09 16:24:42     36s] ** info: there are 1103 stdCell insts with at least one signal pin.
+[10/09 16:24:42     36s] ** info: there are 2 macros.
+[10/09 16:24:42     36s] 
+[10/09 16:24:42     36s] *** Memory Usage v#1 (Current mem = 2175.484M, initial mem = 965.758M) ***
+[10/09 16:24:42     37s] *info: set bottom ioPad orient R0
+[10/09 16:24:42     37s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/09 16:24:42     37s] Type 'man IMPFP-3961' for more detail.
+[10/09 16:24:42     37s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/09 16:24:42     37s] Type 'man IMPFP-3961' for more detail.
+[10/09 16:24:42     37s] Start create_tracks
+[10/09 16:24:42     37s] Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+[10/09 16:24:42     37s] Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+[10/09 16:24:42     37s] Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+[10/09 16:24:42     37s] Loading preference file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/gui.pref.tcl ...
+[10/09 16:24:42     37s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[10/09 16:24:42     37s] ##  Process: 130           (User Set)               
+[10/09 16:24:42     37s] ##     Node: (not set)                           
+[10/09 16:24:42     37s] 
+[10/09 16:24:42     37s] ##  Check design process and node:  
+[10/09 16:24:42     37s] ##  Design tech node is not set.
+[10/09 16:24:42     37s] 
+[10/09 16:24:42     37s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[10/09 16:24:42     37s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[10/09 16:24:42     37s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[10/09 16:24:42     37s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[10/09 16:24:42     37s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[10/09 16:24:42     37s] Effort level <high> specified for tdgp_reg2reg_default path_group
+[10/09 16:24:42     37s] Slack adjustment of -0 applied on tdgp_reg2reg_default path_group
+[10/09 16:24:42     37s] Change floorplan default-technical-site to 'CoreSite'.
+[10/09 16:24:42     37s] Extraction setup Delayed 
+[10/09 16:24:42     37s] *Info: initialize multi-corner CTS.
+[10/09 16:24:42     37s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2470.7M, current mem=2206.5M)
+[10/09 16:24:43     38s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[10/09 16:24:43     38s] 
+[10/09 16:24:43     38s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[10/09 16:24:43     38s] Summary for sequential cells identification: 
+[10/09 16:24:43     38s]   Identified SBFF number: 16
+[10/09 16:24:43     38s]   Identified MBFF number: 0
+[10/09 16:24:43     38s]   Identified SB Latch number: 2
+[10/09 16:24:43     38s]   Identified MB Latch number: 0
+[10/09 16:24:43     38s]   Not identified SBFF number: 0
+[10/09 16:24:43     38s]   Not identified MBFF number: 0
+[10/09 16:24:43     38s]   Not identified SB Latch number: 0
+[10/09 16:24:43     38s]   Not identified MB Latch number: 0
+[10/09 16:24:43     38s]   Number of sequential cells which are not FFs: 1
+[10/09 16:24:43     38s] Total number of combinational cells: 87
+[10/09 16:24:43     38s] Total number of sequential cells: 19
+[10/09 16:24:43     38s] Total number of tristate cells: 3
+[10/09 16:24:43     38s] Total number of level shifter cells: 0
+[10/09 16:24:43     38s] Total number of power gating cells: 0
+[10/09 16:24:43     38s] Total number of isolation cells: 0
+[10/09 16:24:43     38s] Total number of power switch cells: 0
+[10/09 16:24:43     38s] Total number of pulse generator cells: 0
+[10/09 16:24:43     38s] Total number of always on buffers: 0
+[10/09 16:24:43     38s] Total number of retention cells: 0
+[10/09 16:24:43     38s] Total number of physical cells: 0
+[10/09 16:24:43     38s] List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4[10/09 16:24:43     38s] 
+[10/09 16:24:43     38s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ CLKBUFX8 BUFX8 BUFX16
+[10/09 16:24:43     38s] Total number of usable buffers: 7
+[10/09 16:24:43     38s] List of unusable buffers:
+[10/09 16:24:43     38s] Total number of unusable buffers: 0
+[10/09 16:24:43     38s] List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+[10/09 16:24:43     38s] Total number of usable inverters: 9
+[10/09 16:24:43     38s] List of unusable inverters:
+[10/09 16:24:43     38s] Total number of unusable inverters: 0
+[10/09 16:24:43     38s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
+[10/09 16:24:43     38s] Total number of identified usable delay cells: 4
+[10/09 16:24:43     38s] List of identified unusable delay cells:
+[10/09 16:24:43     38s] Total number of identified unusable delay cells: 0
+[10/09 16:24:43     38s] 
+[10/09 16:24:43     38s] TimeStamp Deleting Cell Server Begin ...
+[10/09 16:24:43     38s] 
+[10/09 16:24:43     38s] TimeStamp Deleting Cell Server End ...
+[10/09 16:24:43     38s] Ending "Cell type marking" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2483.4M, current mem=2483.4M)
+[10/09 16:24:43     38s] 
+[10/09 16:24:43     38s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[10/09 16:24:43     38s] Summary for sequential cells identification: 
+[10/09 16:24:43     38s]   Identified SBFF number: 16
+[10/09 16:24:43     38s]   Identified MBFF number: 0
+[10/09 16:24:43     38s]   Identified SB Latch number: 2
+[10/09 16:24:43     38s]   Identified MB Latch number: 0
+[10/09 16:24:43     38s]   Not identified SBFF number: 0
+[10/09 16:24:43     38s]   Not identified MBFF number: 0
+[10/09 16:24:43     38s]   Not identified SB Latch number: 0
+[10/09 16:24:43     38s]   Not identified MB Latch number: 0
+[10/09 16:24:43     38s]   Number of sequential cells which are not FFs: 1
+[10/09 16:24:43     38s]  Visiting view : tt_v1.8_25C_Nominal_25_func
+[10/09 16:24:43     38s]    : PowerDomain = none : Weighted F : unweighted  = 35.60 (1.000) with rcCorner = 0
+[10/09 16:24:43     38s]    : PowerDomain = none : Weighted F : unweighted  = 29.80 (1.000) with rcCorner = -1
+[10/09 16:24:43     38s]  Visiting view : tt_v1.8_25C_Nominal_25_func
+[10/09 16:24:43     38s]    : PowerDomain = none : Weighted F : unweighted  = 35.60 (1.000) with rcCorner = 0
+[10/09 16:24:43     38s]    : PowerDomain = none : Weighted F : unweighted  = 29.80 (1.000) with rcCorner = -1
+[10/09 16:24:43     38s] 
+[10/09 16:24:43     38s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[10/09 16:24:43     38s] 
+[10/09 16:24:43     38s] TimeStamp Deleting Cell Server Begin ...
+[10/09 16:24:43     38s] 
+[10/09 16:24:43     38s] TimeStamp Deleting Cell Server End ...
+[10/09 16:24:43     38s] Reading floorplan file - /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.fp.gz (mem = 2485.0M).
+[10/09 16:24:43     38s] % Begin Load floorplan data ... (date=10/09 16:24:43, mem=2485.7M)
+[10/09 16:24:43     38s] *info: reset 1589 existing net BottomPreferredLayer and AvoidDetour
+[10/09 16:24:43     38s] Deleting old partition specification.
+[10/09 16:24:43     38s] Set FPlanBox to (0 0 1025800 1301800)
+[10/09 16:24:43     38s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/09 16:24:43     38s] Type 'man IMPFP-3961' for more detail.
+[10/09 16:24:43     38s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/09 16:24:43     38s] Type 'man IMPFP-3961' for more detail.
+[10/09 16:24:43     38s]  ... processed partition successfully.
+[10/09 16:24:43     38s] Reading binary special route file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.fp.spr.gz (Created by Innovus v25.11-s102_1 on Thu Oct  9 16:23:32 2025, version: 1)
+[10/09 16:24:43     38s] Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2486.7M, current mem=2486.7M)
+[10/09 16:24:43     38s] There are 7 nets with weight being set
+[10/09 16:24:43     38s] There are 7 nets with bottomPreferredRoutingLayer being set
+[10/09 16:24:43     38s] There are 7 nets with avoidDetour being set
+[10/09 16:24:43     38s] Extracting standard cell pins and blockage ...... 
+[10/09 16:24:43     38s] Pin and blockage extraction finished
+[10/09 16:24:43     38s] Delete all existing relative floorplan constraints.
+[10/09 16:24:43     38s] % End Load floorplan data ... (date=10/09 16:24:43, total cpu=0:00:00.1, real=0:00:00.0, peak res=2488.1M, current mem=2488.1M)
+[10/09 16:24:43     38s] Reading congestion map file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.route.congmap.gz ...
+[10/09 16:24:43     38s] % Begin Load SymbolTable ... (date=10/09 16:24:43, mem=2488.1M)
+[10/09 16:24:44     38s] Suppress "**WARN ..." messages.
+[10/09 16:24:44     38s] routingBox: (0 0) (1025800 1301800)
+[10/09 16:24:44     38s] coreBox:    (29900 29900) (995900 1271900)
+[10/09 16:24:44     38s] Un-suppress "**WARN ..." messages.
+[10/09 16:24:44     38s] % End Load SymbolTable ... (date=10/09 16:24:44, total cpu=0:00:00.1, real=0:00:01.0, peak res=2491.0M, current mem=2491.0M)
+[10/09 16:24:44     38s] Loading place ...
+[10/09 16:24:44     38s] % Begin Load placement data ... (date=10/09 16:24:44, mem=2491.0M)
+[10/09 16:24:44     38s] Reading placement file - /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.place.gz.
+[10/09 16:24:44     38s] ** Reading stdCellPlacement_binary (Created by Innovus v25.11-s102_1 on Thu Oct  9 16:23:32 2025, version# 2) ...
+[10/09 16:24:44     38s] Read Views for adaptive view pruning ...
+[10/09 16:24:44     38s] Read 0 views from Binary DB for adaptive view pruning
+[10/09 16:24:44     38s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2491.3M) ***
+[10/09 16:24:44     38s] Total net length = 1.612e+05 (8.658e+04 7.461e+04) (ext = 2.760e+04)
+[10/09 16:24:44     38s] % End Load placement data ... (date=10/09 16:24:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=2491.6M, current mem=2491.5M)
+[10/09 16:24:44     38s] Reading PG file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on       Thu Oct  9 16:23:32 2025)
+[10/09 16:24:44     38s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2491.8M) ***
+[10/09 16:24:44     38s] % Begin Load routing data ... (date=10/09 16:24:44, mem=2491.8M)
+[10/09 16:24:44     38s] Reading routing file - /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.route.gz.
+[10/09 16:24:44     38s] Reading Innovus routing data (Created by Innovus v25.11-s102_1 on Thu Oct  9 16:23:32 2025 Format: 23.1) ...
+[10/09 16:24:44     38s] *** Total 1541 nets are successfully restored.
+[10/09 16:24:44     38s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2492.9M) ***
+[10/09 16:24:44     38s] % End Load routing data ... (date=10/09 16:24:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=2492.9M, current mem=2492.2M)
+[10/09 16:24:44     38s] TAT_INFO: ::restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+[10/09 16:24:44     38s] Reading property file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.prop
+[10/09 16:24:44     38s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2495.4M) ***
+[10/09 16:24:45     38s] Reading dirtyarea snapshot file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.db.da.gz (Create by Innovus v25.11-s102_1 on Thu Oct  9 16:23:33 2025, version: 8).
+[10/09 16:24:45     38s] Change floorplan default-technical-site to 'CoreSite'.
+[10/09 16:24:45     39s] eee: Design meta data check started
+[10/09 16:24:45     39s] Loading preRoute extraction data from directory '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/extraction/' ...
+[10/09 16:24:45     39s] eee: Design meta data check completed
+[10/09 16:24:45     39s] Extraction setup Started for TopCell top_lvl 
+[10/09 16:24:45     39s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[10/09 16:24:45     39s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[10/09 16:24:45     39s] eee: __QRC_SADV_USE_LE__ is set 0
+[10/09 16:24:46     39s] Generating auto layer map file.
+[10/09 16:24:46     39s] eee: cut Layer Id 33 mapped to tech Id 6 of Layer mcon 
+[10/09 16:24:46     39s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[10/09 16:24:46     39s] eee:       33	    mcon	        6	       mcon	Via            
+[10/09 16:24:46     39s] eee:        1	    met1	        7	     metal1	Metal          
+[10/09 16:24:46     39s] eee:       34	     via	        8	       via1	Via            
+[10/09 16:24:46     39s] eee:        2	    met2	        9	     metal2	Metal          
+[10/09 16:24:46     39s] eee:       35	    via2	       10	       via2	Via            
+[10/09 16:24:46     39s] eee:        3	    met3	       11	     metal3	Metal          
+[10/09 16:24:46     39s] eee:       36	    via3	       12	       via3	Via            
+[10/09 16:24:46     39s] eee:        4	    met4	       13	     metal4	Metal          
+[10/09 16:24:46     39s] eee:       37	    via4	       14	       via4	Via            
+[10/09 16:24:46     39s] eee:        5	    met5	       15	     metal5	Metal          
+[10/09 16:24:46     39s] eee: TechFile: /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/libs/mmmc/Nominal_25C/qrcTechFile
+[10/09 16:24:46     39s] eee: HoWee  : 0 0 0 0 0 
+[10/09 16:24:46     39s] eee: Erosn  : 0 0 0 0 0 
+[10/09 16:24:46     39s] eee: nrColor: 0 0 0 0 0 
+[10/09 16:24:46     39s] eee: Save / Restore of RC patterns enabled 
+[10/09 16:24:46     39s] eee: Pattern meta data check started
+[10/09 16:24:46     39s] eee: Pattern meta data check completed
+[10/09 16:24:46     39s] eee: Pattern data restore started
+[10/09 16:24:46     39s] Loading preRoute extracted patterns from file '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl.techData.gz' ...
+[10/09 16:24:46     39s] eee: Pattern data restore completed
+[10/09 16:24:46     39s] Completed (cpu: 0:00:00.3 real: 0:00:01.0)
+[10/09 16:24:46     39s] Set Shrink Factor to 1.00000
+[10/09 16:24:46     39s] Summary of Active RC-Corners : 
+[10/09 16:24:46     39s] eee: escapedRCCornerName (Nominal_25C)
+[10/09 16:24:46     39s]  
+[10/09 16:24:46     39s]  Analysis View: tt_v1.8_25C_Nominal_25_func
+[10/09 16:24:46     39s]     RC-Corner Name        : Nominal_25C
+[10/09 16:24:46     39s]     RC-Corner Index       : 0
+[10/09 16:24:46     39s]     RC-Corner Temperature : 25 Celsius
+[10/09 16:24:46     39s]     RC-Corner Cap Table   : ''
+[10/09 16:24:46     39s]     RC-Corner PreRoute Res Factor         : 1
+[10/09 16:24:46     39s]     RC-Corner PreRoute Cap Factor         : 1
+[10/09 16:24:46     39s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[10/09 16:24:46     39s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[10/09 16:24:46     39s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[10/09 16:24:46     39s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[10/09 16:24:46     39s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[10/09 16:24:46     39s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[10/09 16:24:46     39s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[10/09 16:24:46     39s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[10/09 16:24:46     39s]     RC-Corner Technology file: '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/libs/mmmc/Nominal_25C/qrcTechFile'
+[10/09 16:24:46     39s] eee: RC Grid memory allocated = 51480 (26 X 33 X 5 X 12b)
+[10/09 16:24:46     39s] eee: Grid density data restore started
+[10/09 16:24:46     39s] eee: Grid density data restore completed
+[10/09 16:24:46     39s] eee: pegSigSF=1.070000
+[10/09 16:24:46     39s] Restored Grid density data
+[10/09 16:24:46     39s] Initializing multi-corner resistance tables ...
+[10/09 16:24:46     39s] eee: Blockage data restore started... completed.
+[10/09 16:24:46     39s] eee: Grid unit RC data restore started
+[10/09 16:24:46     39s] eee:     Restore started for corner Nominal_25C
+[10/09 16:24:46     39s] eee:         Current session: Nominal_25C Tech: /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/libs/mmmc/Nominal_25C/qrcTechFile 25.000000 1.000000 1.000000 
+[10/09 16:24:46     39s] eee:         Saved   session: Nominal_25C Tech: /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/cts.enc_1/libs/mmmc/Nominal_25C/qrcTechFile 25.000000 1.000000 1.000000 
+[10/09 16:24:46     39s] eee:     Restore completed for corner Nominal_25C
+[10/09 16:24:46     39s] eee: Grid unit RC data restore completed
+[10/09 16:24:46     39s] eee: l=1 avDens=0.183183 usedTrk=7329.286760 availTrk=40010.819975 sigTrk=7329.286760
+[10/09 16:24:46     39s] eee: l=2 avDens=0.088617 usedTrk=1590.193983 availTrk=17944.602953 sigTrk=1590.193983
+[10/09 16:24:46     39s] eee: l=3 avDens=0.087958 usedTrk=1232.092657 availTrk=14007.804880 sigTrk=1232.092657
+[10/09 16:24:46     39s] eee: l=4 avDens=0.053331 usedTrk=1699.607826 availTrk=31868.806606 sigTrk=1699.607826
+[10/09 16:24:46     39s] eee: l=5 avDens=0.244689 usedTrk=2214.232928 availTrk=9049.180328 sigTrk=2370.982076
+[10/09 16:24:46     39s] {RT Nominal_25C 0 2 5  {4 0} 1}
+[10/09 16:24:46     39s] eee: LAM-FP: thresh=1 ; dimX=2230.000000 ; dimY=2830.000000 ; multX=1.000000 ; multY=1.000000 ; minP=460 ; fpMult=1.000000 ;
+[10/09 16:24:46     39s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.379436 uaWl=0.000000 uaWlH=0.297200 aWlH=0.000000 lMod=0 pMax=0.880200 pMod=79 pModAss=50 wcR=0.332500 crit=0.000000 siPrev=0 newSi=0.001600 wHLS=1.000000 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[10/09 16:24:46     39s] eee: dbu = 1000, Design = [ll(0.000000, 0.000000) ur(1025.800000, 1301.800000)], Layers = [f(5) b(0)], Grid size = 41.400000 um, Grid Dim = (25 X 32)
+[10/09 16:24:46     39s] eee: Metal Layers Info:
+[10/09 16:24:46     39s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[10/09 16:24:46     39s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[10/09 16:24:46     39s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[10/09 16:24:46     39s] eee: |     met1 |   1 |   0.140 |   0.140 |   0.460 |  0.181 |   0.89 | H | 0 |  1 |
+[10/09 16:24:46     39s] eee: |     met2 |   2 |   0.140 |   0.140 |   0.460 |  0.182 |   0.89 | V | 0 |  1 |
+[10/09 16:24:46     39s] eee: |     met3 |   3 |   0.300 |   0.300 |   0.610 |  0.335 |   0.16 | H | 0 |  1 |
+[10/09 16:24:46     39s] eee: |     met4 |   4 |   0.300 |   0.300 |   0.615 |  0.311 |   0.16 | V | 0 |  1 |
+[10/09 16:24:46     39s] eee: |     met5 |   5 |   1.600 |   1.600 |   3.660 |  0.260 |   0.02 | H | 0 |  1 |
+[10/09 16:24:46     39s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[10/09 16:24:46     39s] eee: uC/uR for corner Nominal_25C, min-width/min-spacing, 30 perc over/under densities.
+[10/09 16:24:46     39s] eee: +-----------------------NDR Info-----------------------+
+[10/09 16:24:46     39s] eee: NDR Count = 0, Fake NDR = 0
+[10/09 16:24:46     39s] Restore PreRoute all RC Grid data successful.[10/09 16:24:46     39s] Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+[10/09 16:24:46     39s] Start generating vias ..
+### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=1069576481 routing_via=1 timing=1 sns=1 ppa_info=1
+[10/09 16:24:46     39s] #Skip building auto via since it is not turned on.
+[10/09 16:24:46     39s] Extracting standard cell pins and blockage ...... 
+[10/09 16:24:46     39s] Pin and blockage extraction finished
+[10/09 16:24:46     39s] Via generation completed.
+[10/09 16:24:46     39s] % Begin Load power constraints ... (date=10/09 16:24:46, mem=2513.3M)
+[10/09 16:24:46     39s] source /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/postcts.enc_1/top_lvl_power_constraints.tcl
+[10/09 16:24:46     39s] 'set_default_switching_activity' finished successfully.
+[10/09 16:24:46     39s] % End Load power constraints ... (date=10/09 16:24:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=2534.9M, current mem=2534.9M)
+[10/09 16:24:46     39s] % Begin load AAE data ... (date=10/09 16:24:46, mem=2553.7M)
+[10/09 16:24:47     40s] **WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[10/09 16:24:47     40s] AAE DB initialization (MEM=2568.496094 CPU=0:00:00.0 REAL=0:00:00.0) 
+[10/09 16:24:47     40s] % End load AAE data ... (date=10/09 16:24:47, total cpu=0:00:00.6, real=0:00:01.0, peak res=2568.5M, current mem=2568.5M)
+[10/09 16:24:47     40s] Restoring CCOpt config...
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[10/09 16:24:47     40s] Summary for sequential cells identification: 
+[10/09 16:24:47     40s]   Identified SBFF number: 16
+[10/09 16:24:47     40s]   Identified MBFF number: 0
+[10/09 16:24:47     40s]   Identified SB Latch number: 2
+[10/09 16:24:47     40s]   Identified MB Latch number: 0
+[10/09 16:24:47     40s]   Not identified SBFF number: 0
+[10/09 16:24:47     40s]   Not identified MBFF number: 0
+[10/09 16:24:47     40s]   Not identified SB Latch number: 0
+[10/09 16:24:47     40s]   Not identified MB Latch number: 0
+[10/09 16:24:47     40s]   Number of sequential cells which are not FFs: 1
+[10/09 16:24:47     40s]  Visiting view : tt_v1.8_25C_Nominal_25_func
+[10/09 16:24:47     40s]    : PowerDomain = none : Weighted F : unweighted  = 37.60 (1.000) with rcCorner = 0
+[10/09 16:24:47     40s]    : PowerDomain = none : Weighted F : unweighted  = 29.80 (1.000) with rcCorner = -1
+[10/09 16:24:47     40s]  Visiting view : tt_v1.8_25C_Nominal_25_func
+[10/09 16:24:47     40s]    : PowerDomain = none : Weighted F : unweighted  = 37.60 (1.000) with rcCorner = 0
+[10/09 16:24:47     40s]    : PowerDomain = none : Weighted F : unweighted  = 29.80 (1.000) with rcCorner = -1
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[10/09 16:24:47     40s]   Extracting original clock gating for core_clock...
+[10/09 16:24:47     40s]     clock_tree core_clock contains 90 sinks and 0 clock gates.
+[10/09 16:24:47     40s]   Extracting original clock gating for core_clock done.
+[10/09 16:24:47     40s]   The skew group core_clock/func was created. It contains 90 sinks and 1 sources.
+[10/09 16:24:47     40s]   The skew group core_clock/func was created. It contains 90 sinks and 1 sources.
+[10/09 16:24:47     40s] Restoring CCOpt config done.
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] TimeStamp Deleting Cell Server Begin ...
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] TimeStamp Deleting Cell Server End ...
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[10/09 16:24:47     40s] Summary for sequential cells identification: 
+[10/09 16:24:47     40s]   Identified SBFF number: 16
+[10/09 16:24:47     40s]   Identified MBFF number: 0
+[10/09 16:24:47     40s]   Identified SB Latch number: 2
+[10/09 16:24:47     40s]   Identified MB Latch number: 0
+[10/09 16:24:47     40s]   Not identified SBFF number: 0
+[10/09 16:24:47     40s]   Not identified MBFF number: 0
+[10/09 16:24:47     40s]   Not identified SB Latch number: 0
+[10/09 16:24:47     40s]   Not identified MB Latch number: 0
+[10/09 16:24:47     40s]   Number of sequential cells which are not FFs: 1
+[10/09 16:24:47     40s] Total number of combinational cells: 87
+[10/09 16:24:47     40s] Total number of sequential cells: 19
+[10/09 16:24:47     40s] Total number of tristate cells: 3
+[10/09 16:24:47     40s] Total number of level shifter cells: 0
+[10/09 16:24:47     40s] Total number of power gating cells: 0
+[10/09 16:24:47     40s] Total number of isolation cells: 0
+[10/09 16:24:47     40s] Total number of power switch cells: 0
+[10/09 16:24:47     40s] Total number of pulse generator cells: 0
+[10/09 16:24:47     40s] Total number of always on buffers: 0
+[10/09 16:24:47     40s] Total number of retention cells: 0
+[10/09 16:24:47     40s] Total number of physical cells: 0
+[10/09 16:24:47     40s] List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ CLKBUFX8 BUFX8 BUFX16
+[10/09 16:24:47     40s] Total number of usable buffers: 7
+[10/09 16:24:47     40s] List of unusable buffers:
+[10/09 16:24:47     40s] Total number of unusable buffers: 0
+[10/09 16:24:47     40s] List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+[10/09 16:24:47     40s] Total number of usable inverters: 9
+[10/09 16:24:47     40s] List of unusable inverters:
+[10/09 16:24:47     40s] Total number of unusable inverters: 0
+[10/09 16:24:47     40s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
+[10/09 16:24:47     40s] Total number of identified usable delay cells: 4
+[10/09 16:24:47     40s] List of identified unusable delay cells:
+[10/09 16:24:47     40s] Total number of identified unusable delay cells: 0
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] TimeStamp Deleting Cell Server Begin ...
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] TimeStamp Deleting Cell Server End ...
+[10/09 16:24:47     40s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version (null). They will be removed in the next release. 
+[10/09 16:24:47     40s] timing_aocv_enable_gba_combine_launch_capture
+[10/09 16:24:47     40s] timing_enable_backward_compatible_latch_thru_mt_mode
+[10/09 16:24:47     40s] timing_enable_separate_device_slew_effect_sensitivities
+[10/09 16:24:47     40s] #% End load design ... (date=10/09 16:24:47, total cpu=0:00:07.3, real=0:00:09.0, peak res=2584.0M, current mem=2573.0M)
+[10/09 16:24:47     40s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] *** Summary of all messages that are not suppressed in this session:
+[10/09 16:24:47     40s] Severity  ID               Count  Summary                                  
+[10/09 16:24:47     40s] WARNING   IMPLF-200           60  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[10/09 16:24:47     40s] WARNING   IMPLF-201           64  Pin '%s' in macro '%s' has no ANTENNADIF...
+[10/09 16:24:47     40s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[10/09 16:24:47     40s] WARNING   IMPDBTCL-321        15  The attribute '%s' still works but will ...
+[10/09 16:24:47     40s] WARNING   IMPDB-6501           2  "set_db design_process_node" will be obs...
+[10/09 16:24:47     40s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[10/09 16:24:47     40s] ERROR     IMPOAX-124           1  OpenAccess (OA) shared library installat...
+[10/09 16:24:47     40s] ERROR     IMPOAX-332           1  Failed to initialize OpenAccess (OA) dat...
+[10/09 16:24:47     40s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[10/09 16:24:47     40s] *** Message Summary: 147 warning(s), 2 error(s)
+[10/09 16:24:47     40s] 
+[10/09 16:24:47     40s] UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:24:47     40s] UM:*                                                                   read_db
+[10/09 16:24:47     40s] Sourcing flow scripts...
+[10/09 16:24:48     41s] Sourcing flow scripts done.
+[10/09 16:24:48     41s] reading previous metrics...
+[10/09 16:24:50     42s] Begin steps for plugin point Cadence.plugin.flowkit.read_db.post
+[10/09 16:24:50     42s] #@ Begin verbose flow_step activate_views
+[10/09 16:24:50     42s] @flow 2: apply {{} {
+[10/09 16:24:50     42s]     set db [get_db flow_starting_db]
+[10/09 16:24:50     42s]     set flow [lindex [get_db flow_hier_path] end]
+[10/09 16:24:50     42s]     set setup_views [get_feature -obj $flow setup_views]
+[10/09 16:24:50     42s]     set hold_views [get_feature -obj $flow hold_views]
+[10/09 16:24:50     42s]     set leakage_view [get_feature -obj $flow leakage_view]
+[10/09 16:24:50     42s]     set dynamic_view [get_feature -obj $flow dynamic_view]
+[10/09 16:24:50     42s]   
+[10/09 16:24:50     42s]     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+[10/09 16:24:50     42s]       #- use read_db args for DB types and set_analysis_views for TCL
+[10/09 16:24:50     42s]       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+[10/09 16:24:50     42s]         set cmd "set_analysis_view"
+[10/09 16:24:50     42s]         if {$setup_views ne ""} {
+[10/09 16:24:50     42s]           append cmd " -setup [list $setup_views]"
+[10/09 16:24:50     42s]         } else {
+[10/09 16:24:50     42s]           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+[10/09 16:24:50     42s]         }
+[10/09 16:24:50     42s]         if {$hold_views ne ""} {
+[10/09 16:24:50     42s]           append cmd " -hold [list $hold_views]"
+[10/09 16:24:50     42s]         } else {
+[10/09 16:24:50     42s]           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+[10/09 16:24:50     42s]         }
+[10/09 16:24:50     42s]         if {$leakage_view ne ""} {
+[10/09 16:24:50     42s]           append cmd " -leakage [list $leakage_view]"
+[10/09 16:24:50     42s]         } else {
+[10/09 16:24:50     42s]           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+[10/09 16:24:50     42s]             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+[10/09 16:24:50     42s]           }
+[10/09 16:24:50     42s]         }
+[10/09 16:24:50     42s]         if {$dynamic_view ne ""} {
+[10/09 16:24:50     42s]           append cmd " -dynamic [list $dynamic_view]"
+[10/09 16:24:50     42s]         } else {
+[10/09 16:24:50     42s]           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+[10/09 16:24:50     42s]             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+[10/09 16:24:50     42s]           }
+[10/09 16:24:50     42s]         }
+[10/09 16:24:50     42s]         eval $cmd
+[10/09 16:24:50     42s]       } elseif {[llength [get_db analysis_views]] == 0} {
+[10/09 16:24:50     42s]         set cmd "set_flowkit_read_db_args"
+[10/09 16:24:50     42s]         if {$setup_views ne ""} {
+[10/09 16:24:50     42s]           append cmd " -setup_views [list $setup_views]"
+[10/09 16:24:50     42s]         }
+[10/09 16:24:50     42s]         if {$hold_views ne ""} {
+[10/09 16:24:50     42s]           append cmd " -hold_views [list $hold_views]"
+[10/09 16:24:50     42s]         }
+[10/09 16:24:50     42s]         if {$leakage_view ne ""} {
+[10/09 16:24:50     42s]           append cmd " -leakage_view [list $leakage_view]"
+[10/09 16:24:50     42s]         }
+[10/09 16:24:50     42s]         if {$dynamic_view ne ""} {
+[10/09 16:24:50     42s]           append cmd " -dynamic_view [list $dynamic_view]"
+[10/09 16:24:50     42s]         }
+[10/09 16:24:50     42s]         eval $cmd
+[10/09 16:24:50     42s]       } else {
+[10/09 16:24:50     42s]       }
+[10/09 16:24:50     42s]     }
+[10/09 16:24:50     42s]   }}
+[10/09 16:24:50     42s] #@ End verbose flow_step activate_views
+[10/09 16:24:50     42s] #@ Begin verbose flow_step init_mcpu
+[10/09 16:24:50     42s] @flow 2: apply {{} {
+[10/09 16:24:50     42s]     # Multi host/cpu attributes
+[10/09 16:24:50     42s]     #-----------------------------------------------------------------------------
+[10/09 16:24:50     42s]     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+[10/09 16:24:50     42s]     # the specified dist script.  This connects the number of CPUs being reserved
+[10/09 16:24:50     42s]     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+[10/09 16:24:50     42s]     # a typical environment variable exported by distribution platforms and is
+[10/09 16:24:50     42s]     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+[10/09 16:24:50     42s]     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+[10/09 16:24:50     42s]       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+[10/09 16:24:50     42s]     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+[10/09 16:24:50     42s]       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+[10/09 16:24:50     42s]     } else {
+[10/09 16:24:50     42s]       set max_cpus 1
+[10/09 16:24:50     42s]     }
+[10/09 16:24:50     42s]     switch -glob [get_db program_short_name] {
+[10/09 16:24:50     42s]       default       {}
+[10/09 16:24:50     42s]       joules*       -
+[10/09 16:24:50     42s]       genus*        -
+[10/09 16:24:50     42s]       innovus*      -
+[10/09 16:24:50     42s]       tempus*       -
+[10/09 16:24:50     42s]       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+[10/09 16:24:50     42s]     }
+[10/09 16:24:50     42s] if {[get_feature opt_signoff]} {
+[10/09 16:24:50     42s]       if {[is_flow -inside flow:opt_signoff]} {
+[10/09 16:24:50     42s]         set_multi_cpu_usage -verbose -remote_host 1
+[10/09 16:24:50     42s]         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+[10/09 16:24:50     42s]         set_distributed_hosts -local
+[10/09 16:24:50     42s]       }
+[10/09 16:24:50     42s] }
+[10/09 16:24:50     42s]   }}
+[10/09 16:24:50     42s] set_multi_cpu_usage -local_cpu 1
+[10/09 16:24:50     42s] #@ End verbose flow_step init_mcpu
+[10/09 16:24:50     42s] End steps for plugin point Cadence.plugin.flowkit.read_db.post
+[10/09 16:24:50     43s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:24:50     43s] UM:*                                                                   init_flow
+[10/09 16:24:51     43s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:24:51     43s] UM:*                                                                   report_postcts
+[10/09 16:24:52     44s] #@ Begin verbose flow_step report_start
+[10/09 16:24:52     44s] #@ End verbose flow_step report_start
+[10/09 16:24:53     46s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:24:53     46s] UM:          46.51             49                                      report_start
+[10/09 16:24:57     50s] #@ Begin verbose flow_step init_innovus.init_innovus_yaml
+[10/09 16:24:58     50s] @flow 2: if {[get_feature report_lec]} {...}
+[10/09 16:24:58     50s] @flow 8: # Design attributes  [get_db -category design]
+[10/09 16:24:58     50s] @flow 9: #-------------------------------------------------------------------------------
+[10/09 16:24:58     50s] @@flow 10: set_db design_process_node 130
+[10/09 16:24:58     50s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[10/09 16:24:58     50s] ##  Process: 130           (User Set)               
+[10/09 16:24:58     50s] ##     Node: (not set)                           
+[10/09 16:24:58     50s] 
+[10/09 16:24:58     50s] ##  Check design process and node:  
+[10/09 16:24:58     50s] ##  Design tech node is not set.
+[10/09 16:24:58     50s] 
+[10/09 16:24:58     50s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[10/09 16:24:58     50s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[10/09 16:24:58     50s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[10/09 16:24:58     50s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[10/09 16:24:58     50s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[10/09 16:24:58     50s] @@flow 11: set_db design_top_routing_layer met5
+[10/09 16:24:58     50s] @@flow 12: set_db design_bottom_routing_layer met1
+[10/09 16:24:58     50s] @@flow 13: set_db design_flow_effort standard
+[10/09 16:24:58     50s] @@flow 14: set_db design_power_effort none
+[10/09 16:24:58     50s] @flow 16: # Timing attributes  [get_db -category timing && delaycalc]
+[10/09 16:24:58     50s] @flow 17: #-------------------------------------------------------------------------------
+[10/09 16:24:58     50s] @@flow 18: set_db timing_analysis_cppr           both
+[10/09 16:24:58     50s] @@flow 19: set_db timing_analysis_type           ocv
+[10/09 16:24:58     50s] @@flow 20: set_db timing_analysis_aocv 0
+[10/09 16:24:58     50s] @@flow 21: set_db timing_analysis_socv 0
+[10/09 16:24:58     50s] @flow 22: if {[get_feature report_pba]} {...}
+[10/09 16:24:58     50s] @flow 26: # Extraction attributes  [get_db -category extract_rc]
+[10/09 16:24:58     50s] @flow 27: #-------------------------------------------------------------------------------
+[10/09 16:24:58     50s] @flow 28: if {[is_flow -after route.block_finish]} {...}
+[10/09 16:24:58     50s] @flow 33: # Tieoff attributes  [get_db -category add_tieoffs]
+[10/09 16:24:58     50s] @flow 34: #-------------------------------------------------------------------------------
+[10/09 16:24:58     50s] @@flow 35: set_db add_tieoffs_cells {TIEHI TIELO}
+[10/09 16:24:58     50s] @flow 37: # Optimization attributes  [get_db -category opt]
+[10/09 16:24:58     50s] @flow 38: #-------------------------------------------------------------------------------
+[10/09 16:24:58     50s] @@flow 39: set_db opt_new_inst_prefix            "[get_db flow_report_name]_"
+[10/09 16:24:58     50s] @@flow 40: set_db opt_leakage_to_dynamic_ratio 0.5
+[10/09 16:24:58     50s] @flow 42: # Clock attributes  [get_db -category cts]
+[10/09 16:24:58     50s] @flow 43: #-------------------------------------------------------------------------------
+[10/09 16:24:58     50s] @@flow 44: set_db cts_target_skew auto
+[10/09 16:24:58     50s] @@flow 45: set_db cts_target_max_transition_time_top 100
+[10/09 16:24:58     50s] @@flow 46: set_db cts_target_max_transition_time_trunk 100
+[10/09 16:24:58     50s] @@flow 47: set_db cts_target_max_transition_time_leaf 100
+[10/09 16:24:58     50s] @@flow 49: set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
+[10/09 16:24:58     50s] @@flow 50: set_db cts_inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+[10/09 16:24:58     50s] @@flow 51: set_db cts_clock_gating_cells ICGX1
+[10/09 16:24:58     50s] @@flow 52: set_db cts_logic_cells {CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+[10/09 16:24:58     50s] @flow 54: # Filler attributes  [get_db -category add_fillers]
+[10/09 16:24:58     50s] @flow 55: #-------------------------------------------------------------------------------
+[10/09 16:24:58     50s] @@flow 56: set_db add_fillers_cells {FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64}
+[10/09 16:24:58     50s] @flow 58: # Routing attributes  [get_db -category route]
+[10/09 16:24:58     50s] @flow 59: #-------------------------------------------------------------------------------
+[10/09 16:24:58     50s] #@ End verbose flow_step init_innovus.init_innovus_yaml
+[10/09 16:25:00     52s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:00     52s] UM:           6.29              6                                      init_innovus_yaml
+[10/09 16:25:00     52s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:00     52s] UM:*                                                                   init_innovus
+[10/09 16:25:04     56s] #@ Begin verbose flow_step init_innovus.init_innovus_user
+[10/09 16:25:04     56s] @flow 2: # Timing attributes  [get_db -category timing && delaycalc]
+[10/09 16:25:04     56s] @flow 3: #-----------------------------------------------------------------------------
+[10/09 16:25:04     56s] @flow 5: # Extraction attributes  [get_db -category extract_rc]
+[10/09 16:25:04     56s] @flow 6: #-----------------------------------------------------------------------------
+[10/09 16:25:04     56s] @flow 8: # Floorplan attributes  [get_db -category floorplan]
+[10/09 16:25:04     56s] @flow 9: #-----------------------------------------------------------------------------
+[10/09 16:25:04     56s] @@flow 10: set_db finish_floorplan_active_objs   [list macro soft_blockage core]
+[10/09 16:25:04     56s] @flow 12: # Placement attributes  [get_db -category place]
+[10/09 16:25:04     56s] @flow 13: #-----------------------------------------------------------------------------
+[10/09 16:25:04     56s] @flow 15: # Optimization attributes  [get_db -category opt]
+[10/09 16:25:04     56s] @flow 16: #-----------------------------------------------------------------------------
+[10/09 16:25:04     57s] @flow 18: # Clock attributes  [get_db -category cts]
+[10/09 16:25:04     57s] @flow 19: #-----------------------------------------------------------------------------
+[10/09 16:25:04     57s] @flow 21: # Routing attributes  [get_db -category route]
+[10/09 16:25:04     57s] @flow 22: #-----------------------------------------------------------------------------
+[10/09 16:25:04     57s] #@ End verbose flow_step init_innovus.init_innovus_user
+[10/09 16:25:06     58s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:06     58s] UM:           5.46              5                                      init_innovus_user
+[10/09 16:25:10     62s] #@ Begin verbose flow_step report_check_design
+[10/09 16:25:10     62s] @flow 2: apply {{} {
+[10/09 16:25:10     62s]     set check_list [list timing place opt]
+[10/09 16:25:10     62s]     if {[join [dict values [get_db init_power_intent_files]]] ne {}} {
+[10/09 16:25:10     62s]       lappend check_list power_intent
+[10/09 16:25:10     62s]     }
+[10/09 16:25:10     62s]     if {[is_flow -inside flow:report_postroute]} {
+[10/09 16:25:10     62s]       check_design -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]check.design.tcl] -type [lappend check_list cts route]
+[10/09 16:25:10     62s]     } elseif {[is_flow -inside flow:report_postcts]} {
+[10/09 16:25:10     62s]       check_design -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]check.design.tcl] -type [lappend check_list cts]
+[10/09 16:25:10     62s]     } else {
+[10/09 16:25:10     62s]       check_design -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]check.design.tcl] -type $check_list
+[10/09 16:25:10     62s]     }
+[10/09 16:25:10     62s]   }}
+[10/09 16:25:10     62s] Begin: Design checking
+[10/09 16:25:10     62s]         Checking 'timing' category...
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_buffer_control_reg has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_next_reg[0] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_next_reg[1] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_next_reg[2] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[0] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[1] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[2] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[3] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[4] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[5] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[6] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[7] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[8] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[9] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[10] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[11] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[12] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[13] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[14] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (CHKTIM-4):	 Clock pin G of instance u_ctrl_op_a_reg[15] has no clock constraint for view name tt_v1.8_25C_Nominal_25_func.
+[10/09 16:25:11     63s] **WARN: (EMS-27):	Message (CHKTIM-4) has exceeded the current message display limit of 20.
+[10/09 16:25:11     63s] To increase the message display limit, refer to the product command reference manual.
+[10/09 16:25:11     63s]         Messages issued during checks:
+[10/09 16:25:11     63s] -----------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:11     63s] | ID                | Severity  | Count       | Description                                                           |
+[10/09 16:25:11     63s] -----------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:11     63s] | CHKTIM-4          | warning   | 152         | Clock pin %s of instance %s has no clock constraint for view name %s. |
+[10/09 16:25:11     63s] -----------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:11     63s] 		(Real time: 0:00:01.0, Memory: 2704.3M)
+[10/09 16:25:11     63s] 
+[10/09 16:25:11     63s]         Checking 'place' category...
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 228.4200000000) (995.9000000000 , 228.8200000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 236.7000000000) (995.9000000000 , 237.1000000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 244.9800000000) (995.9000000000 , 245.3800000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 253.2600000000) (995.9000000000 , 253.6600000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 261.5400000000) (995.9000000000 , 261.9400000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 269.8200000000) (995.9000000000 , 270.2200000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 278.1000000000) (995.9000000000 , 278.5000000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 286.3800000000) (995.9000000000 , 286.7800000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 294.6600000000) (995.9000000000 , 295.0600000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 302.9400000000) (995.9000000000 , 303.3400000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 311.2200000000) (995.9000000000 , 311.6200000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 319.5000000000) (995.9000000000 , 319.9000000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 327.7800000000) (995.9000000000 , 328.1800000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 336.0600000000) (995.9000000000 , 336.4600000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 344.3400000000) (995.9000000000 , 344.7400000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 352.6200000000) (995.9000000000 , 353.0200000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 360.9000000000) (995.9000000000 , 361.3000000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 369.1800000000) (995.9000000000 , 369.5800000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 377.4600000000) (995.9000000000 , 377.8600000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-7006):	Follow pin (Pin Box:{(29.9000000000 , 385.7400000000) (995.9000000000 , 386.1400000000)}) routed over hard macro (sram_A) should be cut at macro boundary.
+[10/09 16:25:11     63s] Type 'man IMPFP-7006' for more detail.
+[10/09 16:25:11     63s] **WARN: (EMS-27):	Message (IMPFP-7006) has exceeded the current message display limit of 20.
+[10/09 16:25:11     63s] To increase the message display limit, refer to the product command reference manual.
+[10/09 16:25:11     63s] Ending "check_follow_pin_not_overlap_with_hard_macro" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2726.2M, current mem=2692.6M)
+[10/09 16:25:11     63s] Ending "check_macro_pin_on_track" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2692.6M, current mem=2692.6M)
+[10/09 16:25:11     63s] Checking constraints (fence).....
+[10/09 16:25:11     63s] Ending "check_macro_status and check_fence_status" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2692.6M, current mem=2692.6M)
+[10/09 16:25:11     63s] Ending "check_io_pad_status" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2692.6M, current mem=2692.6M)
+[10/09 16:25:11     63s] Ending "check_constraint_blockage_status" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2692.6M, current mem=2692.6M)
+[10/09 16:25:11     63s] **WARN: (IMPFP-10013):	Halo should be created around block sram_A and snapping rules are not checked since it's height is not multiple of default tech site's height.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-10119):	sram_A has been chosen to fit to InstanceGrid but it's height NOT fit to grid.
+[10/09 16:25:11     63s] **WARN: (IMPFP-10013):	Halo should be created around block sram_B and snapping rules are not checked since it's height is not multiple of default tech site's height.
+[10/09 16:25:11     63s] **ERROR: (IMPFP-10119):	sram_B has been chosen to fit to InstanceGrid but it's height NOT fit to grid.
+[10/09 16:25:11     63s] Ending "check_component_status" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2692.8M, current mem=2692.8M)
+[10/09 16:25:11     63s] Checking Row is on grid......
+[10/09 16:25:11     63s] Ending "check_row_on_grid" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2692.8M, current mem=2692.8M)
+[10/09 16:25:11     63s] **ERROR: (CHKPLC-11):	Macro cell <sky130_sram_2kbyte_1rw1r_32x512_8> should have a fully covered obstruction.
+[10/09 16:25:11     63s] **WARN: (IMPSP-362):	Site 'CoreSite' has one std.Cell height, so ignoring its X-symmetry.
+[10/09 16:25:11     63s] Type 'man IMPSP-362' for more detail.
+[10/09 16:25:11     63s] Ending "check_fixed_inst_alignment" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2707.9M, current mem=2707.9M)
+[10/09 16:25:11     63s] Average module density = 0.029.
+[10/09 16:25:11     63s] Density for the design = 0.029.
+[10/09 16:25:11     63s]        = stdcell_area 9458 sites (18012 um^2) / alloc_area 329626 sites (627740 um^2).
+[10/09 16:25:11     63s] Pin Density = 0.005935.
+[10/09 16:25:11     63s]             = total # of pins 3739 / total area 630000.
+[10/09 16:25:11     63s] Ending "check_module_density" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2708.6M, current mem=2708.6M)
+[10/09 16:25:11     63s]         Messages issued during checks:
+[10/09 16:25:11     63s] --------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:11     63s] | ID                | Severity  | Count       | Description                                                                          |
+[10/09 16:25:11     63s] --------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:11     63s] | CHKPLC-11         | error     | 1           | Macro cell <%s> should have a fully covered obstruction.                             |
+[10/09 16:25:11     63s] | IMPFP-10119       | error     | 2           | %s has been chosen to fit to %s but it's %s NOT fit to grid.                         |
+[10/09 16:25:11     63s] | IMPFP-7006        | error     | 202         | Follow pin (Pin Box:%s) routed over hard macro (%s) should be cut at macro boundary. |
+[10/09 16:25:11     63s] --------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:11     63s] 		(Real time: 0:00:00.0, Memory: 2709.8M)
+[10/09 16:25:11     63s] 
+[10/09 16:25:11     63s]         Checking 'opt' category...
+[10/09 16:25:13     65s] *** CheckDesignCatOpt #1 [begin] (check_design_opt #1) : totSession cpu/real = 0:01:04.9/0:01:07.0 (1.0), mem = 2710.2M
+[10/09 16:25:13     65s] Extraction called for design 'top_lvl' of instances=1105 and nets=1589 using extraction engine 'pre_route' .
+[10/09 16:25:13     65s] pre_route RC Extraction called for design top_lvl.
+[10/09 16:25:13     65s] RC Extraction called in multi-corner(1) mode.
+[10/09 16:25:13     65s] RCMode: PreRoute
+[10/09 16:25:13     65s]       RC Corner Indexes            0   
+[10/09 16:25:13     65s] Capacitance Scaling Factor   : 1.00000 
+[10/09 16:25:13     65s] Resistance Scaling Factor    : 1.00000 
+[10/09 16:25:13     65s] Clock Cap. Scaling Factor    : 1.00000 
+[10/09 16:25:13     65s] Clock Res. Scaling Factor    : 1.00000 
+[10/09 16:25:13     65s] Shrink Factor                : 1.00000
+[10/09 16:25:13     65s] PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+[10/09 16:25:13     65s] Using Quantus QRC technology file ...
+[10/09 16:25:13     65s] Grid density data update skipped
+[10/09 16:25:13     65s] Initializing multi-corner resistance tables ...
+[10/09 16:25:13     65s] PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 2710.695M)
+[10/09 16:25:13     65s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/09 16:25:13     65s] #################################################################################
+[10/09 16:25:13     65s] # Design Stage: PreRoute
+[10/09 16:25:13     65s] # Design Name: top_lvl
+[10/09 16:25:13     65s] # Design Mode: 130nm
+[10/09 16:25:13     65s] # Analysis Mode: MMMC OCV 
+[10/09 16:25:13     65s] # Parasitics Mode: No SPEF/RCDB 
+[10/09 16:25:13     65s] # Signoff Settings: SI Off 
+[10/09 16:25:13     65s] #################################################################################
+[10/09 16:25:13     65s] Start delay calculation (fullDC) (1 T). (MEM=2720.53)
+[10/09 16:25:13     65s] Total number of fetched objects 1539
+[10/09 16:25:13     65s] AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+[10/09 16:25:13     65s] End delay calculation. (MEM=2765.18 CPU=0:00:00.3 REAL=0:00:00.0)
+[10/09 16:25:13     65s] End delay calculation (fullDC). (MEM=2757.04 CPU=0:00:00.6 REAL=0:00:00.0)
+[10/09 16:25:13     65s] 
+[10/09 16:25:13     65s] Footprint cell information for calculating maxBufDist
+[10/09 16:25:13     65s] *info: There are 7 candidate Buffer cells
+[10/09 16:25:13     65s] *info: There are 9 candidate Inverter cells
+[10/09 16:25:13     65s] 
+[10/09 16:25:13     65s] 	CornerforLayerOpt timing analysis view tt_v1.8_25C_Nominal_25_func has been selected for calibration 
+[10/09 16:25:13     65s] 	CornerforLayerOpt timing analysis view tt_v1.8_25C_Nominal_25_func has been selected for calibration 
+[10/09 16:25:13     65s] **WARN: (IMPOPT-2908):	Maximum transition 0.040 is too small compared to maximum transition threshold 0.599, this would result in excessive buffering.
+[10/09 16:25:13     65s] GigaOpt running with 1 threads.
+[10/09 16:25:13     65s] *** CheckDesignCatOpt #1 [finish] (check_design_opt #1) : cpu/real = 0:00:01.8/0:00:01.9 (1.0), totSession cpu/real = 0:01:06.7/0:01:08.9 (1.0), mem = 2843.7M
+[10/09 16:25:13     65s] 
+[10/09 16:25:13     65s] =============================================================================================
+[10/09 16:25:13     65s]  Step TAT Report : CheckDesignCatOpt #1 / check_design_opt #1                   25.11-s102_1
+[10/09 16:25:13     65s] =============================================================================================
+[10/09 16:25:13     65s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[10/09 16:25:13     65s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:13     65s] [ CellServerInit         ]      1   0:00:00.0  (   0.2 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ LibAnalyzerInit        ]      1   0:00:00.1  (   6.7 % )     0:00:00.1 /  0:00:00.1    0.9
+[10/09 16:25:13     65s] [ ChannelGraphInit       ]      1   0:00:00.3  (  16.6 % )     0:00:00.3 /  0:00:00.3    1.0
+[10/09 16:25:13     65s] [ CheckInitTiming        ]      1   0:00:00.3  (  13.8 % )     0:00:01.1 /  0:00:01.0    0.9
+[10/09 16:25:13     65s] [ CheckDesignStatus      ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ CheckPhysical          ]      1   0:00:00.0  (   0.3 % )     0:00:00.1 /  0:00:00.1    1.0
+[10/09 16:25:13     65s] [ CheckOptConstraints    ]      1   0:00:00.2  (   9.3 % )     0:00:00.5 /  0:00:00.5    1.0
+[10/09 16:25:13     65s] [ CheckTimingSetup       ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ CheckOptIgnoredInst    ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ CheckOptIgnoredNets    ]      1   0:00:00.0  (   0.1 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ CheckOptFlowSetup      ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ CheckPowerOptSetup     ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ CheckRouteAwareOpt     ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ CheckStackViaInRule    ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ CheckRCNets            ]      1   0:00:00.1  (   3.3 % )     0:00:00.1 /  0:00:00.1    1.1
+[10/09 16:25:13     65s] [ CheckEEQCells          ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] [ DetailPlaceInit        ]      1   0:00:00.1  (   3.1 % )     0:00:00.1 /  0:00:00.1    1.2
+[10/09 16:25:13     65s] [ ExtractRC              ]      1   0:00:00.1  (   3.6 % )     0:00:00.1 /  0:00:00.1    1.0
+[10/09 16:25:13     65s] [ FullDelayCalc          ]      1   0:00:00.7  (  37.5 % )     0:00:00.7 /  0:00:00.6    0.9
+[10/09 16:25:13     65s] [ TimingUpdate           ]      2   0:00:00.1  (   4.9 % )     0:00:00.1 /  0:00:00.1    0.9
+[10/09 16:25:13     65s] [ MISC                   ]          0:00:00.0  (   0.4 % )     0:00:00.0 /  0:00:00.0    0.0
+[10/09 16:25:13     65s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:13     65s]  CheckDesignCatOpt #1 TOTAL         0:00:01.9  ( 100.0 % )     0:00:01.9 /  0:00:01.8    1.0
+[10/09 16:25:13     65s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:13     65s]         Messages issued during checks:
+[10/09 16:25:13     65s] -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:13     65s] | ID                | Severity  | Count       | Description                                                                                                                   |
+[10/09 16:25:13     65s] -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:13     65s] | IMPOPT-2908       | warning   | 1           | Maximum transition %.3f is too small compared to maximum transition threshold %.3f, this would result in excessive buffering. |
+[10/09 16:25:13     65s] -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:13     65s] 		(Real time: 0:00:02.0, Memory: 2843.7M)
+[10/09 16:25:13     65s] 
+[10/09 16:25:13     65s]         Checking 'cts' category...
+[10/09 16:25:14     66s] Initializing placement interface...
+[10/09 16:25:14     66s]   Use check_library -place or consult logv if problems occur.
+[10/09 16:25:14     66s]   Leaving CCOpt scope - Initializing placement interface...
+[10/09 16:25:14     66s]   Leaving CCOpt scope - Initializing placement interface done. (took cpu=0:00:00.1 real=0:00:00.1)
+[10/09 16:25:14     66s] Initializing placement interface done.
+[10/09 16:25:14     66s] Leaving CCOpt scope - Cleaning up placement interface...
+[10/09 16:25:14     66s] Leaving CCOpt scope - Cleaning up placement interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+[10/09 16:25:14     66s] **WARN: (CHKCTS-10):	Route type(s) default_route_type_nonleaf used for trunk or top clock nets do not have a non-default rule (NDR) set.
+[10/09 16:25:14     66s] Type 'man CHKCTS-10' for more detail.
+[10/09 16:25:14     66s] **WARN: (CHKCTS-16):	Preferred routing layers for route_type default_route_type_nonleaf do not have similar RC characteristics. Mismatch found on layers: met3(H) R=0.157Ohm/um C=0.297fF/um RC=0.047fs/um^2 and met4(V) R=0.157Ohm/um C=0.264fF/um RC=0.041fs/um^2.
+[10/09 16:25:14     66s] Type 'man CHKCTS-16' for more detail.
+[10/09 16:25:14     66s] **WARN: (CHKCTS-16):	Preferred routing layers for route_type default_route_type_leaf do not have similar RC characteristics. Mismatch found on layers: met3(H) R=0.157Ohm/um C=0.297fF/um RC=0.047fs/um^2 and met4(V) R=0.157Ohm/um C=0.264fF/um RC=0.041fs/um^2.
+[10/09 16:25:14     66s] Type 'man CHKCTS-16' for more detail.
+[10/09 16:25:14     66s] [PSP]    Load db... (mem=2.7M)
+[10/09 16:25:14     66s] [PSP]    Read data from FE... (mem=2.7M)
+[10/09 16:25:14     66s] [PSP]    Done Read data from FE (cpu=0.002s, mem=2.7M)
+[10/09 16:25:14     66s] 
+[10/09 16:25:14     66s] [PSP]    Done Load db (cpu=0.002s, mem=2.7M)
+[10/09 16:25:14     66s] 
+[10/09 16:25:14     66s] [PSP]    Constructing placeable region... (mem=2.7M)
+[10/09 16:25:14     66s] [PSP]    Compute region effective width... (mem=2.7M)
+[10/09 16:25:14     66s] [PSP]    Done Compute region effective width (cpu=0.000s, mem=2.7M)
+[10/09 16:25:14     66s] 
+[10/09 16:25:14     66s] [PSP]    Done Constructing placeable region (cpu=0.001s, mem=2.7M)
+[10/09 16:25:14     66s] 
+[10/09 16:25:14     66s] **ERROR: (CHKCTS-24):	Insufficient number of clock gating cells for clock_tree core_clock and power_domain auto-default. Have cells: {}.
+[10/09 16:25:14     66s] Type 'man CHKCTS-24' for more detail.
+[10/09 16:25:14     66s] **WARN: (CHKCTS-60):	CTS maximum transition target 100.000ns is too high (maximum 0.599ns) for delay_corner tt_v1.8_25C_Nominal_25 and delay_type late for clock_tree core_clock and net_type leaf.
+[10/09 16:25:14     66s] Type 'man CHKCTS-60' for more detail.
+[10/09 16:25:14     66s] **WARN: (CHKCTS-60):	CTS maximum transition target 100.000ns is too high (maximum 0.599ns) for delay_corner tt_v1.8_25C_Nominal_25 and delay_type late for clock_tree core_clock and net_type trunk.
+[10/09 16:25:14     66s] Type 'man CHKCTS-60' for more detail.
+[10/09 16:25:14     66s] **WARN: (CHKCTS-5):	CTS skew target must be set to a numeric value for the primary corner tt_v1.8_25C_Nominal_25 for skew_group core_clock/func.
+[10/09 16:25:14     66s] Type 'man CHKCTS-5' for more detail.
+[10/09 16:25:14     66s] **WARN: (CHKCTS-4):	An auto generated scaled skew target of 0.183ns will be used for delay_corner tt_v1.8_25C_Nominal_25 and delay_type late for skew_group core_clock/func.
+[10/09 16:25:14     66s] Type 'man CHKCTS-4' for more detail.
+[10/09 16:25:14     66s] Leaving CCOpt scope - Cleaning up placement interface...
+[10/09 16:25:14     66s] Leaving CCOpt scope - Cleaning up placement interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+[10/09 16:25:14     66s]         Messages issued during checks:
+[10/09 16:25:14     66s] ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:14     66s] | ID                | Severity  | Count       | Description                                                                                                                        |
+[10/09 16:25:14     66s] ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:14     66s] | CHKCTS-24         | error     | 1           | Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.                                   |
+[10/09 16:25:14     66s] | CHKCTS-10         | warning   | 1           | Route type(s) %s used for trunk or top clock nets do not have a non-default rule (NDR) set.                                        |
+[10/09 16:25:14     66s] | CHKCTS-16         | warning   | 2           | Preferred routing layers for route_type %s do not have similar RC characteristics. Mismatch found on layers: %s.                   |
+[10/09 16:25:14     66s] | CHKCTS-4          | warning   | 1           | An auto generated scaled skew target of %s will be used for delay_corner %s and delay_type %s for skew_group %s.                   |
+[10/09 16:25:14     66s] | CHKCTS-5          | warning   | 1           | CTS skew target must be set to a numeric value for the primary corner %s for skew_group %s.                                        |
+[10/09 16:25:14     66s] | CHKCTS-60         | warning   | 2           | CTS maximum transition target %s is too high (maximum %s) for delay_corner %s and delay_type %s for clock_tree %s and net_type %s. |
+[10/09 16:25:14     66s] ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:25:14     66s] 		(Real time: 0:00:01.0, Memory: 2866.3M)
+[10/09 16:25:14     66s] 
+[10/09 16:25:14     66s] **INFO: Identified 206 error(s) and 160 warning(s) during 'check_design -type {timing place opt cts}'.
+[10/09 16:25:14     66s]         The details of the error(s) and warning(s) can be found in report 'reports/postcts/check.design.tcl'
+[10/09 16:25:14     66s] End: Design checking
+[10/09 16:25:14     66s] #@ End verbose flow_step report_check_design
+[10/09 16:25:15     67s] UM: Running design category ...
+[10/09 16:25:15     67s] Cell top_lvl LLGs are deleted
+[10/09 16:25:15     67s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:15     67s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:15     67s] OPERPROF: Starting SiteArray-Init at level 1, MEM:2875.0M, EPOCH TIME: 1760041515.799499
+[10/09 16:25:15     67s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:15     67s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:15     67s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:2875.0M, EPOCH TIME: 1760041515.799785
+[10/09 16:25:15     67s] Max number of tech site patterns supported in site array is 256.
+[10/09 16:25:15     67s] Core basic site is CoreSite
+[10/09 16:25:15     67s] After signature check, allow fast init is false, keep pre-filter is true.
+[10/09 16:25:15     67s] After signature check and other controls, allow fast init is false, keep pre-filter is true.
+[10/09 16:25:15     67s] SiteArray: non-trimmed site array dimensions = 300 x 2100
+[10/09 16:25:15     67s] SiteArray: use 3,457,024 bytes
+[10/09 16:25:15     67s] SiteArray: current memory after site array memory allocation 2875.1M
+[10/09 16:25:15     67s] SiteArray: FP blocked sites are writable
+[10/09 16:25:15     67s] OPERPROF:     Starting Routing-Blockage-From-Wire-Via-StBox at level 3, MEM:2875.1M, EPOCH TIME: 1760041515.811589
+[10/09 16:25:15     67s] Process 19651 (called=268 computed=25) wires and vias for routing blockage analysis
+[10/09 16:25:15     67s] OPERPROF:     Finished Routing-Blockage-From-Wire-Via-StBox at level 3, CPU:0.008, REAL:0.008, MEM:2875.1M, EPOCH TIME: 1760041515.819781
+[10/09 16:25:15     67s] SiteArray: number of non floorplan blocked sites for llg default is 630000
+[10/09 16:25:15     67s] Atter site array init, number of instance map data is 0.
+[10/09 16:25:15     67s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.021, REAL:0.022, MEM:2875.1M, EPOCH TIME: 1760041515.821495
+[10/09 16:25:15     67s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.023, REAL:0.024, MEM:2875.1M, EPOCH TIME: 1760041515.823341
+[10/09 16:25:15     67s] Cell top_lvl LLGs are deleted
+[10/09 16:25:15     67s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:208).
+[10/09 16:25:15     67s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:15     67s] # Resetting pin-track-align track data.
+[10/09 16:25:15     67s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:15     67s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:16     68s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:16     68s] UM:           9.97             10                                      report_check_design
+[10/09 16:25:21     73s] #@ Begin verbose flow_step report_area_innovus
+[10/09 16:25:21     73s] @@flow 2: report_summary -no_html -out_dir debug -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]qor.rpt]
+[10/09 16:25:21     73s] Start to collect the design information.
+[10/09 16:25:21     73s] Build netlist information for Cell top_lvl.
+[10/09 16:25:21     73s] Finished collecting the design information.
+[10/09 16:25:21     73s] Generating macro cells used in the design report.
+[10/09 16:25:21     73s] Generating standard cells used in the design report.
+[10/09 16:25:21     73s] Analyze library ... 
+[10/09 16:25:21     73s] Analyze netlist ... 
+[10/09 16:25:21     73s] Generate no-driven nets information report.
+[10/09 16:25:21     73s] Analyze timing ... 
+[10/09 16:25:21     73s] Analyze floorplan/placement ... 
+[10/09 16:25:21     73s] Disable fast DP-INIT: start main density report
+[10/09 16:25:21     73s] Cell top_lvl LLGs are deleted
+[10/09 16:25:21     73s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:21     73s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:21     73s] OPERPROF: Starting SiteArray-Init at level 1, MEM:2928.6M, EPOCH TIME: 1760041521.381473
+[10/09 16:25:21     73s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:21     73s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:21     73s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:2928.6M, EPOCH TIME: 1760041521.381742
+[10/09 16:25:21     73s] Max number of tech site patterns supported in site array is 256.
+[10/09 16:25:21     73s] Core basic site is CoreSite
+[10/09 16:25:21     73s] After signature check, allow fast init is false, keep pre-filter is true.
+[10/09 16:25:21     73s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[10/09 16:25:21     73s] SiteArray: non-trimmed site array dimensions = 300 x 2100
+[10/09 16:25:21     73s] SiteArray: use 3,457,024 bytes
+[10/09 16:25:21     73s] SiteArray: current memory after site array memory allocation 2931.8M
+[10/09 16:25:21     73s] SiteArray: FP blocked sites are writable
+[10/09 16:25:21     73s] SiteArray: number of non floorplan blocked sites for llg default is 630000
+[10/09 16:25:21     73s] Atter site array init, number of instance map data is 0.
+[10/09 16:25:21     73s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.011, REAL:0.012, MEM:2931.8M, EPOCH TIME: 1760041521.393592
+[10/09 16:25:21     73s] 
+[10/09 16:25:21     73s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[10/09 16:25:21     73s]  Pre_CCE_Colorizing is not ON! (0:0:117:0)
+[10/09 16:25:21     73s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.017, REAL:0.017, MEM:2931.9M, EPOCH TIME: 1760041521.398758
+[10/09 16:25:21     73s] Cell top_lvl LLGs are deleted
+[10/09 16:25:21     73s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:208).
+[10/09 16:25:21     73s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:21     73s] Disable fast DP-INIT: end main density report
+[10/09 16:25:21     73s] Analysis Routing ...
+[10/09 16:25:21     73s] Report saved in file reports/postcts/qor.rpt
+[10/09 16:25:21     73s] @@flow 3: report_area -min_count 1000 -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]area.summary.rpt]
+[10/09 16:25:21     73s] #@ End verbose flow_step report_area_innovus
+[10/09 16:25:22     74s] UM: Running design category ...
+[10/09 16:25:22     74s] Cell top_lvl LLGs are deleted
+[10/09 16:25:22     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:22     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:22     74s] OPERPROF: Starting SiteArray-Init at level 1, MEM:2929.0M, EPOCH TIME: 1760041522.388088
+[10/09 16:25:22     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:22     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:22     74s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:2929.0M, EPOCH TIME: 1760041522.388835
+[10/09 16:25:22     74s] Max number of tech site patterns supported in site array is 256.
+[10/09 16:25:22     74s] Core basic site is CoreSite
+[10/09 16:25:22     74s] After signature check, allow fast init is false, keep pre-filter is true.
+[10/09 16:25:22     74s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[10/09 16:25:22     74s] SiteArray: non-trimmed site array dimensions = 300 x 2100
+[10/09 16:25:22     74s] SiteArray: use 3,457,024 bytes
+[10/09 16:25:22     74s] SiteArray: current memory after site array memory allocation 2932.3M
+[10/09 16:25:22     74s] SiteArray: FP blocked sites are writable
+[10/09 16:25:22     74s] OPERPROF:     Starting Routing-Blockage-From-Wire-Via-StBox at level 3, MEM:2932.3M, EPOCH TIME: 1760041522.400725
+[10/09 16:25:22     74s] Process 19651 (called=268 computed=25) wires and vias for routing blockage analysis
+[10/09 16:25:22     74s] OPERPROF:     Finished Routing-Blockage-From-Wire-Via-StBox at level 3, CPU:0.009, REAL:0.009, MEM:2932.3M, EPOCH TIME: 1760041522.409748
+[10/09 16:25:22     74s] SiteArray: number of non floorplan blocked sites for llg default is 630000
+[10/09 16:25:22     74s] Atter site array init, number of instance map data is 0.
+[10/09 16:25:22     74s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.022, REAL:0.024, MEM:2932.3M, EPOCH TIME: 1760041522.412479
+[10/09 16:25:22     74s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.024, REAL:0.026, MEM:2932.3M, EPOCH TIME: 1760041522.414414
+[10/09 16:25:22     74s] Cell top_lvl LLGs are deleted
+[10/09 16:25:22     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:208).
+[10/09 16:25:22     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:22     74s] # Resetting pin-track-align track data.
+[10/09 16:25:22     74s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:22     74s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:23     74s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:23     74s] UM:           6.33              6                                      report_area_innovus
+[10/09 16:25:27     79s] #@ Begin verbose flow_step report_early_summary_innovus
+[10/09 16:25:27     79s] @flow 2: #- Update the timer for hold and write reports
+[10/09 16:25:27     79s] @@flow 3: time_design -expanded_views -hold -report_only -report_dir debug -report_prefix [get_db flow_report_name]
+[10/09 16:25:27     79s] *** time_design #1 [begin] () : totSession cpu/real = 0:01:20.5/0:01:23.1 (1.0), mem = 2937.7M
+[10/09 16:25:27     79s] Info: 1 threads available for lower-level modules during optimization.
+[10/09 16:25:27     79s] Effort level <high> specified for reg2reg path_group
+[10/09 16:25:28     79s] Cell top_lvl LLGs are deleted
+[10/09 16:25:28     79s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:28     79s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:28     79s] OPERPROF: Starting SiteArray-Init at level 1, MEM:2922.4M, EPOCH TIME: 1760041528.033514
+[10/09 16:25:28     79s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:28     79s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:28     79s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:2922.4M, EPOCH TIME: 1760041528.033776
+[10/09 16:25:28     79s] Max number of tech site patterns supported in site array is 256.
+[10/09 16:25:28     79s] Core basic site is CoreSite
+[10/09 16:25:28     79s] After signature check, allow fast init is false, keep pre-filter is true.
+[10/09 16:25:28     79s] After signature check and other controls, allow fast init is false, keep pre-filter is true.
+[10/09 16:25:28     79s] SiteArray: non-trimmed site array dimensions = 300 x 2100
+[10/09 16:25:28     79s] SiteArray: use 3,457,024 bytes
+[10/09 16:25:28     79s] SiteArray: current memory after site array memory allocation 2922.5M
+[10/09 16:25:28     79s] SiteArray: FP blocked sites are writable
+[10/09 16:25:28     79s] OPERPROF:     Starting Routing-Blockage-From-Wire-Via-StBox at level 3, MEM:2922.5M, EPOCH TIME: 1760041528.045972
+[10/09 16:25:28     79s] Process 19651 (called=268 computed=25) wires and vias for routing blockage analysis
+[10/09 16:25:28     79s] OPERPROF:     Finished Routing-Blockage-From-Wire-Via-StBox at level 3, CPU:0.008, REAL:0.008, MEM:2922.5M, EPOCH TIME: 1760041528.054077
+[10/09 16:25:28     79s] SiteArray: number of non floorplan blocked sites for llg default is 630000
+[10/09 16:25:28     79s] Atter site array init, number of instance map data is 0.
+[10/09 16:25:28     79s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.021, REAL:0.022, MEM:2922.5M, EPOCH TIME: 1760041528.055755
+[10/09 16:25:28     79s] 
+[10/09 16:25:28     79s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[10/09 16:25:28     79s]  Pre_CCE_Colorizing is not ON! (0:0:117:0)
+[10/09 16:25:28     79s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.027, REAL:0.028, MEM:2922.8M, EPOCH TIME: 1760041528.061431
+[10/09 16:25:28     79s] Cell top_lvl LLGs are deleted
+[10/09 16:25:28     79s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:208).
+[10/09 16:25:28     79s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:28     79s] Saving timing graph ...
+[10/09 16:25:28     79s] TG backup dir: /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/innovus_temp_3433904_af1b96d4-409a-4838-a9b9-9df735dafc2b_ece-rschsrv.ece.gatech.edu_dkhalil8_NgGIbk/opt_timing_graph_XhQs9R
+[10/09 16:25:28     79s] Disk Usage:
+[10/09 16:25:28     79s] Filesystem                                          1K-blocks       Used  Available Use% Mounted on
+[10/09 16:25:28     79s] ecelinfile6:/export/array201/students2025/dkhalil8 3904343040 1862918144 2041424896  48% /nethome/dkhalil8
+[10/09 16:25:28     79s] Done save timing graph
+[10/09 16:25:28     79s] Disk Usage:
+[10/09 16:25:28     79s] Filesystem                                          1K-blocks       Used  Available Use% Mounted on
+[10/09 16:25:28     79s] ecelinfile6:/export/array201/students2025/dkhalil8 3904343040 1862922240 2041420800  48% /nethome/dkhalil8
+[10/09 16:25:28     79s] 
+[10/09 16:25:28     79s] TimeStamp Deleting Cell Server Begin ...
+[10/09 16:25:28     79s] 
+[10/09 16:25:28     79s] TimeStamp Deleting Cell Server End ...
+[10/09 16:25:28     80s] Starting delay calculation for Hold views
+[10/09 16:25:28     80s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/09 16:25:28     80s] #################################################################################
+[10/09 16:25:28     80s] # Design Stage: PreRoute
+[10/09 16:25:28     80s] # Design Name: top_lvl
+[10/09 16:25:28     80s] # Design Mode: 130nm
+[10/09 16:25:28     80s] # Analysis Mode: MMMC OCV 
+[10/09 16:25:28     80s] # Parasitics Mode: No SPEF/RCDB 
+[10/09 16:25:28     80s] # Signoff Settings: SI Off 
+[10/09 16:25:28     80s] #################################################################################
+[10/09 16:25:28     80s] Calculate late delays in OCV mode...
+[10/09 16:25:28     80s] Calculate early delays in OCV mode...
+[10/09 16:25:28     80s] Topological Sorting (REAL = 0:00:00.0, MEM = 2949.0M, InitMEM = 2949.0M)
+[10/09 16:25:28     80s] Start delay calculation (fullDC) (1 T). (MEM=2949)
+[10/09 16:25:28     80s] End AAE Lib Interpolated Model. (MEM=2966.902344 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/09 16:25:29     80s] Total number of fetched objects 1539
+[10/09 16:25:29     80s] AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+[10/09 16:25:29     80s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/09 16:25:29     80s] End delay calculation. (MEM=2973.25 CPU=0:00:00.3 REAL=0:00:01.0)
+[10/09 16:25:29     80s] End delay calculation (fullDC). (MEM=2973.25 CPU=0:00:00.4 REAL=0:00:01.0)
+[10/09 16:25:29     80s] *** CDM Built up (cpu=0:00:00.5  real=0:00:01.0  mem= 2973.2M) ***
+[10/09 16:25:29     80s] *** Done Building Timing Graph (cpu=0:00:00.8 real=0:00:01.0 totSessionCpu=0:01:22 mem=2973.2M)
+[10/09 16:25:29     81s] Restoring timing graph ...
+[10/09 16:25:30     81s] AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+[10/09 16:25:30     81s] Done restore timing graph
+[10/09 16:25:30     81s] 
+[10/09 16:25:30     81s] OptSummary:
+[10/09 16:25:30     81s] 
+[10/09 16:25:30     81s] ------------------------------------------------------------------
+[10/09 16:25:30     81s]          time_design Summary
+[10/09 16:25:30     81s] ------------------------------------------------------------------
+[10/09 16:25:30     81s] 
+[10/09 16:25:30     81s] Hold views included:
+[10/09 16:25:30     81s]  tt_v1.8_25C_Nominal_25_func
+[10/09 16:25:30     81s] 
+[10/09 16:25:30     81s] +--------------------+---------+---------+---------+
+[10/09 16:25:30     81s] |     Hold mode      |   all   | reg2reg | default |
+[10/09 16:25:30     81s] +--------------------+---------+---------+---------+
+[10/09 16:25:30     81s] |           WNS (ns):|  0.002  |  0.129  |  0.002  |
+[10/09 16:25:30     81s] |           TNS (ns):|  0.000  |  0.000  |  0.000  |
+[10/09 16:25:30     81s] |    Violating Paths:|    0    |    0    |    0    |
+[10/09 16:25:30     81s] |          All Paths:|   120   |   117   |   103   |
+[10/09 16:25:30     81s] +--------------------+---------+---------+---------+
+[10/09 16:25:30     81s] |tt_v1.8_25C_Nominal_25_func
+[10/09 16:25:30     81s] |                    |  0.002  |  0.129  |  0.002  |
+[10/09 16:25:30     81s] |                    |  0.000  |  0.000  |  0.000  |
+[10/09 16:25:30     81s] |                    |    0    |    0    |    0    |
+[10/09 16:25:30     81s] |                    |   120   |   117   |   103   |
+[10/09 16:25:30     81s] +--------------------+---------+---------+---------+
+[10/09 16:25:30     81s] 
+[10/09 16:25:30     81s] Density: 2.866%
+[10/09 16:25:30     81s] 
+[10/09 16:25:30     81s] ------------------------------------------------------------------
+[10/09 16:25:30     81s] Reported timing to dir debug
+[10/09 16:25:30     81s] Total CPU time: 2.29 sec
+[10/09 16:25:30     81s] Total Real time: 3.0 sec
+[10/09 16:25:30     81s] Total Memory Usage: 2938.390625 Mbytes
+[10/09 16:25:30     81s] Info: pop threads available for lower-level modules during optimization.
+[10/09 16:25:30     81s] *** time_design #1 [finish] () : cpu/real = 0:00:02.3/0:00:02.4 (1.0), totSession cpu/real = 0:01:22.7/0:01:25.5 (1.0), mem = 2938.4M
+[10/09 16:25:30     81s] 
+[10/09 16:25:30     81s] =============================================================================================
+[10/09 16:25:30     81s]  Final TAT Report : time_design #1                                              25.11-s102_1
+[10/09 16:25:30     81s] =============================================================================================
+[10/09 16:25:30     81s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[10/09 16:25:30     81s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:30     81s] [ OptSummaryReport       ]      1   0:00:01.1  (  45.0 % )     0:00:02.2 /  0:00:02.2    1.0
+[10/09 16:25:30     81s] [ UpdateTimingGraph      ]      2   0:00:00.3  (  11.7 % )     0:00:00.9 /  0:00:00.9    1.0
+[10/09 16:25:30     81s] [ FullDelayCalc          ]      1   0:00:00.5  (  20.3 % )     0:00:00.5 /  0:00:00.5    1.0
+[10/09 16:25:30     81s] [ TimingUpdate           ]      2   0:00:00.1  (   6.0 % )     0:00:00.1 /  0:00:00.1    1.0
+[10/09 16:25:30     81s] [ TimingReport           ]      1   0:00:00.1  (   2.3 % )     0:00:00.1 /  0:00:00.1    0.9
+[10/09 16:25:30     81s] [ GenerateReports        ]      1   0:00:00.2  (   9.5 % )     0:00:00.2 /  0:00:00.2    0.9
+[10/09 16:25:30     81s] [ MISC                   ]          0:00:00.1  (   5.3 % )     0:00:00.1 /  0:00:00.1    1.0
+[10/09 16:25:30     81s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:30     81s]  time_design #1 TOTAL               0:00:02.4  ( 100.0 % )     0:00:02.4 /  0:00:02.3    1.0
+[10/09 16:25:30     81s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:30     81s] @flow 5: #- Reports that describe timing health
+[10/09 16:25:30     81s] @@flow 6: report_timing_summary -checks {hold drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.analysis_summary.rpt]
+[10/09 16:25:30     81s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/09 16:25:30     81s] #################################################################################
+[10/09 16:25:30     81s] # Design Stage: PreRoute
+[10/09 16:25:30     81s] # Design Name: top_lvl
+[10/09 16:25:30     81s] # Design Mode: 130nm
+[10/09 16:25:30     81s] # Analysis Mode: MMMC OCV 
+[10/09 16:25:30     81s] # Parasitics Mode: No SPEF/RCDB 
+[10/09 16:25:30     81s] # Signoff Settings: SI Off 
+[10/09 16:25:30     81s] #################################################################################
+[10/09 16:25:30     82s] Calculate late delays in OCV mode...
+[10/09 16:25:30     82s] Calculate early delays in OCV mode...
+[10/09 16:25:30     82s] Topological Sorting (REAL = 0:00:00.0, MEM = 2911.0M, InitMEM = 2911.0M)
+[10/09 16:25:30     82s] Start delay calculation (fullDC) (1 T). (MEM=2911.02)
+[10/09 16:25:30     82s] End AAE Lib Interpolated Model. (MEM=2928.921875 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/09 16:25:31     82s] Total number of fetched objects 1539
+[10/09 16:25:31     82s] AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+[10/09 16:25:31     82s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/09 16:25:31     82s] End delay calculation. (MEM=2935.43 CPU=0:00:00.3 REAL=0:00:01.0)
+[10/09 16:25:31     82s] End delay calculation (fullDC). (MEM=2935.43 CPU=0:00:00.4 REAL=0:00:01.0)
+[10/09 16:25:31     82s] *** CDM Built up (cpu=0:00:00.7  real=0:00:01.0  mem= 2935.4M) ***
+[10/09 16:25:31     82s] @@flow 7: report_timing_summary -checks {hold drv} -expand_views > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.view_summary.rpt]
+[10/09 16:25:31     82s] The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+[10/09 16:25:31     82s] @@flow 8: report_timing_summary -checks {hold drv} -expand_views -expand_clocks launch_capture  > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.group_summary.rpt]
+[10/09 16:25:31     82s] The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+[10/09 16:25:31     82s] @@flow 9: report_constraint -early -all_violators -drv_violation_type {min_capacitance min_transition min_fanout} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.all_violators.rpt]
+[10/09 16:25:31     82s] @@flow 10: set_metric -name timing.hold.type -value gba
+[10/09 16:25:31     82s] #@ End verbose flow_step report_early_summary_innovus
+[10/09 16:25:32     83s] UM: Running hold category ...
+[10/09 16:25:32     83s] **WARN: (TCLCMD-1469):	No timing paths found matching the specified criteria. Empty collection returned.
+[10/09 16:25:33     84s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:33     84s] UM:           9.82              9                                      report_early_summary_innovus
+[10/09 16:25:37     89s] #@ Begin verbose flow_step report_early_paths
+[10/09 16:25:37     89s] @flow 2: #- Reports that show detailed early timing with Graph Based Analysis (GBA)
+[10/09 16:25:37     89s] @@flow 3: report_timing -early -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.endpoint.rpt]
+[10/09 16:25:38     89s] @@flow 4: report_timing -early -max_paths 1   -nworst 1 -path_type full_clock -net > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.worst.rpt]
+[10/09 16:25:38     89s] @@flow 5: report_timing -early -max_paths 500 -nworst 1 -path_type full_clock      > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.gba.rpt]
+[10/09 16:25:38     89s] @flow 6: if {![get_feature report_pba]} {
+[10/09 16:25:38     89s] @flow 7:
+[10/09 16:25:38     89s] @flow 8:     #- Reports that show detailed timing with Path Based Analysis (PBA)
+[10/09 16:25:38     89s] @flow 9: if {[is_flow -quiet -inside flow:sta]} {...}
+[10/09 16:25:38     89s] @flow 12: }
+[10/09 16:25:38     89s] #@ End verbose flow_step report_early_paths
+[10/09 16:25:39     91s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:39     91s] UM:           6.38              6                                      report_early_paths
+[10/09 16:25:44     95s] #@ Begin verbose flow_step report_late_summary_innovus
+[10/09 16:25:44     95s] @flow 2: #- Update the timer for setup and write reports
+[10/09 16:25:44     95s] @@flow 3: time_design -expanded_views -report_only -report_dir debug -report_prefix [get_db flow_report_name]
+[10/09 16:25:44     95s] *** time_design #2 [begin] () : totSession cpu/real = 0:01:36.7/0:01:39.6 (1.0), mem = 2978.3M
+[10/09 16:25:44     95s] Info: 1 threads available for lower-level modules during optimization.
+[10/09 16:25:44     95s] Effort level <high> specified for reg2reg path_group
+[10/09 16:25:44     95s] Cell top_lvl LLGs are deleted
+[10/09 16:25:44     95s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:44     95s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:44     95s] OPERPROF: Starting SiteArray-Init at level 1, MEM:2969.1M, EPOCH TIME: 1760041544.521221
+[10/09 16:25:44     95s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:44     95s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:44     95s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:2969.1M, EPOCH TIME: 1760041544.521479
+[10/09 16:25:44     95s] Max number of tech site patterns supported in site array is 256.
+[10/09 16:25:44     95s] Core basic site is CoreSite
+[10/09 16:25:44     95s] After signature check, allow fast init is true, keep pre-filter is true.
+[10/09 16:25:44     95s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[10/09 16:25:44     95s] Fast DP-INIT is on for default
+[10/09 16:25:44     95s] Atter site array init, number of instance map data is 0.
+[10/09 16:25:44     95s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.010, REAL:0.011, MEM:2969.2M, EPOCH TIME: 1760041544.532239
+[10/09 16:25:44     95s] 
+[10/09 16:25:44     95s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[10/09 16:25:44     95s]  Pre_CCE_Colorizing is not ON! (0:0:117:0)
+[10/09 16:25:44     95s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.015, REAL:0.016, MEM:2969.4M, EPOCH TIME: 1760041544.537429
+[10/09 16:25:44     95s] Cell top_lvl LLGs are deleted
+[10/09 16:25:44     95s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:208).
+[10/09 16:25:44     95s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/09 16:25:44     95s] Starting delay calculation for Setup views
+[10/09 16:25:44     96s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/09 16:25:44     96s] #################################################################################
+[10/09 16:25:44     96s] # Design Stage: PreRoute
+[10/09 16:25:44     96s] # Design Name: top_lvl
+[10/09 16:25:44     96s] # Design Mode: 130nm
+[10/09 16:25:44     96s] # Analysis Mode: MMMC OCV 
+[10/09 16:25:44     96s] # Parasitics Mode: No SPEF/RCDB 
+[10/09 16:25:44     96s] # Signoff Settings: SI Off 
+[10/09 16:25:44     96s] #################################################################################
+[10/09 16:25:44     96s] Calculate early delays in OCV mode...
+[10/09 16:25:44     96s] Calculate late delays in OCV mode...
+[10/09 16:25:44     96s] Topological Sorting (REAL = 0:00:00.0, MEM = 2955.5M, InitMEM = 2955.5M)
+[10/09 16:25:44     96s] Start delay calculation (fullDC) (1 T). (MEM=2955.46)
+[10/09 16:25:44     96s] End AAE Lib Interpolated Model. (MEM=2973.363281 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/09 16:25:45     96s] Total number of fetched objects 1539
+[10/09 16:25:45     96s] AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+[10/09 16:25:45     96s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/09 16:25:45     96s] End delay calculation. (MEM=2976.66 CPU=0:00:00.3 REAL=0:00:01.0)
+[10/09 16:25:45     96s] *** CDM Built up (cpu=0:00:00.5  real=0:00:01.0  mem= 2976.7M) ***
+[10/09 16:25:45     96s] End delay calculation (fullDC). (MEM=2976.66 CPU=0:00:00.4 REAL=0:00:01.0)
+[10/09 16:25:45     96s] *** Done Building Timing Graph (cpu=0:00:00.9 real=0:00:01.0 totSessionCpu=0:01:38 mem=2977.1M)
+[10/09 16:25:47     97s] 
+[10/09 16:25:47     97s] OptSummary:
+[10/09 16:25:47     97s] 
+[10/09 16:25:47     97s] ------------------------------------------------------------------
+[10/09 16:25:47     97s]          time_design Summary
+[10/09 16:25:47     97s] ------------------------------------------------------------------
+[10/09 16:25:47     97s] 
+[10/09 16:25:47     97s] Setup views included:
+[10/09 16:25:47     97s]  tt_v1.8_25C_Nominal_25_func 
+[10/09 16:25:47     97s] 
+[10/09 16:25:47     97s] +--------------------+---------+---------+---------+
+[10/09 16:25:47     97s] |     Setup mode     |   all   | reg2reg | default |
+[10/09 16:25:47     97s] +--------------------+---------+---------+---------+
+[10/09 16:25:47     97s] |           WNS (ns):|  0.008  |  0.022  |  0.008  |
+[10/09 16:25:47     97s] |           TNS (ns):|  0.000  |  0.000  |  0.000  |
+[10/09 16:25:47     97s] |    Violating Paths:|    0    |    0    |    0    |
+[10/09 16:25:47     97s] |          All Paths:|   120   |   117   |   103   |
+[10/09 16:25:47     97s] +--------------------+---------+---------+---------+
+[10/09 16:25:47     97s] |tt_v1.8_25C_Nominal_25_func
+[10/09 16:25:47     97s] |                    |  0.008  |  0.022  |  0.008  |
+[10/09 16:25:47     97s] |                    |  0.000  |  0.000  |  0.000  |
+[10/09 16:25:47     97s] |                    |    0    |    0    |    0    |
+[10/09 16:25:47     97s] |                    |   120   |   117   |   103   |
+[10/09 16:25:47     97s] +--------------------+---------+---------+---------+
+[10/09 16:25:47     97s] 
+[10/09 16:25:47     97s] 
+[10/09 16:25:47     97s] +----------------+-------------------------------+------------------+
+[10/09 16:25:47     97s] |                |              Real             |       Total      |
+[10/09 16:25:47     97s] |    DRVs        +------------------+------------+------------------|
+[10/09 16:25:47     97s] |                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
+[10/09 16:25:47     97s] +----------------+------------------+------------+------------------+
+[10/09 16:25:47     97s] |   max_cap      |     32 (32)      |   -0.063   |     32 (32)      |
+[10/09 16:25:47     97s] |   max_tran     |      6 (6)       |   -0.012   |      6 (6)       |
+[10/09 16:25:47     97s] |   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+[10/09 16:25:47     97s] |   max_length   |      0 (0)       |     0      |      0 (0)       |
+[10/09 16:25:47     97s] +----------------+------------------+------------+------------------+
+[10/09 16:25:47     97s] 
+[10/09 16:25:47     97s] Density: 2.866%
+[10/09 16:25:47     97s] ------------------------------------------------------------------
+[10/09 16:25:47     97s] Reported timing to dir debug
+[10/09 16:25:47     97s] Total CPU time: 1.45 sec
+[10/09 16:25:47     97s] Total Real time: 3.0 sec
+[10/09 16:25:47     97s] Total Memory Usage: 2956.03125 Mbytes
+[10/09 16:25:47     97s] Info: pop threads available for lower-level modules during optimization.
+[10/09 16:25:47     97s] *** time_design #2 [finish] () : cpu/real = 0:00:01.5/0:00:03.2 (0.5), totSession cpu/real = 0:01:38.1/0:01:42.8 (1.0), mem = 2956.0M
+[10/09 16:25:47     97s] 
+[10/09 16:25:47     97s] =============================================================================================
+[10/09 16:25:47     97s]  Final TAT Report : time_design #2                                              25.11-s102_1
+[10/09 16:25:47     97s] =============================================================================================
+[10/09 16:25:47     97s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[10/09 16:25:47     97s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:47     97s] [ OptSummaryReport       ]      1   0:00:00.2  (   4.8 % )     0:00:03.1 /  0:00:01.4    0.4
+[10/09 16:25:47     97s] [ DrvReport              ]      1   0:00:01.8  (  55.9 % )     0:00:01.8 /  0:00:00.1    0.1
+[10/09 16:25:47     97s] [ UpdateTimingGraph      ]      1   0:00:00.3  (   8.6 % )     0:00:00.9 /  0:00:00.9    1.0
+[10/09 16:25:47     97s] [ FullDelayCalc          ]      1   0:00:00.5  (  15.9 % )     0:00:00.5 /  0:00:00.5    1.0
+[10/09 16:25:47     97s] [ TimingUpdate           ]      1   0:00:00.1  (   2.9 % )     0:00:00.1 /  0:00:00.1    1.0
+[10/09 16:25:47     97s] [ TimingReport           ]      1   0:00:00.1  (   1.7 % )     0:00:00.1 /  0:00:00.0    0.9
+[10/09 16:25:47     97s] [ GenerateReports        ]      1   0:00:00.2  (   6.7 % )     0:00:00.2 /  0:00:00.2    0.9
+[10/09 16:25:47     97s] [ MISC                   ]          0:00:00.1  (   3.5 % )     0:00:00.1 /  0:00:00.1    1.0
+[10/09 16:25:47     97s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:47     97s]  time_design #2 TOTAL               0:00:03.2  ( 100.0 % )     0:00:03.2 /  0:00:01.5    0.5
+[10/09 16:25:47     97s] ---------------------------------------------------------------------------------------------
+[10/09 16:25:47     97s] @flow 5: #- Reports that describe timing health
+[10/09 16:25:47     97s] @@flow 6: report_timing_summary -checks {setup drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.analysis_summary.rpt]
+[10/09 16:25:47     97s] @@flow 7: report_timing_summary -checks {setup drv} -expand_views > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.view_summary.rpt]
+[10/09 16:25:47     97s] The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+[10/09 16:25:47     97s] @@flow 8: report_timing_summary -checks {setup drv} -expand_views -expand_clocks launch_capture  > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.group_summary.rpt]
+[10/09 16:25:47     97s] The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+[10/09 16:25:47     97s] @@flow 9: report_constraint -late -all_violators -drv_violation_type {max_capacitance max_transition max_fanout} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.all_violators.rpt]
+[10/09 16:25:47     97s] @@flow 10: set_metric -name timing.setup.type -value gba
+[10/09 16:25:47     97s] @@flow 11: set_metric -name timing.drv.report_file -value [file join [get_db flow_report_name] [get_db flow_report_prefix]setup.all_violators.rpt]
+[10/09 16:25:47     97s] #@ End verbose flow_step report_late_summary_innovus
+[10/09 16:25:48     98s] UM: Running setup category ...
+[10/09 16:25:48     98s] **WARN: (TCLCMD-1469):	No timing paths found matching the specified criteria. Empty collection returned.
+[10/09 16:25:49     99s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:49     99s] UM:           8.06             10          0.000 ns          0.008 ns  report_late_summary_innovus
+[10/09 16:25:54    103s] #@ Begin verbose flow_step report_late_paths
+[10/09 16:25:54    103s] @flow 2: #- Reports that show detailed timing with Graph Based Analysis (GBA)
+[10/09 16:25:54    103s] @@flow 3: report_timing -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.endpoint.rpt]
+[10/09 16:25:54    103s] @@flow 4: report_timing -max_paths 1   -nworst 1 -path_type full_clock -net > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.worst.rpt]
+[10/09 16:25:54    103s] @@flow 5: report_timing -max_paths 500 -nworst 1 -path_type full_clock      > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.gba.rpt]
+[10/09 16:25:54    104s] @flow 6: if {![get_feature report_pba]} {
+[10/09 16:25:54    104s] @flow 7:
+[10/09 16:25:54    104s] @flow 8:     #- Reports that show detailed timing with Path Based Analysis (PBA)
+[10/09 16:25:54    104s] @flow 9: if {[is_flow -quiet -inside flow:sta]} {...}
+[10/09 16:25:54    104s] @flow 12: }
+[10/09 16:25:54    104s] #@ End verbose flow_step report_late_paths
+[10/09 16:25:56    105s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:25:56    105s] UM:           6.53              6                                      report_late_paths
+[10/09 16:26:01    110s] #@ Begin verbose flow_step report_clock_timing
+[10/09 16:26:01    110s] @flow 2: #- Reports that check clock implementation
+[10/09 16:26:01    110s] @@flow 3: report_clock_timing -type summary > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.summary.rpt]
+[10/09 16:26:01    110s] @@flow 4: report_clock_timing -type latency > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.latency.rpt]
+[10/09 16:26:01    110s] @@flow 5: report_clock_timing -type skew    > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.skew.rpt]
+[10/09 16:26:01    110s] #@ End verbose flow_step report_clock_timing
+[10/09 16:26:02    111s] UM: Running clock category ...
+[10/09 16:26:02    111s] Updating ideal nets and annotations...
+[10/09 16:26:02    111s] Clock tree spec update: Ideal nets, transition and delay annotations were updated to match active timing constraints.
+[10/09 16:26:02    111s] Updating ideal nets and annotations done. (took cpu=0:00:00.0 real=0:00:00.0)
+[10/09 16:26:02    111s] No differences between SDC and CTS ideal net status found.
+[10/09 16:26:02    111s] Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.early...
+[10/09 16:26:02    111s] End AAE Lib Interpolated Model. (MEM=2989.562500 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/09 16:26:02    111s] Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+[10/09 16:26:02    111s] Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.late...
+[10/09 16:26:02    111s] Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+[10/09 16:26:02    111s] Clock DAG hash : 1570546d8d8abf1c 3bb63549a22ded2
+[10/09 16:26:02    111s] CTS services accumulated run-time stats :
+[10/09 16:26:02    111s]   delay calculator: calls=3292, total_wall_time=0.312s, mean_wall_time=0.095ms
+[10/09 16:26:02    111s]   steiner router: calls=3279, total_wall_time=0.041s, mean_wall_time=0.013ms
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG stats:
+[10/09 16:26:02    111s] ================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] ---------------------------------------------------------
+[10/09 16:26:02    111s] Cell type                 Count    Area       Capacitance
+[10/09 16:26:02    111s] ---------------------------------------------------------
+[10/09 16:26:02    111s] Buffers                     6      116.168       0.031
+[10/09 16:26:02    111s] Inverters                   0        0.000       0.000
+[10/09 16:26:02    111s] Integrated Clock Gates      0        0.000       0.000
+[10/09 16:26:02    111s] Discrete Clock Gates        0        0.000       0.000
+[10/09 16:26:02    111s] Clock Logic                 0        0.000       0.000
+[10/09 16:26:02    111s] All                         6      116.168       0.031
+[10/09 16:26:02    111s] ---------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG miscellaneous counts:
+[10/09 16:26:02    111s] ===============================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] ------------------------------
+[10/09 16:26:02    111s] Type                     Count
+[10/09 16:26:02    111s] ------------------------------
+[10/09 16:26:02    111s] Roots                      1
+[10/09 16:26:02    111s] Preserved Ports            0
+[10/09 16:26:02    111s] Multiple Clock Inputs      0
+[10/09 16:26:02    111s] ------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG sink counts:
+[10/09 16:26:02    111s] ======================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -------------------------
+[10/09 16:26:02    111s] Sink type           Count
+[10/09 16:26:02    111s] -------------------------
+[10/09 16:26:02    111s] Regular              90
+[10/09 16:26:02    111s] Enable Latch          0
+[10/09 16:26:02    111s] Load Capacitance      0
+[10/09 16:26:02    111s] Antenna Diode         0
+[10/09 16:26:02    111s] Node Sink             0
+[10/09 16:26:02    111s] Port                  0
+[10/09 16:26:02    111s] Total                90
+[10/09 16:26:02    111s] -------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG wire lengths:
+[10/09 16:26:02    111s] =======================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] --------------------
+[10/09 16:26:02    111s] Type     Wire Length
+[10/09 16:26:02    111s] --------------------
+[10/09 16:26:02    111s] Top          0.000
+[10/09 16:26:02    111s] Trunk     1876.100
+[10/09 16:26:02    111s] Leaf      1859.435
+[10/09 16:26:02    111s] Total     3735.535
+[10/09 16:26:02    111s] --------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG hp wire lengths:
+[10/09 16:26:02    111s] ==========================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -----------------------
+[10/09 16:26:02    111s] Type     hp Wire Length
+[10/09 16:26:02    111s] -----------------------
+[10/09 16:26:02    111s] Top            0.000
+[10/09 16:26:02    111s] Trunk       1477.520
+[10/09 16:26:02    111s] Leaf        1273.630
+[10/09 16:26:02    111s] Total       2751.150
+[10/09 16:26:02    111s] -----------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG capacitances:
+[10/09 16:26:02    111s] =======================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] --------------------------------
+[10/09 16:26:02    111s] Type     Gate     Wire     Total
+[10/09 16:26:02    111s] --------------------------------
+[10/09 16:26:02    111s] Top      0.000    0.000    0.000
+[10/09 16:26:02    111s] Trunk    0.064    0.266    0.330
+[10/09 16:26:02    111s] Leaf     0.190    0.293    0.483
+[10/09 16:26:02    111s] Total    0.255    0.558    0.813
+[10/09 16:26:02    111s] --------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG sink capacitances:
+[10/09 16:26:02    111s] ============================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -----------------------------------------------
+[10/09 16:26:02    111s] Total    Average    Std. Dev.    Min      Max
+[10/09 16:26:02    111s] -----------------------------------------------
+[10/09 16:26:02    111s] 0.190     0.002       0.001      0.002    0.007
+[10/09 16:26:02    111s] -----------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG net violations:
+[10/09 16:26:02    111s] =========================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] None
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG primary half-corner transition distribution:
+[10/09 16:26:02    111s] ======================================================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Net Type    Target    Count    Average    Std. Dev.    Min      Max      Distribution                                                              Over Target
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Trunk       0.600       2       0.111       0.151      0.004    0.217    {2 <= 0.360ns, 0 <= 0.480ns, 0 <= 0.540ns, 0 <= 0.570ns, 0 <= 0.600ns}         -
+[10/09 16:26:02    111s] Leaf        0.150       5       0.106       0.022      0.091    0.144    {0 <= 0.090ns, 4 <= 0.120ns, 0 <= 0.135ns, 0 <= 0.142ns, 1 <= 0.150ns}         -
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock DAG library cell distribution:
+[10/09 16:26:02    111s] ====================================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -----------------------------------------
+[10/09 16:26:02    111s] Name        Type      Inst     Inst Area 
+[10/09 16:26:02    111s]                       Count    (um^2)
+[10/09 16:26:02    111s] -----------------------------------------
+[10/09 16:26:02    111s] CLKBUFX8    buffer      5       104.742
+[10/09 16:26:02    111s] CLKBUFX4    buffer      1        11.426
+[10/09 16:26:02    111s] -----------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Please note that the following tables reflect only the defined clock trees, so the flop counts might not include all flops in your design.
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock Tree Summary:
+[10/09 16:26:02    111s] ===================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] ----------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Clock Tree  Clock  Bufs  Invs  Other  Max       Max     Max      Max          Standard   Wire   Gate   Clock Tree Root
+[10/09 16:26:02    111s] Name        Gates              Clock  Non-leaf  Leaf    Length   Source-sink  cell area  cap    cap    
+[10/09 16:26:02    111s]                                Cells  Fanout    Fanout  (um)     Resistance   (um^2)     (pF)   (pF)   
+[10/09 16:26:02    111s]                                                                  (Ohms)                                
+[10/09 16:26:02    111s] ----------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] core_clock    0     6     0      0       5        24    1169.58    2128.78     116.168   0.558  0.255  clk
+[10/09 16:26:02    111s] ----------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock Sink Summary:
+[10/09 16:26:02    111s] ===================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Clock Tree  Explicit      Implicit      Explicit     Implicit     Explicit   Implicit   Posedge  Negedge  Memory  Enable  Non enable  Other
+[10/09 16:26:02    111s] Name        exclude pins  exclude pins  ignore pins  ignore pins  stop pins  stop pins  Flops    Flops    Clock   Latch   Latch       Sinks
+[10/09 16:26:02    111s]                                                                                                           Pins    Sinks   Sinks       
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] core_clock       0             0             0            0           0          0        86        0       4       0         0         0
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Summary across all clock trees:
+[10/09 16:26:02    111s] ===============================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Clock  Bufs  Invs  Other  Max       Average   Max     Average  Max       Max          Standard   Wire   Gate
+[10/09 16:26:02    111s] Gates              Clock  Non-leaf  Non-leaf  Leaf    Leaf     Length    Source-sink  cell area  cap    cap
+[10/09 16:26:02    111s]                    Cells  Fanout    Fanout    Fanout  Fanout   (um)      Resistance   (um^2)     (pF)   (pF)
+[10/09 16:26:02    111s]                                                                          (Ohms)                         
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s]   0     6     0      0       5         3        24      18     1169.575    212.878     116.168   0.558  0.255
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock Sink Summary across all clock trees:
+[10/09 16:26:02    111s] ==========================================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Explicit      Implicit      Explicit     Implicit     Explicit   Implicit   Posedge  Negedge  Memory  Enable  Non enable  Other
+[10/09 16:26:02    111s] exclude pins  exclude pins  ignore pins  ignore pins  stop pins  stop pins  Flops    Flops    Clock   Latch   Latch       Sinks
+[10/09 16:26:02    111s]                                                                                               Pins    Sinks   Sinks       
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s]      0             0             0            0           0          0        86        0       4       0         0         0
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Physical metrics across all clock trees:
+[10/09 16:26:02    111s] ========================================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] ------------------------------------------------------------------------
+[10/09 16:26:02    111s] Metric                               Minimum  Average  Maximum   Std.dev
+[10/09 16:26:02    111s] ------------------------------------------------------------------------
+[10/09 16:26:02    111s] Source-sink routed net length (um)   154.030  387.862  1169.575  338.789
+[10/09 16:26:02    111s] Source-sink manhattan distance (um)  135.240  369.963  1086.980  314.761
+[10/09 16:26:02    111s] Source-sink resistance (Ohm)          59.338   94.318   212.878   50.184
+[10/09 16:26:02    111s] ------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Transition distribution for half-corner tt_v1.8_25C_Nominal_25:both.late:
+[10/09 16:26:02    111s] =========================================================================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Net Type    Target    Count    Average    Std. Dev.    Min      Max      Distribution                                                              Over Target
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Trunk       0.600       2       0.111       0.151      0.004    0.217    {2 <= 0.360ns, 0 <= 0.480ns, 0 <= 0.540ns, 0 <= 0.570ns, 0 <= 0.600ns}         -
+[10/09 16:26:02    111s] Leaf        0.150       5       0.106       0.022      0.091    0.144    {0 <= 0.090ns, 4 <= 0.120ns, 0 <= 0.135ns, 0 <= 0.142ns, 1 <= 0.150ns}         -
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Count of violations across all clock trees:
+[10/09 16:26:02    111s] ===========================================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] ---------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Clock Tree  # Max capacitance  # Max resistance  # Max length  # Max fanout  # Slew
+[10/09 16:26:02    111s] Name        violations         violations        violations    violations    violations
+[10/09 16:26:02    111s] ---------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] core_clock          0                 0               0             0            0
+[10/09 16:26:02    111s] ---------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Total               0                 0               0             0            0
+[10/09 16:26:02    111s] ---------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Note the above table per clock tree is based on CCOpt clock tree view. The violations are counted across half corners.
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Found a total of 0 clock tree pins with max capacitance violations.
+[10/09 16:26:02    111s] Found a total of 0 clock tree nets with max resistance violations.
+[10/09 16:26:02    111s] Found a total of 0 clock tree nets with max length violations.
+[10/09 16:26:02    111s] Found a total of 0 clock tree nets with max fanout violations.
+[10/09 16:26:02    111s] Found a total of 0 clock tree pins with a slew violation.
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Clock Timing Summary:
+[10/09 16:26:02    111s] =====================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Target and measured clock slews (in ns):
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Clock tree  Timing Corner                      Worst Rising  Worst Falling  Worst Rising  Worst Falling  Leaf Slew    Leaf Slew  Trunk Slew   Trunk Slew
+[10/09 16:26:02    111s]                                                Leaf Slew     Leaf Slew      Trunk Slew    Trunk Slew     Target Type  Target     Target Type  Target
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] core_clock  tt_v1.8_25C_Nominal_25:both.early     0.213          0.127         0.213          0.123      ignored          -      ignored          -
+[10/09 16:26:02    111s] core_clock  tt_v1.8_25C_Nominal_25:both.late      0.219          0.131         0.217          0.124      explicit      100.000   explicit      100.000
+[10/09 16:26:02    111s] --------------------------------------------------------------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] * - indicates that target was not met.
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] auto extracted - target was extracted from SDC.
+[10/09 16:26:02    111s] auto computed - target was computed when balancing trees.
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Total Transition Slacks Summary:
+[10/09 16:26:02    111s] ================================
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] Total       Total Leaf    Total        Total Leaf    Mean        Median      Std.Dev     Worst
+[10/09 16:26:02    111s] Overslew    Overslew      Underslew    Underslew     Overslew    Overslew    Overslew    Overslew
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s]  0.000        0.000        -1.198        -0.220       0.000       0.000       0.000       0.000
+[10/09 16:26:02    111s] -------------------------------------------------------------------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Transition times measured in the half-corner tt_v1.8_25C_Nominal_25:both.late
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] Top Underslews:
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] -------------------------------------
+[10/09 16:26:02    111s] Driving node           Underslew (ns)
+[10/09 16:26:02    111s] -------------------------------------
+[10/09 16:26:02    111s] core_clock                 -0.596
+[10/09 16:26:02    111s] CTS_ccl_a_buf_00006        -0.383
+[10/09 16:26:02    111s] CTS_ccl_a_buf_00001        -0.059
+[10/09 16:26:02    111s] CTS_ccl_a_buf_00005        -0.057
+[10/09 16:26:02    111s] CTS_ccl_a_buf_00003        -0.056
+[10/09 16:26:02    111s] CTS_ccl_a_buf_00002        -0.042
+[10/09 16:26:02    111s] CTS_ccl_a_buf_00004        -0.006
+[10/09 16:26:02    111s] -------------------------------------
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    111s] 
+[10/09 16:26:02    112s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:26:02    112s] UM:           6.35              6                                      report_clock_timing
+[10/09 16:26:07    116s] #@ Begin verbose flow_step report_power_innovus
+[10/09 16:26:07    116s] @@flow 2: report_power -no_wrap -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]power.all.rpt]
+[10/09 16:26:07    116s] env CDS_WORKAREA is set to /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Power Net Detected:
+[10/09 16:26:07    116s]         Voltage	    Name
+[10/09 16:26:07    116s]              0V	    VSS
+[10/09 16:26:07    116s]            1.8V	    VDD
+[10/09 16:26:07    116s]              0V	    VSS
+[10/09 16:26:07    116s]            1.8V	    VDD
+[10/09 16:26:07    116s] Using Power View tt_v1.8_25C_Nominal_25_func
+[10/09 16:26:07    116s] .
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Begin Power Analysis
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s]              0V	    VSS
+[10/09 16:26:07    116s]            1.8V	    VDD
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Begin Processing Timing Library for Power Calculation
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2999.36MB/6033.61MB/2999.36MB)
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Begin Processing Power Net/Grid for Power Calculation
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2999.36MB/6033.61MB/2999.36MB)
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Begin Processing Timing Window Data for Power Calculation
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] core_clock(769.231MHz) CK: assigning clock core_clock to net clk
+[10/09 16:26:07    116s] Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2999.43MB/6033.61MB/2999.43MB)
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Begin Processing User Attributes
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2999.43MB/6033.61MB/2999.43MB)
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Begin Processing Signal Activity
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Starting Levelizing
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT)
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 10%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 20%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 30%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 40%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 50%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 60%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 70%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 80%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 90%
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Finished Levelizing
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT)
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Starting Activity Propagation
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT)
+[10/09 16:26:07    116s] ** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+[10/09 16:26:07    116s] Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 10%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 20%
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Finished Activity Propagation
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT)
+[10/09 16:26:07    116s] Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2999.74MB/6033.61MB/2999.74MB)
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Begin Power Computation
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s]       ----------------------------------------------------------
+[10/09 16:26:07    116s]       # of cell(s) missing both power/leakage table: 0
+[10/09 16:26:07    116s]       # of cell(s) missing power table: 1
+[10/09 16:26:07    116s]       # of cell(s) missing leakage table: 0
+[10/09 16:26:07    116s]       ----------------------------------------------------------
+[10/09 16:26:07    116s] CellName                                  Missing Table(s)
+[10/09 16:26:07    116s] TIEHI                                     internal power, 
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] 
+[10/09 16:26:07    116s] Starting Calculating power
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT)
+[10/09 16:26:07    116s]  ... Calculating switching power
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 10%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 20%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 30%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 40%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 50%
+[10/09 16:26:07    116s]  ... Calculating internal and leakage power
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 60%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 70%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 80%
+[10/09 16:26:07    116s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT): 90%
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] Finished Calculating power
+[10/09 16:26:07    117s] 2025-Oct-09 16:26:07 (2025-Oct-09 20:26:07 GMT)
+[10/09 16:26:07    117s]       # of MSMV cell(s) missing power_level: 0
+[10/09 16:26:07    117s] Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3000.38MB/6033.61MB/3000.38MB)
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] Begin Processing User Attributes
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] Begin Processing set_power
+[10/09 16:26:07    117s] Ended Processing set_power: (cpu=0:00:00, real=0:00:00,
+[10/09 16:26:07    117s] mem(process/total/peak)=3000.38MB/6033.61MB/3000.38MB)
+[10/09 16:26:07    117s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3000.38MB/6033.61MB/3000.38MB)
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3000.44MB/6033.61MB/3000.44MB)
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] Begin Boundary Leakage Calculation
+[10/09 16:26:07    117s] Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+[10/09 16:26:07    117s] mem(process/total/peak)=3000.50MB/6033.61MB/3000.50MB)
+[10/09 16:26:07    117s] Begin Static Power Report Generation
+[10/09 16:26:07    117s] *
+
+
+
+[10/09 16:26:07    117s] Total Power
+[10/09 16:26:07    117s] -----------------------------------------------------------------------------------------
+[10/09 16:26:07    117s] Total Internal Power:       92.60421718 	   89.3901%
+[10/09 16:26:07    117s] Total Switching Power:      10.95506310 	   10.5748%
+[10/09 16:26:07    117s] Total Leakage Power:         0.03630247 	    0.0350%
+[10/09 16:26:07    117s] Total Power:               103.59558274
+[10/09 16:26:07    117s] *
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] Total Power
+[10/09 16:26:07    117s] -----------------------------------------------------------------------------------------
+[10/09 16:26:07    117s] -----------------------------------------------------------------------------------------
+[10/09 16:26:07    117s] Total Internal Power:       92.60421718 	   89.3901%
+[10/09 16:26:07    117s] Total Switching Power:      10.95506310 	   10.5748%
+[10/09 16:26:07    117s] Total Leakage Power:         0.03630247 	    0.0350%
+[10/09 16:26:07    117s] Total Power:               103.59558274
+[10/09 16:26:07    117s] -----------------------------------------------------------------------------------------
+[10/09 16:26:07    117s] ** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+[10/09 16:26:07    117s] mem(process/total/peak)=3001.34MB/6033.61MB/3001.34MB)
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] 
+[10/09 16:26:07    117s] Output file is reports/postcts/power.all.rpt
+[10/09 16:26:08    117s] #@ End verbose flow_step report_power_innovus
+[10/09 16:26:08    118s] UM: Running power category ...
+[10/09 16:26:09    118s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:26:09    118s] UM:            6.7              7                                      report_power_innovus
+[10/09 16:26:14    123s] #@ Begin verbose flow_step report_finish
+[10/09 16:26:14    123s] #@ End verbose flow_step report_finish
+[10/09 16:26:16    125s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[10/09 16:26:16    125s] UM:           6.24              6                                      report_finish
+[10/09 16:26:21    130s] 
+[10/09 16:26:21    130s] Program version = 25.11-s102_1
+[10/09 16:26:21    130s] Working directory = /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+[10/09 16:26:21    130s] Databases directory = /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs
+[10/09 16:26:21    130s] Starting time = Oct 09, 2025 16:24:51
+[10/09 16:26:21    130s] Ending time = Oct 09, 2025 16:26:20
+[10/09 16:26:21    130s] 
+[10/09 16:26:21    130s] Run Flow Summary
+[10/09 16:26:21    130s] ---------------------
+[10/09 16:26:21    130s] 
+[10/09 16:26:21    130s] Steps run:  report_start init_innovus.init_innovus_yaml init_innovus.init_innovus_user report_check_design report_area_innovus report_early_summary_innovus report_early_paths report_late_summary_innovus report_late_paths report_clock_timing report_power_innovus report_finish
+[10/09 16:26:21    130s] 
+[10/09 16:26:21    130s] Step status:
+[10/09 16:26:21    130s]      report_start                           success
+[10/09 16:26:21    130s]      init_innovus.init_innovus_yaml         success
+[10/09 16:26:21    130s]      init_innovus.init_innovus_user         success
+[10/09 16:26:21    130s]      report_check_design                    success
+[10/09 16:26:21    130s]      report_area_innovus                    success
+[10/09 16:26:21    130s]      report_early_summary_innovus           success
+[10/09 16:26:21    130s]      report_early_paths                     success
+[10/09 16:26:21    130s]      report_late_summary_innovus            success
+[10/09 16:26:21    130s]      report_late_paths                      success
+[10/09 16:26:21    130s]      report_clock_timing                    success
+[10/09 16:26:21    130s]      report_power_innovus                   success
+[10/09 16:26:21    130s]      report_finish                          success
+[10/09 16:26:21    130s] 
+[10/09 16:26:21    130s]  ---------------------------------------------------------------------------------------------------- 
+[10/09 16:26:21    130s] | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
+[10/09 16:26:21    130s] |-------------+------------------+-------------------+-----------------------+-----------------------|
+[10/09 16:26:21    130s] | syn_generic | 0:03:00          | 0:03:10           |                    -3 |                -0.205 |
+[10/09 16:26:21    130s] | syn_map     | 0:01:55          | 0:02:02           |                    -0 |                -0.069 |
+[10/09 16:26:21    130s] | syn_opt     | 0:01:51          | 0:01:58           |                     0 |                 0.000 |
+[10/09 16:26:21    130s] | floorplan   | 0:02:14          | 0:02:24           |                       |                       |
+[10/09 16:26:21    130s] | prects      | 0:03:19          | 0:04:05           |                     0 |                 0.003 |
+[10/09 16:26:21    130s] | cts         | 0:02:24          | 0:03:15           |                     0 |                 0.036 |
+[10/09 16:26:21    130s] | postcts     | 0:02:34          | 0:02:41           |                     0 |                 0.008 |
+[10/09 16:26:21    130s]  ---------------------------------------------------------------------------------------------------- 
+[10/09 16:26:21    130s] 
+[10/09 16:26:21    130s] *** Summary of all messages that are not suppressed in this session:
+[10/09 16:26:21    130s] Severity  ID               Count  Summary                                  
+[10/09 16:26:21    130s] WARNING   IMPLF-200           60  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[10/09 16:26:21    130s] WARNING   IMPLF-201           64  Pin '%s' in macro '%s' has no ANTENNADIF...
+[10/09 16:26:21    130s] WARNING   IMPFP-10013          2  Halo should be created around block %s a...
+[10/09 16:26:21    130s] ERROR     IMPFP-7006         202  Follow pin (Pin Box:%s) routed over hard...
+[10/09 16:26:21    130s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[10/09 16:26:21    130s] ERROR     IMPFP-10119          2  %s has been chosen to fit to %s but it's...
+[10/09 16:26:21    130s] WARNING   IMPDBTCL-321        15  The attribute '%s' still works but will ...
+[10/09 16:26:21    130s] WARNING   IMPDB-6501           3  "set_db design_process_node" will be obs...
+[10/09 16:26:21    130s] WARNING   IMPESI-3505          1  set_db delaycal_eng_%s (default=%s) will...
+[10/09 16:26:21    130s] WARNING   IMPSP-362            1  Site '%s' has %s std.Cell height, so ign...
+[10/09 16:26:21    130s] ERROR     CHKPLC-11            1  Macro cell <%s> should have a fully cove...
+[10/09 16:26:21    130s] WARNING   IMPOPT-2908          1  Maximum transition %.3f is too small com...
+[10/09 16:26:21    130s] WARNING   CHKCTS-16            2  Preferred routing layers for route_type ...
+[10/09 16:26:21    130s] WARNING   CHKCTS-4             1  An auto generated scaled skew target of ...
+[10/09 16:26:21    130s] WARNING   CHKCTS-5             1  CTS skew target must be set to a numeric...
+[10/09 16:26:21    130s] ERROR     CHKCTS-24            1  Insufficient number of clock gating cell...
+[10/09 16:26:21    130s] WARNING   CHKCTS-10            1  Route type(s) %s used for trunk or top c...
+[10/09 16:26:21    130s] WARNING   CHKCTS-60            2  CTS maximum transition target %s is too ...
+[10/09 16:26:21    130s] ERROR     IMPOAX-124           2  OpenAccess (OA) shared library installat...
+[10/09 16:26:21    130s] ERROR     IMPOAX-332           2  Failed to initialize OpenAccess (OA) dat...
+[10/09 16:26:21    130s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[10/09 16:26:21    130s] WARNING   CHKTIM-4           152   Clock pin %s of instance %s has no cloc...
+[10/09 16:26:21    130s] WARNING   TCLCMD-1469          2  No timing paths found matching the speci...
+[10/09 16:26:21    130s] *** Message Summary: 313 warning(s), 210 error(s)
+[10/09 16:26:21    130s] 
+[10/09 16:26:21    130s] 
+[10/09 16:26:21    130s] *** Memory Usage v#1 (Current mem = 2975.574M, initial mem = 965.758M) ***
+[10/09 16:26:21    130s] --- Ending "Innovus" (totcpu=0:02:11, real=0:02:18, mem=2975.6M) ---

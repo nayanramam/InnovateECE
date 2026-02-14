@@ -1,0 +1,882 @@
+Flowtool
+Copyright 2026 Cadence Design Systems Inc.  All rights reserved worldwide
+
+Command:   -verbose
+Directory: /nethome/dkhalil8/InnovateECE/RTL2GDS/design
+Script:    scripts/flow.yaml
+Version:   25.10-b003_1, built 03/20/2025 14:55 PDT
+Date:      Mon Feb 09 13:19:57 2026
+
+Starting scheduled flows at 02-09 13:20:26...
+* flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth
+Waiting for flows to return... (1 running)
+* flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth
+syn_generic:TMPDIR is being set to /tmp/genus_temp_816337_246d2547-22c7-4a30-b426-3ba2cd7b55c4_ece-rschsrv.ece.gatech.edu_dkhalil8_dMTd30
+syn_generic:Cadence Genus(TM) Synthesis Solution.
+syn_generic:Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+syn_generic:Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+syn_generic:of Cadence Design Systems, Inc. in the United States and other countries.
+syn_generic:
+syn_generic:[13:20:34.185705] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+syn_generic:
+syn_generic:Version: 25.11-s095_1, built Tue Aug 12 07:59:05 PDT 2025
+syn_generic:Options: -batch -log /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/syn_generic -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid ac201ee3-cf1f-4b26-82b0-a7b6c3e2e7af top_dir /nethome/dkhalil8/InnovateECE/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/syn_generic_3 metrics_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics.d/syn_generic_3 run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 814453} flow {flow flow:flow_current dir . db {{} {} {} {}} branch {} tool genus caller_data {group 0 process_branch 0} uuid ac201ee3-cf1f-4b26-82b0-a7b6c3e2e7af tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/syn_generic_3} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
+syn_generic:Date:    Mon Feb 09 13:20:34 2026
+syn_generic:Host:    ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB) (264007036KB)
+syn_generic:PID:     816337
+syn_generic:OS:      Red Hat Enterprise Linux 8.10 (Ootpa)
+syn_generic:
+syn_generic:Checking out license: Genus_Synthesis
+syn_generic:[13:20:34.244713] Periodic Lic check successful
+syn_generic:[13:20:34.244728] Feature usage summary:
+syn_generic:[13:20:34.244729] Genus_Synthesis  
+syn_generic:License checkout complete (0 seconds elapsed).
+syn_generic:
+syn_generic:
+syn_generic:***********************************************************************************************************
+syn_generic:***********************************************************************************************************
+syn_generic:
+syn_generic:
+syn_generic:
+syn_generic:Finished executable startup (7 seconds elapsed).
+syn_generic:
+syn_generic:Loading tool scripts...
+syn_generic:Finished loading tool scripts (19 seconds elapsed).
+syn_generic:
+syn_generic:#@ Processing -execute option
+syn_generic:@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid ac201ee3-cf1f-4b26-82b0-a7b6c3e2e7af top_dir /nethome/dkhalil8/InnovateECE/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/syn_generic_3 metrics_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics.d/syn_generic_3 run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 814453} flow {flow flow:flow_current dir . db {{} {} {} {}} branch {} tool genus caller_data {group 0 process_branch 0} uuid ac201ee3-cf1f-4b26-82b0-a7b6c3e2e7af tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/syn_generic_3} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+syn_generic:init_flow summary:
+syn_generic:  Flow script        : 
+syn_generic:  YAML script        : /nethome/dkhalil8/InnovateECE/RTL2GDS/design/scripts/flow.yaml
+syn_generic:  Flow               : flow:flow_current
+syn_generic:  From               : synthesis.syn_generic.block_start
+syn_generic:  To                 : synthesis.syn_generic.schedule_syn_generic_report_synth
+syn_generic:  Top directory      : /nethome/dkhalil8/InnovateECE/RTL2GDS/design
+syn_generic:  Working directory  : .
+syn_generic:  Starting database  : 
+syn_generic:  Run tag            : 
+syn_generic:  Branch name        : 
+syn_generic:  Metrics file       : /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics.d/syn_generic_3
+syn_generic:  Status file        : /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/syn_generic_3
+syn_generic:reading previous metrics...
+syn_generic:Sourcing flow scripts...
+syn_generic:  Setting attribute of root '/': 'flow_template_type' = stylus
+syn_generic:  Setting attribute of root '/': 'flow_template_version' = 1
+syn_generic:  Setting attribute of root '/': 'flow_template_tools' = genus innovus tempus quantus voltus
+syn_generic:  Setting attribute of root '/': 'flow_template_feature_definition' = flow_express 0 report_inline {} report_defer 0 report_none 0 report_clp 0 report_lec {} use_common_db 0 report_pba {} dft_simple 0 dft_compressor 0 synth_hybrid 0 synth_ispatial 0 synth_placev2 0 opt_early_cts 0 clock_design 0 clock_flexible_htree 0 opt_clock 0 opt_postcts_hold_disable 0 opt_postcts_split 0 route_filler_disable 0 route_track_opt 0 route_secondary_nets 0 opt_postroute_split 0 opt_route 0 opt_signoff {} opt_em 0 opt_eco 0 sta_use_setup_yaml 0 sta_dmmmc 0 sta_glitch 0 sta_eco 0 report_early_static_ir 0 report_early_dynamic_ir 0 report_grid_resistance 0 report_static_ir {} report_dynamic_ir {} report_rampup 0 report_signal_em 0 report_power_em 0 report_power_parallel 0 ff_setup 0
+syn_generic:  Setting attribute of root '/': 'flowtool_metrics_qor_vivid' = reports/qor.html
+syn_generic:  Setting attribute of root '/': 'flow_header_tcl' = 
+syn_generic:  #- extend flow report name based on context
+syn_generic:  if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+syn_generic:    if {![regexp {sta$} [get_db flow_report_name]]} {
+syn_generic:      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+syn_generic:    }
+syn_generic:  } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+syn_generic:    if {![regexp {era$} [get_db flow_report_name]]} {
+syn_generic:      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+syn_generic:    }
+syn_generic:  } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+syn_generic:    if {![regexp {ir$} [get_db flow_report_name]]} {
+syn_generic:      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+syn_generic:    }
+syn_generic:  } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+syn_generic:    set_db flow_report_name [get_db flow_branch]
+syn_generic:  } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+syn_generic:    set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+syn_generic:  } else {
+syn_generic:  }
+syn_generic:
+syn_generic:  #- Create report dir (if necessary)
+syn_generic:  file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+syn_generic:
+syn_generic:  Setting attribute of root '/': 'flow_top' = flow:block
+syn_generic:  Setting attribute of root '/': 'flow_top' = flow_current
+syn_generic:Sourcing flow scripts done.
+syn_generic:Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
+syn_generic:#@ Begin verbose flow_step activate_views
+syn_generic:@flow_step(activate_views)  2:   apply {{} {
+syn_generic:                                   set db [get_db flow_starting_db]
+syn_generic:                                   set flow [lindex [get_db flow_hier_path] end]
+syn_generic:                                   set setup_views [get_feature -obj $flow setup_views]
+syn_generic:                                   set hold_views [get_feature -obj $flow hold_views]
+syn_generic:                                   set leakage_view [get_feature -obj $flow leakage_view]
+syn_generic:                                   set dynamic_view [get_feature -obj $flow dynamic_view]
+syn_generic:                                 
+syn_generic:                                   if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+syn_generic:                                     #- use read_db args for DB types and set_analysis_views for TCL
+syn_generic:                                     if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+syn_generic:                                       set cmd "set_analysis_view"
+syn_generic:                                       if {$setup_views ne ""} {
+syn_generic:                                         append cmd " -setup [list $setup_views]"
+syn_generic:                                       } else {
+syn_generic:                                         append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+syn_generic:                                       }
+syn_generic:                                       if {$hold_views ne ""} {
+syn_generic:                                         append cmd " -hold [list $hold_views]"
+syn_generic:                                       } else {
+syn_generic:                                         append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+syn_generic:                                       }
+syn_generic:                                       if {$leakage_view ne ""} {
+syn_generic:                                         append cmd " -leakage [list $leakage_view]"
+syn_generic:                                       } else {
+syn_generic:                                         if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+syn_generic:                                           append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+syn_generic:                                         }
+syn_generic:                                       }
+syn_generic:                                       if {$dynamic_view ne ""} {
+syn_generic:                                         append cmd " -dynamic [list $dynamic_view]"
+syn_generic:                                       } else {
+syn_generic:                                         if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+syn_generic:                                           append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+syn_generic:                                         }
+syn_generic:                                       }
+syn_generic:                                       eval $cmd
+syn_generic:                                     } elseif {[llength [get_db analysis_views]] == 0} {
+syn_generic:                                       set cmd "set_flowkit_read_db_args"
+syn_generic:                                       if {$setup_views ne ""} {
+syn_generic:                                         append cmd " -setup_views [list $setup_views]"
+syn_generic:                                       }
+syn_generic:                                       if {$hold_views ne ""} {
+syn_generic:                                         append cmd " -hold_views [list $hold_views]"
+syn_generic:                                       }
+syn_generic:                                       if {$leakage_view ne ""} {
+syn_generic:                                         append cmd " -leakage_view [list $leakage_view]"
+syn_generic:                                       }
+syn_generic:                                       if {$dynamic_view ne ""} {
+syn_generic:                                         append cmd " -dynamic_view [list $dynamic_view]"
+syn_generic:                                       }
+syn_generic:                                       eval $cmd
+syn_generic:                                     } else {
+syn_generic:                                     }
+syn_generic:                                   }
+syn_generic:                                 }}
+syn_generic:#@ End verbose flow_step activate_views
+syn_generic:#@ Begin verbose flow_step init_mcpu
+syn_generic:@flow_step(init_mcpu)  2:   apply {{} {
+syn_generic:                              # Multi host/cpu attributes
+syn_generic:                              #-----------------------------------------------------------------------------
+syn_generic:                              # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+syn_generic:                              # the specified dist script.  This connects the number of CPUs being reserved
+syn_generic:                              # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+syn_generic:                              # a typical environment variable exported by distribution platforms and is
+syn_generic:                              # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+syn_generic:                              if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+syn_generic:                                set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+syn_generic:                              } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+syn_generic:                                set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+syn_generic:                              } else {
+syn_generic:                                set max_cpus 1
+syn_generic:                              }
+syn_generic:                              switch -glob [get_db program_short_name] {
+syn_generic:                                default       {}
+syn_generic:                                joules*       -
+syn_generic:                                genus*        -
+syn_generic:                                innovus*      -
+syn_generic:                                tempus*       -
+syn_generic:                                voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+syn_generic:                              }
+syn_generic:                          if {[get_feature opt_signoff]} {
+syn_generic:                                if {[is_flow -inside flow:opt_signoff]} {
+syn_generic:                                  set_multi_cpu_usage -verbose -remote_host 1
+syn_generic:                                  set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+syn_generic:                                  set_distributed_hosts -local
+syn_generic:                                }
+syn_generic:                          }
+syn_generic:                            }}
+syn_generic:set_multi_cpu_usage -local_cpu 1
+syn_generic:#@ End verbose flow_step init_mcpu
+syn_generic:End steps for plugin point Cadence.plugin.flowkit.read_db.pre
+syn_generic:Sourcing flow scripts...
+syn_generic:  Setting attribute of root '/': 'flow_template_type' = stylus
+syn_generic:  Setting attribute of root '/': 'flow_template_version' = 1
+syn_generic:  Setting attribute of root '/': 'flow_template_tools' = genus innovus tempus quantus voltus
+syn_generic:  Setting attribute of root '/': 'flow_template_feature_definition' = flow_express 0 report_inline {} report_defer 0 report_none 0 report_clp 0 report_lec {} use_common_db 0 report_pba {} dft_simple 0 dft_compressor 0 synth_hybrid 0 synth_ispatial 0 synth_placev2 0 opt_early_cts 0 clock_design 0 clock_flexible_htree 0 opt_clock 0 opt_postcts_hold_disable 0 opt_postcts_split 0 route_filler_disable 0 route_track_opt 0 route_secondary_nets 0 opt_postroute_split 0 opt_route 0 opt_signoff {} opt_em 0 opt_eco 0 sta_use_setup_yaml 0 sta_dmmmc 0 sta_glitch 0 sta_eco 0 report_early_static_ir 0 report_early_dynamic_ir 0 report_grid_resistance 0 report_static_ir {} report_dynamic_ir {} report_rampup 0 report_signal_em 0 report_power_em 0 report_power_parallel 0 ff_setup 0
+syn_generic:  Setting attribute of root '/': 'flowtool_metrics_qor_vivid' = reports/qor.html
+syn_generic:  Setting attribute of root '/': 'flow_header_tcl' = 
+syn_generic:  #- extend flow report name based on context
+syn_generic:  if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+syn_generic:    if {![regexp {sta$} [get_db flow_report_name]]} {
+syn_generic:      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+syn_generic:    }
+syn_generic:  } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+syn_generic:    if {![regexp {era$} [get_db flow_report_name]]} {
+syn_generic:      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+syn_generic:    }
+syn_generic:  } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+syn_generic:    if {![regexp {ir$} [get_db flow_report_name]]} {
+syn_generic:      set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+syn_generic:    }
+syn_generic:  } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+syn_generic:    set_db flow_report_name [get_db flow_branch]
+syn_generic:  } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+syn_generic:    set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+syn_generic:  } else {
+syn_generic:  }
+syn_generic:
+syn_generic:  #- Create report dir (if necessary)
+syn_generic:  file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+syn_generic:
+syn_generic:  Setting attribute of root '/': 'flow_top' = flow:block
+syn_generic:  Setting attribute of root '/': 'flow_top' = flow_current
+syn_generic:Sourcing flow scripts done.
+syn_generic:reading previous metrics...
+syn_generic:Begin steps for plugin point Cadence.plugin.flowkit.read_db.post
+syn_generic:#@ Begin verbose flow_step activate_views
+syn_generic:@flow_step(activate_views)  2:   apply {{} {
+syn_generic:                                   set db [get_db flow_starting_db]
+syn_generic:                                   set flow [lindex [get_db flow_hier_path] end]
+syn_generic:                                   set setup_views [get_feature -obj $flow setup_views]
+syn_generic:                                   set hold_views [get_feature -obj $flow hold_views]
+syn_generic:                                   set leakage_view [get_feature -obj $flow leakage_view]
+syn_generic:                                   set dynamic_view [get_feature -obj $flow dynamic_view]
+syn_generic:                                 
+syn_generic:                                   if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+syn_generic:                                     #- use read_db args for DB types and set_analysis_views for TCL
+syn_generic:                                     if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+syn_generic:                                       set cmd "set_analysis_view"
+syn_generic:                                       if {$setup_views ne ""} {
+syn_generic:                                         append cmd " -setup [list $setup_views]"
+syn_generic:                                       } else {
+syn_generic:                                         append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+syn_generic:                                       }
+syn_generic:                                       if {$hold_views ne ""} {
+syn_generic:                                         append cmd " -hold [list $hold_views]"
+syn_generic:                                       } else {
+syn_generic:                                         append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+syn_generic:                                       }
+syn_generic:                                       if {$leakage_view ne ""} {
+syn_generic:                                         append cmd " -leakage [list $leakage_view]"
+syn_generic:                                       } else {
+syn_generic:                                         if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+syn_generic:                                           append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+syn_generic:                                         }
+syn_generic:                                       }
+syn_generic:                                       if {$dynamic_view ne ""} {
+syn_generic:                                         append cmd " -dynamic [list $dynamic_view]"
+syn_generic:                                       } else {
+syn_generic:                                         if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+syn_generic:                                           append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+syn_generic:                                         }
+syn_generic:                                       }
+syn_generic:                                       eval $cmd
+syn_generic:                                     } elseif {[llength [get_db analysis_views]] == 0} {
+syn_generic:                                       set cmd "set_flowkit_read_db_args"
+syn_generic:                                       if {$setup_views ne ""} {
+syn_generic:                                         append cmd " -setup_views [list $setup_views]"
+syn_generic:                                       }
+syn_generic:                                       if {$hold_views ne ""} {
+syn_generic:                                         append cmd " -hold_views [list $hold_views]"
+syn_generic:                                       }
+syn_generic:                                       if {$leakage_view ne ""} {
+syn_generic:                                         append cmd " -leakage_view [list $leakage_view]"
+syn_generic:                                       }
+syn_generic:                                       if {$dynamic_view ne ""} {
+syn_generic:                                         append cmd " -dynamic_view [list $dynamic_view]"
+syn_generic:                                       }
+syn_generic:                                       eval $cmd
+syn_generic:                                     } else {
+syn_generic:                                     }
+syn_generic:                                   }
+syn_generic:                                 }}
+syn_generic:#@ End verbose flow_step activate_views
+syn_generic:#@ Begin verbose flow_step init_mcpu
+syn_generic:@flow_step(init_mcpu)  2:   apply {{} {
+syn_generic:                              # Multi host/cpu attributes
+syn_generic:                              #-----------------------------------------------------------------------------
+syn_generic:                              # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+syn_generic:                              # the specified dist script.  This connects the number of CPUs being reserved
+syn_generic:                              # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+syn_generic:                              # a typical environment variable exported by distribution platforms and is
+syn_generic:                              # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+syn_generic:                              if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+syn_generic:                                set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+syn_generic:                              } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+syn_generic:                                set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+syn_generic:                              } else {
+syn_generic:                                set max_cpus 1
+syn_generic:                              }
+syn_generic:                              switch -glob [get_db program_short_name] {
+syn_generic:                                default       {}
+syn_generic:                                joules*       -
+syn_generic:                                genus*        -
+syn_generic:                                innovus*      -
+syn_generic:                                tempus*       -
+syn_generic:                                voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+syn_generic:                              }
+syn_generic:                          if {[get_feature opt_signoff]} {
+syn_generic:                                if {[is_flow -inside flow:opt_signoff]} {
+syn_generic:                                  set_multi_cpu_usage -verbose -remote_host 1
+syn_generic:                                  set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+syn_generic:                                  set_distributed_hosts -local
+syn_generic:                                }
+syn_generic:                          }
+syn_generic:                            }}
+syn_generic:set_multi_cpu_usage -local_cpu 1
+syn_generic:#@ End verbose flow_step init_mcpu
+syn_generic:End steps for plugin point Cadence.plugin.flowkit.read_db.post
+syn_generic:UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+syn_generic:UM:*                                                                   init_flow
+syn_generic:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+syn_generic:UM:*                                                                   syn_generic
+syn_generic:  Setting attribute of root '/': 'flow_report_name' = syn_generic
+syn_generic:#@ Begin verbose flow_step synthesis.syn_generic.block_start
+syn_generic:@flow_step(block_start) 2:     set_db flow_write_db_common false
+syn_generic:  Setting attribute of root '/': 'flow_write_db_common' = false
+syn_generic:#@ End verbose flow_step synthesis.syn_generic.block_start
+syn_generic:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+syn_generic:UM:             31             36                                      block_start
+syn_generic:#@ Begin verbose flow_step synthesis.syn_generic.init_elaborate
+syn_generic:@flow_step(init_elaborate) 2:   # HDL attributes [get_db -category hdl]
+syn_generic:@flow_step(init_elaborate) 3:   #-----------------------------------------------------------------------------
+syn_generic:@flow_step(init_elaborate) 5:   # Low Power attributes [get_db -category lp_cg]
+syn_generic:@flow_step(init_elaborate) 6:   #-----------------------------------------------------------------------------
+syn_generic:@flow_step(init_elaborate) 7:   set_db lp_insert_clock_gating 1
+syn_generic:  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+syn_generic:#@ End verbose flow_step synthesis.syn_generic.init_elaborate
+syn_generic:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+syn_generic:UM:              4              5                                      init_elaborate
+syn_generic:#@ Begin verbose flow_step synthesis.syn_generic.init_design.read_mmmc
+syn_generic:@flow_step(read_mmmc)   2:   apply {{} {
+syn_generic:                               set FH [open [file join [get_db flow_db_directory] [get_db flow_report_name].mmmc_config.tcl] w]
+syn_generic:                             
+syn_generic:                               puts $FH "##############################################################################"
+syn_generic:                               puts $FH "## LIBRARY SETS"
+syn_generic:                               puts $FH "##############################################################################"
+syn_generic:                               foreach name [dict keys [get_flow_config library_sets]] {
+syn_generic:                             
+syn_generic:                                 set library_files [get_flow_config -quiet library_sets $name library_files]
+syn_generic:                                 set link_files    [get_flow_config -quiet library_sets $name link_library_files]
+syn_generic:                                 set target_files  [get_flow_config -quiet library_sets $name target_library_files]
+syn_generic:                                 set aocv_files    [get_flow_config -quiet library_sets $name aocv_files]
+syn_generic:                                 set lvf_files     [get_flow_config -quiet library_sets $name lvf_files]
+syn_generic:                                 set si_files      [get_flow_config -quiet library_sets $name si_files]
+syn_generic:                                 set socv_files    [get_flow_config -quiet library_sets $name socv_files]
+syn_generic:                             
+syn_generic:                                 puts $FH "create_library_set \\"
+syn_generic:                                 puts $FH "  -name $name \\"
+syn_generic:                                 #- define timing_files (.ldb/.lib)
+syn_generic:                                 if {[llength $library_files] > 0} {
+syn_generic:                                   puts $FH "  -timing \\"
+syn_generic:                                   puts $FH "    \[list \\"
+syn_generic:                                   if {[llength $library_files] != [llength [join $library_files]]} {
+syn_generic:                                     foreach inner_list $library_files {
+syn_generic:                                       puts $FH "      \[list \\"
+syn_generic:                                       foreach file $inner_list {
+syn_generic:                                         puts $FH "        [file normalize $file] \\"
+syn_generic:                                       }
+syn_generic:                                       puts $FH "      \] \\"
+syn_generic:                                     }
+syn_generic:                                   } else {
+syn_generic:                                     foreach file $library_files {
+syn_generic:                                       puts $FH "      [file normalize $file] \\"
+syn_generic:                                     }
+syn_generic:                                   }
+syn_generic:                                   if {[llength [concat $aocv_files $lvf_files $si_files $socv_files]] > 0 } {
+syn_generic:                                     puts $FH "    \] \\"
+syn_generic:                                   } else {
+syn_generic:                                     puts $FH "    \]"
+syn_generic:                                   }
+syn_generic:                                 }
+syn_generic:                                 #- define link/target timing_files (.ldb/.lib)
+syn_generic:                                 if {[llength $link_files] > 0 && [llength $target_files] > 0} {
+syn_generic:                                   puts $FH "  -link_timing \\"
+syn_generic:                                   puts $FH "    \[list \\"
+syn_generic:                                   foreach file $link_files {
+syn_generic:                                     puts $FH "      [file normalize $file] \\"
+syn_generic:                                   }
+syn_generic:                                   puts $FH "    \] \\"
+syn_generic:                                   puts $FH "  -target_timing \\"
+syn_generic:                                   puts $FH "    \[list \\"
+syn_generic:                                   foreach file $target_files {
+syn_generic:                                     puts $FH "      [file normalize $file] \\"
+syn_generic:                                   }
+syn_generic:                                   if {[llength [concat $aocv_files $lvf_files $si_files $socv_files]] > 0 } {
+syn_generic:                                     puts $FH "    \] \\"
+syn_generic:                                   } else {
+syn_generic:                                     puts $FH "    \]"
+syn_generic:                                   }
+syn_generic:                                 }
+syn_generic:                                 #- define aocv files
+syn_generic:                                 if {[llength $aocv_files] > 0 } {
+syn_generic:                                   puts $FH "  -aocv \\"
+syn_generic:                                   puts $FH "    \[list \\"
+syn_generic:                                   foreach file $aocv_files {
+syn_generic:                                     puts $FH "      [file normalize $file] \\"
+syn_generic:                                   }
+syn_generic:                                   if {[llength [concat $lvf_files $si_files $socv_files]] > 0 } {
+syn_generic:                                     puts $FH "    \] \\"
+syn_generic:                                   } else {
+syn_generic:                                     puts $FH "    \]"
+syn_generic:                                   }
+syn_generic:                                 }
+syn_generic:                                 #- define lvf files
+syn_generic:                                 if {[llength $lvf_files] > 0 } {
+syn_generic:                                   puts $FH "  -lvf \\"
+syn_generic:                                   puts $FH "    \[list \\"
+syn_generic:                                   foreach file $lvf_files {
+syn_generic:                                     puts $FH "      [file normalize $file] \\"
+syn_generic:                                   }
+syn_generic:                                   if {[llength [concat $si_files $socv_files]] > 0 } {
+syn_generic:                                     puts $FH "    \] \\"
+syn_generic:                                   } else {
+syn_generic:                                     puts $FH "    \]"
+syn_generic:                                   }
+syn_generic:                                 }
+syn_generic:                                 #- define si files (.cdb)
+syn_generic:                                 if {[llength $si_files] > 0 } {
+syn_generic:                                   puts $FH "  -si     \\"
+syn_generic:                                   puts $FH "    \[list \\"
+syn_generic:                                   foreach file $si_files {
+syn_generic:                                     puts $FH "      [file normalize $file] \\"
+syn_generic:                                   }
+syn_generic:                                   if {[llength [concat $socv_files]] > 0 } {
+syn_generic:                                     puts $FH "    \] \\"
+syn_generic:                                   } else {
+syn_generic:                                     puts $FH "    \]"
+syn_generic:                                   }
+syn_generic:                                 }
+syn_generic:                                 #- define socv files
+syn_generic:                                 if {[llength $socv_files] > 0 } {
+syn_generic:                                   puts $FH "  -socv   \\"
+syn_generic:                                   puts $FH "    \[list \\"
+syn_generic:                                   foreach file $socv_files {
+syn_generic:                                     puts $FH "      [file normalize $file] \\"
+syn_generic:                                   }
+syn_generic:                                   puts $FH "    \]"
+syn_generic:                                 }
+syn_generic:                                 puts $FH ""
+syn_generic:                               }
+syn_generic:                               puts $FH ""
+syn_generic:                               puts $FH "##############################################################################"
+syn_generic:                               puts $FH "## OPERATING CONDITIONS"
+syn_generic:                               puts $FH "##############################################################################"
+syn_generic:                               foreach name [dict keys [get_flow_config -quiet opconds]] {
+syn_generic:                                 set op_cond_process      [get_flow_config -quiet opconds $name process]
+syn_generic:                                 set op_cond_voltage      [get_flow_config -quiet opconds $name voltage]
+syn_generic:                                 set op_cond_temperature  [get_flow_config -quiet opconds $name temperature]
+syn_generic:                             
+syn_generic:                                 puts $FH "create_opcond \\"
+syn_generic:                                 puts $FH "  -name $name \\"
+syn_generic:                                 if ![string is space $op_cond_process] {
+syn_generic:                                   puts $FH "  -process $op_cond_process \\"
+syn_generic:                                 }
+syn_generic:                                 if ![string is space $op_cond_voltage] {
+syn_generic:                                   puts $FH "  -voltage $op_cond_voltage \\"
+syn_generic:                                 }
+syn_generic:                                 if ![string is space $op_cond_temperature] {
+syn_generic:                                   puts $FH "  -temperature $op_cond_temperature \\"
+syn_generic:                                 }
+syn_generic:                                 puts $FH ""
+syn_generic:                               }
+syn_generic:                               puts $FH ""
+syn_generic:                               puts $FH "###############################################################################"
+syn_generic:                               puts $FH "### RC CORNERS"
+syn_generic:                               puts $FH "###############################################################################"
+syn_generic:                               foreach name [dict keys [get_flow_config rc_corners]] {
+syn_generic:                                 set rc_corner_qrc_tech    [get_flow_config -quiet rc_corners $name qrc_tech_file]
+syn_generic:                                 set rc_corner_temperature [get_flow_config -quiet rc_corners $name temperature]
+syn_generic:                             
+syn_generic:                                 puts $FH "create_rc_corner \\"
+syn_generic:                                 puts $FH "  -name $name \\"
+syn_generic:                                 if ![string is space $rc_corner_temperature] {
+syn_generic:                                   puts $FH "  -temperature $rc_corner_temperature \\"
+syn_generic:                                 }
+syn_generic:                                 if ![string is space $rc_corner_qrc_tech] {
+syn_generic:                                   puts $FH "  -qrc_tech $rc_corner_qrc_tech"
+syn_generic:                                 }
+syn_generic:                                 puts $FH ""
+syn_generic:                               }
+syn_generic:                               puts $FH ""
+syn_generic:                               puts $FH "##############################################################################"
+syn_generic:                               puts $FH "## TIMING CONDITIONS"
+syn_generic:                               puts $FH "##############################################################################"
+syn_generic:                               foreach name [dict keys [get_flow_config timing_conditions]] {
+syn_generic:                                 set timing_condition_lib_set [get_flow_config -quiet timing_conditions $name library_sets]
+syn_generic:                                 set timing_condition_opcond  [get_flow_config -quiet timing_conditions $name opcond]
+syn_generic:                                 set timing_condition_opcond_lib  [get_flow_config -quiet timing_conditions $name opcond_library]
+syn_generic:                             
+syn_generic:                                 puts $FH "create_timing_condition \\"
+syn_generic:                                 puts $FH "  -name $name \\"
+syn_generic:                             
+syn_generic:                                 #- Timing Condition library sets validation
+syn_generic:                                 puts $FH "  -library_sets \\"
+syn_generic:                                 puts $FH "    \[list \\"
+syn_generic:                                 foreach tc_lib_set $timing_condition_lib_set {
+syn_generic:                                   puts $FH "        $tc_lib_set \\"
+syn_generic:                                 }
+syn_generic:                                 if {[llength [concat $timing_condition_opcond $timing_condition_opcond_lib]] > 0 } {
+syn_generic:                                   puts $FH "    \] \\"
+syn_generic:                                 } else {
+syn_generic:                                   puts $FH "    \]"
+syn_generic:                                 }
+syn_generic:                                 if {![string is space $timing_condition_opcond]} {
+syn_generic:                                   if {![string is space $timing_condition_opcond_lib]} {
+syn_generic:                                     puts $FH "  -opcond $timing_condition_opcond \\"
+syn_generic:                                     puts $FH "  -opcond_library $timing_condition_opcond_lib"
+syn_generic:                                   } else {
+syn_generic:                                    puts $FH "  -opcond $timing_condition_opcond"
+syn_generic:                                  }
+syn_generic:                                 }
+syn_generic:                                 puts $FH ""
+syn_generic:                               }
+syn_generic:                               puts $FH ""
+syn_generic:                               puts $FH "###############################################################################"
+syn_generic:                               puts $FH "### DELAY CORNERS"
+syn_generic:                               puts $FH "###############################################################################"
+syn_generic:                               foreach name [dict keys [get_flow_config delay_corners]] {
+syn_generic:                                 set delay_corner_early_rc_corner  [get_flow_config -quiet delay_corners $name rc_corner early]
+syn_generic:                                 set delay_corner_late_rc_corner   [get_flow_config -quiet delay_corners $name rc_corner late]
+syn_generic:                                 set delay_corner_early_timing_condition [get_flow_config -quiet delay_corners $name timing_condition early]
+syn_generic:                                 set delay_corner_late_timing_condition  [get_flow_config -quiet delay_corners $name timing_condition late]
+syn_generic:                             
+syn_generic:                                 puts $FH "create_delay_corner \\"
+syn_generic:                                 puts $FH "  -name $name \\"
+syn_generic:                             
+syn_generic:                                 #- define delay_corner -rc_corner
+syn_generic:                                 if {![string is space $delay_corner_early_rc_corner] && ![string is space $delay_corner_late_rc_corner]} {
+syn_generic:                                   if {$delay_corner_early_rc_corner eq $delay_corner_late_rc_corner} {
+syn_generic:                                     puts $FH "  -rc_corner $delay_corner_early_rc_corner \\"
+syn_generic:                                   } else {
+syn_generic:                                     puts $FH "  -early_rc_corner $delay_corner_early_rc_corner \\"
+syn_generic:                                     puts $FH "  -late_rc_corner $delay_corner_late_rc_corner \\"
+syn_generic:                                   }
+syn_generic:                                 }
+syn_generic:                                 #- define delay_corner -timing_condition
+syn_generic:                                 if {![string is space $delay_corner_early_timing_condition] && ![string is space $delay_corner_late_timing_condition]} {
+syn_generic:                                   if {$delay_corner_early_timing_condition eq $delay_corner_late_timing_condition} {
+syn_generic:                                     puts $FH "  -timing_condition [list $delay_corner_early_timing_condition]"
+syn_generic:                                   } else {
+syn_generic:                                     puts $FH "  -early_timing_condition [list $delay_corner_early_timing_condition] \\"
+syn_generic:                                     puts $FH "  -late_timing_condition [list $delay_corner_late_timing_condition]"
+syn_generic:                                   }
+syn_generic:                                 }
+syn_generic:                                 puts $FH ""
+syn_generic:                               }
+syn_generic:                               puts $FH ""
+syn_generic:                               puts $FH "###############################################################################"
+syn_generic:                               puts $FH "### CONSTRAINT MODES"
+syn_generic:                               puts $FH "###############################################################################"
+syn_generic:                               foreach name [dict keys [get_flow_config constraint_modes]] {
+syn_generic:                                 set constraint_mode_sdc       [get_flow_config -quiet constraint_modes $name sdc_files]
+syn_generic:                                 set constraint_mode_tcl_vars  [get_flow_config -quiet constraint_modes $name tcl_variables]
+syn_generic:                             
+syn_generic:                                 puts $FH "create_constraint_mode \\"
+syn_generic:                                 puts $FH "  -name $name \\"
+syn_generic:                                 #- Constraint_mode -sdc_files
+syn_generic:                                 puts $FH "  -sdc_files \\"
+syn_generic:                                 puts $FH "    \[list \\"
+syn_generic:                                 foreach file $constraint_mode_sdc {
+syn_generic:                                   puts $FH "      [file normalize $file] \\"
+syn_generic:                                 }
+syn_generic:                                 #- Constraint_mode -tcl_vars
+syn_generic:                                 if ![string is space $constraint_mode_tcl_vars] {
+syn_generic:                                   puts $FH "    \] \\"
+syn_generic:                                   puts $FH "  -tcl_variables \{$constraint_mode_tcl_vars\}"
+syn_generic:                                 } else {
+syn_generic:                                   puts $FH "    \]"
+syn_generic:                                 }
+syn_generic:                                 puts $FH ""
+syn_generic:                               }
+syn_generic:                               puts $FH ""
+syn_generic:                               puts $FH "###############################################################################"
+syn_generic:                               puts $FH "### ANALYSIS VIEWS"
+syn_generic:                               puts $FH "###############################################################################"
+syn_generic:                               set analysis_view_is_setup_list   ""
+syn_generic:                               set analysis_view_is_hold_list    ""
+syn_generic:                               set analysis_view_is_dynamic_list ""
+syn_generic:                               set analysis_view_is_leakage_list ""
+syn_generic:                               foreach name [dict keys [get_flow_config analysis_views]] {
+syn_generic:                                 puts $FH "create_analysis_view \\"
+syn_generic:                                 puts $FH "  -name $name \\"
+syn_generic:                                 puts $FH "  -constraint_mode [get_flow_config -quiet analysis_views $name constraint_mode] \\"
+syn_generic:                                 if {![string is space [get_flow_config -quiet analysis_views $name power_modes]]} {
+syn_generic:                                   puts $FH "  -power_modes [get_flow_config -quiet analysis_views $name power_modes] \\"
+syn_generic:                                 }
+syn_generic:                                 puts $FH "  -delay_corner [get_flow_config -quiet analysis_views $name delay_corner]"
+syn_generic:                                 #- Sort views by purpose
+syn_generic:                                 if {[string is true -strict [get_flow_config -quiet analysis_views $name is_setup]]} {
+syn_generic:                                   lappend analysis_view_is_setup_list $name
+syn_generic:                                 }
+syn_generic:                                 if {[string is true -strict [get_flow_config -quiet analysis_views $name is_hold]]} {
+syn_generic:                                   lappend analysis_view_is_hold_list $name
+syn_generic:                                 }
+syn_generic:                                 if {[string is true -strict [get_flow_config -quiet analysis_views $name is_leakage]]} {
+syn_generic:                                   lappend analysis_view_is_leakage_list $name
+syn_generic:                                 }
+syn_generic:                                 if {[string is true -strict [get_flow_config -quiet analysis_views $name is_dynamic]]} {
+syn_generic:                                   lappend analysis_view_is_dynamic_list $name
+syn_generic:                                 }
+syn_generic:                                 puts $FH ""
+syn_generic:                               }
+syn_generic:                             
+syn_generic:                               #- Override view list with feature values when available
+syn_generic:                               if {[get_feature setup_views] ne ""} {
+syn_generic:                                 set analysis_view_is_setup_list [get_feature setup_views]
+syn_generic:                               }
+syn_generic:                               if {[get_feature hold_views] ne ""} {
+syn_generic:                                 set analysis_view_is_hold_list [get_feature hold_views]
+syn_generic:                               }
+syn_generic:                               if {[get_feature leakage_view] ne ""} {
+syn_generic:                                 set analysis_view_is_leakage_list [get_feature leakage_view]
+syn_generic:                               }
+syn_generic:                               if {[get_feature dynamic_view] ne ""} {
+syn_generic:                                 set analysis_view_is_dynamic_list [get_feature dynamic_view]
+syn_generic:                               }
+syn_generic:                             
+syn_generic:                               #- Configure the Analysis View
+syn_generic:                               puts $FH "set_analysis_view \\"
+syn_generic:                               puts $FH "  -setup   \[list $analysis_view_is_setup_list\] \\"
+syn_generic:                               if {[llength $analysis_view_is_leakage_list] > 0 && [llength $analysis_view_is_dynamic_list] > 0} {
+syn_generic:                                 puts $FH "  -hold    \[list $analysis_view_is_hold_list\] \\"
+syn_generic:                                 puts $FH "  -leakage \[list $analysis_view_is_leakage_list\] \\"
+syn_generic:                                 puts $FH "  -dynamic \[list $analysis_view_is_dynamic_list\]"
+syn_generic:                               } elseif {[llength $analysis_view_is_leakage_list] > 0 && [llength $analysis_view_is_dynamic_list] == 0} {
+syn_generic:                                 puts $FH "  -hold    \[list $analysis_view_is_hold_list\] \\"
+syn_generic:                                 puts $FH "  -leakage \[list $analysis_view_is_leakage_list\]"
+syn_generic:                               } elseif {[llength $analysis_view_is_leakage_list] == 0 && [llength $analysis_view_is_dynamic_list] > 0} {
+syn_generic:                                 puts $FH "  -hold    \[list $analysis_view_is_hold_list\] \\"
+syn_generic:                                 puts $FH "  -dynamic \[list $analysis_view_is_dynamic_list\]"
+syn_generic:                               } else {
+syn_generic:                                 puts $FH "  -hold    \[list $analysis_view_is_hold_list\]"
+syn_generic:                               }
+syn_generic:                               puts $FH ""
+syn_generic:                               close $FH
+syn_generic:                             
+syn_generic:                               #- Read MMMC file
+syn_generic:                               if {[is_flow -inside flow:init_design]} {
+syn_generic:                                 read_mmmc [file join [get_db flow_db_directory] [get_db flow_report_name].mmmc_config.tcl]
+syn_generic:                               }
+syn_generic:                             }}
+syn_generic:  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+syn_generic:Sourcing './dbs/syn_generic.mmmc_config.tcl' (Mon Feb 09 13:21:12 EST 2026)...
+syn_generic:#@ Begin verbose source ./dbs/syn_generic.mmmc_config.tcl
+syn_generic:@file(syn_generic.mmmc_config.tcl) 4: create_library_set \
+syn_generic:  -name ff_v1.98_0C \
+syn_generic:  -timing \
+syn_generic:    [list \
+syn_generic:      /nethome/dkhalil8/InnovateECE/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_ff_1.98_0_nldm.lib \
+syn_generic:    ]
+syn_generic:@file(syn_generic.mmmc_config.tcl) 11: create_library_set \
+syn_generic:  -name ss_v1.62_125C \
+syn_generic:  -timing \
+syn_generic:    [list \
+syn_generic:      /nethome/dkhalil8/InnovateECE/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_ss_1.62_125_nldm.lib \
+syn_generic:    ]
+syn_generic:@file(syn_generic.mmmc_config.tcl) 18: create_library_set \
+syn_generic:  -name tt_v1.8_25C \
+syn_generic:  -timing \
+syn_generic:    [list \
+syn_generic:      /nethome/dkhalil8/InnovateECE/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib \
+syn_generic:      /nethome/dkhalil8/InnovateECE/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib \
+syn_generic:    ]
+syn_generic:@file(syn_generic.mmmc_config.tcl) 34: create_rc_corner \
+syn_generic:  -name Nominal_25C \
+syn_generic:  -temperature 25 \
+syn_generic:  -qrc_tech ../SiliconJackets/cadence_sky130/sky130_release_0.0.4/quantus/extraction/typical/qrcTechFile
+syn_generic:@file(syn_generic.mmmc_config.tcl) 43: create_timing_condition \
+syn_generic:  -name ff_v1.98_0C \
+syn_generic:  -library_sets \
+syn_generic:    [list \
+syn_generic:        ff_v1.98_0C \
+syn_generic:    ]
+syn_generic:@file(syn_generic.mmmc_config.tcl) 50: create_timing_condition \
+syn_generic:  -name ss_v1.62_125C \
+syn_generic:  -library_sets \
+syn_generic:    [list \
+syn_generic:        ss_v1.62_125C \
+syn_generic:    ]
+syn_generic:@file(syn_generic.mmmc_config.tcl) 57: create_timing_condition \
+syn_generic:  -name tt_v1.8_25C \
+syn_generic:  -library_sets \
+syn_generic:    [list \
+syn_generic:        tt_v1.8_25C \
+syn_generic:    ]
+syn_generic:@file(syn_generic.mmmc_config.tcl) 68: create_delay_corner \
+syn_generic:  -name tt_v1.8_25C_Nominal_25 \
+syn_generic:  -rc_corner Nominal_25C \
+syn_generic:  -timing_condition tt_v1.8_25C
+syn_generic:@file(syn_generic.mmmc_config.tcl) 73: create_delay_corner \
+syn_generic:  -name ff_v1.98_0C_Nominal_25 \
+syn_generic:  -rc_corner Nominal_25C \
+syn_generic:  -timing_condition ff_v1.98_0C
+syn_generic:@file(syn_generic.mmmc_config.tcl) 78: create_delay_corner \
+syn_generic:  -name ss_v1.62_125C_Nominal_25 \
+syn_generic:  -rc_corner Nominal_25C \
+syn_generic:  -timing_condition ss_v1.62_125C
+syn_generic:@file(syn_generic.mmmc_config.tcl) 87: create_constraint_mode \
+syn_generic:  -name func \
+syn_generic:  -sdc_files \
+syn_generic:    [list \
+syn_generic:      /nethome/dkhalil8/InnovateECE/RTL2GDS/pipeline_src/base.sdc \
+syn_generic:    ]
+syn_generic:@file(syn_generic.mmmc_config.tcl) 98: create_analysis_view \
+syn_generic:  -name tt_v1.8_25C_Nominal_25_func \
+syn_generic:  -constraint_mode func \
+syn_generic:  -delay_corner tt_v1.8_25C_Nominal_25
+syn_generic:@file(syn_generic.mmmc_config.tcl) 103: set_analysis_view \
+syn_generic:  -setup   [list tt_v1.8_25C_Nominal_25_func] \
+syn_generic:  -hold    [list tt_v1.8_25C_Nominal_25_func] \
+syn_generic:  -leakage [list tt_v1.8_25C_Nominal_25_func] \
+syn_generic:  -dynamic [list tt_v1.8_25C_Nominal_25_func]
+syn_generic:
+syn_generic:  Message Summary for Library both libraries:
+syn_generic:  *******************************************
+syn_generic:  Missing library level attribute. [LBR-516]: 1
+syn_generic:  An unsupported construct was detected in this library. [LBR-40]: 2
+syn_generic:  *******************************************
+syn_generic: 
+syn_generic:Info    : Created nominal operating condition. [LBR-412]
+syn_generic:        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'sky130_tt_1.8_25_nldm.lib'.
+syn_generic:        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+syn_generic:Info    : Created nominal operating condition. [LBR-412]
+syn_generic:        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib'.
+syn_generic:Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+syn_generic:        : Clock gating integrated cell name: 'ICGX1'
+syn_generic:        : To make the cell usable, change the value of 'dont_use' attribute to false.
+syn_generic:Info    : Set default library domain. [LBR-109]
+syn_generic:        : The default library domain is 'library_domain:tt_v1.8_25C'.
+syn_generic:#@ End verbose source ./dbs/syn_generic.mmmc_config.tcl
+syn_generic:#@ End verbose flow_step synthesis.syn_generic.init_design.read_mmmc
+syn_generic:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+syn_generic:UM:              5              6                                      read_mmmc
+syn_generic:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+syn_generic:UM:*                                                                   init_design
+syn_generic:#@ Begin verbose flow_step synthesis.syn_generic.init_design.read_physical
+syn_generic:@flow_step(read_physical)  2:   apply {{} {
+syn_generic:                                  if {![string is space [get_flow_config -quiet init_physical_files lef_files]]} {
+syn_generic:                                    read_physical -lef [get_flow_config init_physical_files lef_files]
+syn_generic:                                  }
+syn_generic:                                  if {![string is space [get_flow_config -quiet init_physical_files oa_ref_libs]]} {
+syn_generic:                                    set flow_startup_directory [get_db flow_startup_directory]
+syn_generic:                                    set flow_top_directory [file normalize [get_db flow_working_directory]]
+syn_generic:                                    if {![string is space [get_flow_config -quiet init_physical_files oa_search_libs]]} {
+syn_generic:                                      set cmd "[list read_physical -oa_ref_libs [get_flow_config init_physical_files oa_ref_libs] -oa_search_libs [get_flow_config init_physical_files oa_search_libs]]"
+syn_generic:                                    } else {
+syn_generic:                                      set cmd "[list read_physical -oa_ref_libs [get_flow_config init_physical_files oa_ref_libs]]"
+syn_generic:                                    }
+syn_generic:                                
+syn_generic:                                    if {$flow_startup_directory ne $flow_top_directory} {
+syn_generic:                                      cd $flow_startup_directory
+syn_generic:                                      eval $cmd
+syn_generic:                                      cd $flow_top_directory
+syn_generic:                                    } else {
+syn_generic:                                      eval $cmd
+syn_generic:                                    }
+syn_generic:                                  }
+syn_generic:                                }}
+syn_generic:
+syn_generic:  According to lef_library, there are total 5 routing layers [ V(2) / H(3) ]
+syn_generic:
+syn_generic:Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+syn_generic:        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'met1' and 'met5' is too large.
+syn_generic:        : Check the consistency of the parameters, and see if you can ignore this message or you're using different LEF file with wrong parameters.
+syn_generic:Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+syn_generic:        : The variant range (0.14, 1.6) of 'MINSPACING' for layers 'met2' and 'met5' is too large.
+syn_generic:Warning : Physical cell not defined in library. [PHYS-279]
+syn_generic:        : The physical (LEF) cell FILL1 cannot be found in library.
+syn_generic:        : Ensure that the proper library files are available and have been imported.
+syn_generic:Warning : Physical cell not defined in library. [PHYS-279]
+syn_generic:        : The physical (LEF) cell FILL2 cannot be found in library.
+syn_generic:Warning : Physical cell not defined in library. [PHYS-279]
+syn_generic:        : The physical (LEF) cell FILL4 cannot be found in library.
+syn_generic:Warning : Physical cell not defined in library. [PHYS-279]
+syn_generic:        : The physical (LEF) cell FILL8 cannot be found in library.
+syn_generic:Warning : Physical cell not defined in library. [PHYS-279]
+syn_generic:        : The physical (LEF) cell FILL16 cannot be found in library.
+syn_generic:Warning : Physical cell not defined in library. [PHYS-279]
+syn_generic:        : The physical (LEF) cell FILL32 cannot be found in library.
+syn_generic:Warning : Physical cell not defined in library. [PHYS-279]
+syn_generic:        : The physical (LEF) cell FILL64 cannot be found in library.
+syn_generic:Warning : Physical cell not defined in library. [PHYS-279]
+syn_generic:        : The physical (LEF) cell ANTENNA cannot be found in library.
+syn_generic:#@ End verbose flow_step synthesis.syn_generic.init_design.read_physical
+syn_generic:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+syn_generic:UM:              5              4                                      read_physical
+syn_generic:#@ Begin verbose flow_step synthesis.syn_generic.init_design.read_hdl
+syn_generic:@flow_step(read_hdl) 2:   set hdl_file_list [list ../pipeline_src/calculator_pkg.sv  ../pipeline_src/full_adder.sv  ../pipeline_src/adder32.sv  ../pipeline_src/result_buffer.sv  ../pipeline_src/controller.sv  ../pipeline_src/top_lvl.sv  ]
+syn_generic:@flow_step(read_hdl) 3:   read_hdl -sv $hdl_file_list
+syn_generic:Warning : Cannot open file. [VLOGPT-650]
+syn_generic:        : File '../pipeline_src/calculator_pkg.sv'.
+syn_generic:        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+syn_generic:Warning : Cannot open file. [VLOGPT-650]
+syn_generic:        : File '../pipeline_src/full_adder.sv'.
+syn_generic:Warning : Cannot open file. [VLOGPT-650]
+syn_generic:        : File '../pipeline_src/adder32.sv'.
+syn_generic:Warning : Cannot open file. [VLOGPT-650]
+syn_generic:        : File '../pipeline_src/result_buffer.sv'.
+syn_generic:Warning : Cannot open file. [VLOGPT-650]
+syn_generic:        : File '../pipeline_src/controller.sv'.
+syn_generic:Warning : Cannot open file. [VLOGPT-650]
+syn_generic:        : File '../pipeline_src/top_lvl.sv'.
+syn_generic:@flow_step(read_hdl) 4:   elaborate top_lvl
+syn_generic:  Libraries have 88 usable logic and 18 usable sequential lib-cells.
+syn_generic:Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+syn_generic:        : The design is 'top_lvl'.
+syn_generic:        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+syn_generic:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+syn_generic:UM:*                                                                   elaborate
+syn_generic:FLOWKIT: Encountered error during previous command and saving error database: dbs/syn_generic.init_design.read_hdl.ERROR.db_1.
+syn_generic:         To disable saving a database on error condition, set the attribute 'flow_error_write_db' to false.
+syn_generic:Finished exporting design database to file '/nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/syn_generic.init_design.read_hdl.ERROR.db_1' for '__default_mmmc_spec' (command execution time mm:ss cpu = 00:00, real = 00:00).
+syn_generic:#@ End verbose flow_step synthesis.syn_generic.init_design.read_hdl
+syn_generic:Tcl error: -------------------------------------------------------------------------------------------------------------------
+syn_generic:| ID                    | SEV   | Count | Description                                                             |
+syn_generic:-------------------------------------------------------------------------------------------------------------------
+syn_generic:| message:LBR/LBR-162   | Info  | 26    | Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. |
+syn_generic:| message:CDFG/CDFG-210 | Error | 1     | Could not find an HDL design.                                           |
+syn_generic:-------------------------------------------------------------------------------------------------------------------
+syn_generic:    while executing
+syn_generic:"elaborate top_lvl"
+syn_generic:    (flow_step:read_hdl .body_tcl line 4)
+syn_generic:    invoked from within
+syn_generic:"run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flo..."
+syn_generic:
+syn_generic:Lic Summary:
+syn_generic:[13:21:23.314267] Cdslmd servers: ece-winlic
+syn_generic:[13:21:23.838579] Feature usage summary:
+syn_generic:[13:21:23.838579] Genus_Synthesis  
+syn_generic:Abnormal exit.
+  flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth failed at step "synthesis.syn_generic.init_design.read_hdl"
+    log files:
+      logs/syn_generic.log3
+      output.flow_current.synthesis.syn_generic.block_start.failed_startup_1.log
+    error summary:
+      Severity  ID                     Count  Step                                        Where             Summary
+      ERROR     message:CDFG/CDFG-210  1      synthesis.syn_generic.init_design.read_hdl  .body_tcl line 4  Could not find an HDL design.
+    fatal error detail:
+Error in flow_step:read_hdl .body_tcl, message: 
+-------------------------------------------------------------------------------------------------------------------
+| ID                    | SEV   | Count | Description                                                             |
+-------------------------------------------------------------------------------------------------------------------
+| message:LBR/LBR-162   | Info  | 26    | Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. |
+| message:CDFG/CDFG-210 | Error | 1     | Could not find an HDL design.                                           |
+-------------------------------------------------------------------------------------------------------------------
+    while executing
+"elaborate top_lvl"
+    (flow_step:read_hdl .body_tcl line 4)
+
+
+
+Fatal error summary:
+  flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth failed at step "synthesis.syn_generic.init_design.read_hdl"
+    log files:
+      logs/syn_generic.log3
+      output.flow_current.synthesis.syn_generic.block_start.failed_startup_1.log
+    error database:
+      dbs/syn_generic.init_design.read_hdl.ERROR.db_1
+    error summary:
+      Severity  ID                     Count  Step                                        Where             Summary
+      ERROR     message:CDFG/CDFG-210  1      synthesis.syn_generic.init_design.read_hdl  .body_tcl line 4  Could not find an HDL design.
+    fatal error detail:
+Error in flow_step:read_hdl .body_tcl, message: 
+-------------------------------------------------------------------------------------------------------------------
+| ID                    | SEV   | Count | Description                                                             |
+-------------------------------------------------------------------------------------------------------------------
+| message:LBR/LBR-162   | Info  | 26    | Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. |
+| message:CDFG/CDFG-210 | Error | 1     | Could not find an HDL design.                                           |
+-------------------------------------------------------------------------------------------------------------------
+    while executing
+"elaborate top_lvl"
+    (flow_step:read_hdl .body_tcl line 4)
+
+Flow failed

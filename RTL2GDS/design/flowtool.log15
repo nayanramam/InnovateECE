@@ -1,0 +1,887 @@
+Flowtool
+Copyright 2025 Cadence Design Systems Inc.  All rights reserved worldwide
+
+Command:   -verbose -from floorplan
+Directory: /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+Script:    scripts/flow.yaml
+Version:   25.10-b003_1, built 03/20/2025 14:55 PDT
+Date:      Fri Oct 10 15:58:04 2025
+
+Starting scheduled flows at 10-10 15:58:24...
+* flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan
+Waiting for flows to return... (1 running)
+* flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan
+floorplan:
+floorplan:Cadence Innovus(TM) Implementation System.
+floorplan:Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+floorplan:
+floorplan:Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+floorplan:Options:	-batch -stylus -log /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid 66f5e34c-d05e-458f-a027-96986613e9c8 top_dir /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/floorplan_13 metrics_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/floorplan_13 run_tag {} db {cdb /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1 top_lvl {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2209927} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb_1 top_lvl {}} branch {} tool innovus caller_data {group 0 process_branch 0} uuid 66f5e34c-d05e-458f-a027-96986613e9c8 tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/floorplan_13} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1 top_lvl {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+floorplan:Date:		Fri Oct 10 15:58:25 2025
+floorplan:Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.69.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+floorplan:OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+floorplan:
+floorplan:License:
+floorplan:		[15:58:25.185809] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+floorplan:
+floorplan:		invs	Innovus Implementation System	25.1	checkout succeeded
+floorplan:		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+floorplan:**ERROR: (IMPOAX-124):	OpenAccess (OA) shared library installation is older than the one that was used to build this Innovus version. For using the OA installation built and tested with this Innovus version, unset the shell variable OA_HOME. For using 'p010' or higher version of OA, reset OA_HOME to point to that installation.
+floorplan:Type 'man IMPOAX-124' for more detail.
+floorplan:**ERROR: (IMPOAX-332):	Failed to initialize OpenAccess (OA) database. OA related commands cannot be run in this session. Confirm that the OA shared library is installed and OA_HOME is set correctly. Typically the OA_HOME environment variable should not be set.
+floorplan:Type 'man IMPOAX-332' for more detail.
+floorplan:INFO: OA features are disabled in this session.
+floorplan:
+floorplan:
+floorplan:Create and set the environment variable TMPDIR to /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/innovus_temp_2220143_9e34cfef-7548-4ff6-99b0-43b657667957_ece-rschsrv.ece.gatech.edu_dkhalil8_dxL3z7.
+floorplan:
+floorplan:Change the soft stacksize limit to 0.2%RAM (515 mbytes). Set global soft_stack_size_limit to change the value.
+floorplan:[INFO] Loading Pegasus 24.13 fill procedures
+floorplan:Info: Process UID = 2220143 / 9e34cfef-7548-4ff6-99b0-43b657667957 / aLl2By9dkH
+floorplan:
+floorplan:**INFO:  MMMC transition support version v31-84 
+floorplan:
+floorplan:#@ Processing -execute option
+floorplan:@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid 66f5e34c-d05e-458f-a027-96986613e9c8 top_dir /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/floorplan_13 metrics_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/floorplan_13 run_tag {} db {cdb /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1 top_lvl {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2209927} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb_1 top_lvl {}} branch {} tool innovus caller_data {group 0 process_branch 0} uuid 66f5e34c-d05e-458f-a027-96986613e9c8 tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/floorplan_13} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1 top_lvl {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+floorplan:init_flow summary:
+floorplan:  Flow script        : 
+floorplan:  YAML script        : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml
+floorplan:  Flow               : flow:flow_current
+floorplan:  From               : implementation.floorplan.block_start
+floorplan:  To                 : implementation.floorplan.schedule_floorplan_report_floorplan
+floorplan:  Top directory      : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+floorplan:  Working directory  : .
+floorplan:  Starting database  : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1
+floorplan:  Run tag            : 
+floorplan:  Branch name        : 
+floorplan:  Metrics file       : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/floorplan_13
+floorplan:  Status file        : /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/floorplan_13
+floorplan:reading previous metrics...
+floorplan:Sourcing flow scripts...
+floorplan:Sourcing flow scripts done.
+floorplan:Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
+floorplan:#@ Begin verbose flow_step activate_views
+floorplan:@flow 2: apply {{} {
+floorplan:    set db [get_db flow_starting_db]
+floorplan:    set flow [lindex [get_db flow_hier_path] end]
+floorplan:    set setup_views [get_feature -obj $flow setup_views]
+floorplan:    set hold_views [get_feature -obj $flow hold_views]
+floorplan:    set leakage_view [get_feature -obj $flow leakage_view]
+floorplan:    set dynamic_view [get_feature -obj $flow dynamic_view]
+floorplan:  
+floorplan:    if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+floorplan:      #- use read_db args for DB types and set_analysis_views for TCL
+floorplan:      if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+floorplan:        set cmd "set_analysis_view"
+floorplan:        if {$setup_views ne ""} {
+floorplan:          append cmd " -setup [list $setup_views]"
+floorplan:        } else {
+floorplan:          append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+floorplan:        }
+floorplan:        if {$hold_views ne ""} {
+floorplan:          append cmd " -hold [list $hold_views]"
+floorplan:        } else {
+floorplan:          append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+floorplan:        }
+floorplan:        if {$leakage_view ne ""} {
+floorplan:          append cmd " -leakage [list $leakage_view]"
+floorplan:        } else {
+floorplan:          if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+floorplan:            append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+floorplan:          }
+floorplan:        }
+floorplan:        if {$dynamic_view ne ""} {
+floorplan:          append cmd " -dynamic [list $dynamic_view]"
+floorplan:        } else {
+floorplan:          if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+floorplan:            append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+floorplan:          }
+floorplan:        }
+floorplan:        eval $cmd
+floorplan:      } elseif {[llength [get_db analysis_views]] == 0} {
+floorplan:        set cmd "set_flowkit_read_db_args"
+floorplan:        if {$setup_views ne ""} {
+floorplan:          append cmd " -setup_views [list $setup_views]"
+floorplan:        }
+floorplan:        if {$hold_views ne ""} {
+floorplan:          append cmd " -hold_views [list $hold_views]"
+floorplan:        }
+floorplan:        if {$leakage_view ne ""} {
+floorplan:          append cmd " -leakage_view [list $leakage_view]"
+floorplan:        }
+floorplan:        if {$dynamic_view ne ""} {
+floorplan:          append cmd " -dynamic_view [list $dynamic_view]"
+floorplan:        }
+floorplan:        eval $cmd
+floorplan:      } else {
+floorplan:      }
+floorplan:    }
+floorplan:  }}
+floorplan:#@ End verbose flow_step activate_views
+floorplan:#@ Begin verbose flow_step init_mcpu
+floorplan:@flow 2: apply {{} {
+floorplan:    # Multi host/cpu attributes
+floorplan:    #-----------------------------------------------------------------------------
+floorplan:    # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+floorplan:    # the specified dist script.  This connects the number of CPUs being reserved
+floorplan:    # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+floorplan:    # a typical environment variable exported by distribution platforms and is
+floorplan:    # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+floorplan:    if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+floorplan:      set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+floorplan:    } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+floorplan:      set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+floorplan:    } else {
+floorplan:      set max_cpus 1
+floorplan:    }
+floorplan:    switch -glob [get_db program_short_name] {
+floorplan:      default       {}
+floorplan:      joules*       -
+floorplan:      genus*        -
+floorplan:      innovus*      -
+floorplan:      tempus*       -
+floorplan:      voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+floorplan:    }
+floorplan:if {[get_feature opt_signoff]} {
+floorplan:      if {[is_flow -inside flow:opt_signoff]} {
+floorplan:        set_multi_cpu_usage -verbose -remote_host 1
+floorplan:        set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+floorplan:        set_distributed_hosts -local
+floorplan:      }
+floorplan:}
+floorplan:  }}
+floorplan:set_multi_cpu_usage -local_cpu 1
+floorplan:#@ End verbose flow_step init_mcpu
+floorplan:End steps for plugin point Cadence.plugin.flowkit.read_db.pre
+floorplan:(stylus_db): ::init_mmmc_version set to version 2 from SQL db.
+floorplan:(stylus_db): Load Metric file ...
+floorplan:#% Begin Load Metric file (date=10/10 15:59:01, mem=2067.7M)
+floorplan:#% End Load Metric file (date=10/10 15:59:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=2067.7M, current mem=2065.0M)
+floorplan:#% Begin Load Common DB (date=10/10 15:59:01, mem=2065.0M)
+floorplan:(stylus_db): Begin loading Common DB 'syn_opt.cdb_1' (Created by Genus(TM) Synthesis Solution 25.11-s095_1) ...
+floorplan:(stylus_db): Initialized SQLite db version 0.2 ..
+floorplan:(stylus_db): Sourcing .globals file  ...
+floorplan:(stylus_db): setting init_mmmc_version to 2
+floorplan:(stylus_db): Setting Library Root attributes ...
+floorplan:(stylus_db): Set 19 timing library and user attributes of Root 
+floorplan:(stylus_db): Load Flow-Kit settings ...
+floorplan:% Begin Load Flow-Kit settings (date=10/10 15:59:01, mem=2065.5M)
+floorplan:% End Load Flow-Kit settings (date=10/10 15:59:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=2065.9M, current mem=2065.9M)
+floorplan:% Begin Load MMMC data (date=10/10 15:59:01, mem=2065.9M)
+floorplan:(stylus_db): Reading MMMC file ...
+floorplan:Reading tt_v1.8_25C timing library '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
+floorplan:Read 109 cells in library 'sky130_tt_1.8_25' 
+floorplan:Reading tt_v1.8_25C timing library '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
+floorplan:Read 1 cells in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C_lib' 
+floorplan:% End Load MMMC data (date=10/10 15:59:02, total cpu=0:00:00.7, real=0:00:01.0, peak res=2135.7M, current mem=2074.2M)
+floorplan:% Begin Load LEF files (date=10/10 15:59:02, mem=2074.2M)
+floorplan:(stylus_db): Load LEF files ...
+floorplan:
+floorplan:Loading LEF file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lef/sky130_scl_9T.tlef ...
+floorplan:
+floorplan:Loading LEF file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lef/sky130_scl_9T.lef ...
+floorplan:Set DBUPerIGU to M2 pitch 460.
+floorplan:
+floorplan:Loading LEF file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/SiliconJackets/sram_sky130/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef ...
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+floorplan:To increase the message display limit, refer to the product command reference manual.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+floorplan:To increase the message display limit, refer to the product command reference manual.
+floorplan:
+floorplan:##  Check design process and node:  
+floorplan:##  Both design process and tech node are not set.
+floorplan:
+floorplan:% End Load LEF files (date=10/10 15:59:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=2082.3M, current mem=2082.3M)
+floorplan:(stylus_db): Load Verilog Netlist ...
+floorplan:% Begin Load netlist data ... (date=10/10 15:59:02, mem=2082.9M)
+floorplan:*** Begin netlist parsing (mem=2082.9M) ***
+floorplan:Created 110 new cells from 2 timing libraries.
+floorplan:Reading netlist ...
+floorplan:Backslashed names will retain backslash and a trailing blank character.
+floorplan:Reading verilog netlist '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1/cmn/top_lvl.v.gz'
+floorplan:
+floorplan:*** Memory Usage v#1 (Current mem = 2091.340M, initial mem = 918.004M) ***
+floorplan:*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2091.3M) ***
+floorplan:% End Load netlist data ... (date=10/10 15:59:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=2091.3M, current mem=2091.3M)
+floorplan:Top level cell is top_lvl.
+floorplan:Hooked 110 DB cells to tlib cells.
+floorplan:Starting recursive module instantiation check.
+floorplan:No recursion found.
+floorplan:Building hierarchical netlist for Cell top_lvl ...
+floorplan:***** UseNewTieNetMode *****.
+floorplan:*** Netlist is unique.
+floorplan:** info: there are 119 modules.
+floorplan:** info: there are 840 stdCell insts.
+floorplan:** info: there are 840 stdCell insts with at least one signal pin.
+floorplan:** info: there are 2 macros.
+floorplan:
+floorplan:*** Memory Usage v#1 (Current mem = 2123.449M, initial mem = 918.004M) ***
+floorplan:(stylus_db): Init Design
+floorplan:**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:Start create_tracks
+floorplan:Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+floorplan:Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+floorplan:Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+floorplan:*Info: initialize multi-corner CTS.
+floorplan:Total number of combinational cells: 87
+floorplan:Total number of sequential cells: 19
+floorplan:Total number of tristate cells: 3
+floorplan:Total number of level shifter cells: 0
+floorplan:Total number of power gating cells: 0
+floorplan:Total number of isolation cells: 0
+floorplan:Total number of power switch cells: 0
+floorplan:Total number of pulse generator cells: 0
+floorplan:Total number of always on buffers: 0
+floorplan:Total number of retention cells: 0
+floorplan:Total number of physical cells: 0
+floorplan:List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 CLKBUFX8 BUFX8 BUFX16
+floorplan:Total number of usable buffers: 7
+floorplan:List of unusable buffers:
+floorplan:Total number of unusable buffers: 0
+floorplan:List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+floorplan:Total number of usable inverters: 9
+floorplan:List of unusable inverters:
+floorplan:Total number of unusable inverters: 0
+floorplan:List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
+floorplan:Total number of identified usable delay cells: 4
+floorplan:List of identified unusable delay cells:
+floorplan:Total number of identified unusable delay cells: 0
+floorplan:Reading timing constraints file '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1/cmn/top_lvl.mmmc/modes/func/func.sdc.gz' ...
+floorplan:Current (total cpu=0:00:37.1, real=0:00:39.0, peak res=2545.4M, current mem=2545.4M)
+floorplan:top_lvl
+floorplan:INFO (CTE): Constraints read successfully.
+floorplan:Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2559.5M, current mem=2559.5M)
+floorplan:Current (total cpu=0:00:37.2, real=0:00:39.0, peak res=2559.5M, current mem=2559.5M)
+floorplan:Reading latency file '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1/cmn/top_lvl.mmmc/views/tt_v1.8_25C_Nominal_25_func/latency.sdc.gz' ...
+floorplan:(stylus_db): Initialized design 'top_lvl'
+floorplan:(stylus_db): Setting Root attributes ...
+floorplan:**WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+floorplan:##  Process: 130           (User Set)               
+floorplan:##     Node: (not set)                           
+floorplan:
+floorplan:##  Check design process and node:  
+floorplan:##  Design tech node is not set.
+floorplan:
+floorplan:Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+floorplan:	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+floorplan:	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+floorplan:	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+floorplan:	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+floorplan:**WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+floorplan:##  Process: 130           (User Set)               
+floorplan:##     Node: (not set)                           
+floorplan:
+floorplan:##  Check design process and node:  
+floorplan:##  Design tech node is not set.
+floorplan:
+floorplan:Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+floorplan:	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+floorplan:	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+floorplan:	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+floorplan:	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+floorplan:(stylus_db): Set 18 attributes of Root 
+floorplan:(stylus_db): Silicon Drift settings not enabled or skipped...
+floorplan:% Begin Set DB preserves (date=10/10 15:59:04, mem=2578.9M)
+floorplan:(stylus_db): Setting preserves on design objects ...
+floorplan:(stylus_db): Set 4 preserves of design objects
+floorplan:% End Set DB preserves (date=10/10 15:59:04, total cpu=0:00:00.1, real=0:00:00.0, peak res=2578.9M, current mem=2578.9M)
+floorplan:% Begin Load Timing views and constraints (date=10/10 15:59:04, mem=2578.9M)
+floorplan:(stylus_db): Read MMMC timing views ...
+floorplan:% End Load Timing views and constraints (date=10/10 15:59:04, total cpu=0:00:00.1, real=0:00:00.0, peak res=2578.9M, current mem=2578.9M)
+floorplan:(stylus_db): Couldn't commit power-intent, (top_lvl.cpf or top_lvl.upf doesn't exists)
+floorplan:% Begin Set route_types (date=10/10 15:59:04, mem=2579.0M)
+floorplan:(stylus_db): Setting route_types  ...
+floorplan:% End Set route_types (date=10/10 15:59:04, total cpu=0:00:00.1, real=0:00:00.0, peak res=2579.0M, current mem=2579.0M)
+floorplan:% Begin Set power_domain attributes (date=10/10 15:59:04, mem=2579.0M)
+floorplan:(stylus_db): Setting power_domain attributes ...
+floorplan:% End Set power_domain attributes (date=10/10 15:59:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=2579.0M, current mem=2579.0M)
+floorplan:(stylus_db): Load additional timing constraints ...
+floorplan:% Begin Load Additional Timing constraints (date=10/10 15:59:05, mem=2579.0M)
+floorplan:Loading timing derate file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1/cmn/top_lvl.mmmc/delayCorner/tt_v1.8_25C_Nominal_25/timingderate.sdc.gz ...
+floorplan:Current (total cpu=0:00:37.8, real=0:00:40.0, peak res=2579.0M, current mem=2579.0M)
+floorplan:INFO (CTE): Constraints read successfully.
+floorplan:Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2580.9M, current mem=2580.9M)
+floorplan:Current (total cpu=0:00:37.9, real=0:00:40.0, peak res=2580.9M, current mem=2580.9M)
+floorplan:Loading path adjust file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1/cmn/top_lvl.mmmc/pathadjust.sdc.gz ...
+floorplan:Current (total cpu=0:00:38.0, real=0:00:40.0, peak res=2580.9M, current mem=2580.9M)
+floorplan:INFO (CTE): Constraints read successfully.
+floorplan:Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2581.2M, current mem=2581.2M)
+floorplan:Current (total cpu=0:00:38.1, real=0:00:40.0, peak res=2581.2M, current mem=2581.2M)
+floorplan:Loading disable latch loop file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_opt.cdb_1/cmn/top_lvl.mmmc/disablelatchloop.sdc.gz ...
+floorplan:Current (total cpu=0:00:38.1, real=0:00:40.0, peak res=2581.2M, current mem=2581.2M)
+floorplan:INFO (CTE): Constraints read successfully.
+floorplan:Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2581.6M, current mem=2581.6M)
+floorplan:Current (total cpu=0:00:38.2, real=0:00:40.0, peak res=2581.6M, current mem=2581.6M)
+floorplan:% End Load Additional Timing constraints (date=10/10 15:59:05, total cpu=0:00:00.6, real=0:00:00.0, peak res=2581.6M, current mem=2581.6M)
+floorplan:% Begin Set message attributes (date=10/10 15:59:05, mem=2581.6M)
+floorplan:(stylus_db): Setting attributes on Synthesis message objects ...
+floorplan:% End Set message attributes (date=10/10 15:59:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=2581.6M, current mem=2581.6M)
+floorplan:% Begin Generate Vias (date=10/10 15:59:05, mem=2581.6M)
+floorplan:(stylus_db): Generate advanced rule Vias ...
+floorplan:Start generating vias ..
+floorplan:#Skip building auto via since it is not turned on.
+floorplan:Via generation completed.
+floorplan:% End Generate Vias (date=10/10 15:59:05, total cpu=0:00:00.1, real=0:00:00.0, peak res=2589.6M, current mem=2586.9M)
+floorplan:% Begin Set attributes (date=10/10 15:59:05, mem=2586.9M)
+floorplan:(stylus_db): Setting attributes on design objects ...
+floorplan:(stylus_db): Set 1123 attributes of design objects
+floorplan:% End Set attributes (date=10/10 15:59:05, total cpu=0:00:00.1, real=0:00:01.0, peak res=2586.9M, current mem=2586.9M)
+floorplan:Extraction setup Started for TopCell top_lvl 
+floorplan:Initializing multi-corner RC extraction with 1 active RC Corners ...
+floorplan:Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+floorplan:Generating auto layer map file.
+floorplan:Importing multi-corner technology file(s) for preRoute extraction...
+floorplan:/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/../SiliconJackets/cadence_sky130/sky130_release_0.0.4/quantus/extraction/typical/qrcTechFile
+floorplan:Generating auto layer map file.
+floorplan:Completed (cpu: 0:00:01.4 real: 0:00:02.0)
+floorplan:Set Shrink Factor to 1.00000
+floorplan:Summary of Active RC-Corners : 
+floorplan: 
+floorplan: Analysis View: tt_v1.8_25C_Nominal_25_func
+floorplan:    RC-Corner Name        : Nominal_25C
+floorplan:    RC-Corner Index       : 0
+floorplan:    RC-Corner Temperature : 25 Celsius
+floorplan:    RC-Corner Cap Table   : ''
+floorplan:    RC-Corner PreRoute Res Factor         : 1
+floorplan:    RC-Corner PreRoute Cap Factor         : 1
+floorplan:    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+floorplan:    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+floorplan:    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+floorplan:    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+floorplan:    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+floorplan:    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+floorplan:    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+floorplan:    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+floorplan:    RC-Corner Technology file: '/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/../SiliconJackets/cadence_sky130/sky130_release_0.0.4/quantus/extraction/typical/qrcTechFile'
+floorplan:Updating RC Grid density data for preRoute extraction ...
+floorplan:Initializing multi-corner resistance tables ...
+floorplan:Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+floorplan:% Begin Load Min Layer Data (date=10/10 15:59:08, mem=2613.4M)
+floorplan:Read 0 nets
+floorplan:% End Load Min Layer Data (date=10/10 15:59:08, total cpu=0:00:00.0, real=0:00:00.0, peak res=2613.4M, current mem=2613.4M)
+floorplan:+----------------------------------------------------------------+
+floorplan:    Summary of 'read_db syn_opt.cdb_1'                     
+floorplan:+----------------------------------------------------------------+
+floorplan:    Generated by         :     Innovus 25.11-s102_1
+floorplan:    Generated on         :     Fri Oct 10 15:59:08 EDT 2025
+floorplan:    Design               :     top_lvl
+floorplan:    process_node         :     130  
+floorplan:    db units             :     1000 
+floorplan:    tech_mfg_grid        :     0.005
+floorplan:    bbox                 :     {0.0 0.0 918.855 910.8}
+floorplan:    core_bbox            :     {0.0 0.0 918.855 910.8}
+floorplan:+----------------------------------------------------------------+
+floorplan:    Object Type          :     Count
+floorplan:+-----------------------------------+
+floorplan:    timing_libraries     :     2    
+floorplan:    library_sets         :     3    
+floorplan:    lib_cells            :     110  
+floorplan:    setup_analysis_views :     1    
+floorplan:    hold_analysis_views  :     1    
+floorplan:    rc_corners           :     1    
+floorplan:    delay_corners        :     3    
+floorplan:    constraint_modes     :     1    
+floorplan:    clocks               :     1    
+floorplan:+-----------------------------------+
+floorplan:    base_cells           :     118  
+floorplan:    modules              :     0    
+floorplan:    insts                :     842  
+floorplan:    ports                :     38   
+floorplan:    nets                 :     1316 
+floorplan:    hnets                :     1316 
+floorplan:    pins                 :     3175 
+floorplan:    pg_nets              :     2    
+floorplan:+-----------------------------------+
+floorplan:    layers               :     13   
+floorplan:    via_defs             :     20   
+floorplan:    via_def_rule         :     20   
+floorplan:    sites                :     3    
+floorplan:    core_rows            :     220  
+floorplan:    track_patterns       :     10   
+floorplan:+-----------------------------------+
+floorplan:#% End Load Common DB (date=10/10 15:59:08, total cpu=0:00:05.8, real=0:00:07.0, peak res=2616.3M, current mem=2613.6M)
+floorplan:
+floorplan:*** Summary of all messages that are not suppressed in this session:
+floorplan:Severity  ID               Count  Summary                                  
+floorplan:WARNING   IMPLF-200           60  Pin '%s' in macro '%s' has no ANTENNAGAT...
+floorplan:WARNING   IMPLF-201           64  Pin '%s' in macro '%s' has no ANTENNADIF...
+floorplan:WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+floorplan:WARNING   IMPDB-6501           2  "set_db design_process_node" will be obs...
+floorplan:*** Message Summary: 128 warning(s), 0 error(s)
+floorplan:
+floorplan:UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:*                                                                   read_db
+floorplan:Sourcing flow scripts...
+floorplan:Sourcing flow scripts done.
+floorplan:reading previous metrics...
+floorplan:Begin steps for plugin point Cadence.plugin.flowkit.read_db.post
+floorplan:#@ Begin verbose flow_step activate_views
+floorplan:@flow 2: apply {{} {
+floorplan:    set db [get_db flow_starting_db]
+floorplan:    set flow [lindex [get_db flow_hier_path] end]
+floorplan:    set setup_views [get_feature -obj $flow setup_views]
+floorplan:    set hold_views [get_feature -obj $flow hold_views]
+floorplan:    set leakage_view [get_feature -obj $flow leakage_view]
+floorplan:    set dynamic_view [get_feature -obj $flow dynamic_view]
+floorplan:  
+floorplan:    if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+floorplan:      #- use read_db args for DB types and set_analysis_views for TCL
+floorplan:      if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+floorplan:        set cmd "set_analysis_view"
+floorplan:        if {$setup_views ne ""} {
+floorplan:          append cmd " -setup [list $setup_views]"
+floorplan:        } else {
+floorplan:          append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+floorplan:        }
+floorplan:        if {$hold_views ne ""} {
+floorplan:          append cmd " -hold [list $hold_views]"
+floorplan:        } else {
+floorplan:          append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+floorplan:        }
+floorplan:        if {$leakage_view ne ""} {
+floorplan:          append cmd " -leakage [list $leakage_view]"
+floorplan:        } else {
+floorplan:          if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+floorplan:            append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+floorplan:          }
+floorplan:        }
+floorplan:        if {$dynamic_view ne ""} {
+floorplan:          append cmd " -dynamic [list $dynamic_view]"
+floorplan:        } else {
+floorplan:          if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+floorplan:            append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+floorplan:          }
+floorplan:        }
+floorplan:        eval $cmd
+floorplan:      } elseif {[llength [get_db analysis_views]] == 0} {
+floorplan:        set cmd "set_flowkit_read_db_args"
+floorplan:        if {$setup_views ne ""} {
+floorplan:          append cmd " -setup_views [list $setup_views]"
+floorplan:        }
+floorplan:        if {$hold_views ne ""} {
+floorplan:          append cmd " -hold_views [list $hold_views]"
+floorplan:        }
+floorplan:        if {$leakage_view ne ""} {
+floorplan:          append cmd " -leakage_view [list $leakage_view]"
+floorplan:        }
+floorplan:        if {$dynamic_view ne ""} {
+floorplan:          append cmd " -dynamic_view [list $dynamic_view]"
+floorplan:        }
+floorplan:        eval $cmd
+floorplan:      } else {
+floorplan:      }
+floorplan:    }
+floorplan:  }}
+floorplan:#@ End verbose flow_step activate_views
+floorplan:#@ Begin verbose flow_step init_mcpu
+floorplan:@flow 2: apply {{} {
+floorplan:    # Multi host/cpu attributes
+floorplan:    #-----------------------------------------------------------------------------
+floorplan:    # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+floorplan:    # the specified dist script.  This connects the number of CPUs being reserved
+floorplan:    # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+floorplan:    # a typical environment variable exported by distribution platforms and is
+floorplan:    # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+floorplan:    if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+floorplan:      set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+floorplan:    } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+floorplan:      set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+floorplan:    } else {
+floorplan:      set max_cpus 1
+floorplan:    }
+floorplan:    switch -glob [get_db program_short_name] {
+floorplan:      default       {}
+floorplan:      joules*       -
+floorplan:      genus*        -
+floorplan:      innovus*      -
+floorplan:      tempus*       -
+floorplan:      voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+floorplan:    }
+floorplan:if {[get_feature opt_signoff]} {
+floorplan:      if {[is_flow -inside flow:opt_signoff]} {
+floorplan:        set_multi_cpu_usage -verbose -remote_host 1
+floorplan:        set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+floorplan:        set_distributed_hosts -local
+floorplan:      }
+floorplan:}
+floorplan:  }}
+floorplan:set_multi_cpu_usage -local_cpu 1
+floorplan:#@ End verbose flow_step init_mcpu
+floorplan:End steps for plugin point Cadence.plugin.flowkit.read_db.post
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:*                                                                   init_flow
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:*                                                                   floorplan
+floorplan:#@ Begin verbose flow_step implementation.floorplan.block_start
+floorplan:@@flow 2: set_db flow_write_db_common false
+floorplan:#@ End verbose flow_step implementation.floorplan.block_start
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:          44.28             47                                      block_start
+floorplan:#@ Begin verbose flow_step implementation.floorplan.init_innovus.init_innovus_yaml
+floorplan:@flow 2: if {[get_feature report_lec]} {...}
+floorplan:@flow 8: # Design attributes  [get_db -category design]
+floorplan:@flow 9: #-------------------------------------------------------------------------------
+floorplan:@@flow 10: set_db design_process_node 130
+floorplan:**WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+floorplan:##  Process: 130           (User Set)               
+floorplan:##     Node: (not set)                           
+floorplan:
+floorplan:##  Check design process and node:  
+floorplan:##  Design tech node is not set.
+floorplan:
+floorplan:Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+floorplan:	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+floorplan:	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+floorplan:	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+floorplan:	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+floorplan:@@flow 11: set_db design_top_routing_layer met5
+floorplan:@@flow 12: set_db design_bottom_routing_layer met1
+floorplan:@@flow 13: set_db design_flow_effort standard
+floorplan:@@flow 14: set_db design_power_effort none
+floorplan:@flow 16: # Timing attributes  [get_db -category timing && delaycalc]
+floorplan:@flow 17: #-------------------------------------------------------------------------------
+floorplan:@@flow 18: set_db timing_analysis_cppr           both
+floorplan:@@flow 19: set_db timing_analysis_type           ocv
+floorplan:@@flow 20: set_db timing_analysis_aocv 0
+floorplan:@@flow 21: set_db timing_analysis_socv 0
+floorplan:@flow 22: if {[get_feature report_pba]} {...}
+floorplan:@flow 26: # Extraction attributes  [get_db -category extract_rc]
+floorplan:@flow 27: #-------------------------------------------------------------------------------
+floorplan:@flow 28: if {[is_flow -after route.block_finish]} {...}
+floorplan:@flow 33: # Tieoff attributes  [get_db -category add_tieoffs]
+floorplan:@flow 34: #-------------------------------------------------------------------------------
+floorplan:@@flow 35: set_db add_tieoffs_cells {TIEHI TIELO}
+floorplan:@flow 37: # Optimization attributes  [get_db -category opt]
+floorplan:@flow 38: #-------------------------------------------------------------------------------
+floorplan:@@flow 39: set_db opt_new_inst_prefix            "[get_db flow_report_name]_"
+floorplan:@@flow 40: set_db opt_leakage_to_dynamic_ratio 0.5
+floorplan:@flow 42: # Clock attributes  [get_db -category cts]
+floorplan:@flow 43: #-------------------------------------------------------------------------------
+floorplan:@@flow 44: set_db cts_target_skew auto
+floorplan:@@flow 45: set_db cts_target_max_transition_time_top 100
+floorplan:@@flow 46: set_db cts_target_max_transition_time_trunk 100
+floorplan:@@flow 47: set_db cts_target_max_transition_time_leaf 100
+floorplan:@@flow 49: set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
+floorplan:@@flow 50: set_db cts_inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+floorplan:@@flow 51: set_db cts_clock_gating_cells ICGX1
+floorplan:@@flow 52: set_db cts_logic_cells {CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+floorplan:@flow 54: # Filler attributes  [get_db -category add_fillers]
+floorplan:@flow 55: #-------------------------------------------------------------------------------
+floorplan:@@flow 56: set_db add_fillers_cells {FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64}
+floorplan:@flow 58: # Routing attributes  [get_db -category route]
+floorplan:@flow 59: #-------------------------------------------------------------------------------
+floorplan:#@ End verbose flow_step implementation.floorplan.init_innovus.init_innovus_yaml
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:           5.26              5                                      init_innovus_yaml
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:*                                                                   init_innovus
+floorplan:#@ Begin verbose flow_step implementation.floorplan.init_innovus.init_innovus_user
+floorplan:@flow 2: # Timing attributes  [get_db -category timing && delaycalc]
+floorplan:@flow 3: #-----------------------------------------------------------------------------
+floorplan:@flow 5: # Extraction attributes  [get_db -category extract_rc]
+floorplan:@flow 6: #-----------------------------------------------------------------------------
+floorplan:@flow 8: # Floorplan attributes  [get_db -category floorplan]
+floorplan:@flow 9: #-----------------------------------------------------------------------------
+floorplan:@@flow 10: set_db finish_floorplan_active_objs   [list macro soft_blockage core]
+floorplan:@flow 12: # Placement attributes  [get_db -category place]
+floorplan:@flow 13: #-----------------------------------------------------------------------------
+floorplan:@flow 15: # Optimization attributes  [get_db -category opt]
+floorplan:@flow 16: #-----------------------------------------------------------------------------
+floorplan:@flow 18: # Clock attributes  [get_db -category cts]
+floorplan:@flow 19: #-----------------------------------------------------------------------------
+floorplan:@flow 21: # Routing attributes  [get_db -category route]
+floorplan:@flow 22: #-----------------------------------------------------------------------------
+floorplan:#@ End verbose flow_step implementation.floorplan.init_innovus.init_innovus_user
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:           4.91              5                                      init_innovus_user
+floorplan:#@ Begin verbose flow_step implementation.floorplan.init_floorplan
+floorplan:@flow 2: #- initialize floorplan object using DEF and/or floorplan files
+floorplan:@flow 3: source ./scripts/floorplan.tcl
+floorplan:#@ Begin verbose source ./scripts/floorplan.tcl (pre)
+floorplan:@file 1: # Minimum site dimensions: 0.46 units in X direction, 4.14 units in Y direction
+floorplan:@file 2: set sitesx 0.46  ;
+floorplan:@file 2: # Set the site width (X dimension) to 0.46
+floorplan:@file 3: set sitesy 4.14  ;
+floorplan:@file 3: # Set the site height (Y dimension) to 4.14
+floorplan:@file 4:
+floorplan:@file 5: # Print a message indicating the start of the floorplan script
+floorplan:@file 6: puts "RUNNING FLOORPLAN.TCL"
+floorplan:RUNNING FLOORPLAN.TCL
+floorplan:@file 7:
+floorplan:@file 8: # Set the snapping of the floorplan to align with block grid instances
+floorplan:@@file 9: set_db floorplan_snap_block_grid inst
+floorplan:@file 10:
+floorplan:@file 11: # Create the core area of the floorplan with dimensions based on site sizes
+floorplan:@file 12: # Assuming we have approximately a 100x100 um box as the placeholder floorplan 
+floorplan:@file 13: # The floorplan width is calculated as sitesx * 220 and height as sitesy * 25
+floorplan:@@file 14: create_floorplan -core_size [expr {$sitesx*2100}] [expr {$sitesy*300}] 30 30 30 30
+floorplan:**WARN: (IMPFP-4026):	Adjusting core to 'Left' to 29.900000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
+floorplan:**WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 29.900000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
+floorplan:**WARN: (IMPFP-4026):	Adjusting core to 'Right' to 29.900000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
+floorplan:**WARN: (IMPFP-4026):	Adjusting core to 'Top' to 29.900000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
+floorplan:**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:Start create_tracks
+floorplan:Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+floorplan:Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+floorplan:Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+floorplan:**WARN: (IMPFP-325):	Floorplan of the design is resized. All current create_floorplan objects are automatically derived based on specified new create_floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+floorplan:@file 15:
+floorplan:@file 16: # Initialize core rows for placement within the floorplan
+floorplan:@@file 17: init_core_rows
+floorplan:**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:@file 18:
+floorplan:@file 19: # Retrieve and store the design's bounding box dimensions (dx and dy)
+floorplan:@file 20: set dx [get_db designs .bbox.dx]  ;
+floorplan:@file 20: # Get the design's X dimension (width)
+floorplan:@file 21: set dy [get_db designs .bbox.dy]  ;
+floorplan:@file 21: # Get the design's Y dimension (height)
+floorplan:@file 22:
+floorplan:@file 23: # REQUIRED: Macro Placement
+floorplan:@@file 24: place_inst sram_A 180 220 
+floorplan:@@file 25: place_inst sram_B 180 720 
+floorplan:@file 26:
+floorplan:@file 27: # REQUIRED: Macro Protection
+floorplan:@@file 28: create_route_blockage -inst sram_A -cover
+floorplan:@@file 29: create_route_blockage -inst sram_B -cover
+floorplan:@@file 30: create_route_blockage -layers {met1 met2 met3 met4} -cover
+floorplan:**ERROR: (IMPFP-36):	Command line option missed -inst.
+floorplan:Option -cover must be used with correct -inst specification.
+floorplan:**ERROR: (IMPSE-110):	File './scripts/floorplan.tcl' line 30: errors out.
+floorplan:#@ End verbose source ./scripts/floorplan.tcl
+floorplan:FLOWKIT: Encountered error during previous command and saving error database: dbs/floorplan.init_floorplan.ERROR.enc_11.
+floorplan:         To disable saving a database on error condition, set the attribute 'flow_error_write_db' to false.
+floorplan:#@ End verbose flow_step implementation.floorplan.init_floorplan
+floorplan:Tcl error: ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+floorplan:| ID         | SEV   | Count | Description                                                                                                                                                                                                                                                                                                                                         |
+floorplan:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+floorplan:| IMPSE-110  | error | 1     | File '%s' line %s: %s.                                                                                                                                                                                                                                                                                                                              |
+floorplan:| IMPFP-36   | error | 1     | Command line option missed %s.                                                                                                                                                                                                                                                                                                                      |
+floorplan:| IMPFP-325  | warn  | 1     | Floorplan of the design is resized. All current create_floorplan objects are automatically derived based on specified new create_floorplan. This may change blocks, fixed standard cells, existing routes and blockages.                                                                                                                            |
+floorplan:| IMPFP-3961 | warn  | 6     | The techSite '%s' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message. |
+floorplan:| IMPFP-4026 | warn  | 4     | Adjusting core to '%s' to %f due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.                                                                                                                                               |
+floorplan:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+floorplan:    while executing
+floorplan:"create_route_blockage -layers {met1 met2 met3 met4} -cover"
+floorplan:    (file "./scripts/floorplan.tcl" line 30)
+floorplan:    invoked from within
+floorplan:"::se_source_orig ./scripts/floorplan.tcl"
+floorplan:    ("uplevel" body line 1)
+floorplan:    invoked from within
+floorplan:"uplevel [concat ::se_source_orig $args]"
+floorplan:    invoked from within
+floorplan:"if { !$encrypted && !$no_encoding && $encodingName != ""  } {
+floorplan:                  set st [uplevel [concat ::se_source_orig " -encoding " $encodingName "..."
+floorplan:    invoked from within
+floorplan:"if {[::SE::source_verbose_file_state $file_name] == 1} {
+floorplan:              ::SE::source_verbose_start $file_name
+floorplan:              if { !$encrypted && !$no_en..."
+floorplan:    invoked from within
+floorplan:"if {$useTclVerbose} {
+floorplan:    invoked from within
+floorplan:"run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} ste..."
+floorplan:    ("uplevel" body line 1)
+floorplan:    invoked from within
+floorplan:"uplevel [concat run_flow $args] "
+floorplan:    (procedure "se::smap::run_flow" line 1)
+floorplan:    invoked from within
+floorplan:"run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} ste..."
+floorplan:*** Message Summary: 143 warning(s), 4 error(s)
+floorplan:
+floorplan:
+floorplan:*** Memory Usage v#1 (Current mem = 2726.211M, initial mem = 918.004M) ***
+floorplan:--- Ending "Innovus" (totcpu=0:01:03, real=0:01:07, mem=2726.2M) ---
+floorplan:
+  flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan failed at step "implementation.floorplan.init_floorplan"
+    log files:
+      logs/floorplan.log13
+      output.flow_current.implementation.floorplan.block_start.failed_startup_11.log
+    error summary:
+      Severity  ID         Count  Step                                     Where             Summary
+      ERROR     IMPSE-110  1      implementation.floorplan.init_floorplan  .body_tcl line 3  File '%s' line %s: %s.
+      ERROR     IMPFP-36   1      implementation.floorplan.init_floorplan  .body_tcl line 3  Command line option missed %s.
+    fatal error detail:
+Error in flow_step:init_floorplan .body_tcl, message: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ID         | SEV   | Count | Description                                                                                                                                                                                                                                                                                                                                         |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| IMPSE-110  | error | 1     | File '%s' line %s: %s.                                                                                                                                                                                                                                                                                                                              |
+| IMPFP-36   | error | 1     | Command line option missed %s.                                                                                                                                                                                                                                                                                                                      |
+| IMPFP-325  | warn  | 1     | Floorplan of the design is resized. All current create_floorplan objects are automatically derived based on specified new create_floorplan. This may change blocks, fixed standard cells, existing routes and blockages.                                                                                                                            |
+| IMPFP-3961 | warn  | 6     | The techSite '%s' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message. |
+| IMPFP-4026 | warn  | 4     | Adjusting core to '%s' to %f due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.                                                                                                                                               |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    while executing
+"create_route_blockage -layers {met1 met2 met3 met4} -cover"
+    (file "./scripts/floorplan.tcl" line 30)
+    invoked from within
+"::se_source_orig ./scripts/floorplan.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    invoked from within
+"if { !$encrypted && !$no_encoding && $encodingName != ""  } {
+                  set st [uplevel [concat ::se_source_orig " -encoding " $encodingName "..."
+    invoked from within
+"if {[::SE::source_verbose_file_state $file_name] == 1} {
+              ::SE::source_verbose_start $file_name
+              if { !$encrypted && !$no_en..."
+    invoked from within
+"if {$useTclVerbose} {
+    invoked from within
+    (flow_step:init_floorplan .body_tcl line 3)
+
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot    | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC | Wall (s) |
+|-------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+-----+----------|
+| syn_generic |   -0.205 |       -3 |   18 |      -0.205 |          -3 |      18 |             | ff          |          0.04 |        0.00 |   916 |      584187 |     | 0:03:10  |
+| syn_map     |   -0.069 |       -0 |   14 |      -0.069 |          -0 |      14 |          -5 | ff          |          0.04 |        0.00 |   821 |      583617 |     | 0:02:02  |
+| syn_opt     |    0.000 |        0 |    0 |       0.000 |           0 |       0 |             | ff          |          0.04 |        0.00 |   842 |      583640 |     | 0:01:58  |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+Summary of flow:
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot    | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC | Wall (s) |
+|-------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+-----+----------|
+| syn_generic |   -0.205 |       -3 |   18 |      -0.205 |          -3 |      18 |             | ff          |          0.04 |        0.00 |   916 |      584187 |     | 0:03:10  |
+| syn_map     |   -0.069 |       -0 |   14 |      -0.069 |          -0 |      14 |          -5 | ff          |          0.04 |        0.00 |   821 |      583617 |     | 0:02:02  |
+| syn_opt     |    0.000 |        0 |    0 |       0.000 |           0 |       0 |             | ff          |          0.04 |        0.00 |   842 |      583640 |     | 0:01:58  |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+
+Fatal error summary:
+  flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan failed at step "implementation.floorplan.init_floorplan"
+    log files:
+      logs/floorplan.log13
+      output.flow_current.implementation.floorplan.block_start.failed_startup_11.log
+    error database:
+      dbs/floorplan.init_floorplan.ERROR.enc_11
+    error summary:
+      Severity  ID         Count  Step                                     Where             Summary
+      ERROR     IMPSE-110  1      implementation.floorplan.init_floorplan  .body_tcl line 3  File '%s' line %s: %s.
+      ERROR     IMPFP-36   1      implementation.floorplan.init_floorplan  .body_tcl line 3  Command line option missed %s.
+    fatal error detail:
+Error in flow_step:init_floorplan .body_tcl, message: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ID         | SEV   | Count | Description                                                                                                                                                                                                                                                                                                                                         |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| IMPSE-110  | error | 1     | File '%s' line %s: %s.                                                                                                                                                                                                                                                                                                                              |
+| IMPFP-36   | error | 1     | Command line option missed %s.                                                                                                                                                                                                                                                                                                                      |
+| IMPFP-325  | warn  | 1     | Floorplan of the design is resized. All current create_floorplan objects are automatically derived based on specified new create_floorplan. This may change blocks, fixed standard cells, existing routes and blockages.                                                                                                                            |
+| IMPFP-3961 | warn  | 6     | The techSite '%s' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message. |
+| IMPFP-4026 | warn  | 4     | Adjusting core to '%s' to %f due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.                                                                                                                                               |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    while executing
+"create_route_blockage -layers {met1 met2 met3 met4} -cover"
+    (file "./scripts/floorplan.tcl" line 30)
+    invoked from within
+"::se_source_orig ./scripts/floorplan.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    invoked from within
+"if { !$encrypted && !$no_encoding && $encodingName != ""  } {
+                  set st [uplevel [concat ::se_source_orig " -encoding " $encodingName "..."
+    invoked from within
+"if {[::SE::source_verbose_file_state $file_name] == 1} {
+              ::SE::source_verbose_start $file_name
+              if { !$encrypted && !$no_en..."
+    invoked from within
+"if {$useTclVerbose} {
+    invoked from within
+    (flow_step:init_floorplan .body_tcl line 3)
+
+Flow failed

@@ -1,0 +1,43 @@
+Flowtool
+Copyright 2026 Cadence Design Systems Inc.  All rights reserved worldwide
+
+Command:   -verbose
+Directory: /nethome/dkhalil8/InnovateECE/RTL2GDS/design
+Script:    scripts/flow.yaml
+Version:   25.10-b003_1, built 03/20/2025 14:55 PDT
+Date:      Mon Feb 09 13:32:12 2026
+
+Starting scheduled flows at 02-09 13:32:41...
+* flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth
+Waiting for flows to return... (1 running)
+* flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth
+syn_generic:TMPDIR is being set to /tmp/genus_temp_942251_d1d438fa-ecbc-4ff3-8b40-ce3b17772422_ece-rschsrv.ece.gatech.edu_dkhalil8_cGGWrJ
+syn_generic:Cadence Genus(TM) Synthesis Solution.
+syn_generic:Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+syn_generic:Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+syn_generic:of Cadence Design Systems, Inc. in the United States and other countries.
+syn_generic:
+syn_generic:[13:32:48.185769] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+syn_generic:
+syn_generic:Version: 25.11-s095_1, built Tue Aug 12 07:59:05 PDT 2025
+syn_generic:Options: -batch -log /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/syn_generic -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid 51d1f85c-70b6-46f9-83fb-8563dfe047a5 top_dir /nethome/dkhalil8/InnovateECE/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/syn_generic_5 metrics_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics.d/syn_generic_5 run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 939884} flow {flow flow:flow_current dir . db {{} {} {} {}} branch {} tool genus caller_data {group 0 process_branch 0} uuid 51d1f85c-70b6-46f9-83fb-8563dfe047a5 tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/syn_generic_5} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
+syn_generic:Date:    Mon Feb 09 13:32:48 2026
+syn_generic:Host:    ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB) (264007036KB)
+syn_generic:PID:     942251
+syn_generic:OS:      Red Hat Enterprise Linux 8.10 (Ootpa)
+syn_generic:
+syn_generic:Checking out license: Genus_Synthesis
+syn_generic:[13:32:48.410521] Periodic Lic check successful
+syn_generic:[13:32:48.934825] Feature usage summary:
+syn_generic:[13:32:48.934826] Genus_Synthesis  
+syn_generic:License checkout complete (0 seconds elapsed).
+syn_generic:
+syn_generic:
+syn_generic:***********************************************************************************************************
+syn_generic:***********************************************************************************************************
+syn_generic:
+syn_generic:
+syn_generic:
+syn_generic:Finished executable startup (6 seconds elapsed).
+syn_generic:
+**INFO (SIGNAL): Exiting on SIGHUP

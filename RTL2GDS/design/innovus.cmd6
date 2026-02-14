@@ -1,0 +1,36 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Oct 10 15:20:54 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+#@(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+#@(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+#@(#)CDS: CPE v25.11-s029
+#@(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+
+read_db dbs/postroute.enc
+get_cells sram_A
+reportFloorplan
+report_floorplan
+report_floorplan -help\
+
+report_floorplan_obj
+gui_select -point {216.59000 243.33600}
+gui_select -point {194.45000 486.05500}
+gui_select -point {197.66100 478.71600}
+gui_select -point {197.66100 478.71600}
+gui_select -point {299.08700 776.48100}
+gui_pan -89.44400 385.45200
+gui_pan -64.79400 488.31500
+dbGet top.fPlan.coreBox
+db_Get top.fplan.coreBox
+report_floorplan -halp
+report_floorplan -help
+report_floorplan_core
+report_floorplan_sram_A
+report_floorplan_obj -core

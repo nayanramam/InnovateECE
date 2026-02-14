@@ -1,0 +1,199 @@
+Flowtool
+Copyright 2026 Cadence Design Systems Inc.  All rights reserved worldwide
+
+Command:   -reset
+Directory: /nethome/dkhalil8/InnovateECE/RTL2GDS/design
+Script:    scripts/flow.yaml
+Version:   25.10-b003_1, built 03/20/2025 14:55 PDT
+Date:      Mon Feb 09 13:18:02 2026
+
+
+flowkit/nfs_lock: Existing lock for file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status has timed out, deleting the lock file
+
+flowkit/nfs_lock: Existing lock for file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics has timed out, deleting the lock file
+Starting scheduled flows at 02-09 13:18:31...
+* flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth
+Waiting for flows to return... (1 running)
+*  flow_current.synthesis.syn_generic  step:block_start  started:02-09 13:19:10  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic  step:block_start  ended:02-09 13:19:11  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic  step:init_elaborate  started:02-09 13:19:15  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic  step:init_elaborate  ended:02-09 13:19:16  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic.init_design  step:read_mmmc  started:02-09 13:19:20  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic.init_design  step:read_mmmc  ended:02-09 13:19:21  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic.init_design  step:read_physical  started:02-09 13:19:25  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic.init_design  step:read_physical  ended:02-09 13:19:26  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic.init_design  step:read_hdl  started:02-09 13:19:30  log:logs/syn_generic.log2
+*  flow_current.synthesis.syn_generic.init_design  step:read_hdl  ended:02-09 13:19:31  log:logs/syn_generic.log2
+  flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth failed at step "synthesis.syn_generic.init_design.read_hdl"
+    log files:
+      logs/syn_generic.log2
+      output.flow_current.synthesis.syn_generic.block_start.failed_startup.log
+    error summary:
+      Severity  ID                     Count  Step                                        Where             Summary
+      ERROR     message:CDFG/CDFG-210  1      synthesis.syn_generic.init_design.read_hdl  .body_tcl line 4  Could not find an HDL design.
+    fatal error detail:
+Error in flow_step:read_hdl .body_tcl, message: 
+-------------------------------------------------------------------------------------------------------------------
+| ID                    | SEV   | Count | Description                                                             |
+-------------------------------------------------------------------------------------------------------------------
+| message:LBR/LBR-162   | Info  | 26    | Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. |
+| message:CDFG/CDFG-210 | Error | 1     | Could not find an HDL design.                                           |
+-------------------------------------------------------------------------------------------------------------------
+    while executing
+"elaborate top_lvl"
+    (flow_step:read_hdl .body_tcl line 4)
+
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot                | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC | Wall (s) |
+|-------------------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+-----+----------|
+| cts                     |          |          |      |             |             |         |             |             |               |             |       |             |   0 | 0:00:25  |
+| opt_design_postcts      |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:01:57  |
+| init_tns_pass_0         |   -0.087 |       -0 |      |      -0.087 |          -0 |         |             |             |               |        2.68 |       |             |     | 0:00:01  |
+| tns_pass_0              |   -0.021 |       -0 |      |      -0.021 |          -0 |         |             |             |               |        2.69 |       |             |     | 0:00:01  |
+| legalization_0          |   -0.021 |       -0 |      |             |             |         |             |             |               |        2.69 |       |             |     | 0:00:00  |
+| end_setup_fixing        |   -0.021 |       -0 |      |      -0.021 |          -0 |         |             |             |               |        2.69 |       |             |     | 0:00:00  |
+| power_ecg_insertion     |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| power_ecg_cleanup       |          |          |      |             |             |         |             |             |               |        0.00 |   916 |      584187 |     | 0:00:51  |
+| global_place            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:07  |
+| final                   |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| InitialState            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| before merging          |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| before clustering       |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| after bottom-up phase   |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| incrNP_iter_start       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| place_design            |          |          |      |             |             |         |             |             |               |        2.20 |   770 |      582895 |     | 0:00:09  |
+| opt_design_prects       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:01:38  |
+| initial_summary         |   -0.599 |       -9 |   28 |       0.040 |           0 |       0 |        -270 |         -10 |               |        2.20 |       |             |     | 0:00:02  |
+| simplify_netlist        |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| drv_fixing              |   -0.199 |       -2 |      |             |             |         |             |             |               |        2.84 |       |             |     | 0:00:01  |
+| drv_fixing_2            |   -0.240 |       -3 |   14 |      -0.082 |          -1 |      14 |           0 |           0 |               |        2.57 |       |             |     | 0:00:02  |
+| global_opt              |   -0.046 |       -0 |      |             |             |         |             |             |               |        2.58 |       |             |     | 0:00:02  |
+| area_reclaiming         |   -0.022 |       -0 |      |             |             |         |             |             |               |        2.47 |       |             |     | 0:00:05  |
+| incremental_replacement |   -0.087 |       -0 |   14 |      -0.087 |          -0 |      14 |             |             |               |             |       |             |     | 0:00:11  |
+| drv_fixing_3            |   -0.087 |       -0 |   14 |      -0.087 |          -0 |      14 |           0 |           0 |               |        2.67 |       |             |     | 0:00:02  |
+| tns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| wns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| area_reclaiming_2       |    0.002 |        0 |      |             |             |         |             |             |               |        2.64 |       |             |     | 0:00:03  |
+| area_reclaiming_3       |    0.000 |        0 |      |             |             |         |             |             |               |        2.54 |       |             |     | 0:00:03  |
+| drv_eco_fixing          |    0.000 |        0 |      |             |             |         |             |             |               |        2.65 |       |             |     | 0:00:02  |
+| legalization            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| final_summary           |   -0.002 |       -0 |    4 |      -0.002 |          -0 |       4 |           0 |           0 |               |        2.65 |   962 |      585702 |     | 0:00:03  |
+| ccopt_pro               |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| initial_summary_2       |    0.039 |        0 |    0 |       0.039 |           0 |       0 |           0 |           0 |               |        2.84 |       |             |     | 0:00:04  |
+| hold_fixing             |    0.040 |        0 |      |       0.040 |           0 |         |             |             |               |        2.85 |       |             |     | 0:00:01  |
+| route_type_fixing       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| pre_route_summary       |    0.039 |        0 |    0 |       0.039 |           0 |       0 |           0 |           0 |               |        2.84 |       |             |     | 0:00:00  |
+| eco_route               |          |          |      |             |             |         |             |             |               |             |       |             |   0 | 0:00:05  |
+| post_route_summary      |    0.040 |        0 |    0 |       0.040 |           0 |       0 |           0 |           0 |               |        2.84 |       |             |     | 0:00:03  |
+| initial_summary_3       |    0.040 |        0 |    0 |       0.040 |           0 |       0 |             |             |               |             |       |             |     | 0:00:04  |
+| global_route            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| init_wns_pass_0         |   -0.021 |       -0 |      |      -0.021 |          -0 |         |             |             |               |        2.69 |       |             |     | 0:00:01  |
+| wns_pass_0              |    0.046 |        0 |      |       0.046 |           0 |         |             |             |               |        2.73 |       |             |     | 0:00:18  |
+| legalization_1          |    0.046 |        0 |      |             |             |         |             |             |               |        2.73 |       |             |     | 0:00:01  |
+| route_type_refinement   |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| excluded_clk_net_fixing |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| local_wire_reclaim      |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| route_type_refinement_2 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| init_wns_pass_1         |    0.017 |        0 |      |       0.017 |           0 |         |             |             |               |        2.80 |       |             |     | 0:00:00  |
+| wns_pass_1              |    0.029 |        0 |      |       0.029 |           0 |         |             |             |               |        2.81 |       |             |     | 0:00:12  |
+| clock_opt_design        |          |          |      |             |             |         |             |             |               |        2.81 |  1019 |      586746 |     | 0:02:25  |
+| read_db                 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:09  |
+| opt_design_postcts_hold |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:15  |
+| opt_design_postroute    |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:01:28  |
+| place_opt_design        |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:01:50  |
+| elaborate               |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| syn_gen                 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:52  |
+| syn_map                 |          |          |      |             |             |         |             |             |               |        0.00 |   821 |      583617 |     | 0:00:24  |
+| syn_opt                 |          |          |      |             |             |         |             |             |               |        0.00 |   842 |      583640 |     | 0:00:11  |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+Summary of flow:
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot                | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC | Wall (s) |
+|-------------------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+-----+----------|
+| cts                     |          |          |      |             |             |         |             |             |               |             |       |             |   0 | 0:00:25  |
+| opt_design_postcts      |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:01:57  |
+| init_tns_pass_0         |   -0.087 |       -0 |      |      -0.087 |          -0 |         |             |             |               |        2.68 |       |             |     | 0:00:01  |
+| tns_pass_0              |   -0.021 |       -0 |      |      -0.021 |          -0 |         |             |             |               |        2.69 |       |             |     | 0:00:01  |
+| legalization_0          |   -0.021 |       -0 |      |             |             |         |             |             |               |        2.69 |       |             |     | 0:00:00  |
+| end_setup_fixing        |   -0.021 |       -0 |      |      -0.021 |          -0 |         |             |             |               |        2.69 |       |             |     | 0:00:00  |
+| power_ecg_insertion     |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| power_ecg_cleanup       |          |          |      |             |             |         |             |             |               |        0.00 |   916 |      584187 |     | 0:00:51  |
+| global_place            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:07  |
+| final                   |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| InitialState            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| before merging          |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| before clustering       |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| after bottom-up phase   |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| incrNP_iter_start       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| place_design            |          |          |      |             |             |         |             |             |               |        2.20 |   770 |      582895 |     | 0:00:09  |
+| opt_design_prects       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:01:38  |
+| initial_summary         |   -0.599 |       -9 |   28 |       0.040 |           0 |       0 |        -270 |         -10 |               |        2.20 |       |             |     | 0:00:02  |
+| simplify_netlist        |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| drv_fixing              |   -0.199 |       -2 |      |             |             |         |             |             |               |        2.84 |       |             |     | 0:00:01  |
+| drv_fixing_2            |   -0.240 |       -3 |   14 |      -0.082 |          -1 |      14 |           0 |           0 |               |        2.57 |       |             |     | 0:00:02  |
+| global_opt              |   -0.046 |       -0 |      |             |             |         |             |             |               |        2.58 |       |             |     | 0:00:02  |
+| area_reclaiming         |   -0.022 |       -0 |      |             |             |         |             |             |               |        2.47 |       |             |     | 0:00:05  |
+| incremental_replacement |   -0.087 |       -0 |   14 |      -0.087 |          -0 |      14 |             |             |               |             |       |             |     | 0:00:11  |
+| drv_fixing_3            |   -0.087 |       -0 |   14 |      -0.087 |          -0 |      14 |           0 |           0 |               |        2.67 |       |             |     | 0:00:02  |
+| tns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| wns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| area_reclaiming_2       |    0.002 |        0 |      |             |             |         |             |             |               |        2.64 |       |             |     | 0:00:03  |
+| area_reclaiming_3       |    0.000 |        0 |      |             |             |         |             |             |               |        2.54 |       |             |     | 0:00:03  |
+| drv_eco_fixing          |    0.000 |        0 |      |             |             |         |             |             |               |        2.65 |       |             |     | 0:00:02  |
+| legalization            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| final_summary           |   -0.002 |       -0 |    4 |      -0.002 |          -0 |       4 |           0 |           0 |               |        2.65 |   962 |      585702 |     | 0:00:03  |
+| ccopt_pro               |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| initial_summary_2       |    0.039 |        0 |    0 |       0.039 |           0 |       0 |           0 |           0 |               |        2.84 |       |             |     | 0:00:04  |
+| hold_fixing             |    0.040 |        0 |      |       0.040 |           0 |         |             |             |               |        2.85 |       |             |     | 0:00:01  |
+| route_type_fixing       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| pre_route_summary       |    0.039 |        0 |    0 |       0.039 |           0 |       0 |           0 |           0 |               |        2.84 |       |             |     | 0:00:00  |
+| eco_route               |          |          |      |             |             |         |             |             |               |             |       |             |   0 | 0:00:05  |
+| post_route_summary      |    0.040 |        0 |    0 |       0.040 |           0 |       0 |           0 |           0 |               |        2.84 |       |             |     | 0:00:03  |
+| initial_summary_3       |    0.040 |        0 |    0 |       0.040 |           0 |       0 |             |             |               |             |       |             |     | 0:00:04  |
+| global_route            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| init_wns_pass_0         |   -0.021 |       -0 |      |      -0.021 |          -0 |         |             |             |               |        2.69 |       |             |     | 0:00:01  |
+| wns_pass_0              |    0.046 |        0 |      |       0.046 |           0 |         |             |             |               |        2.73 |       |             |     | 0:00:18  |
+| legalization_1          |    0.046 |        0 |      |             |             |         |             |             |               |        2.73 |       |             |     | 0:00:01  |
+| route_type_refinement   |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| excluded_clk_net_fixing |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| local_wire_reclaim      |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| route_type_refinement_2 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| init_wns_pass_1         |    0.017 |        0 |      |       0.017 |           0 |         |             |             |               |        2.80 |       |             |     | 0:00:00  |
+| wns_pass_1              |    0.029 |        0 |      |       0.029 |           0 |         |             |             |               |        2.81 |       |             |     | 0:00:12  |
+| clock_opt_design        |          |          |      |             |             |         |             |             |               |        2.81 |  1019 |      586746 |     | 0:02:25  |
+| read_db                 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:09  |
+| opt_design_postcts_hold |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:15  |
+| opt_design_postroute    |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:01:28  |
+| place_opt_design        |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:01:50  |
+| elaborate               |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| syn_gen                 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:52  |
+| syn_map                 |          |          |      |             |             |         |             |             |               |        0.00 |   821 |      583617 |     | 0:00:24  |
+| syn_opt                 |          |          |      |             |             |         |             |             |               |        0.00 |   842 |      583640 |     | 0:00:11  |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+
+Fatal error summary:
+  flow_current @ genus: synthesis.syn_generic.block_start -> synthesis.syn_generic.schedule_syn_generic_report_synth failed at step "synthesis.syn_generic.init_design.read_hdl"
+    log files:
+      logs/syn_generic.log2
+      output.flow_current.synthesis.syn_generic.block_start.failed_startup.log
+    error database:
+      dbs/syn_generic.init_design.read_hdl.ERROR.db
+    error summary:
+      Severity  ID                     Count  Step                                        Where             Summary
+      ERROR     message:CDFG/CDFG-210  1      synthesis.syn_generic.init_design.read_hdl  .body_tcl line 4  Could not find an HDL design.
+    fatal error detail:
+Error in flow_step:read_hdl .body_tcl, message: 
+-------------------------------------------------------------------------------------------------------------------
+| ID                    | SEV   | Count | Description                                                             |
+-------------------------------------------------------------------------------------------------------------------
+| message:LBR/LBR-162   | Info  | 26    | Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. |
+| message:CDFG/CDFG-210 | Error | 1     | Could not find an HDL design.                                           |
+-------------------------------------------------------------------------------------------------------------------
+    while executing
+"elaborate top_lvl"
+    (flow_step:read_hdl .body_tcl line 4)
+
+Flow failed

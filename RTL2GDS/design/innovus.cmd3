@@ -1,0 +1,68 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Oct  8 23:11:27 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+#@(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+#@(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+#@(#)CDS: CPE v25.11-s029
+#@(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+
+read_db dbs/postroute.enc
+highlight_sram
+#@ source highlight_sram.tcl
+#@ source /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/highlight_sram.tcl
+#@ Begin verbose source (pre): source /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/highlight_sram.tcl
+proc highlight_sram {} {
+
+    gui_dim_foreground -light_level {dark}
+
+    gui_highlight sram_A
+
+}
+#@ End verbose source: /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/highlight_sram.tcl
+highlight_sram
+gui_clear_highlight -all
+read_timing_debug_report setup.btarpt
+read_timing_debug_report
+gui_select -point {118.66600 187.48300}
+read_timing_debug_report -help
+report_timing-hierarchical-blovk_timing > setup.btarpt
+report_timing -hierarchical -block_timing > setup.btarpt
+reprt_timing -help
+report_timing -help
+report_timing > setup.btarpt
+read_timing_debug_report setup.btarpt
+report_timing -output_format binary > setup.btarpt
+read_timing_debug_report setup.btarpt
+gui_gts_highlight_timing_report -in_file setup.btarpt -all
+gui_gtd_highlight_timing_report -in_file setup.btarpt -all
+highlight_timing_report {-in_file setup.btarpt -all}
+gui_pan 318.47500 414.23800
+gui_gtf_highlight_timing_report -help
+gui_gtd_highlight_timing_report -help
+#@ source /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/highlight_paths.tcl
+#@ Begin verbose source (pre): source /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/highlight_paths.tcl
+proc highlight_paths {} {
+
+    gui_dim_foreground -light_level {dark}
+
+    report_timing -output_format binary > setup.btarpt
+
+    read_timing_debug_report setup.btarpt
+
+    gui_gtd_highlight_timing_report -in_file setup.btarpt -all
+
+}
+#@ End verbose source: /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/highlight_paths.tcl
+gui_highlight_clear -all
+gui_clear_highlight -all
+gui_select -point {1081.29800 590.62800}
+gui_clear_highlight
+highlight_paths
+highlight_timing_report {-in_file setup.btarpt -all}

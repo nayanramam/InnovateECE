@@ -1,0 +1,27 @@
+create_flow -name block {synthesis implementation} -owner {cadence} -skip_metric
+create_flow -name cts {block_start init_innovus add_clock_tree add_tieoffs block_finish write_output_screenshot flow_step:schedule_cts_report_postcts} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name eco {eco_start init_innovus init_eco run_place_eco run_route_eco eco_finish flow_step:schedule_eco_report_postroute innovus_to_tempus innovus_to_quantus flow_step:schedule_eco_eco_signoff} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name extract {run_quantus} -tool {flowtool} -owner {cadence}
+create_flow -name floorplan {block_start init_innovus init_floorplan commit_power_intent add_tracks block_finish write_output_screenshot flow_step:schedule_floorplan_report_floorplan} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name flow_current {synthesis implementation} -skip_metric
+create_flow -name implementation {floorplan prects cts postcts route postroute} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence} -skip_metric
+create_flow -name init_design {read_mmmc read_physical read_hdl read_power_intent run_init_design} -tool {genus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name init_genus {init_genus_yaml init_genus_user} -tool {genus} -owner {cadence}
+create_flow -name init_innovus {init_innovus_yaml init_innovus_user} -tool {innovus} -owner {cadence}
+create_flow -name init_tempus {init_tempus_yaml init_tempus_user} -tool {tempus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name init_voltus {init_voltus_yaml init_voltus_user} -tool {voltus} -owner {cadence}
+create_flow -name postcts {block_start init_innovus run_opt_postcts_hold block_finish write_output_screenshot flow_step:schedule_postcts_report_postcts} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name postroute {block_start init_innovus run_opt_postroute remove_blockages_halos fix_antenna fix_drc block_finish write_output_files write_output_screenshot flow_step:schedule_postroute_report_postroute innovus_to_tempus innovus_to_quantus} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name prects {block_start init_innovus add_clock_spec add_clock_route_types commit_route_types run_place_opt block_finish write_output_screenshot flow_step:schedule_prects_report_prects} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name report_floorplan {report_start init_innovus report_check_design report_area_innovus report_route_drc report_finish} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name report_postcts {report_start init_innovus report_check_design report_area_innovus report_early_summary_innovus report_early_paths report_late_summary_innovus report_late_paths report_clock_timing report_power_innovus report_finish} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name report_postroute {report_start init_innovus report_check_design report_area_innovus report_early_summary_innovus report_early_paths report_late_summary_innovus report_late_paths report_clock_timing report_power_innovus report_route_drc report_route_density report_finish} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name report_prects {report_start init_innovus report_check_design report_area_innovus report_late_summary_innovus report_late_paths report_power_innovus report_finish} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name report_synth {report_start init_genus report_area_genus report_late_summary_genus report_late_paths report_power_genus report_finish} -tool {genus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name route {block_start init_innovus add_fillers run_route block_finish write_output_screenshot flow_step:schedule_route_report_postroute} -tool {innovus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name signoff {schedule_signoff_subflows} -tool {innovus} -owner {cadence}
+create_flow -name sta {signoff_start init_tempus read_parasitics set_propagated_clocks update_timing check_timing report_late_summary report_late_paths report_early_summary report_early_paths signoff_finish} -tool {tempus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name syn_generic {block_start init_elaborate init_design init_genus set_dont_use commit_power_intent run_syn_generic block_finish flow_step:schedule_syn_generic_report_synth} -tool {genus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name syn_map {block_start init_genus run_syn_map block_finish flow_step:schedule_syn_map_report_synth} -tool {genus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name syn_opt {block_start init_genus run_syn_opt block_finish flow_step:schedule_syn_opt_report_synth} -tool {genus} -tool_options {-disable_user_startup} -owner {cadence}
+create_flow -name synthesis {syn_generic syn_map syn_opt} -tool {genus} -tool_options {-disable_user_startup} -owner {cadence} -skip_metric

@@ -1,0 +1,100 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Oct  8 14:40:19 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+#@(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+#@(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+#@(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+#@(#)CDS: CPE v25.11-s029
+#@(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+
+pwd /nethome/dkhalil8/Physical-Design-Onboarding-Project/RTL2GDS/design
+read_db dbs/postroute.enc
+gui_select -point {483.15900 880.01700}
+hiliteCellTypeInBox SDFF*
+gui_select -point {478.83600 849.75100}
+gui_select -point {475.65300 840.20100}
+gui_select -rect {524.99600 1030.56900 602.99000 1258.18300}
+gui_select -point {1247.63100 1180.18900}
+gui_select -append -rect {469.28600 869.80700 582.29700 946.20900}
+gui_select -toggle -rect {631.64000 1423.72000 774.89400 1517.63100}
+gui_select -rect {278.80100 173.25900 278.80100 96.11800}
+gui_select -point {-58.69400 164.58100}
+gui_select -rect {525.65500 230.15100 510.22600 25.72600}
+gui_select -point {516.01200 -40.80900}
+gui_pan 87.74800 260.88100
+gui_pan -119.57000 431.55700
+gui_pan -150.08600 281.01400
+gui_pan -13.75500 456.41400
+gui_pan -15.50400 461.62600
+gui_pan -3.05000 476.71700
+gui_select -point {389.99500 824.00700}
+gui_select -point {390.07900 822.99700}
+gui_select -point {391.00600 823.33400}
+gui_select -rect {354.60200 932.07000 353.63800 871.31400}
+gui_pan -24.10900 815.66800
+gui_select -point {249.49600 967.93300}
+gui_select -rect {263.62400 962.29200 231.45900 973.46100}
+gui_select -point {246.42400 965.64300}
+gui_select -point {246.79500 855.92200}
+gui_pan -87.93200 557.13600
+gui_pan 69.46900 673.37900
+gui_pan 453.84500 303.28900
+get_db insts *SRAM*
+gui_highlight -add [get_db insts SRAM0]
+gui_highlight
+gui_highlight
+highlight SRAM0
+get_db insts SRAM0
+highlightInst SRAM0
+gui_select -point {866.16000 533.43700}
+gui_select -point {732.67600 547.57100}
+gui_select -point {618.03700 737.58900}
+gui_select -point {296.10500 797.26400}
+gui_select -point {247.42300 828.67200}
+gui_select -point {544.69500 736.37000}
+gui_select -point {543.47300 733.22700}
+gui_pan -281.33300 152.79800
+gui_select -point {184.35800 1057.96600}
+gui_select -point {184.29800 1058.14600}
+gui_pan 474.68400 267.84400
+gui_select -point {367.48000 453.34600}
+gui_select -point {367.75400 453.62000}
+gui_select -point {372.83000 450.05300}
+gui_select -point {373.65300 454.58000}
+selectInst <sram_A>
+selectInst sram A
+selectInst sram_A
+highlight -inst sram_A
+clear
+gui_select -point {369.53800 445.52600}
+gui_select -append -point {369.53800 445.52600}
+gui_select -point {369.53800 445.52600}
+gui_select -rect {359.79800 448.68200 387.78300 443.05700}
+gui_select -point {359.38600 450.87700}
+gui_select -point {363.36400 450.19100}
+gui_pan 86.57400 438.22400
+gui_select -point {281.35600 602.96800}
+gui_pan 201.59400 293.26900
+gui_pan -26.70100 -86.51700
+gui_select -point {421.27400 481.19400}
+gui_select -point {424.82800 477.04800}
+gui_select -point {426.64600 479.24200}
+gui_select -point {426.90000 478.86100}
+gui_pan 16.53300 35.60800
+gui_pan -8.73100 -2.77000
+gui_pan 49.41200 -499.79900
+gui_pan -89.70700 -215.85900
+hilight
+help "*highlight"
+gui_highlight
+gui_select -point {789.53600 659.22700}
+gui_ctd_highlight
+gui_clear_highlight
+gui ctd_highlight sram_A
+gui_ctd_highlight sram_A

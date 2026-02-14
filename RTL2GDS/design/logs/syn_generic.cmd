@@ -1,0 +1,729 @@
+# Cadence Genus(TM) Synthesis Solution, Version 25.11-s095_1, built Aug 12 2025 10:59:05
+
+# Date: Tue Oct 07 16:51:08 2025
+# Host: ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.69.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+# OS:   Red Hat Enterprise Linux 8.10 (Ootpa)
+
+if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/syn_generic metrics_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/syn_generic run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 172149} flow {flow flow:flow_current tool genus tool_options {} dir . db {{} {} {} {}} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} branch {} caller_data {group 0 process_branch 0} uuid {} parent_uuid {} case_sensitive_match 0 child_of {} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.status.d/syn_generic} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+#@ (init_flow): cd /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+#@ (init_flow): read_metric -id current /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/syn_generic -previous 
+#@ (init_flow): read_flow /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml
+#@ (flow_step:block_start)  2:   apply {{} {
+#@                           :     set db [get_db flow_starting_db]
+#@                           :     set flow [lindex [get_db flow_hier_path] end]
+#@                           :     set setup_views [get_feature -obj $flow setup_views]
+#@                           :     set hold_views [get_feature -obj $flow hold_views]
+#@                           :     set leakage_view [get_feature -obj $flow leakage_view]
+#@                           :     set dynamic_view [get_feature -obj $flow dynamic_view]
+#@                           :   
+#@                           :     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+#@                           :       #- use read_db args for DB types and set_analysis_views for TCL
+#@                           :       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+#@                           :         set cmd "set_analysis_view"
+#@                           :         if {$setup_views ne ""} {
+#@                           :           append cmd " -setup [list $setup_views]"
+#@                           :         } else {
+#@                           :           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+#@                           :         }
+#@                           :         if {$hold_views ne ""} {
+#@                           :           append cmd " -hold [list $hold_views]"
+#@                           :         } else {
+#@                           :           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+#@                           :         }
+#@                           :         if {$leakage_view ne ""} {
+#@                           :           append cmd " -leakage [list $leakage_view]"
+#@                           :         } else {
+#@                           :           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+#@                           :             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+#@                           :           }
+#@                           :         }
+#@                           :         if {$dynamic_view ne ""} {
+#@                           :           append cmd " -dynamic [list $dynamic_view]"
+#@                           :         } else {
+#@                           :           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+#@                           :             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+#@                           :           }
+#@                           :         }
+#@                           :         eval $cmd
+#@                           :       } elseif {[llength [get_db analysis_views]] == 0} {
+#@                           :         set cmd "set_flowkit_read_db_args"
+#@                           :         if {$setup_views ne ""} {
+#@                           :           append cmd " -setup_views [list $setup_views]"
+#@                           :         }
+#@                           :         if {$hold_views ne ""} {
+#@                           :           append cmd " -hold_views [list $hold_views]"
+#@                           :         }
+#@                           :         if {$leakage_view ne ""} {
+#@                           :           append cmd " -leakage_view [list $leakage_view]"
+#@                           :         }
+#@                           :         if {$dynamic_view ne ""} {
+#@                           :           append cmd " -dynamic_view [list $dynamic_view]"
+#@                           :         }
+#@                           :         eval $cmd
+#@                           :       } else {
+#@                           :       }
+#@                           :     }
+#@                           :   }}
+#@ (flow_step:block_start)  2:   apply {{} {
+#@                           :     # Multi host/cpu attributes
+#@                           :     #-----------------------------------------------------------------------------
+#@                           :     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+#@                           :     # the specified dist script.  This connects the number of CPUs being reserved
+#@                           :     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+#@                           :     # a typical environment variable exported by distribution platforms and is
+#@                           :     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+#@                           :     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+#@                           :       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+#@                           :     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+#@                           :       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+#@                           :     } else {
+#@                           :       set max_cpus 1
+#@                           :     }
+#@                           :     switch -glob [get_db program_short_name] {
+#@                           :       default       {}
+#@                           :       joules*       -
+#@                           :       genus*        -
+#@                           :       innovus*      -
+#@                           :       tempus*       -
+#@                           :       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+#@                           :     }
+#@                           : if {[get_feature opt_signoff]} {
+#@                           :       if {[is_flow -inside flow:opt_signoff]} {
+#@                           :         set_multi_cpu_usage -verbose -remote_host 1
+#@                           :         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+#@                           :         set_distributed_hosts -local
+#@                           :       }
+#@                           : }
+#@                           :   }}
+#@ (init_flow): cd /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+#@ (init_flow): cd /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+#@ (init_flow): read_flow /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/scripts/flow.yaml
+#@ (init_flow): cd /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design
+#@ (init_flow): read_metric -merge -id current /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/flow.metrics.d/syn_generic -previous 
+#@ (flow_step:block_start)  2:   apply {{} {
+#@                           :     set db [get_db flow_starting_db]
+#@                           :     set flow [lindex [get_db flow_hier_path] end]
+#@                           :     set setup_views [get_feature -obj $flow setup_views]
+#@                           :     set hold_views [get_feature -obj $flow hold_views]
+#@                           :     set leakage_view [get_feature -obj $flow leakage_view]
+#@                           :     set dynamic_view [get_feature -obj $flow dynamic_view]
+#@                           :   
+#@                           :     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+#@                           :       #- use read_db args for DB types and set_analysis_views for TCL
+#@                           :       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+#@                           :         set cmd "set_analysis_view"
+#@                           :         if {$setup_views ne ""} {
+#@                           :           append cmd " -setup [list $setup_views]"
+#@                           :         } else {
+#@                           :           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+#@                           :         }
+#@                           :         if {$hold_views ne ""} {
+#@                           :           append cmd " -hold [list $hold_views]"
+#@                           :         } else {
+#@                           :           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+#@                           :         }
+#@                           :         if {$leakage_view ne ""} {
+#@                           :           append cmd " -leakage [list $leakage_view]"
+#@                           :         } else {
+#@                           :           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+#@                           :             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+#@                           :           }
+#@                           :         }
+#@                           :         if {$dynamic_view ne ""} {
+#@                           :           append cmd " -dynamic [list $dynamic_view]"
+#@                           :         } else {
+#@                           :           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+#@                           :             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+#@                           :           }
+#@                           :         }
+#@                           :         eval $cmd
+#@                           :       } elseif {[llength [get_db analysis_views]] == 0} {
+#@                           :         set cmd "set_flowkit_read_db_args"
+#@                           :         if {$setup_views ne ""} {
+#@                           :           append cmd " -setup_views [list $setup_views]"
+#@                           :         }
+#@                           :         if {$hold_views ne ""} {
+#@                           :           append cmd " -hold_views [list $hold_views]"
+#@                           :         }
+#@                           :         if {$leakage_view ne ""} {
+#@                           :           append cmd " -leakage_view [list $leakage_view]"
+#@                           :         }
+#@                           :         if {$dynamic_view ne ""} {
+#@                           :           append cmd " -dynamic_view [list $dynamic_view]"
+#@                           :         }
+#@                           :         eval $cmd
+#@                           :       } else {
+#@                           :       }
+#@                           :     }
+#@                           :   }}
+#@ (flow_step:block_start)  2:   apply {{} {
+#@                           :     # Multi host/cpu attributes
+#@                           :     #-----------------------------------------------------------------------------
+#@                           :     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+#@                           :     # the specified dist script.  This connects the number of CPUs being reserved
+#@                           :     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+#@                           :     # a typical environment variable exported by distribution platforms and is
+#@                           :     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+#@                           :     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+#@                           :       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+#@                           :     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+#@                           :       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+#@                           :     } else {
+#@                           :       set max_cpus 1
+#@                           :     }
+#@                           :     switch -glob [get_db program_short_name] {
+#@                           :       default       {}
+#@                           :       joules*       -
+#@                           :       genus*        -
+#@                           :       innovus*      -
+#@                           :       tempus*       -
+#@                           :       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+#@                           :     }
+#@                           : if {[get_feature opt_signoff]} {
+#@                           :       if {[is_flow -inside flow:opt_signoff]} {
+#@                           :         set_multi_cpu_usage -verbose -remote_host 1
+#@                           :         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+#@                           :         set_distributed_hosts -local
+#@                           :       }
+#@                           : }
+#@                           :   }}
+#@ (flow_step:block_start)  2:   #- extend flow report name based on context
+#@ (flow_step:block_start)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                           :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                           :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                           :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                           :     set_db flow_report_name [get_db flow_branch]
+#@                           :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                           :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                           :   } else {
+#@                           :   }
+#@ (flow_step:block_start) 22:   #- Create report dir (if necessary)
+#@ (flow_step:block_start) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:block_start) 2:     set_db flow_write_db_common false
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:init_elaborate) 2:   # HDL attributes [get_db -category hdl]
+#@ (flow_step:init_elaborate) 3:   #-----------------------------------------------------------------------------
+#@ (flow_step:init_elaborate) 5:   # Low Power attributes [get_db -category lp_cg]
+#@ (flow_step:init_elaborate) 6:   #-----------------------------------------------------------------------------
+#@ (flow_step:init_elaborate) 7:   set_db lp_insert_clock_gating 1
+#@ (run_flow): pop_snapshot_stack
+#@ (flow_step:read_mmmc)  2:   #- extend flow report name based on context
+#@ (flow_step:read_mmmc)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                         :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                         :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                         :     }
+#@                         :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                         :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                         :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                         :     }
+#@                         :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                         :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                         :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                         :     }
+#@                         :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                         :     set_db flow_report_name [get_db flow_branch]
+#@                         :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                         :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                         :   } else {
+#@                         :   }
+#@ (flow_step:read_mmmc) 22:   #- Create report dir (if necessary)
+#@ (flow_step:read_mmmc) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:read_mmmc)   2:   apply {{} {
+#@                          :     set FH [open [file join [get_db flow_db_directory] [get_db flow_report_name].mmmc_config.tcl] w]
+#@                          :   
+#@                          :     puts $FH "##############################################################################"
+#@                          :     puts $FH "## LIBRARY SETS"
+#@                          :     puts $FH "##############################################################################"
+#@                          :     foreach name [dict keys [get_flow_config library_sets]] {
+#@                          :   
+#@                          :       set library_files [get_flow_config -quiet library_sets $name library_files]
+#@                          :       set link_files    [get_flow_config -quiet library_sets $name link_library_files]
+#@                          :       set target_files  [get_flow_config -quiet library_sets $name target_library_files]
+#@                          :       set aocv_files    [get_flow_config -quiet library_sets $name aocv_files]
+#@                          :       set lvf_files     [get_flow_config -quiet library_sets $name lvf_files]
+#@                          :       set si_files      [get_flow_config -quiet library_sets $name si_files]
+#@                          :       set socv_files    [get_flow_config -quiet library_sets $name socv_files]
+#@                          :   
+#@                          :       puts $FH "create_library_set \\"
+#@                          :       puts $FH "  -name $name \\"
+#@                          :       #- define timing_files (.ldb/.lib)
+#@                          :       if {[llength $library_files] > 0} {
+#@                          :         puts $FH "  -timing \\"
+#@                          :         puts $FH "    \[list \\"
+#@                          :         if {[llength $library_files] != [llength [join $library_files]]} {
+#@                          :           foreach inner_list $library_files {
+#@                          :             puts $FH "      \[list \\"
+#@                          :             foreach file $inner_list {
+#@                          :               puts $FH "        [file normalize $file] \\"
+#@                          :             }
+#@                          :             puts $FH "      \] \\"
+#@                          :           }
+#@                          :         } else {
+#@                          :           foreach file $library_files {
+#@                          :             puts $FH "      [file normalize $file] \\"
+#@                          :           }
+#@                          :         }
+#@                          :         if {[llength [concat $aocv_files $lvf_files $si_files $socv_files]] > 0 } {
+#@                          :           puts $FH "    \] \\"
+#@                          :         } else {
+#@                          :           puts $FH "    \]"
+#@                          :         }
+#@                          :       }
+#@                          :       #- define link/target timing_files (.ldb/.lib)
+#@                          :       if {[llength $link_files] > 0 && [llength $target_files] > 0} {
+#@                          :         puts $FH "  -link_timing \\"
+#@                          :         puts $FH "    \[list \\"
+#@                          :         foreach file $link_files {
+#@                          :           puts $FH "      [file normalize $file] \\"
+#@                          :         }
+#@                          :         puts $FH "    \] \\"
+#@                          :         puts $FH "  -target_timing \\"
+#@                          :         puts $FH "    \[list \\"
+#@                          :         foreach file $target_files {
+#@                          :           puts $FH "      [file normalize $file] \\"
+#@                          :         }
+#@                          :         if {[llength [concat $aocv_files $lvf_files $si_files $socv_files]] > 0 } {
+#@                          :           puts $FH "    \] \\"
+#@                          :         } else {
+#@                          :           puts $FH "    \]"
+#@                          :         }
+#@                          :       }
+#@                          :       #- define aocv files
+#@                          :       if {[llength $aocv_files] > 0 } {
+#@                          :         puts $FH "  -aocv \\"
+#@                          :         puts $FH "    \[list \\"
+#@                          :         foreach file $aocv_files {
+#@                          :           puts $FH "      [file normalize $file] \\"
+#@                          :         }
+#@                          :         if {[llength [concat $lvf_files $si_files $socv_files]] > 0 } {
+#@                          :           puts $FH "    \] \\"
+#@                          :         } else {
+#@                          :           puts $FH "    \]"
+#@                          :         }
+#@                          :       }
+#@                          :       #- define lvf files
+#@                          :       if {[llength $lvf_files] > 0 } {
+#@                          :         puts $FH "  -lvf \\"
+#@                          :         puts $FH "    \[list \\"
+#@                          :         foreach file $lvf_files {
+#@                          :           puts $FH "      [file normalize $file] \\"
+#@                          :         }
+#@                          :         if {[llength [concat $si_files $socv_files]] > 0 } {
+#@                          :           puts $FH "    \] \\"
+#@                          :         } else {
+#@                          :           puts $FH "    \]"
+#@                          :         }
+#@                          :       }
+#@                          :       #- define si files (.cdb)
+#@                          :       if {[llength $si_files] > 0 } {
+#@                          :         puts $FH "  -si     \\"
+#@                          :         puts $FH "    \[list \\"
+#@                          :         foreach file $si_files {
+#@                          :           puts $FH "      [file normalize $file] \\"
+#@                          :         }
+#@                          :         if {[llength [concat $socv_files]] > 0 } {
+#@                          :           puts $FH "    \] \\"
+#@                          :         } else {
+#@                          :           puts $FH "    \]"
+#@                          :         }
+#@                          :       }
+#@                          :       #- define socv files
+#@                          :       if {[llength $socv_files] > 0 } {
+#@                          :         puts $FH "  -socv   \\"
+#@                          :         puts $FH "    \[list \\"
+#@                          :         foreach file $socv_files {
+#@                          :           puts $FH "      [file normalize $file] \\"
+#@                          :         }
+#@                          :         puts $FH "    \]"
+#@                          :       }
+#@                          :       puts $FH ""
+#@                          :     }
+#@                          :     puts $FH ""
+#@                          :     puts $FH "##############################################################################"
+#@                          :     puts $FH "## OPERATING CONDITIONS"
+#@                          :     puts $FH "##############################################################################"
+#@                          :     foreach name [dict keys [get_flow_config -quiet opconds]] {
+#@                          :       set op_cond_process      [get_flow_config -quiet opconds $name process]
+#@                          :       set op_cond_voltage      [get_flow_config -quiet opconds $name voltage]
+#@                          :       set op_cond_temperature  [get_flow_config -quiet opconds $name temperature]
+#@                          :   
+#@                          :       puts $FH "create_opcond \\"
+#@                          :       puts $FH "  -name $name \\"
+#@                          :       if ![string is space $op_cond_process] {
+#@                          :         puts $FH "  -process $op_cond_process \\"
+#@                          :       }
+#@                          :       if ![string is space $op_cond_voltage] {
+#@                          :         puts $FH "  -voltage $op_cond_voltage \\"
+#@                          :       }
+#@                          :       if ![string is space $op_cond_temperature] {
+#@                          :         puts $FH "  -temperature $op_cond_temperature \\"
+#@                          :       }
+#@                          :       puts $FH ""
+#@                          :     }
+#@                          :     puts $FH ""
+#@                          :     puts $FH "###############################################################################"
+#@                          :     puts $FH "### RC CORNERS"
+#@                          :     puts $FH "###############################################################################"
+#@                          :     foreach name [dict keys [get_flow_config rc_corners]] {
+#@                          :       set rc_corner_qrc_tech    [get_flow_config -quiet rc_corners $name qrc_tech_file]
+#@                          :       set rc_corner_temperature [get_flow_config -quiet rc_corners $name temperature]
+#@                          :   
+#@                          :       puts $FH "create_rc_corner \\"
+#@                          :       puts $FH "  -name $name \\"
+#@                          :       if ![string is space $rc_corner_temperature] {
+#@                          :         puts $FH "  -temperature $rc_corner_temperature \\"
+#@                          :       }
+#@                          :       if ![string is space $rc_corner_qrc_tech] {
+#@                          :         puts $FH "  -qrc_tech $rc_corner_qrc_tech"
+#@                          :       }
+#@                          :       puts $FH ""
+#@                          :     }
+#@                          :     puts $FH ""
+#@                          :     puts $FH "##############################################################################"
+#@                          :     puts $FH "## TIMING CONDITIONS"
+#@                          :     puts $FH "##############################################################################"
+#@                          :     foreach name [dict keys [get_flow_config timing_conditions]] {
+#@                          :       set timing_condition_lib_set [get_flow_config -quiet timing_conditions $name library_sets]
+#@                          :       set timing_condition_opcond  [get_flow_config -quiet timing_conditions $name opcond]
+#@                          :       set timing_condition_opcond_lib  [get_flow_config -quiet timing_conditions $name opcond_library]
+#@                          :   
+#@                          :       puts $FH "create_timing_condition \\"
+#@                          :       puts $FH "  -name $name \\"
+#@                          :   
+#@                          :       #- Timing Condition library sets validation
+#@                          :       puts $FH "  -library_sets \\"
+#@                          :       puts $FH "    \[list \\"
+#@                          :       foreach tc_lib_set $timing_condition_lib_set {
+#@                          :         puts $FH "        $tc_lib_set \\"
+#@                          :       }
+#@                          :       if {[llength [concat $timing_condition_opcond $timing_condition_opcond_lib]] > 0 } {
+#@                          :         puts $FH "    \] \\"
+#@                          :       } else {
+#@                          :         puts $FH "    \]"
+#@                          :       }
+#@                          :       if {![string is space $timing_condition_opcond]} {
+#@                          :         if {![string is space $timing_condition_opcond_lib]} {
+#@                          :           puts $FH "  -opcond $timing_condition_opcond \\"
+#@                          :           puts $FH "  -opcond_library $timing_condition_opcond_lib"
+#@                          :         } else {
+#@                          :          puts $FH "  -opcond $timing_condition_opcond"
+#@                          :        }
+#@                          :       }
+#@                          :       puts $FH ""
+#@                          :     }
+#@                          :     puts $FH ""
+#@                          :     puts $FH "###############################################################################"
+#@                          :     puts $FH "### DELAY CORNERS"
+#@                          :     puts $FH "###############################################################################"
+#@                          :     foreach name [dict keys [get_flow_config delay_corners]] {
+#@                          :       set delay_corner_early_rc_corner  [get_flow_config -quiet delay_corners $name rc_corner early]
+#@                          :       set delay_corner_late_rc_corner   [get_flow_config -quiet delay_corners $name rc_corner late]
+#@                          :       set delay_corner_early_timing_condition [get_flow_config -quiet delay_corners $name timing_condition early]
+#@                          :       set delay_corner_late_timing_condition  [get_flow_config -quiet delay_corners $name timing_condition late]
+#@                          :   
+#@                          :       puts $FH "create_delay_corner \\"
+#@                          :       puts $FH "  -name $name \\"
+#@                          :   
+#@                          :       #- define delay_corner -rc_corner
+#@                          :       if {![string is space $delay_corner_early_rc_corner] && ![string is space $delay_corner_late_rc_corner]} {
+#@                          :         if {$delay_corner_early_rc_corner eq $delay_corner_late_rc_corner} {
+#@                          :           puts $FH "  -rc_corner $delay_corner_early_rc_corner \\"
+#@                          :         } else {
+#@                          :           puts $FH "  -early_rc_corner $delay_corner_early_rc_corner \\"
+#@                          :           puts $FH "  -late_rc_corner $delay_corner_late_rc_corner \\"
+#@                          :         }
+#@                          :       }
+#@                          :       #- define delay_corner -timing_condition
+#@                          :       if {![string is space $delay_corner_early_timing_condition] && ![string is space $delay_corner_late_timing_condition]} {
+#@                          :         if {$delay_corner_early_timing_condition eq $delay_corner_late_timing_condition} {
+#@                          :           puts $FH "  -timing_condition [list $delay_corner_early_timing_condition]"
+#@                          :         } else {
+#@                          :           puts $FH "  -early_timing_condition [list $delay_corner_early_timing_condition] \\"
+#@                          :           puts $FH "  -late_timing_condition [list $delay_corner_late_timing_condition]"
+#@                          :         }
+#@                          :       }
+#@                          :       puts $FH ""
+#@                          :     }
+#@                          :     puts $FH ""
+#@                          :     puts $FH "###############################################################################"
+#@                          :     puts $FH "### CONSTRAINT MODES"
+#@                          :     puts $FH "###############################################################################"
+#@                          :     foreach name [dict keys [get_flow_config constraint_modes]] {
+#@                          :       set constraint_mode_sdc       [get_flow_config -quiet constraint_modes $name sdc_files]
+#@                          :       set constraint_mode_tcl_vars  [get_flow_config -quiet constraint_modes $name tcl_variables]
+#@                          :   
+#@                          :       puts $FH "create_constraint_mode \\"
+#@                          :       puts $FH "  -name $name \\"
+#@                          :       #- Constraint_mode -sdc_files
+#@                          :       puts $FH "  -sdc_files \\"
+#@                          :       puts $FH "    \[list \\"
+#@                          :       foreach file $constraint_mode_sdc {
+#@                          :         puts $FH "      [file normalize $file] \\"
+#@                          :       }
+#@                          :       #- Constraint_mode -tcl_vars
+#@                          :       if ![string is space $constraint_mode_tcl_vars] {
+#@                          :         puts $FH "    \] \\"
+#@                          :         puts $FH "  -tcl_variables \{$constraint_mode_tcl_vars\}"
+#@                          :       } else {
+#@                          :         puts $FH "    \]"
+#@                          :       }
+#@                          :       puts $FH ""
+#@                          :     }
+#@                          :     puts $FH ""
+#@                          :     puts $FH "###############################################################################"
+#@                          :     puts $FH "### ANALYSIS VIEWS"
+#@                          :     puts $FH "###############################################################################"
+#@                          :     set analysis_view_is_setup_list   ""
+#@                          :     set analysis_view_is_hold_list    ""
+#@                          :     set analysis_view_is_dynamic_list ""
+#@                          :     set analysis_view_is_leakage_list ""
+#@                          :     foreach name [dict keys [get_flow_config analysis_views]] {
+#@                          :       puts $FH "create_analysis_view \\"
+#@                          :       puts $FH "  -name $name \\"
+#@                          :       puts $FH "  -constraint_mode [get_flow_config -quiet analysis_views $name constraint_mode] \\"
+#@                          :       if {![string is space [get_flow_config -quiet analysis_views $name power_modes]]} {
+#@                          :         puts $FH "  -power_modes [get_flow_config -quiet analysis_views $name power_modes] \\"
+#@                          :       }
+#@                          :       puts $FH "  -delay_corner [get_flow_config -quiet analysis_views $name delay_corner]"
+#@                          :       #- Sort views by purpose
+#@                          :       if {[string is true -strict [get_flow_config -quiet analysis_views $name is_setup]]} {
+#@                          :         lappend analysis_view_is_setup_list $name
+#@                          :       }
+#@                          :       if {[string is true -strict [get_flow_config -quiet analysis_views $name is_hold]]} {
+#@                          :         lappend analysis_view_is_hold_list $name
+#@                          :       }
+#@                          :       if {[string is true -strict [get_flow_config -quiet analysis_views $name is_leakage]]} {
+#@                          :         lappend analysis_view_is_leakage_list $name
+#@                          :       }
+#@                          :       if {[string is true -strict [get_flow_config -quiet analysis_views $name is_dynamic]]} {
+#@                          :         lappend analysis_view_is_dynamic_list $name
+#@                          :       }
+#@                          :       puts $FH ""
+#@                          :     }
+#@                          :   
+#@                          :     #- Override view list with feature values when available
+#@                          :     if {[get_feature setup_views] ne ""} {
+#@                          :       set analysis_view_is_setup_list [get_feature setup_views]
+#@                          :     }
+#@                          :     if {[get_feature hold_views] ne ""} {
+#@                          :       set analysis_view_is_hold_list [get_feature hold_views]
+#@                          :     }
+#@                          :     if {[get_feature leakage_view] ne ""} {
+#@                          :       set analysis_view_is_leakage_list [get_feature leakage_view]
+#@                          :     }
+#@                          :     if {[get_feature dynamic_view] ne ""} {
+#@                          :       set analysis_view_is_dynamic_list [get_feature dynamic_view]
+#@                          :     }
+#@                          :   
+#@                          :     #- Configure the Analysis View
+#@                          :     puts $FH "set_analysis_view \\"
+#@                          :     puts $FH "  -setup   \[list $analysis_view_is_setup_list\] \\"
+#@                          :     if {[llength $analysis_view_is_leakage_list] > 0 && [llength $analysis_view_is_dynamic_list] > 0} {
+#@                          :       puts $FH "  -hold    \[list $analysis_view_is_hold_list\] \\"
+#@                          :       puts $FH "  -leakage \[list $analysis_view_is_leakage_list\] \\"
+#@                          :       puts $FH "  -dynamic \[list $analysis_view_is_dynamic_list\]"
+#@                          :     } elseif {[llength $analysis_view_is_leakage_list] > 0 && [llength $analysis_view_is_dynamic_list] == 0} {
+#@                          :       puts $FH "  -hold    \[list $analysis_view_is_hold_list\] \\"
+#@                          :       puts $FH "  -leakage \[list $analysis_view_is_leakage_list\]"
+#@                          :     } elseif {[llength $analysis_view_is_leakage_list] == 0 && [llength $analysis_view_is_dynamic_list] > 0} {
+#@                          :       puts $FH "  -hold    \[list $analysis_view_is_hold_list\] \\"
+#@                          :       puts $FH "  -dynamic \[list $analysis_view_is_dynamic_list\]"
+#@                          :     } else {
+#@                          :       puts $FH "  -hold    \[list $analysis_view_is_hold_list\]"
+#@                          :     }
+#@                          :     puts $FH ""
+#@                          :     close $FH
+#@                          :   
+#@                          :     #- Read MMMC file
+#@                          :     if {[is_flow -inside flow:init_design]} {
+#@                          :       read_mmmc [file join [get_db flow_db_directory] [get_db flow_report_name].mmmc_config.tcl]
+#@                          :     }
+#@                          :   }}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:read_physical)  2:   apply {{} {
+#@                             :     if {![string is space [get_flow_config -quiet init_physical_files lef_files]]} {
+#@                             :       read_physical -lef [get_flow_config init_physical_files lef_files]
+#@                             :     }
+#@                             :     if {![string is space [get_flow_config -quiet init_physical_files oa_ref_libs]]} {
+#@                             :       set flow_startup_directory [get_db flow_startup_directory]
+#@                             :       set flow_top_directory [file normalize [get_db flow_working_directory]]
+#@                             :       if {![string is space [get_flow_config -quiet init_physical_files oa_search_libs]]} {
+#@                             :         set cmd "[list read_physical -oa_ref_libs [get_flow_config init_physical_files oa_ref_libs] -oa_search_libs [get_flow_config init_physical_files oa_search_libs]]"
+#@                             :       } else {
+#@                             :         set cmd "[list read_physical -oa_ref_libs [get_flow_config init_physical_files oa_ref_libs]]"
+#@                             :       }
+#@                             :   
+#@                             :       if {$flow_startup_directory ne $flow_top_directory} {
+#@                             :         cd $flow_startup_directory
+#@                             :         eval $cmd
+#@                             :         cd $flow_top_directory
+#@                             :       } else {
+#@                             :         eval $cmd
+#@                             :       }
+#@                             :     }
+#@                             :   }}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:read_hdl) 2:   set hdl_file_list [list ../pipeline_src/calculator_pkg.sv  ../pipeline_src/full_adder.sv  ../pipeline_src/adder32.sv  ../pipeline_src/result_buffer.sv  ../pipeline_src/controller.sv  ../pipeline_src/top_lvl.sv  ]
+#@ (flow_step:read_hdl) 3:   read_hdl -sv $hdl_file_list
+#@ (flow_step:read_hdl) 4:   elaborate top_lvl
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:read_power_intent) 2:   if {![string is space [get_flow_config -quiet init_power_intent_files 1801]]} {
+#@                                :     read_power_intent -1801 [get_flow_config init_power_intent_files 1801]
+#@                                :   }
+#@ (flow_step:read_power_intent) 5:   if {![string is space [get_flow_config -quiet init_power_intent_files cpf]]} {
+#@                                :     read_power_intent -cpf [get_flow_config init_power_intent_files cpf]
+#@                                :   }
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:run_init_design) 2:   set_db init_ground_nets VSS
+#@ (flow_step:run_init_design) 3:   set_db init_power_nets VDD
+#@ (flow_step:run_init_design) 5:   init_design
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): write_db -all_root_attributes -to_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_generic.init_design.run_init_design.db
+#@ (flow_step:init_genus_yaml)  2:   #- extend flow report name based on context
+#@ (flow_step:init_genus_yaml)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                               :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                               :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                               :     }
+#@                               :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                               :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                               :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                               :     }
+#@                               :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                               :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                               :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                               :     }
+#@                               :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                               :     set_db flow_report_name [get_db flow_branch]
+#@                               :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                               :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                               :   } else {
+#@                               :   }
+#@ (flow_step:init_genus_yaml) 22:   #- Create report dir (if necessary)
+#@ (flow_step:init_genus_yaml) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:init_genus_yaml)  2:   # Timing attributes  [get_db -category tim]
+#@ (flow_step:init_genus_yaml)  3:   #-------------------------------------------------------------------------------
+#@ (flow_step:init_genus_yaml)  4:   set_db ocv_mode                         true
+#@ (flow_step:init_genus_yaml)  6:   # Routing attributes  [get_db -category route]
+#@ (flow_step:init_genus_yaml)  7:   #-------------------------------------------------------------------------------
+#@ (flow_step:init_genus_yaml)  8:   set_db design_top_routing_layer met5
+#@ (flow_step:init_genus_yaml)  9:   set_db design_bottom_routing_layer met1
+#@ (flow_step:init_genus_yaml) 11:   # Optimization attributes  [get_db -category netlist]
+#@ (flow_step:init_genus_yaml) 12:   #-------------------------------------------------------------------------------
+#@ (flow_step:init_genus_yaml) 13:   set_db design_flow_effort standard
+#@ (flow_step:init_genus_yaml) 14:   set_db design_power_effort none
+#@ (flow_step:init_genus_yaml) 15:   set_db opt_leakage_to_dynamic_ratio 0.5
+#@ (flow_step:init_genus_yaml) 16:   set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
+#@ (flow_step:init_genus_yaml) 17:   set_db cts_inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+#@ (flow_step:init_genus_yaml) 18:   set_db cts_clock_gating_cells ICGX1
+#@ (flow_step:init_genus_yaml) 19:   set_db cts_logic_cells {CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+#@ (flow_step:init_genus_yaml) 21:   # Physical attributes  [get_db -category phys]
+#@ (flow_step:init_genus_yaml) 22:   #-------------------------------------------------------------------------------
+#@ (flow_step:init_genus_yaml) 23:   set_db design_process_node 130
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:init_genus_user)  2:   set_db heartbeat 300
+#@ (flow_step:init_genus_user)  3:   set_db max_cpus_per_server 16
+#@ (flow_step:init_genus_user)  4:   # Timing attributes  [get_db -category tim]
+#@ (flow_step:init_genus_user)  5:   #-----------------------------------------------------------------------------
+#@ (flow_step:init_genus_user)  6:   set_db timing_apply_default_primary_input_assertion true
+#@ (flow_step:init_genus_user)  7:   set_db timing_analysis_async_checks     async
+#@ (flow_step:init_genus_user)  9:   # Optimization attributes  [get_db -category netlist]
+#@ (flow_step:init_genus_user) 10:   #-----------------------------------------------------------------------------
+#@ (flow_step:init_genus_user) 12:   # Datapath attributes  [get_db -category dp]
+#@ (flow_step:init_genus_user) 13:   #-----------------------------------------------------------------------------
+#@ (flow_step:init_genus_user) 15:   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
+#@ (flow_step:init_genus_user) 16:   #-----------------------------------------------------------------------------
+#@ (run_flow): pop_snapshot_stack
+#@ (flow_step:set_dont_use)  2:   #- extend flow report name based on context
+#@ (flow_step:set_dont_use)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                            :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                            :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                            :     }
+#@                            :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                            :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                            :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                            :     }
+#@                            :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                            :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                            :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                            :     }
+#@                            :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                            :     set_db flow_report_name [get_db flow_branch]
+#@                            :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                            :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                            :   } else {
+#@                            :   }
+#@ (flow_step:set_dont_use) 22:   #- Create report dir (if necessary)
+#@ (flow_step:set_dont_use) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:set_dont_use) 2:   #- disable base_cell usage during optimization
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:commit_power_intent)  2:   if {[join [dict values [get_db init_power_intent_files]]] ne {}} {
+#@                                   :     #- apply power intent rules
+#@                                   :     if {[is_flow -quiet -inside synthesis]} {
+#@                                   :       apply_power_intent -summary
+#@                                   :     }
+#@                                   :   
+#@                                   :     #- commit power intent rules
+#@                                   :     commit_power_intent
+#@                                   :   }
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:run_syn_generic) 2:   #- Synthesize to generic gates
+#@ (flow_step:run_syn_generic) 3:   syn_generic
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:block_finish)  2:   apply {{} {
+#@                            :     #- Make sure flow_report_name is reset from any reports executed during the flow
+#@                            :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                            :     #- Set DB for handoff to Innovus
+#@                            :     if {[is_flow -inside flow:syn_opt]} {
+#@                            :       set_db flow_write_db_common true
+#@                            :     }
+#@                            :   
+#@                            :     #- Set value for SPEF output file generation
+#@                            :     if {[get_db flow_branch] ne ""} {
+#@                            :       set out_dir [file join [get_db flow_db_directory] [get_db flow_branch]_[get_db flow_report_name]]
+#@                            :     } else {
+#@                            :       set out_dir [file join [get_db flow_db_directory] [get_db flow_report_name]]
+#@                            :     }
+#@                            :     set_db flow_spef_directory $out_dir
+#@                            :   
+#@                            :     #- Store non-default root attributes to metrics
+#@                            :     catch {report_obj -tcl} flow_root_config
+#@                            :     if {[dict exists $flow_root_config root:/]} {
+#@                            :       set flow_root_config [dict get $flow_root_config root:/]
+#@                            :     } elseif {[dict exists $flow_root_config root:]} {
+#@                            :       set flow_root_config [dict get $flow_root_config root:]
+#@                            :     } else {
+#@                            :     }
+#@                            :     foreach key [dict keys $flow_root_config] {
+#@                            :       if {[string length [dict get $flow_root_config $key]] > 200} {
+#@                            :         dict set flow_root_config $key "\[long value truncated\]"
+#@                            :       }
+#@                            :     }
+#@                            :     set_metric -name flow.root_config -value $flow_root_config
+#@                            :   }}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): write_db -all_root_attributes -to_file /nethome/dkhalil8/Physical-Design-Onboarding/RTL2GDS/design/dbs/syn_generic.db
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:schedule_syn_generic_report_synth) 2:     schedule_flow -flow report_synth -include_in_metrics
+#@ (run_flow): pop_snapshot_stack
