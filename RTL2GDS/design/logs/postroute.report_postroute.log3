@@ -722,3 +722,849 @@ End: Design checking
 UM: Running design category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:          18.55             18                                      report_check_design
+#@ Begin verbose flow_step report_area_innovus
+@@flow 2: report_summary -no_html -out_dir debug -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]qor.rpt]
+Start to collect the design information.
+Build netlist information for Cell counter_16bit.
+Finished collecting the design information.
+Generating standard cells used in the design report.
+Analyze library ... 
+Analyze netlist ... 
+Analyze timing ... 
+Analyze floorplan/placement ... 
+Analysis Routing ...
+Report saved in file reports/postroute/qor.rpt
+@@flow 3: report_area -min_count 1000 -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]area.summary.rpt]
+#@ End verbose flow_step report_area_innovus
+UM: Running design category ...
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           9.06              8                                      report_area_innovus
+#@ Begin verbose flow_step report_early_summary_innovus
+@flow 2: #- Update the timer for hold and write reports
+@@flow 3: time_design -expanded_views -hold -report_only -report_dir debug -report_prefix [get_db flow_report_name]
+*** time_design #1 [begin] () : totSession cpu/real = 0:01:38.9/0:01:41.1 (1.0), mem = 3142.6M
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+Saving timing graph ...
+Done save timing graph
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: counter_16bit
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=3115.32)
+Total number of fetched objects 203
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 205,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3126.5 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3126.5 CPU=0:00:00.1 REAL=0:00:00.0)
+Save waveform /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a_ece-rschsrv.ece.gatech.edu_dkhalil8_2du9di/.AAE_O1zCEV/.AAE_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a/waveform.data...
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3125.2M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3125.2M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=3090.21)
+Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Skipped = 6. 
+Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Analyzed = 203. 
+Total number of fetched objects 203
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 205,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3092.21 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3092.21 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.6 real=0:00:01.0 totSessionCpu=0:01:40 mem=3086.3M)
+Restoring timing graph ...
+AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+Done restore timing graph
+
+OptSummary:
+
+------------------------------------------------------------------
+         time_design Summary
+------------------------------------------------------------------
+
+Hold views included:
+ tt_v1.8_25C_Nominal_25_func
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.078  |  0.106  |  0.078  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   32    |   16    |   32    |
++--------------------+---------+---------+---------+
+|tt_v1.8_25C_Nominal_25_func
+|                    |  0.078  |  0.106  |  0.078  |
+|                    |  0.000  |  0.000  |  0.000  |
+|                    |    0    |    0    |    0    |
+|                    |   32    |   16    |   32    |
++--------------------+---------+---------+---------+
+
+Density: 0.219%
+       (100.000% with Fillers)
+------------------------------------------------------------------
+Reported timing to dir debug
+Total CPU time: 1.8 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 3107.144531 Mbytes
+Reset AAE Options
+*** time_design #1 [finish] () : cpu/real = 0:00:01.8/0:00:02.0 (0.9), totSession cpu/real = 0:01:40.7/0:01:43.1 (1.0), mem = 3107.1M
+@flow 5: #- Reports that describe timing health
+@@flow 6: report_timing_summary -checks {hold drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.analysis_summary.rpt]
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: counter_16bit
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=3077.02)
+Total number of fetched objects 203
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 205,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3091.03 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3091.03 CPU=0:00:00.1 REAL=0:00:00.0)
+Save waveform /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a_ece-rschsrv.ece.gatech.edu_dkhalil8_2du9di/.AAE_O1zCEV/.AAE_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a/waveform.data...
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3091.0M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3091.0M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=3096.27)
+Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Skipped = 6. 
+Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Analyzed = 203. 
+Total number of fetched objects 203
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 205,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3098.17 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3098.17 CPU=0:00:00.0 REAL=0:00:00.0)
+@@flow 7: report_timing_summary -checks {hold drv} -expand_views > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.view_summary.rpt]
+The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+@@flow 8: report_timing_summary -checks {hold drv} -expand_views -expand_clocks launch_capture  > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.group_summary.rpt]
+The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+@@flow 9: report_constraint -early -all_violators -drv_violation_type {min_capacitance min_transition min_fanout} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.all_violators.rpt]
+@@flow 10: set_metric -name timing.hold.type -value gba
+#@ End verbose flow_step report_early_summary_innovus
+UM: Running hold category ...
+**WARN: (TCLCMD-1469):	No timing paths found matching the specified criteria. Empty collection returned.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:          11.47             11                                      report_early_summary_innovus
+#@ Begin verbose flow_step report_early_paths
+@flow 2: #- Reports that show detailed early timing with Graph Based Analysis (GBA)
+@@flow 3: report_timing -early -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.endpoint.rpt]
+@@flow 4: report_timing -early -max_paths 1   -nworst 1 -path_type full_clock -net > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.worst.rpt]
+@@flow 5: report_timing -early -max_paths 500 -nworst 1 -path_type full_clock      > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.gba.rpt]
+@flow 6: if {![get_feature report_pba]} {
+@flow 7:
+@flow 8:     #- Reports that show detailed timing with Path Based Analysis (PBA)
+@flow 9: if {[is_flow -quiet -inside flow:sta]} {...}
+@flow 12: }
+#@ End verbose flow_step report_early_paths
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           8.65              8                                      report_early_paths
+#@ Begin verbose flow_step report_late_summary_innovus
+@flow 2: #- Update the timer for setup and write reports
+@@flow 3: time_design -expanded_views -report_only -report_dir debug -report_prefix [get_db flow_report_name]
+*** time_design #2 [begin] () : totSession cpu/real = 0:01:59.1/0:02:01.8 (1.0), mem = 3166.8M
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: counter_16bit
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=3150.22)
+Total number of fetched objects 203
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 205,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3162.52 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3162.52 CPU=0:00:00.1 REAL=0:00:00.0)
+Save waveform /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a_ece-rschsrv.ece.gatech.edu_dkhalil8_2du9di/.AAE_O1zCEV/.AAE_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a/waveform.data...
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3163.1M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3163.1M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=3133.55)
+Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Skipped = 6. 
+Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Analyzed = 203. 
+Total number of fetched objects 203
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 205,  7.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3135.32 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3135.32 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.7 real=0:00:01.0 totSessionCpu=0:02:00 mem=3131.0M)
+** INFO: Initializing Glitch Interface
+** INFO: Initializing Glitch Interface
+
+OptSummary:
+
+------------------------------------------------------------------
+         time_design Summary
+------------------------------------------------------------------
+
+Setup views included:
+ tt_v1.8_25C_Nominal_25_func 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -0.092  | -0.092  |  0.076  |
+|           TNS (ns):| -0.862  | -0.862  |  0.000  |
+|    Violating Paths:|   14    |   14    |    0    |
+|          All Paths:|   32    |   16    |   32    |
++--------------------+---------+---------+---------+
+|tt_v1.8_25C_Nominal_25_func
+|                    | -0.092  | -0.092  |  0.076  |
+|                    | -0.862  | -0.862  |  0.000  |
+|                    |   14    |   14    |    0    |
+|                    |   32    |   16    |   32    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 0.219%
+       (100.000% with Fillers)
+------------------------------------------------------------------
+Reported timing to dir debug
+Total CPU time: 1.02 sec
+Total Real time: 3.0 sec
+Total Memory Usage: 3131.933594 Mbytes
+Reset AAE Options
+*** time_design #2 [finish] () : cpu/real = 0:00:01.0/0:00:02.2 (0.5), totSession cpu/real = 0:02:00.1/0:02:04.0 (1.0), mem = 3131.9M
+@flow 5: #- Reports that describe timing health
+@@flow 6: report_timing_summary -checks {setup drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.analysis_summary.rpt]
+@@flow 7: report_timing_summary -checks {setup drv} -expand_views > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.view_summary.rpt]
+The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+@@flow 8: report_timing_summary -checks {setup drv} -expand_views -expand_clocks launch_capture  > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.group_summary.rpt]
+The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+@@flow 9: report_constraint -late -all_violators -drv_violation_type {max_capacitance max_transition max_fanout} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.all_violators.rpt]
+@@flow 10: set_metric -name timing.setup.type -value gba
+@@flow 11: set_metric -name timing.drv.report_file -value [file join [get_db flow_report_name] [get_db flow_report_prefix]setup.all_violators.rpt]
+#@ End verbose flow_step report_late_summary_innovus
+UM: Running setup category ...
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:          10.03             10         -0.862 ns         -0.092 ns  report_late_summary_innovus
+#@ Begin verbose flow_step report_late_paths
+@flow 2: #- Reports that show detailed timing with Graph Based Analysis (GBA)
+@@flow 3: report_timing -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.endpoint.rpt]
+@@flow 4: report_timing -max_paths 1   -nworst 1 -path_type full_clock -net > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.worst.rpt]
+@@flow 5: report_timing -max_paths 500 -nworst 1 -path_type full_clock      > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.gba.rpt]
+@flow 6: if {![get_feature report_pba]} {
+@flow 7:
+@flow 8:     #- Reports that show detailed timing with Path Based Analysis (PBA)
+@flow 9: if {[is_flow -quiet -inside flow:sta]} {...}
+@flow 12: }
+#@ End verbose flow_step report_late_paths
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           8.76              8                                      report_late_paths
+#@ Begin verbose flow_step report_clock_timing
+@flow 2: #- Reports that check clock implementation
+@@flow 3: report_clock_timing -type summary > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.summary.rpt]
+@@flow 4: report_clock_timing -type latency > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.latency.rpt]
+@@flow 5: report_clock_timing -type skew    > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.skew.rpt]
+#@ End verbose flow_step report_clock_timing
+UM: Running clock category ...
+Updating ideal nets and annotations...
+Clock tree spec update: Ideal nets, transition and delay annotations were updated to match active timing constraints.
+Updating ideal nets and annotations done. (took cpu=0:00:00.0 real=0:00:00.0)
+No differences between SDC and CTS ideal net status found.
+Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.early...
+Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.late...
+Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Clock DAG stats:
+================
+
+-------------------------------------------------------
+Cell type                 Count    Area     Capacitance
+-------------------------------------------------------
+Buffers                     0      0.000       0.000
+Inverters                   0      0.000       0.000
+Integrated Clock Gates      0      0.000       0.000
+Discrete Clock Gates        0      0.000       0.000
+Clock Logic                 0      0.000       0.000
+All                         0      0.000       0.000
+-------------------------------------------------------
+
+Clock DAG miscellaneous counts:
+===============================
+
+------------------------------
+Type                     Count
+------------------------------
+Roots                      1
+Preserved Ports            0
+Multiple Clock Inputs      0
+------------------------------
+
+
+Clock DAG sink counts:
+======================
+
+-------------------------
+Sink type           Count
+-------------------------
+Regular              16
+Enable Latch          0
+Load Capacitance      0
+Antenna Diode         0
+Node Sink             0
+Port                  0
+Total                16
+-------------------------
+
+
+Clock DAG wire lengths:
+=======================
+
+--------------------
+Type     Wire Length
+--------------------
+Top          0.000
+Trunk        0.000
+Leaf       278.385
+Total      278.385
+--------------------
+
+
+Clock DAG hp wire lengths:
+==========================
+
+-----------------------
+Type     hp Wire Length
+-----------------------
+Top           0.000
+Trunk         0.000
+Leaf        171.120
+Total       171.120
+-----------------------
+
+
+Clock DAG capacitances:
+=======================
+
+--------------------------------
+Type     Gate     Wire     Total
+--------------------------------
+Top      0.000    0.000    0.000
+Trunk    0.000    0.000    0.000
+Leaf     0.064    0.047    0.110
+Total    0.064    0.047    0.110
+--------------------------------
+
+
+Clock DAG sink capacitances:
+============================
+
+-----------------------------------------------
+Total    Average    Std. Dev.    Min      Max
+-----------------------------------------------
+0.030     0.002       0.000      0.002    0.002
+-----------------------------------------------
+
+
+Clock DAG net violations:
+=========================
+
+None
+
+
+Clock DAG primary half-corner transition distribution:
+======================================================
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Net Type    Target    Count    Average    Std. Dev.    Min      Max      Distribution                                                              Over Target
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Leaf        0.150       1       0.005       0.000      0.005    0.005    {1 <= 0.090ns, 0 <= 0.120ns, 0 <= 0.135ns, 0 <= 0.142ns, 0 <= 0.150ns}         -
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Please note that the following tables reflect only the defined clock trees, so the flop counts might not include all flops in your design.
+
+Clock Tree Summary:
+===================
+
+---------------------------------------------------------------------------------------------------------------------
+Clock Tree  Clock  Bufs  Invs  Other  Max       Max     Max     Max          Standard   Wire   Gate   Clock Tree Root
+Name        Gates              Clock  Non-leaf  Leaf    Length  Source-sink  cell area  cap    cap    
+                               Cells  Fanout    Fanout  (um)    Resistance   (um^2)     (pF)   (pF)   
+                                                                (Ohms)                                
+---------------------------------------------------------------------------------------------------------------------
+core_clock    0     0     0      0       0        16    180.36    1039.06      0.000    0.047  0.064  clk
+---------------------------------------------------------------------------------------------------------------------
+
+Clock Sink Summary:
+===================
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Clock Tree  Explicit      Implicit      Explicit     Implicit     Explicit   Implicit   Posedge  Negedge  Memory  Enable  Non enable  Other
+Name        exclude pins  exclude pins  ignore pins  ignore pins  stop pins  stop pins  Flops    Flops    Clock   Latch   Latch       Sinks
+                                                                                                          Pins    Sinks   Sinks       
+-------------------------------------------------------------------------------------------------------------------------------------------
+core_clock       0             0             0            0           0          0        16        0       0       0         0         0
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Summary across all clock trees:
+===============================
+
+------------------------------------------------------------------------------------------------------------
+Clock  Bufs  Invs  Other  Max       Average   Max     Average  Max      Max          Standard   Wire   Gate
+Gates              Clock  Non-leaf  Non-leaf  Leaf    Leaf     Length   Source-sink  cell area  cap    cap
+                   Cells  Fanout    Fanout    Fanout  Fanout   (um)     Resistance   (um^2)     (pF)   (pF)
+                                                                        (Ohms)                         
+------------------------------------------------------------------------------------------------------------
+  0     0     0      0       0         0        16      16     180.360    103.906      0.000    0.047  0.064
+------------------------------------------------------------------------------------------------------------
+
+Clock Sink Summary across all clock trees:
+==========================================
+
+-------------------------------------------------------------------------------------------------------------------------------
+Explicit      Implicit      Explicit     Implicit     Explicit   Implicit   Posedge  Negedge  Memory  Enable  Non enable  Other
+exclude pins  exclude pins  ignore pins  ignore pins  stop pins  stop pins  Flops    Flops    Clock   Latch   Latch       Sinks
+                                                                                              Pins    Sinks   Sinks       
+-------------------------------------------------------------------------------------------------------------------------------
+     0             0             0            0           0          0        16        0       0       0         0         0
+-------------------------------------------------------------------------------------------------------------------------------
+
+Physical metrics across all clock trees:
+========================================
+
+-----------------------------------------------------------------------
+Metric                               Minimum  Average  Maximum  Std.dev
+-----------------------------------------------------------------------
+Source-sink routed net length (um)   180.360  180.360  180.360   0.000
+Source-sink manhattan distance (um)  171.120  171.120  171.120   0.000
+Source-sink resistance (Ohm)         103.906  103.906  103.906   0.000
+-----------------------------------------------------------------------
+
+Transition distribution for half-corner tt_v1.8_25C_Nominal_25:both.late:
+=========================================================================
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Net Type    Target    Count    Average    Std. Dev.    Min      Max      Distribution                                                              Over Target
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Leaf        0.150       1       0.005       0.000      0.005    0.005    {1 <= 0.090ns, 0 <= 0.120ns, 0 <= 0.135ns, 0 <= 0.142ns, 0 <= 0.150ns}         -
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Count of violations across all clock trees:
+===========================================
+
+---------------------------------------------------------------------------------------
+Clock Tree  # Max capacitance  # Max resistance  # Max length  # Max fanout  # Slew
+Name        violations         violations        violations    violations    violations
+---------------------------------------------------------------------------------------
+core_clock          0                 0               0             0            0
+---------------------------------------------------------------------------------------
+Total               0                 0               0             0            0
+---------------------------------------------------------------------------------------
+
+Note the above table per clock tree is based on CCOpt clock tree view. The violations are counted across half corners.
+
+Found a total of 0 clock tree pins with max capacitance violations.
+Found a total of 0 clock tree nets with max resistance violations.
+Found a total of 0 clock tree nets with max length violations.
+Found a total of 0 clock tree nets with max fanout violations.
+Found a total of 0 clock tree pins with a slew violation.
+
+Clock Timing Summary:
+=====================
+
+Target and measured clock slews (in ns):
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Clock tree  Timing Corner                      Worst Rising  Worst Falling  Worst Rising  Worst Falling  Leaf Slew    Leaf Slew  Trunk Slew   Trunk Slew
+                                               Leaf Slew     Leaf Slew      Trunk Slew    Trunk Slew     Target Type  Target     Target Type  Target
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+core_clock  tt_v1.8_25C_Nominal_25:both.early     0.005          0.005           -              -        ignored          -      ignored          -
+core_clock  tt_v1.8_25C_Nominal_25:both.late      0.005          0.005           -              -        explicit      100.000   explicit      100.000
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+auto extracted - target was extracted from SDC.
+auto computed - target was computed when balancing trees.
+
+Total Transition Slacks Summary:
+================================
+
+-------------------------------------------------------------------------------------------------
+Total       Total Leaf    Total        Total Leaf    Mean        Median      Std.Dev     Worst
+Overslew    Overslew      Underslew    Underslew     Overslew    Overslew    Overslew    Overslew
+-------------------------------------------------------------------------------------------------
+ 0.000        0.000        -0.145        -0.145       0.000       0.000       0.000       0.000
+-------------------------------------------------------------------------------------------------
+
+Transition times measured in the half-corner tt_v1.8_25C_Nominal_25:both.late
+
+Top Underslews:
+
+------------------------------
+Driving node    Underslew (ns)
+------------------------------
+core_clock          -0.145
+------------------------------
+
+
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           8.77              8                                      report_clock_timing
+#@ Begin verbose flow_step report_power_innovus
+@@flow 2: report_power -no_wrap -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]power.all.rpt]
+env CDS_WORKAREA is set to /nethome/dkhalil8/InnovateECE/RTL2GDS/design
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           1.8V	    VDD
+             0V	    VSS
+           1.8V	    VDD
+Using Power View tt_v1.8_25C_Nominal_25_func
+.
+Load RC corner of view tt_v1.8_25C_Nominal_25_func
+
+Begin Power Analysis
+
+             0V	    VSS
+           1.8V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+core_clock(1000MHz) CK: assigning clock core_clock to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 10%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 20%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 30%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 40%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 50%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 60%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 70%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 80%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 90%
+
+Finished Levelizing
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+
+Starting Activity Propagation
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 10%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 20%
+
+Finished Activity Propagation
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+ ... Calculating switching power
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 10%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 20%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 30%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 40%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 50%
+ ... Calculating internal and leakage power
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 60%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 70%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 80%
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 90%
+
+Finished Calculating power
+2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.92MB/6297.27MB/3183.92MB)
+
+Begin Processing User Attributes
+
+Begin Processing set_power
+Ended Processing set_power: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=3184.28MB/6297.27MB/3184.28MB)
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3184.28MB/6297.27MB/3184.28MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3184.28MB/6297.27MB/3184.28MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=3184.41MB/6297.27MB/3184.41MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.35743932 	   53.2344%
+Total Switching Power:       1.19237549 	   46.7611%
+Total Leakage Power:         0.00011459 	    0.0045%
+Total Power:                 2.54992940
+-----------------------------------------------------------------------------------------
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=3184.41MB/6297.27MB/3184.41MB)
+
+
+Output file is reports/postroute/power.all.rpt
+#@ End verbose flow_step report_power_innovus
+UM: Running power category ...
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           9.04              8                                      report_power_innovus
+#@ Begin verbose flow_step report_route_drc
+@flow 2: #- Reports that check signal routing
+@flow 3: if {[is_flow -inside flow:report_floorplan]} {...
+@flow 5: } else {
+@@flow 6: check_drc -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]route.drc.rpt]
+#-check_same_via_cell true               # bool, default=false, user setting
+#-report reports/postroute/route.drc.rpt # string, default="", user setting
+ *** Starting Verify DRC (MEM: 3192.5) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU TIME: 0:00:00.4  ELAPSED TIME: 0:00:01.0  MEM: 0.8M) ***
+
+@@flow 7: check_connectivity -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]route.open.rpt]
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Feb 14 13:00:05 2026
+
+Design Name: counter_16bit
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (1025.8000, 1301.8000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Sat Feb 14 13:00:06 2026
+Time Elapsed: 0:00:01.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.1  MEM: 0.598M)
+
+@flow 8: }
+@@flow 9: set_metric -name check.drc.report_file -value [file join [get_db flow_report_name] [get_db flow_report_prefix]route.drc.rpt]
+#@ End verbose flow_step report_route_drc
+UM: Running route category ...
+UM: No route DRC markers present ... skipping
+UM: No route DRC markers present ... skipping
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           9.38             10                                      report_route_drc
+#@ Begin verbose flow_step report_route_density
+@@flow 2: check_metal_density -report [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]route.metal_density.rpt]
+
+******** Start: VERIFY DENSITY ********
+**WARN: (IMPVMD-31):	Minimum window density for layer "met1" is missing. Using default value 20.0.
+**WARN: (IMPVMD-32):	Maximum window density for layer "met1" is missing. Using default value 80.0.
+**WARN: (IMPVMD-33):	Window size (width) for layer "met1" is missing. Using default value 100.
+**WARN: (IMPVMD-34):	Window size (height) for layer "met1" is missing. Using default value 100.
+**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met1" is missing. Using default value 50.
+**WARN: (IMPVMD-36):	Window step (vertical) for layer "met1" is missing. Using default value 50.
+**WARN: (IMPVMD-31):	Minimum window density for layer "met2" is missing. Using default value 20.0.
+**WARN: (IMPVMD-32):	Maximum window density for layer "met2" is missing. Using default value 80.0.
+**WARN: (IMPVMD-33):	Window size (width) for layer "met2" is missing. Using default value 100.
+**WARN: (IMPVMD-34):	Window size (height) for layer "met2" is missing. Using default value 100.
+**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met2" is missing. Using default value 50.
+**WARN: (IMPVMD-36):	Window step (vertical) for layer "met2" is missing. Using default value 50.
+**WARN: (IMPVMD-31):	Minimum window density for layer "met3" is missing. Using default value 20.0.
+**WARN: (IMPVMD-32):	Maximum window density for layer "met3" is missing. Using default value 80.0.
+**WARN: (IMPVMD-33):	Window size (width) for layer "met3" is missing. Using default value 100.
+**WARN: (IMPVMD-34):	Window size (height) for layer "met3" is missing. Using default value 100.
+**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met3" is missing. Using default value 50.
+**WARN: (IMPVMD-36):	Window step (vertical) for layer "met3" is missing. Using default value 50.
+**WARN: (IMPVMD-31):	Minimum window density for layer "met4" is missing. Using default value 20.0.
+**WARN: (IMPVMD-32):	Maximum window density for layer "met4" is missing. Using default value 80.0.
+**WARN: (IMPVMD-33):	Window size (width) for layer "met4" is missing. Using default value 100.
+**WARN: (IMPVMD-34):	Window size (height) for layer "met4" is missing. Using default value 100.
+**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met4" is missing. Using default value 50.
+**WARN: (IMPVMD-36):	Window step (vertical) for layer "met4" is missing. Using default value 50.
+**WARN: (IMPVMD-31):	Minimum window density for layer "met5" is missing. Using default value 20.0.
+**WARN: (IMPVMD-32):	Maximum window density for layer "met5" is missing. Using default value 80.0.
+**WARN: (IMPVMD-33):	Window size (width) for layer "met5" is missing. Using default value 100.
+**WARN: (IMPVMD-34):	Window size (height) for layer "met5" is missing. Using default value 100.
+**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met5" is missing. Using default value 50.
+**WARN: (IMPVMD-36):	Window step (vertical) for layer "met5" is missing. Using default value 50.
+Density calculation ...... Slot :   1 of   2
+Density calculation ...... Slot :   2 of   2
+
+Densities of non-overlapping windows have been saved in FE DB.
+
+A total of 2600 density violation(s).
+Windows < Min. Density = 2600
+Windows > Max. Density = 0
+Windows < Min. Union. Density = 0
+Windows > Max. Union. Density = 0
+
+******** End: VERIFY DENSITY ********
+VMD: elapsed time: 0.00
+     (CPU Time: 0:00:00.1  MEM: 0.422M)
+
+@@flow 3: check_cut_density -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]route.cut_density.rpt]
+
+******** Start: VERIFY CUT DENSITY ********
+**WARN: (IMPVMD-84):	Maximum window density for layer "mcon" is missing. Using default value 30.0.
+**WARN: (IMPVMD-83):	Minimum window density for layer "mcon" is missing. Using default value 0.000000.
+**WARN: (IMPVMD-85):	Window size (width) for layer "mcon" is missing. Using default value 10.
+**WARN: (IMPVMD-86):	Window size (height) for layer "mcon" is missing. Using default value 10.
+**WARN: (IMPVMD-87):	Window step (horizontal) for layer "mcon" is missing. Using default value 5.
+**WARN: (IMPVMD-88):	Window step (vertical) for layer "mcon" is missing. Using default value 5.
+**WARN: (IMPVMD-84):	Maximum window density for layer "via" is missing. Using default value 30.0.
+**WARN: (IMPVMD-83):	Minimum window density for layer "via" is missing. Using default value 0.045000.
+**WARN: (IMPVMD-85):	Window size (width) for layer "via" is missing. Using default value 10.
+**WARN: (IMPVMD-86):	Window size (height) for layer "via" is missing. Using default value 10.
+**WARN: (IMPVMD-87):	Window step (horizontal) for layer "via" is missing. Using default value 5.
+**WARN: (IMPVMD-88):	Window step (vertical) for layer "via" is missing. Using default value 5.
+**WARN: (IMPVMD-84):	Maximum window density for layer "via2" is missing. Using default value 30.0.
+**WARN: (IMPVMD-83):	Minimum window density for layer "via2" is missing. Using default value 0.080000.
+**WARN: (IMPVMD-85):	Window size (width) for layer "via2" is missing. Using default value 10.
+**WARN: (IMPVMD-86):	Window size (height) for layer "via2" is missing. Using default value 10.
+**WARN: (IMPVMD-87):	Window step (horizontal) for layer "via2" is missing. Using default value 5.
+**WARN: (IMPVMD-88):	Window step (vertical) for layer "via2" is missing. Using default value 5.
+**WARN: (IMPVMD-84):	Maximum window density for layer "via3" is missing. Using default value 30.0.
+**WARN: (IMPVMD-83):	Minimum window density for layer "via3" is missing. Using default value 0.080000.
+**WARN: (IMPVMD-85):	Window size (width) for layer "via3" is missing. Using default value 10.
+**WARN: (IMPVMD-86):	Window size (height) for layer "via3" is missing. Using default value 10.
+**WARN: (IMPVMD-87):	Window step (horizontal) for layer "via3" is missing. Using default value 5.
+**WARN: (IMPVMD-88):	Window step (vertical) for layer "via3" is missing. Using default value 5.
+**WARN: (IMPVMD-84):	Maximum window density for layer "via4" is missing. Using default value 30.0.
+**WARN: (IMPVMD-83):	Minimum window density for layer "via4" is missing. Using default value 1.280000.
+**WARN: (IMPVMD-85):	Window size (width) for layer "via4" is missing. Using default value 10.
+**WARN: (IMPVMD-86):	Window size (height) for layer "via4" is missing. Using default value 10.
+**WARN: (IMPVMD-87):	Window step (horizontal) for layer "via4" is missing. Using default value 5.
+**WARN: (IMPVMD-88):	Window step (vertical) for layer "via4" is missing. Using default value 5.
+***
+
+A total of 132103 density violation(s).
+Windows < Min. Density = 132103
+Windows > Max. Density = 0
+Windows < Min. Union. Density = 0
+Windows > Max. Union. Density = 0
+
+******** End: VERIFY CUT DENSITY ********
+VCD: elapsed time: 0.00
+     (CPU Time: 0:00:00.6  MEM: 0.000M)
+
+#@ End verbose flow_step report_route_density
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           9.55              9                                      report_route_density
+#@ Begin verbose flow_step report_finish
+#@ End verbose flow_step report_finish
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           8.88              8                                      report_finish
+
+Program version = 25.11-s102_1
+Working directory = /nethome/dkhalil8/InnovateECE/RTL2GDS/design
+Databases directory = /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs
+Starting time = Feb 14, 2026 12:58:09
+Ending time = Feb 14, 2026 13:00:33
+
+Run Flow Summary
+---------------------
+
+Steps run:  report_start init_innovus.init_innovus_yaml init_innovus.init_innovus_user report_check_design report_area_innovus report_early_summary_innovus report_early_paths report_late_summary_innovus report_late_paths report_clock_timing report_power_innovus report_route_drc report_route_density report_finish
+
+Step status:
+     report_start                           success
+     init_innovus.init_innovus_yaml         success
+     init_innovus.init_innovus_user         success
+     report_check_design                    success
+     report_area_innovus                    success
+     report_early_summary_innovus           success
+     report_early_paths                     success
+     report_late_summary_innovus            success
+     report_late_paths                      success
+     report_clock_timing                    success
+     report_power_innovus                   success
+     report_route_drc                       success
+     report_route_density                   success
+     report_finish                          success
+
+ ---------------------------------------------------------------------------------------------------- 
+| Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
+|-------------+------------------+-------------------+-----------------------+-----------------------|
+| syn_generic | 0:02:19          | 0:02:35           |                    -5 |                -0.413 |
+| syn_map     | 0:01:50          | 0:02:01           |                    -4 |                -0.297 |
+| syn_opt     | 0:02:07          | 0:02:17           |                    -3 |                -0.233 |
+| floorplan   | 0:02:25          | 0:02:31           |                       |                       |
+| prects      | 0:03:54          | 0:04:44           |                    -1 |                -0.086 |
+| cts         | 0:03:47          | 0:04:31           |                    -1 |                -0.098 |
+| postcts     | 0:02:39          | 0:02:45           |                    -1 |                -0.095 |
+| route       | 0:03:02          | 0:03:06           |                    -1 |                -0.092 |
+| postroute   | 0:04:22          | 0:05:00           |                    -1 |                -0.092 |
+ ---------------------------------------------------------------------------------------------------- 
+*** Message Summary: 235 warning(s), 1 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 3181.891M, initial mem = 946.953M) ***
+--- Ending "Innovus" (totcpu=0:03:04, real=0:03:12, mem=3181.9M) ---

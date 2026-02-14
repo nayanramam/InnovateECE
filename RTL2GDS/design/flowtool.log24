@@ -21203,3 +21203,998 @@ postroute.report_postroute:#@ End verbose flow_step report_check_design
 postroute.report_postroute:UM: Running design category ...
 postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 postroute.report_postroute:UM:          18.55             18                                      report_check_design
+postroute.report_postroute:#@ Begin verbose flow_step report_area_innovus
+postroute.report_postroute:@@flow 2: report_summary -no_html -out_dir debug -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]qor.rpt]
+postroute.report_postroute:Start to collect the design information.
+postroute.report_postroute:Build netlist information for Cell counter_16bit.
+postroute.report_postroute:Finished collecting the design information.
+postroute.report_postroute:Generating standard cells used in the design report.
+postroute.report_postroute:Analyze library ... 
+postroute.report_postroute:Analyze netlist ... 
+postroute.report_postroute:Analyze timing ... 
+postroute.report_postroute:Analyze floorplan/placement ... 
+postroute.report_postroute:Analysis Routing ...
+postroute.report_postroute:Report saved in file reports/postroute/qor.rpt
+postroute.report_postroute:@@flow 3: report_area -min_count 1000 -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]area.summary.rpt]
+postroute.report_postroute:#@ End verbose flow_step report_area_innovus
+postroute.report_postroute:UM: Running design category ...
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:           9.06              8                                      report_area_innovus
+postroute.report_postroute:#@ Begin verbose flow_step report_early_summary_innovus
+postroute.report_postroute:@flow 2: #- Update the timer for hold and write reports
+postroute.report_postroute:@@flow 3: time_design -expanded_views -hold -report_only -report_dir debug -report_prefix [get_db flow_report_name]
+postroute.report_postroute:*** time_design #1 [begin] () : totSession cpu/real = 0:01:38.9/0:01:41.1 (1.0), mem = 3142.6M
+postroute.report_postroute: Reset EOS DB
+postroute.report_postroute:Ignoring AAE DB Resetting ...
+postroute.report_postroute:Saving timing graph ...
+postroute.report_postroute:Done save timing graph
+postroute.report_postroute:Starting delay calculation for Hold views
+postroute.report_postroute:AAE_INFO: opIsDesignInPostRouteState() is 1
+postroute.report_postroute:AAE_INFO: resetNetProps viewIdx 0 
+postroute.report_postroute:Starting SI iteration 1 using Infinite Timing Windows
+postroute.report_postroute:#################################################################################
+postroute.report_postroute:# Design Stage: PostRoute
+postroute.report_postroute:# Design Name: counter_16bit
+postroute.report_postroute:# Design Mode: 130nm
+postroute.report_postroute:# Analysis Mode: MMMC OCV 
+postroute.report_postroute:# Parasitics Mode: SPEF/RCDB 
+postroute.report_postroute:# Signoff Settings: SI On 
+postroute.report_postroute:#################################################################################
+postroute.report_postroute:AAE_INFO: 1 threads acquired from CTE.
+postroute.report_postroute:Start delay calculation (fullDC) (1 T). (MEM=3115.32)
+postroute.report_postroute:Total number of fetched objects 203
+postroute.report_postroute:AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+postroute.report_postroute:AAE_INFO-618: Total number of nets in the design is 205,  100.0 percent of the nets selected for SI analysis
+postroute.report_postroute:End delay calculation. (MEM=3126.5 CPU=0:00:00.1 REAL=0:00:00.0)
+postroute.report_postroute:End delay calculation (fullDC). (MEM=3126.5 CPU=0:00:00.1 REAL=0:00:00.0)
+postroute.report_postroute:Save waveform /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a_ece-rschsrv.ece.gatech.edu_dkhalil8_2du9di/.AAE_O1zCEV/.AAE_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a/waveform.data...
+postroute.report_postroute:Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3125.2M)
+postroute.report_postroute:Add other clocks and setupCteToAAEClockMapping during iter 1
+postroute.report_postroute:Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3125.2M)
+postroute.report_postroute:Starting SI iteration 2
+postroute.report_postroute:Start delay calculation (fullDC) (1 T). (MEM=3090.21)
+postroute.report_postroute:Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Skipped = 6. 
+postroute.report_postroute:Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Analyzed = 203. 
+postroute.report_postroute:Total number of fetched objects 203
+postroute.report_postroute:AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+postroute.report_postroute:AAE_INFO-618: Total number of nets in the design is 205,  0.0 percent of the nets selected for SI analysis
+postroute.report_postroute:End delay calculation. (MEM=3092.21 CPU=0:00:00.0 REAL=0:00:00.0)
+postroute.report_postroute:End delay calculation (fullDC). (MEM=3092.21 CPU=0:00:00.0 REAL=0:00:00.0)
+postroute.report_postroute:*** Done Building Timing Graph (cpu=0:00:00.6 real=0:00:01.0 totSessionCpu=0:01:40 mem=3086.3M)
+postroute.report_postroute:Restoring timing graph ...
+postroute.report_postroute:AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+postroute.report_postroute:Done restore timing graph
+postroute.report_postroute:
+postroute.report_postroute:OptSummary:
+postroute.report_postroute:
+postroute.report_postroute:------------------------------------------------------------------
+postroute.report_postroute:         time_design Summary
+postroute.report_postroute:------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Hold views included:
+postroute.report_postroute: tt_v1.8_25C_Nominal_25_func
+postroute.report_postroute:
+postroute.report_postroute:+--------------------+---------+---------+---------+
+postroute.report_postroute:|     Hold mode      |   all   | reg2reg | default |
+postroute.report_postroute:+--------------------+---------+---------+---------+
+postroute.report_postroute:|           WNS (ns):|  0.078  |  0.106  |  0.078  |
+postroute.report_postroute:|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+postroute.report_postroute:|    Violating Paths:|    0    |    0    |    0    |
+postroute.report_postroute:|          All Paths:|   32    |   16    |   32    |
+postroute.report_postroute:+--------------------+---------+---------+---------+
+postroute.report_postroute:|tt_v1.8_25C_Nominal_25_func
+postroute.report_postroute:|                    |  0.078  |  0.106  |  0.078  |
+postroute.report_postroute:|                    |  0.000  |  0.000  |  0.000  |
+postroute.report_postroute:|                    |    0    |    0    |    0    |
+postroute.report_postroute:|                    |   32    |   16    |   32    |
+postroute.report_postroute:+--------------------+---------+---------+---------+
+postroute.report_postroute:
+postroute.report_postroute:Density: 0.219%
+postroute.report_postroute:       (100.000% with Fillers)
+postroute.report_postroute:------------------------------------------------------------------
+postroute.report_postroute:Reported timing to dir debug
+postroute.report_postroute:Total CPU time: 1.8 sec
+postroute.report_postroute:Total Real time: 2.0 sec
+postroute.report_postroute:Total Memory Usage: 3107.144531 Mbytes
+postroute.report_postroute:Reset AAE Options
+postroute.report_postroute:*** time_design #1 [finish] () : cpu/real = 0:00:01.8/0:00:02.0 (0.9), totSession cpu/real = 0:01:40.7/0:01:43.1 (1.0), mem = 3107.1M
+postroute.report_postroute:@flow 5: #- Reports that describe timing health
+postroute.report_postroute:@@flow 6: report_timing_summary -checks {hold drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.analysis_summary.rpt]
+postroute.report_postroute:AAE_INFO: opIsDesignInPostRouteState() is 1
+postroute.report_postroute:AAE_INFO: resetNetProps viewIdx 0 
+postroute.report_postroute:Starting SI iteration 1 using Infinite Timing Windows
+postroute.report_postroute:#################################################################################
+postroute.report_postroute:# Design Stage: PostRoute
+postroute.report_postroute:# Design Name: counter_16bit
+postroute.report_postroute:# Design Mode: 130nm
+postroute.report_postroute:# Analysis Mode: MMMC OCV 
+postroute.report_postroute:# Parasitics Mode: SPEF/RCDB 
+postroute.report_postroute:# Signoff Settings: SI On 
+postroute.report_postroute:#################################################################################
+postroute.report_postroute:AAE_INFO: 1 threads acquired from CTE.
+postroute.report_postroute:Start delay calculation (fullDC) (1 T). (MEM=3077.02)
+postroute.report_postroute:Total number of fetched objects 203
+postroute.report_postroute:AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+postroute.report_postroute:AAE_INFO-618: Total number of nets in the design is 205,  100.0 percent of the nets selected for SI analysis
+postroute.report_postroute:End delay calculation. (MEM=3091.03 CPU=0:00:00.1 REAL=0:00:00.0)
+postroute.report_postroute:End delay calculation (fullDC). (MEM=3091.03 CPU=0:00:00.1 REAL=0:00:00.0)
+postroute.report_postroute:Save waveform /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a_ece-rschsrv.ece.gatech.edu_dkhalil8_2du9di/.AAE_O1zCEV/.AAE_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a/waveform.data...
+postroute.report_postroute:Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3091.0M)
+postroute.report_postroute:Add other clocks and setupCteToAAEClockMapping during iter 1
+postroute.report_postroute:Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3091.0M)
+postroute.report_postroute:Starting SI iteration 2
+postroute.report_postroute:Start delay calculation (fullDC) (1 T). (MEM=3096.27)
+postroute.report_postroute:Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Skipped = 6. 
+postroute.report_postroute:Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Analyzed = 203. 
+postroute.report_postroute:Total number of fetched objects 203
+postroute.report_postroute:AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+postroute.report_postroute:AAE_INFO-618: Total number of nets in the design is 205,  0.0 percent of the nets selected for SI analysis
+postroute.report_postroute:End delay calculation. (MEM=3098.17 CPU=0:00:00.0 REAL=0:00:00.0)
+postroute.report_postroute:End delay calculation (fullDC). (MEM=3098.17 CPU=0:00:00.0 REAL=0:00:00.0)
+postroute.report_postroute:@@flow 7: report_timing_summary -checks {hold drv} -expand_views > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.view_summary.rpt]
+postroute.report_postroute:The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+postroute.report_postroute:@@flow 8: report_timing_summary -checks {hold drv} -expand_views -expand_clocks launch_capture  > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.group_summary.rpt]
+postroute.report_postroute:The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+postroute.report_postroute:@@flow 9: report_constraint -early -all_violators -drv_violation_type {min_capacitance min_transition min_fanout} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]hold.all_violators.rpt]
+postroute.report_postroute:@@flow 10: set_metric -name timing.hold.type -value gba
+postroute.report_postroute:#@ End verbose flow_step report_early_summary_innovus
+postroute.report_postroute:UM: Running hold category ...
+postroute.report_postroute:**WARN: (TCLCMD-1469):	No timing paths found matching the specified criteria. Empty collection returned.
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:          11.47             11                                      report_early_summary_innovus
+postroute.report_postroute:#@ Begin verbose flow_step report_early_paths
+postroute.report_postroute:@flow 2: #- Reports that show detailed early timing with Graph Based Analysis (GBA)
+postroute.report_postroute:@@flow 3: report_timing -early -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.endpoint.rpt]
+postroute.report_postroute:@@flow 4: report_timing -early -max_paths 1   -nworst 1 -path_type full_clock -net > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.worst.rpt]
+postroute.report_postroute:@@flow 5: report_timing -early -max_paths 500 -nworst 1 -path_type full_clock      > [file join [get_db flow_report_directory] [get_db flow_report_name] hold.gba.rpt]
+postroute.report_postroute:@flow 6: if {![get_feature report_pba]} {
+postroute.report_postroute:@flow 7:
+postroute.report_postroute:@flow 8:     #- Reports that show detailed timing with Path Based Analysis (PBA)
+postroute.report_postroute:@flow 9: if {[is_flow -quiet -inside flow:sta]} {...}
+postroute.report_postroute:@flow 12: }
+postroute.report_postroute:#@ End verbose flow_step report_early_paths
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:           8.65              8                                      report_early_paths
+postroute.report_postroute:#@ Begin verbose flow_step report_late_summary_innovus
+postroute.report_postroute:@flow 2: #- Update the timer for setup and write reports
+postroute.report_postroute:@@flow 3: time_design -expanded_views -report_only -report_dir debug -report_prefix [get_db flow_report_name]
+postroute.report_postroute:*** time_design #2 [begin] () : totSession cpu/real = 0:01:59.1/0:02:01.8 (1.0), mem = 3166.8M
+postroute.report_postroute: Reset EOS DB
+postroute.report_postroute:Ignoring AAE DB Resetting ...
+postroute.report_postroute:Starting delay calculation for Setup views
+postroute.report_postroute:AAE_INFO: opIsDesignInPostRouteState() is 1
+postroute.report_postroute:AAE_INFO: resetNetProps viewIdx 0 
+postroute.report_postroute:Starting SI iteration 1 using Infinite Timing Windows
+postroute.report_postroute:#################################################################################
+postroute.report_postroute:# Design Stage: PostRoute
+postroute.report_postroute:# Design Name: counter_16bit
+postroute.report_postroute:# Design Mode: 130nm
+postroute.report_postroute:# Analysis Mode: MMMC OCV 
+postroute.report_postroute:# Parasitics Mode: SPEF/RCDB 
+postroute.report_postroute:# Signoff Settings: SI On 
+postroute.report_postroute:#################################################################################
+postroute.report_postroute:AAE_INFO: 1 threads acquired from CTE.
+postroute.report_postroute:Start delay calculation (fullDC) (1 T). (MEM=3150.22)
+postroute.report_postroute:Total number of fetched objects 203
+postroute.report_postroute:AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+postroute.report_postroute:AAE_INFO-618: Total number of nets in the design is 205,  100.0 percent of the nets selected for SI analysis
+postroute.report_postroute:End delay calculation. (MEM=3162.52 CPU=0:00:00.1 REAL=0:00:00.0)
+postroute.report_postroute:End delay calculation (fullDC). (MEM=3162.52 CPU=0:00:00.1 REAL=0:00:00.0)
+postroute.report_postroute:Save waveform /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a_ece-rschsrv.ece.gatech.edu_dkhalil8_2du9di/.AAE_O1zCEV/.AAE_158996_cdd4634f-91f7-4e98-853e-b0f5164ad22a/waveform.data...
+postroute.report_postroute:Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3163.1M)
+postroute.report_postroute:Add other clocks and setupCteToAAEClockMapping during iter 1
+postroute.report_postroute:Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3163.1M)
+postroute.report_postroute:Starting SI iteration 2
+postroute.report_postroute:Start delay calculation (fullDC) (1 T). (MEM=3133.55)
+postroute.report_postroute:Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Skipped = 6. 
+postroute.report_postroute:Glitch Analysis: View tt_v1.8_25C_Nominal_25_func -- Total Number of Nets Analyzed = 203. 
+postroute.report_postroute:Total number of fetched objects 203
+postroute.report_postroute:AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+postroute.report_postroute:AAE_INFO-618: Total number of nets in the design is 205,  7.8 percent of the nets selected for SI analysis
+postroute.report_postroute:End delay calculation. (MEM=3135.32 CPU=0:00:00.0 REAL=0:00:00.0)
+postroute.report_postroute:End delay calculation (fullDC). (MEM=3135.32 CPU=0:00:00.0 REAL=0:00:00.0)
+postroute.report_postroute:*** Done Building Timing Graph (cpu=0:00:00.7 real=0:00:01.0 totSessionCpu=0:02:00 mem=3131.0M)
+postroute.report_postroute:** INFO: Initializing Glitch Interface
+postroute.report_postroute:** INFO: Initializing Glitch Interface
+postroute.report_postroute:
+postroute.report_postroute:OptSummary:
+postroute.report_postroute:
+postroute.report_postroute:------------------------------------------------------------------
+postroute.report_postroute:         time_design Summary
+postroute.report_postroute:------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Setup views included:
+postroute.report_postroute: tt_v1.8_25C_Nominal_25_func 
+postroute.report_postroute:
+postroute.report_postroute:+--------------------+---------+---------+---------+
+postroute.report_postroute:|     Setup mode     |   all   | reg2reg | default |
+postroute.report_postroute:+--------------------+---------+---------+---------+
+postroute.report_postroute:|           WNS (ns):| -0.092  | -0.092  |  0.076  |
+postroute.report_postroute:|           TNS (ns):| -0.862  | -0.862  |  0.000  |
+postroute.report_postroute:|    Violating Paths:|   14    |   14    |    0    |
+postroute.report_postroute:|          All Paths:|   32    |   16    |   32    |
+postroute.report_postroute:+--------------------+---------+---------+---------+
+postroute.report_postroute:|tt_v1.8_25C_Nominal_25_func
+postroute.report_postroute:|                    | -0.092  | -0.092  |  0.076  |
+postroute.report_postroute:|                    | -0.862  | -0.862  |  0.000  |
+postroute.report_postroute:|                    |   14    |   14    |    0    |
+postroute.report_postroute:|                    |   32    |   16    |   32    |
+postroute.report_postroute:+--------------------+---------+---------+---------+
+postroute.report_postroute:
+postroute.report_postroute:+----------------+-------------------------------+------------------+
+postroute.report_postroute:|                |              Real             |       Total      |
+postroute.report_postroute:|    DRVs        +------------------+------------+------------------|
+postroute.report_postroute:|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
+postroute.report_postroute:+----------------+------------------+------------+------------------+
+postroute.report_postroute:|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+postroute.report_postroute:|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+postroute.report_postroute:|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+postroute.report_postroute:|   max_length   |      0 (0)       |     0      |      0 (0)       |
+postroute.report_postroute:+----------------+------------------+------------+------------------+
+postroute.report_postroute:
+postroute.report_postroute:Density: 0.219%
+postroute.report_postroute:       (100.000% with Fillers)
+postroute.report_postroute:------------------------------------------------------------------
+postroute.report_postroute:Reported timing to dir debug
+postroute.report_postroute:Total CPU time: 1.02 sec
+postroute.report_postroute:Total Real time: 3.0 sec
+postroute.report_postroute:Total Memory Usage: 3131.933594 Mbytes
+postroute.report_postroute:Reset AAE Options
+postroute.report_postroute:*** time_design #2 [finish] () : cpu/real = 0:00:01.0/0:00:02.2 (0.5), totSession cpu/real = 0:02:00.1/0:02:04.0 (1.0), mem = 3131.9M
+postroute.report_postroute:@flow 5: #- Reports that describe timing health
+postroute.report_postroute:@@flow 6: report_timing_summary -checks {setup drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.analysis_summary.rpt]
+postroute.report_postroute:@@flow 7: report_timing_summary -checks {setup drv} -expand_views > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.view_summary.rpt]
+postroute.report_postroute:The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+postroute.report_postroute:@@flow 8: report_timing_summary -checks {setup drv} -expand_views -expand_clocks launch_capture  > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.group_summary.rpt]
+postroute.report_postroute:The -expand_views option of report_timing_summary does not provide additional information when running a single-mode/single-corner analysis. You can use this option in multi-mode/multi-corner analysis to generate a view-by-view summary.  This option will be ignored.
+postroute.report_postroute:@@flow 9: report_constraint -late -all_violators -drv_violation_type {max_capacitance max_transition max_fanout} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.all_violators.rpt]
+postroute.report_postroute:@@flow 10: set_metric -name timing.setup.type -value gba
+postroute.report_postroute:@@flow 11: set_metric -name timing.drv.report_file -value [file join [get_db flow_report_name] [get_db flow_report_prefix]setup.all_violators.rpt]
+postroute.report_postroute:#@ End verbose flow_step report_late_summary_innovus
+postroute.report_postroute:UM: Running setup category ...
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:          10.03             10         -0.862 ns         -0.092 ns  report_late_summary_innovus
+postroute.report_postroute:#@ Begin verbose flow_step report_late_paths
+postroute.report_postroute:@flow 2: #- Reports that show detailed timing with Graph Based Analysis (GBA)
+postroute.report_postroute:@@flow 3: report_timing -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.endpoint.rpt]
+postroute.report_postroute:@@flow 4: report_timing -max_paths 1   -nworst 1 -path_type full_clock -net > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.worst.rpt]
+postroute.report_postroute:@@flow 5: report_timing -max_paths 500 -nworst 1 -path_type full_clock      > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.gba.rpt]
+postroute.report_postroute:@flow 6: if {![get_feature report_pba]} {
+postroute.report_postroute:@flow 7:
+postroute.report_postroute:@flow 8:     #- Reports that show detailed timing with Path Based Analysis (PBA)
+postroute.report_postroute:@flow 9: if {[is_flow -quiet -inside flow:sta]} {...}
+postroute.report_postroute:@flow 12: }
+postroute.report_postroute:#@ End verbose flow_step report_late_paths
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:           8.76              8                                      report_late_paths
+postroute.report_postroute:#@ Begin verbose flow_step report_clock_timing
+postroute.report_postroute:@flow 2: #- Reports that check clock implementation
+postroute.report_postroute:@@flow 3: report_clock_timing -type summary > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.summary.rpt]
+postroute.report_postroute:@@flow 4: report_clock_timing -type latency > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.latency.rpt]
+postroute.report_postroute:@@flow 5: report_clock_timing -type skew    > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]clock.skew.rpt]
+postroute.report_postroute:#@ End verbose flow_step report_clock_timing
+postroute.report_postroute:UM: Running clock category ...
+postroute.report_postroute:Updating ideal nets and annotations...
+postroute.report_postroute:Clock tree spec update: Ideal nets, transition and delay annotations were updated to match active timing constraints.
+postroute.report_postroute:Updating ideal nets and annotations done. (took cpu=0:00:00.0 real=0:00:00.0)
+postroute.report_postroute:No differences between SDC and CTS ideal net status found.
+postroute.report_postroute:Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.early...
+postroute.report_postroute:Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+postroute.report_postroute:Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.late...
+postroute.report_postroute:Clock tree timing engine global stage delay update for tt_v1.8_25C_Nominal_25:both.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG stats:
+postroute.report_postroute:================
+postroute.report_postroute:
+postroute.report_postroute:-------------------------------------------------------
+postroute.report_postroute:Cell type                 Count    Area     Capacitance
+postroute.report_postroute:-------------------------------------------------------
+postroute.report_postroute:Buffers                     0      0.000       0.000
+postroute.report_postroute:Inverters                   0      0.000       0.000
+postroute.report_postroute:Integrated Clock Gates      0      0.000       0.000
+postroute.report_postroute:Discrete Clock Gates        0      0.000       0.000
+postroute.report_postroute:Clock Logic                 0      0.000       0.000
+postroute.report_postroute:All                         0      0.000       0.000
+postroute.report_postroute:-------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG miscellaneous counts:
+postroute.report_postroute:===============================
+postroute.report_postroute:
+postroute.report_postroute:------------------------------
+postroute.report_postroute:Type                     Count
+postroute.report_postroute:------------------------------
+postroute.report_postroute:Roots                      1
+postroute.report_postroute:Preserved Ports            0
+postroute.report_postroute:Multiple Clock Inputs      0
+postroute.report_postroute:------------------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG sink counts:
+postroute.report_postroute:======================
+postroute.report_postroute:
+postroute.report_postroute:-------------------------
+postroute.report_postroute:Sink type           Count
+postroute.report_postroute:-------------------------
+postroute.report_postroute:Regular              16
+postroute.report_postroute:Enable Latch          0
+postroute.report_postroute:Load Capacitance      0
+postroute.report_postroute:Antenna Diode         0
+postroute.report_postroute:Node Sink             0
+postroute.report_postroute:Port                  0
+postroute.report_postroute:Total                16
+postroute.report_postroute:-------------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG wire lengths:
+postroute.report_postroute:=======================
+postroute.report_postroute:
+postroute.report_postroute:--------------------
+postroute.report_postroute:Type     Wire Length
+postroute.report_postroute:--------------------
+postroute.report_postroute:Top          0.000
+postroute.report_postroute:Trunk        0.000
+postroute.report_postroute:Leaf       278.385
+postroute.report_postroute:Total      278.385
+postroute.report_postroute:--------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG hp wire lengths:
+postroute.report_postroute:==========================
+postroute.report_postroute:
+postroute.report_postroute:-----------------------
+postroute.report_postroute:Type     hp Wire Length
+postroute.report_postroute:-----------------------
+postroute.report_postroute:Top           0.000
+postroute.report_postroute:Trunk         0.000
+postroute.report_postroute:Leaf        171.120
+postroute.report_postroute:Total       171.120
+postroute.report_postroute:-----------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG capacitances:
+postroute.report_postroute:=======================
+postroute.report_postroute:
+postroute.report_postroute:--------------------------------
+postroute.report_postroute:Type     Gate     Wire     Total
+postroute.report_postroute:--------------------------------
+postroute.report_postroute:Top      0.000    0.000    0.000
+postroute.report_postroute:Trunk    0.000    0.000    0.000
+postroute.report_postroute:Leaf     0.064    0.047    0.110
+postroute.report_postroute:Total    0.064    0.047    0.110
+postroute.report_postroute:--------------------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG sink capacitances:
+postroute.report_postroute:============================
+postroute.report_postroute:
+postroute.report_postroute:-----------------------------------------------
+postroute.report_postroute:Total    Average    Std. Dev.    Min      Max
+postroute.report_postroute:-----------------------------------------------
+postroute.report_postroute:0.030     0.002       0.000      0.002    0.002
+postroute.report_postroute:-----------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG net violations:
+postroute.report_postroute:=========================
+postroute.report_postroute:
+postroute.report_postroute:None
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Clock DAG primary half-corner transition distribution:
+postroute.report_postroute:======================================================
+postroute.report_postroute:
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Net Type    Target    Count    Average    Std. Dev.    Min      Max      Distribution                                                              Over Target
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Leaf        0.150       1       0.005       0.000      0.005    0.005    {1 <= 0.090ns, 0 <= 0.120ns, 0 <= 0.135ns, 0 <= 0.142ns, 0 <= 0.150ns}         -
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Please note that the following tables reflect only the defined clock trees, so the flop counts might not include all flops in your design.
+postroute.report_postroute:
+postroute.report_postroute:Clock Tree Summary:
+postroute.report_postroute:===================
+postroute.report_postroute:
+postroute.report_postroute:---------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Clock Tree  Clock  Bufs  Invs  Other  Max       Max     Max     Max          Standard   Wire   Gate   Clock Tree Root
+postroute.report_postroute:Name        Gates              Clock  Non-leaf  Leaf    Length  Source-sink  cell area  cap    cap    
+postroute.report_postroute:                               Cells  Fanout    Fanout  (um)    Resistance   (um^2)     (pF)   (pF)   
+postroute.report_postroute:                                                                (Ohms)                                
+postroute.report_postroute:---------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:core_clock    0     0     0      0       0        16    180.36    1039.06      0.000    0.047  0.064  clk
+postroute.report_postroute:---------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Clock Sink Summary:
+postroute.report_postroute:===================
+postroute.report_postroute:
+postroute.report_postroute:-------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Clock Tree  Explicit      Implicit      Explicit     Implicit     Explicit   Implicit   Posedge  Negedge  Memory  Enable  Non enable  Other
+postroute.report_postroute:Name        exclude pins  exclude pins  ignore pins  ignore pins  stop pins  stop pins  Flops    Flops    Clock   Latch   Latch       Sinks
+postroute.report_postroute:                                                                                                          Pins    Sinks   Sinks       
+postroute.report_postroute:-------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:core_clock       0             0             0            0           0          0        16        0       0       0         0         0
+postroute.report_postroute:-------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Summary across all clock trees:
+postroute.report_postroute:===============================
+postroute.report_postroute:
+postroute.report_postroute:------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Clock  Bufs  Invs  Other  Max       Average   Max     Average  Max      Max          Standard   Wire   Gate
+postroute.report_postroute:Gates              Clock  Non-leaf  Non-leaf  Leaf    Leaf     Length   Source-sink  cell area  cap    cap
+postroute.report_postroute:                   Cells  Fanout    Fanout    Fanout  Fanout   (um)     Resistance   (um^2)     (pF)   (pF)
+postroute.report_postroute:                                                                        (Ohms)                         
+postroute.report_postroute:------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:  0     0     0      0       0         0        16      16     180.360    103.906      0.000    0.047  0.064
+postroute.report_postroute:------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Clock Sink Summary across all clock trees:
+postroute.report_postroute:==========================================
+postroute.report_postroute:
+postroute.report_postroute:-------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Explicit      Implicit      Explicit     Implicit     Explicit   Implicit   Posedge  Negedge  Memory  Enable  Non enable  Other
+postroute.report_postroute:exclude pins  exclude pins  ignore pins  ignore pins  stop pins  stop pins  Flops    Flops    Clock   Latch   Latch       Sinks
+postroute.report_postroute:                                                                                              Pins    Sinks   Sinks       
+postroute.report_postroute:-------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:     0             0             0            0           0          0        16        0       0       0         0         0
+postroute.report_postroute:-------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Physical metrics across all clock trees:
+postroute.report_postroute:========================================
+postroute.report_postroute:
+postroute.report_postroute:-----------------------------------------------------------------------
+postroute.report_postroute:Metric                               Minimum  Average  Maximum  Std.dev
+postroute.report_postroute:-----------------------------------------------------------------------
+postroute.report_postroute:Source-sink routed net length (um)   180.360  180.360  180.360   0.000
+postroute.report_postroute:Source-sink manhattan distance (um)  171.120  171.120  171.120   0.000
+postroute.report_postroute:Source-sink resistance (Ohm)         103.906  103.906  103.906   0.000
+postroute.report_postroute:-----------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Transition distribution for half-corner tt_v1.8_25C_Nominal_25:both.late:
+postroute.report_postroute:=========================================================================
+postroute.report_postroute:
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Net Type    Target    Count    Average    Std. Dev.    Min      Max      Distribution                                                              Over Target
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Leaf        0.150       1       0.005       0.000      0.005    0.005    {1 <= 0.090ns, 0 <= 0.120ns, 0 <= 0.135ns, 0 <= 0.142ns, 0 <= 0.150ns}         -
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Count of violations across all clock trees:
+postroute.report_postroute:===========================================
+postroute.report_postroute:
+postroute.report_postroute:---------------------------------------------------------------------------------------
+postroute.report_postroute:Clock Tree  # Max capacitance  # Max resistance  # Max length  # Max fanout  # Slew
+postroute.report_postroute:Name        violations         violations        violations    violations    violations
+postroute.report_postroute:---------------------------------------------------------------------------------------
+postroute.report_postroute:core_clock          0                 0               0             0            0
+postroute.report_postroute:---------------------------------------------------------------------------------------
+postroute.report_postroute:Total               0                 0               0             0            0
+postroute.report_postroute:---------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Note the above table per clock tree is based on CCOpt clock tree view. The violations are counted across half corners.
+postroute.report_postroute:
+postroute.report_postroute:Found a total of 0 clock tree pins with max capacitance violations.
+postroute.report_postroute:Found a total of 0 clock tree nets with max resistance violations.
+postroute.report_postroute:Found a total of 0 clock tree nets with max length violations.
+postroute.report_postroute:Found a total of 0 clock tree nets with max fanout violations.
+postroute.report_postroute:Found a total of 0 clock tree pins with a slew violation.
+postroute.report_postroute:
+postroute.report_postroute:Clock Timing Summary:
+postroute.report_postroute:=====================
+postroute.report_postroute:
+postroute.report_postroute:Target and measured clock slews (in ns):
+postroute.report_postroute:
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:Clock tree  Timing Corner                      Worst Rising  Worst Falling  Worst Rising  Worst Falling  Leaf Slew    Leaf Slew  Trunk Slew   Trunk Slew
+postroute.report_postroute:                                               Leaf Slew     Leaf Slew      Trunk Slew    Trunk Slew     Target Type  Target     Target Type  Target
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:core_clock  tt_v1.8_25C_Nominal_25:both.early     0.005          0.005           -              -        ignored          -      ignored          -
+postroute.report_postroute:core_clock  tt_v1.8_25C_Nominal_25:both.late      0.005          0.005           -              -        explicit      100.000   explicit      100.000
+postroute.report_postroute:--------------------------------------------------------------------------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:* - indicates that target was not met.
+postroute.report_postroute:
+postroute.report_postroute:auto extracted - target was extracted from SDC.
+postroute.report_postroute:auto computed - target was computed when balancing trees.
+postroute.report_postroute:
+postroute.report_postroute:Total Transition Slacks Summary:
+postroute.report_postroute:================================
+postroute.report_postroute:
+postroute.report_postroute:-------------------------------------------------------------------------------------------------
+postroute.report_postroute:Total       Total Leaf    Total        Total Leaf    Mean        Median      Std.Dev     Worst
+postroute.report_postroute:Overslew    Overslew      Underslew    Underslew     Overslew    Overslew    Overslew    Overslew
+postroute.report_postroute:-------------------------------------------------------------------------------------------------
+postroute.report_postroute: 0.000        0.000        -0.145        -0.145       0.000       0.000       0.000       0.000
+postroute.report_postroute:-------------------------------------------------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:Transition times measured in the half-corner tt_v1.8_25C_Nominal_25:both.late
+postroute.report_postroute:
+postroute.report_postroute:Top Underslews:
+postroute.report_postroute:
+postroute.report_postroute:------------------------------
+postroute.report_postroute:Driving node    Underslew (ns)
+postroute.report_postroute:------------------------------
+postroute.report_postroute:core_clock          -0.145
+postroute.report_postroute:------------------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:           8.77              8                                      report_clock_timing
+postroute.report_postroute:#@ Begin verbose flow_step report_power_innovus
+postroute.report_postroute:@@flow 2: report_power -no_wrap -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]power.all.rpt]
+postroute.report_postroute:
+postroute.report_postroute:Power Net Detected:
+postroute.report_postroute:        Voltage	    Name
+postroute.report_postroute:             0V	    VSS
+postroute.report_postroute:           1.8V	    VDD
+postroute.report_postroute:             0V	    VSS
+postroute.report_postroute:           1.8V	    VDD
+postroute.report_postroute:Using Power View tt_v1.8_25C_Nominal_25_func
+postroute.report_postroute:.
+postroute.report_postroute:Load RC corner of view tt_v1.8_25C_Nominal_25_func
+postroute.report_postroute:
+postroute.report_postroute:Begin Power Analysis
+postroute.report_postroute:
+postroute.report_postroute:             0V	    VSS
+postroute.report_postroute:           1.8V	    VDD
+postroute.report_postroute:
+postroute.report_postroute:Begin Processing Timing Library for Power Calculation
+postroute.report_postroute:
+postroute.report_postroute:Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Begin Processing Power Net/Grid for Power Calculation
+postroute.report_postroute:
+postroute.report_postroute:Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+postroute.report_postroute:
+postroute.report_postroute:Begin Processing Timing Window Data for Power Calculation
+postroute.report_postroute:
+postroute.report_postroute:core_clock(1000MHz) CK: assigning clock core_clock to net clk
+postroute.report_postroute:Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+postroute.report_postroute:
+postroute.report_postroute:Begin Processing User Attributes
+postroute.report_postroute:
+postroute.report_postroute:Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+postroute.report_postroute:
+postroute.report_postroute:Begin Processing Signal Activity
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Starting Levelizing
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 10%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 20%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 30%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 40%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 50%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 60%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 70%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 80%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 90%
+postroute.report_postroute:
+postroute.report_postroute:Finished Levelizing
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+postroute.report_postroute:
+postroute.report_postroute:Starting Activity Propagation
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+postroute.report_postroute:** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+postroute.report_postroute:Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+postroute.report_postroute:
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 10%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 20%
+postroute.report_postroute:
+postroute.report_postroute:Finished Activity Propagation
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+postroute.report_postroute:Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.17MB/6297.27MB/3183.17MB)
+postroute.report_postroute:
+postroute.report_postroute:Begin Power Computation
+postroute.report_postroute:
+postroute.report_postroute:      ----------------------------------------------------------
+postroute.report_postroute:      # of cell(s) missing both power/leakage table: 0
+postroute.report_postroute:      # of cell(s) missing power table: 0
+postroute.report_postroute:      # of cell(s) missing leakage table: 0
+postroute.report_postroute:      ----------------------------------------------------------
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Starting Calculating power
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+postroute.report_postroute: ... Calculating switching power
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 10%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 20%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 30%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 40%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 50%
+postroute.report_postroute: ... Calculating internal and leakage power
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 60%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 70%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 80%
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT): 90%
+postroute.report_postroute:
+postroute.report_postroute:Finished Calculating power
+postroute.report_postroute:2026-Feb-14 12:59:55 (2026-Feb-14 17:59:55 GMT)
+postroute.report_postroute:      # of MSMV cell(s) missing power_level: 0
+postroute.report_postroute:Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3183.92MB/6297.27MB/3183.92MB)
+postroute.report_postroute:
+postroute.report_postroute:Begin Processing User Attributes
+postroute.report_postroute:
+postroute.report_postroute:Begin Processing set_power
+postroute.report_postroute:Ended Processing set_power: (cpu=0:00:00, real=0:00:00,
+postroute.report_postroute:mem(process/total/peak)=3184.28MB/6297.27MB/3184.28MB)
+postroute.report_postroute:Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3184.28MB/6297.27MB/3184.28MB)
+postroute.report_postroute:
+postroute.report_postroute:Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3184.28MB/6297.27MB/3184.28MB)
+postroute.report_postroute:
+postroute.report_postroute:Begin Boundary Leakage Calculation
+postroute.report_postroute:Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+postroute.report_postroute:mem(process/total/peak)=3184.41MB/6297.27MB/3184.41MB)
+postroute.report_postroute:Begin Static Power Report Generation
+postroute.report_postroute:*
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Total Power
+postroute.report_postroute:-----------------------------------------------------------------------------------------
+postroute.report_postroute:Total Internal Power:        1.35743932 	   53.2344%
+postroute.report_postroute:Total Switching Power:       1.19237549 	   46.7611%
+postroute.report_postroute:Total Leakage Power:         0.00011459 	    0.0045%
+postroute.report_postroute:Total Power:                 2.54992940
+postroute.report_postroute:-----------------------------------------------------------------------------------------
+postroute.report_postroute:** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+postroute.report_postroute:
+postroute.report_postroute:Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+postroute.report_postroute:mem(process/total/peak)=3184.41MB/6297.27MB/3184.41MB)
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:Output file is reports/postroute/power.all.rpt
+postroute.report_postroute:#@ End verbose flow_step report_power_innovus
+postroute.report_postroute:UM: Running power category ...
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:           9.04              8                                      report_power_innovus
+postroute.report_postroute:#@ Begin verbose flow_step report_route_drc
+postroute.report_postroute:@flow 2: #- Reports that check signal routing
+postroute.report_postroute:@flow 3: if {[is_flow -inside flow:report_floorplan]} {...
+postroute.report_postroute:@flow 5: } else {
+postroute.report_postroute:@@flow 6: check_drc -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]route.drc.rpt]
+postroute.report_postroute:#-check_same_via_cell true               # bool, default=false, user setting
+postroute.report_postroute:#-report reports/postroute/route.drc.rpt # string, default="", user setting
+postroute.report_postroute: *** Starting Verify DRC (MEM: 3192.5) ***
+postroute.report_postroute:
+postroute.report_postroute:  VERIFY DRC ...... Starting Verification
+postroute.report_postroute:  VERIFY DRC ...... Initializing
+postroute.report_postroute:  VERIFY DRC ...... Deleting Existing Violations
+postroute.report_postroute:  VERIFY DRC ...... Creating Sub-Areas
+postroute.report_postroute:  VERIFY DRC ...... Using new threading
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {0.000 0.000 172.480 188.160} 1 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {172.480 0.000 344.960 188.160} 2 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {344.960 0.000 517.440 188.160} 3 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {517.440 0.000 689.920 188.160} 4 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 4 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {689.920 0.000 862.400 188.160} 5 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 5 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {862.400 0.000 1025.800 188.160} 6 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 6 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {0.000 188.160 172.480 376.320} 7 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 7 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {172.480 188.160 344.960 376.320} 8 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 8 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {344.960 188.160 517.440 376.320} 9 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 9 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {517.440 188.160 689.920 376.320} 10 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 10 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {689.920 188.160 862.400 376.320} 11 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 11 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {862.400 188.160 1025.800 376.320} 12 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 12 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {0.000 376.320 172.480 564.480} 13 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 13 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {172.480 376.320 344.960 564.480} 14 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 14 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {344.960 376.320 517.440 564.480} 15 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 15 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {517.440 376.320 689.920 564.480} 16 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 16 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {689.920 376.320 862.400 564.480} 17 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 17 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {862.400 376.320 1025.800 564.480} 18 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 18 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {0.000 564.480 172.480 752.640} 19 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 19 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {172.480 564.480 344.960 752.640} 20 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 20 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {344.960 564.480 517.440 752.640} 21 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 21 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {517.440 564.480 689.920 752.640} 22 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 22 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {689.920 564.480 862.400 752.640} 23 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 23 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {862.400 564.480 1025.800 752.640} 24 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 24 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {0.000 752.640 172.480 940.800} 25 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 25 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {172.480 752.640 344.960 940.800} 26 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 26 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {344.960 752.640 517.440 940.800} 27 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 27 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {517.440 752.640 689.920 940.800} 28 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 28 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {689.920 752.640 862.400 940.800} 29 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 29 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {862.400 752.640 1025.800 940.800} 30 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 30 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {0.000 940.800 172.480 1128.960} 31 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 31 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {172.480 940.800 344.960 1128.960} 32 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 32 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {344.960 940.800 517.440 1128.960} 33 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 33 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {517.440 940.800 689.920 1128.960} 34 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 34 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {689.920 940.800 862.400 1128.960} 35 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 35 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {862.400 940.800 1025.800 1128.960} 36 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 36 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {0.000 1128.960 172.480 1301.800} 37 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 37 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {172.480 1128.960 344.960 1301.800} 38 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 38 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {344.960 1128.960 517.440 1301.800} 39 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 39 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {517.440 1128.960 689.920 1301.800} 40 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 40 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {689.920 1128.960 862.400 1301.800} 41 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 41 complete 0 Viols.
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area: {862.400 1128.960 1025.800 1301.800} 42 of 42
+postroute.report_postroute:  VERIFY DRC ...... Sub-Area : 42 complete 0 Viols.
+postroute.report_postroute:
+postroute.report_postroute:  Verification Complete : 0 Viols.
+postroute.report_postroute:
+postroute.report_postroute: *** End Verify DRC (CPU TIME: 0:00:00.4  ELAPSED TIME: 0:00:01.0  MEM: 0.8M) ***
+postroute.report_postroute:
+postroute.report_postroute:@@flow 7: check_connectivity -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]route.open.rpt]
+postroute.report_postroute:VERIFY_CONNECTIVITY use new engine.
+postroute.report_postroute:
+postroute.report_postroute:******** Start: VERIFY CONNECTIVITY ********
+postroute.report_postroute:Start Time: Sat Feb 14 13:00:05 2026
+postroute.report_postroute:
+postroute.report_postroute:Design Name: counter_16bit
+postroute.report_postroute:Database Units: 1000
+postroute.report_postroute:Design Boundary: (0.0000, 0.0000) (1025.8000, 1301.8000)
+postroute.report_postroute:Error Limit = 1000; Warning Limit = 50
+postroute.report_postroute:Check all nets
+postroute.report_postroute:
+postroute.report_postroute:Begin Summary 
+postroute.report_postroute:  Found no problems or warnings.
+postroute.report_postroute:End Summary
+postroute.report_postroute:
+postroute.report_postroute:End Time: Sat Feb 14 13:00:06 2026
+postroute.report_postroute:Time Elapsed: 0:00:01.0
+postroute.report_postroute:
+postroute.report_postroute:******** End: VERIFY CONNECTIVITY ********
+postroute.report_postroute:  Verification Complete : 0 Viols.  0 Wrngs.
+postroute.report_postroute:  (CPU Time: 0:00:00.1  MEM: 0.598M)
+postroute.report_postroute:
+postroute.report_postroute:@flow 8: }
+postroute.report_postroute:@@flow 9: set_metric -name check.drc.report_file -value [file join [get_db flow_report_name] [get_db flow_report_prefix]route.drc.rpt]
+postroute.report_postroute:#@ End verbose flow_step report_route_drc
+postroute.report_postroute:UM: Running route category ...
+postroute.report_postroute:UM: No route DRC markers present ... skipping
+postroute.report_postroute:UM: No route DRC markers present ... skipping
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:           9.38             10                                      report_route_drc
+postroute.report_postroute:#@ Begin verbose flow_step report_route_density
+postroute.report_postroute:@@flow 2: check_metal_density -report [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]route.metal_density.rpt]
+postroute.report_postroute:
+postroute.report_postroute:******** Start: VERIFY DENSITY ********
+postroute.report_postroute:**WARN: (IMPVMD-31):	Minimum window density for layer "met1" is missing. Using default value 20.0.
+postroute.report_postroute:**WARN: (IMPVMD-32):	Maximum window density for layer "met1" is missing. Using default value 80.0.
+postroute.report_postroute:**WARN: (IMPVMD-33):	Window size (width) for layer "met1" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-34):	Window size (height) for layer "met1" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met1" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-36):	Window step (vertical) for layer "met1" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-31):	Minimum window density for layer "met2" is missing. Using default value 20.0.
+postroute.report_postroute:**WARN: (IMPVMD-32):	Maximum window density for layer "met2" is missing. Using default value 80.0.
+postroute.report_postroute:**WARN: (IMPVMD-33):	Window size (width) for layer "met2" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-34):	Window size (height) for layer "met2" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met2" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-36):	Window step (vertical) for layer "met2" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-31):	Minimum window density for layer "met3" is missing. Using default value 20.0.
+postroute.report_postroute:**WARN: (IMPVMD-32):	Maximum window density for layer "met3" is missing. Using default value 80.0.
+postroute.report_postroute:**WARN: (IMPVMD-33):	Window size (width) for layer "met3" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-34):	Window size (height) for layer "met3" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met3" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-36):	Window step (vertical) for layer "met3" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-31):	Minimum window density for layer "met4" is missing. Using default value 20.0.
+postroute.report_postroute:**WARN: (IMPVMD-32):	Maximum window density for layer "met4" is missing. Using default value 80.0.
+postroute.report_postroute:**WARN: (IMPVMD-33):	Window size (width) for layer "met4" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-34):	Window size (height) for layer "met4" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met4" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-36):	Window step (vertical) for layer "met4" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-31):	Minimum window density for layer "met5" is missing. Using default value 20.0.
+postroute.report_postroute:**WARN: (IMPVMD-32):	Maximum window density for layer "met5" is missing. Using default value 80.0.
+postroute.report_postroute:**WARN: (IMPVMD-33):	Window size (width) for layer "met5" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-34):	Window size (height) for layer "met5" is missing. Using default value 100.
+postroute.report_postroute:**WARN: (IMPVMD-35):	Window step (horizontal) for layer "met5" is missing. Using default value 50.
+postroute.report_postroute:**WARN: (IMPVMD-36):	Window step (vertical) for layer "met5" is missing. Using default value 50.
+postroute.report_postroute:Density calculation ...... Slot :   1 of   2
+postroute.report_postroute:Density calculation ...... Slot :   2 of   2
+postroute.report_postroute:
+postroute.report_postroute:Densities of non-overlapping windows have been saved in FE DB.
+postroute.report_postroute:
+postroute.report_postroute:A total of 2600 density violation(s).
+postroute.report_postroute:Windows < Min. Density = 2600
+postroute.report_postroute:Windows > Max. Density = 0
+postroute.report_postroute:Windows < Min. Union. Density = 0
+postroute.report_postroute:Windows > Max. Union. Density = 0
+postroute.report_postroute:
+postroute.report_postroute:******** End: VERIFY DENSITY ********
+postroute.report_postroute:VMD: elapsed time: 0.00
+postroute.report_postroute:     (CPU Time: 0:00:00.1  MEM: 0.422M)
+postroute.report_postroute:
+postroute.report_postroute:@@flow 3: check_cut_density -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]route.cut_density.rpt]
+postroute.report_postroute:
+postroute.report_postroute:******** Start: VERIFY CUT DENSITY ********
+postroute.report_postroute:**WARN: (IMPVMD-84):	Maximum window density for layer "mcon" is missing. Using default value 30.0.
+postroute.report_postroute:**WARN: (IMPVMD-83):	Minimum window density for layer "mcon" is missing. Using default value 0.000000.
+postroute.report_postroute:**WARN: (IMPVMD-85):	Window size (width) for layer "mcon" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-86):	Window size (height) for layer "mcon" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-87):	Window step (horizontal) for layer "mcon" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-88):	Window step (vertical) for layer "mcon" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-84):	Maximum window density for layer "via" is missing. Using default value 30.0.
+postroute.report_postroute:**WARN: (IMPVMD-83):	Minimum window density for layer "via" is missing. Using default value 0.045000.
+postroute.report_postroute:**WARN: (IMPVMD-85):	Window size (width) for layer "via" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-86):	Window size (height) for layer "via" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-87):	Window step (horizontal) for layer "via" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-88):	Window step (vertical) for layer "via" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-84):	Maximum window density for layer "via2" is missing. Using default value 30.0.
+postroute.report_postroute:**WARN: (IMPVMD-83):	Minimum window density for layer "via2" is missing. Using default value 0.080000.
+postroute.report_postroute:**WARN: (IMPVMD-85):	Window size (width) for layer "via2" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-86):	Window size (height) for layer "via2" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-87):	Window step (horizontal) for layer "via2" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-88):	Window step (vertical) for layer "via2" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-84):	Maximum window density for layer "via3" is missing. Using default value 30.0.
+postroute.report_postroute:**WARN: (IMPVMD-83):	Minimum window density for layer "via3" is missing. Using default value 0.080000.
+postroute.report_postroute:**WARN: (IMPVMD-85):	Window size (width) for layer "via3" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-86):	Window size (height) for layer "via3" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-87):	Window step (horizontal) for layer "via3" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-88):	Window step (vertical) for layer "via3" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-84):	Maximum window density for layer "via4" is missing. Using default value 30.0.
+postroute.report_postroute:**WARN: (IMPVMD-83):	Minimum window density for layer "via4" is missing. Using default value 1.280000.
+postroute.report_postroute:**WARN: (IMPVMD-85):	Window size (width) for layer "via4" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-86):	Window size (height) for layer "via4" is missing. Using default value 10.
+postroute.report_postroute:**WARN: (IMPVMD-87):	Window step (horizontal) for layer "via4" is missing. Using default value 5.
+postroute.report_postroute:**WARN: (IMPVMD-88):	Window step (vertical) for layer "via4" is missing. Using default value 5.
+postroute.report_postroute:***
+postroute.report_postroute:
+postroute.report_postroute:A total of 132103 density violation(s).
+postroute.report_postroute:Windows < Min. Density = 132103
+postroute.report_postroute:Windows > Max. Density = 0
+postroute.report_postroute:Windows < Min. Union. Density = 0
+postroute.report_postroute:Windows > Max. Union. Density = 0
+postroute.report_postroute:
+postroute.report_postroute:******** End: VERIFY CUT DENSITY ********
+postroute.report_postroute:VCD: elapsed time: 0.00
+postroute.report_postroute:     (CPU Time: 0:00:00.6  MEM: 0.000M)
+postroute.report_postroute:
+postroute.report_postroute:#@ End verbose flow_step report_route_density
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:           9.55              9                                      report_route_density
+postroute.report_postroute:#@ Begin verbose flow_step report_finish
+postroute.report_postroute:#@ End verbose flow_step report_finish
+postroute.report_postroute:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+postroute.report_postroute:UM:           8.88              8                                      report_finish
+postroute.report_postroute:
+postroute.report_postroute:Program version = 25.11-s102_1
+postroute.report_postroute:Working directory = /nethome/dkhalil8/InnovateECE/RTL2GDS/design
+postroute.report_postroute:Databases directory = /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs
+postroute.report_postroute:Starting time = Feb 14, 2026 12:58:09
+postroute.report_postroute:Ending time = Feb 14, 2026 13:00:33
+postroute.report_postroute:
+postroute.report_postroute:Run Flow Summary
+postroute.report_postroute:---------------------
+postroute.report_postroute:
+postroute.report_postroute:Steps run:  report_start init_innovus.init_innovus_yaml init_innovus.init_innovus_user report_check_design report_area_innovus report_early_summary_innovus report_early_paths report_late_summary_innovus report_late_paths report_clock_timing report_power_innovus report_route_drc report_route_density report_finish
+postroute.report_postroute:
+postroute.report_postroute:Step status:
+postroute.report_postroute:     report_start                           success
+postroute.report_postroute:     init_innovus.init_innovus_yaml         success
+postroute.report_postroute:     init_innovus.init_innovus_user         success
+postroute.report_postroute:     report_check_design                    success
+postroute.report_postroute:     report_area_innovus                    success
+postroute.report_postroute:     report_early_summary_innovus           success
+postroute.report_postroute:     report_early_paths                     success
+postroute.report_postroute:     report_late_summary_innovus            success
+postroute.report_postroute:     report_late_paths                      success
+postroute.report_postroute:     report_clock_timing                    success
+postroute.report_postroute:     report_power_innovus                   success
+postroute.report_postroute:     report_route_drc                       success
+postroute.report_postroute:     report_route_density                   success
+postroute.report_postroute:     report_finish                          success
+postroute.report_postroute:
+postroute.report_postroute: ---------------------------------------------------------------------------------------------------- 
+postroute.report_postroute:| Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
+postroute.report_postroute:|-------------+------------------+-------------------+-----------------------+-----------------------|
+postroute.report_postroute:| syn_generic | 0:02:19          | 0:02:35           |                    -5 |                -0.413 |
+postroute.report_postroute:| syn_map     | 0:01:50          | 0:02:01           |                    -4 |                -0.297 |
+postroute.report_postroute:| syn_opt     | 0:02:07          | 0:02:17           |                    -3 |                -0.233 |
+postroute.report_postroute:| floorplan   | 0:02:25          | 0:02:31           |                       |                       |
+postroute.report_postroute:| prects      | 0:03:54          | 0:04:44           |                    -1 |                -0.086 |
+postroute.report_postroute:| cts         | 0:03:47          | 0:04:31           |                    -1 |                -0.098 |
+postroute.report_postroute:| postcts     | 0:02:39          | 0:02:45           |                    -1 |                -0.095 |
+postroute.report_postroute:| route       | 0:03:02          | 0:03:06           |                    -1 |                -0.092 |
+postroute.report_postroute:| postroute   | 0:04:22          | 0:05:00           |                    -1 |                -0.092 |
+postroute.report_postroute: ---------------------------------------------------------------------------------------------------- 
+postroute.report_postroute:*** Message Summary: 235 warning(s), 1 error(s)
+postroute.report_postroute:
+postroute.report_postroute:
+postroute.report_postroute:*** Memory Usage v#1 (Current mem = 3181.891M, initial mem = 946.953M) ***
+postroute.report_postroute:--- Ending "Innovus" (totcpu=0:03:04, real=0:03:12, mem=3181.9M) ---
+postroute.report_postroute:
+  report_postroute @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/postroute.report_postroute.log3
+    error summary:
+      Severity  ID         Count  Step                 Where             Summary
+      ERROR     CHKCTS-24  1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot    | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC | Wall (s) |
+|-------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+-----+----------|
+| syn_generic |   -0.413 |       -5 |   15 |      -0.413 |          -5 |      15 |             | ff          |          0.00 |        0.00 |   111 |        1779 |     | 0:02:35  |
+| syn_map     |   -0.297 |       -4 |   15 |      -0.297 |          -4 |      15 |             | ff          |          0.00 |        0.00 |   131 |        2234 |     | 0:02:01  |
+| syn_opt     |   -0.233 |       -3 |   15 |      -0.233 |          -3 |      15 |             | ff          |          0.00 |        0.00 |   139 |        2342 |     | 0:02:17  |
+| floorplan   |          |          |      |             |             |         |             |             |               |        0.20 |   139 |        2342 |     | 0:02:31  |
+| prects      |   -0.086 |       -1 |   14 |      -0.086 |          -1 |      14 |           0 | 0           |          0.00 |        0.20 |   164 |        2415 |     | 0:04:44  |
+| cts         |   -0.098 |       -1 |   15 |      -0.098 |          -1 |      15 |           0 | 0           |          0.00 |        0.21 |   179 |        2567 |   0 | 0:04:31  |
+| postcts     |   -0.095 |       -1 |   14 |      -0.095 |          -1 |      14 |           0 | 0           |          0.00 |        0.22 |   182 |        2605 |     | 0:02:45  |
+| route       |   -0.092 |       -1 |   14 |      -0.092 |          -1 |      14 |           0 | 0           |          0.00 |        0.22 |   182 |        2605 |   0 | 0:03:06  |
+| postroute   |   -0.092 |       -1 |   14 |      -0.092 |          -1 |      14 |           0 | 0           |          0.00 |        0.22 |   184 |        2624 |   0 | 0:05:00  |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+Error summary:
+  report_postcts @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/cts.report_postcts.log3
+    error summary:
+      Severity  ID         Count  Step                 Where             Summary
+      ERROR     CHKCTS-24  1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+  report_postcts @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/postcts.report_postcts.log3
+    error summary:
+      Severity  ID         Count  Step                 Where             Summary
+      ERROR     CHKCTS-24  1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+  report_postroute @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/route.report_postroute.log3
+    error summary:
+      Severity  ID         Count  Step                 Where             Summary
+      ERROR     CHKCTS-24  1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+  report_postroute @ innovus: report_start -> report_finish returned successfully but encountered errors
+    log file:
+      logs/postroute.report_postroute.log3
+    error summary:
+      Severity  ID         Count  Step                 Where             Summary
+      ERROR     CHKCTS-24  1      report_check_design  .body_tcl line 2  Insufficient number of clock gating cells for clock_tree %s and power_domain %s. Have cells: %s.
+
+
+Summary of flow:
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot    | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC | Wall (s) |
+|-------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+-----+----------|
+| syn_generic |   -0.413 |       -5 |   15 |      -0.413 |          -5 |      15 |             | ff          |          0.00 |        0.00 |   111 |        1779 |     | 0:02:35  |
+| syn_map     |   -0.297 |       -4 |   15 |      -0.297 |          -4 |      15 |             | ff          |          0.00 |        0.00 |   131 |        2234 |     | 0:02:01  |
+| syn_opt     |   -0.233 |       -3 |   15 |      -0.233 |          -3 |      15 |             | ff          |          0.00 |        0.00 |   139 |        2342 |     | 0:02:17  |
+| floorplan   |          |          |      |             |             |         |             |             |               |        0.20 |   139 |        2342 |     | 0:02:31  |
+| prects      |   -0.086 |       -1 |   14 |      -0.086 |          -1 |      14 |           0 | 0           |          0.00 |        0.20 |   164 |        2415 |     | 0:04:44  |
+| cts         |   -0.098 |       -1 |   15 |      -0.098 |          -1 |      15 |           0 | 0           |          0.00 |        0.21 |   179 |        2567 |   0 | 0:04:31  |
+| postcts     |   -0.095 |       -1 |   14 |      -0.095 |          -1 |      14 |           0 | 0           |          0.00 |        0.22 |   182 |        2605 |     | 0:02:45  |
+| route       |   -0.092 |       -1 |   14 |      -0.092 |          -1 |      14 |           0 | 0           |          0.00 |        0.22 |   182 |        2605 |   0 | 0:03:06  |
+| postroute   |   -0.092 |       -1 |   14 |      -0.092 |          -1 |      14 |           0 | 0           |          0.00 |        0.22 |   184 |        2624 |   0 | 0:05:00  |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+Flow ran to completion
