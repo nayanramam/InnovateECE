@@ -17,3 +17,4 @@ module acc_core_golden(
 
     output logic [9:0] acc_result
 );
+
