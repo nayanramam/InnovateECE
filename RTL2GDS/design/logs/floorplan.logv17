@@ -1,0 +1,40 @@
+[02/14 13:32:19      0s] 
+[02/14 13:32:19      0s] Cadence Innovus(TM) Implementation System.
+[02/14 13:32:19      0s] Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+[02/14 13:32:19      0s] 
+[02/14 13:32:19      0s] Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+[02/14 13:32:19      0s] Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid 41a3d225-933c-4d1b-97db-a4ecd97f1799 top_dir /nethome/dkhalil8/InnovateECE/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/floorplan_17 metrics_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics.d/floorplan_17 run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/syn_opt.cdb_2 counter_16bit {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 281018} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb_2 counter_16bit {}} branch {} tool innovus caller_data {group 0 process_branch 0} uuid 41a3d225-933c-4d1b-97db-a4ecd97f1799 tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/floorplan_17} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/syn_opt.cdb_2 counter_16bit {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+[02/14 13:32:19      0s] Date:		Sat Feb 14 13:32:19 2026
+[02/14 13:32:19      0s] Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+[02/14 13:32:19      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[02/14 13:32:19      0s] 
+[02/14 13:32:19      0s] License:
+[02/14 13:32:19      0s] 		[13:32:19.185753] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[02/14 13:32:19      0s] 
+[02/14 13:32:19      1s] 		invs	Innovus Implementation System	25.1	checkout succeeded
+[02/14 13:32:19      1s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[02/14 13:32:36     17s] Memory management switch to non-aggressive memory release mode.
+[02/14 13:32:36     17s] 
+[02/14 13:32:36     17s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[02/14 13:32:36     17s] 
+[02/14 13:32:36     17s] 
+[02/14 13:32:36     17s] 
+[02/14 13:32:39     20s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+[02/14 13:32:44     24s] @(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+[02/14 13:32:44     24s] @(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+[02/14 13:32:44     24s] @(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+[02/14 13:32:44     24s] @(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+[02/14 13:32:44     24s] @(#)CDS: CPE v25.11-s029
+[02/14 13:32:44     24s] @(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+[02/14 13:32:44     24s] @(#)CDS: OA 22.62-p010 Tue Jun 10 08:32:29 2025
+[02/14 13:32:44     24s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[02/14 13:32:44     24s] @(#)CDS: RCDB 11.15.0
+[02/14 13:32:44     24s] @(#)CDS: STYLUS 25.10-b003_1 (03/20/2025 14:55 PDT)
+[02/14 13:32:44     24s] @(#)CDS: IntegrityPlanner-25.11-186 (25.11) (2025-07-16 18:29:01+0800)
+[02/14 13:32:44     24s] @(#)CDS: SYNTHESIS_ENGINE 25.11-s095
+[02/14 13:32:44     24s] @(#)CDS: TCDB v25.10-b001
+[02/14 13:32:44     24s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_284863_a2fa5cd8-8841-4aec-9ed4-4ff306938858_ece-rschsrv.ece.gatech.edu_dkhalil8_4O41no.
+
+[02/14 13:32:44     24s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_284863_a2fa5cd8-8841-4aec-9ed4-4ff306938858_ece-rschsrv.ece.gatech.edu_dkhalil8_4O41no.
+[02/14 13:32:44     24s] 
+[02/14 13:32:44     24s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
