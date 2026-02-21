@@ -279,3 +279,37 @@ flowkit/nfs_lock: Existing lock for file /nethome/dkhalil8/InnovateECE/RTL2GDS/d
 Starting scheduled flows at 02-14 13:32:17...
 * flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan
 Waiting for flows to return... (1 running)
+*  flow_current.implementation.floorplan  step:block_start  started:02-14 13:33:04  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:block_start  ended:02-14 13:33:06  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan.init_innovus  step:init_innovus_yaml  started:02-14 13:33:10  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan.init_innovus  step:init_innovus_yaml  ended:02-14 13:33:12  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan.init_innovus  step:init_innovus_user  started:02-14 13:33:17  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan.init_innovus  step:init_innovus_user  ended:02-14 13:33:18  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:init_floorplan  started:02-14 13:33:23  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:init_floorplan  ended:02-14 13:33:26  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:commit_power_intent  started:02-14 13:33:31  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:commit_power_intent  ended:02-14 13:33:32  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:add_tracks  started:02-14 13:33:37  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:add_tracks  ended:02-14 13:33:39  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:block_finish  started:02-14 13:33:44  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:block_finish  ended:02-14 13:33:50  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:write_output_screenshot  started:02-14 13:33:55  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:write_output_screenshot  ended:02-14 13:33:56  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:schedule_floorplan_report_floorplan  started:02-14 13:34:02  log:logs/floorplan.log17
+*  flow_current.implementation.floorplan  step:schedule_floorplan_report_floorplan  ended:02-14 13:34:02  log:logs/floorplan.log17
+  flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan returned successfully
+
+Starting scheduled flows at 02-14 13:34:20...
+* flow_current @ innovus: implementation.prects.block_start -> implementation.prects.schedule_prects_report_prects
+  report_floorplan @ innovus: report_start -> report_finish
+Waiting for flows to return... (2 running)
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+**INFO (INTERRUPT): One more Ctrl-C to kill all jobs started by flowtool with a clean up ...
+Innovus terminated by user interrupt.
+**INFO (INTERRUPT): One more Ctrl-C to immediately kill flowtool ...
+
+*** Memory Usage v#1 (Current mem = 2056.117M, initial mem = 949.992M) ***
+*** Message Summary: 43 warning(s), 25 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:29, real=0:19:15, mem=2056.1M) ---
+child process exited abnormally

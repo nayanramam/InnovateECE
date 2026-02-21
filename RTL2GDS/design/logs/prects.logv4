@@ -1,0 +1,782 @@
+[02/14 13:34:21      0s] 
+[02/14 13:34:21      0s] Cadence Innovus(TM) Implementation System.
+[02/14 13:34:21      0s] Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+[02/14 13:34:21      0s] 
+[02/14 13:34:21      0s] Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+[02/14 13:34:21      0s] Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/prects -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/prects_4 metrics_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics.d/prects_4 run_tag {} db {enc /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4 counter_16bit {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 281018} flow {flow flow:flow_current dir . db {enc dbs/floorplan.enc_4 counter_16bit {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 281018} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:block_start} step flow_step:block_start features {} str implementation.prects.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:block_start} step flow_step:block_start features {} str implementation.prects.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:schedule_prects_report_prects} step flow_step:schedule_prects_report_prects features {} str implementation.prects.schedule_prects_report_prects} log_prefix /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/prects}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:block_start} step flow_step:block_start features {} str implementation.prects.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:schedule_prects_report_prects} step flow_step:schedule_prects_report_prects features {} str implementation.prects.schedule_prects_report_prects}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/prects_4} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4 counter_16bit {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+[02/14 13:34:21      0s] Date:		Sat Feb 14 13:34:21 2026
+[02/14 13:34:21      0s] Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+[02/14 13:34:21      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[02/14 13:34:21      0s] 
+[02/14 13:34:21      0s] License:
+[02/14 13:34:21      0s] 		[13:34:21.185713] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[02/14 13:34:21      0s] 
+[02/14 13:34:21      0s] 		invs	Innovus Implementation System	25.1	checkout succeeded
+[02/14 13:34:21      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[02/14 13:34:38     16s] Memory management switch to non-aggressive memory release mode.
+[02/14 13:34:38     16s] 
+[02/14 13:34:38     16s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[02/14 13:34:38     16s] 
+[02/14 13:34:38     16s] 
+[02/14 13:34:38     16s] 
+[02/14 13:34:41     19s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+[02/14 13:34:46     23s] @(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+[02/14 13:34:46     23s] @(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+[02/14 13:34:46     23s] @(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+[02/14 13:34:46     23s] @(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+[02/14 13:34:46     23s] @(#)CDS: CPE v25.11-s029
+[02/14 13:34:46     23s] @(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+[02/14 13:34:46     23s] @(#)CDS: OA 22.62-p010 Tue Jun 10 08:32:29 2025
+[02/14 13:34:46     23s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[02/14 13:34:46     23s] @(#)CDS: RCDB 11.15.0
+[02/14 13:34:46     23s] @(#)CDS: STYLUS 25.10-b003_1 (03/20/2025 14:55 PDT)
+[02/14 13:34:46     23s] @(#)CDS: IntegrityPlanner-25.11-186 (25.11) (2025-07-16 18:29:01+0800)
+[02/14 13:34:46     23s] @(#)CDS: SYNTHESIS_ENGINE 25.11-s095
+[02/14 13:34:46     23s] @(#)CDS: TCDB v25.10-b001
+[02/14 13:34:46     23s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_292776_04cfb3b3-6ad4-4543-b758-9f504fd7b9ec_ece-rschsrv.ece.gatech.edu_dkhalil8_ANQ2fS.
+
+[02/14 13:34:46     23s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_292776_04cfb3b3-6ad4-4543-b758-9f504fd7b9ec_ece-rschsrv.ece.gatech.edu_dkhalil8_ANQ2fS.
+[02/14 13:34:46     23s] 
+[02/14 13:34:46     23s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[02/14 13:34:48     24s] [INFO] Loading Pegasus 24.14 fill procedures
+[02/14 13:34:48     25s] Using external PLUS TCL
+[02/14 13:34:50     26s] Info: Process UID = 292776 / 04cfb3b3-6ad4-4543-b758-9f504fd7b9ec / NcsAog1xZT
+[02/14 13:34:54     30s] 
+[02/14 13:34:54     30s] **INFO:  MMMC transition support version v31-84 
+[02/14 13:34:54     30s] 
+[02/14 13:34:54     30s] #@ Processing -execute option
+[02/14 13:34:54     30s] @innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/prects_4 metrics_file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics.d/prects_4 run_tag {} db {enc /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4 counter_16bit {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 281018} flow {flow flow:flow_current dir . db {enc dbs/floorplan.enc_4 counter_16bit {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 281018} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:block_start} step flow_step:block_start features {} str implementation.prects.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:block_start} step flow_step:block_start features {} str implementation.prects.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:schedule_prects_report_prects} step flow_step:schedule_prects_report_prects features {} str implementation.prects.schedule_prects_report_prects} log_prefix /nethome/dkhalil8/InnovateECE/RTL2GDS/design/logs/prects}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:block_start} step flow_step:block_start features {} str implementation.prects.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:prects .steps flow_step:schedule_prects_report_prects} step flow_step:schedule_prects_report_prects features {} str implementation.prects.schedule_prects_report_prects}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/prects_4} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4 counter_16bit {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+[02/14 13:34:54     30s] init_flow summary:
+[02/14 13:34:54     30s]   Flow script        : 
+[02/14 13:34:54     30s]   YAML script        : /nethome/dkhalil8/InnovateECE/RTL2GDS/design/scripts/flow.yaml
+[02/14 13:34:54     30s]   Flow               : flow:flow_current
+[02/14 13:34:54     30s]   From               : implementation.prects.block_start
+[02/14 13:34:54     30s]   To                 : implementation.prects.schedule_prects_report_prects
+[02/14 13:34:54     30s]   Top directory      : /nethome/dkhalil8/InnovateECE/RTL2GDS/design
+[02/14 13:34:54     30s]   Working directory  : .
+[02/14 13:34:54     30s]   Starting database  : /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4
+[02/14 13:34:54     30s]   Run tag            : 
+[02/14 13:34:54     30s]   Branch name        : 
+[02/14 13:34:54     30s]   Metrics file       : /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.metrics.d/prects_4
+[02/14 13:34:54     30s]   Status file        : /nethome/dkhalil8/InnovateECE/RTL2GDS/design/flow.status.d/prects_4
+[02/14 13:34:54     30s] reading previous metrics...
+[02/14 13:34:55     32s] Sourcing flow scripts...
+[02/14 13:34:56     32s] Sourcing flow scripts done.
+[02/14 13:34:56     33s] Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
+[02/14 13:34:56     33s] #@ Begin verbose flow_step activate_views
+[02/14 13:34:56     33s] @flow 2: apply {{} {
+[02/14 13:34:56     33s]     set db [get_db flow_starting_db]
+[02/14 13:34:56     33s]     set flow [lindex [get_db flow_hier_path] end]
+[02/14 13:34:56     33s]     set setup_views [get_feature -obj $flow setup_views]
+[02/14 13:34:56     33s]     set hold_views [get_feature -obj $flow hold_views]
+[02/14 13:34:56     33s]     set leakage_view [get_feature -obj $flow leakage_view]
+[02/14 13:34:56     33s]     set dynamic_view [get_feature -obj $flow dynamic_view]
+[02/14 13:34:56     33s]   
+[02/14 13:34:56     33s]     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+[02/14 13:34:56     33s]       #- use read_db args for DB types and set_analysis_views for TCL
+[02/14 13:34:56     33s]       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+[02/14 13:34:56     33s]         set cmd "set_analysis_view"
+[02/14 13:34:56     33s]         if {$setup_views ne ""} {
+[02/14 13:34:56     33s]           append cmd " -setup [list $setup_views]"
+[02/14 13:34:56     33s]         } else {
+[02/14 13:34:56     33s]           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+[02/14 13:34:56     33s]         }
+[02/14 13:34:56     33s]         if {$hold_views ne ""} {
+[02/14 13:34:56     33s]           append cmd " -hold [list $hold_views]"
+[02/14 13:34:56     33s]         } else {
+[02/14 13:34:56     33s]           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+[02/14 13:34:56     33s]         }
+[02/14 13:34:56     33s]         if {$leakage_view ne ""} {
+[02/14 13:34:56     33s]           append cmd " -leakage [list $leakage_view]"
+[02/14 13:34:56     33s]         } else {
+[02/14 13:34:56     33s]           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+[02/14 13:34:56     33s]             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+[02/14 13:34:56     33s]           }
+[02/14 13:34:56     33s]         }
+[02/14 13:34:56     33s]         if {$dynamic_view ne ""} {
+[02/14 13:34:56     33s]           append cmd " -dynamic [list $dynamic_view]"
+[02/14 13:34:56     33s]         } else {
+[02/14 13:34:56     33s]           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+[02/14 13:34:56     33s]             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+[02/14 13:34:56     33s]           }
+[02/14 13:34:56     33s]         }
+[02/14 13:34:56     33s]         eval $cmd
+[02/14 13:34:56     33s]       } elseif {[llength [get_db analysis_views]] == 0} {
+[02/14 13:34:56     33s]         set cmd "set_flowkit_read_db_args"
+[02/14 13:34:56     33s]         if {$setup_views ne ""} {
+[02/14 13:34:56     33s]           append cmd " -setup_views [list $setup_views]"
+[02/14 13:34:56     33s]         }
+[02/14 13:34:56     33s]         if {$hold_views ne ""} {
+[02/14 13:34:56     33s]           append cmd " -hold_views [list $hold_views]"
+[02/14 13:34:56     33s]         }
+[02/14 13:34:56     33s]         if {$leakage_view ne ""} {
+[02/14 13:34:56     33s]           append cmd " -leakage_view [list $leakage_view]"
+[02/14 13:34:56     33s]         }
+[02/14 13:34:56     33s]         if {$dynamic_view ne ""} {
+[02/14 13:34:56     33s]           append cmd " -dynamic_view [list $dynamic_view]"
+[02/14 13:34:56     33s]         }
+[02/14 13:34:56     33s]         eval $cmd
+[02/14 13:34:56     33s]       } else {
+[02/14 13:34:56     33s]       }
+[02/14 13:34:56     33s]     }
+[02/14 13:34:56     33s]   }}
+[02/14 13:34:56     33s] #@ End verbose flow_step activate_views
+[02/14 13:34:56     33s] #@ Begin verbose flow_step init_mcpu
+[02/14 13:34:56     33s] @flow 2: apply {{} {
+[02/14 13:34:56     33s]     # Multi host/cpu attributes
+[02/14 13:34:56     33s]     #-----------------------------------------------------------------------------
+[02/14 13:34:56     33s]     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+[02/14 13:34:56     33s]     # the specified dist script.  This connects the number of CPUs being reserved
+[02/14 13:34:56     33s]     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+[02/14 13:34:56     33s]     # a typical environment variable exported by distribution platforms and is
+[02/14 13:34:56     33s]     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+[02/14 13:34:56     33s]     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+[02/14 13:34:56     33s]       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+[02/14 13:34:56     33s]     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+[02/14 13:34:56     33s]       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+[02/14 13:34:56     33s]     } else {
+[02/14 13:34:56     33s]       set max_cpus 1
+[02/14 13:34:56     33s]     }
+[02/14 13:34:56     33s]     switch -glob [get_db program_short_name] {
+[02/14 13:34:56     33s]       default       {}
+[02/14 13:34:56     33s]       joules*       -
+[02/14 13:34:56     33s]       genus*        -
+[02/14 13:34:56     33s]       innovus*      -
+[02/14 13:34:56     33s]       tempus*       -
+[02/14 13:34:56     33s]       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+[02/14 13:34:56     33s]     }
+[02/14 13:34:56     33s] if {[get_feature opt_signoff]} {
+[02/14 13:34:56     33s]       if {[is_flow -inside flow:opt_signoff]} {
+[02/14 13:34:56     33s]         set_multi_cpu_usage -verbose -remote_host 1
+[02/14 13:34:56     33s]         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+[02/14 13:34:56     33s]         set_distributed_hosts -local
+[02/14 13:34:56     33s]       }
+[02/14 13:34:56     33s] }
+[02/14 13:34:56     33s]   }}
+[02/14 13:34:56     33s] set_multi_cpu_usage -local_cpu 1
+[02/14 13:34:56     33s] #@ End verbose flow_step init_mcpu
+[02/14 13:34:56     33s] End steps for plugin point Cadence.plugin.flowkit.read_db.pre
+[02/14 13:34:56     33s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/14 13:34:56     33s] #% Begin load design ... (date=02/14 13:34:56, mem=2141.8M)
+[02/14 13:34:57     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:57     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:57     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:57     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:57     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:57     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:58     34s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[02/14 13:34:58     34s] ##  Process: 130           (User Set)               
+[02/14 13:34:58     34s] ##     Node: (not set)                           
+[02/14 13:34:58     34s] 
+[02/14 13:34:58     34s] ##  Check design process and node:  
+[02/14 13:34:58     34s] ##  Design tech node is not set.
+[02/14 13:34:58     34s] 
+[02/14 13:34:58     34s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[02/14 13:34:58     34s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[02/14 13:34:58     34s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[02/14 13:34:58     34s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[02/14 13:34:58     34s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[02/14 13:34:58     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:58     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:58     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:58     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:58     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:58     34s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/14 13:34:58     34s] Loading design 'counter_16bit' saved by 'Innovus' '25.11-s102_1' on 'Sat Feb 14 13:33:49 2026'.
+[02/14 13:34:58     34s] Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
+[02/14 13:34:59     35s] Read 109 cells in library 'sky130_tt_1.8_25' 
+[02/14 13:34:59     35s] Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
+[02/14 13:34:59     35s] Read 1 cells in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C_lib' 
+[02/14 13:34:59     35s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:01.0, peak res=2212.3M, current mem=2152.3M)
+[02/14 13:34:59     35s] 
+[02/14 13:34:59     35s] Loading LEF file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/libs/lef/sky130_scl_9T.tlef ...
+[02/14 13:34:59     35s] 
+[02/14 13:34:59     35s] Loading LEF file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/libs/lef/sky130_scl_9T.lef ...
+[02/14 13:34:59     35s] Set DBUPerIGU to M2 pitch 460.
+[02/14 13:34:59     35s] 
+[02/14 13:34:59     35s] Loading LEF file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/libs/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef ...
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-200):	Pin 'din0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-200' for more detail.
+[02/14 13:34:59     35s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[02/14 13:34:59     35s] To increase the message display limit, refer to the product command reference manual.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPLF-201):	Pin 'dout0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[02/14 13:34:59     35s] Type 'man IMPLF-201' for more detail.
+[02/14 13:34:59     35s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[02/14 13:34:59     35s] To increase the message display limit, refer to the product command reference manual.
+[02/14 13:34:59     35s] 
+[02/14 13:34:59     35s] ##  Check design process and node:  
+[02/14 13:34:59     35s] ##  Design tech node is not set.
+[02/14 13:34:59     35s] 
+[02/14 13:34:59     35s] Loading view definition file from /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/viewDefinition.tcl
+[02/14 13:34:59     35s] % Begin Load netlist data ... (date=02/14 13:34:59, mem=2160.7M)
+[02/14 13:34:59     35s] *** Begin netlist parsing (mem=2160.7M) ***
+[02/14 13:34:59     35s] Created 110 new cells from 2 timing libraries.
+[02/14 13:34:59     35s] Reading netlist ...
+[02/14 13:34:59     35s] Backslashed names will retain backslash and a trailing blank character.
+[02/14 13:34:59     35s] Reading verilogBinary netlist '/nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.v.bin'
+[02/14 13:34:59     35s] 
+[02/14 13:34:59     35s] *** Memory Usage v#1 (Current mem = 2167.801M, initial mem = 916.672M) ***
+[02/14 13:34:59     35s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2167.8M) ***
+[02/14 13:34:59     35s] % End Load netlist data ... (date=02/14 13:34:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=2168.4M, current mem=2168.4M)
+[02/14 13:34:59     35s] Top level cell is counter_16bit.
+[02/14 13:34:59     35s] Hooked 110 DB cells to tlib cells.
+[02/14 13:34:59     35s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2170.9M, current mem=2170.9M)
+[02/14 13:34:59     35s] Starting recursive module instantiation check.
+[02/14 13:34:59     35s] No recursion found.
+[02/14 13:34:59     35s] Building hierarchical netlist for Cell counter_16bit ...
+[02/14 13:34:59     35s] ***** UseNewTieNetMode *****.
+[02/14 13:34:59     35s] *** Netlist is unique.
+[02/14 13:34:59     35s] Setting Std. cell height to 4140 DBU (smallest netlist inst).
+[02/14 13:34:59     35s] ** info: there are 119 modules.
+[02/14 13:34:59     35s] ** info: there are 139 stdCell insts.
+[02/14 13:34:59     35s] ** info: there are 139 stdCell insts with at least one signal pin.
+[02/14 13:34:59     35s] 
+[02/14 13:34:59     35s] *** Memory Usage v#1 (Current mem = 2196.531M, initial mem = 916.672M) ***
+[02/14 13:34:59     35s] *info: set bottom ioPad orient R0
+[02/14 13:34:59     35s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[02/14 13:34:59     35s] Type 'man IMPFP-3961' for more detail.
+[02/14 13:34:59     35s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[02/14 13:34:59     35s] Type 'man IMPFP-3961' for more detail.
+[02/14 13:34:59     36s] Start create_tracks
+[02/14 13:34:59     36s] Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+[02/14 13:34:59     36s] Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+[02/14 13:34:59     36s] Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+[02/14 13:34:59     36s] Loading preference file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/gui.pref.tcl ...
+[02/14 13:34:59     36s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[02/14 13:34:59     36s] ##  Process: 130           (User Set)               
+[02/14 13:34:59     36s] ##     Node: (not set)                           
+[02/14 13:34:59     36s] 
+[02/14 13:34:59     36s] ##  Check design process and node:  
+[02/14 13:34:59     36s] ##  Design tech node is not set.
+[02/14 13:34:59     36s] 
+[02/14 13:34:59     36s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[02/14 13:34:59     36s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[02/14 13:34:59     36s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[02/14 13:34:59     36s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[02/14 13:34:59     36s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[02/14 13:34:59     36s] Change floorplan default-technical-site to 'CoreSite'.
+[02/14 13:35:00     36s] Extraction setup Delayed 
+[02/14 13:35:00     36s] *Info: initialize multi-corner CTS.
+[02/14 13:35:00     36s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2478.5M, current mem=2213.0M)
+[02/14 13:35:00     37s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[02/14 13:35:00     37s] 
+[02/14 13:35:00     37s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[02/14 13:35:00     37s] Summary for sequential cells identification: 
+[02/14 13:35:00     37s]   Identified SBFF number: 16
+[02/14 13:35:00     37s]   Identified MBFF number: 0
+[02/14 13:35:00     37s]   Identified SB Latch number: 2
+[02/14 13:35:00     37s]   Identified MB Latch number: 0
+[02/14 13:35:00     37s]   Not identified SBFF number: 0
+[02/14 13:35:00     37s]   Not identified MBFF number: 0
+[02/14 13:35:00     37s]   Not identified SB Latch number: 0
+[02/14 13:35:00     37s]   Not identified MB Latch number: 0
+[02/14 13:35:00     37s]   Number of sequential cells which are not FFs: 1
+[02/14 13:35:00     37s] Total number of combinational cells: 87
+[02/14 13:35:00     37s] Total number of sequential cells: 19
+[02/14 13:35:00     37s] Total number of tristate cells: 3
+[02/14 13:35:00     37s] Total number of level shifter cells: 0
+[02/14 13:35:00     37s] Total number of power gating cells: 0
+[02/14 13:35:00     37s] Total number of isolation cells: 0
+[02/14 13:35:00     37s] Total number of power switch cells: 0
+[02/14 13:35:00     37s] Total number of pulse generator cells: 0
+[02/14 13:35:00     37s] Total number of always on buffers: 0
+[02/14 13:35:00     37s] Total number of retention cells: 0
+[02/14 13:35:00     37s] Total number of physical cells: 0
+[02/14 13:35:00     37s] List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4[02/14 13:35:00     37s] 
+[02/14 13:35:00     37s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ BUFX4 CLKBUFX8 BUFX8 BUFX16
+[02/14 13:35:00     37s] Total number of usable buffers: 7
+[02/14 13:35:00     37s] List of unusable buffers:
+[02/14 13:35:00     37s] Total number of unusable buffers: 0
+[02/14 13:35:00     37s] List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+[02/14 13:35:00     37s] Total number of usable inverters: 9
+[02/14 13:35:00     37s] List of unusable inverters:
+[02/14 13:35:00     37s] Total number of unusable inverters: 0
+[02/14 13:35:00     37s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
+[02/14 13:35:00     37s] Total number of identified usable delay cells: 4
+[02/14 13:35:00     37s] List of identified unusable delay cells:
+[02/14 13:35:00     37s] Total number of identified unusable delay cells: 0
+[02/14 13:35:00     37s] 
+[02/14 13:35:00     37s] TimeStamp Deleting Cell Server Begin ...
+[02/14 13:35:00     37s] 
+[02/14 13:35:00     37s] TimeStamp Deleting Cell Server End ...
+[02/14 13:35:00     37s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2489.9M, current mem=2489.8M)
+[02/14 13:35:00     37s] 
+[02/14 13:35:00     37s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[02/14 13:35:00     37s] Summary for sequential cells identification: 
+[02/14 13:35:00     37s]   Identified SBFF number: 16
+[02/14 13:35:00     37s]   Identified MBFF number: 0
+[02/14 13:35:00     37s]   Identified SB Latch number: 2
+[02/14 13:35:00     37s]   Identified MB Latch number: 0
+[02/14 13:35:00     37s]   Not identified SBFF number: 0
+[02/14 13:35:00     37s]   Not identified MBFF number: 0
+[02/14 13:35:00     37s]   Not identified SB Latch number: 0
+[02/14 13:35:00     37s]   Not identified MB Latch number: 0
+[02/14 13:35:00     37s]   Number of sequential cells which are not FFs: 1
+[02/14 13:35:00     37s]  Visiting view : tt_v1.8_25C_Nominal_25_func
+[02/14 13:35:00     37s]    : PowerDomain = none : Weighted F : unweighted  = 35.60 (1.000) with rcCorner = 0
+[02/14 13:35:00     37s]    : PowerDomain = none : Weighted F : unweighted  = 29.80 (1.000) with rcCorner = -1
+[02/14 13:35:00     37s]  Visiting view : tt_v1.8_25C_Nominal_25_func
+[02/14 13:35:00     37s]    : PowerDomain = none : Weighted F : unweighted  = 35.60 (1.000) with rcCorner = 0
+[02/14 13:35:00     37s]    : PowerDomain = none : Weighted F : unweighted  = 29.80 (1.000) with rcCorner = -1
+[02/14 13:35:00     37s] 
+[02/14 13:35:00     37s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[02/14 13:35:00     37s] 
+[02/14 13:35:00     37s] TimeStamp Deleting Cell Server Begin ...
+[02/14 13:35:00     37s] 
+[02/14 13:35:00     37s] TimeStamp Deleting Cell Server End ...
+[02/14 13:35:00     37s] Reading floorplan file - /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.fp.gz (mem = 2491.5M).
+[02/14 13:35:00     37s] % Begin Load floorplan data ... (date=02/14 13:35:00, mem=2492.2M)
+[02/14 13:35:01     37s] *info: reset 160 existing net BottomPreferredLayer and AvoidDetour
+[02/14 13:35:01     37s] Deleting old partition specification.
+[02/14 13:35:01     37s] Set FPlanBox to (0 0 1025800 1301800)
+[02/14 13:35:01     37s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[02/14 13:35:01     37s] Type 'man IMPFP-3961' for more detail.
+[02/14 13:35:01     37s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[02/14 13:35:01     37s] Type 'man IMPFP-3961' for more detail.
+[02/14 13:35:01     37s]  ... processed partition successfully.
+[02/14 13:35:01     37s] Reading binary special route file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.fp.spr.gz (Created by Innovus v25.11-s102_1 on Sat Feb 14 13:33:47 2026, version: 1)
+[02/14 13:35:01     37s] Convert 0 swires and 0 svias from compressed groups
+[02/14 13:35:01     37s] 85 swires and 88 svias were compressed
+[02/14 13:35:01     37s] 85 swires and 74 svias were decompressed from small or sparse groups
+[02/14 13:35:01     37s] Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2494.0M, current mem=2494.0M)
+[02/14 13:35:01     37s] Extracting standard cell pins and blockage ...... 
+[02/14 13:35:01     37s] Pin and blockage extraction finished
+[02/14 13:35:01     37s] Delete all existing relative floorplan constraints.
+[02/14 13:35:01     37s] % End Load floorplan data ... (date=02/14 13:35:01, total cpu=0:00:00.1, real=0:00:01.0, peak res=2494.5M, current mem=2494.5M)
+[02/14 13:35:01     37s] Reading congestion map file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.route.congmap.gz ...
+[02/14 13:35:01     37s] % Begin Load SymbolTable ... (date=02/14 13:35:01, mem=2495.0M)
+[02/14 13:35:01     37s] % End Load SymbolTable ... (date=02/14 13:35:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=2495.7M, current mem=2495.7M)
+[02/14 13:35:01     37s] Loading place ...
+[02/14 13:35:01     37s] % Begin Load placement data ... (date=02/14 13:35:01, mem=2495.7M)
+[02/14 13:35:01     37s] Reading placement file - /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.place.gz.
+[02/14 13:35:01     37s] ** Reading stdCellPlacement_binary (Created by Innovus v25.11-s102_1 on Sat Feb 14 13:33:48 2026, version# 2) ...
+[02/14 13:35:01     37s] Read Views for adaptive view pruning ...
+[02/14 13:35:01     37s] Read 0 views from Binary DB for adaptive view pruning
+[02/14 13:35:01     37s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2495.7M) ***
+[02/14 13:35:01     37s] Total net length = 2.780e-01 (1.390e-01 1.390e-01) (ext = 0.000e+00)
+[02/14 13:35:01     37s] % End Load placement data ... (date=02/14 13:35:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=2495.9M, current mem=2495.9M)
+[02/14 13:35:01     37s] Reading PG file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on       Sat Feb 14 13:33:48 2026)
+[02/14 13:35:01     37s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2496.2M) ***
+[02/14 13:35:01     37s] % Begin Load routing data ... (date=02/14 13:35:01, mem=2496.2M)
+[02/14 13:35:01     37s] Reading routing file - /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.route.gz.
+[02/14 13:35:01     37s] Reading Innovus routing data (Created by Innovus v25.11-s102_1 on Sat Feb 14 13:33:48 2026 Format: 23.1) ...
+[02/14 13:35:01     37s] *** Total 160 nets are successfully restored.
+[02/14 13:35:01     37s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2497.3M) ***
+[02/14 13:35:01     37s] % End Load routing data ... (date=02/14 13:35:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=2497.3M, current mem=2496.4M)
+[02/14 13:35:01     37s] TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[02/14 13:35:01     37s] Reading property file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.prop
+[02/14 13:35:02     37s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:01.0 mem=2498.8M) ***
+[02/14 13:35:02     37s] Change floorplan default-technical-site to 'CoreSite'.
+[02/14 13:35:02     38s] eee: Design meta data check started
+[02/14 13:35:02     38s] Loading preRoute extraction data from directory '/nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/extraction/' ...
+[02/14 13:35:02     38s] eee: Design meta data check completed
+[02/14 13:35:02     38s] Extraction setup Started for TopCell counter_16bit 
+[02/14 13:35:02     38s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[02/14 13:35:02     38s] eee: __QRC_SADV_USE_LE__ is set 0
+[02/14 13:35:02     38s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[02/14 13:35:02     38s] Generating auto layer map file.
+[02/14 13:35:02     38s] eee: cut Layer Id 33 mapped to tech Id 6 of Layer mcon 
+[02/14 13:35:02     38s] eee:  LayerId	    Name	QrcTechId	QrcTechName	Type
+[02/14 13:35:02     38s] eee:       33	    mcon	        6	       mcon	Via            
+[02/14 13:35:02     38s] eee:        1	    met1	        7	     metal1	Metal          
+[02/14 13:35:02     38s] eee:       34	     via	        8	       via1	Via            
+[02/14 13:35:02     38s] eee:        2	    met2	        9	     metal2	Metal          
+[02/14 13:35:02     38s] eee:       35	    via2	       10	       via2	Via            
+[02/14 13:35:02     38s] eee:        3	    met3	       11	     metal3	Metal          
+[02/14 13:35:02     38s] eee:       36	    via3	       12	       via3	Via            
+[02/14 13:35:02     38s] eee:        4	    met4	       13	     metal4	Metal          
+[02/14 13:35:02     38s] eee:       37	    via4	       14	       via4	Via            
+[02/14 13:35:02     38s] eee:        5	    met5	       15	     metal5	Metal          
+[02/14 13:35:02     38s] eee: TechFile: /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/libs/mmmc/Nominal_25C/qrcTechFile
+[02/14 13:35:02     38s] eee: HoWee  : 0 0 0 0 0 
+[02/14 13:35:02     38s] eee: Erosn  : 0 0 0 0 0 
+[02/14 13:35:02     38s] eee: nrColor: 0 0 0 0 0 
+[02/14 13:35:02     38s] eee: Save / Restore of RC patterns enabled 
+[02/14 13:35:02     38s] eee: Pattern meta data check started
+[02/14 13:35:02     38s] eee: Pattern meta data check completed
+[02/14 13:35:02     38s] eee: Pattern data restore started
+[02/14 13:35:02     38s] Loading preRoute extracted patterns from file '/nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit.techData.gz' ...
+[02/14 13:35:02     38s] eee: Pattern data restore completed
+[02/14 13:35:02     38s] Completed (cpu: 0:00:00.3 real: 0:00:00.0)
+[02/14 13:35:02     38s] Set Shrink Factor to 1.00000
+[02/14 13:35:02     38s] eee: escapedRCCornerName (Nominal_25C)
+[02/14 13:35:02     38s] Summary of Active RC-Corners : 
+[02/14 13:35:02     38s]  
+[02/14 13:35:02     38s]  Analysis View: tt_v1.8_25C_Nominal_25_func
+[02/14 13:35:02     38s]     RC-Corner Name        : Nominal_25C
+[02/14 13:35:02     38s]     RC-Corner Index       : 0
+[02/14 13:35:02     38s]     RC-Corner Temperature : 25 Celsius
+[02/14 13:35:02     38s]     RC-Corner Cap Table   : ''
+[02/14 13:35:02     38s]     RC-Corner PreRoute Res Factor         : 1
+[02/14 13:35:02     38s]     RC-Corner PreRoute Cap Factor         : 1
+[02/14 13:35:02     38s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[02/14 13:35:02     38s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[02/14 13:35:02     38s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[02/14 13:35:02     38s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[02/14 13:35:02     38s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[02/14 13:35:02     38s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+[02/14 13:35:02     38s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+[02/14 13:35:02     38s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[02/14 13:35:02     38s]     RC-Corner Technology file: '/nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/libs/mmmc/Nominal_25C/qrcTechFile'
+[02/14 13:35:02     38s] eee: RC Grid memory allocated = 51480 (26 X 33 X 5 X 12b)
+[02/14 13:35:02     38s] eee: Grid density data restore started
+[02/14 13:35:02     38s] eee: Grid density data restore failed
+[02/14 13:35:02     38s] eee: pegSigSF=1.070000
+[02/14 13:35:02     38s] Updating RC Grid density data for preRoute extraction ...
+[02/14 13:35:02     38s] Initializing multi-corner resistance tables ...
+[02/14 13:35:02     38s] eee: Grid unit RC data computation started
+[02/14 13:35:02     38s] eee: Grid unit RC data computation completed
+[02/14 13:35:02     38s] eee: l=1 avDens=0.103518 usedTrk=7220.364178 availTrk=69750.000000 sigTrk=7220.364178
+[02/14 13:35:02     38s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[02/14 13:35:02     38s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[02/14 13:35:02     38s] eee: l=4 avDens=0.026030 usedTrk=1396.530991 availTrk=53651.707317 sigTrk=1396.530991
+[02/14 13:35:02     38s] eee: l=5 avDens=0.157043 usedTrk=1421.111739 availTrk=9049.180328 sigTrk=1421.111739
+[02/14 13:35:02     38s] {RT Nominal_25C 0 2 5  {4 0} 1}
+[02/14 13:35:02     38s] eee: LAM-FP: thresh=1 ; dimX=2230.000000 ; dimY=2830.000000 ; multX=1.000000 ; multY=1.000000 ; minP=460 ; fpMult=1.000000 ;
+[02/14 13:35:02     38s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.265217 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.332500 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.000000 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[02/14 13:35:02     38s] eee: dbu = 1000, Design = [ll(0.000000, 0.000000) ur(1025.800000, 1301.800000)], Layers = [f(5) b(0)], Grid size = 41.400000 um, Grid Dim = (25 X 32)
+[02/14 13:35:02     38s] eee: Metal Layers Info:
+[02/14 13:35:02     38s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[02/14 13:35:02     38s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[02/14 13:35:02     38s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[02/14 13:35:02     38s] eee: |     met1 |   1 |   0.140 |   0.140 |   0.460 |  0.181 |   0.89 | H | 0 |  1 |
+[02/14 13:35:02     38s] eee: |     met2 |   2 |   0.140 |   0.140 |   0.460 |  0.182 |   0.89 | V | 0 |  1 |
+[02/14 13:35:02     38s] eee: |     met3 |   3 |   0.300 |   0.300 |   0.610 |  0.335 |   0.16 | H | 0 |  1 |
+[02/14 13:35:02     38s] eee: |     met4 |   4 |   0.300 |   0.300 |   0.615 |  0.311 |   0.16 | V | 0 |  1 |
+[02/14 13:35:02     38s] eee: |     met5 |   5 |   1.600 |   1.600 |   3.660 |  0.260 |   0.02 | H | 0 |  1 |
+[02/14 13:35:02     38s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[02/14 13:35:02     38s] eee: uC/uR for corner Nominal_25C, min-width/min-spacing, 30 perc over/under densities.
+[02/14 13:35:02     38s] eee: +-----------------------NDR Info-----------------------+
+[02/14 13:35:02     38s] eee: NDR Count = 0, Fake NDR = 0
+[02/14 13:35:02     38s] Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+[02/14 13:35:02     38s] Start generating vias ..
+[02/14 13:35:02     38s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=1069576481 routing_via=1 timing=1 sns=1 ppa_info=1
+[02/14 13:35:02     38s] #Skip building auto via since it is not turned on.
+[02/14 13:35:02     38s] Extracting standard cell pins and blockage ...... 
+[02/14 13:35:02     38s] Pin and blockage extraction finished
+[02/14 13:35:02     38s] Via generation completed.
+[02/14 13:35:02     38s] % Begin Load power constraints ... (date=02/14 13:35:02, mem=2514.8M)
+[02/14 13:35:02     38s] source /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/floorplan.enc_4/counter_16bit_power_constraints.tcl
+[02/14 13:35:03     38s] % End Load power constraints ... (date=02/14 13:35:02, total cpu=0:00:00.1, real=0:00:01.0, peak res=2515.3M, current mem=2515.3M)
+[02/14 13:35:03     38s] % Begin load AAE data ... (date=02/14 13:35:03, mem=2550.0M)
+[02/14 13:35:03     38s] % End load AAE data ... (date=02/14 13:35:03, total cpu=0:00:00.1, real=0:00:00.0, peak res=2550.0M, current mem=2550.0M)
+[02/14 13:35:03     38s] Restoring CCOpt config...
+[02/14 13:35:03     38s] Restoring CCOpt config done.
+[02/14 13:35:03     38s] 
+[02/14 13:35:03     38s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[02/14 13:35:03     38s] Summary for sequential cells identification: 
+[02/14 13:35:03     38s]   Identified SBFF number: 16
+[02/14 13:35:03     38s]   Identified MBFF number: 0
+[02/14 13:35:03     38s]   Identified SB Latch number: 2
+[02/14 13:35:03     38s]   Identified MB Latch number: 0
+[02/14 13:35:03     38s]   Not identified SBFF number: 0
+[02/14 13:35:03     38s]   Not identified MBFF number: 0
+[02/14 13:35:03     38s]   Not identified SB Latch number: 0
+[02/14 13:35:03     38s]   Not identified MB Latch number: 0
+[02/14 13:35:03     38s]   Number of sequential cells which are not FFs: 1
+[02/14 13:35:03     38s] Total number of combinational cells: 87
+[02/14 13:35:03     38s] Total number of sequential cells: 19
+[02/14 13:35:03     38s] Total number of tristate cells: 3
+[02/14 13:35:03     38s] Total number of level shifter cells: 0
+[02/14 13:35:03     38s] Total number of power gating cells: 0
+[02/14 13:35:03     38s] Total number of isolation cells: 0
+[02/14 13:35:03     38s] Total number of power switch cells: 0
+[02/14 13:35:03     38s] Total number of pulse generator cells: 0
+[02/14 13:35:03     38s] Total number of always on buffers: 0
+[02/14 13:35:03     38s] Total number of retention cells: 0
+[02/14 13:35:03     38s] Total number of physical cells: 0
+[02/14 13:35:03     38s] List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4[02/14 13:35:03     38s] 
+[02/14 13:35:03     38s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ BUFX4 CLKBUFX8 BUFX8 BUFX16
+[02/14 13:35:03     38s] Total number of usable buffers: 7
+[02/14 13:35:03     38s] List of unusable buffers:
+[02/14 13:35:03     38s] Total number of unusable buffers: 0
+[02/14 13:35:03     38s] List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+[02/14 13:35:03     38s] Total number of usable inverters: 9
+[02/14 13:35:03     38s] List of unusable inverters:
+[02/14 13:35:03     38s] Total number of unusable inverters: 0
+[02/14 13:35:03     38s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
+[02/14 13:35:03     38s] Total number of identified usable delay cells: 4
+[02/14 13:35:03     38s] List of identified unusable delay cells:
+[02/14 13:35:03     38s] Total number of identified unusable delay cells: 0
+[02/14 13:35:03     38s] 
+[02/14 13:35:03     38s] TimeStamp Deleting Cell Server Begin ...
+[02/14 13:35:03     38s] 
+[02/14 13:35:03     38s] TimeStamp Deleting Cell Server End ...
+[02/14 13:35:03     38s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version (null). They will be removed in the next release. 
+[02/14 13:35:03     38s] timing_aocv_enable_gba_combine_launch_capture
+[02/14 13:35:03     38s] timing_enable_backward_compatible_latch_thru_mt_mode
+[02/14 13:35:03     38s] #% End load design ... (date=02/14 13:35:03, total cpu=0:00:05.6, real=0:00:07.0, peak res=2580.5M, current mem=2551.7M)
+[02/14 13:35:03     38s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/14 13:35:03     38s] 
+[02/14 13:35:03     38s] *** Summary of all messages that are not suppressed in this session:
+[02/14 13:35:03     38s] Severity  ID               Count  Summary                                  
+[02/14 13:35:03     38s] WARNING   IMPLF-200           60  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[02/14 13:35:03     38s] WARNING   IMPLF-201           64  Pin '%s' in macro '%s' has no ANTENNADIF...
+[02/14 13:35:03     38s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[02/14 13:35:03     38s] WARNING   IMPDBTCL-321        12  The attribute '%s' still works but will ...
+[02/14 13:35:03     38s] WARNING   IMPDB-6501           2  "set_db design_process_node" will be obs...
+[02/14 13:35:03     38s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[02/14 13:35:03     38s] *** Message Summary: 143 warning(s), 0 error(s)
+[02/14 13:35:03     38s] 
+[02/14 13:35:03     38s] UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[02/14 13:35:03     38s] UM:*                                                                   read_db
+[02/14 13:35:03     38s] Sourcing flow scripts...
+[02/14 13:35:04     39s] Sourcing flow scripts done.
+[02/14 13:35:04     39s] reading previous metrics...
+[02/14 13:35:05     41s] Begin steps for plugin point Cadence.plugin.flowkit.read_db.post
+[02/14 13:35:05     41s] #@ Begin verbose flow_step activate_views
+[02/14 13:35:05     41s] @flow 2: apply {{} {
+[02/14 13:35:05     41s]     set db [get_db flow_starting_db]
+[02/14 13:35:05     41s]     set flow [lindex [get_db flow_hier_path] end]
+[02/14 13:35:05     41s]     set setup_views [get_feature -obj $flow setup_views]
+[02/14 13:35:05     41s]     set hold_views [get_feature -obj $flow hold_views]
+[02/14 13:35:05     41s]     set leakage_view [get_feature -obj $flow leakage_view]
+[02/14 13:35:05     41s]     set dynamic_view [get_feature -obj $flow dynamic_view]
+[02/14 13:35:05     41s]   
+[02/14 13:35:05     41s]     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+[02/14 13:35:05     41s]       #- use read_db args for DB types and set_analysis_views for TCL
+[02/14 13:35:05     41s]       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+[02/14 13:35:05     41s]         set cmd "set_analysis_view"
+[02/14 13:35:05     41s]         if {$setup_views ne ""} {
+[02/14 13:35:05     41s]           append cmd " -setup [list $setup_views]"
+[02/14 13:35:05     41s]         } else {
+[02/14 13:35:05     41s]           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+[02/14 13:35:05     41s]         }
+[02/14 13:35:05     41s]         if {$hold_views ne ""} {
+[02/14 13:35:05     41s]           append cmd " -hold [list $hold_views]"
+[02/14 13:35:05     41s]         } else {
+[02/14 13:35:05     41s]           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+[02/14 13:35:05     41s]         }
+[02/14 13:35:05     41s]         if {$leakage_view ne ""} {
+[02/14 13:35:05     41s]           append cmd " -leakage [list $leakage_view]"
+[02/14 13:35:05     41s]         } else {
+[02/14 13:35:05     41s]           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+[02/14 13:35:05     41s]             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+[02/14 13:35:05     41s]           }
+[02/14 13:35:05     41s]         }
+[02/14 13:35:05     41s]         if {$dynamic_view ne ""} {
+[02/14 13:35:05     41s]           append cmd " -dynamic [list $dynamic_view]"
+[02/14 13:35:05     41s]         } else {
+[02/14 13:35:05     41s]           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+[02/14 13:35:05     41s]             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+[02/14 13:35:05     41s]           }
+[02/14 13:35:05     41s]         }
+[02/14 13:35:05     41s]         eval $cmd
+[02/14 13:35:05     41s]       } elseif {[llength [get_db analysis_views]] == 0} {
+[02/14 13:35:05     41s]         set cmd "set_flowkit_read_db_args"
+[02/14 13:35:05     41s]         if {$setup_views ne ""} {
+[02/14 13:35:05     41s]           append cmd " -setup_views [list $setup_views]"
+[02/14 13:35:05     41s]         }
+[02/14 13:35:05     41s]         if {$hold_views ne ""} {
+[02/14 13:35:05     41s]           append cmd " -hold_views [list $hold_views]"
+[02/14 13:35:05     41s]         }
+[02/14 13:35:05     41s]         if {$leakage_view ne ""} {
+[02/14 13:35:05     41s]           append cmd " -leakage_view [list $leakage_view]"
+[02/14 13:35:05     41s]         }
+[02/14 13:35:05     41s]         if {$dynamic_view ne ""} {
+[02/14 13:35:05     41s]           append cmd " -dynamic_view [list $dynamic_view]"
+[02/14 13:35:05     41s]         }
+[02/14 13:35:05     41s]         eval $cmd
+[02/14 13:35:05     41s]       } else {
+[02/14 13:35:05     41s]       }
+[02/14 13:35:05     41s]     }
+[02/14 13:35:05     41s]   }}
+[02/14 13:35:05     41s] #@ End verbose flow_step activate_views
+[02/14 13:35:05     41s] #@ Begin verbose flow_step init_mcpu
+[02/14 13:35:05     41s] @flow 2: apply {{} {
+[02/14 13:35:05     41s]     # Multi host/cpu attributes
+[02/14 13:35:05     41s]     #-----------------------------------------------------------------------------
+[02/14 13:35:05     41s]     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+[02/14 13:35:05     41s]     # the specified dist script.  This connects the number of CPUs being reserved
+[02/14 13:35:05     41s]     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+[02/14 13:35:05     41s]     # a typical environment variable exported by distribution platforms and is
+[02/14 13:35:05     41s]     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+[02/14 13:35:05     41s]     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+[02/14 13:35:05     41s]       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+[02/14 13:35:05     41s]     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+[02/14 13:35:05     41s]       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+[02/14 13:35:05     41s]     } else {
+[02/14 13:35:05     41s]       set max_cpus 1
+[02/14 13:35:05     41s]     }
+[02/14 13:35:05     41s]     switch -glob [get_db program_short_name] {
+[02/14 13:35:05     41s]       default       {}
+[02/14 13:35:05     41s]       joules*       -
+[02/14 13:35:05     41s]       genus*        -
+[02/14 13:35:05     41s]       innovus*      -
+[02/14 13:35:05     41s]       tempus*       -
+[02/14 13:35:05     41s]       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+[02/14 13:35:05     41s]     }
+[02/14 13:35:05     41s] if {[get_feature opt_signoff]} {
+[02/14 13:35:05     41s]       if {[is_flow -inside flow:opt_signoff]} {
+[02/14 13:35:05     41s]         set_multi_cpu_usage -verbose -remote_host 1
+[02/14 13:35:05     41s]         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+[02/14 13:35:05     41s]         set_distributed_hosts -local
+[02/14 13:35:05     41s]       }
+[02/14 13:35:05     41s] }
+[02/14 13:35:05     41s]   }}
+[02/14 13:35:05     41s] set_multi_cpu_usage -local_cpu 1
+[02/14 13:35:05     41s] #@ End verbose flow_step init_mcpu
+[02/14 13:35:05     41s] End steps for plugin point Cadence.plugin.flowkit.read_db.post
+[02/14 13:35:06     41s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[02/14 13:35:06     41s] UM:*                                                                   init_flow
+[02/14 13:35:06     41s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[02/14 13:35:06     41s] UM:*                                                                   prects
+[02/14 13:35:07     42s] #@ Begin verbose flow_step implementation.prects.block_start
+[02/14 13:35:07     42s] @@flow 2: set_db flow_write_db_common false
+[02/14 13:35:07     42s] #@ End verbose flow_step implementation.prects.block_start
+[02/14 13:35:08     43s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[02/14 13:35:08     43s] UM:          44.39             47                                      block_start
+[02/14 13:35:13     48s] #@ Begin verbose flow_step implementation.prects.init_innovus.init_innovus_yaml
+[02/14 13:35:13     48s] @flow 2: if {[get_feature report_lec]} {...}
+[02/14 13:35:13     48s] @flow 8: # Design attributes  [get_db -category design]
+[02/14 13:35:13     48s] @flow 9: #-------------------------------------------------------------------------------
+[02/14 13:35:13     48s] @@flow 10: set_db design_process_node 130
+[02/14 13:35:13     48s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[02/14 13:35:13     48s] ##  Process: 130           (User Set)               
+[02/14 13:35:13     48s] ##     Node: (not set)                           
+[02/14 13:35:13     48s] 
+[02/14 13:35:13     48s] ##  Check design process and node:  
+[02/14 13:35:13     48s] ##  Design tech node is not set.
+[02/14 13:35:13     48s] 
+[02/14 13:35:13     48s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[02/14 13:35:13     48s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[02/14 13:35:13     48s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[02/14 13:35:13     48s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[02/14 13:35:13     48s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[02/14 13:35:13     48s] @@flow 11: set_db design_top_routing_layer met5
+[02/14 13:35:13     48s] @@flow 12: set_db design_bottom_routing_layer met1
+[02/14 13:35:13     48s] @@flow 13: set_db design_flow_effort standard
+[02/14 13:35:13     48s] @@flow 14: set_db design_power_effort none
+[02/14 13:35:13     48s] @flow 16: # Timing attributes  [get_db -category timing && delaycalc]
+[02/14 13:35:13     48s] @flow 17: #-------------------------------------------------------------------------------
+[02/14 13:35:13     48s] @@flow 18: set_db timing_analysis_cppr           both
+[02/14 13:35:13     48s] @@flow 19: set_db timing_analysis_type           ocv
+[02/14 13:35:13     48s] @@flow 20: set_db timing_analysis_aocv 0
+[02/14 13:35:13     48s] @@flow 21: set_db timing_analysis_socv 0
+[02/14 13:35:13     48s] @flow 22: if {[get_feature report_pba]} {...}
+[02/14 13:35:13     48s] @flow 26: # Extraction attributes  [get_db -category extract_rc]
+[02/14 13:35:13     48s] @flow 27: #-------------------------------------------------------------------------------
+[02/14 13:35:13     48s] @flow 28: if {[is_flow -after route.block_finish]} {...}
+[02/14 13:35:13     48s] @flow 33: # Tieoff attributes  [get_db -category add_tieoffs]
+[02/14 13:35:13     48s] @flow 34: #-------------------------------------------------------------------------------
+[02/14 13:35:13     48s] @@flow 35: set_db add_tieoffs_cells {TIEHI TIELO}
+[02/14 13:35:13     48s] @flow 37: # Optimization attributes  [get_db -category opt]
+[02/14 13:35:13     48s] @flow 38: #-------------------------------------------------------------------------------
+[02/14 13:35:13     48s] @@flow 39: set_db opt_new_inst_prefix            "[get_db flow_report_name]_"
+[02/14 13:35:13     48s] @@flow 40: set_db opt_leakage_to_dynamic_ratio 0.5
+[02/14 13:35:13     49s] @flow 42: # Clock attributes  [get_db -category cts]
+[02/14 13:35:13     49s] @flow 43: #-------------------------------------------------------------------------------
+[02/14 13:35:13     49s] @@flow 44: set_db cts_target_skew auto
+[02/14 13:35:13     49s] @@flow 45: set_db cts_target_max_transition_time_top 100
+[02/14 13:35:13     49s] @@flow 46: set_db cts_target_max_transition_time_trunk 100
+[02/14 13:35:13     49s] @@flow 47: set_db cts_target_max_transition_time_leaf 100
+[02/14 13:35:13     49s] @@flow 49: set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
+[02/14 13:35:13     49s] @@flow 50: set_db cts_inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+[02/14 13:35:13     49s] @@flow 51: set_db cts_clock_gating_cells ICGX1
+[02/14 13:35:13     49s] @@flow 52: set_db cts_logic_cells {CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+[02/14 13:35:13     49s] @flow 54: # Filler attributes  [get_db -category add_fillers]
+[02/14 13:35:13     49s] @flow 55: #-------------------------------------------------------------------------------
+[02/14 13:35:13     49s] @@flow 56: set_db add_fillers_cells {FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64}
+[02/14 13:35:13     49s] @flow 58: # Routing attributes  [get_db -category route]
+[02/14 13:35:13     49s] @flow 59: #-------------------------------------------------------------------------------
+[02/14 13:35:13     49s] #@ End verbose flow_step implementation.prects.init_innovus.init_innovus_yaml
+[02/14 13:35:14     50s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[02/14 13:35:14     50s] UM:           6.44              6                                      init_innovus_yaml
+[02/14 13:35:15     50s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[02/14 13:35:15     50s] UM:*                                                                   init_innovus
+[02/14 13:35:16     51s] Batch mode Innovus terminated by user interrupt.
+[02/14 13:35:16     51s] 
+[02/14 13:35:16     51s] *** Memory Usage v#1 (Current mem = 2692.852M, initial mem = 916.672M) ***
+[02/14 13:35:16     51s] 
+[02/14 13:35:16     51s] *** Summary of all messages that are not suppressed in this session:
+[02/14 13:35:16     51s] Severity  ID               Count  Summary                                  
+[02/14 13:35:16     51s] WARNING   IMPLF-200           60  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[02/14 13:35:16     51s] WARNING   IMPLF-201           64  Pin '%s' in macro '%s' has no ANTENNADIF...
+[02/14 13:35:16     51s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[02/14 13:35:16     51s] WARNING   IMPDBTCL-321        12  The attribute '%s' still works but will ...
+[02/14 13:35:16     51s] WARNING   IMPDB-6501           3  "set_db design_process_node" will be obs...
+[02/14 13:35:16     51s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[02/14 13:35:16     51s] *** Message Summary: 144 warning(s), 0 error(s)
+[02/14 13:35:16     51s] 
+[02/14 13:35:16     51s] --- Ending "Innovus" (totcpu=0:00:53.0, real=0:00:55.0, mem=2692.9M) ---
+[02/14 13:35:17     52s] Batch mode Innovus terminated by user interrupt.
+[02/14 13:35:17     52s] Batch mode Innovus terminated by user interrupt.
+[02/14 13:35:17     52s] Innovus terminated by internal (SEGV) error/signal.

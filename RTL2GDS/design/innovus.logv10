@@ -1,0 +1,243 @@
+[02/16 09:44:23      0s] 
+[02/16 09:44:23      0s] Cadence Innovus(TM) Implementation System.
+[02/16 09:44:23      0s] Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+[02/16 09:44:23      0s] 
+[02/16 09:44:23      0s] Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+[02/16 09:44:23      0s] Options:	-stylus 
+[02/16 09:44:23      0s] Date:		Mon Feb 16 09:44:23 2026
+[02/16 09:44:23      0s] Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+[02/16 09:44:23      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[02/16 09:44:23      0s] 
+[02/16 09:44:23      0s] License:
+[02/16 09:44:23      0s] 		[09:44:23.185777] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[02/16 09:44:23      0s] 
+[02/16 09:44:23      0s] 		invs	Innovus Implementation System	25.1	checkout succeeded
+[02/16 09:44:23      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[02/16 09:44:40     16s] Memory management switch to non-aggressive memory release mode.
+[02/16 09:44:40     16s] 
+[02/16 09:44:40     16s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[02/16 09:44:40     16s] 
+[02/16 09:44:41     16s] 
+[02/16 09:44:41     16s] 
+[02/16 09:44:44     19s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+[02/16 09:44:50     24s] @(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+[02/16 09:44:50     24s] @(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+[02/16 09:44:50     24s] @(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+[02/16 09:44:50     24s] @(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+[02/16 09:44:50     24s] @(#)CDS: CPE v25.11-s029
+[02/16 09:44:50     24s] @(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+[02/16 09:44:50     24s] @(#)CDS: OA 22.62-p010 Tue Jun 10 08:32:29 2025
+[02/16 09:44:50     24s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[02/16 09:44:50     24s] @(#)CDS: RCDB 11.15.0
+[02/16 09:44:50     24s] @(#)CDS: STYLUS 25.10-b003_1 (03/20/2025 14:55 PDT)
+[02/16 09:44:50     24s] @(#)CDS: IntegrityPlanner-25.11-186 (25.11) (2025-07-16 18:29:01+0800)
+[02/16 09:44:50     24s] @(#)CDS: SYNTHESIS_ENGINE 25.11-s095
+[02/16 09:44:50     24s] @(#)CDS: TCDB v25.10-b001
+[02/16 09:44:50     24s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_2972877_ab22d670-8087-4c3a-ab7b-5d6d9bef8b78_ece-rschsrv.ece.gatech.edu_dkhalil8_ix8XDY.
+
+[02/16 09:44:50     24s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/RTL2GDS/design/innovus_temp_2972877_ab22d670-8087-4c3a-ab7b-5d6d9bef8b78_ece-rschsrv.ece.gatech.edu_dkhalil8_ix8XDY.
+[02/16 09:44:50     24s] 
+[02/16 09:44:50     24s] Change the soft stacksize limit to 0.2%RAM (515 mbytes). Set global soft_stack_size_limit to change the value.
+[02/16 09:44:51     25s] [INFO] Loading Pegasus 24.14 fill procedures
+[02/16 09:44:53     27s] Info: Process UID = 2972877 / ab22d670-8087-4c3a-ab7b-5d6d9bef8b78 / KWrQayNK6f
+[02/16 09:44:57     31s] 
+[02/16 09:44:57     31s] **INFO:  MMMC transition support version v31-84 
+[02/16 09:44:57     31s] 
+[02/16 09:45:03     36s] @innovus 1> read_dbs dbs/postroute.enc
+[02/16 09:45:38     38s] invalid command name "read_dbs"
+invalid command name "read_dbs"
+[02/16 09:45:38     38s] @innovus 2> read_db dbs/postroute.enc
+[02/16 09:45:54     38s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+#% Begin load design ... (date=02/16 09:45:54, mem=2079.7M)
+[02/16 09:45:55     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:55     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:55     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:55     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:55     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:55     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] AAE_INFO: switching set_db delaycal_enable_si from false to true ...
+[02/16 09:45:56     40s] AAE_INFO: The setting is changed from false to true in set_db delaycal_enable_si
+[02/16 09:45:56     40s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[02/16 09:45:56     40s] ##  Process: 130           (User Set)               
+[02/16 09:45:56     40s] ##     Node: (not set)                           
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] ##  Check design process and node:  
+[02/16 09:45:56     40s] ##  Design tech node is not set.
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[02/16 09:45:56     40s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[02/16 09:45:56     40s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[02/16 09:45:56     40s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[02/16 09:45:56     40s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_separate_device_slew_effect_sensitivities' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:45:56     40s] Loading design 'top_lvl' saved by 'Innovus' '25.11-s102_1' on 'Tue Oct 7 17:52:48 2025'.
+[02/16 09:45:56     40s] **ERROR: (IMPIMEX-7023):	The file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/lef/sky130_scl_9T.tlef inside the saved design directory was deleted. It is forbidden to load the modified design when binary constraints enabled. And it is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set_db the root attribute read_db_file_check to false and try again.
+[02/16 09:45:56     40s] **ERROR: (IMPIMEX-7023):	The file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/lef/sky130_scl_9T.lef inside the saved design directory was deleted. It is forbidden to load the modified design when binary constraints enabled. And it is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set_db the root attribute read_db_file_check to false and try again.
+[02/16 09:45:56     40s] **ERROR: (IMPIMEX-7023):	The file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef inside the saved design directory was deleted. It is forbidden to load the modified design when binary constraints enabled. And it is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set_db the root attribute read_db_file_check to false and try again.
+[02/16 09:45:56     40s] **ERROR: (IMPIMEX-7023):	The file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/mmmc/sky130_ff_1.98_0_nldm.lib inside the saved design directory was deleted. It is forbidden to load the modified design when binary constraints enabled. And it is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set_db the root attribute read_db_file_check to false and try again.
+[02/16 09:45:56     40s] **ERROR: (IMPIMEX-7023):	The file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/mmmc/sky130_tt_1.8_25_nldm.lib inside the saved design directory was deleted. It is forbidden to load the modified design when binary constraints enabled. And it is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set_db the root attribute read_db_file_check to false and try again.
+[02/16 09:45:56     40s] **ERROR: (IMPIMEX-7023):	The file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/mmmc/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib inside the saved design directory was deleted. It is forbidden to load the modified design when binary constraints enabled. And it is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set_db the root attribute read_db_file_check to false and try again.
+[02/16 09:45:56     40s] **ERROR: (IMPIMEX-7023):	The file /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/mmmc/sky130_ss_1.62_125_nldm.lib inside the saved design directory was deleted. It is forbidden to load the modified design when binary constraints enabled. And it is dangerous and can cause unexpected problems and crashes when reading the design or inside commands later in the flow. If you are just experimenting and/or debugging and accept the risks, you can set_db the root attribute read_db_file_check to false and try again.
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] ERROR: 
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s]     while executing
+[02/16 09:45:56     40s] "error $catchMsg"
+[02/16 09:45:56     40s]     (procedure "restoreDesign" line 36)
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] *** Summary of all messages that are not suppressed in this session:
+[02/16 09:45:56     40s] Severity  ID               Count  Summary                                  
+[02/16 09:45:56     40s] WARNING   IMPDBTCL-321        15  The attribute '%s' still works but will ...
+[02/16 09:45:56     40s] WARNING   IMPDB-6501           1  "set_db design_process_node" will be obs...
+[02/16 09:45:56     40s] ERROR     IMPIMEX-7023         7  The file %s inside the saved design dire...
+[02/16 09:45:56     40s] *** Message Summary: 16 warning(s), 7 error(s)
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] 
+[02/16 09:45:56     40s] @innovus 3> read_db postroute.enc_4
+**ERROR: (IMPIMEX-7331):	Cannot identify the top cell name. The design directory specified is not a valid directory generated by write_db command and therefore design can not be restored.
+[02/16 09:46:46     43s] 
+[02/16 09:46:46     43s] *** Summary of all messages that are not suppressed in this session:
+[02/16 09:46:46     43s] Severity  ID               Count  Summary                                  
+[02/16 09:46:46     43s] ERROR     IMPIMEX-7331         1  Cannot identify the top cell name. The d...
+[02/16 09:46:46     43s] *** Message Summary: 0 warning(s), 1 error(s)
+[02/16 09:46:46     43s] 
+[02/16 09:46:46     43s] **ERROR: (IMPIMEX-7331):	Cannot identify the top cell name. The design directory specified is not a valid directory generated by write_db command and therefore design can not be restored.
+
+[02/16 09:46:46     43s] **ERROR: (IMPIMEX-7331):	Cannot identify the top cell name. The design directory specified is not a valid directory generated by write_db command and therefore design can not be restored.
+[02/16 09:46:46     43s] 
+[02/16 09:46:46     43s] @innovus 4> read_db dbs/postroute.enc_4
+[02/16 09:47:15     44s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+% Begin load design ... (date=02/16 09:47:15, mem=1656.3M)
+[02/16 09:47:15     44s] **ERROR: (IMPIMEX-4018):	Side file 'counter_16bit.globals' is not saved by write_db, read_db loads db without this file.
+[02/16 09:47:15     44s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[02/16 09:47:15     44s] ##  Process: 130           (User Set)               
+[02/16 09:47:15     44s] ##     Node: (not set)                           
+[02/16 09:47:15     44s] 
+[02/16 09:47:15     44s] ##  Check design process and node:  
+[02/16 09:47:15     44s] ##  Design tech node is not set.
+[02/16 09:47:15     44s] 
+[02/16 09:47:15     44s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[02/16 09:47:15     44s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[02/16 09:47:15     44s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[02/16 09:47:15     44s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[02/16 09:47:15     44s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_separate_device_slew_effect_sensitivities' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:47:15     44s] Loading design 'counter_16bit' saved by 'Innovus' '25.11-s102_1' on 'Sat Feb 14 13:52:33 2026'.
+[02/16 09:47:16     44s] Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
+[02/16 09:47:16     45s] Read 109 cells in library 'sky130_tt_1.8_25' 
+[02/16 09:47:16     45s] Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
+[02/16 09:47:16     45s] Read 1 cells in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C_lib' 
+[02/16 09:47:16     45s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:00.0, peak res=1682.1M, current mem=1682.1M)
+[02/16 09:47:16     45s] **ERROR: (IMPIMEX-7327):	The file '/nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/lef/sky130_scl_9T.tlef /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/lef/sky130_scl_9T.lef /nethome/dkhalil8/InnovateECE/RTL2GDS/design/dbs/postroute.enc/libs/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef' from the init_lef_files root attribute set by the 'read_physical -lef' command does not exist or does not have read permissions, so it can't be loaded. If the missing file has LEF data needed by the netlist, a fatal error may occur later when reading the netlist. You should correct the filename to avoid this warning message. 
+[02/16 09:47:16     45s] Note, the init_blackbox_for_undefined_cell root attribute controls if an undefined modules is treated as a black-boxes, and init_check_error_for_undefined controls if an undefined module (not converted to a blackbox) is treated as a fatal error or empty module when reading the netlist.
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] ERROR: 
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s]     while executing
+[02/16 09:47:16     45s] "error $catchMsg"
+[02/16 09:47:16     45s]     (procedure "restoreDesign" line 36)
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] *** Summary of all messages that are not suppressed in this session:
+[02/16 09:47:16     45s] Severity  ID               Count  Summary                                  
+[02/16 09:47:16     45s] WARNING   IMPDBTCL-321         9  The attribute '%s' still works but will ...
+[02/16 09:47:16     45s] ERROR     IMPSYT-6729          1  %s                                       
+[02/16 09:47:16     45s] WARNING   IMPDB-6501           1  "set_db design_process_node" will be obs...
+[02/16 09:47:16     45s] ERROR     IMPIMEX-7327         1  The file '%s' from the init_lef_files ro...
+[02/16 09:47:16     45s] ERROR     IMPIMEX-4018         1  Side file '%s' is not saved by write_db,...
+[02/16 09:47:16     45s] *** Message Summary: 10 warning(s), 3 error(s)
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] 
+[02/16 09:47:16     45s] @innovus 5> read_db dbs/floorplan.enc_4
+[02/16 09:50:55     54s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+% Begin load design ... (date=02/16 09:50:55, mem=1683.8M)
+[02/16 09:50:56     55s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:56     55s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:56     55s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:56     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:56     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:56     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:57     56s] **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+[02/16 09:50:57     56s] ##  Process: 130           (User Set)               
+[02/16 09:50:57     56s] ##     Node: (not set)                           
+[02/16 09:50:57     56s] 
+[02/16 09:50:57     56s] ##  Check design process and node:  
+[02/16 09:50:57     56s] ##  Design tech node is not set.
+[02/16 09:50:57     56s] 
+[02/16 09:50:57     56s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[02/16 09:50:57     56s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[02/16 09:50:57     56s] 	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+[02/16 09:50:57     56s] 	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+[02/16 09:50:57     56s] 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+[02/16 09:50:57     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:57     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:57     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:57     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:57     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:57     56s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[02/16 09:50:57     56s] Loading design 'counter_16bit' saved by 'Innovus' '25.11-s102_1' on 'Sat Feb 14 13:33:49 2026'.
+[02/16 09:50:57     56s] **WARN: (TCLCMD-1306):	read_mmmc command should be called once before init_design.
+[02/16 09:50:57     56s] 
+[02/16 09:50:57     56s] 
+[02/16 09:50:57     56s] ERROR: 1
+[02/16 09:50:57     56s] 
+[02/16 09:50:57     56s] 1
+[02/16 09:50:57     56s]     while executing
+[02/16 09:50:57     56s] "error $catchMsg"
+[02/16 09:50:57     56s]     (procedure "restoreDesign" line 36)
+[02/16 09:50:57     56s] 
+[02/16 09:50:57     56s] 1
+[02/16 09:50:57     56s] 
+[02/16 09:50:57     56s] *** Summary of all messages that are not suppressed in this session:
+[02/16 09:50:57     56s] Severity  ID               Count  Summary                                  
+[02/16 09:50:57     56s] WARNING   IMPDBTCL-321        12  The attribute '%s' still works but will ...
+[02/16 09:50:57     56s] WARNING   IMPDB-6501           1  "set_db design_process_node" will be obs...
+[02/16 09:50:57     56s] WARNING   TCLCMD-1306          1  read_mmmc command should be called once ...
+[02/16 09:50:57     56s] *** Message Summary: 14 warning(s), 0 error(s)
+[02/16 09:50:57     56s] 
+[02/16 09:50:57     56s] 1
+[02/16 09:50:57     56s] 1
+[02/16 09:50:57     56s] @innovus 6> **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[02/16 09:52:28     60s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[02/16 09:52:30     60s] Innovus terminated by user interrupt.
+[02/16 09:52:30     60s] 
+[02/16 09:52:30     60s] *** Memory Usage v#1 (Current mem = 1691.660M, initial mem = 956.598M) ***
+[02/16 09:52:30     60s] 
+[02/16 09:52:30     60s] *** Summary of all messages that are not suppressed in this session:
+[02/16 09:52:30     60s] Severity  ID               Count  Summary                                  
+[02/16 09:52:30     60s] WARNING   IMPDBTCL-321        36  The attribute '%s' still works but will ...
+[02/16 09:52:30     60s] ERROR     IMPSYT-6729          1  %s                                       
+[02/16 09:52:30     60s] WARNING   IMPDB-6501           3  "set_db design_process_node" will be obs...
+[02/16 09:52:30     60s] ERROR     IMPIMEX-7327         1  The file '%s' from the init_lef_files ro...
+[02/16 09:52:30     60s] ERROR     IMPIMEX-7331         2  Cannot identify the top cell name. The d...
+[02/16 09:52:30     60s] ERROR     IMPIMEX-7023         7  The file %s inside the saved design dire...
+[02/16 09:52:30     60s] ERROR     IMPIMEX-4018         1  Side file '%s' is not saved by write_db,...
+[02/16 09:52:30     60s] WARNING   TCLCMD-1306          1  read_mmmc command should be called once ...
+[02/16 09:52:30     60s] *** Message Summary: 40 warning(s), 12 error(s)
+[02/16 09:52:30     60s] 
+[02/16 09:52:30     60s] --- Ending "Innovus" (totcpu=0:01:02, real=0:08:07, mem=1691.7M) ---
