@@ -27,5 +27,15 @@ module Flush_Control (
     Task 4
     Add code for enabling a flush based on the inputs to this module
   */
-
+  //   typedef enum {
+  //   NEXTPC,
+  //   ALU_RESULT,
+  //   NOP_PC_MUX
+  // } pc_mux;
+  always_comb begin
+    flush_en = 1'b0; //default to 0
+    if (alu_valid && pc_mux_ip == ALU_RESULT) begin
+        flush_en = 1'b1;
+    end
+  end
 endmodule

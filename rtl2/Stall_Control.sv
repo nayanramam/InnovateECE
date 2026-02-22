@@ -51,13 +51,17 @@ module Stall_Control (
         //if EX is loading into next opcode's regis, then stall
         //if regis is 0, then dw bout it since it'll be 0 anyway
         //if WB is writing to regis that ID is using, stall
-        if (EX_instr_opcode_ip == OPCODE_LOAD && ID_src1_addr_ip != 0) begin
-          if (EX_reg_dest_ip == ID_src1_addr_ip || EX_reg_dest_ip == ID_src1_addr_ip)
+        if (EX_instr_opcode_ip === OPCODE_LOAD) begin
+          if (EX_reg_dest_ip === ID_src1_addr_ip && ID_src1_addr_ip != 0)
+            stall_op = 1'b1;
+          if (EX_reg_dest_ip === ID_src2_addr_ip && ID_src2_addr_ip != 0)
             stall_op = 1'b1;
         end
 
-        if (WB_write_reg_en_ip == 1 && ID_src1_addr_ip != 0) begin
-            if (WB_reg_dest_ip == ID_src1_addr_ip || WB_reg_dest_ip == ID_src2_addr_ip)
+        if (WB_write_reg_en_ip) begin
+          if (WB_reg_dest_ip == ID_src1_addr_ip && EX_reg_dest_ip !== ID_src1_addr_ip && LSU_reg_dest_ip != ID_src1_addr_ip && ID_src1_addr_ip != 0)
+            stall_op = 1'b1;
+          if (WB_reg_dest_ip == ID_src2_addr_ip && EX_reg_dest_ip !== ID_src2_addr_ip && LSU_reg_dest_ip != ID_src2_addr_ip && ID_src2_addr_ip != 0)
             stall_op = 1'b1;
         end
 
@@ -76,12 +80,14 @@ module Stall_Control (
         */
         //if EX is loading into next opcode's regis, then stall. dw bout src2 in immd
         //if WB is writing to regis when ID is reading from regis, then stall 
-        if (((EX_instr_opcode_ip == OPCODE_LOAD)
-          && (EX_reg_dest_ip == ID_src1_addr_ip && ID_src1_addr_ip != 0))
-          || ((WB_write_reg_en_ip == 1) && (WB_reg_dest_ip == ID_src1_addr_ip && ID_src1_addr_ip != 0)))
-          begin
-          
-          stall_op = 1'b1;
+        if (EX_instr_opcode_ip === OPCODE_LOAD) begin
+          if (EX_reg_dest_ip === ID_src1_addr_ip && ID_src1_addr_ip != 0)
+            stall_op = 1'b1;
+        end
+
+        if (WB_write_reg_en_ip) begin
+          if (WB_reg_dest_ip == ID_src1_addr_ip && EX_reg_dest_ip !== ID_src1_addr_ip && LSU_reg_dest_ip != ID_src1_addr_ip && ID_src1_addr_ip != 0)
+            stall_op = 1'b1;
         end
       end
 

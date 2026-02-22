@@ -61,27 +61,20 @@ module FWD_Control (
         * Here you will need to check for hazards and decide if and what you will forward 
         * For Register Register instructions, what registers are relevant for you to check 
         */
+        //If decode instruction needs updated value from 
 
         //rs1
-        if (EX_MEM_RegWrite_en) begin
-          if (ID_dest_rs1_ip == EX_MEM_dest_ip && ID_dest_rs1_ip != 0) begin
-            fa_mux_op = EX_RESULT_SELECT;
-          end
-        end else if (MEM_WB_RegWrite_en) begin
-          if (ID_dest_rs1_ip == MEM_WB_dest_ip && ID_dest_rs1_ip != 0) begin
-            fa_mux_op = WB_RESULT_SELECT; //or MEM_RESULT_SELECT idk
-          end
+        if (EX_MEM_RegWrite_en && ID_dest_rs1_ip != 0 && ID_dest_rs1_ip == EX_MEM_dest_ip) begin
+          fa_mux_op = EX_RESULT_SELECT;
+        end else if (MEM_WB_RegWrite_en && ID_dest_rs1_ip != 0 && ID_dest_rs1_ip == MEM_WB_dest_ip) begin
+          fa_mux_op = WB_RESULT_SELECT; //or MEM_RESULT_SELECT idk
         end
 
         //rs2
-        if (EX_MEM_RegWrite_en) begin
-            if (ID_dest_rs2_ip == EX_MEM_dest_ip && ID_d  est_rs2_ip != 0) begin
-              fb_mux_op = EX_RESULT_SELECT;
-            end
-        end else if (MEM_WB_RegWrite_en) begin
-            if (ID_dest_rs2_ip == MEM_WB_dest_ip && ID_dest_rs2_ip != 0) begin
-              fb_mux_op = WB_RESULT_SELECT; //or MEM_RESULT_SELECT idk
-            end
+        if (EX_MEM_RegWrite_en && ID_dest_rs2_ip != 0 && ID_dest_rs2_ip == EX_MEM_dest_ip) begin
+            fb_mux_op = EX_RESULT_SELECT;
+        end else if (MEM_WB_RegWrite_en && ID_dest_rs2_ip != 0 && ID_dest_rs2_ip == MEM_WB_dest_ip) begin
+            fb_mux_op = WB_RESULT_SELECT; //or MEM_RESULT_SELECT idk
         end
       end
       
@@ -93,14 +86,10 @@ module FWD_Control (
         * Here you will need to check for hazards and decide if and what you will forward 
         * For Register Register instructions, what registers are relevant for you to check
         */
-        if (EX_MEM_RegWrite_en) begin
-          if (ID_dest_rs1_ip == EX_MEM_dest_ip && ID_dest_rs1_ip != 0) begin
-            fa_mux_ip = EX_RESULT_SELECT;
-          end
-        end else if (MEM_WB_RegWrite_en) begin
-          if (ID_dest_rs1_ip == MEM_WB_dest_ip && ID_dest_rs1_ip != 0) begin
-            fa_mux_ip = WB_RESULT_SELECT;
-          end
+        if (EX_MEM_RegWrite_en && ID_dest_rs1_ip != 0 && ID_dest_rs1_ip == EX_MEM_dest_ip) begin
+          fa_mux_op = EX_RESULT_SELECT;
+        end else if (MEM_WB_RegWrite_en && ID_dest_rs1_ip != 0 && ID_dest_rs1_ip == MEM_WB_dest_ip) begin
+          fa_mux_op = WB_RESULT_SELECT;
         end
       end
 
