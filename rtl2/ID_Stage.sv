@@ -190,10 +190,6 @@ module ID_Stage (
         writeback_mux = READ_MEM_RESULT;
         alu_operator = ALU_ADD;
         case(valid_instr_to_decode[14:12]) 
-<<<<<<< HEAD
-          3'b000: lsu_operator = LB; // Load Byte
-          3'b010: lus_operator = LW; // Load word
-=======
           3'b000: lsu_operator = LB; // Load byte
           3'b010: lsu_operator = LW; // Load word
         endcase
@@ -209,7 +205,6 @@ module ID_Stage (
         case(valid_instr_to_decode[14:12])
           3'b000: lsu_operator = SB; // Store byte
           3'b010: lsu_operator = SW; // Store word
->>>>>>> dff66c5ecd1285bf7143e9910ccbfd895f0d3eaa
         endcase
       end
 
