@@ -187,9 +187,21 @@ module ID_Stage (
         writeback_mux = READ_MEM_RESULT;
         alu_operator = ALU_ADD;
         case(valid_instr_to_decode[14:12]) 
-          3'b000: lsu_operator = LB; // Load Byte
-          3'b010: lus_operator = LW;
+          3'b000: lsu_operator = LB; // Load byte
+          3'b010: lsu_operator = LW; // Load word
+        endcase
+      end
 
+      OPCODE_STORE: begin
+        en_lsu = 1'b1;
+
+        operand_a_select = REG_A;
+        operand_b_select = S_IMMD;
+        writeback_mux = NO_WRITEBACK;
+        alu_operator = ALU_ADD
+        case(valid_instr_to_decode[14:12])
+          3'b000: lsu_operator = SB; // Store byte
+          3'b010: lsu_operator = SW; // Store word
         endcase
       end
 
