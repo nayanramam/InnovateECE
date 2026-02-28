@@ -169,6 +169,9 @@ module ID_Stage (
           10'b0000_000_111: alu_operator = ALU_AND; // AND
           10'b0000_000_110: alu_operator = ALU_OR; // OR
           10'b0000_000_100 : alu_operator = ALU_XOR; // XOR
+          10'b0000_000_001: alu_operator = ALU_SLL; // SLL
+          10'b0000_000_101: alu_operator = ALU_SRL; // SRL
+          10'b0000_000_110: alu_operator = ALU_SRA; // SRA
 
         endcase
       end
