@@ -44,6 +44,11 @@ module ALU (
         alu_valid_op = 1;
       end
 
+      ALU_AND: begin
+        alu_result_op = alu_operand_a_ip & alu_operand_b_ip;
+        alu_valid_op = 1;
+      end
+
       default: begin
         alu_result_op = 0;
         alu_valid_op = 0;

@@ -166,7 +166,8 @@ module ID_Stage (
         case({valid_instr_to_decode[31:25], valid_instr_to_decode[14:12]})
           10'b0000_000_000: alu_operator = ALU_ADD; // ADD
           10'b0100_000_000: alu_operator = ALU_SUB; // SUB
-          10'b0000_000_010: alu_operator = ALU_SLTS; // Set lower then signed (default SLT)
+          10'b0000_000_010: alu_operator = ALU_SLTS; // Set lower than signed (default SLT)
+          10'b0000_000_111: alu_operator = ALU_AND; // AND
         endcase
       end
 
@@ -188,8 +189,7 @@ module ID_Stage (
         alu_operator = ALU_ADD;
         case(valid_instr_to_decode[14:12]) 
           3'b000: lsu_operator = LB; // Load Byte
-          3'b010: lus_operator = LW;
-
+          3'b010: lus_operator = LW; // Load word
         endcase
       end
 
