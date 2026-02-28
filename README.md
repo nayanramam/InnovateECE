@@ -1,6 +1,6 @@
 # README — RISC-V Tinycore + Mixed-Signal Dot-Product Accelerator (SKY130)
 
-# GOOGLE DRIVE: https://drive.google.com/drive/folders/1zZt69og0J0-NFTqRXsQrdFw97J4vwyx0?usp=drive_link
+# GOOGLE DRIVE: [https://drive.google.com/drive/folders/1zZt69og0J0-NFTqRXsQrdFw97J4vwyx0?usp=drive_link](https://drive.google.com/drive/folders/1zZt69og0J0-NFTqRXsQrdFw97J4vwyx0?usp=sharing)
 
 ## Intent
 Build a small, verifiable **RV32I-based SoC** with a **memory-mapped mixed-signal accelerator** that computes a **dot product / MAC** (AI/DSP primitive). Deliver “chip-like” artifacts: **digital RTL → verification → Innovus P&R GDS**, plus **analog schematic/layout/post-layout sims in Virtuoso (SKY130)**, tied together with a simple transactional interface.
