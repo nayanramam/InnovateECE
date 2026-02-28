@@ -188,6 +188,8 @@ module ID_Stage (
         alu_operator = ALU_ADD;
         case(valid_instr_to_decode[14:12]) 
           3'b000: lsu_operator = LB; // Load Byte
+          3'b010: lus_operator = LW;
+
         endcase
       end
 
@@ -232,6 +234,8 @@ module ID_Stage (
       I_IMMD: alu_operand_b_ex = $signed(valid_instr_to_decode[I_IMM_MSB:I_IMM_LSB]);
       J_IMMD: alu_operand_b_ex = J_IMM;
       OPB_NOP: alu_operand_b_ex = 32'bz;
+
+      S_IMMD: alu_operand_b_ex = $signed({valid_instr_to_decode[31:25], valid_instr_to_decode[11:7]});
     endcase
   end
 
