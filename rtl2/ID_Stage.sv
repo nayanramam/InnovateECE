@@ -134,7 +134,6 @@ module ID_Stage (
 
 
   assign valid_instr_to_decode = instr_data_valid_ip ? instr_data_ip : 32'bz;
-
   always @(*) begin
     alu_operator = ALU_NOP; // Default assignment
 
@@ -168,6 +167,7 @@ module ID_Stage (
           10'b0100_000_000: alu_operator = ALU_SUB; // SUB
           10'b0000_000_010: alu_operator = ALU_SLTS; // Set lower than signed (default SLT)
           10'b0000_000_111: alu_operator = ALU_AND; // AND
+          10'b0000_000_110: alu_operator = ALU_OR; // OR
         endcase
       end
 
