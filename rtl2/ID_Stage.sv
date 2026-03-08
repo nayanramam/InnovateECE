@@ -171,8 +171,7 @@ module ID_Stage (
           10'b0000_000_100 : alu_operator = ALU_XOR; // XOR
           10'b0000_000_001: alu_operator = ALU_SLL; // SLL
           10'b0000_000_101: alu_operator = ALU_SRL; // SRL
-          10'b0000_000_110: alu_operator = ALU_SRA; // SRA
-
+          10'b0100_000_101: alu_operator = ALU_SRA; // SRA (funct7=0100000)
         endcase
       end
 
@@ -182,6 +181,18 @@ module ID_Stage (
         writeback_mux = READ_ALU_RESULT;
         case(valid_instr_to_decode[14:12])
           3'b000: alu_operator = ALU_ADD; // ADDI
+          3'b001: alu_operator = ALU_SLL; // SLLI
+          3'b010: alu_operator = ALU_SLTS; // SLTI (signed)
+          3'b100: alu_operator = ALU_XOR; // XORI
+          3'b101 begin
+            if(valid_instr_to_decode[31:25] == 7'b0000000) begin // SRLI
+              alu_operator = ALU_SRL; // SRLI
+            end else if (valid_instr_to_decode[31:25] == 7'b0100000) begin
+              alu_operator = ALU_SRA; // SRAI
+            end
+          end
+          3'b110: alu_operator = ALU_OR; // ORI
+          3'b111: alu_operator = ALU_AND; // ANDI
         endcase
       end
 
@@ -204,7 +215,7 @@ module ID_Stage (
         operand_a_select = REG_A;
         operand_b_select = S_IMMD;
         writeback_mux = NO_WRITEBACK;
-        alu_operator = ALU_ADD
+        alu_operator = ALU_ADD;
         case(valid_instr_to_decode[14:12])
           3'b000: lsu_operator = SB; // Store byte
           3'b010: lsu_operator = SW; // Store word
