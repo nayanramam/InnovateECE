@@ -1,0 +1,190 @@
+[03/15 21:42:36      0s] 
+[03/15 21:42:36      0s] Cadence Innovus(TM) Implementation System.
+[03/15 21:42:36      0s] Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/15 21:42:36      0s] 
+[03/15 21:42:36      0s] Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+[03/15 21:42:36      0s] Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2469014} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2469014} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+[03/15 21:42:36      0s] Date:		Sun Mar 15 21:42:36 2026
+[03/15 21:42:36      0s] Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+[03/15 21:42:36      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[03/15 21:42:36      0s] 
+[03/15 21:42:36      0s] License:
+[03/15 21:42:36      0s] 		[21:42:36.185745] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[03/15 21:42:36      0s] 
+[03/15 21:42:36      0s] 		invs	Innovus Implementation System	25.1	checkout succeeded
+[03/15 21:42:36      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[03/15 21:42:54     16s] Memory management switch to non-aggressive memory release mode.
+[03/15 21:42:54     16s] 
+[03/15 21:42:54     16s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[03/15 21:42:54     16s] 
+[03/15 21:42:55     16s] 
+[03/15 21:42:55     16s] 
+[03/15 21:42:59     19s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+[03/15 21:43:04     24s] @(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+[03/15 21:43:04     24s] @(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+[03/15 21:43:04     24s] @(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+[03/15 21:43:04     24s] @(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+[03/15 21:43:04     24s] @(#)CDS: CPE v25.11-s029
+[03/15 21:43:04     24s] @(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+[03/15 21:43:04     24s] @(#)CDS: OA 22.62-p010 Tue Jun 10 08:32:29 2025
+[03/15 21:43:04     24s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[03/15 21:43:04     24s] @(#)CDS: RCDB 11.15.0
+[03/15 21:43:04     24s] @(#)CDS: STYLUS 25.10-b003_1 (03/20/2025 14:55 PDT)
+[03/15 21:43:04     24s] @(#)CDS: IntegrityPlanner-25.11-186 (25.11) (2025-07-16 18:29:01+0800)
+[03/15 21:43:04     24s] @(#)CDS: SYNTHESIS_ENGINE 25.11-s095
+[03/15 21:43:04     24s] @(#)CDS: TCDB v25.10-b001
+[03/15 21:43:04     24s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_2483897_1ea63d0d-14fb-4988-9566-b0bed370b7c7_ece-rschsrv.ece.gatech.edu_dkhalil8_lF1x1W.
+
+[03/15 21:43:04     24s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_2483897_1ea63d0d-14fb-4988-9566-b0bed370b7c7_ece-rschsrv.ece.gatech.edu_dkhalil8_lF1x1W.
+[03/15 21:43:04     24s] 
+[03/15 21:43:04     24s] Change the soft stacksize limit to 0.2%RAM (515 mbytes). Set global soft_stack_size_limit to change the value.
+[03/15 21:43:07     25s] [INFO] Loading Pegasus 24.14 fill procedures
+[03/15 21:43:09     27s] Info: Process UID = 2483897 / 1ea63d0d-14fb-4988-9566-b0bed370b7c7 / 5I6kdFa7AS
+[03/15 21:43:13     31s] 
+[03/15 21:43:13     31s] **INFO:  MMMC transition support version v31-84 
+[03/15 21:43:13     31s] 
+[03/15 21:43:13     31s] #@ Processing -execute option
+[03/15 21:43:13     31s] @innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2469014} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2469014} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+[03/15 21:43:13     31s] init_flow summary:
+[03/15 21:43:13     31s]   Flow script        : 
+[03/15 21:43:13     31s]   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
+[03/15 21:43:13     31s]   Flow               : flow:flow_current
+[03/15 21:43:13     31s]   From               : implementation.floorplan.block_start
+[03/15 21:43:13     31s]   To                 : implementation.floorplan.schedule_floorplan_report_floorplan
+[03/15 21:43:13     31s]   Top directory      : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
+[03/15 21:43:13     31s]   Working directory  : .
+[03/15 21:43:13     31s]   Starting database  : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb
+[03/15 21:43:13     31s]   Run tag            : 
+[03/15 21:43:13     31s]   Branch name        : 
+[03/15 21:43:13     31s]   Metrics file       : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan
+[03/15 21:43:13     31s]   Status file        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan
+[03/15 21:43:13     31s] reading previous metrics...
+[03/15 21:43:14     31s] Sourcing flow scripts...
+[03/15 21:43:15     32s] Sourcing flow scripts done.
+[03/15 21:43:15     32s] Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
+[03/15 21:43:15     32s] #@ Begin verbose flow_step activate_views
+[03/15 21:43:15     32s] @flow 2: apply {{} {
+[03/15 21:43:15     32s]     set db [get_db flow_starting_db]
+[03/15 21:43:15     32s]     set flow [lindex [get_db flow_hier_path] end]
+[03/15 21:43:15     32s]     set setup_views [get_feature -obj $flow setup_views]
+[03/15 21:43:15     32s]     set hold_views [get_feature -obj $flow hold_views]
+[03/15 21:43:15     32s]     set leakage_view [get_feature -obj $flow leakage_view]
+[03/15 21:43:15     32s]     set dynamic_view [get_feature -obj $flow dynamic_view]
+[03/15 21:43:15     32s]   
+[03/15 21:43:15     32s]     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+[03/15 21:43:15     32s]       #- use read_db args for DB types and set_analysis_views for TCL
+[03/15 21:43:15     32s]       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+[03/15 21:43:15     32s]         set cmd "set_analysis_view"
+[03/15 21:43:15     32s]         if {$setup_views ne ""} {
+[03/15 21:43:15     32s]           append cmd " -setup [list $setup_views]"
+[03/15 21:43:15     32s]         } else {
+[03/15 21:43:15     32s]           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+[03/15 21:43:15     32s]         }
+[03/15 21:43:15     32s]         if {$hold_views ne ""} {
+[03/15 21:43:15     32s]           append cmd " -hold [list $hold_views]"
+[03/15 21:43:15     32s]         } else {
+[03/15 21:43:15     32s]           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+[03/15 21:43:15     32s]         }
+[03/15 21:43:15     32s]         if {$leakage_view ne ""} {
+[03/15 21:43:15     32s]           append cmd " -leakage [list $leakage_view]"
+[03/15 21:43:15     32s]         } else {
+[03/15 21:43:15     32s]           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+[03/15 21:43:15     32s]             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+[03/15 21:43:15     32s]           }
+[03/15 21:43:15     32s]         }
+[03/15 21:43:15     32s]         if {$dynamic_view ne ""} {
+[03/15 21:43:15     32s]           append cmd " -dynamic [list $dynamic_view]"
+[03/15 21:43:15     32s]         } else {
+[03/15 21:43:15     32s]           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+[03/15 21:43:15     32s]             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+[03/15 21:43:15     32s]           }
+[03/15 21:43:15     32s]         }
+[03/15 21:43:15     32s]         eval $cmd
+[03/15 21:43:15     32s]       } elseif {[llength [get_db analysis_views]] == 0} {
+[03/15 21:43:15     32s]         set cmd "set_flowkit_read_db_args"
+[03/15 21:43:15     32s]         if {$setup_views ne ""} {
+[03/15 21:43:15     32s]           append cmd " -setup_views [list $setup_views]"
+[03/15 21:43:15     32s]         }
+[03/15 21:43:15     32s]         if {$hold_views ne ""} {
+[03/15 21:43:15     32s]           append cmd " -hold_views [list $hold_views]"
+[03/15 21:43:15     32s]         }
+[03/15 21:43:15     32s]         if {$leakage_view ne ""} {
+[03/15 21:43:15     32s]           append cmd " -leakage_view [list $leakage_view]"
+[03/15 21:43:15     32s]         }
+[03/15 21:43:15     32s]         if {$dynamic_view ne ""} {
+[03/15 21:43:15     32s]           append cmd " -dynamic_view [list $dynamic_view]"
+[03/15 21:43:15     32s]         }
+[03/15 21:43:15     32s]         eval $cmd
+[03/15 21:43:15     32s]       } else {
+[03/15 21:43:15     32s]       }
+[03/15 21:43:15     32s]     }
+[03/15 21:43:15     32s]   }}
+[03/15 21:43:15     32s] #@ End verbose flow_step activate_views
+[03/15 21:43:15     32s] #@ Begin verbose flow_step init_mcpu
+[03/15 21:43:15     32s] @flow 2: apply {{} {
+[03/15 21:43:15     32s]     # Multi host/cpu attributes
+[03/15 21:43:15     32s]     #-----------------------------------------------------------------------------
+[03/15 21:43:15     32s]     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+[03/15 21:43:15     32s]     # the specified dist script.  This connects the number of CPUs being reserved
+[03/15 21:43:15     32s]     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+[03/15 21:43:15     32s]     # a typical environment variable exported by distribution platforms and is
+[03/15 21:43:15     32s]     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+[03/15 21:43:15     32s]     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+[03/15 21:43:15     32s]       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+[03/15 21:43:15     32s]     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+[03/15 21:43:15     32s]       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+[03/15 21:43:15     32s]     } else {
+[03/15 21:43:15     32s]       set max_cpus 1
+[03/15 21:43:15     32s]     }
+[03/15 21:43:15     32s]     switch -glob [get_db program_short_name] {
+[03/15 21:43:15     32s]       default       {}
+[03/15 21:43:15     32s]       joules*       -
+[03/15 21:43:15     32s]       genus*        -
+[03/15 21:43:15     32s]       innovus*      -
+[03/15 21:43:15     32s]       tempus*       -
+[03/15 21:43:15     32s]       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+[03/15 21:43:15     32s]     }
+[03/15 21:43:15     32s] if {[get_feature opt_signoff]} {
+[03/15 21:43:15     32s]       if {[is_flow -inside flow:opt_signoff]} {
+[03/15 21:43:15     32s]         set_multi_cpu_usage -verbose -remote_host 1
+[03/15 21:43:15     32s]         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+[03/15 21:43:15     32s]         set_distributed_hosts -local
+[03/15 21:43:15     32s]       }
+[03/15 21:43:15     32s] }
+[03/15 21:43:15     32s]   }}
+[03/15 21:43:15     32s] set_multi_cpu_usage -local_cpu 1
+[03/15 21:43:15     32s] #@ End verbose flow_step init_mcpu
+[03/15 21:43:15     32s] End steps for plugin point Cadence.plugin.flowkit.read_db.pre
+[03/15 21:43:15     32s] **ERROR: (IMPIMEX-7331):	Cannot identify the top cell name. The design directory specified is not a valid directory generated by write_db command and therefore design can not be restored.
+[03/15 21:43:15     32s] 
+[03/15 21:43:15     32s] *** Summary of all messages that are not suppressed in this session:
+[03/15 21:43:15     32s] Severity  ID               Count  Summary                                  
+[03/15 21:43:15     32s] ERROR     IMPIMEX-7331         1  Cannot identify the top cell name. The d...
+[03/15 21:43:15     32s] *** Message Summary: 0 warning(s), 1 error(s)
+[03/15 21:43:15     32s] 
+[03/15 21:43:15     32s] UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[03/15 21:43:15     32s] UM:*                                                                   read_db
+[03/15 21:43:15     32s] Tcl error: **ERROR: (IMPIMEX-7331):	Cannot identify the top cell name. The design directory specified is not a valid directory generated by write_db command and therefore design can not be restored.
+[03/15 21:43:15     32s] 
+[03/15 21:43:15     32s]     while executing
+[03/15 21:43:15     32s] "error [getError $::imexEmsHandleId 7331]"
+[03/15 21:43:15     32s]     (procedure "IMEX::read_db" line 155)
+[03/15 21:43:15     32s]     invoked from within
+[03/15 21:43:15     32s] "IMEX::read_db /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb"
+[03/15 21:43:15     32s]     invoked from within
+[03/15 21:43:15     32s] "init_flow {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} pre..."
+[03/15 21:43:15     32s]     ("uplevel" body line 1)
+[03/15 21:43:15     32s]     invoked from within
+[03/15 21:43:15     32s] "uplevel [concat init_flow $args] "
+[03/15 21:43:15     32s]     (procedure "se::smap::init_flow" line 1)
+[03/15 21:43:15     32s]     invoked from within
+[03/15 21:43:15     32s] "init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} pr..."
+[03/15 21:43:15     32s] 
+[03/15 21:43:15     32s] *** Summary of all messages that are not suppressed in this session:
+[03/15 21:43:15     32s] Severity  ID               Count  Summary                                  
+[03/15 21:43:15     32s] ERROR     IMPIMEX-7331         2  Cannot identify the top cell name. The d...
+[03/15 21:43:15     32s] *** Message Summary: 0 warning(s), 2 error(s)
+[03/15 21:43:15     32s] 
+[03/15 21:43:15     32s] 
+[03/15 21:43:15     32s] *** Memory Usage v#1 (Current mem = 2039.645M, initial mem = 946.320M) ***
+[03/15 21:43:15     32s] --- Ending "Innovus" (totcpu=0:00:33.7, real=0:00:39.0, mem=2039.6M) ---
