@@ -1,0 +1,226 @@
+# Cadence Genus(TM) Synthesis Solution, Version 25.11-s095_1, built Aug 12 2025 10:59:05
+
+# Date: Fri Mar 13 10:18:49 2026
+# Host: ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+# OS:   Red Hat Enterprise Linux 8.10 (Ootpa)
+
+if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.status.d/syn_map metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.metrics.d/syn_map run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1172434} flow {flow flow:flow_current dir . db {rc dbs/syn_generic.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1172434} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/logs/syn_map}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.status.d/syn_map} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_generic.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+#@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/design
+#@ (init_flow): read_metric -id current /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.metrics.d/syn_map -previous 
+#@ (init_flow): read_flow /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/scripts/flow.yaml
+#@ (flow_step:block_start)  2:   apply {{} {
+#@                           :     set db [get_db flow_starting_db]
+#@                           :     set flow [lindex [get_db flow_hier_path] end]
+#@                           :     set setup_views [get_feature -obj $flow setup_views]
+#@                           :     set hold_views [get_feature -obj $flow hold_views]
+#@                           :     set leakage_view [get_feature -obj $flow leakage_view]
+#@                           :     set dynamic_view [get_feature -obj $flow dynamic_view]
+#@                           :   
+#@                           :     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+#@                           :       #- use read_db args for DB types and set_analysis_views for TCL
+#@                           :       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+#@                           :         set cmd "set_analysis_view"
+#@                           :         if {$setup_views ne ""} {
+#@                           :           append cmd " -setup [list $setup_views]"
+#@                           :         } else {
+#@                           :           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+#@                           :         }
+#@                           :         if {$hold_views ne ""} {
+#@                           :           append cmd " -hold [list $hold_views]"
+#@                           :         } else {
+#@                           :           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+#@                           :         }
+#@                           :         if {$leakage_view ne ""} {
+#@                           :           append cmd " -leakage [list $leakage_view]"
+#@                           :         } else {
+#@                           :           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+#@                           :             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+#@                           :           }
+#@                           :         }
+#@                           :         if {$dynamic_view ne ""} {
+#@                           :           append cmd " -dynamic [list $dynamic_view]"
+#@                           :         } else {
+#@                           :           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+#@                           :             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+#@                           :           }
+#@                           :         }
+#@                           :         eval $cmd
+#@                           :       } elseif {[llength [get_db analysis_views]] == 0} {
+#@                           :         set cmd "set_flowkit_read_db_args"
+#@                           :         if {$setup_views ne ""} {
+#@                           :           append cmd " -setup_views [list $setup_views]"
+#@                           :         }
+#@                           :         if {$hold_views ne ""} {
+#@                           :           append cmd " -hold_views [list $hold_views]"
+#@                           :         }
+#@                           :         if {$leakage_view ne ""} {
+#@                           :           append cmd " -leakage_view [list $leakage_view]"
+#@                           :         }
+#@                           :         if {$dynamic_view ne ""} {
+#@                           :           append cmd " -dynamic_view [list $dynamic_view]"
+#@                           :         }
+#@                           :         eval $cmd
+#@                           :       } else {
+#@                           :       }
+#@                           :     }
+#@                           :   }}
+#@ (flow_step:block_start)  2:   apply {{} {
+#@                           :     # Multi host/cpu attributes
+#@                           :     #-----------------------------------------------------------------------------
+#@                           :     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+#@                           :     # the specified dist script.  This connects the number of CPUs being reserved
+#@                           :     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+#@                           :     # a typical environment variable exported by distribution platforms and is
+#@                           :     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+#@                           :     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+#@                           :       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+#@                           :     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+#@                           :       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+#@                           :     } else {
+#@                           :       set max_cpus 1
+#@                           :     }
+#@                           :     switch -glob [get_db program_short_name] {
+#@                           :       default       {}
+#@                           :       joules*       -
+#@                           :       genus*        -
+#@                           :       innovus*      -
+#@                           :       tempus*       -
+#@                           :       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+#@                           :     }
+#@                           : if {[get_feature opt_signoff]} {
+#@                           :       if {[is_flow -inside flow:opt_signoff]} {
+#@                           :         set_multi_cpu_usage -verbose -remote_host 1
+#@                           :         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+#@                           :         set_distributed_hosts -local
+#@                           :       }
+#@                           : }
+#@                           :   }}
+#@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/design
+#@ (init_flow): read_db /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_generic.db
+#@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/design
+#@ (init_flow): read_flow /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/scripts/flow.yaml
+#@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/design
+#@ (init_flow): read_metric -merge -id current /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.metrics.d/syn_map -previous 
+#@ (flow_step:block_start)  2:   apply {{} {
+#@                           :     set db [get_db flow_starting_db]
+#@                           :     set flow [lindex [get_db flow_hier_path] end]
+#@                           :     set setup_views [get_feature -obj $flow setup_views]
+#@                           :     set hold_views [get_feature -obj $flow hold_views]
+#@                           :     set leakage_view [get_feature -obj $flow leakage_view]
+#@                           :     set dynamic_view [get_feature -obj $flow dynamic_view]
+#@                           :   
+#@                           :     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+#@                           :       #- use read_db args for DB types and set_analysis_views for TCL
+#@                           :       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+#@                           :         set cmd "set_analysis_view"
+#@                           :         if {$setup_views ne ""} {
+#@                           :           append cmd " -setup [list $setup_views]"
+#@                           :         } else {
+#@                           :           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+#@                           :         }
+#@                           :         if {$hold_views ne ""} {
+#@                           :           append cmd " -hold [list $hold_views]"
+#@                           :         } else {
+#@                           :           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+#@                           :         }
+#@                           :         if {$leakage_view ne ""} {
+#@                           :           append cmd " -leakage [list $leakage_view]"
+#@                           :         } else {
+#@                           :           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+#@                           :             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+#@                           :           }
+#@                           :         }
+#@                           :         if {$dynamic_view ne ""} {
+#@                           :           append cmd " -dynamic [list $dynamic_view]"
+#@                           :         } else {
+#@                           :           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+#@                           :             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+#@                           :           }
+#@                           :         }
+#@                           :         eval $cmd
+#@                           :       } elseif {[llength [get_db analysis_views]] == 0} {
+#@                           :         set cmd "set_flowkit_read_db_args"
+#@                           :         if {$setup_views ne ""} {
+#@                           :           append cmd " -setup_views [list $setup_views]"
+#@                           :         }
+#@                           :         if {$hold_views ne ""} {
+#@                           :           append cmd " -hold_views [list $hold_views]"
+#@                           :         }
+#@                           :         if {$leakage_view ne ""} {
+#@                           :           append cmd " -leakage_view [list $leakage_view]"
+#@                           :         }
+#@                           :         if {$dynamic_view ne ""} {
+#@                           :           append cmd " -dynamic_view [list $dynamic_view]"
+#@                           :         }
+#@                           :         eval $cmd
+#@                           :       } else {
+#@                           :       }
+#@                           :     }
+#@                           :   }}
+#@ (flow_step:block_start)  2:   apply {{} {
+#@                           :     # Multi host/cpu attributes
+#@                           :     #-----------------------------------------------------------------------------
+#@                           :     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+#@                           :     # the specified dist script.  This connects the number of CPUs being reserved
+#@                           :     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+#@                           :     # a typical environment variable exported by distribution platforms and is
+#@                           :     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+#@                           :     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+#@                           :       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+#@                           :     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+#@                           :       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+#@                           :     } else {
+#@                           :       set max_cpus 1
+#@                           :     }
+#@                           :     switch -glob [get_db program_short_name] {
+#@                           :       default       {}
+#@                           :       joules*       -
+#@                           :       genus*        -
+#@                           :       innovus*      -
+#@                           :       tempus*       -
+#@                           :       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+#@                           :     }
+#@                           : if {[get_feature opt_signoff]} {
+#@                           :       if {[is_flow -inside flow:opt_signoff]} {
+#@                           :         set_multi_cpu_usage -verbose -remote_host 1
+#@                           :         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+#@                           :         set_distributed_hosts -local
+#@                           :       }
+#@                           : }
+#@                           :   }}
+#@ (flow_step:block_start)  2:   #- extend flow report name based on context
+#@ (flow_step:block_start)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                           :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                           :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                           :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                           :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                           :     }
+#@                           :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                           :     set_db flow_report_name [get_db flow_branch]
+#@                           :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                           :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                           :   } else {
+#@                           :   }
+#@ (flow_step:block_start) 22:   #- Create report dir (if necessary)
+#@ (flow_step:block_start) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:block_start)  2:   set_db flow_write_db_common false
+#@ (flow_step:block_start)  3:   # When starting from a Genus synthesis flat DB (rc format), load the
+#@ (flow_step:block_start)  4:   # physical library and call init_design to fully initialize Innovus.
+#@ (flow_step:block_start)  5:   # For subsequent blocks (prects, cts, route) that start from Innovus native
+#@ (flow_step:block_start)  6:   # DBs, this block is skipped automatically because the key 'rc' won't exist.
+#@ (flow_step:block_start)  7:   if {[dict exists [get_db flow_starting_db] rc]} {
+#@                           :     set_db init_ground_nets [get_flow_config init_ground_nets]
+#@                           :     set_db init_power_nets  [get_flow_config init_power_nets]
+#@                           :     read_physical -lef [get_flow_config init_physical_files lef_files]
+#@                           :     init_design
+#@                           :   }
+#@ (flow_step:block_start)  7:  ^-- previous command return error code: "1"
+#@ (run_flow): write_db -all_root_attributes -to_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_map.block_start.ERROR.db
+#@ (run_flow): pop_snapshot_stack

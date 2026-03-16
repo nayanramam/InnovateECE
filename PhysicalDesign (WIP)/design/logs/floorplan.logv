@@ -1,0 +1,441 @@
+[03/13 10:46:55      0s] 
+[03/13 10:46:55      0s] Cadence Innovus(TM) Implementation System.
+[03/13 10:46:55      0s] Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/13 10:46:55      0s] 
+[03/13 10:46:55      0s] Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+[03/13 10:46:55      0s] Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/logs/floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.metrics.d/floorplan run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_opt.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1311060} flow {flow flow:flow_current dir . db {rc dbs/syn_opt.db Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1311060} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_opt.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+[03/13 10:46:55      0s] Date:		Fri Mar 13 10:46:55 2026
+[03/13 10:46:55      0s] Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+[03/13 10:46:55      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[03/13 10:46:55      0s] 
+[03/13 10:46:55      0s] License:
+[03/13 10:46:55      0s] 		[10:46:55.185769] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[03/13 10:46:55      0s] 
+[03/13 10:46:55      1s] 		invs	Innovus Implementation System	25.1	checkout succeeded
+[03/13 10:46:55      1s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[03/13 10:47:12     17s] Memory management switch to non-aggressive memory release mode.
+[03/13 10:47:12     17s] 
+[03/13 10:47:12     17s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[03/13 10:47:12     17s] 
+[03/13 10:47:13     17s] 
+[03/13 10:47:13     17s] 
+[03/13 10:47:17     20s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+[03/13 10:47:22     25s] @(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+[03/13 10:47:22     25s] @(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+[03/13 10:47:22     25s] @(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+[03/13 10:47:22     25s] @(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+[03/13 10:47:22     25s] @(#)CDS: CPE v25.11-s029
+[03/13 10:47:22     25s] @(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+[03/13 10:47:22     25s] @(#)CDS: OA 22.62-p010 Tue Jun 10 08:32:29 2025
+[03/13 10:47:22     25s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[03/13 10:47:22     25s] @(#)CDS: RCDB 11.15.0
+[03/13 10:47:22     25s] @(#)CDS: STYLUS 25.10-b003_1 (03/20/2025 14:55 PDT)
+[03/13 10:47:22     25s] @(#)CDS: IntegrityPlanner-25.11-186 (25.11) (2025-07-16 18:29:01+0800)
+[03/13 10:47:22     25s] @(#)CDS: SYNTHESIS_ENGINE 25.11-s095
+[03/13 10:47:22     25s] @(#)CDS: TCDB v25.10-b001
+[03/13 10:47:22     25s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/innovus_temp_1363412_993b30a5-c5ba-4d67-81c7-ff32bdd625bc_ece-rschsrv.ece.gatech.edu_dkhalil8_gQ0HUE.
+
+[03/13 10:47:22     25s] Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/innovus_temp_1363412_993b30a5-c5ba-4d67-81c7-ff32bdd625bc_ece-rschsrv.ece.gatech.edu_dkhalil8_gQ0HUE.
+[03/13 10:47:22     25s] 
+[03/13 10:47:22     25s] Change the soft stacksize limit to 0.2%RAM (515 mbytes). Set global soft_stack_size_limit to change the value.
+[03/13 10:47:24     26s] [INFO] Loading Pegasus 24.14 fill procedures
+[03/13 10:47:26     28s] Info: Process UID = 1363412 / 993b30a5-c5ba-4d67-81c7-ff32bdd625bc / 4dlJD7TReu
+[03/13 10:47:30     32s] 
+[03/13 10:47:30     32s] **INFO:  MMMC transition support version v31-84 
+[03/13 10:47:30     32s] 
+[03/13 10:47:30     32s] #@ Processing -execute option
+[03/13 10:47:30     32s] @innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.metrics.d/floorplan run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_opt.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1311060} flow {flow flow:flow_current dir . db {rc dbs/syn_opt.db Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1311060} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_opt.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+[03/13 10:47:30     32s] init_flow summary:
+[03/13 10:47:30     32s]   Flow script        : 
+[03/13 10:47:30     32s]   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/scripts/flow.yaml
+[03/13 10:47:30     32s]   Flow               : flow:flow_current
+[03/13 10:47:30     32s]   From               : implementation.floorplan.block_start
+[03/13 10:47:30     32s]   To                 : implementation.floorplan.schedule_floorplan_report_floorplan
+[03/13 10:47:30     32s]   Top directory      : /nethome/dkhalil8/InnovateECE/PhysicalDesign/design
+[03/13 10:47:30     32s]   Working directory  : .
+[03/13 10:47:30     32s]   Starting database  : /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_opt.db
+[03/13 10:47:30     32s]   Run tag            : 
+[03/13 10:47:30     32s]   Branch name        : 
+[03/13 10:47:30     32s]   Metrics file       : /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.metrics.d/floorplan
+[03/13 10:47:30     32s]   Status file        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/flow.status.d/floorplan
+[03/13 10:47:30     32s] reading previous metrics...
+[03/13 10:47:30     32s] Sourcing flow scripts...
+[03/13 10:47:31     33s] Sourcing flow scripts done.
+[03/13 10:47:31     33s] Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
+[03/13 10:47:31     33s] #@ Begin verbose flow_step activate_views
+[03/13 10:47:31     33s] @flow 2: apply {{} {
+[03/13 10:47:31     33s]     set db [get_db flow_starting_db]
+[03/13 10:47:31     33s]     set flow [lindex [get_db flow_hier_path] end]
+[03/13 10:47:31     33s]     set setup_views [get_feature -obj $flow setup_views]
+[03/13 10:47:31     33s]     set hold_views [get_feature -obj $flow hold_views]
+[03/13 10:47:31     33s]     set leakage_view [get_feature -obj $flow leakage_view]
+[03/13 10:47:31     33s]     set dynamic_view [get_feature -obj $flow dynamic_view]
+[03/13 10:47:31     33s]   
+[03/13 10:47:31     33s]     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+[03/13 10:47:31     33s]       #- use read_db args for DB types and set_analysis_views for TCL
+[03/13 10:47:31     33s]       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+[03/13 10:47:31     33s]         set cmd "set_analysis_view"
+[03/13 10:47:31     33s]         if {$setup_views ne ""} {
+[03/13 10:47:31     33s]           append cmd " -setup [list $setup_views]"
+[03/13 10:47:31     33s]         } else {
+[03/13 10:47:31     33s]           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+[03/13 10:47:31     33s]         }
+[03/13 10:47:31     33s]         if {$hold_views ne ""} {
+[03/13 10:47:31     33s]           append cmd " -hold [list $hold_views]"
+[03/13 10:47:31     33s]         } else {
+[03/13 10:47:31     33s]           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+[03/13 10:47:31     33s]         }
+[03/13 10:47:31     33s]         if {$leakage_view ne ""} {
+[03/13 10:47:31     33s]           append cmd " -leakage [list $leakage_view]"
+[03/13 10:47:31     33s]         } else {
+[03/13 10:47:31     33s]           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+[03/13 10:47:31     33s]             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+[03/13 10:47:31     33s]           }
+[03/13 10:47:31     33s]         }
+[03/13 10:47:31     33s]         if {$dynamic_view ne ""} {
+[03/13 10:47:31     33s]           append cmd " -dynamic [list $dynamic_view]"
+[03/13 10:47:31     33s]         } else {
+[03/13 10:47:31     33s]           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+[03/13 10:47:31     33s]             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+[03/13 10:47:31     33s]           }
+[03/13 10:47:31     33s]         }
+[03/13 10:47:31     33s]         eval $cmd
+[03/13 10:47:31     33s]       } elseif {[llength [get_db analysis_views]] == 0} {
+[03/13 10:47:31     33s]         set cmd "set_flowkit_read_db_args"
+[03/13 10:47:31     33s]         if {$setup_views ne ""} {
+[03/13 10:47:31     33s]           append cmd " -setup_views [list $setup_views]"
+[03/13 10:47:31     33s]         }
+[03/13 10:47:31     33s]         if {$hold_views ne ""} {
+[03/13 10:47:31     33s]           append cmd " -hold_views [list $hold_views]"
+[03/13 10:47:31     33s]         }
+[03/13 10:47:31     33s]         if {$leakage_view ne ""} {
+[03/13 10:47:31     33s]           append cmd " -leakage_view [list $leakage_view]"
+[03/13 10:47:31     33s]         }
+[03/13 10:47:31     33s]         if {$dynamic_view ne ""} {
+[03/13 10:47:31     33s]           append cmd " -dynamic_view [list $dynamic_view]"
+[03/13 10:47:31     33s]         }
+[03/13 10:47:31     33s]         eval $cmd
+[03/13 10:47:31     33s]       } else {
+[03/13 10:47:31     33s]       }
+[03/13 10:47:31     33s]     }
+[03/13 10:47:31     33s]   }}
+[03/13 10:47:31     33s] #@ End verbose flow_step activate_views
+[03/13 10:47:31     33s] #@ Begin verbose flow_step init_mcpu
+[03/13 10:47:31     33s] @flow 2: apply {{} {
+[03/13 10:47:31     33s]     # Multi host/cpu attributes
+[03/13 10:47:31     33s]     #-----------------------------------------------------------------------------
+[03/13 10:47:31     33s]     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+[03/13 10:47:31     33s]     # the specified dist script.  This connects the number of CPUs being reserved
+[03/13 10:47:31     33s]     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+[03/13 10:47:31     33s]     # a typical environment variable exported by distribution platforms and is
+[03/13 10:47:31     33s]     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+[03/13 10:47:31     33s]     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+[03/13 10:47:31     33s]       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+[03/13 10:47:31     33s]     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+[03/13 10:47:31     33s]       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+[03/13 10:47:31     33s]     } else {
+[03/13 10:47:31     33s]       set max_cpus 1
+[03/13 10:47:31     33s]     }
+[03/13 10:47:31     33s]     switch -glob [get_db program_short_name] {
+[03/13 10:47:31     33s]       default       {}
+[03/13 10:47:31     33s]       joules*       -
+[03/13 10:47:31     33s]       genus*        -
+[03/13 10:47:31     33s]       innovus*      -
+[03/13 10:47:31     33s]       tempus*       -
+[03/13 10:47:31     33s]       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+[03/13 10:47:31     33s]     }
+[03/13 10:47:31     33s] if {[get_feature opt_signoff]} {
+[03/13 10:47:31     33s]       if {[is_flow -inside flow:opt_signoff]} {
+[03/13 10:47:31     33s]         set_multi_cpu_usage -verbose -remote_host 1
+[03/13 10:47:31     33s]         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+[03/13 10:47:31     33s]         set_distributed_hosts -local
+[03/13 10:47:31     33s]       }
+[03/13 10:47:31     33s] }
+[03/13 10:47:31     33s]   }}
+[03/13 10:47:31     33s] set_multi_cpu_usage -local_cpu 1
+[03/13 10:47:31     33s] #@ End verbose flow_step init_mcpu
+[03/13 10:47:31     33s] End steps for plugin point Cadence.plugin.flowkit.read_db.pre
+[03/13 10:47:32     33s] UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[03/13 10:47:32     33s] UM:*                                                                   read_db
+[03/13 10:47:32     34s] Sourcing flow scripts...
+[03/13 10:47:32     34s] Sourcing flow scripts done.
+[03/13 10:47:32     34s] reading previous metrics...
+[03/13 10:47:33     35s] Begin steps for plugin point Cadence.plugin.flowkit.read_db.post
+[03/13 10:47:33     35s] #@ Begin verbose flow_step activate_views
+[03/13 10:47:33     35s] @flow 2: apply {{} {
+[03/13 10:47:33     35s]     set db [get_db flow_starting_db]
+[03/13 10:47:33     35s]     set flow [lindex [get_db flow_hier_path] end]
+[03/13 10:47:33     35s]     set setup_views [get_feature -obj $flow setup_views]
+[03/13 10:47:33     35s]     set hold_views [get_feature -obj $flow hold_views]
+[03/13 10:47:33     35s]     set leakage_view [get_feature -obj $flow leakage_view]
+[03/13 10:47:33     35s]     set dynamic_view [get_feature -obj $flow dynamic_view]
+[03/13 10:47:33     35s]   
+[03/13 10:47:33     35s]     if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+[03/13 10:47:33     35s]       #- use read_db args for DB types and set_analysis_views for TCL
+[03/13 10:47:33     35s]       if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+[03/13 10:47:33     35s]         set cmd "set_analysis_view"
+[03/13 10:47:33     35s]         if {$setup_views ne ""} {
+[03/13 10:47:33     35s]           append cmd " -setup [list $setup_views]"
+[03/13 10:47:33     35s]         } else {
+[03/13 10:47:33     35s]           append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+[03/13 10:47:33     35s]         }
+[03/13 10:47:33     35s]         if {$hold_views ne ""} {
+[03/13 10:47:33     35s]           append cmd " -hold [list $hold_views]"
+[03/13 10:47:33     35s]         } else {
+[03/13 10:47:33     35s]           append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+[03/13 10:47:33     35s]         }
+[03/13 10:47:33     35s]         if {$leakage_view ne ""} {
+[03/13 10:47:33     35s]           append cmd " -leakage [list $leakage_view]"
+[03/13 10:47:33     35s]         } else {
+[03/13 10:47:33     35s]           if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+[03/13 10:47:33     35s]             append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+[03/13 10:47:33     35s]           }
+[03/13 10:47:33     35s]         }
+[03/13 10:47:33     35s]         if {$dynamic_view ne ""} {
+[03/13 10:47:33     35s]           append cmd " -dynamic [list $dynamic_view]"
+[03/13 10:47:33     35s]         } else {
+[03/13 10:47:33     35s]           if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+[03/13 10:47:33     35s]             append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+[03/13 10:47:33     35s]           }
+[03/13 10:47:33     35s]         }
+[03/13 10:47:33     35s]         eval $cmd
+[03/13 10:47:33     35s]       } elseif {[llength [get_db analysis_views]] == 0} {
+[03/13 10:47:33     35s]         set cmd "set_flowkit_read_db_args"
+[03/13 10:47:33     35s]         if {$setup_views ne ""} {
+[03/13 10:47:33     35s]           append cmd " -setup_views [list $setup_views]"
+[03/13 10:47:33     35s]         }
+[03/13 10:47:33     35s]         if {$hold_views ne ""} {
+[03/13 10:47:33     35s]           append cmd " -hold_views [list $hold_views]"
+[03/13 10:47:33     35s]         }
+[03/13 10:47:33     35s]         if {$leakage_view ne ""} {
+[03/13 10:47:33     35s]           append cmd " -leakage_view [list $leakage_view]"
+[03/13 10:47:33     35s]         }
+[03/13 10:47:33     35s]         if {$dynamic_view ne ""} {
+[03/13 10:47:33     35s]           append cmd " -dynamic_view [list $dynamic_view]"
+[03/13 10:47:33     35s]         }
+[03/13 10:47:33     35s]         eval $cmd
+[03/13 10:47:33     35s]       } else {
+[03/13 10:47:33     35s]       }
+[03/13 10:47:33     35s]     }
+[03/13 10:47:33     35s]   }}
+[03/13 10:47:33     35s] #@ End verbose flow_step activate_views
+[03/13 10:47:33     35s] #@ Begin verbose flow_step init_mcpu
+[03/13 10:47:33     35s] @flow 2: apply {{} {
+[03/13 10:47:33     35s]     # Multi host/cpu attributes
+[03/13 10:47:33     35s]     #-----------------------------------------------------------------------------
+[03/13 10:47:33     35s]     # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+[03/13 10:47:33     35s]     # the specified dist script.  This connects the number of CPUs being reserved
+[03/13 10:47:33     35s]     # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+[03/13 10:47:33     35s]     # a typical environment variable exported by distribution platforms and is
+[03/13 10:47:33     35s]     # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+[03/13 10:47:33     35s]     if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+[03/13 10:47:33     35s]       set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+[03/13 10:47:33     35s]     } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+[03/13 10:47:33     35s]       set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+[03/13 10:47:33     35s]     } else {
+[03/13 10:47:33     35s]       set max_cpus 1
+[03/13 10:47:33     35s]     }
+[03/13 10:47:33     35s]     switch -glob [get_db program_short_name] {
+[03/13 10:47:33     35s]       default       {}
+[03/13 10:47:33     35s]       joules*       -
+[03/13 10:47:33     35s]       genus*        -
+[03/13 10:47:33     35s]       innovus*      -
+[03/13 10:47:33     35s]       tempus*       -
+[03/13 10:47:33     35s]       voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+[03/13 10:47:33     35s]     }
+[03/13 10:47:33     35s] if {[get_feature opt_signoff]} {
+[03/13 10:47:33     35s]       if {[is_flow -inside flow:opt_signoff]} {
+[03/13 10:47:33     35s]         set_multi_cpu_usage -verbose -remote_host 1
+[03/13 10:47:33     35s]         set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+[03/13 10:47:33     35s]         set_distributed_hosts -local
+[03/13 10:47:33     35s]       }
+[03/13 10:47:33     35s] }
+[03/13 10:47:33     35s]   }}
+[03/13 10:47:33     35s] set_multi_cpu_usage -local_cpu 1
+[03/13 10:47:33     35s] #@ End verbose flow_step init_mcpu
+[03/13 10:47:33     35s] End steps for plugin point Cadence.plugin.flowkit.read_db.post
+[03/13 10:47:34     35s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[03/13 10:47:34     35s] UM:*                                                                   init_flow
+[03/13 10:47:34     35s]       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+[03/13 10:47:34     35s] UM:*                                                                   floorplan
+[03/13 10:47:35     36s] #@ Begin verbose flow_step implementation.floorplan.block_start
+[03/13 10:47:35     36s] @@flow 2: set_db flow_write_db_common false
+[03/13 10:47:35     36s] @flow 3: # Only apply in Innovus when the input is a Genus synthesis flat DB (rc).
+[03/13 10:47:35     36s] @flow 4: # Genus blocks also read rc DBs but are at initialization_complete already,
+[03/13 10:47:35     36s] @flow 5: # so we guard with program_short_name to avoid TUI-340 in Genus.
+[03/13 10:47:35     36s] @flow 6: if {[string match "innovus*" [get_db program_short_name]] && [dict exists [get_db flow_starting_db] rc]} {
+[03/13 10:47:35     36s] @@flow 7: set_db init_ground_nets [get_flow_config init_ground_nets]
+[03/13 10:47:35     36s] @@flow 8: set_db init_power_nets  [get_flow_config init_power_nets]
+[03/13 10:47:35     36s] @@flow 9: read_physical -lef [get_flow_config init_physical_files lef_files]
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] Loading LEF file ../SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lef/sky130_scl_9T.tlef ...
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] Loading LEF file ../SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lef/sky130_scl_9T.lef ...
+[03/13 10:47:35     36s] Set DBUPerIGU to M2 pitch 460.
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] Loading LEF file ../SiliconJackets/sram_sky130/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef ...
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-200):	Pin 'din0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-200' for more detail.
+[03/13 10:47:35     36s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[03/13 10:47:35     36s] To increase the message display limit, refer to the product command reference manual.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (IMPLF-201):	Pin 'dout0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/13 10:47:35     36s] Type 'man IMPLF-201' for more detail.
+[03/13 10:47:35     36s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[03/13 10:47:35     36s] To increase the message display limit, refer to the product command reference manual.
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] ##  Check design process and node:  
+[03/13 10:47:35     36s] ##  Both design process and tech node are not set.
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] @@flow 10: init_design
+[03/13 10:47:35     36s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[03/13 10:47:35     36s] The MMMC init sequence looks like this: 
+[03/13 10:47:35     36s] read_mmmc top.mmmc 
+[03/13 10:47:35     36s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[03/13 10:47:35     36s] read_netlist top.v OR 'elaborate_design -script hdl.tcl' for Synthesis flow 
+[03/13 10:47:35     36s] read_power_intent -1801 top.1801   #only for MSV designs 
+[03/13 10:47:35     36s] init_design 
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[03/13 10:47:35     36s] read_libs all.lib 
+[03/13 10:47:35     36s] read_netlist top.v 
+[03/13 10:47:35     36s] read_sdc top.sdc 
+[03/13 10:47:35     36s] init_design 
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[03/13 10:47:35     36s] Common UI User Guide for more details.
+[03/13 10:47:35     36s] @flow 11: }
+[03/13 10:47:35     36s] #@ End verbose flow_step implementation.floorplan.block_start
+[03/13 10:47:35     36s] Tcl error: ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[03/13 10:47:35     36s] | ID         | SEV   | Count | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+[03/13 10:47:35     36s] ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[03/13 10:47:35     36s] | IMPLF-200  | warn  | 60    | Pin '%s' in macro '%s' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+[03/13 10:47:35     36s] | IMPLF-201  | warn  | 64    | Pin '%s' in macro '%s' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+[03/13 10:47:35     36s] | IMPIMEX-12 | error | 1     | 'init_design' failed. You are missing one or more of the required commands before running init_design.
+[03/13 10:47:35     36s] The MMMC init sequence looks like this: 
+[03/13 10:47:35     36s] read_mmmc top.mmmc 
+[03/13 10:47:35     36s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[03/13 10:47:35     36s] read_netlist top.v OR 'elaborate_design -script hdl.tcl' for Synthesis flow 
+[03/13 10:47:35     36s] read_power_intent -1801 top.1801   #only for MSV designs 
+[03/13 10:47:35     36s] init_design 
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[03/13 10:47:35     36s] read_libs all.lib 
+[03/13 10:47:35     36s] read_netlist top.v 
+[03/13 10:47:35     36s] read_sdc top.sdc 
+[03/13 10:47:35     36s] init_design 
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[03/13 10:47:35     36s] Common UI User Guide for more details. |
+[03/13 10:47:35     36s] ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[03/13 10:47:35     36s]     while executing
+[03/13 10:47:35     36s] "error [putError $::imexEmsHandleId 12]"
+[03/13 10:47:35     36s]     (procedure "::IMEX::check_initialization_state" line 44)
+[03/13 10:47:35     36s]     invoked from within
+[03/13 10:47:35     36s] "::IMEX::check_initialization_state "init_design""
+[03/13 10:47:35     36s]     (procedure "IMEX::init_design_rbc" line 71)
+[03/13 10:47:35     36s]     invoked from within
+[03/13 10:47:35     36s] "IMEX::init_design_rbc"
+[03/13 10:47:35     36s]     ("uplevel" body line 1)
+[03/13 10:47:35     36s]     invoked from within
+[03/13 10:47:35     36s] "uplevel [concat IMEX::init_design_rbc $args] "
+[03/13 10:47:35     36s]     (procedure "se::smap::IMEX::init_design_rbc" line 1)
+[03/13 10:47:35     36s]     invoked from within
+[03/13 10:47:35     36s] "::plus::init_design"
+[03/13 10:47:35     36s]     ("uplevel" body line 1)
+[03/13 10:47:35     36s]     invoked from within
+[03/13 10:47:35     36s] "uplevel [list ::plus::init_design {*}$args]"
+[03/13 10:47:35     36s]     invoked from within
+[03/13 10:47:35     36s] "run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} ste..."
+[03/13 10:47:35     36s]     ("uplevel" body line 1)
+[03/13 10:47:35     36s]     invoked from within
+[03/13 10:47:35     36s] "uplevel [concat run_flow $args] "
+[03/13 10:47:35     36s]     (procedure "se::smap::run_flow" line 1)
+[03/13 10:47:35     36s]     invoked from within
+[03/13 10:47:35     36s] "run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} ste..."
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] *** Summary of all messages that are not suppressed in this session:
+[03/13 10:47:35     36s] Severity  ID               Count  Summary                                  
+[03/13 10:47:35     36s] WARNING   IMPLF-200           60  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/13 10:47:35     36s] WARNING   IMPLF-201           64  Pin '%s' in macro '%s' has no ANTENNADIF...
+[03/13 10:47:35     36s] ERROR     IMPIMEX-12           1  'init_design' failed. You are missing on...
+[03/13 10:47:35     36s] *** Message Summary: 124 warning(s), 1 error(s)
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] 
+[03/13 10:47:35     36s] *** Memory Usage v#1 (Current mem = 2019.594M, initial mem = 923.906M) ***
+[03/13 10:47:35     36s] --- Ending "Innovus" (totcpu=0:00:36.9, real=0:00:40.0, mem=2019.6M) ---

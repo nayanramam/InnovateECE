@@ -1,0 +1,103 @@
+
+{tool innovus tool_options {} time 1773413254 status starting flow flow:flow_current steps_run {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} flow_starting_db {rc dbs/syn_opt.db Core {}} flow_working_directory . flow_metrics_file flow.metrics.d/floorplan branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1311060} log_filename logs/floorplan.log}
+{tool innovus tool_options {} time 1773413255 status error flow flow:flow_current steps_run {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} flow_schedule {} flow_starting_db {rc dbs/syn_opt.db Core {}} flow_working_directory . flow_metrics_file flow.metrics.d/floorplan branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1311060} uuid {} errors {{{count 1 id IMPIMEX-12 severity error short {'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v OR 'elaborate_design -script hdl.tcl' for Synthesis flow 
+read_power_intent -1801 top.1801   #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.}} {flow_step:block_start .body_tcl line 6}}} log_filename logs/floorplan.log skip_db 1 msg {Error in flow_step:block_start .body_tcl, message: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ID         | SEV   | Count | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| IMPLF-200  | warn  | 60    | Pin '%s' in macro '%s' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| IMPLF-201  | warn  | 64    | Pin '%s' in macro '%s' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| IMPIMEX-12 | error | 1     | 'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v OR 'elaborate_design -script hdl.tcl' for Synthesis flow 
+read_power_intent -1801 top.1801   #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details. |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    while executing
+"error [putError $::imexEmsHandleId 12]"
+    (procedure "::IMEX::check_initialization_state" line 44)
+    invoked from within
+"::IMEX::check_initialization_state "init_design""
+    (procedure "IMEX::init_design_rbc" line 71)
+    invoked from within
+"IMEX::init_design_rbc"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat IMEX::init_design_rbc $args] "
+    (procedure "se::smap::IMEX::init_design_rbc" line 1)
+    invoked from within
+"::plus::init_design"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [list ::plus::init_design {*}$args]"
+    invoked from within
+    (flow_step:block_start .body_tcl line 6)}}
+{script run_flow tool innovus tool_options {} time 1773413255 status complete steps_run {canonical_path {}} flow flow:flow_current flow_starting_db {rc dbs/syn_opt.db Core {}} flow_working_directory . flow_metrics_file flow.metrics.d/floorplan branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1311060} uuid {} log_filename logs/floorplan.log}
+
+{script run_tcl status error flow flow:flow_current branch {} flow_working_directory . flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/design/dbs/syn_opt.db Core {}} tool_options {} steps_run {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} msg {Error in flow_step:block_start .body_tcl, message: 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ID         | SEV   | Count | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| IMPLF-200  | warn  | 60    | Pin '%s' in macro '%s' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| IMPLF-201  | warn  | 64    | Pin '%s' in macro '%s' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| IMPIMEX-12 | error | 1     | 'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v OR 'elaborate_design -script hdl.tcl' for Synthesis flow 
+read_power_intent -1801 top.1801   #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details. |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    while executing
+"error [putError $::imexEmsHandleId 12]"
+    (procedure "::IMEX::check_initialization_state" line 44)
+    invoked from within
+"::IMEX::check_initialization_state "init_design""
+    (procedure "IMEX::init_design_rbc" line 71)
+    invoked from within
+"IMEX::init_design_rbc"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat IMEX::init_design_rbc $args] "
+    (procedure "se::smap::IMEX::init_design_rbc" line 1)
+    invoked from within
+"::plus::init_design"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [list ::plus::init_design {*}$args]"
+    invoked from within
+    (flow_step:block_start .body_tcl line 6)}}
