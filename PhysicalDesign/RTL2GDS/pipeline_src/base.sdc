@@ -9,7 +9,7 @@ set_interactive_constraint_modes {func}
 
 # Create a clock named "core_clock" with a period of $CLOCK_PERIOD
 # The clock is associated with all ports matching the pattern "*clk*"
-create_clock [get_ports *clk*] -name core_clock -period $CLOCK_PERIOD
+create_clock [get_ports clock] -name core_clock -period $CLOCK_PERIOD
 
 # Set the maximum transition time (slew) for all ports to 1.5 ns
 set_max_transition 1.5 [get_ports *]
