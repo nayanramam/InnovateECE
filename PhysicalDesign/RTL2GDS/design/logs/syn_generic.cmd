@@ -1,10 +1,10 @@
 # Cadence Genus(TM) Synthesis Solution, Version 25.11-s095_1, built Aug 12 2025 10:59:05
 
-# Date: Sun Mar 15 21:30:20 2026
+# Date: Mon Mar 16 12:19:06 2026
 # Host: ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
 # OS:   Red Hat Enterprise Linux 8.10 (Ootpa)
 
-if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2449886} flow {flow flow:flow_current tool genus tool_options {} dir . db {{} {} {} {}} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} branch {} caller_data {group 0 process_branch 0} uuid {} parent_uuid {} case_sensitive_match 0 child_of {} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current tool genus tool_options {} dir . db {{} {} {} {}} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} branch {} caller_data {group 0 process_branch 0} uuid {} parent_uuid {} case_sensitive_match 0 child_of {} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 #@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 #@ (init_flow): read_metric -id current /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic -previous 
 #@ (init_flow): read_flow /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -579,6 +579,151 @@ if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE
 #@ (run_flow): push_snapshot_stack
 #@ (flow_step:read_hdl) 2:   set hdl_file_list [list  ../pipeline_src/include/core_pkg.sv  ../pipeline_src/DFlipFlop.sv  ../pipeline_src/DRAM.sv  ../pipeline_src/ALU.sv  ../pipeline_src/Instr_Mem.sv  ../pipeline_src/Register_File.sv  ../pipeline_src/Flush_Control.sv  ../pipeline_src/FWD_Control.sv  ../pipeline_src/Stall_Control.sv  ../pipeline_src/module_loadstore_unit.sv  ../pipeline_src/IF_Stage.sv  ../pipeline_src/ID_Stage.sv  ../pipeline_src/EX_Stage.sv  ../pipeline_src/Mem_Stage.sv  ../pipeline_src/WB_Stage.sv  ../pipeline_src/Fetch.sv  ../pipeline_src/Core.sv  ]
 #@ (flow_step:read_hdl) 3:   read_hdl -sv $hdl_file_list
-#@ (flow_step:read_hdl) 3:  ^-- previous command return error code: "1"
-#@ (run_flow): write_db -all_root_attributes -to_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.init_design.read_hdl.ERROR.db
+#@ (flow_step:read_hdl) 4:   elaborate Core
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:read_power_intent) 2:   if {![string is space [get_flow_config -quiet init_power_intent_files 1801]]} {
+#@                                :     read_power_intent -1801 [get_flow_config init_power_intent_files 1801]
+#@                                :   }
+#@ (flow_step:read_power_intent) 5:   if {![string is space [get_flow_config -quiet init_power_intent_files cpf]]} {
+#@                                :     read_power_intent -cpf [get_flow_config init_power_intent_files cpf]
+#@                                :   }
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:run_init_design) 2:   set_db init_ground_nets VSS
+#@ (flow_step:run_init_design) 3:   set_db init_power_nets VDD
+#@ (flow_step:run_init_design) 5:   init_design
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): write_db -all_root_attributes -to_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.init_design.run_init_design.db
+#@ (flow_step:init_genus_yaml)  2:   #- extend flow report name based on context
+#@ (flow_step:init_genus_yaml)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                               :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                               :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                               :     }
+#@                               :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                               :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                               :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                               :     }
+#@                               :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                               :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                               :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                               :     }
+#@                               :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                               :     set_db flow_report_name [get_db flow_branch]
+#@                               :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                               :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                               :   } else {
+#@                               :   }
+#@ (flow_step:init_genus_yaml) 22:   #- Create report dir (if necessary)
+#@ (flow_step:init_genus_yaml) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:init_genus_yaml)  2:   # Timing attributes  [get_db -category tim]
+#@ (flow_step:init_genus_yaml)  3:   #-------------------------------------------------------------------------------
+#@ (flow_step:init_genus_yaml)  4:   set_db ocv_mode                         true
+#@ (flow_step:init_genus_yaml)  6:   # Routing attributes  [get_db -category route]
+#@ (flow_step:init_genus_yaml)  7:   #-------------------------------------------------------------------------------
+#@ (flow_step:init_genus_yaml)  8:   set_db design_top_routing_layer met5
+#@ (flow_step:init_genus_yaml)  9:   set_db design_bottom_routing_layer met1
+#@ (flow_step:init_genus_yaml) 11:   # Optimization attributes  [get_db -category netlist]
+#@ (flow_step:init_genus_yaml) 12:   #-------------------------------------------------------------------------------
+#@ (flow_step:init_genus_yaml) 13:   set_db design_flow_effort standard
+#@ (flow_step:init_genus_yaml) 14:   set_db design_power_effort none
+#@ (flow_step:init_genus_yaml) 15:   set_db opt_leakage_to_dynamic_ratio 0.5
+#@ (flow_step:init_genus_yaml) 16:   set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
+#@ (flow_step:init_genus_yaml) 17:   set_db cts_inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+#@ (flow_step:init_genus_yaml) 18:   set_db cts_clock_gating_cells ICGX1
+#@ (flow_step:init_genus_yaml) 19:   set_db cts_logic_cells {CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+#@ (flow_step:init_genus_yaml) 21:   # Physical attributes  [get_db -category phys]
+#@ (flow_step:init_genus_yaml) 22:   #-------------------------------------------------------------------------------
+#@ (flow_step:init_genus_yaml) 23:   set_db design_process_node 130
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:init_genus_user)  2:   set_db heartbeat 300
+#@ (flow_step:init_genus_user)  3:   set_db max_cpus_per_server 16
+#@ (flow_step:init_genus_user)  4:   # Timing attributes  [get_db -category tim]
+#@ (flow_step:init_genus_user)  5:   #-----------------------------------------------------------------------------
+#@ (flow_step:init_genus_user)  6:   set_db timing_apply_default_primary_input_assertion true
+#@ (flow_step:init_genus_user)  7:   set_db timing_analysis_async_checks     async
+#@ (flow_step:init_genus_user)  9:   # Optimization attributes  [get_db -category netlist]
+#@ (flow_step:init_genus_user) 10:   #-----------------------------------------------------------------------------
+#@ (flow_step:init_genus_user) 12:   # Datapath attributes  [get_db -category dp]
+#@ (flow_step:init_genus_user) 13:   #-----------------------------------------------------------------------------
+#@ (flow_step:init_genus_user) 15:   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
+#@ (flow_step:init_genus_user) 16:   #-----------------------------------------------------------------------------
+#@ (run_flow): pop_snapshot_stack
+#@ (flow_step:set_dont_use)  2:   #- extend flow report name based on context
+#@ (flow_step:set_dont_use)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
+#@                            :     if {![regexp {sta$} [get_db flow_report_name]]} {
+#@                            :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "sta" : "[get_db flow_report_name].sta"}]
+#@                            :     }
+#@                            :   } elseif {[is_flow -quiet -inside flow:ir_early_static] || [is_flow -quiet -inside flow:ir_early_dynamic]} {
+#@                            :     if {![regexp {era$} [get_db flow_report_name]]} {
+#@                            :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "era" : "[get_db flow_report_name].era"}]
+#@                            :     }
+#@                            :   } elseif {[is_flow -quiet -inside flow:ir_grid] || [is_flow -quiet -inside flow:ir_static] || [is_flow -quiet -inside flow:ir_dynamic] || [is_flow -quiet -inside flow:ir_rampup]} {
+#@                            :     if {![regexp {ir$} [get_db flow_report_name]]} {
+#@                            :       set_db flow_report_name [expr {[string is space [get_db flow_report_name]] ? "ir" : "[get_db flow_report_name].ir"}]
+#@                            :     }
+#@                            :   } elseif {[is_flow -quiet -inside flow:sta_subflows] && [get_db flow_branch] ne {}} {
+#@                            :     set_db flow_report_name [get_db flow_branch]
+#@                            :   } elseif {[regexp {block_start|hier_start|eco_start} [get_db flow_step_current]]} {
+#@                            :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                            :   } else {
+#@                            :   }
+#@ (flow_step:set_dont_use) 22:   #- Create report dir (if necessary)
+#@ (flow_step:set_dont_use) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:set_dont_use) 2:   #- disable base_cell usage during optimization
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:commit_power_intent)  2:   if {[join [dict values [get_db init_power_intent_files]]] ne {}} {
+#@                                   :     #- apply power intent rules
+#@                                   :     if {[is_flow -quiet -inside synthesis]} {
+#@                                   :       apply_power_intent -summary
+#@                                   :     }
+#@                                   :   
+#@                                   :     #- commit power intent rules
+#@                                   :     commit_power_intent
+#@                                   :   }
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:run_syn_generic) 2:   #- Synthesize to generic gates
+#@ (flow_step:run_syn_generic) 3:   syn_generic
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:block_finish)  2:   apply {{} {
+#@                            :     #- Make sure flow_report_name is reset from any reports executed during the flow
+#@                            :     set_db flow_report_name [get_db [lindex [get_db flow_hier_path] end] .name]
+#@                            :     #- Set DB for handoff to Innovus
+#@                            :     if {[is_flow -inside flow:syn_opt]} {
+#@                            :       set_db flow_write_db_common true
+#@                            :     }
+#@                            :   
+#@                            :     #- Set value for SPEF output file generation
+#@                            :     if {[get_db flow_branch] ne ""} {
+#@                            :       set out_dir [file join [get_db flow_db_directory] [get_db flow_branch]_[get_db flow_report_name]]
+#@                            :     } else {
+#@                            :       set out_dir [file join [get_db flow_db_directory] [get_db flow_report_name]]
+#@                            :     }
+#@                            :     set_db flow_spef_directory $out_dir
+#@                            :   
+#@                            :     #- Store non-default root attributes to metrics
+#@                            :     catch {report_obj -tcl} flow_root_config
+#@                            :     if {[dict exists $flow_root_config root:/]} {
+#@                            :       set flow_root_config [dict get $flow_root_config root:/]
+#@                            :     } elseif {[dict exists $flow_root_config root:]} {
+#@                            :       set flow_root_config [dict get $flow_root_config root:]
+#@                            :     } else {
+#@                            :     }
+#@                            :     foreach key [dict keys $flow_root_config] {
+#@                            :       if {[string length [dict get $flow_root_config $key]] > 200} {
+#@                            :         dict set flow_root_config $key "\[long value truncated\]"
+#@                            :       }
+#@                            :     }
+#@                            :     set_metric -name flow.root_config -value $flow_root_config
+#@                            :   }}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): write_db -all_root_attributes -to_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db
+#@ (run_flow): push_snapshot_stack
+#@ (flow_step:schedule_syn_generic_report_synth) 2:     schedule_flow -flow report_synth -include_in_metrics
 #@ (run_flow): pop_snapshot_stack

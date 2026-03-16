@@ -1,0 +1,100 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+*	
+*
+* 	Date & Time:	2026-Mar-16 13:06:21 (2026-Mar-16 17:06:21 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: Core
+*
+*	Liberty Libraries used: 
+*	        /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib
+*	        /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:        1.8 
+*
+*       Dynamic View: tt_v1.8_25C_Nominal_25_func
+*
+*       Leakage View: tt_v1.8_25C_Nominal_25_func
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile reports/postroute/power.all.rpt -no_wrap
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        7.90772540 	   77.4732%
+Total Switching Power:       2.25815886 	   22.1235%
+Total Leakage Power:         0.04115580 	    0.4032%
+Total Power:                10.20704006 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         2.743      0.2586    0.002936       3.004       29.43 
+Macro                              4.419    0.005629     0.03545        4.46       43.69 
+IO                                     0           0           0           0           0 
+Combinational                     0.5515       1.176     0.00272        1.73       16.95 
+Clock (Combinational)             0.1949      0.8184   4.753e-05       1.013       9.928 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              7.908       2.258     0.04116       10.21         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.8      7.908       2.258     0.04116       10.21         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+core_clock                        0.1949      0.8184   4.753e-05       1.013       9.928 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)      0.1949      0.8184   4.753e-05       1.013       9.928 
+-----------------------------------------------------------------------------------------
+Clock: core_clock
+Clock Period: 0.025000 usec 
+Clock Toggle Rate:    80.0000 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:      MainMemory_data_sram (sky130_sram_2kbyte_1rw1r_32x512_8):            2.232 
+*                Highest Leakage Power: InstructionFetch_Module_InstructionMemory_instr_sram (sky130_sram_2kbyte_1rw1r_32x512_8):          0.01773 
+*          Total Cap:      1.61358e-10 F
+*          Total instances in design:  7531
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

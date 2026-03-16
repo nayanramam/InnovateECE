@@ -3,19 +3,19 @@ Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
-[21:40:33.185705] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[12:21:49.185753] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 Version: 25.11-s095_1, built Tue Aug 12 07:59:05 PDT 2025
-Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic.report_synth -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 971a37f0-4202-4bad-b6a3-779eaa9b6b82 previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic.report_synth metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic.report_synth run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 1 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2469014} flow {flow flow:report_synth tool genus tool_options -disable_user_startup no_sync 0 sync 0 db {rc dbs/syn_generic.db Core {}} dir ./. branch {} caller_data {group 0 process_branch 1} include_in_metrics 1 parent_uuid 971a37f0-4202-4bad-b6a3-779eaa9b6b82 after {} defer 0 child_of {flow:flow_current flow:synthesis flow:syn_generic}} flow_name flow:report_synth first_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_generic}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_generic}} child_of {flow:flow_current flow:synthesis flow:syn_generic} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic.report_synth}; run_flow -from {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_generic}} -to {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_generic}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic.report_synth} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_synth} branch {} flow_working_directory {./.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
-Date:    Sun Mar 15 21:40:33 2026
+Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic.report_synth -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 974e7b70-08fa-4e78-ac92-274e5d2dfed7 previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic.report_synth metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic.report_synth run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 1 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:report_synth tool genus tool_options -disable_user_startup no_sync 0 sync 0 db {rc dbs/syn_generic.db Core {}} dir ./. branch {} caller_data {group 0 process_branch 1} include_in_metrics 1 parent_uuid 974e7b70-08fa-4e78-ac92-274e5d2dfed7 after {} defer 0 child_of {flow:flow_current flow:synthesis flow:syn_generic}} flow_name flow:report_synth first_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_generic}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_generic}} child_of {flow:flow_current flow:synthesis flow:syn_generic} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic.report_synth}; run_flow -from {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_generic}} -to {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_generic}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic.report_synth} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_synth} branch {} flow_working_directory {./.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
+Date:    Mon Mar 16 12:21:49 2026
 Host:    ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB) (264007036KB)
-PID:     2474131
+PID:     1371165
 OS:      Red Hat Enterprise Linux 8.10 (Ootpa)
 
 Checking out license: Genus_Synthesis
-[21:40:33.189768] Periodic Lic check successful
-[21:40:33.714073] Feature usage summary:
-[21:40:33.714074] Genus_Synthesis  
+[12:21:49.353592] Periodic Lic check successful
+[12:21:49.353609] Feature usage summary:
+[12:21:49.353610] Genus_Synthesis  
 License checkout complete (0 seconds elapsed).
 
 
@@ -24,13 +24,13 @@ License checkout complete (0 seconds elapsed).
 
 
 
-Finished executable startup (6 seconds elapsed).
+Finished executable startup (7 seconds elapsed).
 
 Loading tool scripts...
-Finished loading tool scripts (20 seconds elapsed).
+Finished loading tool scripts (23 seconds elapsed).
 
 #@ Processing -execute option
-@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 971a37f0-4202-4bad-b6a3-779eaa9b6b82 previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic.report_synth metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic.report_synth run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 1 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 2469014} flow {flow flow:report_synth tool genus tool_options -disable_user_startup no_sync 0 sync 0 db {rc dbs/syn_generic.db Core {}} dir ./. branch {} caller_data {group 0 process_branch 1} include_in_metrics 1 parent_uuid 971a37f0-4202-4bad-b6a3-779eaa9b6b82 after {} defer 0 child_of {flow:flow_current flow:synthesis flow:syn_generic}} flow_name flow:report_synth first_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_generic}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_generic}} child_of {flow:flow_current flow:synthesis flow:syn_generic} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic.report_synth}; run_flow -from {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_generic}} -to {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_generic}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic.report_synth} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_synth} branch {} flow_working_directory {./.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 974e7b70-08fa-4e78-ac92-274e5d2dfed7 previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic.report_synth metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic.report_synth run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 1 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:report_synth tool genus tool_options -disable_user_startup no_sync 0 sync 0 db {rc dbs/syn_generic.db Core {}} dir ./. branch {} caller_data {group 0 process_branch 1} include_in_metrics 1 parent_uuid 974e7b70-08fa-4e78-ac92-274e5d2dfed7 after {} defer 0 child_of {flow:flow_current flow:synthesis flow:syn_generic}} flow_name flow:report_synth first_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_generic}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_generic}} child_of {flow:flow_current flow:synthesis flow:syn_generic} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic.report_synth}; run_flow -from {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_generic}} -to {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_generic}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic.report_synth} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_synth} branch {} flow_working_directory {./.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -372,7 +372,7 @@ UM:*                                                                   report_sy
 #@ Begin verbose flow_step report_start
 #@ End verbose flow_step report_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:             31             35                                      report_start
+UM:             35             39                                      report_start
 #@ Begin verbose flow_step init_genus.init_genus_yaml
 @flow_step(init_genus_yaml)  2:   # Timing attributes  [get_db -category tim]
 @flow_step(init_genus_yaml)  3:   #-------------------------------------------------------------------------------
@@ -447,7 +447,7 @@ INFO (IMPEXT-5003): /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/
 
 INFO (IMPEXT-7048): Generating auto layer map file.
 
-INFO (IMPEXT-6209): Completed (cpu: 1183413.000000 real: 1183413.000000)
+INFO (IMPEXT-6209): Completed (cpu: 1167035.000000 real: 1167035.000000)
 
 @flow_step(report_area_genus) 3:   report_dp                   > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]area.datapath.rpt]
 Beginning report datapath command
@@ -457,7 +457,7 @@ Warning : The filename, column and line number information will not be available
 #@ End verbose flow_step report_area_genus
 UM: Running design category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              4              5                                      report_area_genus
+UM:              4              4                                      report_area_genus
 #@ Begin verbose flow_step report_late_summary_genus
 @flow_step(report_late_summary_genus) 2:   report_timing_summary -checks {setup drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.analysis_summary.rpt]
 Error   : A required object parameter could not be found. [TUI-61] [group_path]
@@ -524,7 +524,69 @@ Usage: group_path [-rise] [-fall]
         user priority setting for exception 
     [-exception_name <string>]:
         exception name 
-Warning : Empty collection is not accepted. [SDC-238] [filter_collection]
+Error   : A required object parameter could not be found. [TUI-61] [group_path]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+
+Usage: group_path [-rise] [-fall]
+           [ -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ ]+
+           [-name <string>] [-default] [-weight <float>]
+           [-critical_range <float>] [-setup] [-hold] [-comment <string>]
+           [-user_priority <integer>] [-exception_name <string>]
+
+    [-rise]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    [-fall]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of startpoints for the paths 
+    -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a rise transition at the pin itself 
+    -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a fall transition at the pin itself 
+    -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of endpoints for the paths 
+    -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a rise transition at the pin itself 
+    -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a fall transition at the pin itself 
+    -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        through list 
+    -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a rise transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_fall_pin 
+    -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a fall transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_rise_pin 
+    [-name <string>]:
+        cost group name 
+    [-default]:
+        default cost group 
+    [-weight <float>]:
+        cost function weight value 
+    [-critical_range <float>]:
+        margin of delay for optimization 
+    [-setup]:
+        for setup timing analysis only 
+    [-hold]:
+        for hold timing analysis only 
+    [-comment <string>]:
+        comment 
+    [-user_priority <integer>]:
+        user priority setting for exception 
+    [-exception_name <string>]:
+        exception name 
 @flow_step(report_late_summary_genus) 3:   report_timing_summary -checks {setup drv} -expand_views > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.view_summary.rpt]
 Error   : A required object parameter could not be found. [TUI-61] [group_path]
         : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
@@ -589,7 +651,69 @@ Usage: group_path [-rise] [-fall]
         user priority setting for exception 
     [-exception_name <string>]:
         exception name 
-Warning : Empty collection is not accepted. [SDC-238] [filter_collection]
+Error   : A required object parameter could not be found. [TUI-61] [group_path]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+
+Usage: group_path [-rise] [-fall]
+           [ -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ ]+
+           [-name <string>] [-default] [-weight <float>]
+           [-critical_range <float>] [-setup] [-hold] [-comment <string>]
+           [-user_priority <integer>] [-exception_name <string>]
+
+    [-rise]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    [-fall]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of startpoints for the paths 
+    -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a rise transition at the pin itself 
+    -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a fall transition at the pin itself 
+    -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of endpoints for the paths 
+    -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a rise transition at the pin itself 
+    -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a fall transition at the pin itself 
+    -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        through list 
+    -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a rise transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_fall_pin 
+    -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a fall transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_rise_pin 
+    [-name <string>]:
+        cost group name 
+    [-default]:
+        default cost group 
+    [-weight <float>]:
+        cost function weight value 
+    [-critical_range <float>]:
+        margin of delay for optimization 
+    [-setup]:
+        for setup timing analysis only 
+    [-hold]:
+        for hold timing analysis only 
+    [-comment <string>]:
+        comment 
+    [-user_priority <integer>]:
+        user priority setting for exception 
+    [-exception_name <string>]:
+        exception name 
 @flow_step(report_late_summary_genus) 4:   report_timing_summary -checks {setup drv} -expand_views -expand_clocks launch_capture  > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.group_summary.rpt]
 Error   : A required object parameter could not be found. [TUI-61] [group_path]
         : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
@@ -654,18 +778,202 @@ Usage: group_path [-rise] [-fall]
         user priority setting for exception 
     [-exception_name <string>]:
         exception name 
-Warning : Empty collection is not accepted. [SDC-238] [filter_collection]
+Error   : A required object parameter could not be found. [TUI-61] [group_path]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+
+Usage: group_path [-rise] [-fall]
+           [ -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ ]+
+           [-name <string>] [-default] [-weight <float>]
+           [-critical_range <float>] [-setup] [-hold] [-comment <string>]
+           [-user_priority <integer>] [-exception_name <string>]
+
+    [-rise]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    [-fall]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of startpoints for the paths 
+    -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a rise transition at the pin itself 
+    -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a fall transition at the pin itself 
+    -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of endpoints for the paths 
+    -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a rise transition at the pin itself 
+    -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a fall transition at the pin itself 
+    -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        through list 
+    -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a rise transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_fall_pin 
+    -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a fall transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_rise_pin 
+    [-name <string>]:
+        cost group name 
+    [-default]:
+        default cost group 
+    [-weight <float>]:
+        cost function weight value 
+    [-critical_range <float>]:
+        margin of delay for optimization 
+    [-setup]:
+        for setup timing analysis only 
+    [-hold]:
+        for hold timing analysis only 
+    [-comment <string>]:
+        comment 
+    [-user_priority <integer>]:
+        user priority setting for exception 
+    [-exception_name <string>]:
+        exception name 
 @flow_step(report_late_summary_genus) 5:   set_metric -name timing.setup.type -value gba
 @flow_step(report_late_summary_genus) 6:   report_qor > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]qor.rpt]
-Warning : No clock. [RPT-10]
-        : There are no clocks in the design.
-        : Clock is not defined.
 #@ End verbose flow_step report_late_summary_genus
 UM: Running setup category ...
-No paths found. Empty collection returned.
+Error   : A required object parameter could not be found. [TUI-61] [group_path]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
 
+Usage: group_path [-rise] [-fall]
+           [ -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ ]+
+           [-name <string>] [-default] [-weight <float>]
+           [-critical_range <float>] [-setup] [-hold] [-comment <string>]
+           [-user_priority <integer>] [-exception_name <string>]
+
+    [-rise]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    [-fall]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of startpoints for the paths 
+    -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a rise transition at the pin itself 
+    -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a fall transition at the pin itself 
+    -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of endpoints for the paths 
+    -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a rise transition at the pin itself 
+    -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a fall transition at the pin itself 
+    -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        through list 
+    -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a rise transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_fall_pin 
+    -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a fall transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_rise_pin 
+    [-name <string>]:
+        cost group name 
+    [-default]:
+        default cost group 
+    [-weight <float>]:
+        cost function weight value 
+    [-critical_range <float>]:
+        margin of delay for optimization 
+    [-setup]:
+        for setup timing analysis only 
+    [-hold]:
+        for hold timing analysis only 
+    [-comment <string>]:
+        comment 
+    [-user_priority <integer>]:
+        user priority setting for exception 
+    [-exception_name <string>]:
+        exception name 
+Timing update required : clearing all existing timing collections.
+Error   : A required object parameter could not be found. [TUI-61] [group_path]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+
+Usage: group_path [-rise] [-fall]
+           [ -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ |
+             -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+ ]
+           [ -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ |
+             -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+ ]+
+           [-name <string>] [-default] [-weight <float>]
+           [-critical_range <float>] [-setup] [-hold] [-comment <string>]
+           [-user_priority <integer>] [-exception_name <string>]
+
+    [-rise]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    [-fall]:
+        exception is for setup timing analysis only (default is both setup and 
+        hold) 
+    -from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of startpoints for the paths 
+    -rise_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a rise transition at the pin itself 
+    -fall_from <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        startpoints with a fall transition at the pin itself 
+    -to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        a set of endpoints for the paths 
+    -rise_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a rise transition at the pin itself 
+    -fall_to <clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus>+:
+        endpoints with a fall transition at the pin itself 
+    -through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        through list 
+    -rise_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a rise transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_fall_pin 
+    -fall_through <port|inst|hinst|pin|hpin|hnet|port_bus|hpin_bus>+:
+        this option specifies paths that contain a fall transition in one of 
+        these objects and it can be repeated and can be combined with -through 
+        and/or -through_rise_pin 
+    [-name <string>]:
+        cost group name 
+    [-default]:
+        default cost group 
+    [-weight <float>]:
+        cost function weight value 
+    [-critical_range <float>]:
+        margin of delay for optimization 
+    [-setup]:
+        for setup timing analysis only 
+    [-hold]:
+        for hold timing analysis only 
+    [-comment <string>]:
+        comment 
+    [-user_priority <integer>]:
+        user priority setting for exception 
+    [-exception_name <string>]:
+        exception name 
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      report_late_summary_genus
+UM:              6              5            0.0 ps        11574.9 ps  report_late_summary_genus
 #@ Begin verbose flow_step report_late_paths
 @flow_step(report_late_paths)  2:   #- Reports that show detailed timing with Graph Based Analysis (GBA)
 @flow_step(report_late_paths)  3:   report_timing -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.endpoint.rpt]
@@ -687,22 +995,15 @@ Warning : Timing problems have been detected in this design. [TIM-11]
                                     }
 #@ End verbose flow_step report_late_paths
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      report_late_paths
+UM:             12             12                                      report_late_paths
 #@ Begin verbose flow_step report_power_genus
 @flow_step(report_power_genus) 2:   report_gates -power   > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]power.all.rpt]
 Info    : Joules engine is used. [RPT-16]
         : Joules engine is being used for the command report_gates -power.
 ENABLED NEW REPORT GATE CMD
-
-
-
-
-@flow_step(report_power_genus) 3:   report_clock_gates    > [file join [get_db flow_report_directory]/[get_db flow_report_name] [get_db flow_report_prefix]power.clock_gating.rpt]
-@flow_step(report_power_genus) 4:   report_power -by_category > [file join [get_db flow_report_directory]/[get_db flow_report_name] [get_db flow_report_prefix]power.design.rpt]
-Info    : Joules engine is used. [RPT-16]
-        : Joules engine is being used for the command report_power.
 Info   : ACTP-0001 [ACTPInfo] Activity propagation started for stim#0 netlist
        : Core
+Info   : ACTP-0009 [ACTPInfo] Activity Propagation Progress Report :   0%   1%   2%   3%   4%   5%   6%   7%   8%   9%  10%  11%  12%  13%  14%  15%  16%  17%  18%  19%  20%  21%  22%  23%  24%  25%  26%  27%  28%  29%  30%  31%  32%  33%  34%  35%  36%  37%  38%  39%  40%  41%  42%  43%  44%  45%  46%  47%  48%  49%  50%  51%  52%  53%  54%  55%  56%  57%  58%  59%  60%  61%  62%  63%  64%  65%  66%  67%  68%  69%  70%  71%  72%  73%  74%  75%  76%  77%  78%  79%  80%  81%  82%  83%  84%  85%  86%  87%  88%  89%  90%  91%  92%  93%  94%  95%  96%  97%  98%  99% 100%
 Info   : ACTP-0001 Activity propagation ended for stim#0
 Info   : PWRA-0001 [PwrInfo] compute_power effective options 
        : -mode : vectorless
@@ -717,24 +1018,33 @@ Info   : PWRA-0008 [PwrInfo] Analysis view used  : delay corner =
 Info   : PWRA-0002 [PwrInfo] Skipping activity propagation due to -skip_ap
        : option....
 Info   : PWRA-0002 Started 'vectorless' power computation.
+Info   : PWRA-0009 [PwrInfo] Power Computation Progress Report :   0%   1%   2%   3%   4%   5%   6%   7%   8%   9%  10%  11%  12%  13%  14%  15%  16%  17%  18%  19%  20%  21%  22%  23%  24%  25%  26%  27%  28%  29%  30%  31%  32%  33%  34%  35%  36%  37%  38%  39%  40%  41%  42%  43%  44%  45%  46%  47%  48%  49%  50%  51%  52%  53%  54%  55%  56%  57%  58%  59%  60%  61%  62%  63%  64%  65%  66%  67%  68%  69%  70%  71%  72%  73%  74%  75%  76%  77%  78%  79%  80%  81%  82%  83%  84%  85%  86%  87%  88%  89%  90%  91%  92%  93%  94%  95%  96%  97%  98%  99% 100%
 Info   : PWRA-0002 Finished power computation.
 Info   : PWRA-0007 [PwrInfo] Completed successfully.
        : Info=7, Warn=0, Error=0, Fatal=0
+
+
+
+
+@flow_step(report_power_genus) 3:   report_clock_gates    > [file join [get_db flow_report_directory]/[get_db flow_report_name] [get_db flow_report_prefix]power.clock_gating.rpt]
+@flow_step(report_power_genus) 4:   report_power -by_category > [file join [get_db flow_report_directory]/[get_db flow_report_name] [get_db flow_report_prefix]power.design.rpt]
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
 Output file: reports/syn_generic/power.design.rpt
 #@ End verbose flow_step report_power_genus
 UM: Running power category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              2              3                                      report_power_genus
+UM:              4              4                                      report_power_genus
 #@ Begin verbose flow_step report_finish
 #@ End verbose flow_step report_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      report_finish
+UM:              2              3                                      report_finish
 
 Program version = 25.11-s095_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 15, 2026 21:41:01
-Ending time = Mar 15, 2026 21:41:27
+Starting time = Mar 16, 2026 12:22:21
+Ending time = Mar 16, 2026 12:22:59
 
 Run Flow Summary
 ---------------------
@@ -754,11 +1064,11 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:01:52          | 0:02:04           |                       |                       |
+| syn_generic | 0:03:13          | 0:03:18           |                     0 |                11.575 |
  ---------------------------------------------------------------------------------------------------- 
 
 Lic Summary:
-[21:41:27.122280] Cdslmd servers: ece-winlic
-[21:41:27.646587] Feature usage summary:
-[21:41:27.646587] Genus_Synthesis  
+[12:22:59.010440] Cdslmd servers: ece-winlic
+[12:22:59.534747] Feature usage summary:
+[12:22:59.534747] Genus_Synthesis  
 Normal exit.
