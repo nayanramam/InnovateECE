@@ -112,8 +112,8 @@ create_flow_step -name run_route -owner cadence {
 # STEP run_opt_postroute
 ##############################################################################
 create_flow_step -name run_opt_postroute -owner cadence {
-  #- perform postroute and SI based setup optimization
-  opt_design -post_route -setup -hold -report_dir debug -report_prefix [get_db flow_report_name]
+  #- perform postroute and SI based setup optimization, including DRV fixing
+  opt_design -post_route -setup -hold -drv -report_dir debug -report_prefix [get_db flow_report_name]
 }
   #=============================================================================
   # Flow: opt_signoff
@@ -126,6 +126,15 @@ create_flow_step -name run_opt_postroute -owner cadence {
     #- perform signoff based optimization
     opt_signoff -all -report_dir debug -report_prefix [get_db flow_report_name]
   }
+##############################################################################
+# STEP add_metal_fill
+##############################################################################
+create_flow_step -name add_metal_fill -owner cadence {
+  #- insert dummy metal fill to meet minimum density requirements
+  add_metal_fill \
+    -layer {met1 met2 met3 met4 met5} \
+    -nets {VDD VSS}
+}
 #=============================================================================
 # Flow: eco
 #=============================================================================

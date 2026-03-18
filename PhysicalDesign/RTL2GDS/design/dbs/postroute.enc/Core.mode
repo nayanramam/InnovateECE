@@ -44,7 +44,7 @@ catch {setNanoRouteMode -quiet -drouteStartIteration 0}
 catch {setNanoRouteMode -quiet -route_detail_use_lef_pin_taper_rule true}
 catch {setNanoRouteMode -quiet -route_detail_use_min_spacing_for_blockage auto}
 catch {setNanoRouteMode -quiet -route_route_side "none"}
-catch {setNanoRouteMode -quiet -extract_design_signature 138112174}
+catch {setNanoRouteMode -quiet -extract_design_signature 40055013}
 catch {setNanoRouteMode -quiet -extract_rc_model_file "${::IMEX::libVar}/misc/rc_model.bin"}
 catch {setNanoRouteMode -quiet -route_extract_third_party_compatible false}
 catch {setNanoRouteMode -quiet -route_global_exp_timing_driven_std_delay 37.600000}
@@ -55,7 +55,7 @@ catch {setNanoRouteMode -quiet -route_re_insert_filler_cell_list "FILL1 FILL2 FI
 catch {setNanoRouteMode -quiet -route_re_insert_filler_cell_list_from_file false}
 catch {setNanoRouteMode -quiet -route_strict_honor_route_rule "false"}
 catch {setNanoRouteMode -quiet -route_with_si_post_route_fix false}
-catch {setNanoRouteMode -quiet -timingEngine ".timing_file_1707723_ebf647c6-07c6-4e84-a98b-b8a1e8254512.tif.gz"}
+catch {setNanoRouteMode -quiet -timingEngine ".timing_file_580666_5136b7ca-a66c-44c0-88ac-9ced5569fb16.tif.gz"}
 
 catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
 catch { setActiveLogicViewMode -keepHighFanoutCriticalInsts false }

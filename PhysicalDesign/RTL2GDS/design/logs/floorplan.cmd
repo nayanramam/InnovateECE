@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Mon Mar 16 12:26:49 2026                
+#  Created on Tue Mar 17 19:55:53 2026                
 #                                                     
 #######################################################
 
@@ -13,7 +13,7 @@
 #@(#)CDS: CPE v25.11-s029
 #@(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
 
-if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 };
+if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 };
 #@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 #@ (init_flow): read_metric -id current /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan -previous 
 #@ (init_flow): read_flow /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -299,10 +299,15 @@ set sitesx 0.46  ;
 set sitesy 4.14  ;
 puts "RUNNING FLOORPLAN.TCL"
 set_db floorplan_snap_block_grid inst
-create_floorplan -core_size [expr {$sitesx*2100}] [expr {$sitesy*300}] 30 30 30 30
+create_floorplan -core_size [expr {$sitesx*2100}] [expr {$sitesy*260}] 30 30 30 30
 init_core_rows
 set dx [get_db designs .bbox.dx]  ;
 set dy [get_db designs .bbox.dy]  ;
+place_inst InstructionFetch_Module_InstructionMemory_instr_sram 180 50 
+place_inst MainMemory_data_sram 180 550 
+create_route_blockage -inst InstructionFetch_Module_InstructionMemory_instr_sram -layers {met1 met2 met3 met4} -cover
+create_route_blockage -inst MainMemory_data_sram -layers {met1 met2 met3 met4} -cover
+create_place_blockage -all_macros
 #@ source ./scripts/add_power.tcl
 #@ Begin verbose source ./scripts/add_power.tcl (pre)
 connect_global_net VDD -type pg_pin -pin_base_name vccd1
@@ -318,14 +323,25 @@ foreach i $mem_blocks {
     connect_global_net VSS -type pgpin -pin vssd1 -sinst $i -override
 }
 add_rings -nets {VDD VSS} -layer {top met5 bottom met5 left met4 right met4} -width {top 4.8 bottom 4.8 left 4.8 right 4.8} -spacing {top 4.8 bottom 4.8 left 4.8 right 4.8} -offset {top 2 bottom 2 left 2 right 2} -center 0 -threshold 0.4 -jog_distance 0.4 -snap_wire_center_to_grid none
-route_special -connect { core_pin } -block_pin_target { nearest_target } -core_pin_target { first_after_row_end } -core_pin_layer { met1 } -block_pin_layer_range { met3 met4 } -delete_existing_routes -nets { VDD VSS }
+add_rings -nets {VDD VSS} \
+    -around each_block \
+    -layer {top met5 bottom met5 left met4 right met4} \
+    -width 2 -spacing 2 -offset 1
 add_stripes -nets {VDD VSS} -layer met5 -direction horizontal -width 3 -spacing 20 -set_to_set_distance 50 -start_from bottom -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit met5 -pad_core_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met5 -block_ring_bottom_layer_limit met4 -use_wire_group 0 -snap_wire_center_to_grid none
 add_stripes -nets {VDD VSS} -layer met4 -direction vertical -width 3 -spacing 20 -set_to_set_distance 50 -start_from left -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit met5 -pad_core_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met5 -block_ring_bottom_layer_limit met4 -use_wire_group 0 -snap_wire_center_to_grid none
+route_special \
+    -connect { core_pin block_pin } \
+    -block_pin_target { nearest_target } \
+    -core_pin_target { first_after_row_end } \
+    -core_pin_layer { met1 } \
+    -block_pin_layer_range { met3 met4 } \
+    -delete_existing_routes \
+    -nets { VDD VSS }
 #@ End verbose source ./scripts/add_power.tcl
 #@ source ./scripts/add_pins.tcl
 #@ Begin verbose source ./scripts/add_pins.tcl (pre)
 set_partition_pin_status -pins * -status unplaced
-edit_pin -fixed_pin -pin * -pattern fill_optimised -layer {2 3 4 5} -start {10 10} -end {10 10}
+edit_pin -fixed_pin -pin * -pattern fill_layer -layer {2 3 4 5} -start {0 0} -end {100 200}
 set_db assign_pins_edit_in_batch false
 #@ End verbose source ./scripts/add_pins.tcl
 snap_floorplan -all

@@ -3,19 +3,19 @@ Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
-[12:24:26.185737] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[19:52:59.185849] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 Version: 25.11-s095_1, built Tue Aug 12 07:59:05 PDT 2025
-Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_opt run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {rc dbs/syn_map.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
-Date:    Mon Mar 16 12:24:26 2026
-Host:    ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB) (264007036KB)
-PID:     1407523
+Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_opt run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {rc dbs/syn_map.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
+Date:    Tue Mar 17 19:52:59 2026
+Host:    ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*4physical cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB) (196451532KB)
+PID:     227857
 OS:      Red Hat Enterprise Linux 8.10 (Ootpa)
 
 Checking out license: Genus_Synthesis
-[12:24:26.517355] Periodic Lic check successful
-[12:24:26.517371] Feature usage summary:
-[12:24:26.517371] Genus_Synthesis  
+[19:52:59.010097] Periodic Lic check successful
+[19:52:59.534416] Feature usage summary:
+[19:52:59.534417] Genus_Synthesis  
 License checkout complete (0 seconds elapsed).
 
 
@@ -24,13 +24,13 @@ License checkout complete (0 seconds elapsed).
 
 
 
-Finished executable startup (6 seconds elapsed).
+Finished executable startup (9 seconds elapsed).
 
 Loading tool scripts...
-Finished loading tool scripts (22 seconds elapsed).
+Finished loading tool scripts (27 seconds elapsed).
 
 #@ Processing -execute option
-@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_opt run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {rc dbs/syn_map.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_opt run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {rc dbs/syn_map.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_opt.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -375,7 +375,7 @@ UM:*                                                                   syn_opt
   Setting attribute of root '/': 'flow_write_db_common' = false
 #@ End verbose flow_step synthesis.syn_opt.block_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:             33             40                                      block_start
+UM:             44             50                                      block_start
 #@ Begin verbose flow_step synthesis.syn_opt.init_genus.init_genus_yaml
 @flow_step(init_genus_yaml)  2:   # Timing attributes  [get_db -category tim]
 @flow_step(init_genus_yaml)  3:   #-------------------------------------------------------------------------------
@@ -413,7 +413,7 @@ UM:             33             40                                      block_sta
   Setting attribute of root '/': 'design_process_node' = 130
 #@ End verbose flow_step synthesis.syn_opt.init_genus.init_genus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      init_genus_yaml
+UM:              4              4                                      init_genus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_genus
 #@ Begin verbose flow_step synthesis.syn_opt.init_genus.init_genus_user
@@ -433,9 +433,11 @@ UM:*                                                                   init_genu
 @flow_step(init_genus_user) 13:   #-----------------------------------------------------------------------------
 @flow_step(init_genus_user) 15:   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
 @flow_step(init_genus_user) 16:   #-----------------------------------------------------------------------------
+@flow_step(init_genus_user) 18:   # Override PDK dont_use to enable ICGX1 for clock gating insertion
+@flow_step(init_genus_user) 19:   set_db [get_db lib_cells ICGX1] .dont_use false
 #@ End verbose flow_step synthesis.syn_opt.init_genus.init_genus_user
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              2                                      init_genus_user
+UM:              3              3                                      init_genus_user
 #@ Begin verbose flow_step synthesis.syn_opt.run_syn_opt
 @flow_step(run_syn_opt) 2:   #- Synthesize to optimized gates
 @flow_step(run_syn_opt) 3:   syn_opt
@@ -467,7 +469,7 @@ INFO (IMPEXT-5003): /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/
 
 INFO (IMPEXT-7048): Generating auto layer map file.
 
-INFO (IMPEXT-6209): Completed (cpu: 1173121.000000 real: 1173121.000000)
+INFO (IMPEXT-6209): Completed (cpu: 1347561.000000 real: 1347561.000000)
 
                                    Capacitance  
   Layer                             / Length         Data source:
@@ -523,12 +525,12 @@ Incremental optimization status
                                   Tot Wrst     Total - - - - DRC Totals - - - -
                            Total  Weighted      Neg      Max       Max     Max  
 Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
- init_iopt                846924        0         0      5757        0        0
+ init_iopt                851631        0         0      6594        0        0
 -------------------------------------------------------------------------------
- const_prop               846924        0         0      5757        0        0
- simp_cc_inputs           846915        0         0      5757        0        0
+ const_prop               851631        0         0      6594        0        0
+ simp_cc_inputs           851480        0         0      6594        0        0
 -------------------------------------------------------------------------------
- hi_fo_buf                846915        0         0      5757        0        0
+ hi_fo_buf                851480        0         0      6594        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -541,7 +543,7 @@ Incremental optimization status
                                   Tot Wrst     Total - - - - DRC Totals - - - -
                            Total  Weighted      Neg      Max       Max     Max  
 Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
- init_delay               846915        0         0      5757        0        0
+ init_delay               851480        0         0      6594        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -664,16 +666,16 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
        gate_deco         0  (        0 /        0 )  0.00
        gcomp_tim         0  (        0 /        0 )  0.00
   inv_pair_2_buf         0  (        0 /        0 )  0.00
- init_drc                 846915        0         0      5757        0        0
- incr_max_trans           848027        0         0      1046        0        0
- incr_max_trans           849261        0         0       349        0        0
- incr_max_trans           849701        0         0         0        0        0
+ init_drc                 851480        0         0      6594        0        0
+ incr_max_trans           852591        0         0      1072        0        0
+ incr_max_trans           853899        0         0       349        0        0
+ incr_max_trans           854339        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
-          plc_st        67  (        0 /        0 )  0.00
-        plc_star        67  (        0 /        0 )  0.00
-        drc_bufs       134  (       67 /       67 )  0.09
+          plc_st        70  (        0 /        0 )  0.00
+        plc_star        70  (        0 /        0 )  0.00
+        drc_bufs       140  (       70 /       70 )  0.12
         drc_fopt         0  (        0 /        0 )  0.00
         drc_bufb         0  (        0 /        0 )  0.00
       simple_buf         0  (        0 /        0 )  0.00
@@ -709,7 +711,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
        crit_dnsz         0  (        0 /        0 )  0.00
        crit_upsz         0  (        0 /        0 )  0.00
 
- init_tns                 849701        0         0         0        0        0
+ init_tns                 854339        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -751,35 +753,36 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
        crr_local         0  (        0 /        0 )  0.00
          buf2inv         0  (        0 /        0 )  0.00
 
- init_area                849701        0         0         0        0        0
- rem_buf                  849308        0         0         0        0        0
- rem_inv                  846597        0         0         0        0        0
- merge_bi                 845848        0         0         0        0        0
- seq_res_area             845822        0         0         0        0        0
- io_phase                 844365        0         0         0        0        0
- gate_comp                844341        0         0         0        0        0
- glob_area                844207        0         0         0        0        0
- area_down                844160        0         0         0        0        0
+ init_area                854339        0         0         0        0        0
+ rem_buf                  853877        0         0         0        0        0
+ rem_inv                  851232        0         0         0        0        0
+ merge_bi                 850580        0         0         0        0        0
+ seq_res_area             850566        0         0         0        0        0
+ io_phase                 849027        0         0         0        0        0
+ gate_comp                848770        0         0         0        0        0
+ glob_area                848631        0         0         0        0        0
+ area_down                848494        0         0         0        0        0
+ rem_inv                  848441        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
-           undup         0  (        0 /        0 )  0.02
-         rem_buf        42  (       17 /       17 )  0.21
-         rem_inv       272  (      144 /      153 )  1.28
-        merge_bi        70  (       44 /       44 )  0.62
-      rem_inv_qb        30  (        0 /        1 )  0.17
-    seq_res_area        17  (        1 /        1 )  9.17
-        io_phase       141  (       76 /       76 )  0.78
-       gate_comp         9  (        2 /        2 )  0.62
-       gcomp_mog         0  (        0 /        0 )  0.21
-       glob_area        58  (       12 /       58 )  0.86
-       area_down        73  (        8 /        8 )  2.57
+           undup         0  (        0 /        0 )  0.03
+         rem_buf        49  (       23 /       26 )  0.24
+         rem_inv       250  (      143 /      155 )  1.32
+        merge_bi        65  (       39 /       39 )  0.56
+      rem_inv_qb        25  (        0 /        1 )  0.18
+    seq_res_area        17  (        1 /        1 )  9.44
+        io_phase       146  (       80 /       80 )  0.83
+       gate_comp        17  (       11 /       11 )  0.98
+       gcomp_mog         0  (        0 /        0 )  0.25
+       glob_area        52  (       18 /       52 )  1.09
+       area_down        73  (       16 /       16 )  3.01
       size_n_buf         1  (        0 /        0 )  0.04
   gate_deco_area         0  (        0 /        0 )  0.01
-         rem_buf        25  (        0 /        0 )  0.06
-         rem_inv        59  (        0 /        9 )  0.19
-        merge_bi        26  (        0 /        0 )  0.11
-      rem_inv_qb        28  (        0 /        1 )  0.16
+         rem_buf        26  (        0 /        0 )  0.07
+         rem_inv        50  (        4 /       16 )  0.21
+        merge_bi        26  (        0 /        0 )  0.12
+      rem_inv_qb        23  (        0 /        1 )  0.15
 
  
 Incremental optimization status
@@ -788,7 +791,7 @@ Incremental optimization status
                                   Tot Wrst     Total - - - - DRC Totals - - - -
                            Total  Weighted      Neg      Max       Max     Max  
 Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
- init_delay               844160        0         0         0        0        0
+ init_delay               848441        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -859,7 +862,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
        gate_deco         0  (        0 /        0 )  0.00
        gcomp_tim         0  (        0 /        0 )  0.00
   inv_pair_2_buf         0  (        0 /        0 )  0.00
- init_drc                 844160        0         0         0        0        0
+ init_drc                 848441        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -899,7 +902,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
        crit_dnsz         0  (        0 /        0 )  0.00
        crit_upsz         0  (        0 /        0 )  0.00
 
- init_tns                 844160        0         0         0        0        0
+ init_tns                 848441        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -941,20 +944,22 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
        crr_local         0  (        0 /        0 )  0.00
          buf2inv         0  (        0 /        0 )  0.00
 
- init_area                844160        0         0         0        0        0
+ init_area                848441        0         0         0        0        0
+ undup                    848406        0         0         0        0        0
+ glob_area                848402        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
-           undup         0  (        0 /        0 )  0.02
-         rem_buf        25  (        0 /        0 )  0.07
-         rem_inv        59  (        0 /        9 )  0.21
+           undup         1  (        1 /        1 )  0.03
+         rem_buf        26  (        0 /        0 )  0.08
+         rem_inv        46  (        0 /       12 )  0.16
         merge_bi        26  (        0 /        0 )  0.12
-      rem_inv_qb        28  (        0 /        1 )  0.15
-        io_phase       127  (        0 /        0 )  0.43
-       gate_comp         7  (        0 /        0 )  0.59
-       gcomp_mog         0  (        0 /        0 )  0.21
-       glob_area        50  (        0 /       50 )  0.80
-       area_down        71  (        0 /        0 )  2.25
+      rem_inv_qb        23  (        0 /        1 )  0.15
+        io_phase       128  (        0 /        0 )  0.45
+       gate_comp         6  (        0 /        0 )  0.71
+       gcomp_mog         0  (        0 /        0 )  0.27
+       glob_area        44  (        2 /       44 )  0.92
+       area_down        67  (        0 /        0 )  2.27
       size_n_buf         0  (        0 /        0 )  0.03
   gate_deco_area         0  (        0 /        0 )  0.00
 
@@ -965,7 +970,7 @@ Incremental optimization status
                                   Tot Wrst     Total - - - - DRC Totals - - - -
                            Total  Weighted      Neg      Max       Max     Max  
 Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
- init_delay               844160        0         0         0        0        0
+ init_delay               848402        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -1018,7 +1023,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
        gcomp_tim         0  (        0 /        0 )  0.00
   inv_pair_2_buf         0  (        0 /        0 )  0.00
 
- init_drc                 844160        0         0         0        0        0
+ init_drc                 848402        0         0         0        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -1157,7 +1162,7 @@ Info    : Done incrementally optimizing. [SYNTH-8]
 UM:*                                                                   syn_opt
 #@ End verbose flow_step synthesis.syn_opt.run_syn_opt
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:             31             30                                      run_syn_opt
+UM:             35             32                                      run_syn_opt
 #@ Begin verbose flow_step synthesis.syn_opt.block_finish
 @flow_step(block_finish)  2:   apply {{} {
                                  #- Make sure flow_report_name is reset from any reports executed during the flow
@@ -1195,8 +1200,8 @@ UM:             31             30                                      run_syn_o
   Setting attribute of root '/': 'flow_spef_directory' = dbs/syn_opt
 #@ End verbose flow_step synthesis.syn_opt.block_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              2              3                                      block_finish
-%# Begin ::stylus_db::write (03/16 12:25:38, mem=1734.03M)
+UM:              3              3                                      block_finish
+%# Begin ::stylus_db::write (03/17 19:54:23, mem=1715.68M)
 (stylus_db): Argument checking
 (stylus_db): Directory creation under '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb'
 (stylus_db): Saving Verilog
@@ -1239,9 +1244,9 @@ Number of nets with minimum layer assignments: 0
 (stylus_db): Waiting for all child processes to complete
 (stylus_db): Completing mmmc file
 (stylus_db): Saving Native DB
-Finished exporting design database to file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/syn/Core.db' for 'Core' (command execution time mm:ss cpu = 00:00, real = 00:01).
+Finished exporting design database to file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/syn/Core.db' for 'Core' (command execution time mm:ss cpu = 00:01, real = 00:01).
 (stylus_db): Saving Unified Metrics
-%# End ::stylus_db::write (03/16 12:26:09, total cpu=03:00:31, real=03:00:31, peak res=909.00M, current mem=1734.03M)
+%# End ::stylus_db::write (03/17 19:55:08, total cpu=03:00:44, real=03:00:45, peak res=900.90M, current mem=1723.95M)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   write_db
 #@ Begin verbose flow_step synthesis.syn_opt.schedule_syn_opt_report_synth
@@ -1251,8 +1256,8 @@ UM:*                                                                   write_db
 Program version = 25.11-s095_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 16, 2026 12:24:58
-Ending time = Mar 16, 2026 12:26:15
+Starting time = Mar 17, 2026 19:53:38
+Ending time = Mar 17, 2026 19:55:15
 
 Run Flow Summary
 ---------------------
@@ -1270,13 +1275,13 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:03:13          | 0:03:18           |                     0 |                11.575 |
-| syn_map     | 0:02:35          | 0:02:27           |                       |                       |
-| syn_opt     | 0:01:12          | 0:01:18           |                       |                       |
+| syn_generic | 0:03:58          | 0:04:05           |                     0 |                 4.065 |
+| syn_map     | 0:02:47          | 0:02:31           |                       |                       |
+| syn_opt     | 0:01:29          | 0:01:32           |                       |                       |
  ---------------------------------------------------------------------------------------------------- 
 
 Lic Summary:
-[12:26:15.485448] Cdslmd servers: ece-winlic
-[12:26:15.485466] Feature usage summary:
-[12:26:15.485466] Genus_Synthesis  
+[19:55:15.318569] Cdslmd servers: ece-winlic
+[19:55:15.318585] Feature usage summary:
+[19:55:15.318586] Genus_Synthesis  
 Normal exit.

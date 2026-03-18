@@ -3,19 +3,19 @@ Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
-[12:26:26.185753] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[19:55:30.185785] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 Version: 25.11-s095_1, built Tue Aug 12 07:59:05 PDT 2025
-Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt.report_synth -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 5724a788-7943-4a55-9b32-053863366093 previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt.report_synth metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_opt.report_synth run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 3 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:report_synth tool genus tool_options -disable_user_startup no_sync 0 sync 0 db {cdb dbs/syn_opt.cdb Core {}} dir ./. branch {} caller_data {group 0 process_branch 3} include_in_metrics 1 parent_uuid 5724a788-7943-4a55-9b32-053863366093 after {} defer 0 child_of {flow:flow_current flow:synthesis flow:syn_opt}} flow_name flow:report_synth first_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_opt}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_opt}} child_of {flow:flow_current flow:synthesis flow:syn_opt} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt.report_synth}; run_flow -from {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_opt}} -to {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_opt}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt.report_synth} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_synth} branch {} flow_working_directory {./.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
-Date:    Mon Mar 16 12:26:26 2026
-Host:    ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB) (264007036KB)
-PID:     1429060
+Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt.report_synth -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 51db8532-753a-4eaf-883f-b22bd102609f previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt.report_synth metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_opt.report_synth run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 3 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:report_synth tool genus tool_options -disable_user_startup no_sync 0 sync 0 db {cdb dbs/syn_opt.cdb Core {}} dir ./. branch {} caller_data {group 0 process_branch 3} include_in_metrics 1 parent_uuid 51db8532-753a-4eaf-883f-b22bd102609f after {} defer 0 child_of {flow:flow_current flow:synthesis flow:syn_opt}} flow_name flow:report_synth first_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_opt}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_opt}} child_of {flow:flow_current flow:synthesis flow:syn_opt} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt.report_synth}; run_flow -from {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_opt}} -to {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_opt}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt.report_synth} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_synth} branch {} flow_working_directory {./.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
+Date:    Tue Mar 17 19:55:30 2026
+Host:    ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*4physical cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB) (196451532KB)
+PID:     274215
 OS:      Red Hat Enterprise Linux 8.10 (Ootpa)
 
 Checking out license: Genus_Synthesis
-[12:26:26.360400] Periodic Lic check successful
-[12:26:26.884705] Feature usage summary:
-[12:26:26.884706] Genus_Synthesis  
+[19:55:30.249208] Periodic Lic check successful
+[19:55:30.249241] Feature usage summary:
+[19:55:30.249242] Genus_Synthesis  
 License checkout complete (0 seconds elapsed).
 
 
@@ -24,13 +24,13 @@ License checkout complete (0 seconds elapsed).
 
 
 
-Finished executable startup (6 seconds elapsed).
+Finished executable startup (9 seconds elapsed).
 
 Loading tool scripts...
-Finished loading tool scripts (21 seconds elapsed).
+Finished loading tool scripts (27 seconds elapsed).
 
 #@ Processing -execute option
-@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 5724a788-7943-4a55-9b32-053863366093 previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt.report_synth metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_opt.report_synth run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 3 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:report_synth tool genus tool_options -disable_user_startup no_sync 0 sync 0 db {cdb dbs/syn_opt.cdb Core {}} dir ./. branch {} caller_data {group 0 process_branch 3} include_in_metrics 1 parent_uuid 5724a788-7943-4a55-9b32-053863366093 after {} defer 0 child_of {flow:flow_current flow:synthesis flow:syn_opt}} flow_name flow:report_synth first_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_opt}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_opt}} child_of {flow:flow_current flow:synthesis flow:syn_opt} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt.report_synth}; run_flow -from {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_opt}} -to {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_opt}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt.report_synth} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_synth} branch {} flow_working_directory {./.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 51db8532-753a-4eaf-883f-b22bd102609f previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt.report_synth metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_opt.report_synth run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 3 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:report_synth tool genus tool_options -disable_user_startup no_sync 0 sync 0 db {cdb dbs/syn_opt.cdb Core {}} dir ./. branch {} caller_data {group 0 process_branch 3} include_in_metrics 1 parent_uuid 51db8532-753a-4eaf-883f-b22bd102609f after {} defer 0 child_of {flow:flow_current flow:synthesis flow:syn_opt}} flow_name flow:report_synth first_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_opt}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_opt}} child_of {flow:flow_current flow:synthesis flow:syn_opt} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_opt.report_synth}; run_flow -from {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:synthesis flow:syn_opt}} -to {tool genus flow flow:report_synth canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:synthesis flow:syn_opt}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_opt.report_synth} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_synth} branch {} flow_working_directory {./.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -172,7 +172,7 @@ Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
 set_multi_cpu_usage -local_cpu 1
 #@ End verbose flow_step init_mcpu
 End steps for plugin point Cadence.plugin.flowkit.read_db.pre
-%# Begin ::stylus_db::read (03/16 12:26:50, mem=1458.57M)
+%# Begin ::stylus_db::read (03/17 19:56:01, mem=1452.04M)
 (stylus_db): Argument checking
 (stylus_db): Determining DB Schema from '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.sql'.
   Setting attribute of root '/': 'init_mmmc_version' = 2
@@ -292,7 +292,7 @@ Warning : Total power has skewed contributions from leakage and dynamic power. [
 	  Total Power:    2410.8143555000 nW
 	  Leakage Power is contributing 0.00236% to the Total Power.
         : Dynamic power is typically calculated/specified for some 'active period'. For combination of leakage and dynamic power opt_leakage_to_dynamic_ratio must specify the percentage of overall time for which the design is not in the 'active period' but in 'idle mode', i.e. no dynamic power but only leakage power is consumed. For a reasonable optimization across dynamic and leakage power, leakage contribution is expected to be above 5% and below 95%. A contribution of less than 5% will result in limited leakage optimization and contribution of more than 95% will result in limited dynamic optimization. Adjust 'opt_leakage_to_dynamic_ratio' so that leakage contribution comes to an intermediate value if you intend both optimizations to occur.
-%# End ::stylus_db::read (03/16 12:26:51, total cpu=03:00:02, real=03:00:01, peak res=705.10M, current mem=1749.66M)
+%# End ::stylus_db::read (03/17 19:56:03, total cpu=03:00:02, real=03:00:02, peak res=681.80M, current mem=1755.13M)
 UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   read_db
 Sourcing flow scripts...
@@ -430,7 +430,7 @@ UM:*                                                                   report_sy
 #@ Begin verbose flow_step report_start
 #@ End verbose flow_step report_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:             31             36                                      report_start
+UM:             44             49                                      report_start
 #@ Begin verbose flow_step init_genus.init_genus_yaml
 @flow_step(init_genus_yaml)  2:   # Timing attributes  [get_db -category tim]
 @flow_step(init_genus_yaml)  3:   #-------------------------------------------------------------------------------
@@ -468,7 +468,7 @@ UM:             31             36                                      report_st
   Setting attribute of root '/': 'design_process_node' = 130
 #@ End verbose flow_step init_genus.init_genus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      init_genus_yaml
+UM:              3              4                                      init_genus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_genus
 #@ Begin verbose flow_step init_genus.init_genus_user
@@ -488,6 +488,8 @@ UM:*                                                                   init_genu
 @flow_step(init_genus_user) 13:   #-----------------------------------------------------------------------------
 @flow_step(init_genus_user) 15:   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
 @flow_step(init_genus_user) 16:   #-----------------------------------------------------------------------------
+@flow_step(init_genus_user) 18:   # Override PDK dont_use to enable ICGX1 for clock gating insertion
+@flow_step(init_genus_user) 19:   set_db [get_db lib_cells ICGX1] .dont_use false
 #@ End verbose flow_step init_genus.init_genus_user
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:              3              3                                      init_genus_user
@@ -502,7 +504,7 @@ INFO (IMPEXT-5003): /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/
 
 INFO (IMPEXT-7048): Generating auto layer map file.
 
-INFO (IMPEXT-6209): Completed (cpu: 1170351.000000 real: 1170351.000000)
+INFO (IMPEXT-6209): Completed (cpu: 1280315.000000 real: 1280315.000000)
 
 @flow_step(report_area_genus) 3:   report_dp                   > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]area.datapath.rpt]
 Beginning report datapath command
@@ -512,7 +514,7 @@ Warning : The filename, column and line number information will not be available
 #@ End verbose flow_step report_area_genus
 UM: Running design category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              5              5                                      report_area_genus
+UM:              6              6                                      report_area_genus
 #@ Begin verbose flow_step report_late_summary_genus
 @flow_step(report_late_summary_genus) 2:   report_timing_summary -checks {setup drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.analysis_summary.rpt]
 Error   : A required object parameter could not be found. [TUI-61] [group_path]
@@ -1028,7 +1030,7 @@ Usage: group_path [-rise] [-fall]
     [-exception_name <string>]:
         exception name 
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              6              5            0.0 ps        11469.3 ps  report_late_summary_genus
+UM:              7              7            0.0 ps           26.8 ps  report_late_summary_genus
 #@ Begin verbose flow_step report_late_paths
 @flow_step(report_late_paths)  2:   #- Reports that show detailed timing with Graph Based Analysis (GBA)
 @flow_step(report_late_paths)  3:   report_timing -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.endpoint.rpt]
@@ -1050,7 +1052,7 @@ Warning : Timing problems have been detected in this design. [TIM-11]
                                     }
 #@ End verbose flow_step report_late_paths
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:             11             12                                      report_late_paths
+UM:             12             11                                      report_late_paths
 #@ Begin verbose flow_step report_power_genus
 @flow_step(report_power_genus) 2:   report_gates -power   > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]power.all.rpt]
 Info    : Joules engine is used. [RPT-16]
@@ -1091,7 +1093,7 @@ Output file: reports/syn_opt/power.design.rpt
 #@ End verbose flow_step report_power_genus
 UM: Running power category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              4              4                                      report_power_genus
+UM:              5              5                                      report_power_genus
 #@ Begin verbose flow_step report_finish
 #@ End verbose flow_step report_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
@@ -1100,8 +1102,8 @@ UM:              3              3                                      report_fi
 Program version = 25.11-s095_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 16, 2026 12:26:55
-Ending time = Mar 16, 2026 12:27:35
+Starting time = Mar 17, 2026 19:56:08
+Ending time = Mar 17, 2026 19:56:53
 
 Run Flow Summary
 ---------------------
@@ -1121,13 +1123,13 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:03:13          | 0:03:18           |                     0 |                11.575 |
-| syn_map     | 0:03:16          | 0:03:14           |                     0 |                11.466 |
-| syn_opt     | 0:01:52          | 0:02:03           |                     0 |                11.469 |
+| syn_generic | 0:03:58          | 0:04:05           |                     0 |                 4.065 |
+| syn_map     | 0:03:40          | 0:03:31           |                     0 |                 0.661 |
+| syn_opt     | 0:02:22          | 0:02:31           |                     0 |                 0.027 |
  ---------------------------------------------------------------------------------------------------- 
 
 Lic Summary:
-[12:27:35.264240] Cdslmd servers: ece-winlic
-[12:27:35.264257] Feature usage summary:
-[12:27:35.264258] Genus_Synthesis  
+[19:56:53.051953] Cdslmd servers: ece-winlic
+[19:56:53.576264] Feature usage summary:
+[19:56:53.576264] Genus_Synthesis  
 Normal exit.

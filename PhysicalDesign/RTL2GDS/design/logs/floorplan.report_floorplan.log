@@ -3,28 +3,28 @@ Cadence Innovus(TM) Implementation System.
 Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
-Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan.report_floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid ca815665-34d0-4419-8462-817b4722ac0b previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan.report_floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan.report_floorplan run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 4 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:report_floorplan tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/floorplan.enc Core {}} dir ./. branch {} caller_data {group 0 process_branch 4} include_in_metrics 1 parent_uuid ca815665-34d0-4419-8462-817b4722ac0b after {} defer 0 child_of {flow:flow_current flow:implementation flow:floorplan}} flow_name flow:report_floorplan first_step {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:floorplan}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:floorplan}} child_of {flow:flow_current flow:implementation flow:floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan.report_floorplan}; run_flow -from {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:floorplan}} -to {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:floorplan}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan.report_floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_floorplan} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
-Date:		Mon Mar 16 12:27:57 2026
-Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan.report_floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 14c28bee-ada9-437f-ab2e-72da23f5c7d3 previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan.report_floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan.report_floorplan run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 4 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:report_floorplan tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/floorplan.enc Core {}} dir ./. branch {} caller_data {group 0 process_branch 4} include_in_metrics 1 parent_uuid 14c28bee-ada9-437f-ab2e-72da23f5c7d3 after {} defer 0 child_of {flow:flow_current flow:implementation flow:floorplan}} flow_name flow:report_floorplan first_step {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:floorplan}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:floorplan}} child_of {flow:flow_current flow:implementation flow:floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan.report_floorplan}; run_flow -from {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:floorplan}} -to {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:floorplan}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan.report_floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_floorplan} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+Date:		Tue Mar 17 19:57:37 2026
+Host:		ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB)
 OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
 
 License:
-		[12:27:57.185793] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+		[19:57:37.185857] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 		invs	Innovus Implementation System	25.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
 
 
-Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_1457631_75d9b67f-2281-4f58-a715-43d25f50f3d3_ece-rschsrv.ece.gatech.edu_dkhalil8_B1chAS.
+Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_311140_7ea81de1-cf27-4393-85e0-061ef985f232_ece-linlabsrv01_dkhalil8_BdaW7i.
 
-Change the soft stacksize limit to 0.2%RAM (515 mbytes). Set global soft_stack_size_limit to change the value.
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
 [INFO] Loading Pegasus 24.14 fill procedures
-Info: Process UID = 1457631 / 75d9b67f-2281-4f58-a715-43d25f50f3d3 / KPkfGGTHz0
+Info: Process UID = 311140 / 7ea81de1-cf27-4393-85e0-061ef985f232 / XKRxBXjJQY
 
 **INFO:  MMMC transition support version v31-84 
 
 #@ Processing -execute option
-@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid ca815665-34d0-4419-8462-817b4722ac0b previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan.report_floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan.report_floorplan run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 4 trunk_process 0 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:report_floorplan tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/floorplan.enc Core {}} dir ./. branch {} caller_data {group 0 process_branch 4} include_in_metrics 1 parent_uuid ca815665-34d0-4419-8462-817b4722ac0b after {} defer 0 child_of {flow:flow_current flow:implementation flow:floorplan}} flow_name flow:report_floorplan first_step {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:floorplan}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:floorplan}} child_of {flow:flow_current flow:implementation flow:floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan.report_floorplan}; run_flow -from {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:floorplan}} -to {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:floorplan}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan.report_floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_floorplan} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 14c28bee-ada9-437f-ab2e-72da23f5c7d3 previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan.report_floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan.report_floorplan run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 4 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:report_floorplan tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/floorplan.enc Core {}} dir ./. branch {} caller_data {group 0 process_branch 4} include_in_metrics 1 parent_uuid 14c28bee-ada9-437f-ab2e-72da23f5c7d3 after {} defer 0 child_of {flow:flow_current flow:implementation flow:floorplan}} flow_name flow:report_floorplan first_step {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:floorplan}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:floorplan}} child_of {flow:flow_current flow:implementation flow:floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan.report_floorplan}; run_flow -from {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:floorplan}} -to {tool innovus flow flow:report_floorplan canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:floorplan}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan.report_floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_floorplan} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -135,7 +135,7 @@ if {[get_feature opt_signoff]} {
 set_multi_cpu_usage -local_cpu 1
 #@ End verbose flow_step init_mcpu
 End steps for plugin point Cadence.plugin.flowkit.read_db.pre
-#% Begin load design ... (date=03/16 12:28:34, mem=2069.9M)
+#% Begin load design ... (date=03/17 19:58:15, mem=2020.5M)
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
@@ -160,7 +160,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
-Loading design 'Core' saved by 'Innovus' '25.11-s102_1' on 'Mon Mar 16 12:27:38 2026'.
+Loading design 'Core' saved by 'Innovus' '25.11-s102_1' on 'Tue Mar 17 19:56:49 2026'.
 Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
 Read 109 cells in library 'sky130_tt_1.8_25' 
 Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
@@ -263,16 +263,16 @@ To increase the message display limit, refer to the product command reference ma
 ##  Design tech node is not set.
 
 Loading view definition file from /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/viewDefinition.tcl
-% Begin Load netlist data ... (date=03/16 12:28:37, mem=2092.0M)
-*** Begin netlist parsing (mem=2092.0M) ***
+% Begin Load netlist data ... (date=03/17 19:58:18, mem=2041.1M)
+*** Begin netlist parsing (mem=2041.1M) ***
 Created 110 new cells from 2 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilogBinary netlist '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.v.bin'
 
-*** Memory Usage v#1 (Current mem = 2103.176M, initial mem = 971.129M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2103.2M) ***
-% End Load netlist data ... (date=03/16 12:28:37, total cpu=0:00:00.1, real=0:00:00.0, peak res=2100.8M, current mem=2100.8M)
+*** Memory Usage v#1 (Current mem = 2050.543M, initial mem = 929.305M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2050.5M) ***
+% End Load netlist data ... (date=03/17 19:58:19, total cpu=0:00:00.1, real=0:00:00.0, peak res=2049.9M, current mem=2049.9M)
 Top level cell is Core.
 Hooked 110 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -281,11 +281,11 @@ Building hierarchical netlist for Cell Core ...
 ***** UseNewTieNetMode *****.
 *** Netlist is unique.
 ** info: there are 119 modules.
-** info: there are 7016 stdCell insts.
-** info: there are 7016 stdCell insts with at least one signal pin.
+** info: there are 7200 stdCell insts.
+** info: there are 7200 stdCell insts with at least one signal pin.
 ** info: there are 2 macros.
 
-*** Memory Usage v#1 (Current mem = 2139.234M, initial mem = 971.129M) ***
+*** Memory Usage v#1 (Current mem = 2086.922M, initial mem = 929.305M) ***
 *info: set bottom ioPad orient R0
 **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
@@ -333,48 +333,52 @@ List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
 Total number of identified usable delay cells: 4
 List of identified unusable delay cells:
 Total number of identified unusable delay cells: 0
-Reading floorplan file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.fp.gz (mem = 2437.9M).
-% Begin Load floorplan data ... (date=03/16 12:28:38, mem=2438.6M)
-*info: reset 8800 existing net BottomPreferredLayer and AvoidDetour
+Reading floorplan file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.fp.gz (mem = 2387.7M).
+% Begin Load floorplan data ... (date=03/17 19:58:21, mem=2387.9M)
+*info: reset 8960 existing net BottomPreferredLayer and AvoidDetour
 Deleting old partition specification.
-Set FPlanBox to (0 0 1025800 1301800)
+Set FPlanBox to (0 0 1025800 1136200)
 **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
  ... processed partition successfully.
-Reading binary special route file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.fp.spr.gz (Created by Innovus v25.11-s102_1 on Mon Mar 16 12:27:36 2026, version: 1)
+Reading binary special route file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.fp.spr.gz (Created by Innovus v25.11-s102_1 on Tue Mar 17 19:56:47 2026, version: 1)
 Convert 0 swires and 0 svias from compressed groups
-85 swires and 88 svias were compressed
-85 swires and 74 svias were decompressed from small or sparse groups
-Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2439.8M, current mem=2439.8M)
+165 swires and 437 svias were compressed
+165 swires and 101 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2389.1M, current mem=2389.1M)
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Delete all existing relative floorplan constraints.
-% End Load floorplan data ... (date=03/16 12:28:38, total cpu=0:00:00.1, real=0:00:01.0, peak res=2441.0M, current mem=2441.0M)
+% End Load floorplan data ... (date=03/17 19:58:21, total cpu=0:00:00.2, real=0:00:00.0, peak res=2390.4M, current mem=2390.3M)
 Reading congestion map file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.route.congmap.gz ...
-% Begin Load SymbolTable ... (date=03/16 12:28:39, mem=2441.2M)
-% End Load SymbolTable ... (date=03/16 12:28:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=2442.5M, current mem=2442.5M)
+% Begin Load SymbolTable ... (date=03/17 19:58:21, mem=2390.3M)
+% End Load SymbolTable ... (date=03/17 19:58:22, total cpu=0:00:00.1, real=0:00:01.0, peak res=2391.7M, current mem=2391.7M)
 Loading place ...
-% Begin Load placement data ... (date=03/16 12:28:39, mem=2442.5M)
+% Begin Load placement data ... (date=03/17 19:58:22, mem=2391.7M)
 Reading placement file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.place.gz.
-** Reading stdCellPlacement_binary (Created by Innovus v25.11-s102_1 on Mon Mar 16 12:27:36 2026, version# 2) ...
+** Reading stdCellPlacement_binary (Created by Innovus v25.11-s102_1 on Tue Mar 17 19:56:48 2026, version# 2) ...
 Read Views for adaptive view pruning ...
 Read 0 views from Binary DB for adaptive view pruning
-*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2442.5M) ***
-Total net length = 1.739e+01 (8.696e+00 8.696e+00) (ext = 6.000e-03)
-% End Load placement data ... (date=03/16 12:28:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=2442.8M, current mem=2442.7M)
-Reading PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on       Mon Mar 16 12:27:36 2026)
-*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2443.0M) ***
-% Begin Load routing data ... (date=03/16 12:28:39, mem=2443.0M)
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2392.0M) ***
+Total net length = 1.828e+03 (8.429e+02 9.853e+02) (ext = 1.801e+03)
+% End Load placement data ... (date=03/17 19:58:22, total cpu=0:00:00.1, real=0:00:00.0, peak res=2392.0M, current mem=2392.0M)
+Reading PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on       Tue Mar 17 19:56:47 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2392.5M) ***
+% Begin Load routing data ... (date=03/17 19:58:22, mem=2392.3M)
 Reading routing file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.route.gz.
-Reading Innovus routing data (Created by Innovus v25.11-s102_1 on Mon Mar 16 12:27:36 2026 Format: 23.1) ...
-*** Total 8698 nets are successfully restored.
-*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2444.1M) ***
-% End Load routing data ... (date=03/16 12:28:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=2444.1M, current mem=2443.2M)
+Reading Innovus routing data (Created by Innovus v25.11-s102_1 on Tue Mar 17 19:56:48 2026 Format: 23.1) ...
+*** Total 8854 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2393.4M) ***
+% End Load routing data ... (date=03/17 19:58:22, total cpu=0:00:00.1, real=0:00:00.0, peak res=2393.4M, current mem=2392.5M)
+Loading Drc markers ...
+... 363 markers are loaded ...
+... 0 geometry drc markers are loaded ...
+... 0 antenna drc markers are loaded ...
 TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
 Reading property file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.prop
-*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2447.6M) ***
+*** Completed restoreProperty (cpu=0:00:00.1 real=0:00:00.0 mem=2395.7M) ***
 ff_v1.98_0C_Nominal_25 tt_v1.8_25C_Nominal_25 ss_v1.62_125C_Nominal_25
 Change floorplan default-technical-site to 'CoreSite'.
 Loading preRoute extraction data from directory '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/extraction/' ...
@@ -383,7 +387,7 @@ Initializing multi-corner RC extraction with 1 active RC Corners ...
 Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
 Generating auto layer map file.
 Loading preRoute extracted patterns from file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.techData.gz' ...
-Completed (cpu: 0:00:00.3 real: 0:00:00.0)
+Completed (cpu: 0:00:00.3 real: 0:00:01.0)
 Set Shrink Factor to 1.00000
 Summary of Active RC-Corners : 
  
@@ -411,12 +415,12 @@ Start generating vias ..
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Via generation completed.
-% Begin Load power constraints ... (date=03/16 12:28:40, mem=2471.5M)
+% Begin Load power constraints ... (date=03/17 19:58:24, mem=2420.9M)
 source /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core_power_constraints.tcl
-% End Load power constraints ... (date=03/16 12:28:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=2471.9M, current mem=2471.9M)
+% End Load power constraints ... (date=03/17 19:58:24, total cpu=0:00:00.1, real=0:00:00.0, peak res=2421.5M, current mem=2421.5M)
 ff_v1.98_0C_Nominal_25 tt_v1.8_25C_Nominal_25 ss_v1.62_125C_Nominal_25
-% Begin load AAE data ... (date=03/16 12:28:40, mem=2508.1M)
-% End load AAE data ... (date=03/16 12:28:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=2508.1M, current mem=2508.1M)
+% Begin load AAE data ... (date=03/17 19:58:24, mem=2456.2M)
+% End load AAE data ... (date=03/17 19:58:24, total cpu=0:00:00.1, real=0:00:00.0, peak res=2456.2M, current mem=2456.2M)
 Restoring CCOpt config...
 Restoring CCOpt config done.
 Total number of combinational cells: 87
@@ -445,7 +449,7 @@ Total number of identified unusable delay cells: 0
 **WARN: (IMPCTE-107):	The following globals have been obsoleted since version (null). They will be removed in the next release. 
 timing_aocv_enable_gba_combine_launch_capture
 timing_enable_backward_compatible_latch_thru_mt_mode
-#% End load design ... (date=03/16 12:28:41, total cpu=0:00:05.3, real=0:00:07.0, peak res=2538.6M, current mem=2510.1M)
+#% End load design ... (date=03/17 19:58:24, total cpu=0:00:07.3, real=0:00:09.0, peak res=2486.7M, current mem=2458.2M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -563,7 +567,7 @@ UM:*                                                                   report_fl
 #@ Begin verbose flow_step report_start
 #@ End verbose flow_step report_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          42.37             48                                      report_start
+UM:          48.08             51                                      report_start
 #@ Begin verbose flow_step init_innovus.init_innovus_yaml
 @flow 2: if {[get_feature report_lec]} {...}
 @flow 8: # Design attributes  [get_db -category design]
@@ -619,7 +623,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 @flow 59: #-------------------------------------------------------------------------------
 #@ End verbose flow_step init_innovus.init_innovus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.78              3                                      init_innovus_yaml
+UM:           4.02              4                                      init_innovus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_innovus
 #@ Begin verbose flow_step init_innovus.init_innovus_user
@@ -640,7 +644,7 @@ UM:*                                                                   init_inno
 @flow 22: #-----------------------------------------------------------------------------
 #@ End verbose flow_step init_innovus.init_innovus_user
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.23              3                                      init_innovus_user
+UM:            3.5              4                                      init_innovus_user
 #@ Begin verbose flow_step report_check_design
 @flow 2: apply {{} {
     set check_list [list timing place opt]
@@ -663,18 +667,17 @@ Begin: Design checking
 -----------------------------------------------------------------------------------------------------------------------
 | CHKTIM-4          | warning   | 20          | Clock pin %s of instance %s has no clock constraint for view name %s. |
 -----------------------------------------------------------------------------------------------------------------------
-		(Real time: 0:00:01.0, Memory: 2635.7M)
+		(Real time: 0:00:01.0, Memory: 2582.1M)
 
         Checking 'place' category...
         Messages issued during checks:
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| ID                | Severity  | Count       | Description                                                                                                                                    |
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| CHKPLC-11         | error     | 1           | Macro cell <%s> should have a fully covered obstruction.                                                                                       |
-| IMPFP-7016        | error     | 2           | Instance %s of macro cell %s is not fixed. Please update the place_status to fixed prior to running placement.                                 |
-| CHKPLC-51         | warning   | 1           | %d unplaced pins detected, please place them properly or add "set_db place_global_place_io_pins true" to place them automatically in the flow. |
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		(Real time: 0:00:00.0, Memory: 2645.3M)
+--------------------------------------------------------------------------------------------------------------
+| ID                | Severity  | Count       | Description                                                  |
+--------------------------------------------------------------------------------------------------------------
+| CHKPLC-11         | error     | 1           | Macro cell <%s> should have a fully covered obstruction.     |
+| IMPFP-10119       | error     | 2           | %s has been chosen to fit to %s but it's %s NOT fit to grid. |
+--------------------------------------------------------------------------------------------------------------
+		(Real time: 0:00:00.0, Memory: 2590.0M)
 
         Checking 'opt' category...
         Messages issued during checks:
@@ -685,15 +688,15 @@ Begin: Design checking
 | IMPOPT-2908       | warning   | 1           | Maximum transition %.3f is too small compared to maximum transition threshold %.3f, this would result in excessive buffering. |
 | IMPOPT-7276       | warning   | 1           | %d instance(s) out of %d are unplaced.                                                                                        |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		(Real time: 0:00:04.0, Memory: 2785.5M)
+		(Real time: 0:00:05.0, Memory: 2727.9M)
 
-**INFO: Identified 3 error(s) and 24 warning(s) during 'check_design -type {timing place opt}'.
+**INFO: Identified 3 error(s) and 23 warning(s) during 'check_design -type {timing place opt}'.
         The details of the error(s) and warning(s) can be found in report 'reports/floorplan/check.design.tcl'
 End: Design checking
 #@ End verbose flow_step report_check_design
 UM: Running design category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           8.64              9                                      report_check_design
+UM:           9.91             10                                      report_check_design
 #@ Begin verbose flow_step report_area_innovus
 @@flow 2: report_summary -no_html -out_dir debug -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]qor.rpt]
 Start to collect the design information.
@@ -706,14 +709,15 @@ Analyze netlist ...
 Generating HFO information report.
 Generate no-driven nets information report.
 
-**WARN: (IMPDB-1270):	Some nets (8696) did not have valid net lengths.
+**WARN: (IMPDB-1270):	Some nets (8655) did not have valid net lengths.
 Analyze timing ... 
+Analyze floorplan/placement ... 
 Report saved in file reports/floorplan/qor.rpt
 @@flow 3: report_area -min_count 1000 -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]area.summary.rpt]
 #@ End verbose flow_step report_area_innovus
 UM: Running design category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.66              4                                      report_area_innovus
+UM:           4.13              4                                      report_area_innovus
 #@ Begin verbose flow_step report_route_drc
 @flow 2: #- Reports that check signal routing
 @flow 3: if {[is_flow -inside flow:report_floorplan]} {
@@ -722,7 +726,7 @@ UM:           3.66              4                                      report_ar
 #-check_same_via_cell true               # bool, default=false, user setting
 #-ignore_trial_route true                # bool, default=false, user setting
 #-report reports/floorplan/route.drc.rpt # string, default="", user setting
- *** Starting Verify DRC (MEM: 2803.5) ***
+ *** Starting Verify DRC (MEM: 2750.5) ***
 
   VERIFY DRC ...... Starting Verification
   VERIFY DRC ...... Initializing
@@ -732,7 +736,7 @@ UM:           3.66              4                                      report_ar
 
   Verification Complete : 0 Viols.
 
- *** End Verify DRC (CPU TIME: 0:00:00.3  ELAPSED TIME: 0:00:01.0  MEM: -1.3M) ***
+ *** End Verify DRC (CPU TIME: 0:00:00.2  ELAPSED TIME: 0:00:02.0  MEM: 1.3M) ***
 
 @flow 5: }
 @@flow 9: set_metric -name check.drc.report_file -value [file join [get_db flow_report_name] [get_db flow_report_prefix]route.drc.rpt]
@@ -741,17 +745,17 @@ UM: Running route category ...
 UM: No route DRC markers present ... skipping
 UM: No route DRC markers present ... skipping
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.77              5                                      report_route_drc
+UM:           4.14              6                                      report_route_drc
 #@ Begin verbose flow_step report_finish
 #@ End verbose flow_step report_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.33              4                                      report_finish
+UM:           3.65              3                                      report_finish
 
 Program version = 25.11-s102_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 16, 2026 12:28:43
-Ending time = Mar 16, 2026 12:29:16
+Starting time = Mar 17, 2026 19:58:27
+Ending time = Mar 17, 2026 19:59:04
 
 Run Flow Summary
 ---------------------
@@ -770,13 +774,13 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:03:13          | 0:03:18           |                     0 |                11.575 |
-| syn_map     | 0:03:16          | 0:03:14           |                     0 |                11.466 |
-| syn_opt     | 0:01:52          | 0:02:03           |                     0 |                11.469 |
-| floorplan   | 0:02:02          | 0:02:13           |                       |                       |
+| syn_generic | 0:03:58          | 0:04:05           |                     0 |                 4.065 |
+| syn_map     | 0:03:40          | 0:03:31           |                     0 |                 0.661 |
+| syn_opt     | 0:02:22          | 0:02:31           |                     0 |                 0.027 |
+| floorplan   | 0:02:19          | 0:02:28           |                       |                       |
  ---------------------------------------------------------------------------------------------------- 
-*** Message Summary: 170 warning(s), 3 error(s)
+*** Message Summary: 171 warning(s), 5 error(s)
 
 
-*** Memory Usage v#1 (Current mem = 2806.141M, initial mem = 971.129M) ***
---- Ending "Innovus" (totcpu=0:01:12, real=0:01:20, mem=2806.1M) ---
+*** Memory Usage v#1 (Current mem = 2754.922M, initial mem = 929.305M) ***
+--- Ending "Innovus" (totcpu=0:01:21, real=0:01:27, mem=2754.9M) ---

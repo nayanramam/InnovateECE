@@ -1,0 +1,849 @@
+Flowtool
+Copyright 2026 Cadence Design Systems Inc.  All rights reserved worldwide
+
+Command:   -verbose -from floorplan
+Directory: /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
+Script:    scripts/flow.yaml
+Version:   25.10-b003_1, built 03/20/2025 14:55 PDT
+Date:      Tue Mar 17 20:53:06 2026
+
+
+flowkit/nfs_lock: Existing lock for file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status has timed out, deleting the lock file
+
+flowkit/nfs_lock: Existing lock for file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics has timed out, deleting the lock file
+Starting scheduled flows at 03-17 20:53:46...
+* flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan
+Waiting for flows to return... (1 running)
+* flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan
+floorplan:
+floorplan:Cadence Innovus(TM) Implementation System.
+floorplan:Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+floorplan:
+floorplan:Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+floorplan:Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid afb6cf20-32e8-42df-b2ac-86bddbe1efd0 top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan_1 metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan_1 run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 818980} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0} uuid afb6cf20-32e8-42df-b2ac-86bddbe1efd0 tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan_1} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+floorplan:Date:		Tue Mar 17 20:53:47 2026
+floorplan:Host:		ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB)
+floorplan:OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+floorplan:
+floorplan:License:
+floorplan:		[20:53:47.185769] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+floorplan:
+floorplan:		invs	Innovus Implementation System	25.1	checkout succeeded
+floorplan:		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+floorplan:
+floorplan:
+floorplan:Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_830282_93767e16-570c-4148-aa80-8079789f4b0d_ece-linlabsrv01_dkhalil8_U1rxUw.
+floorplan:
+floorplan:Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+floorplan:[INFO] Loading Pegasus 24.14 fill procedures
+floorplan:Info: Process UID = 830282 / 93767e16-570c-4148-aa80-8079789f4b0d / Oo8pOrU9ec
+floorplan:
+floorplan:**INFO:  MMMC transition support version v31-84 
+floorplan:
+floorplan:#@ Processing -execute option
+floorplan:@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid afb6cf20-32e8-42df-b2ac-86bddbe1efd0 top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan_1 metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan_1 run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 818980} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0} uuid afb6cf20-32e8-42df-b2ac-86bddbe1efd0 tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan_1} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+floorplan:init_flow summary:
+floorplan:  Flow script        : 
+floorplan:  YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
+floorplan:  Flow               : flow:flow_current
+floorplan:  From               : implementation.floorplan.block_start
+floorplan:  To                 : implementation.floorplan.schedule_floorplan_report_floorplan
+floorplan:  Top directory      : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
+floorplan:  Working directory  : .
+floorplan:  Starting database  : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb
+floorplan:  Run tag            : 
+floorplan:  Branch name        : 
+floorplan:  Metrics file       : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan_1
+floorplan:  Status file        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan_1
+floorplan:reading previous metrics...
+floorplan:Sourcing flow scripts...
+floorplan:Sourcing flow scripts done.
+floorplan:Begin steps for plugin point Cadence.plugin.flowkit.read_db.pre
+floorplan:#@ Begin verbose flow_step activate_views
+floorplan:@flow 2: apply {{} {
+floorplan:    set db [get_db flow_starting_db]
+floorplan:    set flow [lindex [get_db flow_hier_path] end]
+floorplan:    set setup_views [get_feature -obj $flow setup_views]
+floorplan:    set hold_views [get_feature -obj $flow hold_views]
+floorplan:    set leakage_view [get_feature -obj $flow leakage_view]
+floorplan:    set dynamic_view [get_feature -obj $flow dynamic_view]
+floorplan:  
+floorplan:    if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+floorplan:      #- use read_db args for DB types and set_analysis_views for TCL
+floorplan:      if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+floorplan:        set cmd "set_analysis_view"
+floorplan:        if {$setup_views ne ""} {
+floorplan:          append cmd " -setup [list $setup_views]"
+floorplan:        } else {
+floorplan:          append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+floorplan:        }
+floorplan:        if {$hold_views ne ""} {
+floorplan:          append cmd " -hold [list $hold_views]"
+floorplan:        } else {
+floorplan:          append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+floorplan:        }
+floorplan:        if {$leakage_view ne ""} {
+floorplan:          append cmd " -leakage [list $leakage_view]"
+floorplan:        } else {
+floorplan:          if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+floorplan:            append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+floorplan:          }
+floorplan:        }
+floorplan:        if {$dynamic_view ne ""} {
+floorplan:          append cmd " -dynamic [list $dynamic_view]"
+floorplan:        } else {
+floorplan:          if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+floorplan:            append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+floorplan:          }
+floorplan:        }
+floorplan:        eval $cmd
+floorplan:      } elseif {[llength [get_db analysis_views]] == 0} {
+floorplan:        set cmd "set_flowkit_read_db_args"
+floorplan:        if {$setup_views ne ""} {
+floorplan:          append cmd " -setup_views [list $setup_views]"
+floorplan:        }
+floorplan:        if {$hold_views ne ""} {
+floorplan:          append cmd " -hold_views [list $hold_views]"
+floorplan:        }
+floorplan:        if {$leakage_view ne ""} {
+floorplan:          append cmd " -leakage_view [list $leakage_view]"
+floorplan:        }
+floorplan:        if {$dynamic_view ne ""} {
+floorplan:          append cmd " -dynamic_view [list $dynamic_view]"
+floorplan:        }
+floorplan:        eval $cmd
+floorplan:      } else {
+floorplan:      }
+floorplan:    }
+floorplan:  }}
+floorplan:#@ End verbose flow_step activate_views
+floorplan:#@ Begin verbose flow_step init_mcpu
+floorplan:@flow 2: apply {{} {
+floorplan:    # Multi host/cpu attributes
+floorplan:    #-----------------------------------------------------------------------------
+floorplan:    # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+floorplan:    # the specified dist script.  This connects the number of CPUs being reserved
+floorplan:    # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+floorplan:    # a typical environment variable exported by distribution platforms and is
+floorplan:    # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+floorplan:    if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+floorplan:      set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+floorplan:    } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+floorplan:      set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+floorplan:    } else {
+floorplan:      set max_cpus 1
+floorplan:    }
+floorplan:    switch -glob [get_db program_short_name] {
+floorplan:      default       {}
+floorplan:      joules*       -
+floorplan:      genus*        -
+floorplan:      innovus*      -
+floorplan:      tempus*       -
+floorplan:      voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+floorplan:    }
+floorplan:if {[get_feature opt_signoff]} {
+floorplan:      if {[is_flow -inside flow:opt_signoff]} {
+floorplan:        set_multi_cpu_usage -verbose -remote_host 1
+floorplan:        set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+floorplan:        set_distributed_hosts -local
+floorplan:      }
+floorplan:}
+floorplan:  }}
+floorplan:set_multi_cpu_usage -local_cpu 1
+floorplan:#@ End verbose flow_step init_mcpu
+floorplan:End steps for plugin point Cadence.plugin.flowkit.read_db.pre
+floorplan:(stylus_db): ::init_mmmc_version set to version 2 from SQL db.
+floorplan:(stylus_db): Load Metric file ...
+floorplan:#% Begin Load Metric file (date=03/17 20:54:26, mem=2062.0M)
+floorplan:#% End Load Metric file (date=03/17 20:54:27, total cpu=0:00:00.1, real=0:00:01.0, peak res=2062.0M, current mem=2060.3M)
+floorplan:#% Begin Load Common DB (date=03/17 20:54:27, mem=2060.3M)
+floorplan:(stylus_db): Begin loading Common DB 'syn_opt.cdb' (Created by Genus(TM) Synthesis Solution 25.11-s095_1) ...
+floorplan:(stylus_db): Initialized SQLite db version 0.2 ..
+floorplan:(stylus_db): Sourcing .globals file  ...
+floorplan:(stylus_db): setting init_mmmc_version to 2
+floorplan:(stylus_db): Setting Library Root attributes ...
+floorplan:(stylus_db): Set 19 timing library and user attributes of Root 
+floorplan:(stylus_db): Load Flow-Kit settings ...
+floorplan:% Begin Load Flow-Kit settings (date=03/17 20:54:27, mem=2061.8M)
+floorplan:% End Load Flow-Kit settings (date=03/17 20:54:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=2062.2M, current mem=2062.2M)
+floorplan:% Begin Load MMMC data (date=03/17 20:54:27, mem=2062.2M)
+floorplan:(stylus_db): Reading MMMC file ...
+floorplan:Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
+floorplan:Read 109 cells in library 'sky130_tt_1.8_25' 
+floorplan:Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
+floorplan:Read 1 cells in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C_lib' 
+floorplan:% End Load MMMC data (date=03/17 20:54:28, total cpu=0:00:00.8, real=0:00:01.0, peak res=2131.2M, current mem=2070.9M)
+floorplan:% Begin Load LEF files (date=03/17 20:54:28, mem=2070.9M)
+floorplan:(stylus_db): Load LEF files ...
+floorplan:
+floorplan:Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lef/sky130_scl_9T.tlef ...
+floorplan:
+floorplan:Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lef/sky130_scl_9T.lef ...
+floorplan:Set DBUPerIGU to M2 pitch 460.
+floorplan:
+floorplan:Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/sram_sky130/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef ...
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (IMPLF-200):	Pin 'din0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-200' for more detail.
+floorplan:**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+floorplan:To increase the message display limit, refer to the product command reference manual.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[2]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[3]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[4]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[5]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[6]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[7]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[8]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[9]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[10]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[11]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[12]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[13]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[14]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[15]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[16]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[17]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[18]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (IMPLF-201):	Pin 'dout0[19]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+floorplan:Type 'man IMPLF-201' for more detail.
+floorplan:**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+floorplan:To increase the message display limit, refer to the product command reference manual.
+floorplan:
+floorplan:##  Check design process and node:  
+floorplan:##  Both design process and tech node are not set.
+floorplan:
+floorplan:% End Load LEF files (date=03/17 20:54:28, total cpu=0:00:00.1, real=0:00:00.0, peak res=2079.7M, current mem=2079.7M)
+floorplan:(stylus_db): Load Verilog Netlist ...
+floorplan:% Begin Load netlist data ... (date=03/17 20:54:28, mem=2079.8M)
+floorplan:*** Begin netlist parsing (mem=2079.8M) ***
+floorplan:Created 110 new cells from 2 timing libraries.
+floorplan:Reading netlist ...
+floorplan:Backslashed names will retain backslash and a trailing blank character.
+floorplan:Reading verilog netlist '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.v.gz'
+floorplan:
+floorplan:*** Memory Usage v#1 (Current mem = 2088.590M, initial mem = 930.523M) ***
+floorplan:*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=2088.6M) ***
+floorplan:% End Load netlist data ... (date=03/17 20:54:29, total cpu=0:00:00.1, real=0:00:01.0, peak res=2088.6M, current mem=2088.6M)
+floorplan:Top level cell is Core.
+floorplan:Hooked 110 DB cells to tlib cells.
+floorplan:Starting recursive module instantiation check.
+floorplan:No recursion found.
+floorplan:Building hierarchical netlist for Cell Core ...
+floorplan:***** UseNewTieNetMode *****.
+floorplan:*** Netlist is unique.
+floorplan:** info: there are 119 modules.
+floorplan:** info: there are 7200 stdCell insts.
+floorplan:** info: there are 7200 stdCell insts with at least one signal pin.
+floorplan:** info: there are 2 macros.
+floorplan:
+floorplan:*** Memory Usage v#1 (Current mem = 2122.207M, initial mem = 930.523M) ***
+floorplan:(stylus_db): Init Design
+floorplan:**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+floorplan:Type 'man IMPFP-3961' for more detail.
+floorplan:Start create_tracks
+floorplan:Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+floorplan:Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+floorplan:Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+floorplan:*Info: initialize multi-corner CTS.
+floorplan:Total number of combinational cells: 87
+floorplan:Total number of sequential cells: 19
+floorplan:Total number of tristate cells: 3
+floorplan:Total number of level shifter cells: 0
+floorplan:Total number of power gating cells: 0
+floorplan:Total number of isolation cells: 0
+floorplan:Total number of power switch cells: 0
+floorplan:Total number of pulse generator cells: 0
+floorplan:Total number of always on buffers: 0
+floorplan:Total number of retention cells: 0
+floorplan:Total number of physical cells: 0
+floorplan:List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 CLKBUFX8 BUFX8 BUFX16
+floorplan:Total number of usable buffers: 7
+floorplan:List of unusable buffers:
+floorplan:Total number of unusable buffers: 0
+floorplan:List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX4 CLKINVX4 INVX8 CLKINVX8 INVX16
+floorplan:Total number of usable inverters: 9
+floorplan:List of unusable inverters:
+floorplan:Total number of unusable inverters: 0
+floorplan:List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
+floorplan:Total number of identified usable delay cells: 4
+floorplan:List of identified unusable delay cells:
+floorplan:Total number of identified unusable delay cells: 0
+floorplan:Reading timing constraints file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/modes/func/func.sdc.gz' ...
+floorplan:Current (total cpu=0:00:41.0, real=0:00:44.0, peak res=2540.2M, current mem=2540.2M)
+floorplan:Core
+floorplan:INFO (CTE): Constraints read successfully.
+floorplan:Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2552.7M, current mem=2552.6M)
+floorplan:Current (total cpu=0:00:41.2, real=0:00:45.0, peak res=2552.7M, current mem=2552.6M)
+floorplan:Reading latency file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/views/tt_v1.8_25C_Nominal_25_func/latency.sdc.gz' ...
+floorplan:(stylus_db): Initialized design 'Core'
+floorplan:(stylus_db): Setting Root attributes ...
+floorplan:**WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+floorplan:##  Process: 130           (User Set)               
+floorplan:##     Node: (not set)                           
+floorplan:
+floorplan:##  Check design process and node:  
+floorplan:##  Design tech node is not set.
+floorplan:
+floorplan:Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+floorplan:	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+floorplan:	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+floorplan:	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+floorplan:	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+floorplan:**WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+floorplan:##  Process: 130           (User Set)               
+floorplan:##     Node: (not set)                           
+floorplan:
+floorplan:##  Check design process and node:  
+floorplan:##  Design tech node is not set.
+floorplan:
+floorplan:Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+floorplan:	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+floorplan:	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+floorplan:	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+floorplan:	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+floorplan:(stylus_db): Set 18 attributes of Root 
+floorplan:(stylus_db): Silicon Drift settings not enabled or skipped...
+floorplan:% Begin Set DB preserves (date=03/17 20:54:32, mem=2572.4M)
+floorplan:(stylus_db): Setting preserves on design objects ...
+floorplan:(stylus_db): Set 4 preserves of design objects
+floorplan:% End Set DB preserves (date=03/17 20:54:32, total cpu=0:00:00.1, real=0:00:00.0, peak res=2572.4M, current mem=2572.4M)
+floorplan:% Begin Load Timing views and constraints (date=03/17 20:54:32, mem=2572.4M)
+floorplan:(stylus_db): Read MMMC timing views ...
+floorplan:% End Load Timing views and constraints (date=03/17 20:54:32, total cpu=0:00:00.1, real=0:00:00.0, peak res=2572.4M, current mem=2572.4M)
+floorplan:(stylus_db): Couldn't commit power-intent, (Core.cpf or Core.upf doesn't exists)
+floorplan:% Begin Set route_types (date=03/17 20:54:32, mem=2572.4M)
+floorplan:(stylus_db): Setting route_types  ...
+floorplan:% End Set route_types (date=03/17 20:54:32, total cpu=0:00:00.1, real=0:00:00.0, peak res=2572.4M, current mem=2572.4M)
+floorplan:% Begin Set power_domain attributes (date=03/17 20:54:32, mem=2572.4M)
+floorplan:(stylus_db): Setting power_domain attributes ...
+floorplan:% End Set power_domain attributes (date=03/17 20:54:32, total cpu=0:00:00.1, real=0:00:00.0, peak res=2572.4M, current mem=2572.4M)
+floorplan:(stylus_db): Load additional timing constraints ...
+floorplan:% Begin Load Additional Timing constraints (date=03/17 20:54:32, mem=2572.4M)
+floorplan:Loading timing derate file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/delayCorner/tt_v1.8_25C_Nominal_25/timingderate.sdc.gz ...
+floorplan:Current (total cpu=0:00:42.1, real=0:00:45.0, peak res=2572.4M, current mem=2572.4M)
+floorplan:INFO (CTE): Constraints read successfully.
+floorplan:Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=2574.4M, current mem=2574.4M)
+floorplan:Current (total cpu=0:00:42.3, real=0:00:46.0, peak res=2574.4M, current mem=2574.4M)
+floorplan:Loading path adjust file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/pathadjust.sdc.gz ...
+floorplan:Current (total cpu=0:00:42.4, real=0:00:46.0, peak res=2574.4M, current mem=2574.4M)
+floorplan:INFO (CTE): Constraints read successfully.
+floorplan:Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2574.7M, current mem=2574.7M)
+floorplan:Current (total cpu=0:00:42.5, real=0:00:46.0, peak res=2574.7M, current mem=2574.7M)
+floorplan:Loading disable latch loop file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/disablelatchloop.sdc.gz ...
+floorplan:Current (total cpu=0:00:42.6, real=0:00:46.0, peak res=2574.7M, current mem=2574.7M)
+floorplan:INFO (CTE): Constraints read successfully.
+floorplan:Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2575.1M, current mem=2575.1M)
+floorplan:Current (total cpu=0:00:42.8, real=0:00:46.0, peak res=2575.1M, current mem=2575.1M)
+floorplan:% End Load Additional Timing constraints (date=03/17 20:54:33, total cpu=0:00:00.8, real=0:00:01.0, peak res=2575.1M, current mem=2575.1M)
+floorplan:% Begin Set message attributes (date=03/17 20:54:33, mem=2575.1M)
+floorplan:(stylus_db): Setting attributes on Synthesis message objects ...
+floorplan:% End Set message attributes (date=03/17 20:54:33, total cpu=0:00:00.1, real=0:00:00.0, peak res=2575.1M, current mem=2575.1M)
+floorplan:% Begin Generate Vias (date=03/17 20:54:33, mem=2575.1M)
+floorplan:(stylus_db): Generate advanced rule Vias ...
+floorplan:Start generating vias ..
+floorplan:#Skip building auto via since it is not turned on.
+floorplan:Via generation completed.
+floorplan:% End Generate Vias (date=03/17 20:54:34, total cpu=0:00:00.1, real=0:00:01.0, peak res=2583.2M, current mem=2580.4M)
+floorplan:% Begin Set attributes (date=03/17 20:54:34, mem=2580.4M)
+floorplan:(stylus_db): Setting attributes on design objects ...
+floorplan:(stylus_db): Set 5986 attributes of design objects
+floorplan:% End Set attributes (date=03/17 20:54:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=2582.0M, current mem=2582.0M)
+floorplan:Extraction setup Started for TopCell Core 
+floorplan:Initializing multi-corner RC extraction with 1 active RC Corners ...
+floorplan:Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+floorplan:Generating auto layer map file.
+floorplan:Importing multi-corner technology file(s) for preRoute extraction...
+floorplan:/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/../SiliconJackets/cadence_sky130/sky130_release_0.0.4/quantus/extraction/typical/qrcTechFile
+floorplan:Generating auto layer map file.
+floorplan:Completed (cpu: 0:00:01.4 real: 0:00:03.0)
+floorplan:Set Shrink Factor to 1.00000
+floorplan:Summary of Active RC-Corners : 
+floorplan: 
+floorplan: Analysis View: tt_v1.8_25C_Nominal_25_func
+floorplan:    RC-Corner Name        : Nominal_25C
+floorplan:    RC-Corner Index       : 0
+floorplan:    RC-Corner Temperature : 25 Celsius
+floorplan:    RC-Corner Cap Table   : ''
+floorplan:    RC-Corner PreRoute Res Factor         : 1
+floorplan:    RC-Corner PreRoute Cap Factor         : 1
+floorplan:    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+floorplan:    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+floorplan:    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+floorplan:    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+floorplan:    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+floorplan:    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+floorplan:    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+floorplan:    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+floorplan:    RC-Corner Technology file: '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/../SiliconJackets/cadence_sky130/sky130_release_0.0.4/quantus/extraction/typical/qrcTechFile'
+floorplan:Updating RC Grid density data for preRoute extraction ...
+floorplan:Initializing multi-corner resistance tables ...
+floorplan:Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+floorplan:% Begin Load Min Layer Data (date=03/17 20:54:37, mem=2607.8M)
+floorplan:Read 0 nets
+floorplan:% End Load Min Layer Data (date=03/17 20:54:37, total cpu=0:00:00.1, real=0:00:00.0, peak res=2607.8M, current mem=2607.8M)
+floorplan:+----------------------------------------------------------------+
+floorplan:    Summary of 'read_db syn_opt.cdb'                     
+floorplan:+----------------------------------------------------------------+
+floorplan:    Generated by         :     Innovus 25.11-s102_1
+floorplan:    Generated on         :     Tue Mar 17 20:54:37 EDT 2026
+floorplan:    Design               :     Core 
+floorplan:    process_node         :     130  
+floorplan:    db units             :     1000 
+floorplan:    tech_mfg_grid        :     0.005
+floorplan:    bbox                 :     {0.0 0.0 993.295 989.46}
+floorplan:    core_bbox            :     {0.0 0.0 993.295 989.46}
+floorplan:+----------------------------------------------------------------+
+floorplan:    Object Type          :     Count
+floorplan:+-----------------------------------+
+floorplan:    timing_libraries     :     2    
+floorplan:    library_sets         :     3    
+floorplan:    lib_cells            :     110  
+floorplan:    setup_analysis_views :     1    
+floorplan:    hold_analysis_views  :     1    
+floorplan:    rc_corners           :     1    
+floorplan:    delay_corners        :     3    
+floorplan:    constraint_modes     :     1    
+floorplan:    clocks               :     1    
+floorplan:+-----------------------------------+
+floorplan:    base_cells           :     118  
+floorplan:    modules              :     0    
+floorplan:    insts                :     7202 
+floorplan:    ports                :     3    
+floorplan:    nets                 :     8960 
+floorplan:    hnets                :     8960 
+floorplan:    pins                 :     28278
+floorplan:    pg_nets              :     2    
+floorplan:+-----------------------------------+
+floorplan:    layers               :     13   
+floorplan:    via_defs             :     20   
+floorplan:    via_def_rule         :     20   
+floorplan:    sites                :     3    
+floorplan:    core_rows            :     239  
+floorplan:    track_patterns       :     10   
+floorplan:+-----------------------------------+
+floorplan:#% End Load Common DB (date=03/17 20:54:37, total cpu=0:00:07.8, real=0:00:10.0, peak res=2611.8M, current mem=2609.2M)
+floorplan:
+floorplan:*** Summary of all messages that are not suppressed in this session:
+floorplan:Severity  ID               Count  Summary                                  
+floorplan:WARNING   IMPLF-200           60  Pin '%s' in macro '%s' has no ANTENNAGAT...
+floorplan:WARNING   IMPLF-201           64  Pin '%s' in macro '%s' has no ANTENNADIF...
+floorplan:WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+floorplan:WARNING   IMPDB-6501           2  "set_db design_process_node" will be obs...
+floorplan:*** Message Summary: 128 warning(s), 0 error(s)
+floorplan:
+floorplan:UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:*                                                                   read_db
+floorplan:Sourcing flow scripts...
+floorplan:Sourcing flow scripts done.
+floorplan:reading previous metrics...
+floorplan:Begin steps for plugin point Cadence.plugin.flowkit.read_db.post
+floorplan:#@ Begin verbose flow_step activate_views
+floorplan:@flow 2: apply {{} {
+floorplan:    set db [get_db flow_starting_db]
+floorplan:    set flow [lindex [get_db flow_hier_path] end]
+floorplan:    set setup_views [get_feature -obj $flow setup_views]
+floorplan:    set hold_views [get_feature -obj $flow hold_views]
+floorplan:    set leakage_view [get_feature -obj $flow leakage_view]
+floorplan:    set dynamic_view [get_feature -obj $flow dynamic_view]
+floorplan:  
+floorplan:    if {($setup_views ne "") || ($hold_views ne "") || ($leakage_view ne "") || ($dynamic_view ne "")} {
+floorplan:      #- use read_db args for DB types and set_analysis_views for TCL
+floorplan:      if {([llength [get_db analysis_views]]) > 0 &&  ([lindex $db 0] eq {tcl} || [lindex $db 0] in {enc cdb} && [file isfile [lindex $db 1]])} {
+floorplan:        set cmd "set_analysis_view"
+floorplan:        if {$setup_views ne ""} {
+floorplan:          append cmd " -setup [list $setup_views]"
+floorplan:        } else {
+floorplan:          append cmd " -setup [list [get_db [get_db analysis_views -if .is_setup] .name]]"
+floorplan:        }
+floorplan:        if {$hold_views ne ""} {
+floorplan:          append cmd " -hold [list $hold_views]"
+floorplan:        } else {
+floorplan:          append cmd " -hold [list [get_db [get_db analysis_views -if .is_hold] .name]]"
+floorplan:        }
+floorplan:        if {$leakage_view ne ""} {
+floorplan:          append cmd " -leakage [list $leakage_view]"
+floorplan:        } else {
+floorplan:          if {[llength [get_db analysis_views -if .is_leakage]] > 0} {
+floorplan:            append cmd " -leakage [list [get_db [get_db analysis_views -if .is_leakage] .name]]"
+floorplan:          }
+floorplan:        }
+floorplan:        if {$dynamic_view ne ""} {
+floorplan:          append cmd " -dynamic [list $dynamic_view]"
+floorplan:        } else {
+floorplan:          if {[llength [get_db analysis_views -if .is_dynamic]] > 0} {
+floorplan:            append cmd " -dynamic [list [get_db [get_db analysis_views -if .is_dynamic] .name]]"
+floorplan:          }
+floorplan:        }
+floorplan:        eval $cmd
+floorplan:      } elseif {[llength [get_db analysis_views]] == 0} {
+floorplan:        set cmd "set_flowkit_read_db_args"
+floorplan:        if {$setup_views ne ""} {
+floorplan:          append cmd " -setup_views [list $setup_views]"
+floorplan:        }
+floorplan:        if {$hold_views ne ""} {
+floorplan:          append cmd " -hold_views [list $hold_views]"
+floorplan:        }
+floorplan:        if {$leakage_view ne ""} {
+floorplan:          append cmd " -leakage_view [list $leakage_view]"
+floorplan:        }
+floorplan:        if {$dynamic_view ne ""} {
+floorplan:          append cmd " -dynamic_view [list $dynamic_view]"
+floorplan:        }
+floorplan:        eval $cmd
+floorplan:      } else {
+floorplan:      }
+floorplan:    }
+floorplan:  }}
+floorplan:#@ End verbose flow_step activate_views
+floorplan:#@ Begin verbose flow_step init_mcpu
+floorplan:@flow 2: apply {{} {
+floorplan:    # Multi host/cpu attributes
+floorplan:    #-----------------------------------------------------------------------------
+floorplan:    # The FLOWTOOL_NUM_CPUS is an environment variable which should be exported by
+floorplan:    # the specified dist script.  This connects the number of CPUs being reserved
+floorplan:    # for batch jobs with the current flow scripts.  The LSB_MAX_NUM_PROCESSORS is
+floorplan:    # a typical environment variable exported by distribution platforms and is
+floorplan:    # useful for ensuring all interactive jobs are using the reserved amount of CPUs.
+floorplan:    if {[info exists ::env(FLOWTOOL_NUM_CPUS)]} {
+floorplan:      set max_cpus $::env(FLOWTOOL_NUM_CPUS)
+floorplan:    } elseif {[info exists ::env(LSB_MAX_NUM_PROCESSORS)]} {
+floorplan:      set max_cpus $::env(LSB_MAX_NUM_PROCESSORS)
+floorplan:    } else {
+floorplan:      set max_cpus 1
+floorplan:    }
+floorplan:    switch -glob [get_db program_short_name] {
+floorplan:      default       {}
+floorplan:      joules*       -
+floorplan:      genus*        -
+floorplan:      innovus*      -
+floorplan:      tempus*       -
+floorplan:      voltus*       { set_multi_cpu_usage -verbose -local_cpu $max_cpus }
+floorplan:    }
+floorplan:if {[get_feature opt_signoff]} {
+floorplan:      if {[is_flow -inside flow:opt_signoff]} {
+floorplan:        set_multi_cpu_usage -verbose -remote_host 1
+floorplan:        set_multi_cpu_usage -verbose -cpu_per_remote_host 16
+floorplan:        set_distributed_hosts -local
+floorplan:      }
+floorplan:}
+floorplan:  }}
+floorplan:set_multi_cpu_usage -local_cpu 1
+floorplan:#@ End verbose flow_step init_mcpu
+floorplan:End steps for plugin point Cadence.plugin.flowkit.read_db.post
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:*                                                                   init_flow
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:*                                                                   floorplan
+floorplan:#@ Begin verbose flow_step implementation.floorplan.block_start
+floorplan:@@flow 2: set_db flow_write_db_common false
+floorplan:#@ End verbose flow_step implementation.floorplan.block_start
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:           49.6             55                                      block_start
+floorplan:#@ Begin verbose flow_step implementation.floorplan.init_innovus.init_innovus_yaml
+floorplan:@flow 2: if {[get_feature report_lec]} {...}
+floorplan:@flow 8: # Design attributes  [get_db -category design]
+floorplan:@flow 9: #-------------------------------------------------------------------------------
+floorplan:@@flow 10: set_db design_process_node 130
+floorplan:**WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+floorplan:##  Process: 130           (User Set)               
+floorplan:##     Node: (not set)                           
+floorplan:
+floorplan:##  Check design process and node:  
+floorplan:##  Design tech node is not set.
+floorplan:
+floorplan:Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+floorplan:	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+floorplan:	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+floorplan:	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'standard'.
+floorplan:	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
+floorplan:@@flow 11: set_db design_top_routing_layer met5
+floorplan:@@flow 12: set_db design_bottom_routing_layer met1
+floorplan:@@flow 13: set_db design_flow_effort standard
+floorplan:@@flow 14: set_db design_power_effort none
+floorplan:@flow 16: # Timing attributes  [get_db -category timing && delaycalc]
+floorplan:@flow 17: #-------------------------------------------------------------------------------
+floorplan:@@flow 18: set_db timing_analysis_cppr           both
+floorplan:@@flow 19: set_db timing_analysis_type           ocv
+floorplan:@@flow 20: set_db timing_analysis_aocv 0
+floorplan:@@flow 21: set_db timing_analysis_socv 0
+floorplan:@flow 22: if {[get_feature report_pba]} {...}
+floorplan:@flow 26: # Extraction attributes  [get_db -category extract_rc]
+floorplan:@flow 27: #-------------------------------------------------------------------------------
+floorplan:@flow 28: if {[is_flow -after route.block_finish]} {...}
+floorplan:@flow 33: # Tieoff attributes  [get_db -category add_tieoffs]
+floorplan:@flow 34: #-------------------------------------------------------------------------------
+floorplan:@@flow 35: set_db add_tieoffs_cells {TIEHI TIELO}
+floorplan:@flow 37: # Optimization attributes  [get_db -category opt]
+floorplan:@flow 38: #-------------------------------------------------------------------------------
+floorplan:@@flow 39: set_db opt_new_inst_prefix            "[get_db flow_report_name]_"
+floorplan:@@flow 40: set_db opt_leakage_to_dynamic_ratio 0.5
+floorplan:@flow 42: # Clock attributes  [get_db -category cts]
+floorplan:@flow 43: #-------------------------------------------------------------------------------
+floorplan:@@flow 44: set_db cts_target_skew auto
+floorplan:@@flow 45: set_db cts_target_max_transition_time_top 100
+floorplan:@@flow 46: set_db cts_target_max_transition_time_trunk 100
+floorplan:@@flow 47: set_db cts_target_max_transition_time_leaf 100
+floorplan:@@flow 49: set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
+floorplan:@@flow 50: set_db cts_inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+floorplan:@@flow 51: set_db cts_clock_gating_cells ICGX1
+floorplan:@@flow 52: set_db cts_logic_cells {CLKAND2X2 CLKXOR2X1 CLKMX2X2 CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX8}
+floorplan:@flow 54: # Filler attributes  [get_db -category add_fillers]
+floorplan:@flow 55: #-------------------------------------------------------------------------------
+floorplan:@@flow 56: set_db add_fillers_cells {FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64}
+floorplan:@flow 58: # Routing attributes  [get_db -category route]
+floorplan:@flow 59: #-------------------------------------------------------------------------------
+floorplan:#@ End verbose flow_step implementation.floorplan.init_innovus.init_innovus_yaml
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:           4.82              5                                      init_innovus_yaml
+floorplan:      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+floorplan:UM:*                                                                   init_innovus
+floorplan:#@ Begin verbose flow_step implementation.floorplan.init_innovus.init_innovus_user
+floorplan:@flow 2: # Timing attributes  [get_db -category timing && delaycalc]
+floorplan:@flow 3: #-----------------------------------------------------------------------------
+floorplan:@flow 5: # Extraction attributes  [get_db -category extract_rc]
+floorplan:@flow 6: #-----------------------------------------------------------------------------
+floorplan:@flow 8: # Floorplan attributes  [get_db -category floorplan]
+floorplan:@flow 9: #-----------------------------------------------------------------------------
+floorplan:@@flow 10: set_db finish_floorplan_active_objs   [list macro soft_blockage core]
+floorplan:@flow 12: # Placement attributes  [get_db -category place]
+floorplan:@flow 13: #-----------------------------------------------------------------------------
+floorplan:@flow 15: # Optimization attributes  [get_db -category opt]
+floorplan:@flow 16: #-----------------------------------------------------------------------------
+floorplan:@@flow 17: set_db opt_hold_slack_limit 0.050;
+floorplan:**ERROR: (IMPDBTCL-247):	'opt_hold_slack_limit' is not a recognized object or root attribute. Run 'help root:' to get a list of all root attributes, or 'man get_db' for more information about accessing objects and attributes.
+floorplan:FLOWKIT: Encountered error during previous command and saving error database: dbs/floorplan.init_innovus.init_innovus_user.ERROR.enc.
+floorplan:         To disable saving a database on error condition, set the attribute 'flow_error_write_db' to false.
+floorplan:#@ End verbose flow_step implementation.floorplan.init_innovus.init_innovus_user
+floorplan:Tcl error: Error in flow_step:init_innovus_user .body_tcl, message: 
+floorplan:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+floorplan:| ID           | SEV   | Count | Description                                                                                                                                                                            |
+floorplan:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+floorplan:| IMPDBTCL-247 | error | 1     | '%s' is not a recognized object or root attribute. Run 'help root:' to get a list of all root attributes, or 'man get_db' for more information about accessing objects and attributes. |
+floorplan:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+floorplan:    while executing
+floorplan:    (flow_step:init_innovus_user .body_tcl line 17)
+floorplan:    while executing
+floorplan:"run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} ste..."
+floorplan:    ("uplevel" body line 1)
+floorplan:    invoked from within
+floorplan:"uplevel [concat run_flow $args] "
+floorplan:    (procedure "se::smap::run_flow" line 1)
+floorplan:    invoked from within
+floorplan:"run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} ste..."
+floorplan:*** Message Summary: 132 warning(s), 1 error(s)
+floorplan:
+floorplan:
+floorplan:*** Memory Usage v#1 (Current mem = 2682.312M, initial mem = 930.523M) ***
+floorplan:--- Ending "Innovus" (totcpu=0:01:03, real=0:01:10, mem=2682.3M) ---
+floorplan:
+  flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan failed at step "implementation.floorplan.init_innovus.init_innovus_user"
+    log files:
+      logs/floorplan.log1
+      output.flow_current.implementation.floorplan.block_start.failed_startup.log
+    error summary:
+      Severity  ID            Count  Step                                                     Where              Summary
+      ERROR     IMPDBTCL-247  1      implementation.floorplan.init_innovus.init_innovus_user  .body_tcl line 17  '%s' is not a recognized object or root attribute. Run 'help root:' to get a list of all root attributes, or 'man get_db' for more information about accessing objects and attributes.
+    fatal error detail:
+Error in flow_step:init_innovus_user .body_tcl, message: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ID           | SEV   | Count | Description                                                                                                                                                                            |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| IMPDBTCL-247 | error | 1     | '%s' is not a recognized object or root attribute. Run 'help root:' to get a list of all root attributes, or 'man get_db' for more information about accessing objects and attributes. |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    while executing
+    (flow_step:init_innovus_user .body_tcl line 17)
+
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot                | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC | Wall (s) |
+|-------------------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+-----+----------|
+| syn_generic             |    4.065 |        0 |    0 |       4.065 |           0 |       0 |             | ff          |          0.04 |        0.00 |  8202 |      715982 |     | 0:04:05  |
+| syn_map                 |    0.661 |        0 |    0 |       0.661 |           0 |       0 |          -7 | ff          |          0.04 |        0.00 |  7386 |      686575 |     | 0:03:31  |
+| syn_opt                 |    0.027 |        0 |    0 |       0.027 |           0 |       0 |             | ff          |          0.04 |        0.00 |  7202 |      685792 |     | 0:02:31  |
+| initial_summary         |    0.440 |        0 |    0 |       0.440 |           0 |       0 |         -49 | -2          |               |       26.23 |       |             |     | 0:00:17  |
+| ccopt_pro               |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:06  |
+| drv_eco_fixing          |    0.636 |        0 |      |             |             |         |             |             |               |       26.40 |       |             |     | 0:00:05  |
+| initial_summary_2       |    0.636 |        0 |    0 |       0.636 |           0 |       0 |           0 | 0           |               |       26.36 |       |             |     | 0:00:10  |
+| hold_fixing             |    0.636 |        0 |      |       0.636 |           0 |         |             |             |               |       26.39 |       |             |     | 0:00:02  |
+| route_type_fixing       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| pre_route_summary       |    0.636 |        0 |    0 |       0.636 |           0 |       0 |           0 | 0           |               |       26.35 |       |             |     | 0:00:00  |
+| eco_route               |          |          |      |             |             |         |             |             |               |             |       |             |   0 | 0:00:18  |
+| post_route_summary      |    0.424 |        0 |    0 |       0.424 |           0 |       0 |           0 | 0           |               |       26.35 |       |             |     | 0:00:08  |
+| initial_summary_3       |    0.424 |        0 |    0 |       0.424 |           0 |       0 |             |             |               |             |       |             |     | 0:00:10  |
+| final_summary           |    0.424 |        0 |    0 |       0.424 |           0 |       0 |           0 | 0           |               |       26.35 |  7714 |      692526 |     | 0:00:14  |
+| final                   |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| cts                     |          |          |      |             |             |         |             |             |               |             |       |             |   0 | 0:01:50  |
+| opt_design_postcts      |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:02:12  |
+| simplify_netlist        |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| drv_fixing              |    0.431 |        0 |      |             |             |         |             |             |               |       26.54 |       |             |     | 0:00:01  |
+| drv_fixing_2            |    0.129 |        0 |      |             |             |         |             |             |               |       25.91 |       |             |     | 0:00:10  |
+| global_opt              |    0.129 |        0 |      |             |             |         |             |             |               |       25.91 |       |             |     | 0:00:02  |
+| area_reclaiming         |    0.076 |        0 |      |             |             |         |             |             |               |       25.81 |       |             |     | 0:00:09  |
+| incremental_replacement |   -0.872 |       -7 |   21 |      -0.872 |          -7 |      21 |             |             |               |             |       |             |     | 0:02:07  |
+| drv_fixing_3            |   -0.237 |       -1 |    4 |      -0.237 |          -1 |       4 |           0 | 0           |               |       26.41 |       |             |     | 0:00:07  |
+| tns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| area_reclaiming_2       |    0.056 |        0 |      |             |             |         |             |             |               |       25.98 |       |             |     | 0:00:18  |
+| area_reclaiming_3       |    0.004 |        0 |      |             |             |         |             |             |               |       25.91 |       |             |     | 0:00:05  |
+| legalization            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| route_type_refinement   |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| excluded_clk_net_fixing |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| local_wire_reclaim      |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:19  |
+| global_route            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| route_type_refinement_2 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| InitialState            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| place_design            |          |          |      |             |             |         |             |             |               |       24.70 |  7128 |      684824 |     | 0:00:41  |
+| opt_design_prects       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:04:07  |
+| incrNP_iter_start       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| global_place            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:38  |
+| init_tns_pass_0         |   -0.237 |       -1 |      |      -0.237 |          -1 |         |             |             |               |       26.45 |       |             |     | 0:00:01  |
+| tns_pass_0              |    0.041 |        0 |      |       0.041 |           0 |         |             |             |               |       26.46 |       |             |     | 0:00:00  |
+| legalization_0          |    0.041 |        0 |      |             |             |         |             |             |               |       26.46 |       |             |     | 0:00:01  |
+| end_setup_fixing        |    0.041 |        0 |      |       0.041 |           0 |         |             |             |               |       26.46 |       |             |     | 0:00:00  |
+| before merging          |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| before clustering       |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| after bottom-up phase   |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| clock_opt_design        |          |          |      |             |             |         |             |             |               |       26.19 |  7688 |      691793 |     | 0:04:13  |
+| read_db                 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:13  |
+| opt_design_postcts_hold |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:37  |
+| opt_design_postroute    |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:02:49  |
+| place_opt_design        |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:05:00  |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+Summary of flow:
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Snapshot                | WNS (ns) | TNS (ns) | FEPS | WNS(R) (ns) | TNS(R) (ns) | FEPS(R) | DRV(T) (ns) | DRV(C) (pF) | Power(L) (mW) | Density (%) | Insts | Area (um^2) | DRC | Wall (s) |
+|-------------------------+----------+----------+------+-------------+-------------+---------+-------------+-------------+---------------+-------------+-------+-------------+-----+----------|
+| syn_generic             |    4.065 |        0 |    0 |       4.065 |           0 |       0 |             | ff          |          0.04 |        0.00 |  8202 |      715982 |     | 0:04:05  |
+| syn_map                 |    0.661 |        0 |    0 |       0.661 |           0 |       0 |          -7 | ff          |          0.04 |        0.00 |  7386 |      686575 |     | 0:03:31  |
+| syn_opt                 |    0.027 |        0 |    0 |       0.027 |           0 |       0 |             | ff          |          0.04 |        0.00 |  7202 |      685792 |     | 0:02:31  |
+| initial_summary         |    0.440 |        0 |    0 |       0.440 |           0 |       0 |         -49 | -2          |               |       26.23 |       |             |     | 0:00:17  |
+| ccopt_pro               |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:06  |
+| drv_eco_fixing          |    0.636 |        0 |      |             |             |         |             |             |               |       26.40 |       |             |     | 0:00:05  |
+| initial_summary_2       |    0.636 |        0 |    0 |       0.636 |           0 |       0 |           0 | 0           |               |       26.36 |       |             |     | 0:00:10  |
+| hold_fixing             |    0.636 |        0 |      |       0.636 |           0 |         |             |             |               |       26.39 |       |             |     | 0:00:02  |
+| route_type_fixing       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| pre_route_summary       |    0.636 |        0 |    0 |       0.636 |           0 |       0 |           0 | 0           |               |       26.35 |       |             |     | 0:00:00  |
+| eco_route               |          |          |      |             |             |         |             |             |               |             |       |             |   0 | 0:00:18  |
+| post_route_summary      |    0.424 |        0 |    0 |       0.424 |           0 |       0 |           0 | 0           |               |       26.35 |       |             |     | 0:00:08  |
+| initial_summary_3       |    0.424 |        0 |    0 |       0.424 |           0 |       0 |             |             |               |             |       |             |     | 0:00:10  |
+| final_summary           |    0.424 |        0 |    0 |       0.424 |           0 |       0 |           0 | 0           |               |       26.35 |  7714 |      692526 |     | 0:00:14  |
+| final                   |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| cts                     |          |          |      |             |             |         |             |             |               |             |       |             |   0 | 0:01:50  |
+| opt_design_postcts      |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:02:12  |
+| simplify_netlist        |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| drv_fixing              |    0.431 |        0 |      |             |             |         |             |             |               |       26.54 |       |             |     | 0:00:01  |
+| drv_fixing_2            |    0.129 |        0 |      |             |             |         |             |             |               |       25.91 |       |             |     | 0:00:10  |
+| global_opt              |    0.129 |        0 |      |             |             |         |             |             |               |       25.91 |       |             |     | 0:00:02  |
+| area_reclaiming         |    0.076 |        0 |      |             |             |         |             |             |               |       25.81 |       |             |     | 0:00:09  |
+| incremental_replacement |   -0.872 |       -7 |   21 |      -0.872 |          -7 |      21 |             |             |               |             |       |             |     | 0:02:07  |
+| drv_fixing_3            |   -0.237 |       -1 |    4 |      -0.237 |          -1 |       4 |           0 | 0           |               |       26.41 |       |             |     | 0:00:07  |
+| tns_fixing              |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| area_reclaiming_2       |    0.056 |        0 |      |             |             |         |             |             |               |       25.98 |       |             |     | 0:00:18  |
+| area_reclaiming_3       |    0.004 |        0 |      |             |             |         |             |             |               |       25.91 |       |             |     | 0:00:05  |
+| legalization            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| route_type_refinement   |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| excluded_clk_net_fixing |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| local_wire_reclaim      |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:19  |
+| global_route            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| route_type_refinement_2 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:00  |
+| InitialState            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:02  |
+| place_design            |          |          |      |             |             |         |             |             |               |       24.70 |  7128 |      684824 |     | 0:00:41  |
+| opt_design_prects       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:04:07  |
+| incrNP_iter_start       |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:01  |
+| global_place            |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:38  |
+| init_tns_pass_0         |   -0.237 |       -1 |      |      -0.237 |          -1 |         |             |             |               |       26.45 |       |             |     | 0:00:01  |
+| tns_pass_0              |    0.041 |        0 |      |       0.041 |           0 |         |             |             |               |       26.46 |       |             |     | 0:00:00  |
+| legalization_0          |    0.041 |        0 |      |             |             |         |             |             |               |       26.46 |       |             |     | 0:00:01  |
+| end_setup_fixing        |    0.041 |        0 |      |       0.041 |           0 |         |             |             |               |       26.46 |       |             |     | 0:00:00  |
+| before merging          |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| before clustering       |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| after bottom-up phase   |          |          |      |             |             |         |             |             |               |             |       |             |     |          |
+| clock_opt_design        |          |          |      |             |             |         |             |             |               |       26.19 |  7688 |      691793 |     | 0:04:13  |
+| read_db                 |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:13  |
+| opt_design_postcts_hold |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:00:37  |
+| opt_design_postroute    |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:02:49  |
+| place_opt_design        |          |          |      |             |             |         |             |             |               |             |       |             |     | 0:05:00  |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+
+Fatal error summary:
+  flow_current @ innovus: implementation.floorplan.block_start -> implementation.floorplan.schedule_floorplan_report_floorplan failed at step "implementation.floorplan.init_innovus.init_innovus_user"
+    log files:
+      logs/floorplan.log1
+      output.flow_current.implementation.floorplan.block_start.failed_startup.log
+    error database:
+      dbs/floorplan.init_innovus.init_innovus_user.ERROR.enc
+    error summary:
+      Severity  ID            Count  Step                                                     Where              Summary
+      ERROR     IMPDBTCL-247  1      implementation.floorplan.init_innovus.init_innovus_user  .body_tcl line 17  '%s' is not a recognized object or root attribute. Run 'help root:' to get a list of all root attributes, or 'man get_db' for more information about accessing objects and attributes.
+    fatal error detail:
+Error in flow_step:init_innovus_user .body_tcl, message: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ID           | SEV   | Count | Description                                                                                                                                                                            |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| IMPDBTCL-247 | error | 1     | '%s' is not a recognized object or root attribute. Run 'help root:' to get a list of all root attributes, or 'man get_db' for more information about accessing objects and attributes. |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    while executing
+    (flow_step:init_innovus_user .body_tcl line 17)
+
+Flow failed

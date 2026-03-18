@@ -3,28 +3,28 @@ Cadence Innovus(TM) Implementation System.
 Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
-Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
-Date:		Mon Mar 16 12:26:20 2026
-Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+Date:		Tue Mar 17 19:55:21 2026
+Host:		ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB)
 OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
 
 License:
-		[12:26:20.185705] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+		[19:55:21.185785] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 		invs	Innovus Implementation System	25.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
 
 
-Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_1428947_a2cbe4db-9a5b-4e51-ae4d-872e363de926_ece-rschsrv.ece.gatech.edu_dkhalil8_vkScqj.
+Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_274162_3211c8ef-f827-40cf-90e3-535442436e98_ece-linlabsrv01_dkhalil8_6Nkzri.
 
-Change the soft stacksize limit to 0.2%RAM (515 mbytes). Set global soft_stack_size_limit to change the value.
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
 [INFO] Loading Pegasus 24.14 fill procedures
-Info: Process UID = 1428947 / a2cbe4db-9a5b-4e51-ae4d-872e363de926 / JXXH7BmQU3
+Info: Process UID = 274162 / 3211c8ef-f827-40cf-90e3-535442436e98 / QPr1nXRnJb
 
 **INFO:  MMMC transition support version v31-84 
 
 #@ Processing -execute option
-@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/floorplan run_tag {} db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {cdb dbs/syn_opt.cdb Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/floorplan}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:block_start} step flow_step:block_start features {} str implementation.floorplan.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:floorplan .steps flow_step:schedule_floorplan_report_floorplan} step flow_step:schedule_floorplan_report_floorplan features {} str implementation.floorplan.schedule_floorplan_report_floorplan}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/floorplan} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {cdb /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -137,9 +137,9 @@ set_multi_cpu_usage -local_cpu 1
 End steps for plugin point Cadence.plugin.flowkit.read_db.pre
 (stylus_db): ::init_mmmc_version set to version 2 from SQL db.
 (stylus_db): Load Metric file ...
-#% Begin Load Metric file (date=03/16 12:26:57, mem=2015.4M)
-#% End Load Metric file (date=03/16 12:26:57, total cpu=0:00:00.1, real=0:00:00.0, peak res=2015.4M, current mem=2014.4M)
-#% Begin Load Common DB (date=03/16 12:26:57, mem=2014.4M)
+#% Begin Load Metric file (date=03/17 19:56:02, mem=2034.6M)
+#% End Load Metric file (date=03/17 19:56:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=2034.6M, current mem=2034.0M)
+#% Begin Load Common DB (date=03/17 19:56:02, mem=2034.0M)
 (stylus_db): Begin loading Common DB 'syn_opt.cdb' (Created by Genus(TM) Synthesis Solution 25.11-s095_1) ...
 (stylus_db): Initialized SQLite db version 0.2 ..
 (stylus_db): Sourcing .globals file  ...
@@ -147,16 +147,16 @@ End steps for plugin point Cadence.plugin.flowkit.read_db.pre
 (stylus_db): Setting Library Root attributes ...
 (stylus_db): Set 19 timing library and user attributes of Root 
 (stylus_db): Load Flow-Kit settings ...
-% Begin Load Flow-Kit settings (date=03/16 12:26:57, mem=2015.9M)
-% End Load Flow-Kit settings (date=03/16 12:26:57, total cpu=0:00:00.1, real=0:00:00.0, peak res=2016.3M, current mem=2016.3M)
-% Begin Load MMMC data (date=03/16 12:26:57, mem=2016.3M)
+% Begin Load Flow-Kit settings (date=03/17 19:56:02, mem=2035.4M)
+% End Load Flow-Kit settings (date=03/17 19:56:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=2036.0M, current mem=2036.0M)
+% Begin Load MMMC data (date=03/17 19:56:02, mem=2036.0M)
 (stylus_db): Reading MMMC file ...
 Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
 Read 109 cells in library 'sky130_tt_1.8_25' 
 Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
 Read 1 cells in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C_lib' 
-% End Load MMMC data (date=03/16 12:26:58, total cpu=0:00:00.7, real=0:00:01.0, peak res=2085.5M, current mem=2024.9M)
-% Begin Load LEF files (date=03/16 12:26:58, mem=2024.9M)
+% End Load MMMC data (date=03/17 19:56:03, total cpu=0:00:00.8, real=0:00:01.0, peak res=2104.8M, current mem=2044.8M)
+% Begin Load LEF files (date=03/17 19:56:03, mem=2044.8M)
 (stylus_db): Load LEF files ...
 
 Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lef/sky130_scl_9T.tlef ...
@@ -253,18 +253,18 @@ To increase the message display limit, refer to the product command reference ma
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
 
-% End Load LEF files (date=03/16 12:26:58, total cpu=0:00:00.1, real=0:00:00.0, peak res=2033.8M, current mem=2033.8M)
+% End Load LEF files (date=03/17 19:56:03, total cpu=0:00:00.1, real=0:00:00.0, peak res=2053.6M, current mem=2053.6M)
 (stylus_db): Load Verilog Netlist ...
-% Begin Load netlist data ... (date=03/16 12:26:58, mem=2033.8M)
-*** Begin netlist parsing (mem=2033.8M) ***
+% Begin Load netlist data ... (date=03/17 19:56:03, mem=2053.7M)
+*** Begin netlist parsing (mem=2053.7M) ***
 Created 110 new cells from 2 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilog netlist '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.v.gz'
 
-*** Memory Usage v#1 (Current mem = 2043.137M, initial mem = 930.953M) ***
-*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=2043.1M) ***
-% End Load netlist data ... (date=03/16 12:26:59, total cpu=0:00:00.1, real=0:00:01.0, peak res=2043.1M, current mem=2043.1M)
+*** Memory Usage v#1 (Current mem = 2062.918M, initial mem = 945.387M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=2062.9M) ***
+% End Load netlist data ... (date=03/17 19:56:04, total cpu=0:00:00.2, real=0:00:01.0, peak res=2062.9M, current mem=2062.9M)
 Top level cell is Core.
 Hooked 110 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -273,11 +273,11 @@ Building hierarchical netlist for Cell Core ...
 ***** UseNewTieNetMode *****.
 *** Netlist is unique.
 ** info: there are 119 modules.
-** info: there are 7016 stdCell insts.
-** info: there are 7016 stdCell insts with at least one signal pin.
+** info: there are 7200 stdCell insts.
+** info: there are 7200 stdCell insts with at least one signal pin.
 ** info: there are 2 macros.
 
-*** Memory Usage v#1 (Current mem = 2084.492M, initial mem = 930.953M) ***
+*** Memory Usage v#1 (Current mem = 2101.258M, initial mem = 945.387M) ***
 (stylus_db): Init Design
 **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
@@ -312,7 +312,7 @@ Total number of identified usable delay cells: 4
 List of identified unusable delay cells:
 Total number of identified unusable delay cells: 0
 Reading timing constraints file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/modes/func/func.sdc.gz' ...
-Current (total cpu=0:00:36.8, real=0:00:41.0, peak res=2504.8M, current mem=2504.8M)
+Current (total cpu=0:00:41.8, real=0:00:45.0, peak res=2521.4M, current mem=2521.4M)
 Core
 INFO (CTE): Constraints read successfully.
 ------------------------------------------------------------------------------------
@@ -331,8 +331,8 @@ current_design                                    | 1              | 0
 set_load                                          | 3              | 0              
 set_units                                         | 2              | 0              
 ------------------------------------------------------------------------------------
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2517.3M, current mem=2517.3M)
-Current (total cpu=0:00:37.0, real=0:00:41.0, peak res=2517.3M, current mem=2517.3M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2533.8M, current mem=2533.8M)
+Current (total cpu=0:00:42.0, real=0:00:45.0, peak res=2533.8M, current mem=2533.8M)
 Reading latency file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/views/tt_v1.8_25C_Nominal_25_func/latency.sdc.gz' ...
 (stylus_db): Initialized design 'Core'
 (stylus_db): Setting Root attributes ...
@@ -362,26 +362,26 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode is 'low'.
 (stylus_db): Set 18 attributes of Root 
 (stylus_db): Silicon Drift settings not enabled or skipped...
-% Begin Set DB preserves (date=03/16 12:27:01, mem=2537.0M)
+% Begin Set DB preserves (date=03/17 19:56:06, mem=2553.6M)
 (stylus_db): Setting preserves on design objects ...
 (stylus_db): Set 4 preserves of design objects
-% End Set DB preserves (date=03/16 12:27:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=2537.0M, current mem=2537.0M)
-% Begin Load Timing views and constraints (date=03/16 12:27:01, mem=2537.0M)
+% End Set DB preserves (date=03/17 19:56:06, total cpu=0:00:00.1, real=0:00:00.0, peak res=2553.6M, current mem=2553.6M)
 tt_v1.8_25C_Nominal_25_func
+% Begin Load Timing views and constraints (date=03/17 19:56:06, mem=2553.7M)
 (stylus_db): Read MMMC timing views ...
-% End Load Timing views and constraints (date=03/16 12:27:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=2537.0M, current mem=2537.0M)
+% End Load Timing views and constraints (date=03/17 19:56:07, total cpu=0:00:00.1, real=0:00:00.0, peak res=2553.7M, current mem=2553.7M)
 (stylus_db): Couldn't commit power-intent, (Core.cpf or Core.upf doesn't exists)
-% Begin Set route_types (date=03/16 12:27:01, mem=2537.0M)
+% Begin Set route_types (date=03/17 19:56:07, mem=2553.7M)
 (stylus_db): Setting route_types  ...
-% End Set route_types (date=03/16 12:27:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=2537.0M, current mem=2537.0M)
-% Begin Set power_domain attributes (date=03/16 12:27:01, mem=2537.0M)
+% End Set route_types (date=03/17 19:56:07, total cpu=0:00:00.1, real=0:00:00.0, peak res=2553.7M, current mem=2553.7M)
+% Begin Set power_domain attributes (date=03/17 19:56:07, mem=2553.7M)
 (stylus_db): Setting power_domain attributes ...
-% End Set power_domain attributes (date=03/16 12:27:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=2537.0M, current mem=2537.0M)
+% End Set power_domain attributes (date=03/17 19:56:07, total cpu=0:00:00.1, real=0:00:00.0, peak res=2553.7M, current mem=2553.7M)
 (stylus_db): Load additional timing constraints ...
-% Begin Load Additional Timing constraints (date=03/16 12:27:01, mem=2537.0M)
+% Begin Load Additional Timing constraints (date=03/17 19:56:07, mem=2553.7M)
 ff_v1.98_0C_Nominal_25 tt_v1.8_25C_Nominal_25 ss_v1.62_125C_Nominal_25
 Loading timing derate file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/delayCorner/tt_v1.8_25C_Nominal_25/timingderate.sdc.gz ...
-Current (total cpu=0:00:37.7, real=0:00:41.0, peak res=2537.0M, current mem=2537.0M)
+Current (total cpu=0:00:42.9, real=0:00:46.0, peak res=2553.7M, current mem=2553.7M)
 INFO (CTE): Constraints read successfully.
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
@@ -390,32 +390,32 @@ Constraint                                        | Success        | Fail
 ------------------------------------------------------------------------------------
 set_timing_derate                                 | 2              | 0              
 ------------------------------------------------------------------------------------
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=2539.0M, current mem=2539.0M)
-Current (total cpu=0:00:37.8, real=0:00:42.0, peak res=2539.0M, current mem=2539.0M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2555.6M, current mem=2555.6M)
+Current (total cpu=0:00:43.1, real=0:00:46.0, peak res=2555.6M, current mem=2555.6M)
 Loading path adjust file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/pathadjust.sdc.gz ...
-Current (total cpu=0:00:37.9, real=0:00:42.0, peak res=2539.0M, current mem=2539.0M)
+Current (total cpu=0:00:43.2, real=0:00:46.0, peak res=2555.6M, current mem=2555.6M)
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2539.3M, current mem=2539.3M)
-Current (total cpu=0:00:38.0, real=0:00:42.0, peak res=2539.3M, current mem=2539.3M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=2556.0M, current mem=2556.0M)
+Current (total cpu=0:00:43.3, real=0:00:47.0, peak res=2556.0M, current mem=2556.0M)
 Loading disable latch loop file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_opt.cdb/cmn/Core.mmmc/disablelatchloop.sdc.gz ...
-Current (total cpu=0:00:38.1, real=0:00:42.0, peak res=2539.3M, current mem=2539.3M)
+Current (total cpu=0:00:43.4, real=0:00:47.0, peak res=2556.0M, current mem=2556.0M)
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2539.7M, current mem=2539.7M)
-Current (total cpu=0:00:38.2, real=0:00:42.0, peak res=2539.7M, current mem=2539.7M)
-% End Load Additional Timing constraints (date=03/16 12:27:02, total cpu=0:00:00.6, real=0:00:01.0, peak res=2539.7M, current mem=2539.7M)
-% Begin Set message attributes (date=03/16 12:27:02, mem=2539.7M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2556.3M, current mem=2556.3M)
+Current (total cpu=0:00:43.6, real=0:00:47.0, peak res=2556.4M, current mem=2556.4M)
+% End Load Additional Timing constraints (date=03/17 19:56:08, total cpu=0:00:00.8, real=0:00:01.0, peak res=2556.4M, current mem=2556.4M)
+% Begin Set message attributes (date=03/17 19:56:08, mem=2556.4M)
 (stylus_db): Setting attributes on Synthesis message objects ...
-% End Set message attributes (date=03/16 12:27:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=2539.7M, current mem=2539.7M)
-% Begin Generate Vias (date=03/16 12:27:02, mem=2539.7M)
+% End Set message attributes (date=03/17 19:56:08, total cpu=0:00:00.1, real=0:00:00.0, peak res=2556.4M, current mem=2556.4M)
+% Begin Generate Vias (date=03/17 19:56:08, mem=2556.4M)
 (stylus_db): Generate advanced rule Vias ...
 Start generating vias ..
 #Skip building auto via since it is not turned on.
 Via generation completed.
-% End Generate Vias (date=03/16 12:27:02, total cpu=0:00:00.1, real=0:00:00.0, peak res=2547.5M, current mem=2545.0M)
-% Begin Set attributes (date=03/16 12:27:02, mem=2545.0M)
+% End Generate Vias (date=03/17 19:56:08, total cpu=0:00:00.1, real=0:00:00.0, peak res=2564.5M, current mem=2561.8M)
+% Begin Set attributes (date=03/17 19:56:08, mem=2561.8M)
 (stylus_db): Setting attributes on design objects ...
 (stylus_db): Set 5986 attributes of design objects
-% End Set attributes (date=03/16 12:27:03, total cpu=0:00:00.1, real=0:00:01.0, peak res=2546.5M, current mem=2546.5M)
+% End Set attributes (date=03/17 19:56:08, total cpu=0:00:00.1, real=0:00:01.0, peak res=2563.4M, current mem=2563.4M)
 Extraction setup Started for TopCell Core 
 Initializing multi-corner RC extraction with 1 active RC Corners ...
 Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
@@ -423,7 +423,7 @@ Generating auto layer map file.
 Importing multi-corner technology file(s) for preRoute extraction...
 /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/../SiliconJackets/cadence_sky130/sky130_release_0.0.4/quantus/extraction/typical/qrcTechFile
 Generating auto layer map file.
-Completed (cpu: 0:00:01.3 real: 0:00:03.0)
+Completed (cpu: 0:00:01.4 real: 0:00:02.0)
 Set Shrink Factor to 1.00000
 Summary of Active RC-Corners : 
  
@@ -446,20 +446,20 @@ Summary of Active RC-Corners :
 Updating RC Grid density data for preRoute extraction ...
 Initializing multi-corner resistance tables ...
 Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
-% Begin Load Min Layer Data (date=03/16 12:27:06, mem=2572.2M)
+% Begin Load Min Layer Data (date=03/17 19:56:11, mem=2589.2M)
 Read 0 nets
-% End Load Min Layer Data (date=03/16 12:27:06, total cpu=0:00:00.1, real=0:00:00.0, peak res=2572.2M, current mem=2572.2M)
+% End Load Min Layer Data (date=03/17 19:56:11, total cpu=0:00:00.1, real=0:00:00.0, peak res=2589.2M, current mem=2589.2M)
 +----------------------------------------------------------------+
     Summary of 'read_db syn_opt.cdb'                     
 +----------------------------------------------------------------+
     Generated by         :     Innovus 25.11-s102_1
-    Generated on         :     Mon Mar 16 12:27:06 EDT 2026
+    Generated on         :     Tue Mar 17 19:56:11 EDT 2026
     Design               :     Core 
     process_node         :     130  
     db units             :     1000 
     tech_mfg_grid        :     0.005
-    bbox                 :     {0.0 0.0 991.71 989.46}
-    core_bbox            :     {0.0 0.0 991.71 989.46}
+    bbox                 :     {0.0 0.0 993.295 989.46}
+    core_bbox            :     {0.0 0.0 993.295 989.46}
 +----------------------------------------------------------------+
     Object Type          :     Count
 +-----------------------------------+
@@ -475,11 +475,11 @@ Read 0 nets
 +-----------------------------------+
     base_cells           :     118  
     modules              :     0    
-    insts                :     7018 
+    insts                :     7202 
     ports                :     3    
-    nets                 :     8800 
-    hnets                :     8800 
-    pins                 :     27793
+    nets                 :     8960 
+    hnets                :     8960 
+    pins                 :     28278
     pg_nets              :     2    
 +-----------------------------------+
     layers               :     13   
@@ -489,7 +489,7 @@ Read 0 nets
     core_rows            :     239  
     track_patterns       :     10   
 +-----------------------------------+
-#% End Load Common DB (date=03/16 12:27:06, total cpu=0:00:06.2, real=0:00:09.0, peak res=2576.3M, current mem=2573.1M)
+#% End Load Common DB (date=03/17 19:56:11, total cpu=0:00:07.7, real=0:00:10.0, peak res=2592.9M, current mem=2590.1M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -606,7 +606,7 @@ UM:*                                                                   floorplan
 @@flow 2: set_db flow_write_db_common false
 #@ End verbose flow_step implementation.floorplan.block_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          43.86             50                                      block_start
+UM:          49.81             55                                      block_start
 #@ Begin verbose flow_step implementation.floorplan.init_innovus.init_innovus_yaml
 @flow 2: if {[get_feature report_lec]} {...}
 @flow 8: # Design attributes  [get_db -category design]
@@ -662,7 +662,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 @flow 59: #-------------------------------------------------------------------------------
 #@ End verbose flow_step implementation.floorplan.init_innovus.init_innovus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.67              4                                      init_innovus_yaml
+UM:            3.9              4                                      init_innovus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_innovus
 #@ Begin verbose flow_step implementation.floorplan.init_innovus.init_innovus_user
@@ -683,7 +683,7 @@ UM:*                                                                   init_inno
 @flow 22: #-----------------------------------------------------------------------------
 #@ End verbose flow_step implementation.floorplan.init_innovus.init_innovus_user
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.15              4                                      init_innovus_user
+UM:           3.42              4                                      init_innovus_user
 #@ Begin verbose flow_step implementation.floorplan.init_floorplan
 @flow 2: #- initialize floorplan object using DEF and/or floorplan files
 @flow 3: source ./scripts/floorplan.tcl
@@ -704,7 +704,7 @@ RUNNING FLOORPLAN.TCL
 @file 11: # Create the core area of the floorplan with dimensions based on site sizes
 @file 12: # Assuming we have approximately a 100x100 um box as the placeholder floorplan 
 @file 13: # The floorplan width is calculated as sitesx * 220 and height as sitesy * 25
-@@file 14: create_floorplan -core_size [expr {$sitesx*2100}] [expr {$sitesy*300}] 30 30 30 30
+@@file 14: create_floorplan -core_size [expr {$sitesx*2100}] [expr {$sitesy*260}] 30 30 30 30
 **WARN: (IMPFP-4026):	Adjusting core to 'Left' to 29.900000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
 **WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 29.900000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
 **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 29.900000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
@@ -736,9 +736,18 @@ Type 'man IMPFP-3961' for more detail.
 @file 21: set dy [get_db designs .bbox.dy]  ;
 @file 21: # Get the design's Y dimension (height)
 @file 22:
-@file 23: ## Add Power Grid
-@file 24: # Source an external script to add a power grid to the design
-@file 25: source ./scripts/add_power.tcl
+@file 23: # Macro Placement
+@@file 24: place_inst InstructionFetch_Module_InstructionMemory_instr_sram 180 50 
+@@file 25: place_inst MainMemory_data_sram 180 550 
+@file 26:
+@file 27: # Macro Protection
+@@file 28: create_route_blockage -inst InstructionFetch_Module_InstructionMemory_instr_sram -layers {met1 met2 met3 met4} -cover
+@@file 29: create_route_blockage -inst MainMemory_data_sram -layers {met1 met2 met3 met4} -cover
+@@file 30: create_place_blockage -all_macros
+@file 31:
+@file 32: ## Add Power Grid
+@file 33: # Source an external script to add a power grid to the design
+@file 34: source ./scripts/add_power.tcl
 #@ Begin verbose source ./scripts/add_power.tcl (pre)
 @@file 1: connect_global_net VDD -type pg_pin -pin_base_name vccd1
 @@file 2: connect_global_net VSS -type pg_pin -pin_base_name vssd1
@@ -757,13 +766,14 @@ Type 'man IMPFP-3961' for more detail.
 }
 InstructionFetch_Module_InstructionMemory_instr_sram
 MainMemory_data_sram
-@@file 16: add_rings -nets {VDD VSS} -layer {top met5 bottom met5 left met4 right met4} -width {top 4.8 bottom 4.8 left 4.8 right 4.8} -spacing {top 4.8 bottom 4.8 left 4.8 right 4.8} -offset {top 2 bottom 2 left 2 right 2} -center 0 -threshold 0.4 -jog_distance 0.4 -snap_wire_center_to_grid none
-#% Begin add_rings (date=03/16 12:27:20, mem=2595.3M)
+@file 16: # Core ring
+@@file 17: add_rings -nets {VDD VSS} -layer {top met5 bottom met5 left met4 right met4} -width {top 4.8 bottom 4.8 left 4.8 right 4.8} -spacing {top 4.8 bottom 4.8 left 4.8 right 4.8} -offset {top 2 bottom 2 left 2 right 2} -center 0 -threshold 0.4 -jog_distance 0.4 -snap_wire_center_to_grid none
+#% Begin add_rings (date=03/17 19:56:27, mem=2614.1M)
 
 
-viaInitial starts at Mon Mar 16 12:27:21 2026
-viaInitial ends at Mon Mar 16 12:27:21 2026
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2595.6M)
+viaInitial starts at Tue Mar 17 19:56:27 2026
+viaInitial ends at Tue Mar 17 19:56:27 2026
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2615.1M)
 Ring generation is complete.
 vias are now being generated.
 add_rings created 8 wires.
@@ -775,21 +785,103 @@ ViaGen created 8 vias, deleted 0 via to avoid violation.
 |  via4  |        8       |        0       |
 |  met5  |        4       |       NA       |
 +--------+----------------+----------------+
-#% End add_rings (date=03/16 12:27:21, total cpu=0:00:00.1, real=0:00:00.0, peak res=2598.8M, current mem=2598.8M)
-@file 17:
-@@file 18: route_special -connect { core_pin } -block_pin_target { nearest_target } -core_pin_target { first_after_row_end } -core_pin_layer { met1 } -block_pin_layer_range { met3 met4 } -delete_existing_routes -nets { VDD VSS }
-#% Begin route_special (date=03/16 12:27:21, mem=2598.8M)
-**WARN: (IMPSR-4058):	Route_special option: blockPinLayerRange should be used in conjunction with option: -connect blockPin. 
-**WARN: (IMPSR-4058):	Route_special option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
-*** Begin SPECIAL ROUTE on Mon Mar 16 12:27:21 2026 ***
+#% End add_rings (date=03/17 19:56:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=2617.5M, current mem=2617.5M)
+@file 18:
+@file 19: # Macro rings around SRAMs
+@@file 20: add_rings -nets {VDD VSS} \
+    -around each_block \
+    -layer {top met5 bottom met5 left met4 right met4} \
+    -width 2 -spacing 2 -offset 1
+#% Begin add_rings (date=03/17 19:56:27, mem=2617.5M)
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2617.5M)
+**WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'add_io_fillers' command to fill gaps between the cells and try again.
+Type 'man IMPPP-4051' for more detail.
+Ring generation is complete.
+#% End add_rings (date=03/17 19:56:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=2617.5M, current mem=2617.5M)
+@file 24:
+@file 25: # Power stripes
+@@file 26: add_stripes -nets {VDD VSS} -layer met5 -direction horizontal -width 3 -spacing 20 -set_to_set_distance 50 -start_from bottom -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit met5 -pad_core_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met5 -block_ring_bottom_layer_limit met4 -use_wire_group 0 -snap_wire_center_to_grid none
+#% Begin add_stripes (date=03/17 19:56:27, mem=2617.5M)
+
+Initialize fgc environment(mem: 2617.6M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2617.6M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2617.7M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2617.7M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2617.7M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.3M)
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 43 wires.
+ViaGen created 154 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  via4  |       154      |        0       |
+|  met5  |       43       |       NA       |
++--------+----------------+----------------+
+#% End add_stripes (date=03/17 19:56:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=2618.9M, current mem=2618.9M)
+@file 27:
+@@file 28: add_stripes -nets {VDD VSS} -layer met4 -direction vertical -width 3 -spacing 20 -set_to_set_distance 50 -start_from left -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit met5 -pad_core_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met5 -block_ring_bottom_layer_limit met4 -use_wire_group 0 -snap_wire_center_to_grid none
+#% Begin add_stripes (date=03/17 19:56:27, mem=2618.9M)
+
+Initialize fgc environment(mem: 2618.9M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2618.9M)
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 95 wires.
+ViaGen created 441 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  met4  |       95       |       NA       |
+|  via4  |       441      |        0       |
++--------+----------------+----------------+
+#% End add_stripes (date=03/17 19:56:27, total cpu=0:00:00.1, real=0:00:01.0, peak res=2618.9M, current mem=2618.9M)
+@file 29:
+@file 30: # Connect standard cell and macro power pins to grid
+@@file 31: route_special \
+    -connect { core_pin block_pin } \
+    -block_pin_target { nearest_target } \
+    -core_pin_target { first_after_row_end } \
+    -core_pin_layer { met1 } \
+    -block_pin_layer_range { met3 met4 } \
+    -delete_existing_routes \
+    -nets { VDD VSS }
+#% Begin route_special (date=03/17 19:56:28, mem=2618.9M)
+*** Begin SPECIAL ROUTE on Tue Mar 17 19:56:28 2026 ***
 SPECIAL ROUTE ran on directory: /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
-SPECIAL ROUTE ran on machine: ece-rschsrv.ece.gatech.edu (Linux 4.18.0-553.89.1.el8_10.x86_64 Xeon 2.80Ghz)
+SPECIAL ROUTE ran on machine: ece-linlabsrv01 (Linux 4.18.0-553.104.1.el8_10.x86_64 Xeon 2.80Ghz)
 
 Begin option processing ...
 srouteConnectPowerBump set to false
 routeSelectNet set to "VDD VSS"
 routeSpecial set to true
-srouteConnectBlockPin set to false
 srouteConnectConverterPin set to false
 srouteConnectPadPin set to false
 srouteConnectStripe set to false
@@ -802,7 +894,7 @@ srouteMinBlockPinLayer set to 3
 sroutePadPinAllPorts set to true
 srouteRoutePowerBarPortOnBothDir set to true
 srouteStopBlockPin set to "nearestTarget"
-End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1034.00 megs.
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1033.00 megs.
 
 Reading DB technology information...
 Finished reading DB technology information.
@@ -810,138 +902,67 @@ Reading floorplan and netlist information...
 Finished reading floorplan and netlist information.
 **WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
 Read in 11 layers, 5 routing layers, 1 overlap layer
-Read in 118 macros, 59 used
-Read in 58 components
-  58 core components: 58 unplaced, 0 placed, 0 fixed
+Read in 118 macros, 64 used
+Read in 64 components
+  62 core components: 62 unplaced, 0 placed, 0 fixed
+  2 block/ring components: 0 unplaced, 0 placed, 2 fixed
 Read in 3 logical pins
+Read in 11 blockages
 Read in 3 nets
 Read in 2 special nets, 2 routed
-Read in 116 terminals
+Read in 128 terminals
 2 nets selected.
 
 Begin power routing ...
 CPU time for VDD FollowPin 0 seconds
 CPU time for VSS FollowPin 0 seconds
-  Number of Core ports routed: 602
-  Number of Followpin connections: 301
-End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1051.00 megs.
+  Number of Block ports routed: 0  open: 4
+  Number of Core ports routed: 563  open: 363
+  Number of Followpin connections: 463
+  4 ports open due to poor power planning
+End power routing: cpu: 0:00:04, real: 0:00:03, peak: 1137.00 megs.
 
 
 
  Begin updating DB with routing results ...
- Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+ Updating DB with 9 via definition ...Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 
-route_special created 903 wires.
-ViaGen created 1806 vias, deleted 0 via to avoid violation.
-+--------+----------------+----------------+
-|  Layer |     Created    |     Deleted    |
-+--------+----------------+----------------+
-|  met1  |       903      |       NA       |
-|   via  |       602      |        0       |
-|  via2  |       602      |        0       |
-|  via3  |       602      |        0       |
-+--------+----------------+----------------+
-#% End route_special (date=03/16 12:27:21, total cpu=0:00:00.3, real=0:00:00.0, peak res=2615.8M, current mem=2610.3M)
-@file 19:
-@@file 20: add_stripes -nets {VDD VSS} -layer met5 -direction horizontal -width 3 -spacing 20 -set_to_set_distance 50 -start_from bottom -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit met5 -pad_core_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met5 -block_ring_bottom_layer_limit met4 -use_wire_group 0 -snap_wire_center_to_grid none
-#% Begin add_stripes (date=03/16 12:27:21, mem=2610.3M)
 
-Initialize fgc environment(mem: 2610.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.3M)
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.3M)
-Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.3M)
-Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.3M)
-Starting stripe generation ...
-Non-Default Mode Option Settings :
-  NONE
-Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2610.7M)
-Stripe generation is complete.
-vias are now being generated.
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (30.30, 87.66) (995.50, 87.90).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (23.10, 87.66) (29.90, 88.06).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (29.90, 87.66) (33.30, 88.06).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (992.50, 87.66) (995.90, 88.06).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (995.90, 87.66) (1002.70, 88.06).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (23.10, 137.34) (29.90, 137.74).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (29.90, 137.34) (995.90, 137.74).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (995.90, 137.34) (1002.70, 137.74).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (23.10, 187.02) (29.90, 187.42).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (29.90, 187.02) (995.90, 187.42).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (995.90, 187.02) (1002.70, 187.42).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (23.10, 236.70) (29.90, 237.10).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (29.90, 236.70) (995.90, 237.10).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (995.90, 236.70) (1002.70, 237.10).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (23.10, 286.38) (29.90, 286.78).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (29.90, 286.38) (995.90, 286.78).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (995.90, 286.38) (1002.70, 286.78).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (23.10, 336.06) (29.90, 336.46).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (29.90, 336.06) (995.90, 336.46).
-**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (995.90, 336.06) (1002.70, 336.46).
-**WARN: (EMS-27):	Message (IMPPP-532) has exceeded the current message display limit of 20.
-To increase the message display limit, refer to the product command reference manual.
-add_stripes created 70 wires.
-ViaGen created 140 vias, deleted 0 via to avoid violation.
-+--------+----------------+----------------+
-|  Layer |     Created    |     Deleted    |
-+--------+----------------+----------------+
-|   via  |       10       |        0       |
-|  via2  |       10       |        0       |
-|  via3  |       10       |        0       |
-|  met4  |       10       |       NA       |
-|  via4  |       110      |        0       |
-|  met5  |       60       |       NA       |
-+--------+----------------+----------------+
-#% End add_stripes (date=03/16 12:27:21, total cpu=0:00:00.1, real=0:00:00.0, peak res=2611.8M, current mem=2611.8M)
-@file 21:
-@@file 22: add_stripes -nets {VDD VSS} -layer met4 -direction vertical -width 3 -spacing 20 -set_to_set_distance 50 -start_from left -start_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit met5 -pad_core_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met5 -block_ring_bottom_layer_limit met4 -use_wire_group 0 -snap_wire_center_to_grid none
-#% Begin add_stripes (date=03/16 12:27:21, mem=2611.8M)
+route_special post-processing starts at Tue Mar 17 19:56:31 2026
+The viaGen is rebuilding shadow vias for net VSS.
+**WARN: (IMPPP-531):	ViaGen Warning: Due to invalid enclosure or via size after adjusting via metal, viaGen fail to generate via on layer via4 at (178.63, 57.90) (179.56, 60.90).
+**WARN: (IMPPP-531):	ViaGen Warning: Due to invalid enclosure or via size after adjusting via metal, viaGen fail to generate via on layer via4 at (178.63, 557.90) (179.56, 560.90).
+**WARN: (IMPPP-531):	ViaGen Warning: Due to invalid enclosure or via size after adjusting via metal, viaGen fail to generate via on layer via4 at (178.63, 957.90) (179.56, 960.90).
+route_special post-processing ends at Tue Mar 17 19:56:31 2026
 
-Initialize fgc environment(mem: 2611.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2611.8M)
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2611.8M)
-Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2611.8M)
-Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2611.8M)
-Starting stripe generation ...
-Non-Default Mode Option Settings :
-  NONE
-Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.1M)
-Stripe generation is complete.
-vias are now being generated.
-add_stripes created 39 wires.
-ViaGen created 18663 vias, deleted 0 via to avoid violation.
+route_special post-processing starts at Tue Mar 17 19:56:31 2026
+The viaGen is rebuilding shadow vias for net VDD.
+**WARN: (IMPPP-531):	ViaGen Warning: Due to invalid enclosure or via size after adjusting via metal, viaGen fail to generate via on layer via4 at (863.26, 434.90) (864.21, 437.90).
+route_special post-processing ends at Tue Mar 17 19:56:31 2026
+route_special created 1089 wires.
+ViaGen created 8353 vias, deleted 0 via to avoid violation.
 +--------+----------------+----------------+
 |  Layer |     Created    |     Deleted    |
 +--------+----------------+----------------+
-|   via  |      5870      |        0       |
-|  via2  |      5870      |        0       |
-|  via3  |      5870      |        0       |
-|  met4  |       39       |       NA       |
-|  via4  |      1053      |        0       |
+|  met1  |       991      |       NA       |
+|   via  |      2805      |        0       |
+|  met2  |       47       |       NA       |
+|  via2  |      2772      |        0       |
+|  met3  |       43       |       NA       |
+|  via3  |      2772      |        0       |
+|  met4  |        6       |       NA       |
+|  via4  |        4       |        0       |
+|  met5  |        2       |       NA       |
 +--------+----------------+----------------+
-#% End add_stripes (date=03/16 12:27:22, total cpu=0:00:00.8, real=0:00:01.0, peak res=2613.7M, current mem=2613.7M)
-@file 23:
-@file 24:
+#% End route_special (date=03/17 19:56:31, total cpu=0:00:03.8, real=0:00:03.0, peak res=2709.0M, current mem=2637.5M)
+@file 39:
+@file 40:
 #@ End verbose source ./scripts/add_power.tcl
-@file 26:
-@file 27: ## Add Pins
-@file 28: # Source an external script to add pins to the design
-@file 29: source ./scripts/add_pins.tcl
+@file 35:
+@file 36: ## Add Pins
+@file 37: # Source an external script to add pins to the design
+@file 38: source ./scripts/add_pins.tcl
 #@ Begin verbose source ./scripts/add_pins.tcl (pre)
 @file 1: # Set the status of all partition pins to "unplaced"
 @file 2: # This ensures that all pins in the partition are marked as not yet placed in the design.
@@ -955,42 +976,42 @@ Processed 3 pins over 1 partitions.
 @file 8: # - `-pattern fill_optimised`: Specifies a placement pattern for the pins, optimized for filling.
 @file 9: # - `-layer {2 3 4 5}`: Assigns the pins to metal layers 2, 3, 4, and 5 for routing purposes.
 @file 10: # - `-start {10 10}` and `-end {10 10}`: Sets both the start and end coordinates of pin placement to (10, 10), to spread pins over all edges of the rectangular floorplan.
-@@file 11: edit_pin -fixed_pin -pin * -pattern fill_optimised -layer {2 3 4 5} -start {10 10} -end {10 10}
+@@file 11: edit_pin -fixed_pin -pin * -pattern fill_layer -layer {2 3 4 5} -start {0 0} -end {100 200}
 To speed up, if you have to run multiple edit_pin commands then wrap all edit_pin commands within  'set_db assign_pins_edit_in_batch true' (then edit_pin commands) and 'set_db assign_pins_edit_in_batch false'
-**ERROR: (IMPPTN-1900):	Number of selected pins should be greater than twice the number of selected layers. Select the pin set correctly or use different pattern like fill_layer to assign the pins.
-editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2629.9M).
+Successfully spread [3] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2652.8M).
 @file 12:
 @file 13: # Disable batch mode for pin assignment edits
 @file 14: # When `assign_pins_edit_in_batch` is set to false, pin edits are applied immediately rather than being queued for batch processing.
 @@file 15: set_db assign_pins_edit_in_batch false
 @file 16:
 #@ End verbose source ./scripts/add_pins.tcl
-@file 30:
-@file 31: # Align all elements in the floorplan to the nearest grid point
-@@file 32: snap_floorplan -all
-@file 33:
-@file 34: # Conditional block for optional macro placement and optimization (currently disabled)
-@file 35: if {0} {...}
-@file 48:
-@file 49: # Print a message indicating the end of the floorplan script
-@file 50: puts "ENDING FLOORPLAN.TCL"
+@file 39:
+@file 40: # Align all elements in the floorplan to the nearest grid point
+@@file 41: snap_floorplan -all
+@file 42:
+@file 43: # Conditional block for optional macro placement and optimization (currently disabled)
+@file 44: if {0} {...}
+@file 57:
+@file 58: # Print a message indicating the end of the floorplan script
+@file 59: puts "ENDING FLOORPLAN.TCL"
 ENDING FLOORPLAN.TCL
-@file 51:
+@file 60:
 #@ End verbose source ./scripts/floorplan.tcl
 #@ End verbose flow_step implementation.floorplan.init_floorplan
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           4.91              5                                      init_floorplan
+UM:           8.21              8                                      init_floorplan
 #@ Begin verbose flow_step implementation.floorplan.commit_power_intent
 @flow 2: if {[join [dict values [get_db init_power_intent_files]]] ne {}} {...}
 #@ End verbose flow_step implementation.floorplan.commit_power_intent
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:            3.2              3                                      commit_power_intent
+UM:           3.44              4                                      commit_power_intent
 #@ Begin verbose flow_step implementation.floorplan.add_tracks
 @flow 2: #- generate tracks after creating floorplan
 @flow 3: if {[llength [get_db current_design .track_patterns]] == 0} {...}
 #@ End verbose flow_step implementation.floorplan.add_tracks
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.23              3                                      add_tracks
+UM:           3.51              4                                      add_tracks
 #@ Begin verbose flow_step implementation.floorplan.block_finish
 @flow 2: apply {{} {
     #- Make sure flow_report_name is reset from any reports executed during the flow
@@ -1025,55 +1046,57 @@ UM:           3.23              3                                      add_track
   }}
 #@ End verbose flow_step implementation.floorplan.block_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.32              3                                      block_finish
-#% Begin save design ... (date=03/16 12:27:33, mem=2632.9M)
+UM:           3.57              3                                      block_finish
+#% Begin save design ... (date=03/17 19:56:44, mem=2654.4M)
 ff_v1.98_0C tt_v1.8_25C ss_v1.62_125C
 Nominal_25C
-% Begin Save ccopt configuration ... (date=03/16 12:27:33, mem=2632.9M)
-% End Save ccopt configuration ... (date=03/16 12:27:33, total cpu=0:00:00.1, real=0:00:00.0, peak res=2634.0M, current mem=2634.0M)
-% Begin Save netlist data ... (date=03/16 12:27:33, mem=2634.0M)
+% Begin Save ccopt configuration ... (date=03/17 19:56:44, mem=2654.4M)
+% End Save ccopt configuration ... (date=03/17 19:56:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=2655.6M, current mem=2655.6M)
+% Begin Save netlist data ... (date=03/17 19:56:44, mem=2655.6M)
 Writing Binary DB to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.v.bin in single-threaded mode...
-% End Save netlist data ... (date=03/16 12:27:33, total cpu=0:00:00.1, real=0:00:01.0, peak res=2634.2M, current mem=2634.2M)
+% End Save netlist data ... (date=03/17 19:56:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=2655.7M, current mem=2655.7M)
 Saving symbol-table file ...
 Saving congestion map file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.route.congmap.gz ...
-% Begin Save AAE data ... (date=03/16 12:27:34, mem=2634.2M)
+% Begin Save AAE data ... (date=03/17 19:56:45, mem=2656.3M)
 Saving AAE Data ...
-% End Save AAE data ... (date=03/16 12:27:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=2695.0M, current mem=2635.0M)
+% End Save AAE data ... (date=03/17 19:56:45, total cpu=0:00:00.2, real=0:00:00.0, peak res=2733.8M, current mem=2657.3M)
 Saving preference file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/gui.pref.tcl ...
 Saving mode setting ...
 Saving root attributes to be loaded post write_db ...
 **WARN: (IMPMF-5054):	fill_setting_save command is obsolete and should not be used any more. It still works in this release but will be removed in future release. Recommend to use Pegasus metal fill flow which is the replacement.
 Saving global file ...
 Saving root attributes to be loaded previous write_db ...
-% Begin Save floorplan data ... (date=03/16 12:27:36, mem=2641.9M)
+% Begin Save floorplan data ... (date=03/17 19:56:47, mem=2665.1M)
 Saving floorplan file ...
-% End Save floorplan data ... (date=03/16 12:27:36, total cpu=0:00:00.1, real=0:00:00.0, peak res=2642.1M, current mem=2642.1M)
-Saving PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on Mon Mar 16 12:27:36 2026)
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2642.3M) ***
+% End Save floorplan data ... (date=03/17 19:56:47, total cpu=0:00:00.1, real=0:00:00.0, peak res=2665.4M, current mem=2665.4M)
+Saving PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on Tue Mar 17 19:56:47 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2665.7M) ***
 *info - save blackBox cells to lef file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.bbox.lef
 Saving Drc markers ...
-... No Drc file written since there is no markers found.
-% Begin Save placement data ... (date=03/16 12:27:36, mem=2642.3M)
+... 363 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+% Begin Save placement data ... (date=03/17 19:56:48, mem=2666.3M)
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
-% End Save placement data ... (date=03/16 12:27:36, total cpu=0:00:00.1, real=0:00:00.0, peak res=2643.1M, current mem=2643.1M)
-% Begin Save routing data ... (date=03/16 12:27:36, mem=2643.1M)
+% End Save placement data ... (date=03/17 19:56:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2666.6M, current mem=2666.6M)
+% Begin Save routing data ... (date=03/17 19:56:48, mem=2666.6M)
 Saving route file ...
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=2644.3M) ***
-% End Save routing data ... (date=03/16 12:27:37, total cpu=0:00:00.1, real=0:00:01.0, peak res=2643.3M, current mem=2643.3M)
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2667.8M) ***
+% End Save routing data ... (date=03/17 19:56:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=2666.9M, current mem=2666.9M)
 Saving property file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2646.8M) ***
+*** Completed saveProperty (cpu=0:00:00.1 real=0:00:00.0 mem=2670.4M) ***
 Saving preRoute extracted patterns in file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/Core.techData.gz' ...
 Saving preRoute extraction data in directory '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/floorplan.enc/extraction/' ...
-% Begin Save power constraints data ... (date=03/16 12:27:37, mem=2646.8M)
-% End Save power constraints data ... (date=03/16 12:27:37, total cpu=0:00:00.1, real=0:00:00.0, peak res=2646.8M, current mem=2646.8M)
+% Begin Save power constraints data ... (date=03/17 19:56:49, mem=2670.4M)
+% End Save power constraints data ... (date=03/17 19:56:49, total cpu=0:00:00.1, real=0:00:00.0, peak res=2670.4M, current mem=2670.4M)
 Nominal_25C
 Nominal_25C
 Nominal_25C
 **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
 **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
 Generated self-contained design floorplan.enc
-#% End save design ... (date=03/16 12:27:38, total cpu=0:00:03.3, real=0:00:05.0, peak res=2695.0M, current mem=2648.2M)
+#% End save design ... (date=03/17 19:56:50, total cpu=0:00:03.9, real=0:00:06.0, peak res=2733.8M, current mem=2671.9M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -1101,7 +1124,7 @@ Directory 'output/screenshots' created.
 @@flow 18: write_to_gif $outfile
 #@ End verbose flow_step implementation.floorplan.write_output_screenshot
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           3.26              3                                      write_output_screenshot
+UM:           3.63              4                                      write_output_screenshot
 #@ Begin verbose flow_step implementation.floorplan.schedule_floorplan_report_floorplan
 @@flow 2: schedule_flow -flow report_floorplan -include_in_metrics
 #@ End verbose flow_step implementation.floorplan.schedule_floorplan_report_floorplan
@@ -1109,8 +1132,8 @@ UM:           3.26              3                                      write_out
 Program version = 25.11-s102_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 16, 2026 12:27:09
-Ending time = Mar 16, 2026 12:27:47
+Starting time = Mar 17, 2026 19:56:14
+Ending time = Mar 17, 2026 19:57:00
 
 Run Flow Summary
 ---------------------
@@ -1131,13 +1154,13 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:03:13          | 0:03:18           |                     0 |                11.575 |
-| syn_map     | 0:03:16          | 0:03:14           |                     0 |                11.466 |
-| syn_opt     | 0:01:12          | 0:01:18           |                       |                       |
-| floorplan   | 0:01:09          | 0:01:15           |                       |                       |
+| syn_generic | 0:03:58          | 0:04:05           |                     0 |                 4.065 |
+| syn_map     | 0:03:40          | 0:03:31           |                     0 |                 0.661 |
+| syn_opt     | 0:01:29          | 0:01:32           |                       |                       |
+| floorplan   | 0:01:20          | 0:01:26           |                       |                       |
  ---------------------------------------------------------------------------------------------------- 
-*** Message Summary: 208 warning(s), 1 error(s)
+*** Message Summary: 149 warning(s), 0 error(s)
 
 
-*** Memory Usage v#1 (Current mem = 2845.547M, initial mem = 930.953M) ***
---- Ending "Innovus" (totcpu=0:01:19, real=0:01:28, mem=2845.5M) ---
+*** Memory Usage v#1 (Current mem = 2862.543M, initial mem = 945.387M) ***
+--- Ending "Innovus" (totcpu=0:01:31, real=0:01:39, mem=2862.5M) ---

@@ -3,7 +3,7 @@
 ##
 ## Written by Genus(TM) Synthesis Solution version 25.11-s095_1
 ## Generated using: Flowkit 25.10-b003_1
-## Written on 12:26:06 16-Mar 2026
+## Written on 19:55:04 17-Mar 2026
 #############################################################
 #####   Flow Definitions   ##################################
 
@@ -1979,6 +1979,9 @@ create_flow_step -name init_genus_user -start_steps {} -end_steps {} -owner desi
   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
   #-----------------------------------------------------------------------------
   
+  # Override PDK dont_use to enable ICGX1 for clock gating insertion
+  set_db [get_db lib_cells ICGX1] .dont_use false
+
 }
 if {[is_attribute run_count -obj_type flow_step]} {set_db flow_step:init_genus_user .run_count 1}
 if {[is_attribute status -obj_type flow_step]} {set_db flow_step:init_genus_user .status success}
@@ -2212,8 +2215,8 @@ if {[is_attribute flow_step_canonical_current -obj_type root]} {set_db flow_step
 if {[is_attribute flow_step_next -obj_type root]} {set_db flow_step_next {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_opt .steps flow_step:schedule_syn_opt_report_synth} step flow_step:schedule_syn_opt_report_synth features {} str synthesis.syn_opt.schedule_syn_opt_report_synth}}
 if {[is_attribute flow_working_directory -obj_type root]} {set_db flow_working_directory .}
 if {[is_attribute flow_branch -obj_type root]} {set_db flow_branch {}}
-if {[is_attribute flow_caller_data -obj_type root]} {set_db flow_caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878}}
-if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid fb1738cc-1a8c-4a70-8208-0547112e3c4c}
+if {[is_attribute flow_caller_data -obj_type root]} {set_db flow_caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620}}
+if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid d508d0c7-078a-414a-a564-912bdd7afb52}
 if {[is_attribute flow_starting_db -obj_type root]} {set_db flow_starting_db {rc dbs/syn_map.db Core {}}}
 if {[is_attribute flow_db_directory -obj_type root]} {set_db flow_db_directory dbs}
 if {[is_attribute flow_report_directory -obj_type root]} {set_db flow_report_directory reports}

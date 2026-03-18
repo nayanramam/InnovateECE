@@ -31,8 +31,12 @@ add mapped point InstructionExecute_Module/ex_pc_addr_pt_op[31]/q InstructionExe
 add mapped point InstructionExecute_Module/ex_wb_mux_op[0]/q InstructionExecute_Module_ex_wb_mux_op_reg[0]/Q -type DFF DFF
 add mapped point InstructionExecute_Module/ex_wb_mux_op[1]/q InstructionExecute_Module_ex_wb_mux_op_reg[1]/Q -type DFF DFF
 add mapped point InstructionExecute_Module/ex_wb_mux_op[2]/q InstructionExecute_Module_ex_wb_mux_op_reg[2]/Q -type DFF DFF
+add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[0]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[0]/Q -type DFF DFF
+add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[1]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[1]/Q -type DFF DFF
+add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[2]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[2]/Q -type DFF DFF
+add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[3]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[3]/Q -type DFF DFF
+add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[4]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[4]/Q -type DFF DFF
 add mapped point LoadStoreUnit/lsu_pc_addr_pt_op[31]/q LoadStoreUnit_lsu_pc_addr_pt_op_reg[31]/Q -type DFF DFF
-add mapped point LoadStoreUnit/lsu_wb_mux_pt_op[2]/q LoadStoreUnit_lsu_wb_mux_pt_op_reg[2]/Q -type DFF DFF
 add mapped point LoadStoreUnit/lsu_write_reg_addr_pt_op[0]/q LoadStoreUnit_lsu_write_reg_addr_pt_op_reg[0]/Q -type DFF DFF
 add mapped point LoadStoreUnit/lsu_write_reg_addr_pt_op[1]/q LoadStoreUnit_lsu_write_reg_addr_pt_op_reg[1]/Q -type DFF DFF
 add mapped point LoadStoreUnit/lsu_write_reg_addr_pt_op[2]/q LoadStoreUnit_lsu_write_reg_addr_pt_op_reg[2]/Q -type DFF DFF
@@ -1305,11 +1309,6 @@ add mapped point InstructionExecute_Module/alu_result_op[28]/q InstructionExecut
 add mapped point InstructionExecute_Module/alu_result_op[29]/q InstructionExecute_Module_alu_result_op_reg[29]/Q -type DFF DFF
 add mapped point InstructionExecute_Module/alu_result_op[30]/q InstructionExecute_Module_alu_result_op_reg[30]/Q -type DFF DFF
 add mapped point InstructionExecute_Module/alu_result_op[31]/q InstructionExecute_Module_alu_result_op_reg[31]/Q -type DFF DFF
-add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[0]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[0]/Q -type DFF DFF
-add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[1]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[1]/Q -type DFF DFF
-add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[2]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[2]/Q -type DFF DFF
-add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[3]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[3]/Q -type DFF DFF
-add mapped point InstructionExecute_Module/ex_write_reg_addr_pt_op[4]/q InstructionExecute_Module_ex_write_reg_addr_pt_op_reg[4]/Q -type DFF DFF
 add mapped point InstructionFetch_Module/FetchModule/PC[0]/q InstructionFetch_Module_FetchModule_PC_reg[0]/Q -type DFF DFF
 add mapped point InstructionFetch_Module/FetchModule/PC[1]/q InstructionFetch_Module_FetchModule_PC_reg[1]/Q -type DFF DFF
 add mapped point InstructionFetch_Module/FetchModule/PC[2]/q InstructionFetch_Module_FetchModule_PC_reg[2]/Q -type DFF DFF
@@ -1473,6 +1472,7 @@ add mapped point LoadStoreUnit/lsu_pc_addr_pt_op[29]/q LoadStoreUnit_lsu_pc_addr
 add mapped point LoadStoreUnit/lsu_pc_addr_pt_op[30]/q LoadStoreUnit_lsu_pc_addr_pt_op_reg[30]/Q -type DFF DFF
 add mapped point LoadStoreUnit/lsu_wb_mux_pt_op[0]/q LoadStoreUnit_lsu_wb_mux_pt_op_reg[0]/Q -type DFF DFF
 add mapped point LoadStoreUnit/lsu_wb_mux_pt_op[1]/q LoadStoreUnit_lsu_wb_mux_pt_op_reg[1]/Q -type DFF DFF
+add mapped point LoadStoreUnit/lsu_wb_mux_pt_op[2]/q LoadStoreUnit_lsu_wb_mux_pt_op_reg[2]/Q -type DFF DFF
 add mapped point LoadStoreUnit/wb_alu_result_valid_pt_op/q LoadStoreUnit_wb_alu_result_valid_pt_op_reg/Q -type DFF DFF
 
 

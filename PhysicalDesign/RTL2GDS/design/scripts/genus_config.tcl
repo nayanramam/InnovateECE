@@ -50,4 +50,7 @@ create_flow_step -name init_genus_user -owner design {
   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
   #-----------------------------------------------------------------------------
   
+  # Override PDK dont_use to enable ICGX1 for clock gating insertion
+  set_db [get_db lib_cells ICGX1] .dont_use false
+
 }

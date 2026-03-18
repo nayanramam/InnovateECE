@@ -13,3 +13,20 @@ specific view and clock} dp 3 metric timing.min_pulse_width.endpoints.wns.analys
 ::goMC::um:set_metric_safe {timing.hold.analysis_views.number} {1}
 ::goMC::um:set_metric_safe {timing.setup.analysis_views} {tt_v1.8_25C_Nominal_25_func}
 ::goMC::um:set_metric_safe {timing.setup.analysis_views.number} {1}
+::goMC::um:set_metric_safe {timing.setup.feps} {21}
+::goMC::um:set_metric_safe {timing.setup.feps.analysis_view:tt_v1\.8_25C_Nominal_25_func} {21}
+::goMC::um:set_metric_safe {timing.setup.feps.path_group:reg2reg} {21}
+::goMC::um:set_metric_safe {timing.setup.feps.path_group:reg2reg.analysis_view:tt_v1\.8_25C_Nominal_25_func} {21}
+::goMC::um:set_metric_safe {timing.setup.tns} {-7.130 ns}
+::goMC::um:set_metric_safe {timing.setup.tns.analysis_view:tt_v1\.8_25C_Nominal_25_func} {-7.130 ns}
+::goMC::um:set_metric_safe {timing.setup.tns.path_group:reg2reg} {-7.130 ns}
+::goMC::um:set_metric_safe {timing.setup.tns.path_group:reg2reg.analysis_view:tt_v1\.8_25C_Nominal_25_func} {-7.130 ns}
+::goMC::um:set_metric_safe {timing.setup.wns} {-0.872 ns}
+::goMC::um:set_metric_safe {timing.setup.wns.analysis_view:tt_v1\.8_25C_Nominal_25_func} {-0.872 ns}
+::goMC::um:set_metric_safe {timing.setup.wns.path_group:HEPG} {-0.872 ns}
+::goMC::um:set_metric_safe {timing.setup.wns.path_group:HEPG.analysis_view:all_setup_analysis_views} {-0.872 ns}
+::goMC::um:set_metric_safe {timing.setup.wns.path_group:reg2reg} {-0.872 ns}
+::goMC::um:set_metric_safe {timing.setup.wns.path_group:reg2reg.analysis_view:tt_v1\.8_25C_Nominal_25_func} {-0.872 ns}
+::goMC::um:set_metric_safe {timing.setup.worst_path.capture_clock} {}
+::goMC::um:set_metric_safe {timing.setup.worst_path.launch_clock} {core_clock}
+::goMC::um:set_metric_safe {timing.setup.worst_path.view} {tt_v1\.8_25C_Nominal_25_func}

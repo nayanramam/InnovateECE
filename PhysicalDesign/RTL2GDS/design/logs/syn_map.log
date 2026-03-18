@@ -3,19 +3,19 @@ Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
-[12:21:49.185753] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[19:50:16.185777] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 Version: 25.11-s095_1, built Tue Aug 12 07:59:05 PDT 2025
-Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_map -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_map metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_map run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {rc dbs/syn_generic.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_map}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_map} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
-Date:    Mon Mar 16 12:21:49 2026
-Host:    ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB) (264007036KB)
-PID:     1370969
+Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_map -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_map metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_map run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {rc dbs/syn_generic.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_map}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_map} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
+Date:    Tue Mar 17 19:50:16 2026
+Host:    ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*4physical cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB) (196451532KB)
+PID:     175823
 OS:      Red Hat Enterprise Linux 8.10 (Ootpa)
 
 Checking out license: Genus_Synthesis
-[12:21:49.362938] Periodic Lic check successful
-[12:21:49.362953] Feature usage summary:
-[12:21:49.362954] Genus_Synthesis  
+[19:50:16.173272] Periodic Lic check successful
+[19:50:16.697578] Feature usage summary:
+[19:50:16.697578] Genus_Synthesis  
 License checkout complete (0 seconds elapsed).
 
 
@@ -24,13 +24,13 @@ License checkout complete (0 seconds elapsed).
 
 
 
-Finished executable startup (7 seconds elapsed).
+Finished executable startup (9 seconds elapsed).
 
 Loading tool scripts...
-Finished loading tool scripts (23 seconds elapsed).
+Finished loading tool scripts (28 seconds elapsed).
 
 #@ Processing -execute option
-@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_map metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_map run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {rc dbs/syn_generic.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_map}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_map} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_map metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_map run_tag {} db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {rc dbs/syn_generic.db Core {}} branch {} tool genus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_map}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_map.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_map .steps flow_step:schedule_syn_map_report_synth} step flow_step:schedule_syn_map_report_synth features {} str synthesis.syn_map.schedule_syn_map_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_map} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {rc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -375,7 +375,7 @@ UM:*                                                                   syn_map
   Setting attribute of root '/': 'flow_write_db_common' = false
 #@ End verbose flow_step synthesis.syn_map.block_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:             36             41                                      block_start
+UM:             44             50                                      block_start
 #@ Begin verbose flow_step synthesis.syn_map.init_genus.init_genus_yaml
 @flow_step(init_genus_yaml)  2:   # Timing attributes  [get_db -category tim]
 @flow_step(init_genus_yaml)  3:   #-------------------------------------------------------------------------------
@@ -413,7 +413,7 @@ UM:             36             41                                      block_sta
   Setting attribute of root '/': 'design_process_node' = 130
 #@ End verbose flow_step synthesis.syn_map.init_genus.init_genus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      init_genus_yaml
+UM:              4              3                                      init_genus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_genus
 #@ Begin verbose flow_step synthesis.syn_map.init_genus.init_genus_user
@@ -433,9 +433,11 @@ UM:*                                                                   init_genu
 @flow_step(init_genus_user) 13:   #-----------------------------------------------------------------------------
 @flow_step(init_genus_user) 15:   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
 @flow_step(init_genus_user) 16:   #-----------------------------------------------------------------------------
+@flow_step(init_genus_user) 18:   # Override PDK dont_use to enable ICGX1 for clock gating insertion
+@flow_step(init_genus_user) 19:   set_db [get_db lib_cells ICGX1] .dont_use false
 #@ End verbose flow_step synthesis.syn_map.init_genus.init_genus_user
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              2              3                                      init_genus_user
+UM:              3              3                                      init_genus_user
 #@ Begin verbose flow_step synthesis.syn_map.run_syn_map
 @flow_step(run_syn_map) 2:   #- Synthesize to target library gates
 @flow_step(run_syn_map) 3:   syn_map
@@ -460,7 +462,7 @@ INFO (IMPEXT-5003): /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/
 
 INFO (IMPEXT-7048): Generating auto layer map file.
 
-INFO (IMPEXT-6209): Completed (cpu: 1174862.000000 real: 1174862.000000)
+INFO (IMPEXT-6209): Completed (cpu: 1302891.000000 real: 1302891.000000)
 
 Mapping ChipWare ICG instances in Core
 Found 0 unmapped ChipWare ICG instances
@@ -525,7 +527,7 @@ stamp 'PBS_TechMap-Start' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:43) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:22:34 (Mar16) |  701.8 MB | PBS_TechMap-Start
+ 00:00:55(00:00:51) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:51:09 (Mar17) |  744.0 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -535,9 +537,9 @@ stamp 'PBS_TechMap-Premap HBO Optimizations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:43) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:22:34 (Mar16) |  701.8 MB | PBS_TechMap-Start
+ 00:00:55(00:00:51) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:51:09 (Mar17) |  744.0 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:44) |  00:00:00(00:00:01) |   0.0(100.0) |   12:22:35 (Mar16) |  720.6 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:55(00:00:52) |  00:00:00(00:00:01) |   0.0(100.0) |   19:51:10 (Mar17) |  744.0 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -595,18 +597,18 @@ Warning : Total power has skewed contributions from leakage and dynamic power. [
 Mapper: Libraries have:
 	domain tt_v1.8_25C: 88 combo usable cells and 18 sequential usable cells
 Multi-threaded constant propagation [1|0] ...
-Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 88 CPUs usable)
+Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 112 CPUs usable)
 Normal Structuring mode def=cb_part
 Normal Structuring mode def=cdec_240
 Normal Structuring mode def=cdec
 TECH-DECOMP MODE def=cmux
 TECH-DECOMP MODE def=cmux_238
+Normal Structuring mode def=add_unsigned_136_400
 Normal Structuring mode def=cb_part_507
 Normal Structuring mode def=add_unsigned_136
 Normal Structuring mode def=cb_part_509
 Normal Structuring mode def=cb_part_505
 Normal Structuring mode def=cb_part_511
-Normal Structuring mode def=add_unsigned_136_400
 Normal Structuring mode def=addsub_unsigned_149
 Normal Structuring mode def=lt_signed_rtlopto_model_496
 Normal Structuring mode def=cb_part_512
@@ -614,15 +616,12 @@ Normal Structuring mode def=cb_seq
  
 Global mapping target info
 ==========================
-Cost Group 'core_clock' target slack:   354 ps
-Target path end-point (Pin: InstructionFetch_Module_instr_data_op_reg[31]/d)
+Cost Group 'core_clock' target slack:   291 ps
+Target path end-point (Pin: InstructionFetch_Module_FetchModule_PC_reg[31]/d)
 
-Multi-threaded Technology Mapping (8 threads per ST process, 8 of 88 CPUs usable)
+Multi-threaded Technology Mapping (8 threads per ST process, 8 of 112 CPUs usable)
 Normal Structuring mode def=cb_seq
 Normal Structuring mode def=cb_part_512
-Normal Structuring mode def=add_unsigned_136_400
-Normal Structuring mode def=add_unsigned
-Normal Structuring mode def=add_unsigned
 Normal Structuring mode def=addsub_unsigned_149
 Normal Structuring mode def=addsub_unsigned
 Normal Structuring mode def=addsub_unsigned
@@ -639,8 +638,11 @@ Normal Structuring mode def=add_unsigned
 Normal Structuring mode def=cb_part_507
 TECH-DECOMP MODE def=cmux_238
 TECH-DECOMP MODE def=cmux
-Normal Structuring mode def=cdec_240
+Normal Structuring mode def=add_unsigned_136_400
+Normal Structuring mode def=add_unsigned
+Normal Structuring mode def=add_unsigned
 Normal Structuring mode def=cdec
+Normal Structuring mode def=cdec_240
 Normal Structuring mode def=cb_part
  
 Global mapping status
@@ -649,17 +651,17 @@ Global mapping status
                                   Tot Wrst 
                            Total  Weighted 
 Operation                   Area   Slacks  
- global_map               847606        0 
+ global_map               853145        0 
 
     Cost Group            Target    Slack    Diff.  Constr.
 -----------------------------------------------------------
-    core_clock               354    11405             12500     (launch clock period: 25000)
+    core_clock               291     1551             10000 
 
  
 Global incremental target info
 ==============================
-Cost Group 'core_clock' target slack:   494 ps
-Target path end-point (Pin: InstructionFetch_Module_FetchModule_PC_reg[31]/D (DFFX1/D))
+Cost Group 'core_clock' target slack:   194 ps
+Target path end-point (Pin: InstructionFetch_Module_FetchModule_PC_reg[30]/D (DFFX1/D))
 
 ==================================
 Stage : global_incr_map 
@@ -670,7 +672,7 @@ Stage : global_incr_map
 ---------------------------------------------------------------------------
 |   Id   |  Sev  |Count|                   Message Text                   |
 ---------------------------------------------------------------------------
-|GLO-62  |Info   | 1603|On tool_generated instance/module 'strict_no' is  |
+|GLO-62  |Info   | 1596|On tool_generated instance/module 'strict_no' is  |
 |        |       |     | set.                                             |
 |        |       |     |This shall only be used for special purposes like |
 |        |       |     | formal verification.                             |
@@ -759,13 +761,13 @@ Global incremental optimization status
                                   Tot Wrst 
                            Total  Weighted 
 Operation                   Area   Slacks  
- global_incr              846939        0 
+ global_incr              851825        0 
 
     Cost Group            Target    Slack    Diff.  Constr.
 -----------------------------------------------------------
-    core_clock               494    11466             12500     (launch clock period: 25000)
+    core_clock               194      661             10000 
 
-/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/.st_launch_ece-rschsrv.ece.gatech.edu_1370969
+/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/.st_launch_ece-linlabsrv01.ece.gatech.edu_175823
 
 State Retention Synthesis Status
 ================================
@@ -787,16 +789,16 @@ Info    : Relaxed some design requirements on sequential instances to run synthe
         : One or more of the following design requirements relaxed on 19 sequential instance(s): map_prefer_non_inverted_clock_line.
         : To see the list of relaxed sequential instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list.
 INFO: skipping constant propagation
-PBS_Techmap-Global Mapping - Elapsed_Time 81, CPU_Time 77.28859599999998
+PBS_Techmap-Global Mapping - Elapsed_Time 73, CPU_Time 72.95479
 stamp 'PBS_Techmap-Global Mapping' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:43) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:22:34 (Mar16) |  701.8 MB | PBS_TechMap-Start
+ 00:00:55(00:00:51) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:51:09 (Mar17) |  744.0 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:44) |  00:00:00(00:00:01) |   0.0(  1.2) |   12:22:35 (Mar16) |  720.6 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:55(00:00:52) |  00:00:00(00:00:01) |   0.0(  1.4) |   19:51:10 (Mar17) |  744.0 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:03(00:02:05) |  00:01:17(00:01:21) | 100.0( 98.8) |   12:23:56 (Mar16) |  921.2 MB | PBS_Techmap-Global Mapping
+ 00:02:08(00:02:05) |  00:01:12(00:01:13) | 100.0( 98.6) |   19:52:23 (Mar17) |  917.7 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -807,62 +809,62 @@ Advanced structuring report (syn_map):
 |-------------------------------------+----------------------+----------------------+----------------+-------------------------------|
 | Name                        | Tag   | #nodes | #and | #lvl | #nodes | #and | #lvl | Acc | Time     | Netlist ID                    | 
 --------------------------------------------------------------------------------------------------------------------------------------
-| cb_seq                      | CONDE |  12558 | 1151 |  193 |  12509 | 1102 |   12 | N   |     6.37 | cb_seq                        | 
-| cb_part_512                 | CONDE |   2049 |  716 |  129 |   2016 |  683 |   13 | N   |     3.24 |                               |
-| cb_part_511                 | CONDE |   1406 |  418 |  114 |   1406 |  418 |    3 | N   |     0.83 |                               |
+| cb_seq                      | CONDE |  12561 | 1194 |  142 |  12525 | 1158 |  142 | N   |     3.28 | cb_seq                        | 
+| cb_part_512                 | CONDE |   2089 |  756 |  107 |   2031 |  698 |   14 | Y   |     4.76 |                               |
+| cb_part_511                 | CONDE |   1406 |  418 |   82 |   1406 |  418 |    3 | N   |     0.88 | cb_part_511                   | 
 --------------------------------------------------------------------------------------------------------------------------------------
-Number of LFLHs filtered from table: 30
-Runtime accepts/rejects/total =     0.00 /    12.26 /    12.26
-Accepts/rejects/total = 0 / 8 / 8
-Sum of reduced nodes/levels = 0 / 0
+Number of LFLHs filtered from table: 26
+Runtime accepts/rejects/total =     4.76 /     6.35 /    11.10
+Accepts/rejects/total = 1 / 7 / 8
+Sum of reduced nodes/levels = 58 / 93
 --------------------------------------------------------------------------------------------------------------------------------------
 |                                     | Graph                | Opt. Graph           | Result         |                               | 
 |-------------------------------------+----------------------+----------------------+----------------+-------------------------------|
 | Name                        | Tag   | #nodes | #and | #lvl | #nodes | #and | #lvl | Acc | Time     | Netlist ID                    | 
 --------------------------------------------------------------------------------------------------------------------------------------
-| cb_seq                      | REIFI |  12552 | 1145 |  193 |  12507 | 1100 |   12 | N   |     5.32 | cb_seq                        | 
-| cb_part_512                 | REIFI |   2046 |  713 |  129 |   2019 |  686 |   13 | N   |     3.71 | cb_part_512                   | 
-| cb_part_511                 | REIFI |   1406 |  418 |  114 |   1406 |  418 |    3 | N   |     0.89 | cb_part_511                   | 
+| cb_seq                      | REIFI |  12556 | 1189 |  142 |  12525 | 1158 |  142 | N   |     3.33 | cb_seq                        | 
+| cb_part_512                 | REIFI |   2069 |  736 |  107 |   2033 |  700 |   14 | N   |     2.45 | cb_part_512                   | 
+| cb_part_511                 | REIFI |   1406 |  418 |   81 |   1406 |  418 |    3 | N   |     0.99 |                               |
 --------------------------------------------------------------------------------------------------------------------------------------
-Number of LFLHs filtered from table: 30
-Runtime accepts/rejects/total =     2.67 /    12.13 /    14.80
-Accepts/rejects/total = 6 / 10 / 16
-Sum of reduced nodes/levels = 515 / 239
+Number of LFLHs filtered from table: 26
+Runtime accepts/rejects/total =     0.58 /     9.87 /    10.45
+Accepts/rejects/total = 2 / 10 / 12
+Sum of reduced nodes/levels = 236 / 20
 Info    : Wrote formal verification information. [CFM-5]
         : Wrote 'fv/Core/fv_map.fv.json' for netlist 'fv/Core/fv_map.v.gz'.
 Info    : Wrote dofile. [CFM-1]
         : Dofile is 'fv/Core/rtl_to_fv_map.do'.
         : RTL names flow is enabled.
-PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 7, CPU_Time 5.788494000000014
+PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 8, CPU_Time 7.675944000000015
 stamp 'PBS_TechMap-Datapath Postmap Operations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:43) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:22:34 (Mar16) |  701.8 MB | PBS_TechMap-Start
+ 00:00:55(00:00:51) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:51:09 (Mar17) |  744.0 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:44) |  00:00:00(00:00:01) |   0.0(  1.1) |   12:22:35 (Mar16) |  720.6 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:55(00:00:52) |  00:00:00(00:00:01) |   0.0(  1.2) |   19:51:10 (Mar17) |  744.0 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:03(00:02:05) |  00:01:17(00:01:21) |  93.0( 91.0) |   12:23:56 (Mar16) |  921.2 MB | PBS_Techmap-Global Mapping
+ 00:02:08(00:02:05) |  00:01:12(00:01:13) |  90.5( 89.0) |   19:52:23 (Mar17) |  917.7 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:05(00:00:07) |   7.0(  7.9) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:02:16(00:02:13) |  00:00:07(00:00:08) |   9.5(  9.8) |   19:52:31 (Mar17) |  918.4 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
-PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 0, CPU_Time 0.8002989999999954
+PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 1, CPU_Time 0.695114999999987
 stamp 'PBS_TechMap-Postmap HBO Optimizations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:43) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:22:34 (Mar16) |  701.8 MB | PBS_TechMap-Start
+ 00:00:55(00:00:51) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:51:09 (Mar17) |  744.0 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:44) |  00:00:00(00:00:01) |   0.0(  1.1) |   12:22:35 (Mar16) |  720.6 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:55(00:00:52) |  00:00:00(00:00:01) |   0.0(  1.2) |   19:51:10 (Mar17) |  744.0 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:03(00:02:05) |  00:01:17(00:01:21) |  92.1( 91.0) |   12:23:56 (Mar16) |  921.2 MB | PBS_Techmap-Global Mapping
+ 00:02:08(00:02:05) |  00:01:12(00:01:13) |  89.7( 88.0) |   19:52:23 (Mar17) |  917.7 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:05(00:00:07) |   6.9(  7.9) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:02:16(00:02:13) |  00:00:07(00:00:08) |   9.4(  9.6) |   19:52:31 (Mar17) |  918.4 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:00(00:00:00) |   1.0(  0.0) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Postmap HBO Optimizations
+ 00:02:17(00:02:14) |  00:00:00(00:00:01) |   0.9(  1.2) |   19:52:32 (Mar17) |  918.4 MB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -882,23 +884,23 @@ stamp 'PBS_TechMap-Postmap Clock Gating' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:43) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:22:34 (Mar16) |  701.8 MB | PBS_TechMap-Start
+ 00:00:55(00:00:51) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:51:09 (Mar17) |  744.0 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:44) |  00:00:00(00:00:01) |   0.0(  1.1) |   12:22:35 (Mar16) |  720.6 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:55(00:00:52) |  00:00:00(00:00:01) |   0.0(  1.2) |   19:51:10 (Mar17) |  744.0 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:03(00:02:05) |  00:01:17(00:01:21) |  91.1( 90.0) |   12:23:56 (Mar16) |  921.2 MB | PBS_Techmap-Global Mapping
+ 00:02:08(00:02:05) |  00:01:12(00:01:13) |  88.6( 86.9) |   19:52:23 (Mar17) |  917.7 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:05(00:00:07) |   6.8(  7.8) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:02:16(00:02:13) |  00:00:07(00:00:08) |   9.3(  9.5) |   19:52:31 (Mar17) |  918.4 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:00(00:00:00) |   0.9(  0.0) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Postmap HBO Optimizations
+ 00:02:17(00:02:14) |  00:00:00(00:00:01) |   0.8(  1.2) |   19:52:32 (Mar17) |  918.4 MB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:10(00:02:13) |  00:00:01(00:00:01) |   1.2(  1.1) |   12:24:04 (Mar16) |  905.2 MB | PBS_TechMap-Postmap Clock Gating
+ 00:02:18(00:02:15) |  00:00:01(00:00:01) |   1.2(  1.2) |   19:52:33 (Mar17) |  918.4 MB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
 -------------------------------------------------------------------------------
- hi_fo_buf                846924        0         0      5757        0        0
+ hi_fo_buf                851631        0         0      6594        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -911,7 +913,7 @@ Incremental optimization status
                                   Tot Wrst     Total - - - - DRC Totals - - - -
                            Total  Weighted      Neg      Max       Max     Max  
 Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
- init_delay               846924        0         0      5757        0        0
+ init_delay               851631        0         0      6594        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -936,7 +938,7 @@ Local TNS optimization status
                                   Tot Wrst     Total - - - - DRC Totals - - - -
                            Total  Weighted      Neg      Max       Max     Max  
 Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
- init_tns                 846924        0         0      5757        0        0
+ init_tns                 851631        0         0      6594        0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -952,48 +954,48 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
         setup_dn         0  (        0 /        0 )  0.00
         mb_split         0  (        0 /        0 )  0.00
 
-PBS_TechMap-Postmap Cleanup - Elapsed_Time 1, CPU_Time 0.7903760000000091
+PBS_TechMap-Postmap Cleanup - Elapsed_Time 0, CPU_Time 0.6785250000000076
 stamp 'PBS_TechMap-Postmap Cleanup' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:43) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:22:34 (Mar16) |  701.8 MB | PBS_TechMap-Start
+ 00:00:55(00:00:51) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:51:09 (Mar17) |  744.0 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:44) |  00:00:00(00:00:01) |   0.0(  1.1) |   12:22:35 (Mar16) |  720.6 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:55(00:00:52) |  00:00:00(00:00:01) |   0.0(  1.2) |   19:51:10 (Mar17) |  744.0 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:03(00:02:05) |  00:01:17(00:01:21) |  90.2( 89.0) |   12:23:56 (Mar16) |  921.2 MB | PBS_Techmap-Global Mapping
+ 00:02:08(00:02:05) |  00:01:12(00:01:13) |  87.9( 86.9) |   19:52:23 (Mar17) |  917.7 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:05(00:00:07) |   6.8(  7.7) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:02:16(00:02:13) |  00:00:07(00:00:08) |   9.2(  9.5) |   19:52:31 (Mar17) |  918.4 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:00(00:00:00) |   0.9(  0.0) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Postmap HBO Optimizations
+ 00:02:17(00:02:14) |  00:00:00(00:00:01) |   0.8(  1.2) |   19:52:32 (Mar17) |  918.4 MB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:10(00:02:13) |  00:00:01(00:00:01) |   1.2(  1.1) |   12:24:04 (Mar16) |  905.2 MB | PBS_TechMap-Postmap Clock Gating
+ 00:02:18(00:02:15) |  00:00:01(00:00:01) |   1.2(  1.2) |   19:52:33 (Mar17) |  918.4 MB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:11(00:02:14) |  00:00:00(00:00:01) |   0.9(  1.1) |   12:24:05 (Mar16) |  905.2 MB | PBS_TechMap-Postmap Cleanup
+ 00:02:18(00:02:15) |  00:00:00(00:00:00) |   0.8(  0.0) |   19:52:33 (Mar17) |  918.4 MB | PBS_TechMap-Postmap Cleanup
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
-PBS_Techmap-Post_MBCI - Elapsed_Time 0, CPU_Time 0.0
+PBS_Techmap-Post_MBCI - Elapsed_Time 1, CPU_Time 0.0
 stamp 'PBS_Techmap-Post_MBCI' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:43) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:22:34 (Mar16) |  701.8 MB | PBS_TechMap-Start
+ 00:00:55(00:00:51) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:51:09 (Mar17) |  744.0 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:45(00:00:44) |  00:00:00(00:00:01) |   0.0(  1.1) |   12:22:35 (Mar16) |  720.6 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:55(00:00:52) |  00:00:00(00:00:01) |   0.0(  1.2) |   19:51:10 (Mar17) |  744.0 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:03(00:02:05) |  00:01:17(00:01:21) |  90.2( 89.0) |   12:23:56 (Mar16) |  921.2 MB | PBS_Techmap-Global Mapping
+ 00:02:08(00:02:05) |  00:01:12(00:01:13) |  87.9( 85.9) |   19:52:23 (Mar17) |  917.7 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:05(00:00:07) |   6.8(  7.7) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:02:16(00:02:13) |  00:00:07(00:00:08) |   9.2(  9.4) |   19:52:31 (Mar17) |  918.4 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:09(00:02:12) |  00:00:00(00:00:00) |   0.9(  0.0) |   12:24:03 (Mar16) |  905.2 MB | PBS_TechMap-Postmap HBO Optimizations
+ 00:02:17(00:02:14) |  00:00:00(00:00:01) |   0.8(  1.2) |   19:52:32 (Mar17) |  918.4 MB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:10(00:02:13) |  00:00:01(00:00:01) |   1.2(  1.1) |   12:24:04 (Mar16) |  905.2 MB | PBS_TechMap-Postmap Clock Gating
+ 00:02:18(00:02:15) |  00:00:01(00:00:01) |   1.2(  1.2) |   19:52:33 (Mar17) |  918.4 MB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:11(00:02:14) |  00:00:00(00:00:01) |   0.9(  1.1) |   12:24:05 (Mar16) |  905.2 MB | PBS_TechMap-Postmap Cleanup
+ 00:02:18(00:02:15) |  00:00:00(00:00:00) |   0.8(  0.0) |   19:52:33 (Mar17) |  918.4 MB | PBS_TechMap-Postmap Cleanup
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:11(00:02:14) |  00:00:00(00:00:00) |   0.0(  0.0) |   12:24:05 (Mar16) |  905.2 MB | PBS_Techmap-Post_MBCI
+ 00:02:18(00:02:16) |  00:00:00(00:00:01) |   0.0(  1.2) |   19:52:34 (Mar17) |  919.9 MB | PBS_Techmap-Post_MBCI
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -1003,9 +1005,9 @@ Info: CPU time includes time of parent + longest thread
 ##>----------------------------------------------------------------------------------------
 ##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
 ##>----------------------------------------------------------------------------------------
-##>M:Initial                            0         -         -      8045    714120       701
+##>M:Initial                            1         -         -      8202    715982       744
 ##>M:Early Clock Gating                 0         -         -         -         -         -
-##>M:Pre Cleanup                        0         -         -      8045    714120       701
+##>M:Pre Cleanup                        0         -         -      8202    715982       744
 ##>M:Setup                              0         -         -         -         -         -
 ##>M:Launch ST                          0         -         -         -         -         -
 ##>M:Design Partition                   0         -         -         -         -         -
@@ -1019,16 +1021,16 @@ Info: CPU time includes time of parent + longest thread
 ##>M:Timer                              0         -         -         -         -         -
 ##>M:Assembly                           0         -         -         -         -         -
 ##>M:DFT                                0         -         -         -         -         -
-##>M:DP Operations                      7         -         -      7183    685306       905
-##>M:Const Prop                         0     11465         0      7183    685306       905
-##>M:Cleanup                            1     11465         0      7183    685304       905
-##>M:MBCI                               0         -         -      7183    685304       905
+##>M:DP Operations                      8         -         -      7386    686584       918
+##>M:Const Prop                         0       661         0      7386    686584       918
+##>M:Cleanup                            0       661         0      7386    686574       918
+##>M:MBCI                               1         -         -      7386    686574       919
 ##>M:PostGen Opt                        0         -         -         -         -         -
 ##>M:Const Gate Removal                 0         -         -         -         -         -
 ##>M:Early Clock Gating Cleanup         0         -         -         -         -         -
-##>M:Misc                              83
+##>M:Misc                              76
 ##>----------------------------------------------------------------------------------------
-##>Total Elapsed                       91
+##>Total Elapsed                       86
 ##>========================================================================================
 Info    : Relaxed some design requirements on sequential instances to run synthesis successfully. [MAP-32]
         : One or more of the following design requirements relaxed on 19 sequential instance(s): map_prefer_non_inverted_clock_line.
@@ -1038,7 +1040,7 @@ Info    : Done mapping. [SYNTH-5]
 UM:*                                                                   syn_map
 #@ End verbose flow_step synthesis.syn_map.run_syn_map
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:            112             96                                      run_syn_map
+UM:            114             92                                      run_syn_map
 #@ Begin verbose flow_step synthesis.syn_map.block_finish
 @flow_step(block_finish)  2:   apply {{} {
                                  #- Make sure flow_report_name is reset from any reports executed during the flow
@@ -1076,7 +1078,7 @@ UM:            112             96                                      run_syn_m
 #@ End verbose flow_step synthesis.syn_map.block_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:              2              3                                      block_finish
-Finished exporting design database to file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db' for 'Core' (command execution time mm:ss cpu = 00:00, real = 00:01).
+Finished exporting design database to file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_map.db' for 'Core' (command execution time mm:ss cpu = 00:01, real = 00:01).
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   write_db
 #@ Begin verbose flow_step synthesis.syn_map.schedule_syn_map_report_synth
@@ -1086,8 +1088,8 @@ UM:*                                                                   write_db
 Program version = 25.11-s095_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 16, 2026 12:22:23
-Ending time = Mar 16, 2026 12:24:15
+Starting time = Mar 17, 2026 19:50:55
+Ending time = Mar 17, 2026 19:52:45
 
 Run Flow Summary
 ---------------------
@@ -1105,12 +1107,12 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:02:30          | 0:02:29           |                       |                       |
-| syn_map     | 0:02:35          | 0:02:27           |                       |                       |
+| syn_generic | 0:03:05          | 0:03:03           |                       |                       |
+| syn_map     | 0:02:47          | 0:02:31           |                       |                       |
  ---------------------------------------------------------------------------------------------------- 
 
 Lic Summary:
-[12:24:15.368698] Cdslmd servers: ece-winlic
-[12:24:15.368720] Feature usage summary:
-[12:24:15.368721] Genus_Synthesis  
+[19:52:45.269650] Cdslmd servers: ece-winlic
+[19:52:45.269674] Feature usage summary:
+[19:52:45.269675] Genus_Synthesis  
 Normal exit.

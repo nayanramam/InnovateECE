@@ -3,28 +3,28 @@ Cadence Innovus(TM) Implementation System.
 Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
-Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/postcts -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postcts metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/postcts run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {enc dbs/cts.enc Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:schedule_postcts_report_postcts} step flow_step:schedule_postcts_report_postcts features {} str implementation.postcts.schedule_postcts_report_postcts} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/postcts}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:schedule_postcts_report_postcts} step flow_step:schedule_postcts_report_postcts features {} str implementation.postcts.schedule_postcts_report_postcts}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postcts} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
-Date:		Mon Mar 16 12:40:52 2026
-Host:		ece-rschsrv.ece.gatech.edu (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (22cores*88cpus*Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz 56320KB)
+Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/postcts -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postcts metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/postcts run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {enc dbs/cts.enc Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:schedule_postcts_report_postcts} step flow_step:schedule_postcts_report_postcts features {} str implementation.postcts.schedule_postcts_report_postcts} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/postcts}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:schedule_postcts_report_postcts} step flow_step:schedule_postcts_report_postcts features {} str implementation.postcts.schedule_postcts_report_postcts}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postcts} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+Date:		Tue Mar 17 20:11:41 2026
+Host:		ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB)
 OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
 
 License:
-		[12:40:52.185713] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+		[20:11:41.185673] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 		invs	Innovus Implementation System	25.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
 
 
-Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_1699735_c5474189-fc25-4462-81ef-5103337a5717_ece-rschsrv.ece.gatech.edu_dkhalil8_xamlOp.
+Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_523074_70820eb8-da81-4e01-bf21-14ff282d4268_ece-linlabsrv01_dkhalil8_437LBP.
 
-Change the soft stacksize limit to 0.2%RAM (515 mbytes). Set global soft_stack_size_limit to change the value.
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
 [INFO] Loading Pegasus 24.14 fill procedures
-Info: Process UID = 1699735 / c5474189-fc25-4462-81ef-5103337a5717 / 2Ag07wJS3X
+Info: Process UID = 523074 / 70820eb8-da81-4e01-bf21-14ff282d4268 / erWnGplOOH
 
 **INFO:  MMMC transition support version v31-84 
 
 #@ Processing -execute option
-@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postcts metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/postcts run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} flow {flow flow:flow_current dir . db {enc dbs/cts.enc Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-rschsrv.ece.gatech.edu flowtool_pid 1323878} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:schedule_postcts_report_postcts} step flow_step:schedule_postcts_report_postcts features {} str implementation.postcts.schedule_postcts_report_postcts} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/postcts}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:schedule_postcts_report_postcts} step flow_step:schedule_postcts_report_postcts features {} str implementation.postcts.schedule_postcts_report_postcts}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postcts} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postcts metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/postcts run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {enc dbs/cts.enc Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:schedule_postcts_report_postcts} step flow_step:schedule_postcts_report_postcts features {} str implementation.postcts.schedule_postcts_report_postcts} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/postcts}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postcts.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postcts .steps flow_step:schedule_postcts_report_postcts} step flow_step:schedule_postcts_report_postcts features {} str implementation.postcts.schedule_postcts_report_postcts}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postcts} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -135,7 +135,7 @@ if {[get_feature opt_signoff]} {
 set_multi_cpu_usage -local_cpu 1
 #@ End verbose flow_step init_mcpu
 End steps for plugin point Cadence.plugin.flowkit.read_db.pre
-#% Begin load design ... (date=03/16 12:41:28, mem=2027.0M)
+#% Begin load design ... (date=03/17 20:12:21, mem=2058.0M)
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
@@ -163,7 +163,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
-Loading design 'Core' saved by 'Innovus' '25.11-s102_1' on 'Mon Mar 16 12:40:01 2026'.
+Loading design 'Core' saved by 'Innovus' '25.11-s102_1' on 'Tue Mar 17 20:10:49 2026'.
 Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
 Read 109 cells in library 'sky130_tt_1.8_25' 
 Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
@@ -266,16 +266,16 @@ To increase the message display limit, refer to the product command reference ma
 ##  Design tech node is not set.
 
 Loading view definition file from /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/viewDefinition.tcl
-% Begin Load netlist data ... (date=03/16 12:41:31, mem=2047.5M)
-*** Begin netlist parsing (mem=2047.5M) ***
+% Begin Load netlist data ... (date=03/17 20:12:25, mem=2083.8M)
+*** Begin netlist parsing (mem=2083.8M) ***
 Created 110 new cells from 2 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilogBinary netlist '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.v.bin'
 
-*** Memory Usage v#1 (Current mem = 2056.648M, initial mem = 920.531M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2056.6M) ***
-% End Load netlist data ... (date=03/16 12:41:31, total cpu=0:00:00.1, real=0:00:00.0, peak res=2056.0M, current mem=2056.0M)
+*** Memory Usage v#1 (Current mem = 2092.797M, initial mem = 954.566M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2092.8M) ***
+% End Load netlist data ... (date=03/17 20:12:25, total cpu=0:00:00.1, real=0:00:00.0, peak res=2092.1M, current mem=2092.1M)
 Top level cell is Core.
 Hooked 110 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -284,11 +284,11 @@ Building hierarchical netlist for Cell Core ...
 ***** UseNewTieNetMode *****.
 *** Netlist is unique.
 ** info: there are 119 modules.
-** info: there are 7415 stdCell insts.
-** info: there are 7415 stdCell insts with at least one signal pin.
+** info: there are 7688 stdCell insts.
+** info: there are 7688 stdCell insts with at least one signal pin.
 ** info: there are 2 macros.
 
-*** Memory Usage v#1 (Current mem = 2088.711M, initial mem = 920.531M) ***
+*** Memory Usage v#1 (Current mem = 2124.680M, initial mem = 954.566M) ***
 *info: set bottom ioPad orient R0
 **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
@@ -338,51 +338,55 @@ List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
 Total number of identified usable delay cells: 4
 List of identified unusable delay cells:
 Total number of identified unusable delay cells: 0
-Reading floorplan file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.fp.gz (mem = 2394.9M).
-% Begin Load floorplan data ... (date=03/16 12:41:33, mem=2395.6M)
-*info: reset 9208 existing net BottomPreferredLayer and AvoidDetour
+Reading floorplan file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.fp.gz (mem = 2432.0M).
+% Begin Load floorplan data ... (date=03/17 20:12:27, mem=2432.9M)
+*info: reset 9454 existing net BottomPreferredLayer and AvoidDetour
 Deleting old partition specification.
-Set FPlanBox to (0 0 1025800 1301800)
+Set FPlanBox to (0 0 1025800 1136200)
 **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
  ... processed partition successfully.
-Reading binary special route file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.fp.spr.gz (Created by Innovus v25.11-s102_1 on Mon Mar 16 12:39:59 2026, version: 1)
-Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2396.9M, current mem=2396.9M)
-There are 44 nets with weight being set
-There are 44 nets with bottomPreferredRoutingLayer being set
-There are 44 nets with avoidDetour being set
+Reading binary special route file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.fp.spr.gz (Created by Innovus v25.11-s102_1 on Tue Mar 17 20:10:45 2026, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2433.9M, current mem=2433.9M)
+There are 43 nets with weight being set
+There are 43 nets with bottomPreferredRoutingLayer being set
+There are 43 nets with avoidDetour being set
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Delete all existing relative floorplan constraints.
-% End Load floorplan data ... (date=03/16 12:41:33, total cpu=0:00:00.1, real=0:00:00.0, peak res=2398.1M, current mem=2398.0M)
+% End Load floorplan data ... (date=03/17 20:12:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=2435.4M, current mem=2435.4M)
 Reading congestion map file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.route.congmap.gz ...
-% Begin Load SymbolTable ... (date=03/16 12:41:33, mem=2398.0M)
+% Begin Load SymbolTable ... (date=03/17 20:12:27, mem=2435.4M)
 Suppress "**WARN ..." messages.
 Un-suppress "**WARN ..." messages.
-% End Load SymbolTable ... (date=03/16 12:41:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=2401.6M, current mem=2401.6M)
+% End Load SymbolTable ... (date=03/17 20:12:27, total cpu=0:00:00.1, real=0:00:01.0, peak res=2438.5M, current mem=2438.5M)
 Loading place ...
-% Begin Load placement data ... (date=03/16 12:41:34, mem=2401.6M)
+% Begin Load placement data ... (date=03/17 20:12:28, mem=2438.5M)
 Reading placement file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.place.gz.
-** Reading stdCellPlacement_binary (Created by Innovus v25.11-s102_1 on Mon Mar 16 12:39:59 2026, version# 2) ...
+** Reading stdCellPlacement_binary (Created by Innovus v25.11-s102_1 on Tue Mar 17 20:10:46 2026, version# 2) ...
 Read Views for adaptive view pruning ...
 Read 0 views from Binary DB for adaptive view pruning
-*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2402.0M) ***
-Total net length = 4.164e+05 (2.102e+05 2.062e+05) (ext = 2.436e+03)
-% End Load placement data ... (date=03/16 12:41:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=2402.5M, current mem=2402.2M)
-Reading PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on       Mon Mar 16 12:39:59 2026)
-*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2402.5M) ***
-% Begin Load routing data ... (date=03/16 12:41:34, mem=2402.4M)
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2439.1M) ***
+Total net length = 4.418e+05 (2.114e+05 2.304e+05) (ext = 3.416e+03)
+% End Load placement data ... (date=03/17 20:12:28, total cpu=0:00:00.1, real=0:00:00.0, peak res=2439.1M, current mem=2439.1M)
+Reading PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on       Tue Mar 17 20:10:45 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2439.4M) ***
+% Begin Load routing data ... (date=03/17 20:12:28, mem=2439.4M)
 Reading routing file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.route.gz.
-Reading Innovus routing data (Created by Innovus v25.11-s102_1 on Mon Mar 16 12:40:00 2026 Format: 23.1) ...
-*** Total 9097 nets are successfully restored.
-*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=2403.8M) ***
-% End Load routing data ... (date=03/16 12:41:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=2403.8M, current mem=2402.9M)
-TAT_INFO: ::restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+Reading Innovus routing data (Created by Innovus v25.11-s102_1 on Tue Mar 17 20:10:46 2026 Format: 23.1) ...
+*** Total 9342 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=2440.8M) ***
+% End Load routing data ... (date=03/17 20:12:28, total cpu=0:00:00.2, real=0:00:00.0, peak res=2440.8M, current mem=2439.9M)
+Loading Drc markers ...
+... 363 markers are loaded ...
+... 0 geometry drc markers are loaded ...
+... 0 antenna drc markers are loaded ...
+TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
 Reading property file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.prop
-*** Completed restoreProperty (cpu=0:00:00.1 real=0:00:00.0 mem=2406.3M) ***
-Reading dirtyarea snapshot file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.db.da.gz (Create by Innovus v25.11-s102_1 on Mon Mar 16 12:40:00 2026, version: 8).
+*** Completed restoreProperty (cpu=0:00:00.1 real=0:00:00.0 mem=2443.2M) ***
+Reading dirtyarea snapshot file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.db.da.gz (Create by Innovus v25.11-s102_1 on Tue Mar 17 20:10:47 2026, version: 8).
 ff_v1.98_0C_Nominal_25 tt_v1.8_25C_Nominal_25 ss_v1.62_125C_Nominal_25
 Change floorplan default-technical-site to 'CoreSite'.
 Loading preRoute extraction data from directory '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/extraction/' ...
@@ -391,7 +395,7 @@ Initializing multi-corner RC extraction with 1 active RC Corners ...
 Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
 Generating auto layer map file.
 Loading preRoute extracted patterns from file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core.techData.gz' ...
-Completed (cpu: 0:00:00.3 real: 0:00:01.0)
+Completed (cpu: 0:00:00.3 real: 0:00:00.0)
 Set Shrink Factor to 1.00000
 Summary of Active RC-Corners : 
  
@@ -419,15 +423,15 @@ Start generating vias ..
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Via generation completed.
-% Begin Load power constraints ... (date=03/16 12:41:36, mem=2433.4M)
+% Begin Load power constraints ... (date=03/17 20:12:30, mem=2470.9M)
 source /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/cts.enc/Core_power_constraints.tcl
 'set_default_switching_activity' finished successfully.
-% End Load power constraints ... (date=03/16 12:41:36, total cpu=0:00:00.1, real=0:00:00.0, peak res=2455.3M, current mem=2455.3M)
+% End Load power constraints ... (date=03/17 20:12:31, total cpu=0:00:00.1, real=0:00:00.0, peak res=2492.7M, current mem=2492.7M)
 ff_v1.98_0C_Nominal_25 tt_v1.8_25C_Nominal_25 ss_v1.62_125C_Nominal_25
-% Begin load AAE data ... (date=03/16 12:41:36, mem=2474.4M)
+% Begin load AAE data ... (date=03/17 20:12:31, mem=2511.8M)
 **WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=2489.652344 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End load AAE data ... (date=03/16 12:41:37, total cpu=0:00:00.6, real=0:00:01.0, peak res=2489.7M, current mem=2489.7M)
+AAE DB initialization (MEM=2526.773438 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=03/17 20:12:32, total cpu=0:00:00.9, real=0:00:01.0, peak res=2527.2M, current mem=2527.2M)
 Restoring CCOpt config...
   Extracting original clock gating for core_clock...
     clock_tree core_clock contains 1446 sinks and 0 clock gates.
@@ -462,7 +466,7 @@ Total number of identified unusable delay cells: 0
 timing_aocv_enable_gba_combine_launch_capture
 timing_enable_backward_compatible_latch_thru_mt_mode
 timing_enable_separate_device_slew_effect_sensitivities
-#% End load design ... (date=03/16 12:41:37, total cpu=0:00:07.1, real=0:00:09.0, peak res=2504.9M, current mem=2495.0M)
+#% End load design ... (date=03/17 20:12:32, total cpu=0:00:08.7, real=0:00:11.0, peak res=2542.3M, current mem=2532.4M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -582,7 +586,7 @@ UM:*                                                                   postcts
 @@flow 2: set_db flow_write_db_common false
 #@ End verbose flow_step implementation.postcts.block_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          45.03             49                                      block_start
+UM:          50.45             56                                      block_start
 #@ Begin verbose flow_step implementation.postcts.init_innovus.init_innovus_yaml
 @flow 2: if {[get_feature report_lec]} {...}
 @flow 8: # Design attributes  [get_db -category design]
@@ -638,7 +642,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 @flow 59: #-------------------------------------------------------------------------------
 #@ End verbose flow_step implementation.postcts.init_innovus.init_innovus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           5.07              5                                      init_innovus_yaml
+UM:           5.67              5                                      init_innovus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_innovus
 #@ Begin verbose flow_step implementation.postcts.init_innovus.init_innovus_user
@@ -659,15 +663,14 @@ UM:*                                                                   init_inno
 @flow 22: #-----------------------------------------------------------------------------
 #@ End verbose flow_step implementation.postcts.init_innovus.init_innovus_user
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           4.29              5                                      init_innovus_user
+UM:           4.75              5                                      init_innovus_user
 #@ Begin verbose flow_step implementation.postcts.run_opt_postcts_hold
 @flow 2: #- perform postcts hold optimization
 @@flow 3: opt_design -post_cts -hold -report_dir debug -report_prefix [get_db flow_report_name]
-**opt_design ... cpu = 0:00:00, real = 0:00:00, mem = 2537.3M, totSessionCpu=0:00:59 **
-**WARN: (IMPOPT-576):	3 nets have unplaced terms. 
-*** opt_design #1 [begin] () : totSession cpu/real = 0:00:59.1/0:01:02.0 (1.0), mem = 2537.4M
+**opt_design ... cpu = 0:00:00, real = 0:00:00, mem = 2578.7M, totSessionCpu=0:01:06 **
+*** opt_design #1 [begin] () : totSession cpu/real = 0:01:05.8/0:01:09.0 (1.0), mem = 2578.9M
 GigaOpt running with 1 threads.
-*** InitOpt #1 [begin] (opt_design #1) : totSession cpu/real = 0:00:59.1/0:01:02.0 (1.0), mem = 2537.4M
+*** InitOpt #1 [begin] (opt_design #1) : totSession cpu/real = 0:01:05.8/0:01:09.0 (1.0), mem = 2578.9M
 **INFO: User settings:
 delaycal_enable_high_fanout                                    true
 delaycal_enable_ideal_seq_async_pins                           false
@@ -718,16 +721,10 @@ getAnalysisMode -monteCarlo                                    false
 Need call spDPlaceInit before registerPrioInstLoc.
 **WARN: (IMPSP-362):	Site 'CoreSite' has one std.Cell height, so ignoring its X-symmetry.
 Type 'man IMPSP-362' for more detail.
-**WARN: (IMPOPT-665):	clock : Net has unplaced terms or is connected to uplaced instances in design. 
-Type 'man IMPOPT-665' for more detail.
-**WARN: (IMPOPT-665):	reset : Net has unplaced terms or is connected to uplaced instances in design. 
-Type 'man IMPOPT-665' for more detail.
-**WARN: (IMPOPT-665):	mem_en : Net has unplaced terms or is connected to uplaced instances in design. 
-Type 'man IMPOPT-665' for more detail.
 	CornerforLayerOpt timing analysis view tt_v1.8_25C_Nominal_25_func has been selected for calibration 
 	CornerforLayerOpt timing analysis view tt_v1.8_25C_Nominal_25_func has been selected for calibration 
-**opt_design ... cpu = 0:00:01, real = 0:00:01, mem = 2709.8M, totSessionCpu=0:01:00 **
-#optDebug: { P: 130 W: 0201 FE: standard PE: none LDR: 0.5}
+**opt_design ... cpu = 0:00:02, real = 0:00:02, mem = 2743.8M, totSessionCpu=0:01:07 **
+#optDebug: { P: 130 W: 7201 FE: standard PE: none LDR: 0.5}
 *** opt_design -post_cts ***
 DRC Margin: user margin 0.0
 Hold Target Slack: user slack 0
@@ -736,8 +733,8 @@ set_db opt_skew_eco_route false
 **INFO: Using Advanced Metric Collection system.
 Start to check current routing status for nets...
 All nets are already routed correctly.
-End to check current routing status for nets (mem=2710.3M)
-Extraction called for design 'Core' of instances=7417 and nets=9208 using extraction engine 'pre_route' .
+End to check current routing status for nets (mem=2745.6M)
+Extraction called for design 'Core' of instances=7690 and nets=9454 using extraction engine 'pre_route' .
 pre_route RC Extraction called for design Core.
 RC Extraction called in multi-corner(1) mode.
 RCMode: PreRoute
@@ -751,13 +748,13 @@ PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
 Using Quantus QRC technology file ...
 Grid density data update skipped
 Initializing multi-corner resistance tables ...
-PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 2711.215M)
-*** InitOpt #1 [finish] (opt_design #1) : cpu/real = 0:00:01.8/0:00:01.9 (1.0), totSession cpu/real = 0:01:00.9/0:01:03.9 (1.0), mem = 2711.3M
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 2746.035M)
+*** InitOpt #1 [finish] (opt_design #1) : cpu/real = 0:00:02.1/0:00:02.2 (1.0), totSession cpu/real = 0:01:07.9/0:01:11.2 (1.0), mem = 2746.2M
 HoldOpt: Enabling setup slack weighting
 GigaOpt Hold Optimizer is used
 GigaOpt Checkpoint: Internal optHold -postCts -maxLocalDensity 1.0 -numThreads 1 -nativePathGroupFlow -viewPruneEffortLevel 1
-Starting initialization (fixHold) cpu=0:00:00.0 real=0:00:00.0 totSessionCpu=0:01:01 mem=2720.4M ***
-*** BuildHoldData #1 [begin] (opt_design #1) : totSession cpu/real = 0:01:01.3/0:01:04.3 (1.0), mem = 2720.4M
+Starting initialization (fixHold) cpu=0:00:00.0 real=0:00:00.0 totSessionCpu=0:01:08 mem=2766.4M ***
+*** BuildHoldData #1 [begin] (opt_design #1) : totSession cpu/real = 0:01:08.4/0:01:11.6 (1.0), mem = 2766.4M
 Starting delay calculation for Hold views
 AAE_INFO: opIsDesignInPostRouteState() is 0
 #################################################################################
@@ -768,20 +765,20 @@ AAE_INFO: opIsDesignInPostRouteState() is 0
 # Parasitics Mode: No SPEF/RCDB 
 # Signoff Settings: SI Off 
 #################################################################################
-Start delay calculation (fullDC) (1 T). (MEM=2736.39)
-Total number of fetched objects 9095
+Start delay calculation (fullDC) (1 T). (MEM=2781.7)
+Total number of fetched objects 9340
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=2775.3 CPU=0:00:01.9 REAL=0:00:02.0)
-End delay calculation (fullDC). (MEM=2766.55 CPU=0:00:02.5 REAL=0:00:02.0)
-*** Done Building Timing Graph (cpu=0:00:03.3 real=0:00:04.0 totSessionCpu=0:01:05 mem=2768.3M)
+End delay calculation. (MEM=2824.99 CPU=0:00:02.0 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=2815.54 CPU=0:00:02.7 REAL=0:00:03.0)
+*** Done Building Timing Graph (cpu=0:00:03.5 real=0:00:03.0 totSessionCpu=0:01:12 mem=2819.0M)
 
 Active hold views:
  tt_v1.8_25C_Nominal_25_func
   Dominating endpoints: 0
   Dominating TNS: -0.000
 
-Done building cte hold timing graph (fixHold) cpu=0:00:04.0 real=0:00:04.0 totSessionCpu=0:01:05 mem=2771.5M ***
-Done building hold timer [13573 node(s), 14767 edge(s), 1 view(s)] (fixHold) cpu=0:00:04.8 real=0:00:05.0 totSessionCpu=0:01:06 mem=2792.7M ***
+Done building cte hold timing graph (fixHold) cpu=0:00:04.3 real=0:00:04.0 totSessionCpu=0:01:13 mem=2822.2M ***
+Done building hold timer [3710 node(s), 3903 edge(s), 1 view(s)] (fixHold) cpu=0:00:04.9 real=0:00:05.0 totSessionCpu=0:01:13 mem=2837.4M ***
 Starting delay calculation for Setup views
 AAE_INFO: opIsDesignInPostRouteState() is 0
 #################################################################################
@@ -792,15 +789,15 @@ AAE_INFO: opIsDesignInPostRouteState() is 0
 # Parasitics Mode: No SPEF/RCDB 
 # Signoff Settings: SI Off 
 #################################################################################
-Start delay calculation (fullDC) (1 T). (MEM=2776.97)
-Total number of fetched objects 9095
+Start delay calculation (fullDC) (1 T). (MEM=2836.15)
+Total number of fetched objects 9340
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=2801.13 CPU=0:00:02.0 REAL=0:00:02.0)
-End delay calculation (fullDC). (MEM=2801.13 CPU=0:00:02.3 REAL=0:00:02.0)
-*** Done Building Timing Graph (cpu=0:00:04.0 real=0:00:04.0 totSessionCpu=0:01:11 mem=2807.0M)
-Done building cte setup timing graph (fixHold) cpu=0:00:09.3 real=0:00:10.0 totSessionCpu=0:01:11 mem=2807.0M ***
-OPTC: m4 20.0 50.0 [ 1250.0 20.0 50.0 ]
-OPTC: view 50.0:1250.0 [ 0.0500 ]
+End delay calculation. (MEM=2861.22 CPU=0:00:02.0 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=2861.22 CPU=0:00:02.4 REAL=0:00:02.0)
+*** Done Building Timing Graph (cpu=0:00:04.2 real=0:00:04.0 totSessionCpu=0:01:18 mem=2866.6M)
+Done building cte setup timing graph (fixHold) cpu=0:00:09.7 real=0:00:10.0 totSessionCpu=0:01:18 mem=2866.6M ***
+OPTC: m4 20.0 50.0 [ 500.0 20.0 50.0 ]
+OPTC: view 50.0:500.0 [ 0.0500 ]
 
 *Info: minBufDelay = 78.5 ps, libStdDelay = 37.6 ps, minBufSize = 9522000 (5.0)
 *Info: worst delay setup view: tt_v1.8_25C_Nominal_25_func
@@ -819,7 +816,7 @@ Hold views included:
 +--------------------+---------+---------+---------+
 |     Setup mode     |   all   | reg2reg | default |
 +--------------------+---------+---------+---------+
-|           WNS (ns):| 11.086  | 11.086  | 22.645  |
+|           WNS (ns):|  0.065  |  0.065  |  7.249  |
 |           TNS (ns):|  0.000  |  0.000  |  0.000  |
 |    Violating Paths:|    0    |    0    |    0    |
 |          All Paths:|  1573   |  1571   |  1272   |
@@ -828,9 +825,9 @@ Hold views included:
 +--------------------+---------+---------+---------+
 |     Hold mode      |   all   | reg2reg | default |
 +--------------------+---------+---------+---------+
-|           WNS (ns):| -0.282  | -0.006  | -0.282  |
-|           TNS (ns):| -23.542 | -0.035  | -23.508 |
-|    Violating Paths:|   273   |   10    |   263   |
+|           WNS (ns):| -0.166  | -0.012  | -0.166  |
+|           TNS (ns):| -1.530  | -0.070  | -1.461  |
+|    Violating Paths:|   61    |   15    |   46    |
 |          All Paths:|  1573   |  1571   |  1272   |
 +--------------------+---------+---------+---------+
 
@@ -840,41 +837,41 @@ Hold views included:
 |                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
 +----------------+------------------+------------+------------------+
 |   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
-|   max_tran     |      1 (13)      |   -0.124   |      1 (13)      |
+|   max_tran     |      1 (13)      |   -0.094   |      1 (13)      |
 |   max_fanout   |      0 (0)       |     0      |      0 (0)       |
 |   max_length   |      0 (0)       |     0      |      0 (0)       |
 +----------------+------------------+------------+------------------+
 
-Density: 19.300%
-Routing Overflow: 1.39% H and 0.06% V
+Density: 26.194%
+Routing Overflow: 1.08% H and 0.17% V
 ------------------------------------------------------------------
 **INFO: Optimization is fixing the slack violation with the following view based weighting factors
 slack weights for setup views:
     tt_v1.8_25C_Nominal_25_func: 1.000
-**opt_design ... cpu = 0:00:14, real = 0:00:14, mem = 2792.8M, totSessionCpu=0:01:13 **
-*** BuildHoldData #1 [finish] (opt_design #1) : cpu/real = 0:00:11.8/0:00:12.4 (1.0), totSession cpu/real = 0:01:13.1/0:01:16.6 (1.0), mem = 2792.6M
-*** HoldOpt #1 [begin] (opt_design #1) : totSession cpu/real = 0:01:13.1/0:01:16.6 (1.0), mem = 2792.6M
+**opt_design ... cpu = 0:00:15, real = 0:00:15, mem = 2851.4M, totSessionCpu=0:01:21 **
+*** BuildHoldData #1 [finish] (opt_design #1) : cpu/real = 0:00:12.4/0:00:12.7 (1.0), totSession cpu/real = 0:01:20.7/0:01:24.3 (1.0), mem = 2850.4M
+*** HoldOpt #1 [begin] (opt_design #1) : totSession cpu/real = 0:01:20.7/0:01:24.3 (1.0), mem = 2850.4M
 
 Footprint cell information for calculating maxBufDist
 *info: There are 7 candidate Buffer cells
 *info: There are 9 candidate Inverter cells
 
 *info: Run opt_design holdfix with 1 thread.
-Info: 44 nets with fixed/cover wires excluded.
-Info: 44 clock nets excluded from IPO operation.
+Info: 43 nets with fixed/cover wires excluded.
+Info: 43 clock nets excluded from IPO operation.
 Info: Done creating the CCOpt slew target map.
 
-*** Starting Core Fixing (fixHold) cpu=0:00:12.4 real=0:00:13.0 totSessionCpu=0:01:14 mem=2797.4M density=19.324% ***
+*** Starting Core Fixing (fixHold) cpu=0:00:12.9 real=0:00:13.0 totSessionCpu=0:01:21 mem=2858.0M density=26.237% ***
 
 OptDebug: Start of Hold Fixing (weighted):
-+----------+------+-----+
-|Path Group|   WNS|  TNS|
-+----------+------+-----+
-|default   |22.645|0.000|
-|reg2reg   |11.086|0.000|
-|HEPG      |11.086|0.000|
-|All Paths |11.086|0.000|
-+----------+------+-----+
++----------+-----+-----+
+|Path Group|  WNS|  TNS|
++----------+-----+-----+
+|default   |7.249|0.000|
+|reg2reg   |0.065|0.000|
+|HEPG      |0.065|0.000|
+|All Paths |0.065|0.000|
++----------+-----+-----+
 
 
 Phase I ......
@@ -882,64 +879,60 @@ Executing transform: LegalResize
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
 |Iter| Hold WNS | Hold TNS |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
-|   0|    -0.282|    -23.54|     272|          0|       0(     0)|   19.32%|   0:00:00.0|  2804.1M|
-|   1|    -0.282|    -23.54|     272|          0|       0(     0)|   19.32%|   0:00:00.0|  2808.9M|
-|   2|    -0.282|    -23.54|     272|          0|       0(     0)|   19.32%|   0:00:00.0|  2808.9M|
-|   3|    -0.282|    -23.54|     272|          0|       0(     0)|   19.32%|   0:00:00.0|  2808.9M|
-|   4|    -0.282|    -23.54|     272|          0|       0(     0)|   19.32%|   0:00:00.0|  2808.9M|
-|   5|    -0.282|    -23.54|     272|          0|       0(     0)|   19.32%|   0:00:01.0|  2808.9M|
-|   6|    -0.282|    -23.54|     272|          0|       0(     0)|   19.32%|   0:00:00.0|  2808.9M|
+|   0|    -0.166|     -1.53|      61|          0|       0(     0)|   26.24%|   0:00:00.0|  2864.5M|
+|   1|    -0.166|     -1.53|      61|          0|       0(     0)|   26.24%|   0:00:00.0|  2867.7M|
+|   2|    -0.166|     -1.53|      61|          0|       0(     0)|   26.24%|   0:00:00.0|  2867.7M|
+|   3|    -0.166|     -1.53|      61|          0|       0(     0)|   26.24%|   0:00:00.0|  2867.7M|
+|   4|    -0.166|     -1.53|      61|          0|       0(     0)|   26.24%|   0:00:00.0|  2867.7M|
+|   5|    -0.166|     -1.53|      61|          0|       0(     0)|   26.24%|   0:00:00.0|  2867.7M|
+|   6|    -0.166|     -1.53|      61|          0|       0(     0)|   26.24%|   0:00:00.0|  2867.7M|
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
 
 OptDebug: After FlopOpt (weighted):
-+----------+------+-----+
-|Path Group|   WNS|  TNS|
-+----------+------+-----+
-|default   |22.645|0.000|
-|reg2reg   |11.086|0.000|
-|HEPG      |11.086|0.000|
-|All Paths |11.086|0.000|
-+----------+------+-----+
++----------+-----+-----+
+|Path Group|  WNS|  TNS|
++----------+-----+-----+
+|default   |7.249|0.000|
+|reg2reg   |0.065|0.000|
+|HEPG      |0.065|0.000|
+|All Paths |0.065|0.000|
++----------+-----+-----+
 
 HoldOpt setup target adjustment in phase 1 = 0.0
 Executing transform: AddBuffer + LegalResize
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
 |Iter| Hold WNS | Hold TNS |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
-|   0|    -0.282|    -23.54|     272|          0|       0(     0)|   19.32%|   0:00:00.0|  2808.9M|
-|   1|    -0.104|     -0.91|      23|         70|       8(     0)|   19.49%|   0:00:01.0|  2849.8M|
-|   2|    -0.048|     -0.17|      18|          9|       0(     0)|   19.50%|   0:00:00.0|  2849.8M|
-|   3|    -0.048|     -0.17|      18|          0|       0(     0)|   19.50%|   0:00:01.0|  2849.8M|
-|   4|    -0.048|     -0.17|      18|          0|       0(     0)|   19.50%|   0:00:00.0|  2849.8M|
-|   5|    -0.011|     -0.08|      16|          2|       0(     0)|   19.51%|   0:00:00.0|  2849.8M|
-|   6|    -0.011|     -0.07|      15|          0|       1(     0)|   19.51%|   0:00:00.0|  2849.8M|
-|   7|    -0.011|     -0.07|      15|          0|       0(     0)|   19.51%|   0:00:00.0|  2849.8M|
-|   8|    -0.006|     -0.05|      13|          1|       1(     0)|   19.51%|   0:00:00.0|  2849.8M|
-|   9|    -0.004|     -0.01|       5|          6|       2(     0)|   19.52%|   0:00:00.0|  2849.8M|
-|  10|    -0.004|     -0.01|       5|          0|       0(     0)|   19.52%|   0:00:00.0|  2849.8M|
-|  11|    -0.004|     -0.01|       5|          0|       0(     0)|   19.52%|   0:00:00.0|  2849.8M|
-|  12|    -0.002|     -0.00|       3|          2|       0(     0)|   19.52%|   0:00:00.0|  2849.8M|
-|  13|    -0.000|     -0.00|       1|          2|       0(     0)|   19.53%|   0:00:00.0|  2849.8M|
-|  14|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.8M|
-|  15|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.8M|
-|  16|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.8M|
+|   0|    -0.166|     -1.53|      61|          0|       0(     0)|   26.24%|   0:00:00.0|  2867.7M|
+|   1|    -0.158|     -0.38|      21|          2|       0(     0)|   26.24%|   0:00:01.0|  2959.7M|
+|   2|    -0.012|     -0.07|      15|          1|       0(     0)|   26.25%|   0:00:00.0|  2974.5M|
+|   3|    -0.012|     -0.07|      15|          0|       0(     0)|   26.25%|   0:00:00.0|  2974.5M|
+|   4|    -0.012|     -0.07|      15|          0|       0(     0)|   26.25%|   0:00:00.0|  2974.5M|
+|   5|    -0.012|     -0.07|      15|          0|       0(     0)|   26.25%|   0:00:00.0|  2974.5M|
+|   6|    -0.012|     -0.07|      15|          0|       0(     0)|   26.25%|   0:00:00.0|  2974.5M|
+|   7|    -0.007|     -0.05|      13|          2|       0(     0)|   26.25%|   0:00:00.0|  2974.5M|
+|   8|    -0.004|     -0.02|       7|          6|       0(     0)|   26.26%|   0:00:00.0|  2974.5M|
+|   9|    -0.004|     -0.02|       7|          0|       0(     0)|   26.26%|   0:00:00.0|  2974.5M|
+|  10|    -0.004|     -0.02|       7|          0|       0(     0)|   26.26%|   0:00:00.0|  2974.5M|
+|  11|    -0.002|     -0.00|       3|          4|       0(     0)|   26.27%|   0:00:01.0|  2973.7M|
+|  12|    -0.000|     -0.00|       1|          2|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|  13|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|  14|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|  15|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
 
-*info:    Total 92 cells added for Phase I
+*info:    Total 17 cells added for Phase I
 *info:        in which 0 is ripple commits (0.000%)
-*info:    Total 12 instances resized for Phase I
-*info:        in which 0 FF resizing 
-*info:        in which 0 ripple resizing (0.000%)
 
 OptDebug: After Phase I (weighted):
-+----------+------+-----+
-|Path Group|   WNS|  TNS|
-+----------+------+-----+
-|default   |22.645|0.000|
-|reg2reg   |10.895|0.000|
-|HEPG      |10.895|0.000|
-|All Paths |10.895|0.000|
-+----------+------+-----+
++----------+-----+-----+
+|Path Group|  WNS|  TNS|
++----------+-----+-----+
+|default   |7.263|0.000|
+|reg2reg   |0.065|0.000|
+|HEPG      |0.065|0.000|
+|All Paths |0.065|0.000|
++----------+-----+-----+
 
 
 Phase II ......
@@ -947,27 +940,27 @@ Executing transform: AddBuffer + LegalResize
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
 |Iter| Hold WNS | Hold TNS |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
-|   0|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   1|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   2|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   3|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   4|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   5|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   6|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   7|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:01.0|  2849.9M|
-|   8|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   9|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
+|   0|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   1|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   2|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   3|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   4|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   5|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   6|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   7|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   8|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   9|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
 
 OptDebug: After Phase II (weighted):
-+----------+------+-----+
-|Path Group|   WNS|  TNS|
-+----------+------+-----+
-|default   |22.645|0.000|
-|reg2reg   |10.895|0.000|
-|HEPG      |10.895|0.000|
-|All Paths |10.895|0.000|
-+----------+------+-----+
++----------+-----+-----+
+|Path Group|  WNS|  TNS|
++----------+-----+-----+
+|default   |7.263|0.000|
+|reg2reg   |0.065|0.000|
+|HEPG      |0.065|0.000|
+|All Paths |0.065|0.000|
++----------+-----+-----+
 
 
 Phase III ......
@@ -975,144 +968,139 @@ Executing transform: AddBuffer + LegalResize
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
 |Iter| Hold WNS | Hold TNS |  #VP   |  #Buffer  |  #Resize(F/F)  | Density |    Real    |   Mem   |
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
-|   0|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   1|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   2|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   3|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   4|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   5|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   6|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   7|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   8|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|   9|    -0.000|     -0.00|       1|          0|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
-|  10|     0.000|      0.00|       0|          1|       0(     0)|   19.53%|   0:00:00.0|  2849.9M|
+|   0|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   1|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   2|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   3|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   4|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   5|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   6|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   7|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   8|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:00.0|  2973.7M|
+|   9|    -0.000|     -0.00|       1|          0|       0(     0)|   26.27%|   0:00:01.0|  2973.7M|
+|  10|     0.000|      0.00|       0|          1|       0(     0)|   26.28%|   0:00:00.0|  2973.7M|
 +----+----------+----------+--------+-----------+----------------+---------+------------+---------+
 
 *info:    Total 1 cells added for Phase III
 *info:        in which 0 is ripple commits (0.000%)
 
 OptDebug: After Phase III (weighted):
-+----------+------+-----+
-|Path Group|   WNS|  TNS|
-+----------+------+-----+
-|default   |22.645|0.000|
-|reg2reg   |10.895|0.000|
-|HEPG      |10.895|0.000|
-|All Paths |10.895|0.000|
-+----------+------+-----+
++----------+-----+-----+
+|Path Group|  WNS|  TNS|
++----------+-----+-----+
+|default   |7.263|0.000|
+|reg2reg   |0.065|0.000|
+|HEPG      |0.065|0.000|
+|All Paths |0.065|0.000|
++----------+-----+-----+
 
 OptDebug: End of Hold Fixing (weighted):
-+----------+------+-----+
-|Path Group|   WNS|  TNS|
-+----------+------+-----+
-|default   |22.645|0.000|
-|reg2reg   |10.895|0.000|
-|HEPG      |10.895|0.000|
-|All Paths |10.895|0.000|
-+----------+------+-----+
++----------+-----+-----+
+|Path Group|  WNS|  TNS|
++----------+-----+-----+
+|default   |7.263|0.000|
+|reg2reg   |0.065|0.000|
+|HEPG      |0.065|0.000|
+|All Paths |0.065|0.000|
++----------+-----+-----+
 
 Bottom Preferred Layer:
 +-------------+------------+----------+
 |    Layer    |    CLK     |   Rule   |
 +-------------+------------+----------+
-| met3 (z=3)  |         44 | default  |
+| met3 (z=3)  |         43 | default  |
 +-------------+------------+----------+
 Via Pillar Rule:
     None
 
-*** Finished Core Fixing (fixHold) cpu=0:00:16.8 real=0:00:17.0 totSessionCpu=0:01:18 mem=2849.9M density=19.528% ***
+*** Finished Core Fixing (fixHold) cpu=0:00:16.4 real=0:00:17.0 totSessionCpu=0:01:25 mem=2973.7M density=26.277% ***
 
 *info:
-*info: Added a total of 93 cells to fix/reduce hold violation
+*info: Added a total of 18 cells to fix/reduce hold violation
 *info:
 *info: Summary: 
-*info:            3 cells of type 'BUFX4' used
-*info:           25 cells of type 'CLKBUFX2' used
-*info:           63 cells of type 'DLY1X1' used
-*info:            2 cells of type 'DLY1X4' used
-*info:
-*info: Total 12 instances resized
-*info:       in which 0 FF resizing
-*info:
+*info:            2 cells of type 'BUFX4' used
+*info:            1 cell  of type 'BUFX8' used
+*info:           15 cells of type 'CLKBUFX2' used
 
 Starting Hold Area Reclaim
 GigaOpt Checkpoint: Internal reclaim -numThreads 1 -strictCheck -legal -force -holdBufferReclaimMode -postCTS -tgtSlackMult 3 -noRouteTypeResizePolish -noViewPrune -nativePathGroupFlow -SimpCCIn
-Info: 44 nets with fixed/cover wires excluded.
-Info: 44 clock nets excluded from IPO operation.
+Info: 43 nets with fixed/cover wires excluded.
+Info: 43 clock nets excluded from IPO operation.
  holdBufferReclaimMode 1
 Active setup view: tt_v1.8_25C_Nominal_25_func
 Active hold view: tt_v1.8_25C_Nominal_25_func
 Begin: Area Reclaim Optimization
 #InfoCS: Num dontuse cells 2, Num usable cells 117, Num real usable cells 116
-*** AreaOpt #1 [begin] (HoldOpt #1 / opt_design #1) : totSession cpu/real = 0:01:18.1/0:01:21.7 (1.0), mem = 2850.1M
+*** AreaOpt #1 [begin] (HoldOpt #1 / opt_design #1) : totSession cpu/real = 0:01:25.0/0:01:28.5 (1.0), mem = 2974.2M
 ff_v1.98_0C tt_v1.8_25C ss_v1.62_125C
 Info: Using SynthesisEngine executable '/tools/software/cadence/ddi/latest/INNOVUS251/bin/innovus_'.
       (normalized executable '/tools/software/cadence/ddi/25.11.001/INNOVUS251/bin/innovus_')
       SynthesisEngine workers will not check out additional licenses.
-Reclaim Optimization WNS Slack 0.100  TNS Slack 0.000 Density 19.53
+Reclaim Optimization WNS Slack 0.065  TNS Slack 0.000 Density 26.28
 +---------+---------+--------+--------+------------+--------+
 | Density | Commits |  WNS   |  TNS   |    Real    |  Mem   |
 +---------+---------+--------+--------+------------+--------+
-|   19.53%|        -|   0.100|   0.000|   0:00:00.0| 2850.5M|
-|   19.53%|        0|   0.100|   0.000|   0:00:00.0| 2850.8M|
-|   19.53%|        0|   0.100|   0.000|   0:00:00.0| 2850.8M|
+|   26.28%|        -|   0.065|   0.000|   0:00:00.0| 2974.3M|
+|   26.28%|        0|   0.065|   0.000|   0:00:00.0| 2974.5M|
+|   26.28%|        0|   0.065|   0.000|   0:00:00.0| 2974.5M|
 +---------+---------+--------+--------+------------+--------+
-Reclaim Optimization End WNS Slack 0.100  TNS Slack 0.000 Density 19.53
+Reclaim Optimization End WNS Slack 0.065  TNS Slack 0.000 Density 26.28
 Bottom Preferred Layer:
 +-------------+------------+----------+
 |    Layer    |    CLK     |   Rule   |
 +-------------+------------+----------+
-| met3 (z=3)  |         44 | default  |
+| met3 (z=3)  |         43 | default  |
 +-------------+------------+----------+
 Via Pillar Rule:
     None
 
 Number of times islegalLocAvaiable called = 0 skipped = 0, called in commitmove = 0, skipped in commitmove = 0
-End: Core Area Reclaim Optimization (cpu = 0:00:00.3) (real = 0:00:01.0) **
-*** AreaOpt #1 [finish] (HoldOpt #1 / opt_design #1) : cpu/real = 0:00:00.3/0:00:00.3 (1.0), totSession cpu/real = 0:01:18.4/0:01:21.9 (1.0), mem = 2850.8M
+End: Core Area Reclaim Optimization (cpu = 0:00:00.4) (real = 0:00:00.0) **
+*** AreaOpt #1 [finish] (HoldOpt #1 / opt_design #1) : cpu/real = 0:00:00.4/0:00:00.3 (1.1), totSession cpu/real = 0:01:25.3/0:01:28.8 (1.0), mem = 2974.5M
 Executing incremental physical updates
-End: Area Reclaim Optimization (cpu=0:00:00, real=0:00:01, mem=2846.23M, totSessionCpu=0:01:18).
+End: Area Reclaim Optimization (cpu=0:00:00, real=0:00:00, mem=2922.54M, totSessionCpu=0:01:25).
 **INFO: total 0 insts unmarked don't touch
 **INFO: total 0 insts, 0 nets unmarked don't touch
 Total 0 insts deleted in Hold Area Reclaim
 Total 0 insts excluded for Hold Area Reclaim [recoveryON]
-Total 186 insts considered for Hold Area Reclaim
+Total 36 insts considered for Hold Area Reclaim
 Finished Hold Area Reclaim
-*** Starting place_detail (0:01:18 mem=2843.2M) ***
-Total net bbox length = 4.186e+05 (2.111e+05 2.075e+05) (ext = 1.725e+03)
+*** Starting place_detail (0:01:25 mem=2915.3M) ***
+Total net bbox length = 4.451e+05 (2.133e+05 2.318e+05) (ext = 6.230e+02)
 Move report: Detail placement moved 0 insts, mean move: 0.00 um, max move: 0.00 um 
-	Runtime: CPU: 0:00:00.4 REAL: 0:00:00.0 MEM: 2848.6MB
+	Runtime: CPU: 0:00:00.3 REAL: 0:00:01.0 MEM: 2920.1MB
 Summary Report:
-Instances moved: 0 (out of 7465 movable)
+Instances moved: 0 (out of 7664 movable)
 Instances flipped: 0
 Mean displacement: 0.00 um
 Max displacement: 0.00 um 
 Physical-only instances moved: 0 (out of 0 movable physical-only)
-Total net bbox length = 4.186e+05 (2.111e+05 2.075e+05) (ext = 1.725e+03)
-Runtime: CPU: 0:00:00.4 REAL: 0:00:00.0 MEM: 2848.6MB
-*** Finished place_detail (0:01:19 mem=2848.6M) ***
+Total net bbox length = 4.451e+05 (2.133e+05 2.318e+05) (ext = 6.230e+02)
+Runtime: CPU: 0:00:00.4 REAL: 0:00:01.0 MEM: 2920.1MB
+*** Finished place_detail (0:01:26 mem=2920.1M) ***
 *** maximum move = 0.00 um ***
-*** Finished re-routing un-routed nets (2846.8M) ***
+*** Finished re-routing un-routed nets (2918.6M) ***
 
-*** Finish Physical Update (cpu=0:00:00.7 real=0:00:00.0 mem=2846.8M) ***
+*** Finish Physical Update (cpu=0:00:00.7 real=0:00:01.0 mem=2918.6M) ***
 
 OptDebug: After refinePlace (weighted):
-+----------+------+-----+
-|Path Group|   WNS|  TNS|
-+----------+------+-----+
-|default   |22.645|0.000|
-|reg2reg   |10.895|0.000|
-|HEPG      |10.895|0.000|
-|All Paths |10.895|0.000|
-+----------+------+-----+
++----------+-----+-----+
+|Path Group|  WNS|  TNS|
++----------+-----+-----+
+|default   |7.263|0.000|
+|reg2reg   |0.065|0.000|
+|HEPG      |0.065|0.000|
+|All Paths |0.065|0.000|
++----------+-----+-----+
 
 Capturing unweighted ref hold timing for Post CTS hold recovery....
-*** Finish Post CTS Hold Fixing (cpu=0:00:17.8 real=0:00:18.0 totSessionCpu=0:01:19 mem=2846.8M density=19.528%) ***
-**INFO: total 101 insts, 0 nets marked don't touch
-**INFO: total 101 insts, 0 nets marked don't touch DB property
-**INFO: total 101 insts, 0 nets unmarked don't touch
-*** HoldOpt #1 [finish] (opt_design #1) : cpu/real = 0:00:06.2/0:00:06.3 (1.0), totSession cpu/real = 0:01:19.3/0:01:22.9 (1.0), mem = 2825.5M
-*** Steiner Routed Nets: 2.672%; Threshold: 100; Threshold for Hold: 100
+*** Finish Post CTS Hold Fixing (cpu=0:00:17.7 real=0:00:18.0 totSessionCpu=0:01:26 mem=2918.6M density=26.277%) ***
+**INFO: total 18 insts, 0 nets marked don't touch
+**INFO: total 18 insts, 0 nets marked don't touch DB property
+**INFO: total 18 insts, 0 nets unmarked don't touch
+*** HoldOpt #1 [finish] (opt_design #1) : cpu/real = 0:00:05.6/0:00:05.6 (1.0), totSession cpu/real = 0:01:26.4/0:01:29.9 (1.0), mem = 2895.0M
+*** Steiner Routed Nets: 0.752%; Threshold: 100; Threshold for Hold: 100
 Re-routed 0 nets
 GigaOpt_HOLD: Recover setup timing after hold fixing
 GigaOpt_HOLD: max_tran 1 => 1, max_cap 0 => 0 (threshold 10) - Skip drv recovery
@@ -1140,87 +1128,87 @@ Type 'man IMPPTN-1250' for more detail.
 [NR-eGR] met3 has single uniform track structure
 [NR-eGR] met4 has single uniform track structure
 [NR-eGR] met5 has single uniform track structure
-[NR-eGR] Read 42254 PG shapes
+[NR-eGR] Read 19118 PG shapes
 [NR-eGR] Read 0 clock shapes
 [NR-eGR] Read 0 other shapes
-[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Routing Blockages  : 8
 [NR-eGR] #Bump Blockages     : 0
-[NR-eGR] #Instance Blockages : 96973
-[NR-eGR] #PG Blockages       : 42254
+[NR-eGR] #Instance Blockages : 97718
+[NR-eGR] #PG Blockages       : 19118
 [NR-eGR] #Halo Blockages     : 0
 [NR-eGR] #Boundary Blockages : 0
 [NR-eGR] #Clock Blockages    : 0
 [NR-eGR] #Other Blockages    : 0
-[NR-eGR] #prerouted nets         : 44
+[NR-eGR] #prerouted nets         : 43
 [NR-eGR] #prerouted special nets : 0
-[NR-eGR] #prerouted wires        : 6501
-[NR-eGR] Read 7673 nets ( ignored 44 )
+[NR-eGR] #prerouted wires        : 6393
+[NR-eGR] Read 7845 nets ( ignored 43 )
 [NR-eGR] Handle net priority by net group ordering
 [NR-eGR] == Routing rule table ==
 [NR-eGR]  ID  Name       #Nets 
 [NR-eGR] ----------------------
-[NR-eGR]   0  (Default)   7629 
-[NR-eGR] Layer group 1: route 7629 net(s) in layer range [1, 5]
-[NR-eGR] Early Global Route overflow of layer group 1: 0.96% H + 0.08% V. EstWL: 4.840654e+05um
+[NR-eGR]   0  (Default)   7802 
+[NR-eGR] Layer group 1: route 7802 net(s) in layer range [1, 5]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.79% H + 0.16% V. EstWL: 4.993461e+05um
 [NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
 [NR-eGR]                        OverCon           OverCon           OverCon           OverCon            
 [NR-eGR]                         #Gcell            #Gcell            #Gcell            #Gcell     %Gcell
-[NR-eGR]        Layer             (1-2)             (3-4)             (5-6)             (7-8)    OverCon
+[NR-eGR]        Layer             (1-2)             (3-4)             (5-6)               (7)    OverCon
 [NR-eGR] -------------------------------------------------------------------------------------------------
-[NR-eGR]    met1 ( 1)       225( 0.59%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.59%) 
-[NR-eGR]    met2 ( 2)        59( 0.13%)         3( 0.01%)         0( 0.00%)         0( 0.00%)   ( 0.14%) 
-[NR-eGR]    met3 ( 3)      1825( 4.06%)       276( 0.61%)        42( 0.09%)         6( 0.01%)   ( 4.78%) 
-[NR-eGR]    met4 ( 4)       340( 0.79%)        31( 0.07%)         1( 0.00%)         1( 0.00%)   ( 0.86%) 
-[NR-eGR]    met5 ( 5)       161( 0.31%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.31%) 
+[NR-eGR]    met1 ( 1)       199( 0.71%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.71%) 
+[NR-eGR]    met2 ( 2)        65( 0.19%)         1( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.19%) 
+[NR-eGR]    met3 ( 3)      1370( 3.94%)       266( 0.77%)        45( 0.13%)         5( 0.01%)   ( 4.85%) 
+[NR-eGR]    met4 ( 4)       290( 0.86%)        26( 0.08%)         5( 0.01%)         0( 0.00%)   ( 0.96%) 
+[NR-eGR]    met5 ( 5)       137( 0.30%)         0( 0.00%)         0( 0.00%)         0( 0.00%)   ( 0.30%) 
 [NR-eGR] -------------------------------------------------------------------------------------------------
-[NR-eGR]        Total      2610( 1.17%)       310( 0.14%)        43( 0.02%)         7( 0.00%)   ( 1.33%) 
+[NR-eGR]        Total      2061( 1.16%)       293( 0.17%)        50( 0.03%)         5( 0.00%)   ( 1.36%) 
 [NR-eGR] 
-[NR-eGR] Overflow after Early Global Route 1.52% H + 0.17% V
-[NR-eGR] Finished Early Global Route kernel ( CPU: 0.89 sec, Real: 1.01 sec, Curr Mem: 2.66 MB )
-[NR-eGR] Finished Early Global Route ( CPU: 0.90 sec, Real: 1.02 sec, Curr Mem: 2.64 MB )
+[NR-eGR] Overflow after Early Global Route 1.24% H + 0.29% V
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.93 sec, Real: 1.02 sec, Curr Mem: 2.60 MB )
+[NR-eGR] Finished Early Global Route ( CPU: 0.94 sec, Real: 1.03 sec, Curr Mem: 2.58 MB )
 [hotspot] +------------+---------------+---------------+
 [hotspot] |            |   max hotspot | total hotspot |
 [hotspot] +------------+---------------+---------------+
-[hotspot] | normalized |          1.84 |          7.61 |
+[hotspot] | normalized |          4.00 |         11.87 |
 [hotspot] +------------+---------------+---------------+
-Local HotSpot Analysis: normalized max congestion hotspot area = 1.84, normalized total congestion hotspot area = 7.61 (area is in unit of 4 std-cell row bins)
+Local HotSpot Analysis: normalized max congestion hotspot area = 4.00, normalized total congestion hotspot area = 11.87 (area is in unit of 4 std-cell row bins)
 [hotspot] top 5 congestion hotspot bounding boxes and scores of normalized hotspot
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
 [hotspot] | top |            hotspot bbox             | hotspot score |           module              |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  1  |   133.40   696.44   199.64   762.68 |        1.57   |             NA                |
+[hotspot] |  1  |   828.92   961.40   895.16  1027.64 |        4.26   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  2  |   232.76   696.44   299.00   762.68 |        0.79   |             NA                |
+[hotspot] |  2  |   133.40   928.28   199.64   994.52 |        3.67   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  3  |   133.40   497.72   199.64   563.96 |        0.52   |             NA                |
+[hotspot] |  3  |   133.40   497.72   199.64   563.96 |        2.36   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  4  |   762.68   497.72   828.92   563.96 |        0.52   |             NA                |
+[hotspot] |  4  |   166.52   431.48   232.76   497.72 |        0.52   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  5  |   332.12   563.96   398.36   630.20 |        0.52   |             NA                |
+[hotspot] |  5  |   729.56   928.28   795.80   994.52 |        0.52   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
 [hotspot] Hotspot report including placement blocked areas
 [hotspot] +------------+---------------+---------------+
 [hotspot] |            |   max hotspot | total hotspot |
 [hotspot] +------------+---------------+---------------+
-[hotspot] | normalized |          2.10 |          7.87 |
+[hotspot] | normalized |          4.00 |         12.46 |
 [hotspot] +------------+---------------+---------------+
-Local HotSpot Analysis (blockage included): normalized max congestion hotspot area = 2.10, normalized total congestion hotspot area = 7.87 (area is in unit of 4 std-cell row bins)
+Local HotSpot Analysis (blockage included): normalized max congestion hotspot area = 4.00, normalized total congestion hotspot area = 12.46 (area is in unit of 4 std-cell row bins)
 [hotspot] top 5 congestion hotspot bounding boxes and scores of normalized hotspot
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
 [hotspot] | top |            hotspot bbox             | hotspot score |           module              |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  1  |   133.40   696.44   199.64   762.68 |        2.10   |             NA                |
+[hotspot] |  1  |   828.92   961.40   895.16  1027.64 |        4.26   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  2  |   232.76   696.44   299.00   762.68 |        0.79   |             NA                |
+[hotspot] |  2  |   133.40   928.28   199.64   994.52 |        4.00   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  3  |   133.40   497.72   199.64   563.96 |        0.52   |             NA                |
+[hotspot] |  3  |   133.40   497.72   199.64   563.96 |        2.36   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  4  |   762.68   497.72   828.92   563.96 |        0.52   |             NA                |
+[hotspot] |  4  |   166.52   431.48   232.76   497.72 |        0.52   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
-[hotspot] |  5  |   332.12   563.96   398.36   630.20 |        0.52   |             NA                |
+[hotspot] |  5  |   729.56   928.28   795.80   994.52 |        0.52   |             NA                |
 [hotspot] +-----+-------------------------------------+---------------+-------------------------------+
 Reported timing to dir debug
-**opt_design ... cpu = 0:00:24, real = 0:00:24, mem = 2780.3M, totSessionCpu=0:01:23 **
+**opt_design ... cpu = 0:00:24, real = 0:00:25, mem = 2847.1M, totSessionCpu=0:01:30 **
 Starting delay calculation for Hold views
 AAE_INFO: opIsDesignInPostRouteState() is 0
 #################################################################################
@@ -1231,12 +1219,12 @@ AAE_INFO: opIsDesignInPostRouteState() is 0
 # Parasitics Mode: No SPEF/RCDB 
 # Signoff Settings: SI Off 
 #################################################################################
-Start delay calculation (fullDC) (1 T). (MEM=2811.69)
-Total number of fetched objects 9188
+Start delay calculation (fullDC) (1 T). (MEM=2877.41)
+Total number of fetched objects 9358
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=2837.98 CPU=0:00:02.1 REAL=0:00:02.0)
-End delay calculation (fullDC). (MEM=2837.98 CPU=0:00:02.5 REAL=0:00:02.0)
-*** Done Building Timing Graph (cpu=0:00:03.3 real=0:00:03.0 totSessionCpu=0:01:27 mem=2838.3M)
+End delay calculation. (MEM=2904.7 CPU=0:00:02.0 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=2904.7 CPU=0:00:02.4 REAL=0:00:02.0)
+*** Done Building Timing Graph (cpu=0:00:03.2 real=0:00:03.0 totSessionCpu=0:01:34 mem=2904.7M)
 Starting delay calculation for Setup views
 AAE_INFO: opIsDesignInPostRouteState() is 0
 #################################################################################
@@ -1247,12 +1235,12 @@ AAE_INFO: opIsDesignInPostRouteState() is 0
 # Parasitics Mode: No SPEF/RCDB 
 # Signoff Settings: SI Off 
 #################################################################################
-Start delay calculation (fullDC) (1 T). (MEM=2815.53)
-Total number of fetched objects 9188
+Start delay calculation (fullDC) (1 T). (MEM=2883.39)
+Total number of fetched objects 9358
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=2838.64 CPU=0:00:02.0 REAL=0:00:02.0)
-End delay calculation (fullDC). (MEM=2838.64 CPU=0:00:02.4 REAL=0:00:02.0)
-*** Done Building Timing Graph (cpu=0:00:03.1 real=0:00:03.0 totSessionCpu=0:01:30 mem=2839.4M)
+End delay calculation. (MEM=2905.66 CPU=0:00:02.0 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=2905.66 CPU=0:00:02.4 REAL=0:00:02.0)
+*** Done Building Timing Graph (cpu=0:00:03.2 real=0:00:03.0 totSessionCpu=0:01:38 mem=2905.7M)
 
 OptSummary:
 
@@ -1268,7 +1256,7 @@ Hold views included:
 +--------------------+---------+---------+---------+
 |     Setup mode     |   all   | reg2reg | default |
 +--------------------+---------+---------+---------+
-|           WNS (ns):| 10.895  | 10.895  | 22.645  |
+|           WNS (ns):|  0.065  |  0.065  |  7.263  |
 |           TNS (ns):|  0.000  |  0.000  |  0.000  |
 |    Violating Paths:|    0    |    0    |    0    |
 |          All Paths:|  1573   |  1571   |  1272   |
@@ -1277,9 +1265,9 @@ Hold views included:
 +--------------------+---------+---------+---------+
 |     Hold mode      |   all   | reg2reg | default |
 +--------------------+---------+---------+---------+
-|           WNS (ns):| -0.116  | -0.000  | -0.116  |
-|           TNS (ns):| -4.736  |  0.000  | -4.736  |
-|    Violating Paths:|   78    |    1    |   77    |
+|           WNS (ns):|  0.000  |  0.000  |  0.012  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
 |          All Paths:|  1573   |  1571   |  1272   |
 +--------------------+---------+---------+---------+
 
@@ -1289,26 +1277,26 @@ Hold views included:
 |                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
 +----------------+------------------+------------+------------------+
 |   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
-|   max_tran     |      1 (13)      |   -0.124   |      1 (13)      |
+|   max_tran     |      1 (13)      |   -0.094   |      1 (13)      |
 |   max_fanout   |      0 (0)       |     0      |      0 (0)       |
 |   max_length   |      0 (0)       |     0      |      0 (0)       |
 +----------------+------------------+------------+------------------+
 
-Density: 19.504%
-Routing Overflow: 1.52% H and 0.17% V
+Density: 26.233%
+Routing Overflow: 1.24% H and 0.29% V
 ------------------------------------------------------------------
 Begin: Collecting metrics
  ---------------------------------------------------------------------------------------------------------------------------------- 
 | Snapshot        | WNS                  | TNS                  | Density (%) | Hotspot      | Resource               | DRVs       |
 |                 | HEPG (ns) | ALL (ns) | HEPG (ns) | ALL (ns) |             | Max  | Total | Real (s) | Memory (MB) | Tran | Cap |
 |-----------------+-----------+----------+-----------+----------+-------------+------+-------+----------+-------------+------+-----|
-| initial_summary |    11.086 |   11.086 |           |        0 |       19.30 |      |       | 0:00:12  |        2793 |    1 |   0 |
-| hold_fixing     |    10.895 |   10.895 |         0 |        0 |       19.53 |      |       | 0:00:06  |        2825 |      |     |
-| global_route    |           |          |           |          |             |      |       | 0:00:01  |        2826 |      |     |
-| final_summary   |    10.895 |   10.895 |           |        0 |       19.50 | 2.10 |  7.87 | 0:00:13  |        2828 |    1 |   0 |
+| initial_summary |     0.065 |    0.065 |           |        0 |       26.19 |      |       | 0:00:12  |        2851 |    1 |   0 |
+| hold_fixing     |     0.065 |    0.065 |         0 |        0 |       26.28 |      |       | 0:00:05  |        2895 |      |     |
+| global_route    |           |          |           |          |             |      |       | 0:00:00  |        2895 |      |     |
+| final_summary   |     0.065 |    0.065 |           |        0 |       26.23 | 4.00 | 12.46 | 0:00:14  |        2884 |    1 |   0 |
  ---------------------------------------------------------------------------------------------------------------------------------- 
 End: Collecting metrics
-**opt_design ... cpu = 0:00:32, real = 0:00:35, mem = 2827.9M, totSessionCpu=0:01:31 **
+**opt_design ... cpu = 0:00:33, real = 0:00:37, mem = 2883.8M, totSessionCpu=0:01:39 **
 *** Finished opt_design ***
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   final
@@ -1322,13 +1310,12 @@ Info: Destroy the CCOpt slew target map.
 Severity  ID               Count  Summary                                  
 WARNING   IMPPTN-1250          2  Pin placement has been enabled on metal ...
 WARNING   IMPSP-362            1  Site '%s' has %s std.Cell height, so ign...
-WARNING   IMPOPT-665           3  %s : Net has unplaced terms or is connec...
-*** Message Summary: 6 warning(s), 0 error(s)
+*** Message Summary: 3 warning(s), 0 error(s)
 
-*** opt_design #1 [finish] () : cpu/real = 0:00:32.6/0:00:35.7 (0.9), totSession cpu/real = 0:01:31.6/0:01:37.7 (0.9), mem = 2838.6M
+*** opt_design #1 [finish] () : cpu/real = 0:00:33.5/0:00:37.0 (0.9), totSession cpu/real = 0:01:39.3/0:01:46.0 (0.9), mem = 2884.5M
 #@ End verbose flow_step implementation.postcts.run_opt_postcts_hold
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          37.42             40          0.000 ns         10.895 ns  run_opt_postcts_hold
+UM:          38.62             41          0.000 ns          0.065 ns  run_opt_postcts_hold
 #@ Begin verbose flow_step implementation.postcts.block_finish
 @flow 2: apply {{} {
     #- Make sure flow_report_name is reset from any reports executed during the flow
@@ -1363,58 +1350,60 @@ UM:          37.42             40          0.000 ns         10.895 ns  run_opt_p
   }}
 #@ End verbose flow_step implementation.postcts.block_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           4.91              4                                      block_finish
-#% Begin save design ... (date=03/16 12:42:38, mem=2795.6M)
+UM:           5.16              5                                      block_finish
+#% Begin save design ... (date=03/17 20:13:36, mem=2845.6M)
 ff_v1.98_0C tt_v1.8_25C ss_v1.62_125C
 Nominal_25C
-% Begin Save ccopt configuration ... (date=03/16 12:42:38, mem=2795.6M)
-% End Save ccopt configuration ... (date=03/16 12:42:38, total cpu=0:00:00.1, real=0:00:00.0, peak res=2796.3M, current mem=2796.3M)
-% Begin Save netlist data ... (date=03/16 12:42:38, mem=2796.3M)
+% Begin Save ccopt configuration ... (date=03/17 20:13:36, mem=2845.6M)
+% End Save ccopt configuration ... (date=03/17 20:13:36, total cpu=0:00:00.1, real=0:00:00.0, peak res=2846.2M, current mem=2846.2M)
+% Begin Save netlist data ... (date=03/17 20:13:36, mem=2846.2M)
 Writing Binary DB to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.v.bin in single-threaded mode...
-% End Save netlist data ... (date=03/16 12:42:38, total cpu=0:00:00.1, real=0:00:00.0, peak res=2796.3M, current mem=2796.3M)
+% End Save netlist data ... (date=03/17 20:13:37, total cpu=0:00:00.1, real=0:00:00.0, peak res=2846.2M, current mem=2846.2M)
 Saving symbol-table file ...
 Saving congestion map file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.route.congmap.gz ...
-% Begin Save AAE data ... (date=03/16 12:42:39, mem=2796.8M)
+% Begin Save AAE data ... (date=03/17 20:13:37, mem=2846.8M)
 Saving AAE Data ...
-% End Save AAE data ... (date=03/16 12:42:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=2799.4M, current mem=2799.4M)
+% End Save AAE data ... (date=03/17 20:13:37, total cpu=0:00:00.2, real=0:00:00.0, peak res=2849.3M, current mem=2849.3M)
 Saving preference file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/gui.pref.tcl ...
 Saving mode setting ...
 Saving root attributes to be loaded post write_db ...
 **WARN: (IMPMF-5054):	fill_setting_save command is obsolete and should not be used any more. It still works in this release but will be removed in future release. Recommend to use Pegasus metal fill flow which is the replacement.
 Saving global file ...
 Saving root attributes to be loaded previous write_db ...
-% Begin Save floorplan data ... (date=03/16 12:42:41, mem=2800.4M)
+% Begin Save floorplan data ... (date=03/17 20:13:40, mem=2849.7M)
 Saving floorplan file ...
 Convert 0 swires and 0 svias from compressed groups
-% End Save floorplan data ... (date=03/16 12:42:41, total cpu=0:00:00.1, real=0:00:00.0, peak res=2801.1M, current mem=2801.1M)
-Saving PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on Mon Mar 16 12:42:41 2026)
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2801.4M) ***
+% End Save floorplan data ... (date=03/17 20:13:40, total cpu=0:00:00.1, real=0:00:00.0, peak res=2850.5M, current mem=2850.5M)
+Saving PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on Tue Mar 17 20:13:40 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2850.5M) ***
 *info - save blackBox cells to lef file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.bbox.lef
 Saving Drc markers ...
-... No Drc file written since there is no markers found.
-% Begin Save placement data ... (date=03/16 12:42:41, mem=2801.4M)
+... 363 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+% Begin Save placement data ... (date=03/17 20:13:40, mem=2850.6M)
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
-% End Save placement data ... (date=03/16 12:42:41, total cpu=0:00:00.1, real=0:00:00.0, peak res=2801.8M, current mem=2801.8M)
-% Begin Save routing data ... (date=03/16 12:42:41, mem=2801.8M)
+% End Save placement data ... (date=03/17 20:13:40, total cpu=0:00:00.1, real=0:00:01.0, peak res=2851.1M, current mem=2851.1M)
+% Begin Save routing data ... (date=03/17 20:13:41, mem=2851.1M)
 Saving route file ...
-*** Completed saveRoute (cpu=0:00:00.1 real=0:00:01.0 mem=2803.1M) ***
-% End Save routing data ... (date=03/16 12:42:42, total cpu=0:00:00.1, real=0:00:01.0, peak res=2802.1M, current mem=2802.1M)
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=2852.3M) ***
+% End Save routing data ... (date=03/17 20:13:41, total cpu=0:00:00.1, real=0:00:00.0, peak res=2851.3M, current mem=2851.3M)
 Saving property file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.prop
-*** Completed saveProperty (cpu=0:00:00.1 real=0:00:00.0 mem=2805.2M) ***
+*** Completed saveProperty (cpu=0:00:00.1 real=0:00:00.0 mem=2854.5M) ***
 #Saving pin access data to file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.apa ...
 Saving rc congestion map /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.congmap.gz ...
 Saving preRoute extracted patterns in file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/Core.techData.gz' ...
 Saving preRoute extraction data in directory '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/postcts.enc/extraction/' ...
-% Begin Save power constraints data ... (date=03/16 12:42:42, mem=2804.8M)
-% End Save power constraints data ... (date=03/16 12:42:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=2804.8M, current mem=2804.8M)
+% Begin Save power constraints data ... (date=03/17 20:13:42, mem=2854.5M)
+% End Save power constraints data ... (date=03/17 20:13:42, total cpu=0:00:00.2, real=0:00:00.0, peak res=2854.5M, current mem=2854.5M)
 Nominal_25C
 Nominal_25C
 Nominal_25C
 **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
 **WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
 Generated self-contained design postcts.enc
-#% End save design ... (date=03/16 12:42:43, total cpu=0:00:03.5, real=0:00:05.0, peak res=2805.7M, current mem=2805.7M)
+#% End save design ... (date=03/17 20:13:43, total cpu=0:00:04.2, real=0:00:07.0, peak res=2862.5M, current mem=2862.5M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -1441,7 +1430,7 @@ Directory 'output/screenshots' already exists.
 @@flow 18: write_to_gif $outfile
 #@ End verbose flow_step implementation.postcts.write_output_screenshot
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:            4.6              4                                      write_output_screenshot
+UM:           5.07              6                                      write_output_screenshot
 #@ Begin verbose flow_step implementation.postcts.schedule_postcts_report_postcts
 @@flow 2: schedule_flow -flow report_postcts -include_in_metrics
 #@ End verbose flow_step implementation.postcts.schedule_postcts_report_postcts
@@ -1449,8 +1438,8 @@ UM:            4.6              4                                      write_out
 Program version = 25.11-s102_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 16, 2026 12:41:40
-Ending time = Mar 16, 2026 12:42:56
+Starting time = Mar 17, 2026 20:12:35
+Ending time = Mar 17, 2026 20:13:57
 
 Run Flow Summary
 ---------------------
@@ -1469,16 +1458,16 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:03:13          | 0:03:18           |                     0 |                11.575 |
-| syn_map     | 0:03:16          | 0:03:14           |                     0 |                11.466 |
-| syn_opt     | 0:01:52          | 0:02:03           |                     0 |                11.469 |
-| floorplan   | 0:02:02          | 0:02:13           |                       |                       |
-| prects      | 0:05:40          | 0:06:35           |                     0 |                11.000 |
-| cts         | 0:04:43          | 0:05:36           |                     0 |                11.086 |
-| postcts     | 0:01:42          | 0:01:47           |                     0 |                10.895 |
+| syn_generic | 0:03:58          | 0:04:05           |                     0 |                 4.065 |
+| syn_map     | 0:03:40          | 0:03:31           |                     0 |                 0.661 |
+| syn_opt     | 0:02:22          | 0:02:31           |                     0 |                 0.027 |
+| floorplan   | 0:02:19          | 0:02:28           |                       |                       |
+| prects      | 0:06:29          | 0:07:33           |                    -0 |                -0.009 |
+| cts         | 0:04:47          | 0:05:46           |                     0 |                 0.065 |
+| postcts     | 0:01:50          | 0:01:58           |                     0 |                 0.065 |
  ---------------------------------------------------------------------------------------------------- 
-*** Message Summary: 158 warning(s), 0 error(s)
+*** Message Summary: 154 warning(s), 0 error(s)
 
 
-*** Memory Usage v#1 (Current mem = 2994.340M, initial mem = 920.531M) ***
---- Ending "Innovus" (totcpu=0:01:55, real=0:02:05, mem=2994.3M) ---
+*** Memory Usage v#1 (Current mem = 3048.770M, initial mem = 954.566M) ***
+--- Ending "Innovus" (totcpu=0:02:05, real=0:02:17, mem=3048.8M) ---

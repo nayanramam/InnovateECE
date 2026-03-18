@@ -10,8 +10,7 @@ set_db floorplan_snap_block_grid inst
 
 # Create the core area of the floorplan with dimensions based on site sizes
 # Assuming we have approximately a 100x100 um box as the placeholder floorplan 
-# The floorplan width is calculated as sitesx * 220 and height as sitesy * 25
-create_floorplan -core_size [expr {$sitesx*2100}] [expr {$sitesy*300}] 30 30 30 30
+create_floorplan -core_size [expr {$sitesx*1950}] [expr {$sitesy*240}] 30 30 30 30
 
 # Initialize core rows for placement within the floorplan
 init_core_rows
@@ -19,6 +18,15 @@ init_core_rows
 # Retrieve and store the design's bounding box dimensions (dx and dy)
 set dx [get_db designs .bbox.dx]  ;# Get the design's X dimension (width)
 set dy [get_db designs .bbox.dy]  ;# Get the design's Y dimension (height)
+
+# Macro Placement
+place_inst InstructionFetch_Module_InstructionMemory_instr_sram 30 50 
+place_inst MainMemory_data_sram 30 550 
+
+# Macro Protection
+create_route_blockage -inst InstructionFetch_Module_InstructionMemory_instr_sram -layers {met1 met2 met3 met4} -cover
+create_route_blockage -inst MainMemory_data_sram -layers {met1 met2 met3 met4} -cover
+create_place_blockage -all_macros
 
 ## Add Power Grid
 # Source an external script to add a power grid to the design
