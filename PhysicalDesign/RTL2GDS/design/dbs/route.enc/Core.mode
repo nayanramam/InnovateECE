@@ -4,8 +4,9 @@ set ::IMEX::libVar ${::IMEX::dataVar}/libs
 
 catch { setDesignMode -bottomRoutingLayer met1 }
 catch { setDesignMode -flowEffort standard }
-catch { setDesignMode -powerEffort none }
+catch { setDesignMode -powerEffort high }
 catch { setDesignMode -process 130 }
+catch { setDesignMode -propagateActivity true }
 catch { setDesignMode -topRoutingLayer met5 }
 catch { setAnalysisMode -analysisType onChipVariation }
 catch { setAnalysisMode -aocv false }
@@ -18,21 +19,19 @@ catch { setAnalysisMode -monteCarlo false }
 catch { setAnalysisMode -socv false }
 catch { setAnalysisMode -timingEngine static }
 catch { setAnalysisMode -usefulSkew true }
-catch { setOptMode -opt_view_pruning_hold_views_active_list { tt_v1.8_25C_Nominal_25_func } }
 catch { setOptMode -opt_view_pruning_setup_views_active_list { tt_v1.8_25C_Nominal_25_func } }
 catch { setOptMode -opt_new_inst_prefix route_ }
-catch { setOptMode -opt_view_pruning_hold_views_persistent_list { tt_v1.8_25C_Nominal_25_func} }
 catch { setOptMode -opt_view_pruning_setup_views_persistent_list { tt_v1.8_25C_Nominal_25_func} }
 catch { setOptMode -opt_view_pruning_tdgr_setup_views_persistent_list { tt_v1.8_25C_Nominal_25_func} }
-catch { setOptMode -opt_view_pruning_hold_target_slack_auto_flow 0 }
 catch { setOptMode -opt_drv_margin 0 }
 catch { setOptMode -opt_drv true }
+catch { setOptMode -opt_hold_target_slack 0.05 }
 catch { setOptMode -opt_leakage_to_dynamic_ratio 0.5 }
 catch { setOptMode -opt_multi_bit_flop_name_prefix CDN_MBIT_ }
 catch { setOptMode -opt_multi_bit_flop_name_separator _MB_ }
 catch { setOptMode -opt_resize_flip_flops true }
 catch { setOptMode -opt_preserve_all_sequential false }
-catch { setOptMode -opt_setup_target_slack 0 }
+catch { setOptMode -opt_setup_target_slack 0.2 }
 catch { setPathGroupOptions tdgp_reg2reg_default -effortLevel high }
 catch { setPathGroupOptions tdgp_reg2reg_default -late -slackAdjustment -0 }
 catch { setExtractRCMode  -engine preRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.4 }
@@ -45,7 +44,7 @@ catch {setNanoRouteMode -quiet -route_exp_design_mode_bottom_routing_layer 1}
 catch {setNanoRouteMode -quiet -route_exp_design_mode_top_routing_layer 5}
 catch {setNanoRouteMode -quiet -route_re_insert_filler_cell_list "FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64"}
 catch {setNanoRouteMode -quiet -route_re_insert_filler_cell_list_from_file false}
-catch {setNanoRouteMode -quiet -timingEngine ".timing_file_580666_5136b7ca-a66c-44c0-88ac-9ced5569fb16.tif.gz"}
+catch {setNanoRouteMode -quiet -timingEngine ".timing_file_2330537_ee93e724-c7ff-46f6-8d34-a67b85778cc6.tif.gz"}
 
 catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
 catch { setActiveLogicViewMode -keepHighFanoutCriticalInsts false }

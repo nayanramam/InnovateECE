@@ -3,19 +3,19 @@ Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
-[19:47:00.185769] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+[21:35:11.185705] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 Version: 25.11-s095_1, built Tue Aug 12 07:59:05 PDT 2025
-Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current tool genus tool_options {} dir . db {{} {} {} {}} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} branch {} caller_data {group 0 process_branch 0} uuid {} parent_uuid {} case_sensitive_match 0 child_of {} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
-Date:    Tue Mar 17 19:47:00 2026
-Host:    ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*4physical cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB) (196451532KB)
-PID:     122604
+Options: -batch -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic -disable_user_startup -execute {if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 2080309} flow {flow flow:flow_current tool genus tool_options {} dir . db {{} {} {} {}} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} branch {} caller_data {group 0 process_branch 0} uuid {} parent_uuid {} case_sensitive_match 0 child_of {} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0} 
+Date:    Mon Mar 23 21:35:11 2026
+Host:    ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.111.1.el8_10.x86_64) (14cores*112cpus*4physical cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB) (394632284KB)
+PID:     2080780
 OS:      Red Hat Enterprise Linux 8.10 (Ootpa)
 
 Checking out license: Genus_Synthesis
-[19:47:00.513570] Periodic Lic check successful
-[19:47:00.513584] Feature usage summary:
-[19:47:00.513585] Genus_Synthesis  
+[21:35:11.247283] Periodic Lic check successful
+[21:35:11.771587] Feature usage summary:
+[21:35:11.771587] Genus_Synthesis  
 License checkout complete (0 seconds elapsed).
 
 
@@ -24,13 +24,13 @@ License checkout complete (0 seconds elapsed).
 
 
 
-Finished executable startup (9 seconds elapsed).
+Finished executable startup (8 seconds elapsed).
 
 Loading tool scripts...
-Finished loading tool scripts (28 seconds elapsed).
+Finished loading tool scripts (26 seconds elapsed).
 
 #@ Processing -execute option
-@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current tool genus tool_options {} dir . db {{} {} {} {}} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} branch {} caller_data {group 0 process_branch 0} uuid {} parent_uuid {} case_sensitive_match 0 child_of {} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@genus:root: 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/syn_generic run_tag {} db {{} {} {} {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 2080309} flow {flow flow:flow_current tool genus tool_options {} dir . db {{} {} {} {}} start_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} branch {} caller_data {group 0 process_branch 0} uuid {} parent_uuid {} case_sensitive_match 0 child_of {} process_branch_trunk 1} flow_name flow:flow_current first_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/syn_generic}; run_flow -from {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:block_start} step flow_step:block_start features {} str synthesis.syn_generic.block_start} -to {tool genus flow flow:flow_current canonical_path {.steps flow:synthesis .steps flow:syn_generic .steps flow_step:schedule_syn_generic_report_synth} step flow_step:schedule_syn_generic_report_synth features {} str synthesis.syn_generic.schedule_syn_generic_report_synth}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/syn_generic} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {{} {} {} {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -310,7 +310,7 @@ UM:*                                                                   syn_gener
   Setting attribute of root '/': 'flow_write_db_common' = false
 #@ End verbose flow_step synthesis.syn_generic.block_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:             42             48                                      block_start
+UM:             38             43                                      block_start
 #@ Begin verbose flow_step synthesis.syn_generic.init_elaborate
 @flow_step(init_elaborate) 2:   # HDL attributes [get_db -category hdl]
 @flow_step(init_elaborate) 3:   #-----------------------------------------------------------------------------
@@ -320,7 +320,7 @@ UM:             42             48                                      block_sta
   Setting attribute of root '/': 'lp_insert_clock_gating' = true
 #@ End verbose flow_step synthesis.syn_generic.init_elaborate
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      init_elaborate
+UM:              2              2                                      init_elaborate
 #@ Begin verbose flow_step synthesis.syn_generic.init_design.read_mmmc
 @flow_step(read_mmmc)   2:   apply {{} {
                                set FH [open [file join [get_db flow_db_directory] [get_db flow_report_name].mmmc_config.tcl] w]
@@ -634,7 +634,7 @@ UM:              3              3                                      init_elab
                                }
                              }}
   Setting attribute of root '/': 'is_read_mmmc_flow' = true
-Sourcing './dbs/syn_generic.mmmc_config.tcl' (Tue Mar 17 19:47:45 EDT 2026)...
+Sourcing './dbs/syn_generic.mmmc_config.tcl' (Mon Mar 23 21:35:51 EDT 2026)...
 #@ Begin verbose source ./dbs/syn_generic.mmmc_config.tcl
 @file(syn_generic.mmmc_config.tcl) 4: create_library_set \
   -name ff_v1.98_0C \
@@ -716,15 +716,12 @@ Info    : Created nominal operating condition. [LBR-412]
         : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
 Info    : Created nominal operating condition. [LBR-412]
         : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib'.
-Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
-        : Clock gating integrated cell name: 'ICGX1'
-        : To make the cell usable, change the value of 'dont_use' attribute to false.
 Info    : Set default library domain. [LBR-109]
         : The default library domain is 'library_domain:tt_v1.8_25C'.
 #@ End verbose source ./dbs/syn_generic.mmmc_config.tcl
 #@ End verbose flow_step synthesis.syn_generic.init_design.read_mmmc
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              4                                      read_mmmc
+UM:              3              3                                      read_mmmc
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_design
 #@ Begin verbose flow_step synthesis.syn_generic.init_design.read_physical
@@ -860,13 +857,13 @@ Stage: post_elab
 | ume_sweep         |       0 |       0 |        0.00 | 
 -------------------------------------------------------
 Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: Core, recur: true)
-Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.000s)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: Core, recur: true)
-Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.001s)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: Core, recur: true)
-Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: Core, recur: true)
-Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.001s)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.000s)
 
 Stage: post_elab
 --------------------------------------------------------------------
@@ -881,7 +878,7 @@ Stage: post_elab
 UM:*                                                                   elaborate
 #@ End verbose flow_step synthesis.syn_generic.init_design.read_hdl
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              5              5                                      read_hdl
+UM:              3              4                                      read_hdl
 #@ Begin verbose flow_step synthesis.syn_generic.init_design.read_power_intent
 @flow_step(read_power_intent) 2:   if {![string is space [get_flow_config -quiet init_power_intent_files 1801]]} {
                                      read_power_intent -1801 [get_flow_config init_power_intent_files 1801]
@@ -891,7 +888,7 @@ UM:              5              5                                      read_hdl
                                    }
 #@ End verbose flow_step synthesis.syn_generic.init_design.read_power_intent
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              2              3                                      read_power_intent
+UM:              3              3                                      read_power_intent
 #@ Begin verbose flow_step synthesis.syn_generic.init_design.run_init_design
 @flow_step(run_init_design) 2:   set_db init_ground_nets VSS
 This attribute has no effect on the tool operation.
@@ -919,6 +916,9 @@ Warning : Command set_timing_derate -delay_corner is expected in Common UI. [SDC
         : Option -delay_corner is required by set_timing_derate in Common UI mode.
 Warning : Command set_timing_derate -delay_corner is expected in Common UI. [SDC-241]
         : .Now using delay corner tt_v1.8_25C_Nominal_25
+Warning : Unsupported SDC command. [SDC-200] [set_max_dynamic_power]
+        : The 'set_max_dynamic_power' command on line '77' of the SDC file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/pipeline_src/base.sdc' is not supported.
+        : The current version of Genus does not support this SDC command and ignores it. However, future versions may be enhanced to support this command. This SDC command will be added to the Tcl variable $::dc::sdc_unsupported_commands_write_sdc. The contents of this variable will be written out during write_sdc.
 Statistics for commands executed by read_sdc:
  "create_clock"             - successful      1 , failed      0 (runtime  0.01)
  "get_ports"                - successful      3 , failed      0 (runtime  0.01)
@@ -926,6 +926,7 @@ Statistics for commands executed by read_sdc:
  "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
  "set_interactive_constraint_modes" - successful      1 , failed      0 (runtime  0.00)
  "set_load"                 - successful      1 , failed      0 (runtime  0.01)
+ "set_max_dynamic_power"    - successful      1 , failed      0 (runtime  0.01)
  "set_max_fanout"           - successful      1 , failed      0 (runtime  0.01)
  "set_max_transition"       - successful      1 , failed      0 (runtime  0.01)
  "set_timing_derate"        - successful      2 , failed      0 (runtime  0.00)
@@ -940,7 +941,7 @@ INFO (IMPEXT-5003): /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/
 
 INFO (IMPEXT-7048): Generating auto layer map file.
 
-INFO (IMPEXT-6209): Completed (cpu: 1550901.000000 real: 1550901.000000)
+INFO (IMPEXT-6209): Completed (cpu: 1103822.000000 real: 1103822.000000)
 
 
   According to qrc_tech_file, there are total 5 routing layers [ V(2) / H(3) ]
@@ -954,7 +955,7 @@ INFO (IMPEXT-5003): /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/
 
 INFO (IMPEXT-7048): Generating auto layer map file.
 
-INFO (IMPEXT-6209): Completed (cpu: 1548911.000000 real: 1548911.000000)
+INFO (IMPEXT-6209): Completed (cpu: 1127977.000000 real: 1127977.000000)
 
 
   According to qrc_tech_file, there are total 5 routing layers [ V(2) / H(3) ]
@@ -962,7 +963,7 @@ INFO (IMPEXT-6209): Completed (cpu: 1548911.000000 real: 1548911.000000)
   Setting attribute of root '/': 'read_qrc_tech_file_rc_corner' = true
 #@ End verbose flow_step synthesis.syn_generic.init_design.run_init_design
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              7              8                                      run_init_design
+UM:              5              6                                      run_init_design
 Finished exporting design database to file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.init_design.run_init_design.db' for 'Core' (command execution time mm:ss cpu = 00:01, real = 00:01).
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   write_db
@@ -983,8 +984,8 @@ no gcells found!
 @flow_step(init_genus_yaml) 12:   #-------------------------------------------------------------------------------
 @flow_step(init_genus_yaml) 13:   set_db design_flow_effort standard
   Setting attribute of root '/': 'design_flow_effort' = standard
-@flow_step(init_genus_yaml) 14:   set_db design_power_effort none
-  Setting attribute of root '/': 'design_power_effort' = none
+@flow_step(init_genus_yaml) 14:   set_db design_power_effort high
+  Setting attribute of root '/': 'design_power_effort' = high
 @flow_step(init_genus_yaml) 15:   set_db opt_leakage_to_dynamic_ratio 0.5
   Setting attribute of root '/': 'opt_leakage_to_dynamic_ratio' = 0.5
 @flow_step(init_genus_yaml) 16:   set_db cts_buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX8}
@@ -1005,7 +1006,7 @@ no gcells found!
   Setting attribute of root '/': 'design_process_node' = 130
 #@ End verbose flow_step synthesis.syn_generic.init_genus.init_genus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              4                                      init_genus_yaml
+UM:              3              3                                      init_genus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_genus
 #@ Begin verbose flow_step synthesis.syn_generic.init_genus.init_genus_user
@@ -1025,11 +1026,9 @@ UM:*                                                                   init_genu
 @flow_step(init_genus_user) 13:   #-----------------------------------------------------------------------------
 @flow_step(init_genus_user) 15:   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
 @flow_step(init_genus_user) 16:   #-----------------------------------------------------------------------------
-@flow_step(init_genus_user) 18:   # Override PDK dont_use to enable ICGX1 for clock gating insertion
-@flow_step(init_genus_user) 19:   set_db [get_db lib_cells ICGX1] .dont_use false
 #@ End verbose flow_step synthesis.syn_generic.init_genus.init_genus_user
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      init_genus_user
+UM:              2              3                                      init_genus_user
 #@ Begin verbose flow_step synthesis.syn_generic.set_dont_use
 @flow_step(set_dont_use) 2:   #- disable base_cell usage during optimization
 #@ End verbose flow_step synthesis.syn_generic.set_dont_use
@@ -1047,7 +1046,7 @@ UM:              3              3                                      set_dont_
                                       }
 #@ End verbose flow_step synthesis.syn_generic.commit_power_intent
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              2              3                                      commit_power_intent
+UM:              2              2                                      commit_power_intent
 #@ Begin verbose flow_step synthesis.syn_generic.run_syn_generic
 @flow_step(run_syn_generic) 2:   #- Synthesize to generic gates
 @flow_step(run_syn_generic) 3:   syn_generic
@@ -1055,7 +1054,7 @@ stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:21(00:01:20) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:48:22 (Mar17) |  872.3 MB | PBS_Generic-Start
+ 00:01:12(00:01:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   21:36:23 (Mar23) |  899.2 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -1066,12 +1065,10 @@ Info    : Undriven module input port. [ELABUTL-131]
 Info    : Undriven module input port. [ELABUTL-131]
         : Assuming a logic '0' value for undriven bits of port 'pc4' of instance 'InstructionDecode_Module' of module 'ID_Stage'.
 Info    : Deleting instances not driving any primary outputs. [GLO-34]
-        : Deleting 65 sequential instances.
+        : Deleting 64 sequential instances.
         : Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.
 Info    : Deleting instances not driving any primary outputs. [GLO-34]
         : Deleting 32 tristate instances.
-Info    : Deleting instances not driving any primary outputs. [GLO-34]
-        : Deleting 2 hierarchical instances.
 
 Stage: pre_early_cg
 -----------------------------------------------
@@ -1633,15 +1630,15 @@ Category                                Number    Percentage
 ------------------------------------------------------------------
 Gated flip-flops                        0		  0%
 Ungated flip-flops
-  Cannot map to requested logic         1121		 73%
-  Enable signal is constant             372		 25%
+  Cannot map to requested logic         1272		 83%
+  Enable signal is constant             222		 15%
   Excluded from clock-gating            0		  0%
   User preserved                        0		  0%
   Libcell unusable                      0		  0%
   Enable not found                      1		  0%
   Timing exception in enable logic      0		  0%
   Register bank width too small         32		  2%
-Total flip-flops                        1526		100%
+Total flip-flops                        1527		100%
 Total CG Modules                        0
 [Clock Gating] Clock gating design done. (1 s.)
   Resetting attribute of root '/': 'basic_opto_skip_datapath' = false
@@ -1649,14 +1646,14 @@ Total CG Modules                        0
 [Clock Gating] Dissolving small equality operators done. (0 s.)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   power_ecg_insertion
-PBS_Generic-earlyCG - Elapsed_Time 3, CPU_Time 2.9859679999999997
+PBS_Generic-earlyCG - Elapsed_Time 3, CPU_Time 1.9870360000000034
 stamp 'PBS_Generic-earlyCG' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:21(00:01:20) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:48:22 (Mar17) |  872.3 MB | PBS_Generic-Start
+ 00:01:12(00:01:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   21:36:23 (Mar23) |  899.2 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:23(00:01:23) |  00:00:02(00:00:03) | 100.0(100.0) |   19:48:25 (Mar17) |  872.3 MB | PBS_Generic-earlyCG
+ 00:01:13(00:01:13) |  00:00:01(00:00:03) | 100.0(100.0) |   21:36:26 (Mar23) |  905.5 MB | PBS_Generic-earlyCG
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -1676,7 +1673,7 @@ Running DP early redundancy removal
 Completed DP early redundancy removal on Core (runtime = 0.0s)
 ...done running DP early constant propagation (1 seconds CPU time, 1 seconds wall time, netlist Core).
 Info    : Deleting instances not driving any primary outputs. [GLO-34]
-        : Deleting 4 hierarchical instances.
+        : Deleting 5 hierarchical instances.
 Current PLE settings:
 
 Aspect ratio        : 1.000
@@ -1724,10 +1721,13 @@ met5            H         1.00         1.600000
 Info    : Synthesizing. [SYNTH-1]
         : Synthesizing 'Core' to generic gates using 'medium' effort.
 Running Synthesis Turbo Flow Version 4.
+Library based partitioning cannot be done as either there is a single library or there are no cells to partition.
+Info    : Leakage power optimization was enabled, but single Vth class seems to be used as leakage values of the given libraries look too similar. [POPT-507]
+        : The tool tries to classify the given libraries into different Vth classes. If the leakage values of the given libraries are too similar, the tool considers all libraries to be of the same Vth class and multi-Vth optimization will be limited.
 Info    : Partition Based Synthesis execution skipped. [PHYS-752]
         : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
 Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: Core, recur: true)
-Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.008s)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.011s)
 
 Stage: pre_to_gen_setup
 -----------------------------------------------------
@@ -1785,6 +1785,7 @@ met3            H         1.00         0.300000
 met4            V         1.00         0.300000  
 met5            H         1.00         1.600000  
 
+Info    : Leakage power optimization was enabled, but single Vth class seems to be used as leakage values of the given libraries look too similar. [POPT-507]
 Info    : Deleting instances not driving any primary outputs. [GLO-34]
         : Deleting 156 sequential instances.
 Running Unified Mux Engine Tricks...
@@ -1841,33 +1842,33 @@ Begin SDR optimization IMPL_BASED_region
 No special hier is found 
 End SDR optimization IMPL_BASED_region 
 Starting timing based select reordering [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.599s)
+Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.573s)
 Starting recase case-box optimization [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed recase case-box optimization (accepts: 0, rejects: 0, runtime: 0.032s)
+Completed recase case-box optimization (accepts: 0, rejects: 0, runtime: 0.029s)
 Starting infer macro optimization [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed infer macro optimization (accepts: 0, rejects: 16, runtime: 0.015s)
 Starting decode mux sandwich optimization [v2.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed decode mux sandwich optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+Completed decode mux sandwich optimization (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting decode mux optimization [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed decode mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting chop wide muxes [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed chop wide muxes (accepts: 0, rejects: 0, runtime: 0.000s)
+Completed chop wide muxes (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.000s)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.002s)
 Starting constant-data mux optimization [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed constant-data mux optimization (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting chain-to-tree inequality transform [v2.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.018s)
+Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.016s)
 Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.008s)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.007s)
 Starting identity transform [v3.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed identity transform (accepts: 0, rejects: 0, runtime: 0.003s)
 Starting reduce operator chain [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed reduce operator chain (accepts: 0, rejects: 0, runtime: 0.001s)
+Completed reduce operator chain (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
@@ -1881,11 +1882,11 @@ Word-level redundancy removal for def Core is saturated.
 Word-level redundancy removal for def Core is saturated.
 Word-level redundancy removal for def Instr_Mem is saturated.
 Word-level redundancy removal for def Instr_Mem is saturated.
-Completed word-level redundancy removal (accepts: 0, rejects: 6, runtime: 0.591s)
+Completed word-level redundancy removal (accepts: 0, rejects: 6, runtime: 0.594s)
 Starting clip mux common data inputs [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting clip the non-user hierarchies [v2.0] (stage: pre_rtlopt, startdef: Core, recur: true)
-Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.001s)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting basic netlist cleanup [v1.0] (stage: pre_rtlopt, startdef: Core, recur: true)
 Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.000s)
 
@@ -1893,7 +1894,7 @@ Stage: pre_rtlopt
 -----------------------------------------------------------------
 | Transform                   | Accepts | Rejects | Runtime (s) | 
 -----------------------------------------------------------------
-| hlo_timing_reorder          |       0 |       0 |        0.60 | 
+| hlo_timing_reorder          |       0 |       0 |        0.57 | 
 | hlo_recase_casebox          |       0 |       0 |        0.03 | 
 | hlo_infer_macro             |       0 |      16 |        0.01 | 
 | hlo_decode_mux_sandwich     |       0 |       0 |        0.00 | 
@@ -2501,7 +2502,7 @@ Combined costing for score 0.00 is 0.00
 ##>                     0                  1                  2                  3                  4                  5                  6                  7            
 ##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ##>           Area       3665099000         3594161600         3594161600         3594161600         3594161600         3594161600         3594161600         3594161600  
-##>            WNS         +6005.80           +5999.30           +5999.30           +5999.30           +5999.30           +5999.30           +5999.30           +5999.30  
+##>            WNS         +6002.60           +5996.10           +5996.10           +5996.10           +5996.10           +5996.10           +5996.10           +5996.10  
 ##>            TNS                0                  0                  0                  0                  0                  0                  0                  0  
 ##>    Num Rewrite                0                  0                  0                  0                  0                  0                  0                  0  
 ##>      Num Share                0                  0                  0                  0                  0                  0                  0                  0  
@@ -2519,50 +2520,50 @@ Combined costing for score 0.00 is 0.00
 ##>
 ##>                          Step                        Area   (  % Chg)         WNS (Change)          TNS (Change)                Power   (  % Chg)        Runtime (s)        Comment                   
 ##>+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-##>EquationExtraction              START             3665099000 (       )     6005.80 (        )          0 (        )                    0 (       )              
-##> rewrite                        START             4853300450 ( +32.42)     5897.30 ( -108.50)          0 (       0)                    0 (  +0.00)              (a,ar) Expr3_from --> Expr3_to
-##>                                  END             8092775050 ( +66.75)     5897.30 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>createMaxCarrySave              START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##> datapath_rewrite_one_def       START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##> csa_opto                       START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>canonicalize_by_names           START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>datapath_rewrite_post_csa_one_  START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>datapath_csa_factoring_one_gde  START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>dpopt_share_one_def             START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>datapath_rewrite_post_share     START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>dp_combine_const_mult_with_com  START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>dp_operator_level_decompositio  START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>selective_flatten_dp_config     START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>createMaxCarrySave              START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##> datapath_rewrite_one_def       START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>  fast_cse_elim                 START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>  fast_cse_elim                 START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##> csa_opto                       START             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>                                  END             3665099000 (  +0.00)     6005.80 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>context_based_simplify          START             3665099000 (  +0.00)     6004.10 (   -1.70)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6004.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>group_csa_final_adder_dp        START             3665099000 (  +0.00)     6004.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6004.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>dpopt_flatten_critical_muxes_i  START             3665099000 (  +0.00)     6004.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3665099000 (  +0.00)     6004.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>create_score                    START             3594161600 (  -1.94)     5999.30 (   -4.80)          0 (       0)                    0 (  +0.00)              
-##>                                  END             3594161600 (  +0.00)     5999.30 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>EquationExtraction              START             3665099000 (       )     6002.60 (        )          0 (        )                    0 (       )              
+##> rewrite                        START             4853300450 ( +32.42)     5894.10 ( -108.50)          0 (       0)                    0 (  +0.00)              (a,ar) Expr3_from --> Expr3_to
+##>                                  END             8092775050 ( +66.75)     5894.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>createMaxCarrySave              START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##> datapath_rewrite_one_def       START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##> csa_opto                       START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>canonicalize_by_names           START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>datapath_rewrite_post_csa_one_  START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>datapath_csa_factoring_one_gde  START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>dpopt_share_one_def             START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>datapath_rewrite_post_share     START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>dp_combine_const_mult_with_com  START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>dp_operator_level_decompositio  START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>selective_flatten_dp_config     START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>createMaxCarrySave              START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##> datapath_rewrite_one_def       START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>  fast_cse_elim                 START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>  fast_cse_elim                 START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##> csa_opto                       START             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>                                  END             3665099000 (  +0.00)     6002.60 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>context_based_simplify          START             3665099000 (  +0.00)     6000.90 (   -1.70)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6000.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>group_csa_final_adder_dp        START             3665099000 (  +0.00)     6000.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6000.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>dpopt_flatten_critical_muxes_i  START             3665099000 (  +0.00)     6000.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3665099000 (  +0.00)     6000.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>create_score                    START             3594161600 (  -1.94)     5996.10 (   -4.80)          0 (       0)                    0 (  +0.00)              
+##>                                  END             3594161600 (  +0.00)     5996.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
 ##>+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 Committed config: CDN_DP_region_0_0_c7
 Info    : Done implementing datapath configurations. [DPOPT-4]
@@ -2625,7 +2626,7 @@ Combined costing for score 0.00 is 0.00
 ##>                     0                  1                  2                  3                  4                  5                  6                  7            
 ##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ##>           Area        455181650          449270200          449270200          449270200          449270200          449270200          449270200          449270200  
-##>            WNS         +7143.10           +7113.70           +7113.70           +7113.70           +7113.70           +7113.70           +7113.70           +7113.70  
+##>            WNS         +7139.90           +7110.50           +7110.50           +7110.50           +7110.50           +7110.50           +7110.50           +7110.50  
 ##>            TNS                0                  0                  0                  0                  0                  0                  0                  0  
 ##>    Num Rewrite                0                  0                  0                  0                  0                  0                  0                  0  
 ##>      Num Share                0                  0                  0                  0                  0                  0                  0                  0  
@@ -2643,48 +2644,48 @@ Combined costing for score 0.00 is 0.00
 ##>
 ##>                          Step                        Area   (  % Chg)         WNS (Change)          TNS (Change)                Power   (  % Chg)        Runtime (s)        Comment                   
 ##>+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-##>EquationExtraction              START              455181650 (       )     7143.10 (        )          0 (        )                    0 (       )              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>createMaxCarrySave              START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##> datapath_rewrite_one_def       START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##> csa_opto                       START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>canonicalize_by_names           START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>datapath_rewrite_post_csa_one_  START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>datapath_csa_factoring_one_gde  START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>dpopt_share_one_def             START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>datapath_rewrite_post_share     START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>dp_combine_const_mult_with_com  START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>dp_operator_level_decompositio  START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>selective_flatten_dp_config     START              455181650 (  +0.00)     7143.10 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              449270200 (  -1.30)     7113.70 (  -29.40)          0 (       0)                    0 (  +0.00)           0  
-##>createMaxCarrySave              START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##> datapath_rewrite_one_def       START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>  fast_cse_elim                 START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>  fast_cse_elim                 START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##> csa_opto                       START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>context_based_simplify          START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>group_csa_final_adder_dp        START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>dpopt_flatten_critical_muxes_i  START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
-##>create_score                    START              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)              
-##>                                  END              449270200 (  +0.00)     7113.70 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>EquationExtraction              START              455181650 (       )     7139.90 (        )          0 (        )                    0 (       )              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>createMaxCarrySave              START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##> datapath_rewrite_one_def       START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##> csa_opto                       START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>canonicalize_by_names           START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>datapath_rewrite_post_csa_one_  START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>datapath_csa_factoring_one_gde  START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>dpopt_share_one_def             START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>datapath_rewrite_post_share     START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>dp_combine_const_mult_with_com  START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>dp_operator_level_decompositio  START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>selective_flatten_dp_config     START              455181650 (  +0.00)     7139.90 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              449270200 (  -1.30)     7110.50 (  -29.40)          0 (       0)                    0 (  +0.00)           0  
+##>createMaxCarrySave              START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##> datapath_rewrite_one_def       START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>  fast_cse_elim                 START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>  fast_cse_elim                 START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##> csa_opto                       START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>context_based_simplify          START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>group_csa_final_adder_dp        START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>dpopt_flatten_critical_muxes_i  START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
+##>create_score                    START              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)              
+##>                                  END              449270200 (  +0.00)     7110.50 (   +0.00)          0 (       0)                    0 (  +0.00)           0  
 ##>+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 Committed config: CDN_DP_region_1_0_c7
 Info    : Done implementing datapath configurations. [DPOPT-4]
@@ -2704,22 +2705,22 @@ Bit-level redundancy removal for def Instr_Mem is saturated.
 Bit-level redundancy removal for def Instr_Mem is saturated.
 Bit-level redundancy removal for def DRAM is saturated.
 Bit-level redundancy removal for def DRAM is saturated.
-Completed bit-level redundancy removal (accepts: 0, rejects: 0, runtime: 0.448s)
+Completed bit-level redundancy removal (accepts: 0, rejects: 0, runtime: 0.385s)
 Starting logic reduction [v1.0] (stage: post_rtlopt, startdef: Core, recur: true)
 Completed logic reduction (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting mux data reorder optimization [v1.0] (stage: post_rtlopt, startdef: Core, recur: true)
-Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting timing based select reordering [v1.0] (stage: post_rtlopt, startdef: Core, recur: true)
-Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.570s)
+Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.558s)
 
 Stage: post_rtlopt
 ----------------------------------------------------------------
 | Transform                  | Accepts | Rejects | Runtime (s) | 
 ----------------------------------------------------------------
-| hlo_redundancy_removal_bit |       0 |       0 |        0.45 | 
+| hlo_redundancy_removal_bit |       0 |       0 |        0.38 | 
 | hlo_logic_reduction        |       0 |       0 |        0.00 | 
 | hlo_mux_reorder            |       0 |       0 |        0.00 | 
-| hlo_timing_reorder         |       0 |       0 |        0.57 | 
+| hlo_timing_reorder         |       0 |       0 |        0.56 | 
 ----------------------------------------------------------------
 Info    : Deleting a transparent latch. [GLO-16]
         : The instance is 'InstructionDecode_Module_alu_operand_a_ex_reg[0]'.
@@ -2771,16 +2772,16 @@ Info    : Deleting instances not driving any primary outputs. [GLO-34]
 Starting mux speculation [v1.0] (stage: post_muxopt, startdef: Core, recur: true)
 Starting speculation optimization
 Completed speculation optimization (accepts:0)
-Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.568s)
+Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.509s)
 Starting timing based select reordering [v1.0] (stage: post_muxopt, startdef: Core, recur: true)
-Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.663s)
+Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.502s)
 
 Stage: post_muxopt
 --------------------------------------------------------
 | Transform          | Accepts | Rejects | Runtime (s) | 
 --------------------------------------------------------
-| hlo_speculation    |       0 |       0 |        0.57 | 
-| hlo_timing_reorder |       0 |       0 |        0.66 | 
+| hlo_speculation    |       0 |       0 |        0.51 | 
+| hlo_timing_reorder |       0 |       0 |        0.50 | 
 --------------------------------------------------------
 ==================================
 Stage : to_generic 
@@ -2807,7 +2808,7 @@ Stage : to_generic
 |           |       |     | bitwidth mismatch that appears in this        |
 |           |       |     | implicit assignment.                          |
 |CDFG-373   |Info   |    4|Sign mismatch in assignment.                   |
-|CDFG-500   |Info   |   11|Unused module input port.                      |
+|CDFG-500   |Info   |   10|Unused module input port.                      |
 |           |       |     |(In port definition within the module, the inpu|
 |           |       |     | t port is not used in any assignment          |
 |           |       |     | statements or conditional expressions for     |
@@ -2869,7 +2870,7 @@ Stage : to_generic
 |GLO-16     |Info   |   66|Deleting a transparent latch.                  |
 |           |       |     |This optimization replaces a latch with a      |
 |           |       |     | feedthrough.                                  |
-|GLO-34     |Info   |    9|Deleting instances not driving any primary     |
+|GLO-34     |Info   |    8|Deleting instances not driving any primary     |
 |           |       |     | outputs.                                      |
 |           |       |     |Optimizations such as constant propagation or  |
 |           |       |     | redundancy removal could change the           |
@@ -2899,7 +2900,7 @@ Stage : to_generic
 |           |       |     | 'optimize_merge_latches' root attributes to   |
 |           |       |     | 'false' or the 'optimize_merge_seq' instance  |
 |           |       |     | attribute to 'false'.                         |
-|GLO-45     |Info   |   96|Replacing the synchronous part of an always    |
+|GLO-45     |Info   |  160|Replacing the synchronous part of an always    |
 |           |       |     | feeding back flip-flop with a logic constant. |
 |           |       |     |To prevent this optimization, set              |
 |           |       |     | 'optimize_constant_feedback_seqs' root        |
@@ -2922,7 +2923,7 @@ Stage : to_generic
 |           |       |     | is set to false. Alternately it can be set to |
 |           |       |     | 'strict_no' to disable ungrouping but this can|
 |           |       |     | impact PPA.                                   |
-|GLO-62     |Info   |  106|On tool_generated instance/module 'strict_no'  |
+|GLO-62     |Info   |  108|On tool_generated instance/module 'strict_no'  |
 |           |       |     | is set.                                       |
 |           |       |     |This shall only be used for special purposes   |
 |           |       |     | like formal verification.                     |
@@ -2942,16 +2943,6 @@ Stage : to_generic
 |           |       |     | considered as a timing-model                  |
 |           |       |     | (because one of its outputs does not have a va|
 |           |       |     | lid function.                                 |
-|LBR-101    |Warning|    1|Unusable clock gating integrated cell found at |
-|           |       |     | the time of loading libraries. This warning   |
-|           |       |     | happens because a particular library cell is  |
-|           |       |     | defined as 'clock_gating_integrated_cell', but|
-|           |       |     | 'dont_use' attribute is defined as true in the|
-|           |       |     | liberty library. To make Genus use this cell  |
-|           |       |     | for clock gating insertion, 'dont_use'        |
-|           |       |     | attribute should be set to false.             |
-|           |       |     |To make the cell usable, change the value of   |
-|           |       |     | 'dont_use' attribute to false.                |
 |LBR-109    |Info   |    1|Set default library domain.                    |
 |LBR-162    |Info   |   26|Both 'pos_unate' and 'neg_unate' timing_sense  |
 |           |       |     | arcs have been processed.                     |
@@ -2976,13 +2967,13 @@ Stage : to_generic
 |           |       |     |Ensure that the proper library files are       |
 |           |       |     | available and have been imported.             |
 |PHYS-752   |Info   |    1|Partition Based Synthesis execution skipped.   |
-|POPT-10    |Info   |   35|Cannot find requested type of clock-gating     |
+|POPT-10    |Info   |   37|Cannot find requested type of clock-gating     |
 |           |       |     | integrated cell.                              |
 |POPT-12    |Info   |    1|Could not find any user created clock-gating   |
 |           |       |     | module.                                       |
 |           |       |     |Looking for Integrated clock-gating cell in    |
 |           |       |     | library.                                      |
-|POPT-78    |Warning|   37|Cannot find any usable integrated clock-gating |
+|POPT-78    |Warning|   39|Cannot find any usable integrated clock-gating |
 |           |       |     | cell.                                         |
 |           |       |     |If the library has an integrated clock-gating  |
 |           |       |     | cell, but this cell has either a 'dont_use' or|
@@ -2991,12 +2982,31 @@ Stage : to_generic
 |           |       |     | usable, set the 'dont_use' and 'dont_touch'   |
 |           |       |     | attributes for the base_cell to 'false' in    |
 |           |       |     | Synthesis.                                    |
+|POPT-507   |Info   |    2|Leakage power optimization was enabled, but    |
+|           |       |     | single Vth class seems to be used as leakage  |
+|           |       |     | values of the given libraries look too        |
+|           |       |     | similar.                                      |
+|           |       |     |The tool tries to classify the given libraries |
+|           |       |     | into different Vth classes. If the leakage    |
+|           |       |     | values of the given libraries are too similar,|
+|           |       |     | the tool considers all libraries to be of the |
+|           |       |     | same Vth class and multi-Vth optimization will|
+|           |       |     | be limited.                                   |
 |RTLOPT-30  |Info   |    7|Accepted resource sharing opportunity.         |
 |RTLOPT-55  |Warning|   14|Inferred datapath logic has changed and cannot |
 |           |       |     | be considered for datapath optimizations.     |
 |           |       |     |For best results, ensure this command is issued|
 |           |       |     | after syn_map, when all datapath optimizations|
 |           |       |     | have finished.                                |
+|SDC-200    |Warning|    1|Unsupported SDC command.                       |
+|           |       |     |The current version of Genus does not support  |
+|           |       |     | this SDC command and ignores it. However,     |
+|           |       |     | future versions may be enhanced to support    |
+|           |       |     | this command. This SDC command will be added  |
+|           |       |     | to the Tcl variable                           |
+|           |       |     | $::dc::sdc_unsupported_commands_write_sdc. The|
+|           |       |     | contents of this variable will be written out |
+|           |       |     | during write_sdc.                             |
 |SDC-241    |Warning|    2|Command set_timing_derate -delay_corner is     |
 |           |       |     | expected in Common UI.                        |
 |           |       |     |Option -delay_corner is required by            |
@@ -3008,12 +3018,12 @@ Stage : to_generic
 |           |       |     |Attribute, 'number_of_routing_layers' on root  |
 |           |       |     | is going to be obsoleted. Use root attribute  |
 |           |       |     | 'design_top_routing_layer' instead.           |
-|TUI-58     |Info   |  118|Removed object.                                |
+|TUI-58     |Info   |  119|Removed object.                                |
 ---------------------------------------------------------------------------
 no gcells found!
-	233	 CDN_PAS_CONNECTED_MUXi6392
+	233	 CDN_PAS_CONNECTED_MUXi6441
 Ungrouping: CDN_PAS_CONNECTED_MUXi count=248 ratio=1.0
-Ungrouping: CDN_PAS_CONNECTED_MUXi6392 count=1611 ratio=1.0
+Ungrouping: CDN_PAS_CONNECTED_MUXi6441 count=1611 ratio=1.0
 Current PLE settings:
 
 Aspect ratio        : 1.000
@@ -3063,6 +3073,7 @@ Warning : Total power has skewed contributions from leakage and dynamic power. [
 	  Total Power:    2410.8143555000 nW
 	  Leakage Power is contributing 0.00236% to the Total Power.
         : Dynamic power is typically calculated/specified for some 'active period'. For combination of leakage and dynamic power opt_leakage_to_dynamic_ratio must specify the percentage of overall time for which the design is not in the 'active period' but in 'idle mode', i.e. no dynamic power but only leakage power is consumed. For a reasonable optimization across dynamic and leakage power, leakage contribution is expected to be above 5% and below 95%. A contribution of less than 5% will result in limited leakage optimization and contribution of more than 95% will result in limited dynamic optimization. Adjust 'opt_leakage_to_dynamic_ratio' so that leakage contribution comes to an intermediate value if you intend both optimizations to occur.
+Info    : Leakage power optimization was enabled, but single Vth class seems to be used as leakage values of the given libraries look too similar. [POPT-507]
 Mapper: Libraries have:
 	domain tt_v1.8_25C: 88 combo usable cells and 18 sequential usable cells
 Inserting clock-gating logic .....
@@ -3158,30 +3169,29 @@ Category                                Number    Percentage
 ------------------------------------------------------------------
 Gated flip-flops                        0		  0%
 Ungated flip-flops
-  Cannot map to requested logic         1119		 78%
-  Enable signal is constant             293		 20%
+  Cannot map to requested logic         1302		 90%
+  Enable signal is constant             138		 10%
   Excluded from clock-gating            0		  0%
   User preserved                        0		  0%
   Libcell unusable                      0		  0%
   Enable not found                      1		  0%
   Timing exception in enable logic      0		  0%
-  Register bank width too small         29		  2%
-Total flip-flops                        1442		100%
+  Register bank width too small         2		  0%
+Total flip-flops                        1443		100%
 Total CG Modules                        0
 Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 112 CPUs usable)
-Normal Structuring mode def=cb_part_500
-Normal Structuring mode def=cdec_240
+Normal Structuring mode def=cb_part
+Normal Structuring mode def=cdec_241
 Normal Structuring mode def=cdec
 TECH-DECOMP MODE def=cmux
-TECH-DECOMP MODE def=cmux_238
-Normal Structuring mode def=add_unsigned_136_400
+TECH-DECOMP MODE def=cmux_239
+Normal Structuring mode def=add_unsigned_136_401
 Normal Structuring mode def=add_unsigned_136
 Normal Structuring mode def=cb_part_502
 Normal Structuring mode def=addsub_unsigned_149
 Normal Structuring mode def=lt_signed_rtlopto_model_496
 Normal Structuring mode def=cb_part_503
-Normal Structuring mode def=cb_part
-Normal Structuring mode def=cb_seq_499
+Normal Structuring mode def=cb_part_500
 Normal Structuring mode def=cb_seq
 ==================================
 Stage : first_condense 
@@ -3200,17 +3210,17 @@ Stage : first_condense
 |        |       |     | You can also prevent individual ungroup with     |
 |        |       |     | setting the attribute 'ungroup_ok' of instances  |
 |        |       |     | or modules to 'false'.                           |
-|GLO-62  |Info   |  168|On tool_generated instance/module 'strict_no' is  |
+|GLO-62  |Info   |  169|On tool_generated instance/module 'strict_no' is  |
 |        |       |     | set.                                             |
 |        |       |     |This shall only be used for special purposes like |
 |        |       |     | formal verification.                             |
-|POPT-10 |Info   |   34|Cannot find requested type of clock-gating        |
+|POPT-10 |Info   |   36|Cannot find requested type of clock-gating        |
 |        |       |     | integrated cell.                                 |
 |POPT-12 |Info   |    1|Could not find any user created clock-gating      |
 |        |       |     | module.                                          |
 |        |       |     |Looking for Integrated clock-gating cell in       |
 |        |       |     | library.                                         |
-|POPT-78 |Warning|   35|Cannot find any usable integrated clock-gating    |
+|POPT-78 |Warning|   37|Cannot find any usable integrated clock-gating    |
 |        |       |     | cell.                                            |
 |        |       |     |If the library has an integrated clock-gating     |
 |        |       |     | cell, but this cell has either a 'dont_use' or a |
@@ -3237,25 +3247,33 @@ Stage : first_condense
 |        |       |     | 'opt_leakage_to_dynamic_ratio' so that leakage   |
 |        |       |     | contribution comes to an intermediate value if   |
 |        |       |     | you intend both optimizations to occur.          |
+|POPT-507|Info   |    1|Leakage power optimization was enabled, but single|
+|        |       |     | Vth class seems to be used as leakage values of  |
+|        |       |     | the given libraries look too similar.            |
+|        |       |     |The tool tries to classify the given libraries    |
+|        |       |     | into different Vth classes. If the leakage values|
+|        |       |     | of the given libraries are too similar, the tool |
+|        |       |     | considers all libraries to be of the same Vth    |
+|        |       |     | class and multi-Vth optimization will be limited.|
 ---------------------------------------------------------------------------
  
 Global mapping target info
 ==========================
 Cost Group 'core_clock' target slack:   291 ps
-Target path end-point (Pin: InstructionFetch_Module_FetchModule_PC_reg[31]/d)
+Target path end-point (Pin: InstructionExecute_Module_alu_result_op_reg[31]/d)
 
-/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/.st_launch_ece-linlabsrv01.ece.gatech.edu_122604
+/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/.st_launch_ece-linlabsrv01.ece.gatech.edu_2080780
 
 State Retention Synthesis Status
 ================================
 
 Category                        Flops  Latches   Percentage
 -----------------------------------------------------------
-Total instances                  1442       20        100.0
-Excluded from State Retention    1442       20        100.0
-    - Will not convert           1442       20        100.0
+Total instances                  1443       20        100.0
+Excluded from State Retention    1443       20        100.0
+    - Will not convert           1443       20        100.0
       - Preserved                   0        0          0.0
-      - Power intent excluded    1442       20        100.0
+      - Power intent excluded    1443       20        100.0
     - Could not convert             0        0          0.0
       - Scan type                   0        0          0.0
       - No suitable cell            0        0          0.0
@@ -3265,7 +3283,7 @@ State Retention instances           0        0          0.0
 no gcells found!
 Starting post first-condense unobservable FF removal
 Detecting unobservable FF's ... (design is uniquified)
-Detected 0 unobservable FF's cputime(detection/total) = 0.262 /0.512 seconds
+Detected 0 unobservable FF's cputime(detection/total) = 0.295 /0.509 seconds
 Unobservable FF redundancy removal succeeded.
 Done post first-condense unobservable FF removal (2.00 cpu seconds) (1.00 elapsed cpu seconds)
 Advanced structuring report (syn_gen):
@@ -3274,23 +3292,23 @@ Advanced structuring report (syn_gen):
 |-------------------------------------+----------------------+----------------------+----------------+-----------------------------|
 | Name                        | Tag   | #nodes | #and | #lvl | #nodes | #and | #lvl | Acc | Time     | Netlist ID                  | 
 ------------------------------------------------------------------------------------------------------------------------------------
-| cb_part_503                 | FCOPT |   4446 |  660 |  142 |   4273 |  487 |   10 | Y   |     3.14 | cb_part_503                 | 
-| cb_part_502                 | FCOPT |   3521 |  310 |   90 |   3499 |  288 |   11 | N   |     1.27 | cb_part_502                 | 
+| cb_part_503                 | FCOPT |   4637 |  654 |  142 |   4468 |  485 |   11 | Y   |     2.76 | cb_part_503                 | 
+| cb_part_502                 | FCOPT |   2729 |  319 |   90 |   2706 |  296 |   11 | N   |     1.53 | cb_part_502                 | 
 ------------------------------------------------------------------------------------------------------------------------------------
 Number of LFLHs filtered from table: 7
-Runtime accepts/rejects/total =     4.62 /     2.12 /     6.74
+Runtime accepts/rejects/total =     4.28 /     2.69 /     6.97
 Accepts/rejects/total = 3 / 6 / 9
-Sum of reduced nodes/levels = 293 / 181
-PBS_Generic_Opt-Post - Elapsed_Time 81, CPU_Time 83.01586400000001
+Sum of reduced nodes/levels = 289 / 180
+PBS_Generic_Opt-Post - Elapsed_Time 74, CPU_Time 77.137873
 stamp 'PBS_Generic_Opt-Post' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:21(00:01:20) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:48:22 (Mar17) |  872.3 MB | PBS_Generic-Start
+ 00:01:12(00:01:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   21:36:23 (Mar23) |  899.2 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:23(00:01:23) |  00:00:02(00:00:03) |   3.4(  3.5) |   19:48:25 (Mar17) |  872.3 MB | PBS_Generic-earlyCG
+ 00:01:13(00:01:13) |  00:00:01(00:00:03) |   2.4(  3.8) |   21:36:26 (Mar23) |  905.5 MB | PBS_Generic-earlyCG
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:48(00:02:46) |  00:01:25(00:01:23) |  96.6( 96.5) |   19:49:48 (Mar17) |   1.33 GB | PBS_Generic_Opt-Post
+ 00:02:33(00:02:29) |  00:01:19(00:01:16) |  97.6( 96.2) |   21:37:42 (Mar23) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -3300,20 +3318,20 @@ stamp 'PBS_Generic-Postgen HBO Optimizations' being created for table 'pbs_debug
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:21(00:01:20) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:48:22 (Mar17) |  872.3 MB | PBS_Generic-Start
+ 00:01:12(00:01:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   21:36:23 (Mar23) |  899.2 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:23(00:01:23) |  00:00:02(00:00:03) |   3.4(  3.5) |   19:48:25 (Mar17) |  872.3 MB | PBS_Generic-earlyCG
+ 00:01:13(00:01:13) |  00:00:01(00:00:03) |   2.4(  3.8) |   21:36:26 (Mar23) |  905.5 MB | PBS_Generic-earlyCG
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:48(00:02:46) |  00:01:25(00:01:23) |  96.6( 96.5) |   19:49:48 (Mar17) |   1.33 GB | PBS_Generic_Opt-Post
+ 00:02:33(00:02:29) |  00:01:19(00:01:16) |  97.6( 96.2) |   21:37:42 (Mar23) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:48(00:02:46) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:49:48 (Mar17) |   1.33 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:02:33(00:02:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   21:37:42 (Mar23) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
 Starting post syn_generic ultra-effort Boolean optimization
 Redundancy removal succeeded.
-Done post syn_generic ultra-effort Boolean optimization (2.00 cpu seconds) (2.00 elapsed cpu seconds)
+Done post syn_generic ultra-effort Boolean optimization (1.00 cpu seconds) (2.00 elapsed cpu seconds)
 Info    : Done synthesizing. [SYNTH-2]
         : Done synthesizing 'Core' to generic gates.
 EarlyCg clean up, version 4
@@ -3331,20 +3349,20 @@ Total number of clock-gating instances after : 0
 [Clock Gating] Declone clock gates (post_gen) done. (0 s.)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   power_ecg_cleanup
-PBS_Generic-earlyCG_cleanup - Elapsed_Time 0, CPU_Time 1.0
+PBS_Generic-earlyCG_cleanup - Elapsed_Time 1, CPU_Time 1.0
 stamp 'PBS_Generic-earlyCG_cleanup' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:21(00:01:20) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:48:22 (Mar17) |  872.3 MB | PBS_Generic-Start
+ 00:01:12(00:01:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   21:36:23 (Mar23) |  899.2 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:01:23(00:01:23) |  00:00:02(00:00:03) |   3.3(  3.4) |   19:48:25 (Mar17) |  872.3 MB | PBS_Generic-earlyCG
+ 00:01:13(00:01:13) |  00:00:01(00:00:03) |   2.4(  3.7) |   21:36:26 (Mar23) |  905.5 MB | PBS_Generic-earlyCG
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:48(00:02:46) |  00:01:25(00:01:23) |  93.4( 93.3) |   19:49:48 (Mar17) |   1.33 GB | PBS_Generic_Opt-Post
+ 00:02:33(00:02:29) |  00:01:19(00:01:16) |  94.1( 92.7) |   21:37:42 (Mar23) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:48(00:02:46) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:49:48 (Mar17) |   1.33 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:02:33(00:02:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   21:37:42 (Mar23) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:02:51(00:02:49) |  00:00:03(00:00:03) |   3.3(  3.4) |   19:49:51 (Mar17) |   1.33 GB | PBS_Generic-earlyCG_cleanup
+ 00:02:36(00:02:32) |  00:00:03(00:00:03) |   3.6(  3.7) |   21:37:45 (Mar23) |   1.37 GB | PBS_Generic-earlyCG_cleanup
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 16 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -3355,7 +3373,7 @@ Info: CPU time includes time of parent + longest thread
 UM:*                                                                   syn_gen
 #@ End verbose flow_step synthesis.syn_generic.run_syn_generic
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:            106             93                                      run_syn_generic
+UM:             98             86                                      run_syn_generic
 #@ Begin verbose flow_step synthesis.syn_generic.block_finish
 @flow_step(block_finish)  2:   apply {{} {
                                  #- Make sure flow_report_name is reset from any reports executed during the flow
@@ -3392,8 +3410,8 @@ UM:            106             93                                      run_syn_g
   Setting attribute of root '/': 'flow_spef_directory' = dbs/syn_generic
 #@ End verbose flow_step synthesis.syn_generic.block_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:              3              3                                      block_finish
-Finished exporting design database to file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db' for 'Core' (command execution time mm:ss cpu = 00:01, real = 00:01).
+UM:              3              2                                      block_finish
+Finished exporting design database to file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/syn_generic.db' for 'Core' (command execution time mm:ss cpu = 00:00, real = 00:01).
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   write_db
 #@ Begin verbose flow_step synthesis.syn_generic.schedule_syn_generic_report_synth
@@ -3403,8 +3421,8 @@ UM:*                                                                   write_db
 Program version = 25.11-s095_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 17, 2026 19:47:37
-Ending time = Mar 17, 2026 19:50:02
+Starting time = Mar 23, 2026 21:35:45
+Ending time = Mar 23, 2026 21:37:54
 
 Run Flow Summary
 ---------------------
@@ -3430,11 +3448,11 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:03:05          | 0:03:03           |                       |                       |
+| syn_generic | 0:02:48          | 0:02:44           |                       |                       |
  ---------------------------------------------------------------------------------------------------- 
 
 Lic Summary:
-[19:50:02.245387] Cdslmd servers: ece-winlic
-[19:50:02.769696] Feature usage summary:
-[19:50:02.769697] Genus_Synthesis  
+[21:37:55.027192] Cdslmd servers: ece-winlic
+[21:37:55.027211] Feature usage summary:
+[21:37:55.027211] Genus_Synthesis  
 Normal exit.

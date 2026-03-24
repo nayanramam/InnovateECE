@@ -3,28 +3,28 @@ Cadence Innovus(TM) Implementation System.
 Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
-Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/prects.report_prects -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 3e46e758-be0f-4aff-8be5-7574f31f2b1c previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/prects.report_prects run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 5 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:report_prects tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/prects.enc Core {}} dir ./. branch {} caller_data {group 0 process_branch 5} include_in_metrics 1 parent_uuid 3e46e758-be0f-4aff-8be5-7574f31f2b1c after {} defer 0 child_of {flow:flow_current flow:implementation flow:prects}} flow_name flow:report_prects first_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}} child_of {flow:flow_current flow:implementation flow:prects} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/prects.report_prects}; run_flow -from {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} -to {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_prects} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
-Date:		Tue Mar 17 20:04:57 2026
-Host:		ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.104.1.el8_10.x86_64) (14cores*112cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB)
+Options:	-batch -stylus -log /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/prects.report_prects -disable_user_startup -execute if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 9e80adc4-b19f-4aa1-9cac-f732690ed94a previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/prects.report_prects run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1 Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 1 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 2279554} flow {flow flow:report_prects tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/prects.enc_1 Core {}} dir ./. branch {} caller_data {group 0 process_branch 1} include_in_metrics 1 parent_uuid 9e80adc4-b19f-4aa1-9cac-f732690ed94a after {} defer 0 child_of {flow:flow_current flow:implementation flow:prects}} flow_name flow:report_prects first_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}} child_of {flow:flow_current flow:implementation flow:prects} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/prects.report_prects}; run_flow -from {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} -to {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_prects} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1 Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0 
+Date:		Mon Mar 23 22:21:45 2026
+Host:		ece-linlabsrv01 (x86_64 w/Linux 4.18.0-553.111.1.el8_10.x86_64) (14cores*112cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB)
 OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
 
 License:
-		[20:04:57.185745] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
+		[22:21:45.185729] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu
 
 		invs	Innovus Implementation System	25.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
 
 
-Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_417014_aaddd248-e10b-4bab-a57b-ae646c311ac5_ece-linlabsrv01_dkhalil8_UR1vma.
+Create and set the environment variable TMPDIR to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/innovus_temp_2303048_d2e5d532-93e9-4eb9-a811-de715f1e351a_ece-linlabsrv01_dkhalil8_A7109m.
 
-Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
 [INFO] Loading Pegasus 24.14 fill procedures
-Info: Process UID = 417014 / aaddd248-e10b-4bab-a57b-ae646c311ac5 / IKfcEzOz2L
+Info: Process UID = 2303048 / d2e5d532-93e9-4eb9-a811-de715f1e351a / tonanhNTZQ
 
 **INFO:  MMMC transition support version v31-84 
 
 #@ Processing -execute option
-@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 3e46e758-be0f-4aff-8be5-7574f31f2b1c previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/prects.report_prects run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 5 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:report_prects tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/prects.enc Core {}} dir ./. branch {} caller_data {group 0 process_branch 5} include_in_metrics 1 parent_uuid 3e46e758-be0f-4aff-8be5-7574f31f2b1c after {} defer 0 child_of {flow:flow_current flow:implementation flow:prects}} flow_name flow:report_prects first_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}} child_of {flow:flow_current flow:implementation flow:prects} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/prects.report_prects}; run_flow -from {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} -to {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_prects} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
+@innovus 1> if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 9e80adc4-b19f-4aa1-9cac-f732690ed94a previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/prects.report_prects run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1 Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 1 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 2279554} flow {flow flow:report_prects tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/prects.enc_1 Core {}} dir ./. branch {} caller_data {group 0 process_branch 1} include_in_metrics 1 parent_uuid 9e80adc4-b19f-4aa1-9cac-f732690ed94a after {} defer 0 child_of {flow:flow_current flow:implementation flow:prects}} flow_name flow:report_prects first_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}} child_of {flow:flow_current flow:implementation flow:prects} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/prects.report_prects}; run_flow -from {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} -to {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_prects} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1 Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 }; exit 0
 init_flow summary:
   Flow script        : 
   YAML script        : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -33,7 +33,7 @@ init_flow summary:
   To                 : report_finish
   Top directory      : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
   Working directory  : .
-  Starting database  : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc
+  Starting database  : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1
   Run tag            : 
   Branch name        : 
   Metrics file       : /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/prects.report_prects
@@ -135,7 +135,7 @@ if {[get_feature opt_signoff]} {
 set_multi_cpu_usage -local_cpu 1
 #@ End verbose flow_step init_mcpu
 End steps for plugin point Cadence.plugin.flowkit.read_db.pre
-#% Begin load design ... (date=03/17 20:05:36, mem=2068.0M)
+#% Begin load design ... (date=03/23 22:22:23, mem=2104.9M)
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_aocv_enable_gba_combine_launch_capture' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
@@ -163,7 +163,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
 **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_backward_compatible_latch_thru_mt_mode' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
-Loading design 'Core' saved by 'Innovus' '25.11-s102_1' on 'Tue Mar 17 20:04:07 2026'.
+Loading design 'Core' saved by 'Innovus' '25.11-s102_1' on 'Mon Mar 23 22:20:56 2026'.
 Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/cadence_sky130/sky130_scl_9T_0.0.5/lib/sky130_tt_1.8_25_nldm.lib' ...
 Read 109 cells in library 'sky130_tt_1.8_25' 
 Reading tt_v1.8_25C timing library '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/SiliconJackets/sram_sky130/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib' ...
@@ -171,12 +171,12 @@ Read 1 cells in library 'sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C_lib'
 ff_v1.98_0C tt_v1.8_25C ss_v1.62_125C
 Nominal_25C
 
-Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/libs/lef/sky130_scl_9T.tlef ...
+Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/libs/lef/sky130_scl_9T.tlef ...
 
-Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/libs/lef/sky130_scl_9T.lef ...
+Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/libs/lef/sky130_scl_9T.lef ...
 Set DBUPerIGU to M2 pitch 460.
 
-Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/libs/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef ...
+Loading LEF file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/libs/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef ...
 **WARN: (IMPLF-200):	Pin 'din0[0]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-200):	Pin 'din0[1]' in macro 'sky130_sram_2kbyte_1rw1r_32x512_8' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
@@ -265,17 +265,17 @@ To increase the message display limit, refer to the product command reference ma
 ##  Check design process and node:  
 ##  Design tech node is not set.
 
-Loading view definition file from /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/viewDefinition.tcl
-% Begin Load netlist data ... (date=03/17 20:05:40, mem=2088.1M)
-*** Begin netlist parsing (mem=2088.1M) ***
+Loading view definition file from /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/viewDefinition.tcl
+% Begin Load netlist data ... (date=03/23 22:22:27, mem=2125.4M)
+*** Begin netlist parsing (mem=2125.4M) ***
 Created 110 new cells from 2 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
-Reading verilogBinary netlist '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.v.bin'
+Reading verilogBinary netlist '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.v.bin'
 
-*** Memory Usage v#1 (Current mem = 2097.598M, initial mem = 967.586M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2097.6M) ***
-% End Load netlist data ... (date=03/17 20:05:40, total cpu=0:00:00.1, real=0:00:00.0, peak res=2096.9M, current mem=2096.9M)
+*** Memory Usage v#1 (Current mem = 2135.262M, initial mem = 973.078M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=2135.3M) ***
+% End Load netlist data ... (date=03/23 22:22:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=2134.6M, current mem=2134.6M)
 Top level cell is Core.
 Hooked 110 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -284,11 +284,12 @@ Building hierarchical netlist for Cell Core ...
 ***** UseNewTieNetMode *****.
 *** Netlist is unique.
 ** info: there are 119 modules.
-** info: there are 7619 stdCell insts.
-** info: there are 7619 stdCell insts with at least one signal pin.
+** info: there are 8271 stdCell insts.
+** info: there are 8271 stdCell insts with at least one signal pin.
 ** info: there are 2 macros.
+** info: there are 8270 multi-height stdCell insts (65 stdCells)
 
-*** Memory Usage v#1 (Current mem = 2129.316M, initial mem = 967.586M) ***
+*** Memory Usage v#1 (Current mem = 2168.645M, initial mem = 973.078M) ***
 *info: set bottom ioPad orient R0
 **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
@@ -298,7 +299,7 @@ Start create_tracks
 Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
 Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
 Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
-Loading preference file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/gui.pref.tcl ...
+Loading preference file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/gui.pref.tcl ...
 **WARN: (IMPDB-6501):	"set_db design_process_node" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
 ##  Process: 130           (User Set)               
 ##     Node: (not set)                           
@@ -338,60 +339,60 @@ List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X4 DLY4X4
 Total number of identified usable delay cells: 4
 List of identified unusable delay cells:
 Total number of identified unusable delay cells: 0
-Reading floorplan file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.fp.gz (mem = 2436.0M).
-% Begin Load floorplan data ... (date=03/17 20:05:42, mem=2436.5M)
-*info: reset 9385 existing net BottomPreferredLayer and AvoidDetour
+Reading floorplan file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.fp.gz (mem = 2476.4M).
+% Begin Load floorplan data ... (date=03/23 22:22:28, mem=2477.0M)
+*info: reset 9984 existing net BottomPreferredLayer and AvoidDetour
 Deleting old partition specification.
-Set FPlanBox to (0 0 1025800 1136200)
+Set FPlanBox to (0 0 956800 1053400)
 **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
 Type 'man IMPFP-3961' for more detail.
  ... processed partition successfully.
-Reading binary special route file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.fp.spr.gz (Created by Innovus v25.11-s102_1 on Tue Mar 17 20:04:04 2026, version: 1)
-Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2438.2M, current mem=2438.2M)
+Reading binary special route file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.fp.spr.gz (Created by Innovus v25.11-s102_1 on Mon Mar 23 22:20:53 2026, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2478.6M, current mem=2478.6M)
 There are 1 nets with bottomPreferredRoutingLayer being set
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Delete all existing relative floorplan constraints.
-% End Load floorplan data ... (date=03/17 20:05:43, total cpu=0:00:00.2, real=0:00:01.0, peak res=2438.9M, current mem=2438.9M)
-Reading congestion map file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.route.congmap.gz ...
-% Begin Load SymbolTable ... (date=03/17 20:05:43, mem=2438.9M)
+% End Load floorplan data ... (date=03/23 22:22:29, total cpu=0:00:00.1, real=0:00:01.0, peak res=2479.5M, current mem=2479.4M)
+Reading congestion map file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=03/23 22:22:29, mem=2479.4M)
 Suppress "**WARN ..." messages.
 Un-suppress "**WARN ..." messages.
-% End Load SymbolTable ... (date=03/17 20:05:44, total cpu=0:00:00.1, real=0:00:01.0, peak res=2441.9M, current mem=2441.8M)
+% End Load SymbolTable ... (date=03/23 22:22:29, total cpu=0:00:00.1, real=0:00:00.0, peak res=2482.1M, current mem=2482.1M)
 Loading place ...
-% Begin Load placement data ... (date=03/17 20:05:44, mem=2441.8M)
-Reading placement file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.place.gz.
-** Reading stdCellPlacement_binary (Created by Innovus v25.11-s102_1 on Tue Mar 17 20:04:05 2026, version# 2) ...
+% Begin Load placement data ... (date=03/23 22:22:29, mem=2482.1M)
+Reading placement file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v25.11-s102_1 on Mon Mar 23 22:20:54 2026, version# 2) ...
 Read Views for adaptive view pruning ...
 Read 0 views from Binary DB for adaptive view pruning
-*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2442.4M) ***
-Total net length = 4.562e+05 (2.147e+05 2.415e+05) (ext = 4.786e+03)
-% End Load placement data ... (date=03/17 20:05:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=2442.6M, current mem=2442.4M)
-Reading PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on       Tue Mar 17 20:04:05 2026)
-*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2442.7M) ***
-% Begin Load routing data ... (date=03/17 20:05:44, mem=2442.7M)
-Reading routing file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.route.gz.
-Reading Innovus routing data (Created by Innovus v25.11-s102_1 on Tue Mar 17 20:04:05 2026 Format: 23.1) ...
-*** Total 9273 nets are successfully restored.
-*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=2444.5M) ***
-% End Load routing data ... (date=03/17 20:05:44, total cpu=0:00:00.2, real=0:00:01.0, peak res=2444.5M, current mem=2443.5M)
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2482.9M) ***
+Total net length = 4.285e+05 (2.082e+05 2.203e+05) (ext = 4.046e+03)
+% End Load placement data ... (date=03/23 22:22:29, total cpu=0:00:00.1, real=0:00:00.0, peak res=2483.1M, current mem=2482.7M)
+Reading PG file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on       Mon Mar 23 22:20:54 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2483.1M) ***
+% Begin Load routing data ... (date=03/23 22:22:29, mem=2483.1M)
+Reading routing file - /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.route.gz.
+Reading Innovus routing data (Created by Innovus v25.11-s102_1 on Mon Mar 23 22:20:54 2026 Format: 23.1) ...
+*** Total 9918 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=2484.4M) ***
+% End Load routing data ... (date=03/23 22:22:30, total cpu=0:00:00.2, real=0:00:00.0, peak res=2484.4M, current mem=2483.5M)
 Loading Drc markers ...
-... 363 markers are loaded ...
+... 364 markers are loaded ...
 ... 0 geometry drc markers are loaded ...
 ... 0 antenna drc markers are loaded ...
-TAT_INFO: ::restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
-Reading property file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.prop
-*** Completed restoreProperty (cpu=0:00:00.1 real=0:00:00.0 mem=2448.7M) ***
+TAT_INFO: ::restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.prop
+*** Completed restoreProperty (cpu=0:00:00.1 real=0:00:00.0 mem=2487.1M) ***
 ff_v1.98_0C_Nominal_25 tt_v1.8_25C_Nominal_25 ss_v1.62_125C_Nominal_25
 Change floorplan default-technical-site to 'CoreSite'.
-Loading preRoute extraction data from directory '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/extraction/' ...
+Loading preRoute extraction data from directory '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/extraction/' ...
 Extraction setup Started for TopCell Core 
 Initializing multi-corner RC extraction with 1 active RC Corners ...
 Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
 Generating auto layer map file.
-Loading preRoute extracted patterns from file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core.techData.gz' ...
+Loading preRoute extracted patterns from file '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core.techData.gz' ...
 Completed (cpu: 0:00:00.3 real: 0:00:00.0)
 Set Shrink Factor to 1.00000
 Summary of Active RC-Corners : 
@@ -411,7 +412,7 @@ Summary of Active RC-Corners :
     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
-    RC-Corner Technology file: '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/libs/mmmc/Nominal_25C/qrcTechFile'
+    RC-Corner Technology file: '/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/libs/mmmc/Nominal_25C/qrcTechFile'
 Restored Grid density data
 Initializing multi-corner resistance tables ...
 Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
@@ -420,20 +421,20 @@ Start generating vias ..
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Via generation completed.
-% Begin Load power constraints ... (date=03/17 20:05:46, mem=2477.1M)
-source /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc/Core_power_constraints.tcl
+% Begin Load power constraints ... (date=03/23 22:22:31, mem=2515.7M)
+source /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1/Core_power_constraints.tcl
 'set_default_switching_activity' finished successfully.
-% End Load power constraints ... (date=03/17 20:05:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=2498.7M, current mem=2498.7M)
+% End Load power constraints ... (date=03/23 22:22:31, total cpu=0:00:00.1, real=0:00:01.0, peak res=2538.9M, current mem=2538.9M)
 ff_v1.98_0C_Nominal_25 tt_v1.8_25C_Nominal_25 ss_v1.62_125C_Nominal_25
-% Begin load AAE data ... (date=03/17 20:05:46, mem=2517.9M)
+% Begin load AAE data ... (date=03/23 22:22:32, mem=2557.9M)
 **WARN: (IMPESI-3505):	set_db delaycal_eng_enablePrePlacedFlow false (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=2532.996094 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End load AAE data ... (date=03/17 20:05:47, total cpu=0:00:00.8, real=0:00:00.0, peak res=2533.3M, current mem=2533.3M)
+AAE DB initialization (MEM=2577.406250 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=03/23 22:22:32, total cpu=0:00:00.8, real=0:00:00.0, peak res=2579.4M, current mem=2579.4M)
 Restoring CCOpt config...
   Extracting original clock gating for core_clock...
-    clock_tree core_clock contains 1446 sinks and 0 clock gates.
+    clock_tree core_clock contains 1447 sinks and 0 clock gates.
   Extracting original clock gating for core_clock done.
-  The skew group core_clock/func was created. It contains 1446 sinks and 1 sources.
+  The skew group core_clock/func was created. It contains 1447 sinks and 1 sources.
 Restoring CCOpt config done.
 Total number of combinational cells: 87
 Total number of sequential cells: 19
@@ -462,7 +463,7 @@ Total number of identified unusable delay cells: 0
 timing_aocv_enable_gba_combine_launch_capture
 timing_enable_backward_compatible_latch_thru_mt_mode
 timing_enable_separate_device_slew_effect_sensitivities
-#% End load design ... (date=03/17 20:05:48, total cpu=0:00:08.9, real=0:00:12.0, peak res=2548.4M, current mem=2538.0M)
+#% End load design ... (date=03/23 22:22:33, total cpu=0:00:07.5, real=0:00:09.0, peak res=2588.4M, current mem=2582.9M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -581,7 +582,7 @@ UM:*                                                                   report_pr
 #@ Begin verbose flow_step report_start
 #@ End verbose flow_step report_start
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          51.13             54                                      report_start
+UM:          46.31             52                                      report_start
 #@ Begin verbose flow_step init_innovus.init_innovus_yaml
 @flow 2: if {[get_feature report_lec]} {...}
 @flow 8: # Design attributes  [get_db -category design]
@@ -602,7 +603,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 @@flow 11: set_db design_top_routing_layer met5
 @@flow 12: set_db design_bottom_routing_layer met1
 @@flow 13: set_db design_flow_effort standard
-@@flow 14: set_db design_power_effort none
+@@flow 14: set_db design_power_effort high
 @flow 16: # Timing attributes  [get_db -category timing && delaycalc]
 @flow 17: #-------------------------------------------------------------------------------
 @@flow 18: set_db timing_analysis_cppr           both
@@ -637,7 +638,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 @flow 59: #-------------------------------------------------------------------------------
 #@ End verbose flow_step init_innovus.init_innovus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           4.89              4                                      init_innovus_yaml
+UM:           4.58              5                                      init_innovus_yaml
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   init_innovus
 #@ Begin verbose flow_step init_innovus.init_innovus_user
@@ -652,13 +653,17 @@ UM:*                                                                   init_inno
 @flow 13: #-----------------------------------------------------------------------------
 @flow 15: # Optimization attributes  [get_db -category opt]
 @flow 16: #-----------------------------------------------------------------------------
-@flow 18: # Clock attributes  [get_db -category cts]
-@flow 19: #-----------------------------------------------------------------------------
-@flow 21: # Routing attributes  [get_db -category route]
-@flow 22: #-----------------------------------------------------------------------------
+@flow 18: # hold target slack of 50ps for optimization
+@@flow 19: set_db opt_hold_target_slack 0.050
+@flow 21: # setup target slack of 200ps for optimization
+@@flow 22: set_db opt_setup_target_slack 0.2
+@flow 24: # Clock attributes  [get_db -category cts]
+@flow 25: #-----------------------------------------------------------------------------
+@flow 27: # Routing attributes  [get_db -category route]
+@flow 28: #-----------------------------------------------------------------------------
 #@ End verbose flow_step init_innovus.init_innovus_user
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           4.13              4                                      init_innovus_user
+UM:           4.02              4                                      init_innovus_user
 #@ Begin verbose flow_step report_check_design
 @flow 2: apply {{} {
     set check_list [list timing place opt]
@@ -681,7 +686,7 @@ Begin: Design checking
 -----------------------------------------------------------------------------------------------------------------------
 | CHKTIM-4          | warning   | 20          | Clock pin %s of instance %s has no clock constraint for view name %s. |
 -----------------------------------------------------------------------------------------------------------------------
-		(Real time: 0:00:01.0, Memory: 2667.5M)
+		(Real time: 0:00:01.0, Memory: 2711.2M)
 
         Checking 'place' category...
         Messages issued during checks:
@@ -690,8 +695,9 @@ Begin: Design checking
 --------------------------------------------------------------------------------------------------------------
 | CHKPLC-11         | error     | 1           | Macro cell <%s> should have a fully covered obstruction.     |
 | IMPFP-10119       | error     | 2           | %s has been chosen to fit to %s but it's %s NOT fit to grid. |
+| IMPFP-10122       | info      | 1           | Instance %s not snapped to row-site.                         |
 --------------------------------------------------------------------------------------------------------------
-		(Real time: 0:00:01.0, Memory: 2675.1M)
+		(Real time: 0:00:00.0, Memory: 2731.4M)
 
         Checking 'opt' category...
         Messages issued during checks:
@@ -699,16 +705,17 @@ Begin: Design checking
 | ID                | Severity  | Count       | Description                                                                                                                   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | IMPOPT-2908       | warning   | 1           | Maximum transition %.3f is too small compared to maximum transition threshold %.3f, this would result in excessive buffering. |
+| IMPOPT-7264       | warning   | 1           | Running power optimization flow with leakage to dynamic ratio of %f but without activity file loaded.                         |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		(Real time: 0:00:05.0, Memory: 2801.6M)
+		(Real time: 0:00:05.0, Memory: 2867.6M)
 
-**INFO: Identified 3 error(s) and 21 warning(s) during 'check_design -type {timing place opt}'.
+**INFO: Identified 3 error(s) and 22 warning(s) during 'check_design -type {timing place opt}'.
         The details of the error(s) and warning(s) can be found in report 'reports/prects/check.design.tcl'
 End: Design checking
 #@ End verbose flow_step report_check_design
 UM: Running design category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          11.58             11                                      report_check_design
+UM:          10.52             10                                      report_check_design
 #@ Begin verbose flow_step report_area_innovus
 @@flow 2: report_summary -no_html -out_dir debug -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]qor.rpt]
 Start to collect the design information.
@@ -728,11 +735,13 @@ Report saved in file reports/prects/qor.rpt
 #@ End verbose flow_step report_area_innovus
 UM: Running design category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           5.07              4                                      report_area_innovus
+UM:           4.78              5                                      report_area_innovus
 #@ Begin verbose flow_step report_late_summary_innovus
 @flow 2: #- Update the timer for setup and write reports
 @@flow 3: time_design -expanded_views -report_only -report_dir debug -report_prefix [get_db flow_report_name]
-*** time_design #1 [begin] () : totSession cpu/real = 0:01:21.2/0:01:24.2 (1.0), mem = 2834.3M
+*** time_design #1 [begin] () : totSession cpu/real = 0:01:14.2/0:01:19.0 (0.9), mem = 2902.4M
+
+**INFO: Power effort not set by setOptMode, so setting 'setOptMode -opt_power_effort high', as set by setDesignMode
 
 OptSummary:
 
@@ -746,16 +755,16 @@ Setup views included:
 +--------------------+---------+---------+---------+
 |     Setup mode     |   all   | reg2reg | default |
 +--------------------+---------+---------+---------+
-|           WNS (ns):| -0.009  | -0.009  |  7.077  |
-|           TNS (ns):| -0.009  | -0.009  |  0.000  |
-|    Violating Paths:|    1    |    1    |    0    |
-|          All Paths:|  1573   |  1571   |  1272   |
+|           WNS (ns):|  0.188  |  0.188  |  6.369  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  1510   |  1508   |  1456   |
 +--------------------+---------+---------+---------+
 |tt_v1.8_25C_Nominal_25_func
-|                    | -0.009  | -0.009  |  7.077  |
-|                    | -0.009  | -0.009  |  0.000  |
-|                    |    1    |    1    |    0    |
-|                    |  1573   |  1571   |  1272   |
+|                    |  0.188  |  0.188  |  6.369  |
+|                    |  0.000  |  0.000  |  0.000  |
+|                    |    0    |    0    |    0    |
+|                    |  1510   |  1508   |  1456   |
 +--------------------+---------+---------+---------+
 
 +----------------+-------------------------------+------------------+
@@ -769,13 +778,13 @@ Setup views included:
 |   max_length   |      0 (0)       |     0      |      0 (0)       |
 +----------------+------------------+------------+------------------+
 
-Density: 25.974%
+Density: 39.890%
 ------------------------------------------------------------------
 Reported timing to dir debug
-Total CPU time: 1.69 sec
+Total CPU time: 1.64 sec
 Total Real time: 3.0 sec
-Total Memory Usage: 2830.167969 Mbytes
-*** time_design #1 [finish] () : cpu/real = 0:00:01.7/0:00:03.3 (0.5), totSession cpu/real = 0:01:22.8/0:01:27.4 (0.9), mem = 2830.2M
+Total Memory Usage: 2899.164062 Mbytes
+*** time_design #1 [finish] () : cpu/real = 0:00:01.6/0:00:03.2 (0.5), totSession cpu/real = 0:01:15.8/0:01:22.2 (0.9), mem = 2899.2M
 @flow 5: #- Reports that describe timing health
 @@flow 6: report_timing_summary -checks {setup drv} > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.analysis_summary.rpt]
 @@flow 7: report_timing_summary -checks {setup drv} -expand_views > [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]setup.view_summary.rpt]
@@ -787,8 +796,9 @@ The -expand_views option of report_timing_summary does not provide additional in
 @@flow 11: set_metric -name timing.drv.report_file -value [file join [get_db flow_report_name] [get_db flow_report_prefix]setup.all_violators.rpt]
 #@ End verbose flow_step report_late_summary_innovus
 UM: Running setup category ...
+**WARN: (TCLCMD-1469):	No timing paths found matching the specified criteria. Empty collection returned.
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           8.51             10         -0.009 ns         -0.009 ns  report_late_summary_innovus
+UM:           7.91             10          0.000 ns          0.188 ns  report_late_summary_innovus
 #@ Begin verbose flow_step report_late_paths
 @flow 2: #- Reports that show detailed timing with Graph Based Analysis (GBA)
 @@flow 3: report_timing -max_paths 5   -nworst 1 -path_type endpoint        > [file join [get_db flow_report_directory] [get_db flow_report_name] setup.endpoint.rpt]
@@ -801,7 +811,7 @@ UM:           8.51             10         -0.009 ns         -0.009 ns  report_la
 @flow 12: }
 #@ End verbose flow_step report_late_paths
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           5.22              5                                      report_late_paths
+UM:           4.87              5                                      report_late_paths
 #@ Begin verbose flow_step report_power_innovus
 @@flow 2: report_power -no_wrap -out_file [file join [get_db flow_report_directory] [get_db flow_report_name] [get_db flow_report_prefix]power.all.rpt]
 env CDS_WORKAREA is set to /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
@@ -822,52 +832,49 @@ Begin Power Analysis
 
 Begin Processing Timing Library for Power Calculation
 
-Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2859.16MB/5906.19MB/2859.16MB)
+Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2932.34MB/5905.65MB/2932.34MB)
 
 
 
 Begin Processing Power Net/Grid for Power Calculation
 
-Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2859.16MB/5906.19MB/2859.16MB)
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2932.34MB/5905.65MB/2932.34MB)
 
 Begin Processing Timing Window Data for Power Calculation
 
 core_clock(100MHz) CK: assigning clock core_clock to net clock
-Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2859.25MB/5906.19MB/2859.25MB)
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2932.40MB/5905.65MB/2932.40MB)
 
 Begin Processing User Attributes
 
-Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2859.38MB/5906.19MB/2859.38MB)
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2932.40MB/5905.65MB/2932.40MB)
 
 Begin Processing Signal Activity
 
 
 Starting Levelizing
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT)
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 10%
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 20%
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 30%
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 40%
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 50%
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 60%
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 70%
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 80%
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT): 90%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT)
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 10%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 20%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 30%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 40%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 50%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 60%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 70%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 80%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 90%
 
 Finished Levelizing
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT)
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT)
 
 Starting Activity Propagation
-2026-Mar-17 20:06:39 (2026-Mar-18 00:06:39 GMT)
-** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
-Use 'set_default_switching_activity -input_activity' command to change the default activity value.
-
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 10%
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 20%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT)
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 10%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 20%
 
 Finished Activity Propagation
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT)
-Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2859.66MB/5906.19MB/2859.66MB)
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2932.59MB/5905.65MB/2932.59MB)
 
 Begin Power Computation
 
@@ -880,36 +887,36 @@ Begin Power Computation
 
 
 Starting Calculating power
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT)
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT)
  ... Calculating switching power
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 10%
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 20%
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 30%
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 40%
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 50%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 10%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 20%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 30%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 40%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 50%
  ... Calculating internal and leakage power
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 60%
-2026-Mar-17 20:06:40 (2026-Mar-18 00:06:40 GMT): 70%
-2026-Mar-17 20:06:41 (2026-Mar-18 00:06:41 GMT): 80%
-2026-Mar-17 20:06:41 (2026-Mar-18 00:06:41 GMT): 90%
+2026-Mar-23 22:23:21 (2026-Mar-24 02:23:21 GMT): 60%
+2026-Mar-23 22:23:22 (2026-Mar-24 02:23:22 GMT): 70%
+2026-Mar-23 22:23:22 (2026-Mar-24 02:23:22 GMT): 80%
+2026-Mar-23 22:23:22 (2026-Mar-24 02:23:22 GMT): 90%
 
 Finished Calculating power
-2026-Mar-17 20:06:41 (2026-Mar-18 00:06:41 GMT)
+2026-Mar-23 22:23:23 (2026-Mar-24 02:23:23 GMT)
       # of MSMV cell(s) missing power_level: 0
-Ended Power Computation: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=2860.31MB/5906.19MB/2860.31MB)
+Ended Power Computation: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=2933.48MB/5905.65MB/2933.48MB)
 
 Begin Processing User Attributes
 
 Begin Processing set_power
 Ended Processing set_power: (cpu=0:00:00, real=0:00:00,
-mem(process/total/peak)=2860.31MB/5906.19MB/2860.31MB)
-Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2860.31MB/5906.19MB/2860.31MB)
+mem(process/total/peak)=2933.48MB/5905.65MB/2933.48MB)
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2933.48MB/5905.65MB/2933.48MB)
 
-Ended Power Analysis: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=2860.31MB/5906.19MB/2860.31MB)
+Ended Power Analysis: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=2933.48MB/5905.65MB/2933.48MB)
 
 Begin Boundary Leakage Calculation
 Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
-mem(process/total/peak)=2860.43MB/5906.19MB/2860.43MB)
+mem(process/total/peak)=2933.61MB/5905.65MB/2933.61MB)
 Begin Static Power Report Generation
 *
 
@@ -917,32 +924,32 @@ Begin Static Power Report Generation
 
 Total Power
 -----------------------------------------------------------------------------------------
-Total Internal Power:       18.90840868 	   82.2339%
-Total Switching Power:       4.04398392 	   17.5876%
-Total Leakage Power:         0.04104222 	    0.1785%
-Total Power:                22.99343482
+Total Internal Power:       18.83480954 	   82.2041%
+Total Switching Power:       4.03647347 	   17.6171%
+Total Leakage Power:         0.04096393 	    0.1788%
+Total Power:                22.91224693
 -----------------------------------------------------------------------------------------
 ** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
 
 Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
-mem(process/total/peak)=2861.32MB/5906.19MB/2861.32MB)
+mem(process/total/peak)=2934.45MB/5905.65MB/2934.45MB)
 
 
 Output file is reports/prects/power.all.rpt
 #@ End verbose flow_step report_power_innovus
 UM: Running power category ...
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           7.12              6                                      report_power_innovus
+UM:           6.81              7                                      report_power_innovus
 #@ Begin verbose flow_step report_finish
 #@ End verbose flow_step report_finish
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           4.65              4                                      report_finish
+UM:           4.41              4                                      report_finish
 
 Program version = 25.11-s102_1
 Working directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 Databases directory = /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs
-Starting time = Mar 17, 2026 20:05:51
-Ending time = Mar 17, 2026 20:06:51
+Starting time = Mar 23, 2026 22:22:35
+Ending time = Mar 23, 2026 22:23:32
 
 Run Flow Summary
 ---------------------
@@ -963,14 +970,14 @@ Step status:
  ---------------------------------------------------------------------------------------------------- 
 | Snapshot    | flow.cputime (s) | flow.realtime (s) | timing.setup.tns (ns) | timing.setup.wns (ns) |
 |-------------+------------------+-------------------+-----------------------+-----------------------|
-| syn_generic | 0:03:58          | 0:04:05           |                     0 |                 4.065 |
-| syn_map     | 0:03:40          | 0:03:31           |                     0 |                 0.661 |
-| syn_opt     | 0:02:22          | 0:02:31           |                     0 |                 0.027 |
-| floorplan   | 0:02:19          | 0:02:28           |                       |                       |
-| prects      | 0:06:29          | 0:07:33           |                    -0 |                -0.009 |
+| syn_generic | 0:03:35          | 0:03:39           |                     0 |                 4.008 |
+| syn_map     | 0:04:33          | 0:03:58           |                     0 |                 0.656 |
+| syn_opt     | 0:03:26          | 0:03:05           |                     0 |                 0.035 |
+| floorplan   | 0:02:04          | 0:02:10           |                       |                       |
+| prects      | 0:08:31          | 0:09:35           |                     0 |                 0.188 |
  ---------------------------------------------------------------------------------------------------- 
-*** Message Summary: 172 warning(s), 5 error(s)
+*** Message Summary: 174 warning(s), 5 error(s)
 
 
-*** Memory Usage v#1 (Current mem = 2859.555M, initial mem = 967.586M) ***
---- Ending "Innovus" (totcpu=0:01:47, real=0:01:55, mem=2859.6M) ---
+*** Memory Usage v#1 (Current mem = 2926.902M, initial mem = 973.078M) ***
+--- Ending "Innovus" (totcpu=0:01:39, real=0:01:47, mem=2926.9M) ---

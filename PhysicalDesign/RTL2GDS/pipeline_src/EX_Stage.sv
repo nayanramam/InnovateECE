@@ -89,16 +89,30 @@ module EX_Stage (
 
 
   // EX-MEM Pipeline Buffer
-  always @(posedge clock) begin
-    lsu_enable_pt_op <= lsu_enable_pt_ip;
-    ex_lsu_operator_pt_op <= ex_lsu_operator_pt_ip;
-    mem_wdata_pt_op <= mem_wdata_pt_ip;
-    alu_result_op <= alu_result;
-    alu_valid_op <= alu_valid;
-    ex_wb_mux_op <= ex_wb_mux_ip;
-    ex_write_reg_addr_pt_op <= ex_write_reg_addr_pt_ip;
-    ex_pc_addr_pt_op <= ex_pc_addr_pt_ip;
-    ex_uimmd_pt_op <= ex_uimmd_pt_ip;
+  // Enable uses registered signals from ID_Stage (latch_posedge ICG compatible)
+  always_ff @(posedge clock) begin
+    if (reset) begin
+      lsu_enable_pt_op        <= '0;
+      ex_lsu_operator_pt_op   <= NOP;
+      mem_wdata_pt_op         <= '0;
+      alu_result_op           <= '0;
+      alu_valid_op            <= '0;
+      ex_wb_mux_op            <= NO_WRITEBACK;
+      ex_write_reg_addr_pt_op <= '0;
+      ex_pc_addr_pt_op        <= '0;
+      ex_uimmd_pt_op          <= '0;
+    end else if (alu_enable_ip | lsu_enable_pt_ip) begin
+      lsu_enable_pt_op        <= lsu_enable_pt_ip;
+      ex_lsu_operator_pt_op   <= ex_lsu_operator_pt_ip;
+      mem_wdata_pt_op         <= mem_wdata_pt_ip;
+      alu_result_op           <= alu_result;
+      alu_valid_op            <= alu_valid;
+      ex_wb_mux_op            <= ex_wb_mux_ip;
+      ex_write_reg_addr_pt_op <= ex_write_reg_addr_pt_ip;
+      ex_pc_addr_pt_op        <= ex_pc_addr_pt_ip;
+      ex_uimmd_pt_op          <= ex_uimmd_pt_ip;
+    end
+    // else: bubble — hold current values (clock gate opportunity for Genus)
   end
 
   // Forwarding Selection

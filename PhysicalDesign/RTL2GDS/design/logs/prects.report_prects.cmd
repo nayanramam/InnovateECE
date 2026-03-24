@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue Mar 17 20:05:28 2026                
+#  Created on Mon Mar 23 22:22:16 2026                
 #                                                     
 #######################################################
 
@@ -13,7 +13,7 @@
 #@(#)CDS: CPE v25.11-s029
 #@(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
 
-if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 3e46e758-be0f-4aff-8be5-7574f31f2b1c previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/prects.report_prects run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 5 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:report_prects tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/prects.enc Core {}} dir ./. branch {} caller_data {group 0 process_branch 5} include_in_metrics 1 parent_uuid 3e46e758-be0f-4aff-8be5-7574f31f2b1c after {} defer 0 child_of {flow:flow_current flow:implementation flow:prects}} flow_name flow:report_prects first_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}} child_of {flow:flow_current flow:implementation flow:prects} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/prects.report_prects}; run_flow -from {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} -to {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_prects} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 };
+if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid 9e80adc4-b19f-4aa1-9cac-f732690ed94a previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir ./. status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/prects.report_prects run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1 Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 1 trunk_process 0 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 2279554} flow {flow flow:report_prects tool innovus tool_options -disable_user_startup no_sync 0 sync 0 db {enc dbs/prects.enc_1 Core {}} dir ./. branch {} caller_data {group 0 process_branch 1} include_in_metrics 1 parent_uuid 9e80adc4-b19f-4aa1-9cac-f732690ed94a after {} defer 0 child_of {flow:flow_current flow:implementation flow:prects}} flow_name flow:report_prects first_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 0 aum_upload false tool_options -disable_user_startup overwrite 0 last_step {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}} child_of {flow:flow_current flow:implementation flow:prects} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/prects.report_prects}; run_flow -from {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_start} step flow_step:report_start features {} str report_start child_of {flow:flow_current flow:implementation flow:prects}} -to {tool innovus flow flow:report_prects canonical_path {.steps flow_step:report_finish} step flow_step:report_finish features {} str report_finish child_of {flow:flow_current flow:implementation flow:prects}}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/prects.report_prects} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:report_prects} branch {} flow_working_directory {./.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1 Core {}} {tool_options} {-disable_user_startup} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 };
 #@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 #@ (init_flow): read_metric -id current /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/prects.report_prects -previous 
 #@ (init_flow): read_flow /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -105,7 +105,7 @@ if {[get_feature opt_signoff]} {
 }
   }}
 #@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
-#@ (init_flow): read_db /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc
+#@ (init_flow): read_db /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/prects.enc_1
 #@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 #@ (init_flow): read_flow /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
 #@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
@@ -247,7 +247,7 @@ set_db design_process_node 130
 set_db design_top_routing_layer met5
 set_db design_bottom_routing_layer met1
 set_db design_flow_effort standard
-set_db design_power_effort none
+set_db design_power_effort high
 set_db timing_analysis_cppr           both
 set_db timing_analysis_type           ocv
 set_db timing_analysis_aocv 0
@@ -269,6 +269,8 @@ set_db add_fillers_cells {FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64}
 #@ (run_flow): pop_snapshot_stack
 #@ (run_flow): push_snapshot_stack
 set_db finish_floorplan_active_objs   [list macro soft_blockage core]
+set_db opt_hold_target_slack 0.050
+set_db opt_setup_target_slack 0.2
 #@ (run_flow): pop_snapshot_stack
 #@ (flow_step:report_check_design)  2:   #- extend flow report name based on context
 #@ (flow_step:report_check_design)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {

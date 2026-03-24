@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue Mar 17 20:20:36 2026                
+#  Created on Mon Mar 23 22:38:49 2026                
 #                                                     
 #######################################################
 
@@ -13,7 +13,7 @@
 #@(#)CDS: CPE v25.11-s029
 #@(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
 
-if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postroute metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/postroute run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} flow {flow flow:flow_current dir . db {enc dbs/route.enc Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 121620} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postroute.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postroute.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:innovus_to_quantus} step flow_step:innovus_to_quantus features {} str implementation.postroute.innovus_to_quantus} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/postroute}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postroute.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:innovus_to_quantus} step flow_step:innovus_to_quantus features {} str implementation.postroute.innovus_to_quantus}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postroute} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 };
+if {[catch {init_flow  {flow_script {} yaml_script /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml flow_no_check 0 parent_uuid {} previous_uuid {} top_dir /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design flow_dir . status_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postroute metrics_file /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/postroute run_tag {} db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc Core {}} db_is_ref_run 0 branch {} caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 2279554} flow {flow flow:flow_current dir . db {enc dbs/route.enc Core {}} branch {} tool innovus caller_data {group 0 process_branch 0 trunk_process 1 flowtool_hostname ece-linlabsrv01.ece.gatech.edu flowtool_pid 2279554} uuid {} tool_options {} start_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postroute.block_start} process_branch_trunk 1} flow_name flow:flow_current first_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postroute.block_start} interactive 0 interactive_run 0 enabled_features {} inject_tcl {} trunk_process 1 aum_upload false tool_options {} overwrite 0 last_step {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:innovus_to_quantus} step flow_step:innovus_to_quantus features {} str implementation.postroute.innovus_to_quantus} log_prefix /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/logs/postroute}; run_flow -from {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:block_start} step flow_step:block_start features {} str implementation.postroute.block_start} -to {tool innovus flow flow:flow_current canonical_path {.steps flow:implementation .steps flow:postroute .steps flow_step:innovus_to_quantus} step flow_step:innovus_to_quantus features {} str implementation.postroute.innovus_to_quantus}} msg]} { puts [concat {Tcl error:} $errorInfo]; set fp [open {/nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.status.d/postroute} a]; puts $fp {}; puts $fp [list [list script run_tcl status error flow {flow:flow_current} branch {} flow_working_directory {.} flow_starting_db {enc /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc Core {}} {tool_options} {} steps_run [get_db flow_step_canonical_current] msg $msg]]; close $fp; exit 1 };
 #@ (init_flow): cd /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design
 #@ (init_flow): read_metric -id current /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/flow.metrics.d/postroute -previous 
 #@ (init_flow): read_flow /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/scripts/flow.yaml
@@ -248,7 +248,7 @@ set_db design_process_node 130
 set_db design_top_routing_layer met5
 set_db design_bottom_routing_layer met1
 set_db design_flow_effort standard
-set_db design_power_effort none
+set_db design_power_effort high
 set_db timing_analysis_cppr           both
 set_db timing_analysis_type           ocv
 set_db timing_analysis_aocv 0
@@ -273,6 +273,8 @@ set_db add_fillers_cells {FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64}
 #@ (run_flow): pop_snapshot_stack
 #@ (run_flow): push_snapshot_stack
 set_db finish_floorplan_active_objs   [list macro soft_blockage core]
+set_db opt_hold_target_slack 0.050
+set_db opt_setup_target_slack 0.2
 #@ (run_flow): pop_snapshot_stack
 #@ (flow_step:run_opt_postroute)  2:   #- extend flow report name based on context
 #@ (flow_step:run_opt_postroute)  3:   if {[is_flow -quiet -inside flow:sta] || [is_flow -quiet -inside flow:sta_dmmmc] || [is_flow -quiet -inside flow:sta_eco]} {
@@ -296,7 +298,7 @@ set_db finish_floorplan_active_objs   [list macro soft_blockage core]
 #@ (flow_step:run_opt_postroute) 22:   #- Create report dir (if necessary)
 #@ (flow_step:run_opt_postroute) 23:   file mkdir [file normalize [file join [get_db flow_report_directory] [get_db flow_report_name]]]
 #@ (run_flow): push_snapshot_stack
-opt_design -post_route -setup -hold -report_dir debug -report_prefix [get_db flow_report_name]
+opt_design -post_route -setup -hold -drv -report_dir debug -report_prefix [get_db flow_report_name]
 #@ (run_flow): pop_snapshot_stack
 #@ (run_flow): push_snapshot_stack
 apply {{} {
@@ -348,6 +350,9 @@ apply {{} {
       puts "Last round of DRC fixing completed after $drc_iter iterations. Remaining DRCs are [llength $drcMList]."
     }
   }}
+#@ (run_flow): pop_snapshot_stack
+#@ (run_flow): push_snapshot_stack
+add_metal_fill  -layer {met1 met2 met3 met4 met5}  -nets {VDD VSS}
 #@ (run_flow): pop_snapshot_stack
 #@ (run_flow): push_snapshot_stack
 apply {{} {

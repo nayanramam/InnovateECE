@@ -2,7 +2,7 @@
 set_units -time ns
 
 # Define the clock period in nanoseconds
-set CLOCK_PERIOD 25 ;# Clock period is set to 25ns  (40 MHz)
+set CLOCK_PERIOD 10 ;# Clock period is set to 10ns  (100 MHz)
 
 # Set the constraint mode to "func" (functional mode)
 set_interactive_constraint_modes {func}
@@ -72,3 +72,6 @@ set_timing_derate -late [expr 1+[expr $TIME_DERATING_CONSTRAINT / 100]]
 
 # Set maximum fanout for any net in the design to 4
 set_max_fanout 4
+
+# Cap dynamic power budget
+set_max_dynamic_power 5 mW

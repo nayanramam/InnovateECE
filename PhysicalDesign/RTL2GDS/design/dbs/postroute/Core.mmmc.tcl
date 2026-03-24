@@ -1,13 +1,13 @@
 create_library_set -name ff_v1.98_0C\
    -timing\
-    [list /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc_3/libs/mmmc/sky130_ff_1.98_0_nldm.lib]
+    [list /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc/libs/mmmc/sky130_ff_1.98_0_nldm.lib]
 create_library_set -name tt_v1.8_25C\
    -timing\
-    [list /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc_3/libs/mmmc/sky130_tt_1.8_25_nldm.lib\
-    /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc_3/libs/mmmc/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib]
+    [list /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc/libs/mmmc/sky130_tt_1.8_25_nldm.lib\
+    /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc/libs/mmmc/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib]
 create_library_set -name ss_v1.62_125C\
    -timing\
-    [list /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc_3/libs/mmmc/sky130_ss_1.62_125_nldm.lib]
+    [list /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc/libs/mmmc/sky130_ss_1.62_125_nldm.lib]
 create_timing_condition -name ff_v1.98_0C\
    -library_sets [list ff_v1.98_0C]
 create_timing_condition -name tt_v1.8_25C\
@@ -26,7 +26,7 @@ create_rc_corner -name Nominal_25C\
    -post_route_clock_res {1 1 1}\
    -post_route_clock_cross_cap {1 1 1}\
    -temperature 25\
-   -qrc_tech /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc_3/libs/mmmc/Nominal_25C/qrcTechFile
+   -qrc_tech /nethome/dkhalil8/InnovateECE/PhysicalDesign/RTL2GDS/design/dbs/route.enc/libs/mmmc/Nominal_25C/qrcTechFile
 create_delay_corner -name ff_v1.98_0C_Nominal_25\
    -early_timing_condition {ff_v1.98_0C}\
    -late_timing_condition {ff_v1.98_0C}\

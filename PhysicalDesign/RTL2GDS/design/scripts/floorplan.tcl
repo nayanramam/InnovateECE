@@ -20,13 +20,31 @@ set dx [get_db designs .bbox.dx]  ;# Get the design's X dimension (width)
 set dy [get_db designs .bbox.dy]  ;# Get the design's Y dimension (height)
 
 # Macro Placement
-place_inst InstructionFetch_Module_InstructionMemory_instr_sram 30 50 
-place_inst MainMemory_data_sram 30 550 
+place_inst InstructionFetch_Module_InstructionMemory_instr_sram 60 50 
+place_inst MainMemory_data_sram 60 511 
 
 # Macro Protection
 create_route_blockage -inst InstructionFetch_Module_InstructionMemory_instr_sram -layers {met1 met2 met3 met4} -cover
 create_route_blockage -inst MainMemory_data_sram -layers {met1 met2 met3 met4} -cover
 create_place_blockage -all_macros
+
+## Pipeline Stage Placement Guides
+## create_guide -name requires the actual hierarchical instance name
+## MEM at bottom, forward path flows bottom-to-top, WB+IF co-located at top
+
+# MEM at bottom — closest to data SRAM interface
+create_guide -name LoadStoreUnit             -area {743 50  867 360}
+
+# ID + FWD in lower-middle
+create_guide -name InstructionDecode_Module  -area {743 360 867 560}
+create_guide -name ForwardController_Module  -area {743 360 867 560}
+
+# EX in upper-middle — feeds alu_next_pc_addr to IF above
+create_guide -name InstructionExecute_Module -area {743 560 867 760}
+
+# IF + WB co-located at top — eliminates long wire on WB->EX->IF critical path
+create_guide -name InstructionFetch_Module   -area {743 760 867 960}
+create_guide -name WriteBack_Module          -area {743 760 867 960}
 
 ## Add Power Grid
 # Source an external script to add a power grid to the design

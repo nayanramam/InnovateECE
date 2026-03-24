@@ -234,7 +234,7 @@ design_process_node: 130
 design_flow_effort: standard
 
 # The power effort optimization level {none low high}.
-design_power_effort: none
+design_power_effort: high
 
 # A YAML list of base_cell names which should be marked as dont_use
 dont_use_cells:
@@ -271,6 +271,7 @@ opt_leakage_to_dynamic_ratio: 0.5
 
 # Enable or disable RTL clock-gate insertion
 lp_insert_clock_gating: true
+lp_insert_operand_isolation: true
 
 # The minimum number of attached loads should be greater than given value.
 lp_clock_gating_min_flops: 
@@ -281,8 +282,7 @@ lp_clock_gating_max_flops:
 #< PLACEHOLDER: MAX FANOUT FOR CLOCK GATE >
 
 # Controls automatic timing adjustment on clock-gate enable paths { none fixed variable }
-lp_clock_gating_auto_path_adjust: 
-#variable
+lp_clock_gating_auto_path_adjust:
 
 # 'cts' related attributes
 #---------------------------------------------------------------------------------------------------

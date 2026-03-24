@@ -58,13 +58,24 @@ module Mem_Stage (
   assign data_addr_valid_op = valid_mem_operation;
 
   // Pipeline Buffer
-  always @(posedge clock) begin
-    lsu_wb_mux_pt_op <= lsu_wb_mux_pt_ip;
-    wb_alu_result_pt_op <= wb_alu_result_pt_ip;
-    wb_alu_result_valid_pt_op <= wb_alu_result_valid_pt_ip;
-    lsu_write_reg_addr_pt_op <= lsu_write_reg_addr_pt_ip;
-    lsu_pc_addr_pt_op <= lsu_pc_addr_pt_ip;
-    lsu_uimmd_pt_op <= lsu_uimmd_pt_ip;
+  // Enable uses registered alu_valid_op from EX_Stage (latch_posedge ICG compatible)
+  always_ff @(posedge clock) begin
+    if (reset) begin
+      lsu_wb_mux_pt_op          <= NO_WRITEBACK;
+      wb_alu_result_pt_op       <= '0;
+      wb_alu_result_valid_pt_op <= '0;
+      lsu_write_reg_addr_pt_op  <= '0;
+      lsu_pc_addr_pt_op         <= '0;
+      lsu_uimmd_pt_op           <= '0;
+    end else if (alu_valid_ip) begin
+      lsu_wb_mux_pt_op          <= lsu_wb_mux_pt_ip;
+      wb_alu_result_pt_op       <= wb_alu_result_pt_ip;
+      wb_alu_result_valid_pt_op <= wb_alu_result_valid_pt_ip;
+      lsu_write_reg_addr_pt_op  <= lsu_write_reg_addr_pt_ip;
+      lsu_pc_addr_pt_op         <= lsu_pc_addr_pt_ip;
+      lsu_uimmd_pt_op           <= lsu_uimmd_pt_ip;
+    end
+    // else: bubble — hold current values (clock gate opportunity for Genus)
   end
 
   always @(posedge clock) begin

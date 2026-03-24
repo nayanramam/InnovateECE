@@ -114,6 +114,11 @@ create_flow_step -name add_fillers {
   }
 } -owner {cadence}
 set_db flow_step:add_fillers .status not_run
+create_flow_step -name add_metal_fill {
+  #- insert dummy metal fill to meet minimum density requirements
+  add_metal_fill  -layer {met1 met2 met3 met4 met5}  -nets {VDD VSS}
+} -owner {cadence}
+set_db flow_step:add_metal_fill .status not_run
 create_flow_step -name add_tieoffs {
   #- insert dedicated tieoff models
   if {[get_db add_tieoffs_cells] ne "" } {
@@ -331,9 +336,6 @@ create_flow_step -name init_genus_user {
   
   # Leakage Power attributes  [get_db -category lp_opt lib_ui]
   #-----------------------------------------------------------------------------
-  
-  # Override PDK dont_use to enable ICGX1 for clock gating insertion
-  set_db [get_db lib_cells ICGX1] .dont_use false
 
 } -owner {design}
 set_db flow_step:init_genus_user .status not_run
@@ -383,6 +385,12 @@ create_flow_step -name init_innovus_user {
   # Optimization attributes  [get_db -category opt]
   #-----------------------------------------------------------------------------
   
+  # hold target slack of 50ps for optimization
+  set_db opt_hold_target_slack 0.050
+
+  # setup target slack of 200ps for optimization
+  set_db opt_setup_target_slack 0.2
+
   # Clock attributes  [get_db -category cts]
   #-----------------------------------------------------------------------------
   
@@ -1451,8 +1459,8 @@ create_flow_step -name run_opt_postcts_hold {
 } -owner {cadence}
 set_db flow_step:run_opt_postcts_hold .status not_run
 create_flow_step -name run_opt_postroute {
-  #- perform postroute and SI based setup optimization
-  opt_design -post_route -setup -hold -report_dir debug -report_prefix [get_db flow_report_name]
+  #- perform postroute and SI based setup optimization, including DRV fixing
+  opt_design -post_route -setup -hold -drv -report_dir debug -report_prefix [get_db flow_report_name]
 } -owner {cadence}
 set_db flow_step:run_opt_postroute .status not_run
 create_flow_step -name run_opt_signoff {

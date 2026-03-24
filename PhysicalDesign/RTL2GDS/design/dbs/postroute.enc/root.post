@@ -8,9 +8,10 @@
 ::db::check_and_set_root_attr delaycal_ignore_net_load false
 ::db::check_and_set_root_attr design_bottom_routing_layer met1
 ::db::check_and_set_root_attr design_flow_effort standard
-::db::check_and_set_root_attr design_power_effort none
+::db::check_and_set_root_attr design_power_effort high
+::db::check_and_set_root_attr design_propagate_activity true
 ::db::check_and_set_root_attr design_top_routing_layer met5
-::db::check_and_set_root_attr extract_design_signature 40055013
+::db::check_and_set_root_attr extract_design_signature 103110941
 ::db::check_and_set_root_attr extract_rc_assume_metal_fill 0.0
 ::db::check_and_set_root_attr extract_rc_coupled true
 ::db::check_and_set_root_attr extract_rc_coupling_cap_threshold 0.4
@@ -37,20 +38,19 @@
 ::db::check_and_set_root_attr opt_drv true
 ::db::check_and_set_root_attr opt_drv_margin 0.0
 ::db::check_and_set_root_attr opt_hier_trial_route_honor_read_only false
+::db::check_and_set_root_attr opt_hold_target_slack 0.05
 ::db::check_and_set_root_attr opt_leakage_to_dynamic_ratio 0.5
 ::db::check_and_set_root_attr opt_multi_bit_flop_name_prefix CDN_MBIT_
 ::db::check_and_set_root_attr opt_multi_bit_flop_name_separator _MB_
 ::db::check_and_set_root_attr opt_new_inst_prefix postroute_
 ::db::check_and_set_root_attr opt_preserve_all_sequential false
 ::db::check_and_set_root_attr opt_resize_flip_flops true
-::db::check_and_set_root_attr opt_setup_target_slack 0.0
+::db::check_and_set_root_attr opt_setup_target_slack 0.2
 ::db::check_and_set_root_attr opt_skew_eco_route false
-::db::check_and_set_root_attr opt_view_pruning_hold_target_slack_auto_flow 0
-::db::check_and_set_root_attr opt_view_pruning_hold_views_active_list { tt_v1.8_25C_Nominal_25_func }
-::db::check_and_set_root_attr opt_view_pruning_hold_views_persistent_list { tt_v1.8_25C_Nominal_25_func}
 ::db::check_and_set_root_attr opt_view_pruning_setup_views_active_list { tt_v1.8_25C_Nominal_25_func }
 ::db::check_and_set_root_attr opt_view_pruning_setup_views_persistent_list { tt_v1.8_25C_Nominal_25_func}
 ::db::check_and_set_root_attr opt_view_pruning_tdgr_setup_views_persistent_list { tt_v1.8_25C_Nominal_25_func}
+::db::check_and_set_root_attr power_boundary_gate_leakage_report false
 ::db::check_and_set_root_attr power_compatible_internal_power true
 ::db::check_and_set_root_attr power_disable_static false
 ::db::check_and_set_root_attr power_enable_input_net_power false

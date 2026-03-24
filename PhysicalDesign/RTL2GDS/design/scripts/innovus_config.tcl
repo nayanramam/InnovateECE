@@ -37,6 +37,9 @@ create_flow_step -name init_innovus_user -owner design {
   # hold target slack of 50ps for optimization
   set_db opt_hold_target_slack 0.050
 
+  # setup target slack of 200ps for optimization
+  set_db opt_setup_target_slack 0.2
+
   # Clock attributes  [get_db -category cts]
   #-----------------------------------------------------------------------------
   

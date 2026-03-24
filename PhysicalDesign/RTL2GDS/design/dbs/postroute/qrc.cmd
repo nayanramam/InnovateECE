@@ -12,7 +12,7 @@ input_db -type def \
 input_db -type def \
 	-design_file dbs/postroute/qrc.def.gz
 log_file \
-	-file_name qrc_1150279_20260318_00:21:05_885.log \
+	-file_name qrc_2344196_20260323_22:44:05_792.log \
 	-dump_options true
 extraction_setup \
 	-promote_pin_pad logical
