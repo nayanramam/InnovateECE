@@ -19,7 +19,16 @@ module loadstore_unit (
     input logic [31:0] input_data, // data coming back from the memory (for load instructions)
 
     // To writeback, for load instructions (figure out specifics later)
-    output logic [31:0] writeback_output;
+    output logic [31:0] writeback_output,
+
+    // Dot product input/outputs
+    input logic [7:0] x_i,
+    input logic [7:0] w_i,
+    input logic [3:0] dot_counter,
+    input logic [9:0] result_o,
+    input logic ready_o,
+    output logic dac_enable,
+    output logic [9:0] dac_result_op;
 );
 
     logic [31:0] instruction; // internal register for storing the instruction
@@ -52,6 +61,9 @@ module loadstore_unit (
         mem_addr = alu_result;
         mem_wdata = 32'b0; 
 
+        dac_enable = 1'b0;
+        dac_result_op = 10'b0;
+
         if(en_lsu) begin
             case(lsu_operator_op)
                 LW: begin // Load word
@@ -73,6 +85,10 @@ module loadstore_unit (
                         2'b10: mem_wdata = {8'b0, mem_wdata[7:0], 16'b0};
                         2'b11: mem_wdata = {mem_wdata[7:0], 24'b0};
                     endcase
+                end
+                DAC_LOAD: begin // Case for doing the dot product
+                    dac_enable = 1'b1;
+                    dac_result_op = result_o;
                 end
             endcase
         end

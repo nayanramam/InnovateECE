@@ -92,6 +92,10 @@ package CORE_PKG;
   */
   parameter OPCODE_OPIMM = 7'h13;
 
+  /**
+  * Custom opcode to deliver data to dot product
+  */
+  parameter OPCODE_DOT = 7'h0B; 
 
   //*************************
   // ALU Operations for Masking
@@ -146,7 +150,8 @@ package CORE_PKG;
     LBU,
     SW,
     SH,
-    SB
+    SB,
+    DAC_LOAD
   } load_store_func_code;
 
   typedef enum logic [2:0] {
@@ -156,6 +161,7 @@ package CORE_PKG;
     READ_REGFILE = 3'b011,
     READ_PC4 = 3'b100,
     READ_COMPARATOR_RESULT = 3'b101
+    READ_DOT_RESULT = 3'b110
   } write_back_mux_selector;
 
   typedef enum {

@@ -64,7 +64,14 @@ module ID_Stage (
   output pc_mux pc_mux_op,
 
   // Stall signal to send to Fetch
-  output logic stall_op
+  output logic stall_op,
+
+
+  // Outputs for the custom dot-product instruction
+  output [7:0] w_i_op,
+  output [7:0] x_i_op,
+  output [4:0] dot_counter
+
 );
 
   // Declare parameters to extract source and destination registers and immediate values
@@ -217,6 +224,13 @@ module ID_Stage (
         operand_b_select = J_IMMD;
       end
 
+      OPCODE_DOT: begin
+        en_lsu = 1'b1; 
+
+        writeback_mux = ((valid_instr_to_decode[15:12] == 4'b1111) ? READ_DOT_RESULT : NO_WRITEBACK);
+        lsu_operator = DAC_LOAD;
+      end
+
     endcase
   end
 
@@ -280,6 +294,12 @@ module ID_Stage (
       id_pc_addr_pt_op <= 0;
       id_uimmd_pt_op <= 0;
 
+      // Assigning values of x_i and w_i for dot product directly from instruction
+      x_i_op <= 0;
+      w_i_op <= 0;
+      dot_counter <= 0;
+
+
     end else begin
       // Instructions to send to EX Stage
       alu_en_op <= alu_en;
@@ -307,6 +327,11 @@ module ID_Stage (
 
       // Forwarded PC addr.
       id_pc_addr_pt_op <= pc;
+
+      // Assigning values of x_i and w_i for dot product directly from instruction
+      x_i_op <= valid_instr_to_decode[31:24];
+      w_i_op <= valid_instr_to_decode[23:16];
+      dot_counter <= valid_instr_to_decode[15:12];
     end
   end
 

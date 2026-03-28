@@ -50,7 +50,11 @@ module Mem_Stage (
   output logic [31:0] load_mem_data_op,      // data from load to sent to decode 
 
   // Output to Data Memory to inform that valid to read data
-  output logic data_addr_valid_op
+  output logic data_addr_valid_op,
+
+  // Input/output for the dot product operation
+  input logic [9:0] dac_result_ip,
+  output logic [9:0] dac_result_op
 );
 
   logic valid_mem_operation;
@@ -65,6 +69,7 @@ module Mem_Stage (
     lsu_write_reg_addr_pt_op <= lsu_write_reg_addr_pt_ip;
     lsu_pc_addr_pt_op <= lsu_pc_addr_pt_ip;
     lsu_uimmd_pt_op <= lsu_uimmd_pt_ip;
+    dac_result_op <= dac_result_ip; // Moving result from DAC
   end
 
   always @(posedge clock) begin

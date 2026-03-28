@@ -29,7 +29,9 @@ module WB_Stage (
   input logic [31:0] WB_pc_ip,
 
   output logic WB_regfile_write_valid,
-  output logic [31:0] WB_regfile_write_data
+  output logic [31:0] WB_regfile_write_data,
+
+  input logic [9:0] WB_dac_result_ip
 );
 
   // Mux which data result to write back to memory if appropriate
@@ -50,6 +52,10 @@ module WB_Stage (
       READ_PC4: begin
         WB_regfile_write_valid = 1'b1;
         WB_regfile_write_data = WB_pc_ip + 4;
+      end
+      READ_DOT_RESULT: begin
+        WB_regfile_write_valid <= 1'b1; // Since this case is only entered on DOT15, it's hardcoded valid
+        WB_regfile_write_data <= (22'b0, WB_dac_result_ip);
       end
       default: begin
         WB_regfile_write_valid = 1'b0;
